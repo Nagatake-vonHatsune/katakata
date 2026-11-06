@@ -1,0 +1,11 @@
+{
+  // Static assets only: no Worker code, so every request is a free static-asset request.
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "katakata",
+  "compatibility_date": "2026-11-06",
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

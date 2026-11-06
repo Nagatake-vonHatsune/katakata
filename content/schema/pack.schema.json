@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://katakata/schema/pack.schema.json",
+  "title": "Kata-Kata content pack",
+  "description": "One file per Kelas chapter or Dunia scene. Card fields follow the shared Hanashishou word-library format (spec 5.5).",
+  "type": "object",
+  "required": ["schema", "lang", "kind", "id", "chapter", "status", "title", "cards"],
+  "properties": {
+    "schema": { "const": "katakata.pack/1" },
+    "lang": { "const": "ms" },
+    "kind": { "enum": ["kelas", "dunia"] },
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "chapter": { "type": "integer", "minimum": 0, "maximum": 99 },
+    "status": { "enum": ["live", "draft"], "description": "Only live packs ship in the app." },
+    "ja_review": { "enum": ["pending", "done"] },
+    "title": { "$ref": "#/definitions/text3" },
+    "world": {
+      "type": "object",
+      "required": ["id", "ms", "en"],
+      "properties": { "id": { "type": "string" }, "ms": { "type": "string" }, "en": { "type": "string" }, "ja": { "type": ["string", "null"] } }
+    },
+    "setting": { "type": "object", "properties": { "en": { "type": ["string", "null"] }, "ja": { "type": ["string", "null"] } } },
+    "cards": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/card" } },
+    "frames": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "frame", "example", "meaning_en"],
+        "properties": {
+          "id": { "type": "string" },
+          "frame": { "type": "string" },
+          "example": { "type": "string" },
+          "meaning_en": { "type": "string" },
+          "meaning_ja": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "scenario": {
+      "type": "object",
+      "properties": {
+        "title_en": { "type": ["string", "null"] },
+        "title_ja": { "type": ["string", "null"] },
+        "lines": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "speaker", "ms", "en"],
+            "properties": { "id": { "type": "string" }, "speaker": { "type": "string" }, "ms": { "type": "string" }, "en": { "type": "string" } }
+          }
+        }
+      }
+    },
+    "sedia_kelas": {
+      "type": "object",
+      "required": ["cards", "frames"],
+      "properties": {
+        "cards": { "type": "array", "items": { "type": "string" } },
+        "frames": { "type": "array", "items": { "type": "string" } },
+        "scene": { "type": ["string", "null"] }
+      }
+    }
+  },
+  "definitions": {
+    "text3": {
+      "type": "object",
+      "required": ["ms", "en"],
+      "properties": { "ms": { "type": "string" }, "en": { "type": "string" }, "ja": { "type": ["string", "null"] } }
+    },
+    "card": {
+      "type": "object",
+      "required": ["id", "lang", "term", "gloss_en", "gloss_ja", "pos", "affix_tag", "links", "scene", "chapter"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^ms-[a-z0-9-]+$" },
+        "lang": { "const": "ms" },
+        "term": { "type": "string", "minLength": 1 },
+        "gloss_en": { "type": "string" },
+        "gloss_ja": { "type": "string" },
+        "pos": { "type": "string" },
+        "affix_tag": { "enum": ["root", "chunk", "chunk*", "lex", "pe-", "pe(N)-", "-an", "ke-", "ke-an", "se-", "ter-", "di-", "-kah", "-nya"] },
+        "note": { "type": ["string", "null"] },
+        "links": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["type"],
+            "properties": {
+              "type": { "enum": ["babak", "bunyi", "kanji", "pinjam", "keluarga", "pasangan", "amaran", "hook_saya"] },
+              "target": { "type": "string" },
+              "text": { "type": "string" }
+            },
+            "anyOf": [{ "required": ["target"] }, { "required": ["text"] }]
+          }
+        },
+        "scene": { "type": "string" },
+        "chapter": { "type": "integer" },
+        "image": { "type": "string" },
+        "seen_in_class": { "type": "integer", "minimum": 1 },
+        "recognise_only": { "type": "boolean" }
+      }
+    }
+  }
+}

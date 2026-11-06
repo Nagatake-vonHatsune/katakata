@@ -1,0 +1,251 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "cuaca-hujan",
+  "chapter": 4,
+  "status": "draft",
+  "ja_review": "pending",
+  "world": {
+    "id": "cuaca",
+    "ms": "Cuaca",
+    "en": "Weather",
+    "ja": "天気"
+  },
+  "title": {
+    "ms": "Hujan petang",
+    "en": "Afternoon rain",
+    "ja": "午後の雨"
+  },
+  "setting": {
+    "en": "Hot morning, then a heavy afternoon downpour: a very KL day.",
+    "ja": "暑い朝、そして午後は激しいにわか雨。とてもKLらしい一日です。"
+  },
+  "cards": [
+    {
+      "id": "ms-d-cuaca-hujan-01",
+      "lang": "ms",
+      "term": "cuaca",
+      "gloss_en": "weather",
+      "gloss_ja": "天気",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuaca-hujan"
+        }
+      ],
+      "scene": "dunia-cuaca-hujan",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-cuaca-hujan-02",
+      "lang": "ms",
+      "term": "cerah",
+      "gloss_en": "sunny, bright",
+      "gloss_ja": "晴れ",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuaca-hujan"
+        }
+      ],
+      "scene": "dunia-cuaca-hujan",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-cuaca-hujan-03",
+      "lang": "ms",
+      "term": "mendung",
+      "gloss_en": "cloudy, overcast",
+      "gloss_ja": "曇り",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuaca-hujan"
+        }
+      ],
+      "scene": "dunia-cuaca-hujan",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-cuaca-hujan-04",
+      "lang": "ms",
+      "term": "hujan",
+      "gloss_en": "rain",
+      "gloss_ja": "雨",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuaca-hujan"
+        }
+      ],
+      "scene": "dunia-cuaca-hujan",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-cuaca-hujan-05",
+      "lang": "ms",
+      "term": "ribut",
+      "gloss_en": "storm",
+      "gloss_ja": "嵐",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuaca-hujan"
+        }
+      ],
+      "scene": "dunia-cuaca-hujan",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-cuaca-hujan-06",
+      "lang": "ms",
+      "term": "angin",
+      "gloss_en": "wind",
+      "gloss_ja": "風",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuaca-hujan"
+        }
+      ],
+      "scene": "dunia-cuaca-hujan",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-cuaca-hujan-07",
+      "lang": "ms",
+      "term": "payung",
+      "gloss_en": "umbrella",
+      "gloss_ja": "傘",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuaca-hujan"
+        }
+      ],
+      "scene": "dunia-cuaca-hujan",
+      "chapter": 4,
+      "seen_in_class": 8
+    },
+    {
+      "id": "ms-d-cuaca-hujan-08",
+      "lang": "ms",
+      "term": "basah",
+      "gloss_en": "wet",
+      "gloss_ja": "濡れた",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuaca-hujan"
+        }
+      ],
+      "scene": "dunia-cuaca-hujan",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-cuaca-hujan-09",
+      "lang": "ms",
+      "term": "kering",
+      "gloss_en": "dry",
+      "gloss_ja": "乾いた",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuaca-hujan"
+        }
+      ],
+      "scene": "dunia-cuaca-hujan",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-cuaca-hujan-10",
+      "lang": "ms",
+      "term": "matahari",
+      "gloss_en": "sun",
+      "gloss_ja": "太陽",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuaca-hujan"
+        },
+        {
+          "type": "kanji",
+          "text": "mata (eye) + hari (day): 'eye of the day'."
+        }
+      ],
+      "scene": "dunia-cuaca-hujan",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-cuaca-hujan-11",
+      "lang": "ms",
+      "term": "langit",
+      "gloss_en": "sky",
+      "gloss_ja": "空",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuaca-hujan"
+        }
+      ],
+      "scene": "dunia-cuaca-hujan",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-cuaca-hujan-12",
+      "lang": "ms",
+      "term": "mata",
+      "gloss_en": "eye",
+      "gloss_ja": "目",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuaca-hujan"
+        },
+        {
+          "type": "bunyi",
+          "text": "また目が合った: our eyes met again."
+        }
+      ],
+      "scene": "dunia-cuaca-hujan",
+      "chapter": 4
+    }
+  ]
+}

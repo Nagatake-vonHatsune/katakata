@@ -1,0 +1,1318 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c02",
+  "chapter": 2,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Kata Ganti Nama dan Perkenalan Diri",
+    "en": "Pronouns and introducing yourself",
+    "ja": "代名詞と自己紹介"
+  },
+  "cards": [
+    {
+      "id": "ms-c02-001",
+      "lang": "ms",
+      "term": "saya",
+      "gloss_en": "I, me (polite)",
+      "gloss_ja": "私",
+      "pos": "pron",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-002",
+      "lang": "ms",
+      "term": "aku",
+      "gloss_en": "I, me (casual, close friends)",
+      "gloss_ja": "俺・あたし（親しい間柄）",
+      "pos": "pron",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-003",
+      "lang": "ms",
+      "term": "awak",
+      "gloss_en": "you (neutral, everyday)",
+      "gloss_ja": "あなた",
+      "pos": "pron",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-004",
+      "lang": "ms",
+      "term": "kamu",
+      "gloss_en": "you (casual, to juniors/children)",
+      "gloss_ja": "君",
+      "pos": "pron",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-005",
+      "lang": "ms",
+      "term": "anda",
+      "gloss_en": "you (formal, signs and ads)",
+      "gloss_ja": "あなた（公的・広告）",
+      "pos": "pron",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-006",
+      "lang": "ms",
+      "term": "engkau / kau",
+      "gloss_en": "you (very casual)",
+      "gloss_ja": "お前",
+      "pos": "pron",
+      "affix_tag": "root",
+      "note": "Avoid with strangers.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-007",
+      "lang": "ms",
+      "term": "dia",
+      "gloss_en": "he, she",
+      "gloss_ja": "彼・彼女",
+      "pos": "pron",
+      "affix_tag": "root",
+      "note": "No gender.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-008",
+      "lang": "ms",
+      "term": "beliau",
+      "gloss_en": "he, she (respectful)",
+      "gloss_ja": "あの方",
+      "pos": "pron",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-009",
+      "lang": "ms",
+      "term": "kami",
+      "gloss_en": "we (not including the listener)",
+      "gloss_ja": "私たち（相手を含まない）",
+      "pos": "pron",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-010",
+      "lang": "ms",
+      "term": "kita",
+      "gloss_en": "we (including the listener)",
+      "gloss_ja": "私たち（相手を含む）",
+      "pos": "pron",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-011",
+      "lang": "ms",
+      "term": "mereka",
+      "gloss_en": "they",
+      "gloss_ja": "彼ら",
+      "pos": "pron",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-012",
+      "lang": "ms",
+      "term": "-nya",
+      "gloss_en": "his, her, its, the",
+      "gloss_ja": "彼の・その",
+      "pos": "suffix",
+      "affix_tag": "-nya",
+      "note": "namanya = his/her name",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-013",
+      "lang": "ms",
+      "term": "nama",
+      "gloss_en": "name",
+      "gloss_ja": "名前",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-014",
+      "lang": "ms",
+      "term": "siapa",
+      "gloss_en": "who",
+      "gloss_ja": "誰",
+      "pos": "question",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-015",
+      "lang": "ms",
+      "term": "Siapakah",
+      "gloss_en": "who (formal question)",
+      "gloss_ja": "誰ですか",
+      "pos": "question",
+      "affix_tag": "-kah",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-016",
+      "lang": "ms",
+      "term": "Apakah",
+      "gloss_en": "what (formal question)",
+      "gloss_ja": "何ですか",
+      "pos": "question",
+      "affix_tag": "-kah",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-017",
+      "lang": "ms",
+      "term": "di mana / di manakah",
+      "gloss_en": "where",
+      "gloss_ja": "どこ",
+      "pos": "question",
+      "affix_tag": "-kah",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-018",
+      "lang": "ms",
+      "term": "di",
+      "gloss_en": "at, in (written separately)",
+      "gloss_ja": "〜に・〜で",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": "di rumah. Not the passive di- of Ch9.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-019",
+      "lang": "ms",
+      "term": "dari",
+      "gloss_en": "from",
+      "gloss_ja": "〜から",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-020",
+      "lang": "ms",
+      "term": "dan",
+      "gloss_en": "and",
+      "gloss_ja": "と・そして",
+      "pos": "conj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-021",
+      "lang": "ms",
+      "term": "juga",
+      "gloss_en": "also, too",
+      "gloss_ja": "も",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-022",
+      "lang": "ms",
+      "term": "ada",
+      "gloss_en": "have; there is",
+      "gloss_ja": "ある・いる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-023",
+      "lang": "ms",
+      "term": "orang",
+      "gloss_en": "person",
+      "gloss_ja": "人",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-024",
+      "lang": "ms",
+      "term": "orang Jepun",
+      "gloss_en": "Japanese person",
+      "gloss_ja": "日本人",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-025",
+      "lang": "ms",
+      "term": "Jepun",
+      "gloss_en": "Japan",
+      "gloss_ja": "日本",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-026",
+      "lang": "ms",
+      "term": "negara",
+      "gloss_en": "country",
+      "gloss_ja": "国",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-027",
+      "lang": "ms",
+      "term": "asal",
+      "gloss_en": "origin",
+      "gloss_ja": "出身",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Asal saya dari Osaka.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-028",
+      "lang": "ms",
+      "term": "kampung",
+      "gloss_en": "hometown, village",
+      "gloss_ja": "故郷・村",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-029",
+      "lang": "ms",
+      "term": "pejabat",
+      "gloss_en": "office",
+      "gloss_ja": "事務所・オフィス",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-030",
+      "lang": "ms",
+      "term": "kerja",
+      "gloss_en": "work; to work (spoken)",
+      "gloss_ja": "仕事・働く",
+      "pos": "noun/verb",
+      "affix_tag": "root",
+      "note": "Formal written form is bekerja; spoken 'Saya kerja di...' is natural.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-031",
+      "lang": "ms",
+      "term": "syarikat",
+      "gloss_en": "company",
+      "gloss_ja": "会社",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-032",
+      "lang": "ms",
+      "term": "sekolah",
+      "gloss_en": "school",
+      "gloss_ja": "学校",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-033",
+      "lang": "ms",
+      "term": "universiti",
+      "gloss_en": "university",
+      "gloss_ja": "大学",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-034",
+      "lang": "ms",
+      "term": "belajar",
+      "gloss_en": "to study, learn",
+      "gloss_ja": "勉強する・学ぶ",
+      "pos": "verb",
+      "affix_tag": "lex",
+      "note": "ber- + ajar, learned as one word.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-035",
+      "lang": "ms",
+      "term": "rumah",
+      "gloss_en": "house, home",
+      "gloss_ja": "家",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-036",
+      "lang": "ms",
+      "term": "tinggal",
+      "gloss_en": "to live (reside); to stay",
+      "gloss_ja": "住む",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-037",
+      "lang": "ms",
+      "term": "hobi",
+      "gloss_en": "hobby",
+      "gloss_ja": "趣味",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-038",
+      "lang": "ms",
+      "term": "suka",
+      "gloss_en": "to like",
+      "gloss_ja": "好き",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-039",
+      "lang": "ms",
+      "term": "main",
+      "gloss_en": "to play",
+      "gloss_ja": "遊ぶ・（スポーツを）する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "main badminton",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-040",
+      "lang": "ms",
+      "term": "jom",
+      "gloss_en": "let's (spoken)",
+      "gloss_ja": "〜しよう",
+      "pos": "particle",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-041",
+      "lang": "ms",
+      "term": "boleh",
+      "gloss_en": "can; okay",
+      "gloss_ja": "できる・いいよ",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-042",
+      "lang": "ms",
+      "term": "dengan",
+      "gloss_en": "with",
+      "gloss_ja": "〜と（一緒に）",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-043",
+      "lang": "ms",
+      "term": "kawan",
+      "gloss_en": "friend",
+      "gloss_ja": "友達",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-044",
+      "lang": "ms",
+      "term": "keluarga",
+      "gloss_en": "family",
+      "gloss_ja": "家族",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-045",
+      "lang": "ms",
+      "term": "isteri / suami",
+      "gloss_en": "wife / husband",
+      "gloss_ja": "妻／夫",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-046",
+      "lang": "ms",
+      "term": "anak",
+      "gloss_en": "child",
+      "gloss_ja": "子供",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-047",
+      "lang": "ms",
+      "term": "guru / cikgu",
+      "gloss_en": "teacher",
+      "gloss_ja": "先生",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "cikgu is the everyday form.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-048",
+      "lang": "ms",
+      "term": "jurutera",
+      "gloss_en": "engineer",
+      "gloss_ja": "エンジニア",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-049",
+      "lang": "ms",
+      "term": "pekerja",
+      "gloss_en": "worker, employee",
+      "gloss_ja": "従業員",
+      "pos": "noun",
+      "affix_tag": "pe-",
+      "note": "kerja → pekerja",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-050",
+      "lang": "ms",
+      "term": "pelajar",
+      "gloss_en": "student",
+      "gloss_ja": "学生",
+      "pos": "noun",
+      "affix_tag": "pe-",
+      "note": "ajar → pelajar",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-051",
+      "lang": "ms",
+      "term": "pelawat",
+      "gloss_en": "visitor",
+      "gloss_ja": "訪問者",
+      "pos": "noun",
+      "affix_tag": "pe-",
+      "note": "lawat (visit) → pelawat",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-052",
+      "lang": "ms",
+      "term": "pelancong",
+      "gloss_en": "tourist",
+      "gloss_ja": "観光客",
+      "pos": "noun",
+      "affix_tag": "pe-",
+      "note": "lancong (tour) → pelancong",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-053",
+      "lang": "ms",
+      "term": "petani",
+      "gloss_en": "farmer",
+      "gloss_ja": "農家",
+      "pos": "noun",
+      "affix_tag": "pe-",
+      "note": "tani (farming) → petani",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-054",
+      "lang": "ms",
+      "term": "pemandu",
+      "gloss_en": "driver",
+      "gloss_ja": "運転手",
+      "pos": "noun",
+      "affix_tag": "pe(N)-",
+      "note": "pandu → pemandu. Recognise only.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2,
+      "recognise_only": true
+    },
+    {
+      "id": "ms-c02-055",
+      "lang": "ms",
+      "term": "pengurus",
+      "gloss_en": "manager",
+      "gloss_ja": "マネージャー",
+      "pos": "noun",
+      "affix_tag": "pe(N)-",
+      "note": "urus → pengurus. Recognise only.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2,
+      "recognise_only": true
+    },
+    {
+      "id": "ms-c02-056",
+      "lang": "ms",
+      "term": "makanan",
+      "gloss_en": "food",
+      "gloss_ja": "食べ物",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "makan → makanan",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-057",
+      "lang": "ms",
+      "term": "minuman",
+      "gloss_en": "drink",
+      "gloss_ja": "飲み物",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "minum → minuman",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-058",
+      "lang": "ms",
+      "term": "masakan",
+      "gloss_en": "cooking, cuisine",
+      "gloss_ja": "料理",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "masak → masakan",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-059",
+      "lang": "ms",
+      "term": "bacaan",
+      "gloss_en": "reading material",
+      "gloss_ja": "読み物",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "baca → bacaan",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-060",
+      "lang": "ms",
+      "term": "tulisan",
+      "gloss_en": "writing, handwriting",
+      "gloss_ja": "書いたもの・筆跡",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "tulis → tulisan",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-061",
+      "lang": "ms",
+      "term": "soalan",
+      "gloss_en": "question",
+      "gloss_ja": "質問",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "soal → soalan",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-062",
+      "lang": "ms",
+      "term": "jawapan",
+      "gloss_en": "answer",
+      "gloss_ja": "答え",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "jawab → jawapan (b becomes p)",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-063",
+      "lang": "ms",
+      "term": "latihan",
+      "gloss_en": "practice, exercise",
+      "gloss_ja": "練習",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "latih → latihan",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c02-f01",
+      "frame": "Nama saya ___.",
+      "example": "Nama saya Tanaka.",
+      "meaning_en": "My name is Tanaka.",
+      "meaning_ja": "私の名前は田中です。"
+    },
+    {
+      "id": "ms-c02-f02",
+      "frame": "Siapa nama (title)?",
+      "example": "Siapa nama encik?",
+      "meaning_en": "What is your name, sir?",
+      "meaning_ja": "お名前は何ですか。"
+    },
+    {
+      "id": "ms-c02-f03",
+      "frame": "Saya orang ___. Asal saya dari ___.",
+      "example": "Saya orang Jepun. Asal saya dari Osaka.",
+      "meaning_en": "I'm Japanese. I'm originally from Osaka.",
+      "meaning_ja": "私は日本人です。大阪出身です。"
+    },
+    {
+      "id": "ms-c02-f04",
+      "frame": "Saya kerja di ___. Saya (job / pe- word).",
+      "example": "Saya kerja di syarikat Jepun. Saya jurutera.",
+      "meaning_en": "I work at a Japanese company. I'm an engineer.",
+      "meaning_ja": "日本の会社で働いています。エンジニアです。"
+    },
+    {
+      "id": "ms-c02-f05",
+      "frame": "Saya belajar di ___.",
+      "example": "Saya belajar di Universiti Malaya.",
+      "meaning_en": "I study at Universiti Malaya.",
+      "meaning_ja": "マラヤ大学で勉強しています。"
+    },
+    {
+      "id": "ms-c02-f06",
+      "frame": "Saya tinggal di ___.",
+      "example": "Saya tinggal di Mont Kiara.",
+      "meaning_en": "I live in Mont Kiara.",
+      "meaning_ja": "モントキアラに住んでいます。"
+    },
+    {
+      "id": "ms-c02-f07",
+      "frame": "Hobi saya ___. / Saya suka ___.",
+      "example": "Hobi saya badminton. Saya suka masakan Malaysia.",
+      "meaning_en": "My hobby is badminton. I like Malaysian food.",
+      "meaning_ja": "趣味はバドミントンです。マレーシア料理が好きです。"
+    },
+    {
+      "id": "ms-c02-f08",
+      "frame": "Di manakah ___?",
+      "example": "Di manakah pejabat encik?",
+      "meaning_en": "Where is your office?",
+      "meaning_ja": "あなたのオフィスはどこですか。"
+    }
+  ],
+  "scenario": {
+    "title_en": "Meeting the team",
+    "title_ja": "チームとの顔合わせ",
+    "lines": [
+      {
+        "id": "ms-c02-s01",
+        "speaker": "Encik Rahman",
+        "ms": "Selamat pagi. Nama saya Rahman. Saya pengurus di sini. Siapa nama encik?",
+        "en": "Good morning. I'm Rahman, the manager here. What's your name?"
+      },
+      {
+        "id": "ms-c02-s02",
+        "speaker": "Tanaka",
+        "ms": "Nama saya Tanaka. Saya orang Jepun.",
+        "en": "My name is Tanaka. I'm Japanese."
+      },
+      {
+        "id": "ms-c02-s03",
+        "speaker": "Encik Rahman",
+        "ms": "Encik dari mana di Jepun?",
+        "en": "Where in Japan are you from?"
+      },
+      {
+        "id": "ms-c02-s04",
+        "speaker": "Tanaka",
+        "ms": "Asal saya dari Osaka. Kampung saya di Osaka.",
+        "en": "I'm from Osaka. My hometown is Osaka."
+      },
+      {
+        "id": "ms-c02-s05",
+        "speaker": "Cik Mei Ling",
+        "ms": "Encik tinggal di mana?",
+        "en": "Where do you live?"
+      },
+      {
+        "id": "ms-c02-s06",
+        "speaker": "Tanaka",
+        "ms": "Saya tinggal di Mont Kiara. Cik Mei Ling pula?",
+        "en": "I live in Mont Kiara. And you?"
+      },
+      {
+        "id": "ms-c02-s07",
+        "speaker": "Cik Mei Ling",
+        "ms": "Saya tinggal di Petaling Jaya.",
+        "en": "I live in Petaling Jaya."
+      },
+      {
+        "id": "ms-c02-s08",
+        "speaker": "Cik Mei Ling",
+        "ms": "Apa hobi encik?",
+        "en": "What's your hobby?"
+      },
+      {
+        "id": "ms-c02-s09",
+        "speaker": "Tanaka",
+        "ms": "Hobi saya badminton. Saya juga suka masakan Malaysia.",
+        "en": "My hobby is badminton. I also like Malaysian food."
+      },
+      {
+        "id": "ms-c02-s10",
+        "speaker": "Encik Rahman",
+        "ms": "Kami pun suka badminton! Jom kita main sama-sama.",
+        "en": "We like badminton too! Let's play together."
+      },
+      {
+        "id": "ms-c02-s11",
+        "speaker": "Tanaka",
+        "ms": "Boleh!",
+        "en": "Sure!"
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c02-001",
+      "ms-c02-009",
+      "ms-c02-010",
+      "ms-c02-013",
+      "ms-c02-014",
+      "ms-c02-017",
+      "ms-c02-018",
+      "ms-c02-019",
+      "ms-c02-021",
+      "ms-c02-023",
+      "ms-c02-024",
+      "ms-c02-025",
+      "ms-c02-027",
+      "ms-c02-028",
+      "ms-c02-029",
+      "ms-c02-030",
+      "ms-c02-031",
+      "ms-c02-033",
+      "ms-c02-034",
+      "ms-c02-036",
+      "ms-c02-037",
+      "ms-c02-038",
+      "ms-c02-039",
+      "ms-c02-040",
+      "ms-c02-041",
+      "ms-c02-048",
+      "ms-c02-058"
+    ],
+    "frames": [
+      "ms-c02-f01",
+      "ms-c02-f02"
+    ],
+    "scene": "pejabat-pagi"
+  }
+}

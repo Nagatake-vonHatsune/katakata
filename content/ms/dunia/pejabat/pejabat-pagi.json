@@ -1,0 +1,316 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "pejabat-pagi",
+  "chapter": 2,
+  "status": "live",
+  "ja_review": "pending",
+  "world": {
+    "id": "pejabat",
+    "ms": "Pejabat",
+    "en": "Office",
+    "ja": "オフィス"
+  },
+  "title": {
+    "ms": "Pagi di pejabat",
+    "en": "Morning at the office",
+    "ja": "オフィスの朝"
+  },
+  "setting": {
+    "en": "Tanaka's first task: print a document and send an email before the meeting.",
+    "ja": "田中さんの最初の仕事：会議の前に書類を印刷して、メールを送ること。"
+  },
+  "cards": [
+    {
+      "id": "ms-d-pejabat-pagi-01",
+      "lang": "ms",
+      "term": "komputer",
+      "gloss_en": "computer",
+      "gloss_ja": "パソコン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pejabat-pagi"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'computer': c becomes k in Malay spelling."
+        }
+      ],
+      "scene": "dunia-pejabat-pagi",
+      "chapter": 2,
+      "image": "💻"
+    },
+    {
+      "id": "ms-d-pejabat-pagi-02",
+      "lang": "ms",
+      "term": "kertas",
+      "gloss_en": "paper",
+      "gloss_ja": "紙",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pejabat-pagi"
+        }
+      ],
+      "scene": "dunia-pejabat-pagi",
+      "chapter": 2,
+      "seen_in_class": 8,
+      "image": "📄"
+    },
+    {
+      "id": "ms-d-pejabat-pagi-03",
+      "lang": "ms",
+      "term": "fail",
+      "gloss_en": "file",
+      "gloss_ja": "ファイル",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pejabat-pagi"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'file', like ファイル."
+        }
+      ],
+      "scene": "dunia-pejabat-pagi",
+      "chapter": 2,
+      "image": "📁"
+    },
+    {
+      "id": "ms-d-pejabat-pagi-04",
+      "lang": "ms",
+      "term": "emel",
+      "gloss_en": "email",
+      "gloss_ja": "メール",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pejabat-pagi"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'email', written the Malay way."
+        }
+      ],
+      "scene": "dunia-pejabat-pagi",
+      "chapter": 2,
+      "image": "📧"
+    },
+    {
+      "id": "ms-d-pejabat-pagi-05",
+      "lang": "ms",
+      "term": "cetak",
+      "gloss_en": "to print",
+      "gloss_ja": "印刷する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pejabat-pagi"
+        }
+      ],
+      "scene": "dunia-pejabat-pagi",
+      "chapter": 2,
+      "image": "🖨️"
+    },
+    {
+      "id": "ms-d-pejabat-pagi-06",
+      "lang": "ms",
+      "term": "hantar",
+      "gloss_en": "to send",
+      "gloss_ja": "送る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pejabat-pagi"
+        }
+      ],
+      "scene": "dunia-pejabat-pagi",
+      "chapter": 2,
+      "image": "📤"
+    },
+    {
+      "id": "ms-d-pejabat-pagi-07",
+      "lang": "ms",
+      "term": "simpan",
+      "gloss_en": "to save, keep",
+      "gloss_ja": "保存する・しまう",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pejabat-pagi"
+        }
+      ],
+      "scene": "dunia-pejabat-pagi",
+      "chapter": 2,
+      "image": "💾"
+    },
+    {
+      "id": "ms-d-pejabat-pagi-08",
+      "lang": "ms",
+      "term": "tanda tangan",
+      "gloss_en": "signature",
+      "gloss_ja": "署名",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pejabat-pagi"
+        },
+        {
+          "type": "kanji",
+          "text": "tanda (mark) + tangan (hand): 'hand mark'."
+        }
+      ],
+      "scene": "dunia-pejabat-pagi",
+      "chapter": 2,
+      "image": "✍️"
+    },
+    {
+      "id": "ms-d-pejabat-pagi-09",
+      "lang": "ms",
+      "term": "rakan sekerja",
+      "gloss_en": "colleague",
+      "gloss_ja": "同僚",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pejabat-pagi"
+        },
+        {
+          "type": "keluarga",
+          "text": "se- (same) + kerja (work): 'same-work friend'. se- again."
+        }
+      ],
+      "scene": "dunia-pejabat-pagi",
+      "chapter": 2
+    },
+    {
+      "id": "ms-d-pejabat-pagi-10",
+      "lang": "ms",
+      "term": "bos",
+      "gloss_en": "boss",
+      "gloss_ja": "上司",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pejabat-pagi"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'boss'."
+        }
+      ],
+      "scene": "dunia-pejabat-pagi",
+      "chapter": 2
+    },
+    {
+      "id": "ms-d-pejabat-pagi-11",
+      "lang": "ms",
+      "term": "sibuk",
+      "gloss_en": "busy",
+      "gloss_ja": "忙しい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pejabat-pagi"
+        }
+      ],
+      "scene": "dunia-pejabat-pagi",
+      "chapter": 2
+    },
+    {
+      "id": "ms-d-pejabat-pagi-12",
+      "lang": "ms",
+      "term": "cuti",
+      "gloss_en": "leave, holiday",
+      "gloss_ja": "休み・休暇",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pejabat-pagi"
+        }
+      ],
+      "scene": "dunia-pejabat-pagi",
+      "chapter": 2,
+      "image": "🏖️"
+    },
+    {
+      "id": "ms-d-pejabat-pagi-13",
+      "lang": "ms",
+      "term": "tanya",
+      "gloss_en": "to ask",
+      "gloss_ja": "尋ねる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pejabat-pagi"
+        }
+      ],
+      "scene": "dunia-pejabat-pagi",
+      "chapter": 2
+    },
+    {
+      "id": "ms-d-pejabat-pagi-14",
+      "lang": "ms",
+      "term": "jawab",
+      "gloss_en": "to answer",
+      "gloss_ja": "答える",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pejabat-pagi"
+        },
+        {
+          "type": "keluarga",
+          "text": "jawab → jawapan (answer, noun) from Ch2."
+        }
+      ],
+      "scene": "dunia-pejabat-pagi",
+      "chapter": 2
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "pakaian-kedai",
+  "chapter": 8,
+  "status": "draft",
+  "ja_review": "pending",
+  "world": {
+    "id": "pakaian",
+    "ms": "Pakaian",
+    "en": "Clothes",
+    "ja": "服"
+  },
+  "title": {
+    "ms": "Beli baju",
+    "en": "Buying clothes",
+    "ja": "服を買う"
+  },
+  "setting": {
+    "en": "Tanaka needs a batik shirt for a company dinner.",
+    "ja": "会社の夕食会のために、田中さんはバティックのシャツが必要です。"
+  },
+  "cards": [
+    {
+      "id": "ms-d-pakaian-kedai-01",
+      "lang": "ms",
+      "term": "baju",
+      "gloss_en": "shirt, top",
+      "gloss_ja": "シャツ・服",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pakaian-kedai"
+        }
+      ],
+      "scene": "dunia-pakaian-kedai",
+      "chapter": 8,
+      "seen_in_class": 8
+    },
+    {
+      "id": "ms-d-pakaian-kedai-02",
+      "lang": "ms",
+      "term": "seluar",
+      "gloss_en": "trousers",
+      "gloss_ja": "ズボン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pakaian-kedai"
+        }
+      ],
+      "scene": "dunia-pakaian-kedai",
+      "chapter": 8
+    },
+    {
+      "id": "ms-d-pakaian-kedai-03",
+      "lang": "ms",
+      "term": "stokin",
+      "gloss_en": "socks",
+      "gloss_ja": "靴下",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pakaian-kedai"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'stocking'."
+        }
+      ],
+      "scene": "dunia-pakaian-kedai",
+      "chapter": 8
+    },
+    {
+      "id": "ms-d-pakaian-kedai-04",
+      "lang": "ms",
+      "term": "topi",
+      "gloss_en": "hat, cap",
+      "gloss_ja": "帽子",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pakaian-kedai"
+        }
+      ],
+      "scene": "dunia-pakaian-kedai",
+      "chapter": 8
+    },
+    {
+      "id": "ms-d-pakaian-kedai-05",
+      "lang": "ms",
+      "term": "beg",
+      "gloss_en": "bag",
+      "gloss_ja": "かばん",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pakaian-kedai"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'bag'."
+        }
+      ],
+      "scene": "dunia-pakaian-kedai",
+      "chapter": 8
+    },
+    {
+      "id": "ms-d-pakaian-kedai-06",
+      "lang": "ms",
+      "term": "butang",
+      "gloss_en": "button",
+      "gloss_ja": "ボタン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pakaian-kedai"
+        },
+        {
+          "type": "pinjam",
+          "text": "Same source as Japanese ボタン: both from Portuguese botão."
+        }
+      ],
+      "scene": "dunia-pakaian-kedai",
+      "chapter": 8
+    },
+    {
+      "id": "ms-d-pakaian-kedai-07",
+      "lang": "ms",
+      "term": "saiz",
+      "gloss_en": "size",
+      "gloss_ja": "サイズ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pakaian-kedai"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'size'."
+        }
+      ],
+      "scene": "dunia-pakaian-kedai",
+      "chapter": 8
+    },
+    {
+      "id": "ms-d-pakaian-kedai-08",
+      "lang": "ms",
+      "term": "cuba",
+      "gloss_en": "to try",
+      "gloss_ja": "試す",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pakaian-kedai"
+        }
+      ],
+      "scene": "dunia-pakaian-kedai",
+      "chapter": 8
+    },
+    {
+      "id": "ms-d-pakaian-kedai-09",
+      "lang": "ms",
+      "term": "longgar",
+      "gloss_en": "loose",
+      "gloss_ja": "ゆるい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pakaian-kedai"
+        }
+      ],
+      "scene": "dunia-pakaian-kedai",
+      "chapter": 8
+    },
+    {
+      "id": "ms-d-pakaian-kedai-10",
+      "lang": "ms",
+      "term": "ketat",
+      "gloss_en": "tight",
+      "gloss_ja": "きつい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pakaian-kedai"
+        }
+      ],
+      "scene": "dunia-pakaian-kedai",
+      "chapter": 8
+    },
+    {
+      "id": "ms-d-pakaian-kedai-11",
+      "lang": "ms",
+      "term": "batik",
+      "gloss_en": "batik",
+      "gloss_ja": "バティック",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pakaian-kedai"
+        },
+        {
+          "type": "pinjam",
+          "text": "Also a loanword in Japanese: バティック."
+        }
+      ],
+      "scene": "dunia-pakaian-kedai",
+      "chapter": 8
+    },
+    {
+      "id": "ms-d-pakaian-kedai-12",
+      "lang": "ms",
+      "term": "corak",
+      "gloss_en": "pattern, design",
+      "gloss_ja": "柄",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pakaian-kedai"
+        }
+      ],
+      "scene": "dunia-pakaian-kedai",
+      "chapter": 8
+    }
+  ]
+}

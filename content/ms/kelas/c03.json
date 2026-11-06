@@ -1,0 +1,1170 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c03",
+  "chapter": 3,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Nombor, Wang dan Ukuran",
+    "en": "Numbers, money and measurements",
+    "ja": "数・お金・単位"
+  },
+  "cards": [
+    {
+      "id": "ms-c03-001",
+      "lang": "ms",
+      "term": "kosong / sifar",
+      "gloss_en": "zero",
+      "gloss_ja": "ゼロ",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": "kosong also means 'empty / plain' (see Ch5).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-002",
+      "lang": "ms",
+      "term": "satu",
+      "gloss_en": "one",
+      "gloss_ja": "1",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-003",
+      "lang": "ms",
+      "term": "dua",
+      "gloss_en": "two",
+      "gloss_ja": "2",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-004",
+      "lang": "ms",
+      "term": "tiga",
+      "gloss_en": "three",
+      "gloss_ja": "3",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-005",
+      "lang": "ms",
+      "term": "empat",
+      "gloss_en": "four",
+      "gloss_ja": "4",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-006",
+      "lang": "ms",
+      "term": "lima",
+      "gloss_en": "five",
+      "gloss_ja": "5",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-007",
+      "lang": "ms",
+      "term": "enam",
+      "gloss_en": "six",
+      "gloss_ja": "6",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-008",
+      "lang": "ms",
+      "term": "tujuh",
+      "gloss_en": "seven",
+      "gloss_ja": "7",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-009",
+      "lang": "ms",
+      "term": "lapan",
+      "gloss_en": "eight",
+      "gloss_ja": "8",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-010",
+      "lang": "ms",
+      "term": "sembilan",
+      "gloss_en": "nine",
+      "gloss_ja": "9",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-011",
+      "lang": "ms",
+      "term": "sepuluh",
+      "gloss_en": "ten",
+      "gloss_ja": "10",
+      "pos": "number",
+      "affix_tag": "se-",
+      "note": "se- (one) + puluh",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-012",
+      "lang": "ms",
+      "term": "sebelas",
+      "gloss_en": "eleven",
+      "gloss_ja": "11",
+      "pos": "number",
+      "affix_tag": "se-",
+      "note": "se- + belas",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-013",
+      "lang": "ms",
+      "term": "dua belas",
+      "gloss_en": "twelve",
+      "gloss_ja": "12",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": "2 + belas (teen)",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-014",
+      "lang": "ms",
+      "term": "dua puluh",
+      "gloss_en": "twenty",
+      "gloss_ja": "20",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-015",
+      "lang": "ms",
+      "term": "seratus",
+      "gloss_en": "one hundred",
+      "gloss_ja": "100",
+      "pos": "number",
+      "affix_tag": "se-",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-016",
+      "lang": "ms",
+      "term": "seribu",
+      "gloss_en": "one thousand",
+      "gloss_ja": "1,000",
+      "pos": "number",
+      "affix_tag": "se-",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-017",
+      "lang": "ms",
+      "term": "sejuta",
+      "gloss_en": "one million",
+      "gloss_ja": "100万",
+      "pos": "number",
+      "affix_tag": "se-",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-018",
+      "lang": "ms",
+      "term": "berapa",
+      "gloss_en": "how many, how much",
+      "gloss_ja": "いくつ・いくら",
+      "pos": "question",
+      "affix_tag": "lex",
+      "note": "ber- + apa, learned whole.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-019",
+      "lang": "ms",
+      "term": "harga",
+      "gloss_en": "price",
+      "gloss_ja": "値段",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-020",
+      "lang": "ms",
+      "term": "ringgit",
+      "gloss_en": "ringgit (RM)",
+      "gloss_ja": "リンギット",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-021",
+      "lang": "ms",
+      "term": "sen",
+      "gloss_en": "sen (1/100 ringgit)",
+      "gloss_ja": "セン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "RM12.50 = dua belas ringgit lima puluh sen",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-022",
+      "lang": "ms",
+      "term": "duit / wang",
+      "gloss_en": "money",
+      "gloss_ja": "お金",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "duit is everyday; wang is standard.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-023",
+      "lang": "ms",
+      "term": "mahal",
+      "gloss_en": "expensive",
+      "gloss_ja": "高い（値段）",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-024",
+      "lang": "ms",
+      "term": "murah",
+      "gloss_en": "cheap",
+      "gloss_ja": "安い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-025",
+      "lang": "ms",
+      "term": "tunai",
+      "gloss_en": "cash",
+      "gloss_ja": "現金",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-026",
+      "lang": "ms",
+      "term": "kad",
+      "gloss_en": "card",
+      "gloss_ja": "カード",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-027",
+      "lang": "ms",
+      "term": "baki",
+      "gloss_en": "change; balance",
+      "gloss_ja": "おつり・残高",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-028",
+      "lang": "ms",
+      "term": "diskaun",
+      "gloss_en": "discount",
+      "gloss_ja": "割引",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-029",
+      "lang": "ms",
+      "term": "bayar",
+      "gloss_en": "to pay",
+      "gloss_ja": "払う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-030",
+      "lang": "ms",
+      "term": "beli",
+      "gloss_en": "to buy",
+      "gloss_ja": "買う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Spoken active form; formal written form is membeli.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-031",
+      "lang": "ms",
+      "term": "jual",
+      "gloss_en": "to sell",
+      "gloss_ja": "売る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-032",
+      "lang": "ms",
+      "term": "bukan",
+      "gloss_en": "not (for nouns)",
+      "gloss_ja": "〜ではない",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Bukan, ini kali ketiga.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-033",
+      "lang": "ms",
+      "term": "umur",
+      "gloss_en": "age",
+      "gloss_ja": "年齢",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-034",
+      "lang": "ms",
+      "term": "tahun",
+      "gloss_en": "year; years old",
+      "gloss_ja": "年・歳",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Umur saya 35 tahun.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-035",
+      "lang": "ms",
+      "term": "kali",
+      "gloss_en": "time(s), occurrence",
+      "gloss_ja": "回",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "kali pertama = the first time",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-036",
+      "lang": "ms",
+      "term": "pertama",
+      "gloss_en": "first",
+      "gloss_ja": "第一・最初",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": "Irregular; not *kesatu in everyday use.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-037",
+      "lang": "ms",
+      "term": "kedua",
+      "gloss_en": "second",
+      "gloss_ja": "第二",
+      "pos": "number",
+      "affix_tag": "ke-",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-038",
+      "lang": "ms",
+      "term": "ketiga",
+      "gloss_en": "third",
+      "gloss_ja": "第三",
+      "pos": "number",
+      "affix_tag": "ke-",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-039",
+      "lang": "ms",
+      "term": "kesepuluh",
+      "gloss_en": "tenth",
+      "gloss_ja": "第十",
+      "pos": "number",
+      "affix_tag": "ke-",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-040",
+      "lang": "ms",
+      "term": "setengah / separuh",
+      "gloss_en": "half",
+      "gloss_ja": "半分",
+      "pos": "number",
+      "affix_tag": "se-",
+      "note": "pukul dua setengah (Ch4) = 2:30",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-041",
+      "lang": "ms",
+      "term": "suku",
+      "gloss_en": "quarter",
+      "gloss_ja": "4分の1",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-042",
+      "lang": "ms",
+      "term": "tiga suku",
+      "gloss_en": "three quarters",
+      "gloss_ja": "4分の3",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-043",
+      "lang": "ms",
+      "term": "satu per tiga / sepertiga",
+      "gloss_en": "one third",
+      "gloss_ja": "3分の1",
+      "pos": "number",
+      "affix_tag": "se-",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-044",
+      "lang": "ms",
+      "term": "perpuluhan",
+      "gloss_en": "decimal point",
+      "gloss_ja": "小数点",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "2.5 = dua perpuluhan lima",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-045",
+      "lang": "ms",
+      "term": "peratus",
+      "gloss_en": "percent",
+      "gloss_ja": "パーセント",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "lima puluh peratus = 50%",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-046",
+      "lang": "ms",
+      "term": "tinggi",
+      "gloss_en": "tall, high",
+      "gloss_ja": "高い（背・高さ）",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-047",
+      "lang": "ms",
+      "term": "berat",
+      "gloss_en": "heavy; weight",
+      "gloss_ja": "重い・重さ",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Not a ber- word: 'berat' is the root.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-048",
+      "lang": "ms",
+      "term": "panjang",
+      "gloss_en": "long",
+      "gloss_ja": "長い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-049",
+      "lang": "ms",
+      "term": "lebar",
+      "gloss_en": "wide",
+      "gloss_ja": "幅が広い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-050",
+      "lang": "ms",
+      "term": "ketinggian",
+      "gloss_en": "height",
+      "gloss_ja": "高さ",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "tinggi → ketinggian",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-051",
+      "lang": "ms",
+      "term": "kepanjangan",
+      "gloss_en": "length",
+      "gloss_ja": "長さ",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "panjang → kepanjangan",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-052",
+      "lang": "ms",
+      "term": "kelebaran",
+      "gloss_en": "width",
+      "gloss_ja": "幅",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "lebar → kelebaran",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-053",
+      "lang": "ms",
+      "term": "kedalaman",
+      "gloss_en": "depth",
+      "gloss_ja": "深さ",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "dalam → kedalaman",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-054",
+      "lang": "ms",
+      "term": "sentimeter / meter",
+      "gloss_en": "centimetre / metre",
+      "gloss_ja": "センチ／メートル",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-055",
+      "lang": "ms",
+      "term": "kilo",
+      "gloss_en": "kilogram",
+      "gloss_ja": "キロ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-056",
+      "lang": "ms",
+      "term": "nombor telefon",
+      "gloss_en": "phone number",
+      "gloss_ja": "電話番号",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c03-f01",
+      "frame": "Berapa harga ___?",
+      "example": "Berapa harga mangga ini?",
+      "meaning_en": "How much are these mangoes?",
+      "meaning_ja": "このマンゴーはいくらですか。"
+    },
+    {
+      "id": "ms-c03-f02",
+      "frame": "Harganya ___ ringgit (___ sen).",
+      "example": "Harganya lapan ringgit lima puluh sen.",
+      "meaning_en": "It's RM8.50.",
+      "meaning_ja": "8リンギット50センです。"
+    },
+    {
+      "id": "ms-c03-f03",
+      "frame": "Berapa umur (title)? / Umur saya ___ tahun.",
+      "example": "Umur saya tiga puluh lima tahun.",
+      "meaning_en": "I'm 35 years old.",
+      "meaning_ja": "私は35歳です。"
+    },
+    {
+      "id": "ms-c03-f04",
+      "frame": "Ini kali (ordinal) saya di ___.",
+      "example": "Ini kali kedua saya di Malaysia.",
+      "meaning_en": "This is my second time in Malaysia.",
+      "meaning_ja": "マレーシアは今回が2回目です。"
+    },
+    {
+      "id": "ms-c03-f05",
+      "frame": "Diskaun ___ peratus.",
+      "example": "Diskaun dua puluh peratus.",
+      "meaning_en": "20% discount.",
+      "meaning_ja": "20パーセント引きです。"
+    },
+    {
+      "id": "ms-c03-f06",
+      "frame": "Ketinggian ___ ___ meter.",
+      "example": "Ketinggian bangunan ini tiga ratus meter.",
+      "meaning_en": "This building is 300 metres tall.",
+      "meaning_ja": "このビルの高さは300メートルです。"
+    },
+    {
+      "id": "ms-c03-f07",
+      "frame": "Nombor telefon saya ___.",
+      "example": "Nombor telefon saya kosong satu dua...",
+      "meaning_en": "My phone number is 012...",
+      "meaning_ja": "私の電話番号は012…です。"
+    }
+  ],
+  "scenario": {
+    "title_en": "At the pasar malam",
+    "title_ja": "パサール・マラム（夜市）で",
+    "lines": [
+      {
+        "id": "ms-c03-s01",
+        "speaker": "Tanaka",
+        "ms": "Mak cik, berapa harga mangga ini?",
+        "en": "Auntie, how much are these mangoes?"
+      },
+      {
+        "id": "ms-c03-s02",
+        "speaker": "Mak Cik Rosnah",
+        "ms": "Satu kilo lapan ringgit.",
+        "en": "Eight ringgit a kilo."
+      },
+      {
+        "id": "ms-c03-s03",
+        "speaker": "Tanaka",
+        "ms": "Dua kilo berapa? Boleh diskaun?",
+        "en": "How much for two kilos? Any discount?"
+      },
+      {
+        "id": "ms-c03-s04",
+        "speaker": "Mak Cik Rosnah",
+        "ms": "Boleh. Dua kilo lima belas ringgit.",
+        "en": "Sure. Two kilos for fifteen ringgit."
+      },
+      {
+        "id": "ms-c03-s05",
+        "speaker": "Tanaka",
+        "ms": "Baik. Ini dua puluh ringgit.",
+        "en": "Okay. Here's twenty ringgit."
+      },
+      {
+        "id": "ms-c03-s06",
+        "speaker": "Mak Cik Rosnah",
+        "ms": "Baki lima ringgit. Ini kali pertama encik di pasar malam?",
+        "en": "Your change is five ringgit. Is this your first time at a night market?"
+      },
+      {
+        "id": "ms-c03-s07",
+        "speaker": "Tanaka",
+        "ms": "Bukan. Ini kali ketiga!",
+        "en": "No. This is my third time!"
+      },
+      {
+        "id": "ms-c03-s08",
+        "speaker": "Mak Cik Rosnah",
+        "ms": "Bagus! Terima kasih, encik.",
+        "en": "Great! Thank you."
+      },
+      {
+        "id": "ms-c03-s09",
+        "speaker": "Tanaka",
+        "ms": "Sama-sama, mak cik. Jumpa lagi!",
+        "en": "You're welcome, auntie. See you again!"
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c03-001",
+      "ms-c03-002",
+      "ms-c03-003",
+      "ms-c03-004",
+      "ms-c03-006",
+      "ms-c03-009",
+      "ms-c03-013",
+      "ms-c03-014",
+      "ms-c03-018",
+      "ms-c03-019",
+      "ms-c03-020",
+      "ms-c03-021",
+      "ms-c03-027",
+      "ms-c03-028",
+      "ms-c03-032",
+      "ms-c03-033",
+      "ms-c03-034",
+      "ms-c03-035",
+      "ms-c03-036",
+      "ms-c03-037",
+      "ms-c03-038",
+      "ms-c03-045",
+      "ms-c03-050",
+      "ms-c03-054",
+      "ms-c03-055",
+      "ms-c03-056"
+    ],
+    "frames": [
+      "ms-c03-f01",
+      "ms-c03-f02"
+    ],
+    "scene": "pasar-pagi"
+  }
+}

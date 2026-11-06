@@ -1,0 +1,751 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c06",
+  "chapter": 6,
+  "status": "draft",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Perbandingan",
+    "en": "Comparison",
+    "ja": "比較"
+  },
+  "cards": [
+    {
+      "id": "ms-c06-001",
+      "lang": "ms",
+      "term": "lebih",
+      "gloss_en": "more",
+      "gloss_ja": "もっと・より",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-002",
+      "lang": "ms",
+      "term": "kurang",
+      "gloss_en": "less",
+      "gloss_ja": "より少ない",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Also 'minus' in telling time (Ch4).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-003",
+      "lang": "ms",
+      "term": "daripada",
+      "gloss_en": "than",
+      "gloss_ja": "〜より",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-004",
+      "lang": "ms",
+      "term": "sama",
+      "gloss_en": "same",
+      "gloss_ja": "同じ",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "sama ___ dengan = as ___ as",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-005",
+      "lang": "ms",
+      "term": "setinggi",
+      "gloss_en": "as tall as",
+      "gloss_ja": "同じくらい高い",
+      "pos": "adj",
+      "affix_tag": "se-",
+      "note": "se- + tinggi",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-006",
+      "lang": "ms",
+      "term": "semahal",
+      "gloss_en": "as expensive as",
+      "gloss_ja": "同じくらい高価",
+      "pos": "adj",
+      "affix_tag": "se-",
+      "note": "se- + mahal",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-007",
+      "lang": "ms",
+      "term": "sangat",
+      "gloss_en": "very (before adjective)",
+      "gloss_ja": "とても",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-008",
+      "lang": "ms",
+      "term": "sekali",
+      "gloss_en": "very (after adjective)",
+      "gloss_ja": "とても（後置）",
+      "pos": "adv",
+      "affix_tag": "se-",
+      "note": "cantik sekali. Same word as 'once' in Ch4.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-009",
+      "lang": "ms",
+      "term": "amat",
+      "gloss_en": "very (formal)",
+      "gloss_ja": "非常に",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-010",
+      "lang": "ms",
+      "term": "terlalu",
+      "gloss_en": "too (excessively)",
+      "gloss_ja": "〜すぎる",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-011",
+      "lang": "ms",
+      "term": "paling",
+      "gloss_en": "most",
+      "gloss_ja": "一番",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-012",
+      "lang": "ms",
+      "term": "termurah",
+      "gloss_en": "cheapest",
+      "gloss_ja": "一番安い",
+      "pos": "adj",
+      "affix_tag": "ter-",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-013",
+      "lang": "ms",
+      "term": "terbesar",
+      "gloss_en": "biggest",
+      "gloss_ja": "一番大きい",
+      "pos": "adj",
+      "affix_tag": "ter-",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-014",
+      "lang": "ms",
+      "term": "terbaik",
+      "gloss_en": "best",
+      "gloss_ja": "最高・一番良い",
+      "pos": "adj",
+      "affix_tag": "ter-",
+      "note": "baik → terbaik",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-015",
+      "lang": "ms",
+      "term": "tercantik",
+      "gloss_en": "most beautiful",
+      "gloss_ja": "一番きれい",
+      "pos": "adj",
+      "affix_tag": "ter-",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-016",
+      "lang": "ms",
+      "term": "yang mana",
+      "gloss_en": "which one",
+      "gloss_ja": "どれ",
+      "pos": "question",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-017",
+      "lang": "ms",
+      "term": "pilih",
+      "gloss_en": "to choose",
+      "gloss_ja": "選ぶ",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-018",
+      "lang": "ms",
+      "term": "lain",
+      "gloss_en": "other, different",
+      "gloss_ja": "他の・違う",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-019",
+      "lang": "ms",
+      "term": "cantik",
+      "gloss_en": "beautiful, pretty",
+      "gloss_ja": "きれい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-020",
+      "lang": "ms",
+      "term": "bagus",
+      "gloss_en": "good, great",
+      "gloss_ja": "良い・すごい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-021",
+      "lang": "ms",
+      "term": "baru",
+      "gloss_en": "new",
+      "gloss_ja": "新しい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Also 'just' (Ch4).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-022",
+      "lang": "ms",
+      "term": "lama",
+      "gloss_en": "old (things); long (time)",
+      "gloss_ja": "古い；長い（時間）",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Ch7 uses lama for time.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-023",
+      "lang": "ms",
+      "term": "mudah / senang",
+      "gloss_en": "easy",
+      "gloss_ja": "簡単",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-024",
+      "lang": "ms",
+      "term": "susah",
+      "gloss_en": "difficult",
+      "gloss_ja": "難しい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-025",
+      "lang": "ms",
+      "term": "cepat",
+      "gloss_en": "fast",
+      "gloss_ja": "速い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-026",
+      "lang": "ms",
+      "term": "perlahan",
+      "gloss_en": "slow",
+      "gloss_ja": "遅い（速度）",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-027",
+      "lang": "ms",
+      "term": "selesa",
+      "gloss_en": "comfortable",
+      "gloss_ja": "快適",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-028",
+      "lang": "ms",
+      "term": "ramai",
+      "gloss_en": "crowded, many (people)",
+      "gloss_ja": "混んでいる・人が多い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-029",
+      "lang": "ms",
+      "term": "sunyi",
+      "gloss_en": "quiet",
+      "gloss_ja": "静か",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-030",
+      "lang": "ms",
+      "term": "bising",
+      "gloss_en": "noisy",
+      "gloss_ja": "うるさい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-031",
+      "lang": "ms",
+      "term": "bersih",
+      "gloss_en": "clean",
+      "gloss_ja": "きれい（清潔）",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "A root word that only looks like a ber- word.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-032",
+      "lang": "ms",
+      "term": "kotor",
+      "gloss_en": "dirty",
+      "gloss_ja": "汚い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-033",
+      "lang": "ms",
+      "term": "kondo",
+      "gloss_en": "condominium",
+      "gloss_ja": "マンション",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-034",
+      "lang": "ms",
+      "term": "stesen",
+      "gloss_en": "station",
+      "gloss_ja": "駅",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c06-f01",
+      "frame": "A lebih ___ daripada B.",
+      "example": "Kondo A lebih besar daripada kondo B.",
+      "meaning_en": "Condo A is bigger than condo B.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c06-f02",
+      "frame": "A kurang ___ daripada B.",
+      "example": "Kondo B kurang mahal daripada kondo A.",
+      "meaning_en": "Condo B is less expensive than condo A.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c06-f03",
+      "frame": "A sama ___ dengan B. / A se-___ B.",
+      "example": "Kondo D semahal kondo A.",
+      "meaning_en": "Condo D is as expensive as condo A.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c06-f04",
+      "frame": "___ paling ___. / ___ ter-___.",
+      "example": "Kondo C paling murah. Kondo C termurah.",
+      "meaning_en": "Condo C is the cheapest.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c06-f05",
+      "frame": "Yang mana lebih ___?",
+      "example": "Yang mana lebih selesa?",
+      "meaning_en": "Which one is more comfortable?",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c06-f06",
+      "frame": "___ ini terlalu ___.",
+      "example": "Kondo ini terlalu jauh.",
+      "meaning_en": "This condo is too far.",
+      "meaning_ja": null
+    }
+  ],
+  "scenario": {
+    "title_en": "Choosing a condo",
+    "title_ja": null,
+    "lines": [
+      {
+        "id": "ms-c06-s01",
+        "speaker": "Cik Mei Ling",
+        "ms": "Encik Tanaka, encik suka kondo yang mana?",
+        "en": "Which condo do you like?"
+      },
+      {
+        "id": "ms-c06-s02",
+        "speaker": "Tanaka",
+        "ms": "Kondo A lebih besar daripada kondo B, tetapi kondo A lebih mahal.",
+        "en": "Condo A is bigger than B, but A is more expensive."
+      },
+      {
+        "id": "ms-c06-s03",
+        "speaker": "Cik Mei Ling",
+        "ms": "Kondo B kurang besar, tetapi lebih dekat dengan stesen LRT.",
+        "en": "Condo B is smaller, but closer to the LRT station."
+      },
+      {
+        "id": "ms-c06-s04",
+        "speaker": "Tanaka",
+        "ms": "Kondo C pula?",
+        "en": "What about condo C?"
+      },
+      {
+        "id": "ms-c06-s05",
+        "speaker": "Cik Mei Ling",
+        "ms": "Kondo C paling murah, tetapi terlalu jauh dari pejabat.",
+        "en": "Condo C is the cheapest, but too far from the office."
+      },
+      {
+        "id": "ms-c06-s06",
+        "speaker": "Tanaka",
+        "ms": "Harga kondo A dan kondo D sama?",
+        "en": "Are condos A and D the same price?"
+      },
+      {
+        "id": "ms-c06-s07",
+        "speaker": "Cik Mei Ling",
+        "ms": "Ya. Kondo D semahal kondo A, tetapi kondo D paling baru dan sangat selesa.",
+        "en": "Yes. D is as expensive as A, but D is the newest and very comfortable."
+      },
+      {
+        "id": "ms-c06-s08",
+        "speaker": "Tanaka",
+        "ms": "Kondo D yang terbaik! Saya pilih kondo D.",
+        "en": "Condo D is the best! I'll choose D."
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c06-001",
+      "ms-c06-002",
+      "ms-c06-003",
+      "ms-c06-004",
+      "ms-c06-006",
+      "ms-c06-007",
+      "ms-c06-010",
+      "ms-c06-011",
+      "ms-c06-012",
+      "ms-c06-014",
+      "ms-c06-016",
+      "ms-c06-017",
+      "ms-c06-021",
+      "ms-c06-027",
+      "ms-c06-033",
+      "ms-c06-034"
+    ],
+    "frames": [
+      "ms-c06-f01",
+      "ms-c06-f02"
+    ],
+    "scene": null
+  }
+}

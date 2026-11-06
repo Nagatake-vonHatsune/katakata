@@ -1,0 +1,251 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "jalan-lintas",
+  "chapter": 7,
+  "status": "draft",
+  "ja_review": "pending",
+  "world": {
+    "id": "jalan",
+    "ms": "Jalan",
+    "en": "Street",
+    "ja": "道"
+  },
+  "title": {
+    "ms": "Lintas jalan",
+    "en": "Crossing the road",
+    "ja": "道を渡る"
+  },
+  "setting": {
+    "en": "Tanaka walks from the LRT station to a restaurant across a busy road.",
+    "ja": "田中さんはLRTの駅から、にぎやかな道の向こうのレストランまで歩きます。"
+  },
+  "cards": [
+    {
+      "id": "ms-d-jalan-lintas-01",
+      "lang": "ms",
+      "term": "motosikal",
+      "gloss_en": "motorcycle",
+      "gloss_ja": "バイク",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jalan-lintas"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'motorcycle'."
+        }
+      ],
+      "scene": "dunia-jalan-lintas",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-jalan-lintas-02",
+      "lang": "ms",
+      "term": "lori",
+      "gloss_en": "lorry, truck",
+      "gloss_ja": "トラック",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jalan-lintas"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'lorry'."
+        }
+      ],
+      "scene": "dunia-jalan-lintas",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-jalan-lintas-03",
+      "lang": "ms",
+      "term": "basikal",
+      "gloss_en": "bicycle",
+      "gloss_ja": "自転車",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jalan-lintas"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'bicycle'."
+        }
+      ],
+      "scene": "dunia-jalan-lintas",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-jalan-lintas-04",
+      "lang": "ms",
+      "term": "lintas",
+      "gloss_en": "to cross",
+      "gloss_ja": "渡る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jalan-lintas"
+        }
+      ],
+      "scene": "dunia-jalan-lintas",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-jalan-lintas-05",
+      "lang": "ms",
+      "term": "tempat letak kereta",
+      "gloss_en": "car park",
+      "gloss_ja": "駐車場",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jalan-lintas"
+        },
+        {
+          "type": "kanji",
+          "text": "tempat (place) + letak (put) + kereta (car): 'place to put cars', like 駐車場."
+        }
+      ],
+      "scene": "dunia-jalan-lintas",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-jalan-lintas-06",
+      "lang": "ms",
+      "term": "pejalan kaki",
+      "gloss_en": "pedestrian",
+      "gloss_ja": "歩行者",
+      "pos": "noun",
+      "affix_tag": "pe-",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jalan-lintas"
+        },
+        {
+          "type": "keluarga",
+          "text": "pe- + jalan kaki (Ch7): 'one who walks'."
+        }
+      ],
+      "scene": "dunia-jalan-lintas",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-jalan-lintas-07",
+      "lang": "ms",
+      "term": "jejantas",
+      "gloss_en": "pedestrian bridge",
+      "gloss_ja": "歩道橋",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jalan-lintas"
+        }
+      ],
+      "scene": "dunia-jalan-lintas",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-jalan-lintas-08",
+      "lang": "ms",
+      "term": "tunggu",
+      "gloss_en": "to wait",
+      "gloss_ja": "待つ",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jalan-lintas"
+        }
+      ],
+      "scene": "dunia-jalan-lintas",
+      "chapter": 7,
+      "seen_in_class": 4
+    },
+    {
+      "id": "ms-d-jalan-lintas-09",
+      "lang": "ms",
+      "term": "cepat",
+      "gloss_en": "quick, fast",
+      "gloss_ja": "速い・早く",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jalan-lintas"
+        }
+      ],
+      "scene": "dunia-jalan-lintas",
+      "chapter": 7,
+      "seen_in_class": 6
+    },
+    {
+      "id": "ms-d-jalan-lintas-10",
+      "lang": "ms",
+      "term": "bahaya",
+      "gloss_en": "danger, dangerous",
+      "gloss_ja": "危ない",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jalan-lintas"
+        }
+      ],
+      "scene": "dunia-jalan-lintas",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-jalan-lintas-11",
+      "lang": "ms",
+      "term": "hati-hati",
+      "gloss_en": "be careful",
+      "gloss_ja": "気をつけて",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jalan-lintas"
+        },
+        {
+          "type": "keluarga",
+          "text": "From Ch1: now used for real."
+        }
+      ],
+      "scene": "dunia-jalan-lintas",
+      "chapter": 7,
+      "seen_in_class": 1
+    }
+  ]
+}

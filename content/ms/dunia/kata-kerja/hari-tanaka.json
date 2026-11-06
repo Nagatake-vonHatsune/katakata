@@ -1,0 +1,364 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "hari-tanaka",
+  "chapter": 4,
+  "status": "draft",
+  "ja_review": "pending",
+  "world": {
+    "id": "kata-kerja",
+    "ms": "Kata Kerja Harian",
+    "en": "Daily verbs",
+    "ja": "毎日の動詞"
+  },
+  "title": {
+    "ms": "Satu hari Encik Tanaka",
+    "en": "A day in Tanaka's life",
+    "ja": "田中さんの一日"
+  },
+  "setting": {
+    "en": "One day told as a timeline, so each verb sits in a moment rather than on a list.",
+    "ja": "一日を時間の流れで追うので、動詞がリストではなく場面の中にあります。"
+  },
+  "cards": [
+    {
+      "id": "ms-d-hari-tanaka-01",
+      "lang": "ms",
+      "term": "duduk",
+      "gloss_en": "to sit",
+      "gloss_ja": "座る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-02",
+      "lang": "ms",
+      "term": "dengar",
+      "gloss_en": "to listen, hear",
+      "gloss_ja": "聞く",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-03",
+      "lang": "ms",
+      "term": "cakap",
+      "gloss_en": "to speak, say",
+      "gloss_ja": "話す・言う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-04",
+      "lang": "ms",
+      "term": "baca",
+      "gloss_en": "to read",
+      "gloss_ja": "読む",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-05",
+      "lang": "ms",
+      "term": "tulis",
+      "gloss_en": "to write",
+      "gloss_ja": "書く",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-06",
+      "lang": "ms",
+      "term": "faham",
+      "gloss_en": "to understand",
+      "gloss_ja": "わかる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-07",
+      "lang": "ms",
+      "term": "tahu",
+      "gloss_en": "to know",
+      "gloss_ja": "知っている",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        },
+        {
+          "type": "bunyi",
+          "text": "豆腐のことは知っている (tahu). Tofu in Malay is tauhu."
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-08",
+      "lang": "ms",
+      "term": "ingat",
+      "gloss_en": "to remember",
+      "gloss_ja": "覚えている",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-09",
+      "lang": "ms",
+      "term": "lupa",
+      "gloss_en": "to forget",
+      "gloss_ja": "忘れる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-10",
+      "lang": "ms",
+      "term": "guna",
+      "gloss_en": "to use",
+      "gloss_ja": "使う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-11",
+      "lang": "ms",
+      "term": "ambil",
+      "gloss_en": "to take",
+      "gloss_ja": "取る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-12",
+      "lang": "ms",
+      "term": "bagi",
+      "gloss_en": "to give",
+      "gloss_ja": "あげる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-13",
+      "lang": "ms",
+      "term": "bawa",
+      "gloss_en": "to bring, carry",
+      "gloss_ja": "持っていく",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-14",
+      "lang": "ms",
+      "term": "buka",
+      "gloss_en": "to open",
+      "gloss_ja": "開ける",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-15",
+      "lang": "ms",
+      "term": "tutup",
+      "gloss_en": "to close; to switch off",
+      "gloss_ja": "閉める・消す",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-16",
+      "lang": "ms",
+      "term": "kemas",
+      "gloss_en": "to tidy",
+      "gloss_ja": "片付ける",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-hari-tanaka-17",
+      "lang": "ms",
+      "term": "buku",
+      "gloss_en": "book",
+      "gloss_ja": "本",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        },
+        {
+          "type": "bunyi",
+          "text": "僕 (boku) の本."
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4,
+      "seen_in_class": 8
+    },
+    {
+      "id": "ms-d-hari-tanaka-18",
+      "lang": "ms",
+      "term": "kaki",
+      "gloss_en": "foot, leg",
+      "gloss_ja": "足",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-hari-tanaka"
+        },
+        {
+          "type": "bunyi",
+          "text": "柿 (kaki) を足で踏む: stepping on a persimmon."
+        }
+      ],
+      "scene": "dunia-hari-tanaka",
+      "chapter": 4,
+      "seen_in_class": 8
+    }
+  ]
+}

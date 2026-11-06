@@ -1,0 +1,921 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c08",
+  "chapter": 8,
+  "status": "draft",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Penjodoh Bilangan",
+    "en": "Counters",
+    "ja": "助数詞"
+  },
+  "cards": [
+    {
+      "id": "ms-c08-001",
+      "lang": "ms",
+      "term": "orang",
+      "gloss_en": "counter: people",
+      "gloss_ja": "〜人",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "dua orang pelajar",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-002",
+      "lang": "ms",
+      "term": "ekor",
+      "gloss_en": "counter: animals (lit. tail)",
+      "gloss_ja": "〜匹・〜頭・〜羽",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "seekor kucing",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-003",
+      "lang": "ms",
+      "term": "buah",
+      "gloss_en": "counter: large or general objects (lit. fruit)",
+      "gloss_ja": "〜台・〜軒・〜個",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "sebuah kereta, sebuah rumah",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-004",
+      "lang": "ms",
+      "term": "biji",
+      "gloss_en": "counter: small round things (lit. seed)",
+      "gloss_ja": "〜個",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "sebiji telur",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-005",
+      "lang": "ms",
+      "term": "batang",
+      "gloss_en": "counter: long thin things (lit. stem)",
+      "gloss_ja": "〜本",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "sebatang pen, sebatang pokok",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-006",
+      "lang": "ms",
+      "term": "helai",
+      "gloss_en": "counter: thin sheets, clothing, hair (lit. strand)",
+      "gloss_ja": "〜枚・〜本（髪）",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "sehelai baju",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-007",
+      "lang": "ms",
+      "term": "keping",
+      "gloss_en": "counter: flat pieces (paper, photos, slices)",
+      "gloss_ja": "〜枚",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "sekeping gambar",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-008",
+      "lang": "ms",
+      "term": "pucuk",
+      "gloss_en": "counter: letters, guns (lit. shoot)",
+      "gloss_ja": "〜通",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "sepucuk surat",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-009",
+      "lang": "ms",
+      "term": "kuntum",
+      "gloss_en": "counter: flowers (lit. bud)",
+      "gloss_ja": "〜輪",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "sekuntum bunga",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-010",
+      "lang": "ms",
+      "term": "kaki",
+      "gloss_en": "counter: umbrellas (lit. leg)",
+      "gloss_ja": "〜本（傘）",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "sekaki payung",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-011",
+      "lang": "ms",
+      "term": "pasang",
+      "gloss_en": "counter: pairs",
+      "gloss_ja": "〜足・〜組",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "sepasang kasut",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-012",
+      "lang": "ms",
+      "term": "ulas",
+      "gloss_en": "counter: segments (durian, orange)",
+      "gloss_ja": "〜房",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "seulas durian",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-013",
+      "lang": "ms",
+      "term": "naskhah",
+      "gloss_en": "counter: copies of books, newspapers",
+      "gloss_ja": "〜冊・〜部",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "senaskhah surat khabar",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-014",
+      "lang": "ms",
+      "term": "bungkus",
+      "gloss_en": "counter: packets, takeaway packs; to wrap",
+      "gloss_ja": "〜包み；包む・持ち帰り",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "sebungkus nasi lemak",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-015",
+      "lang": "ms",
+      "term": "cawan",
+      "gloss_en": "counter: cups",
+      "gloss_ja": "〜杯",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "secawan kopi",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-016",
+      "lang": "ms",
+      "term": "pinggan",
+      "gloss_en": "counter: plates",
+      "gloss_ja": "〜皿",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "sepinggan mi goreng",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-017",
+      "lang": "ms",
+      "term": "mangkuk",
+      "gloss_en": "counter: bowls",
+      "gloss_ja": "〜杯（丼）",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "semangkuk sup",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-018",
+      "lang": "ms",
+      "term": "botol",
+      "gloss_en": "counter: bottles",
+      "gloss_ja": "〜本（瓶）",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "sebotol air",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-019",
+      "lang": "ms",
+      "term": "tin",
+      "gloss_en": "counter: cans",
+      "gloss_ja": "〜缶",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-020",
+      "lang": "ms",
+      "term": "kotak",
+      "gloss_en": "counter: boxes",
+      "gloss_ja": "〜箱",
+      "pos": "counter",
+      "affix_tag": "root",
+      "note": "sekotak tisu",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-021",
+      "lang": "ms",
+      "term": "seekor",
+      "gloss_en": "one (animal)",
+      "gloss_ja": "1匹",
+      "pos": "counter",
+      "affix_tag": "se-",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-022",
+      "lang": "ms",
+      "term": "sebiji",
+      "gloss_en": "one (small round thing)",
+      "gloss_ja": "1個",
+      "pos": "counter",
+      "affix_tag": "se-",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-023",
+      "lang": "ms",
+      "term": "sebuah",
+      "gloss_en": "one (large / general object)",
+      "gloss_ja": "1台・1軒",
+      "pos": "counter",
+      "affix_tag": "se-",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-024",
+      "lang": "ms",
+      "term": "kucing",
+      "gloss_en": "cat",
+      "gloss_ja": "猫",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-025",
+      "lang": "ms",
+      "term": "ikan",
+      "gloss_en": "fish",
+      "gloss_ja": "魚",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-026",
+      "lang": "ms",
+      "term": "ayam",
+      "gloss_en": "chicken",
+      "gloss_ja": "鶏",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-027",
+      "lang": "ms",
+      "term": "telur",
+      "gloss_en": "egg",
+      "gloss_ja": "卵",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-028",
+      "lang": "ms",
+      "term": "buku",
+      "gloss_en": "book",
+      "gloss_ja": "本",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-029",
+      "lang": "ms",
+      "term": "pen",
+      "gloss_en": "pen",
+      "gloss_ja": "ペン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-030",
+      "lang": "ms",
+      "term": "pokok",
+      "gloss_en": "tree",
+      "gloss_ja": "木",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-031",
+      "lang": "ms",
+      "term": "baju",
+      "gloss_en": "shirt, top",
+      "gloss_ja": "シャツ・服",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-032",
+      "lang": "ms",
+      "term": "kertas",
+      "gloss_en": "paper",
+      "gloss_ja": "紙",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-033",
+      "lang": "ms",
+      "term": "gambar",
+      "gloss_en": "picture, photo",
+      "gloss_ja": "写真・絵",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-034",
+      "lang": "ms",
+      "term": "surat",
+      "gloss_en": "letter",
+      "gloss_ja": "手紙",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-035",
+      "lang": "ms",
+      "term": "surat khabar",
+      "gloss_en": "newspaper",
+      "gloss_ja": "新聞",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "surat + khabar (Ch1).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-036",
+      "lang": "ms",
+      "term": "bunga",
+      "gloss_en": "flower",
+      "gloss_ja": "花",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-037",
+      "lang": "ms",
+      "term": "kasut",
+      "gloss_en": "shoes",
+      "gloss_ja": "靴",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-038",
+      "lang": "ms",
+      "term": "payung",
+      "gloss_en": "umbrella",
+      "gloss_ja": "傘",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-039",
+      "lang": "ms",
+      "term": "sup",
+      "gloss_en": "soup",
+      "gloss_ja": "スープ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-040",
+      "lang": "ms",
+      "term": "tisu",
+      "gloss_en": "tissue",
+      "gloss_ja": "ティッシュ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-041",
+      "lang": "ms",
+      "term": "semua",
+      "gloss_en": "all, everything",
+      "gloss_ja": "全部",
+      "pos": "det",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-042",
+      "lang": "ms",
+      "term": "tolong",
+      "gloss_en": "please (help me)",
+      "gloss_ja": "〜してください",
+      "pos": "particle",
+      "affix_tag": "root",
+      "note": "Tolong bungkus.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-043",
+      "lang": "ms",
+      "term": "Makan sini atau bungkus?",
+      "gloss_en": "Eat here or take away?",
+      "gloss_ja": "店内ですか、持ち帰りですか",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Heard at every food stall.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c08-f01",
+      "frame": "Saya mahu (number) (counter) (noun).",
+      "example": "Saya mahu dua ekor ikan.",
+      "meaning_en": "I'd like two fish.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c08-f02",
+      "frame": "se-(counter) (noun)",
+      "example": "sebiji telur, seekor ayam",
+      "meaning_en": "one egg, one chicken",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c08-f03",
+      "frame": "Berapa (counter) ___?",
+      "example": "Berapa biji telur?",
+      "meaning_en": "How many eggs?",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c08-f04",
+      "frame": "___ ringgit se-(counter).",
+      "example": "Lima ringgit sekuntum.",
+      "meaning_en": "Five ringgit per flower.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c08-f05",
+      "frame": "Tolong bungkus (number) ___.",
+      "example": "Tolong bungkus tiga nasi lemak.",
+      "meaning_en": "Three nasi lemak to go, please.",
+      "meaning_ja": null
+    }
+  ],
+  "scenario": {
+    "title_en": "Morning market and takeaway",
+    "title_ja": null,
+    "lines": [
+      {
+        "id": "ms-c08-s01",
+        "speaker": "Pak Cik Ali",
+        "ms": "Encik mahu apa?",
+        "en": "What would you like?"
+      },
+      {
+        "id": "ms-c08-s02",
+        "speaker": "Tanaka",
+        "ms": "Saya mahu dua ekor ikan dan sepuluh biji telur.",
+        "en": "Two fish and ten eggs, please."
+      },
+      {
+        "id": "ms-c08-s03",
+        "speaker": "Pak Cik Ali",
+        "ms": "Ayam?",
+        "en": "Chicken?"
+      },
+      {
+        "id": "ms-c08-s04",
+        "speaker": "Tanaka",
+        "ms": "Seekor ayam juga. Berapa harga semua?",
+        "en": "One chicken too. How much for everything?"
+      },
+      {
+        "id": "ms-c08-s05",
+        "speaker": "Pak Cik Ali",
+        "ms": "Semua tiga puluh lima ringgit.",
+        "en": "Thirty-five ringgit altogether."
+      },
+      {
+        "id": "ms-c08-s06",
+        "speaker": "(Flower stall)",
+        "ms": "Tanaka: Sekuntum bunga ini berapa?",
+        "en": "How much is one of these flowers?"
+      },
+      {
+        "id": "ms-c08-s07",
+        "speaker": "Penjual bunga",
+        "ms": "Lima ringgit sekuntum.",
+        "en": "Five ringgit each."
+      },
+      {
+        "id": "ms-c08-s08",
+        "speaker": "Tanaka",
+        "ms": "Saya mahu enam kuntum.",
+        "en": "I'll take six."
+      },
+      {
+        "id": "ms-c08-s09",
+        "speaker": "(Mamak)",
+        "ms": "Abang Rashid: Makan sini atau bungkus?",
+        "en": "Eat here or take away?"
+      },
+      {
+        "id": "ms-c08-s10",
+        "speaker": "Tanaka",
+        "ms": "Bungkus. Tolong bungkus tiga nasi lemak dan dua teh tarik.",
+        "en": "Take away. Three nasi lemak and two teh tarik, please."
+      },
+      {
+        "id": "ms-c08-s11",
+        "speaker": "Abang Rashid",
+        "ms": "Siap! Semua dua puluh empat ringgit.",
+        "en": "Done! Twenty-four ringgit in total."
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c08-002",
+      "ms-c08-004",
+      "ms-c08-009",
+      "ms-c08-014",
+      "ms-c08-021",
+      "ms-c08-022",
+      "ms-c08-025",
+      "ms-c08-026",
+      "ms-c08-027",
+      "ms-c08-036",
+      "ms-c08-041",
+      "ms-c08-042",
+      "ms-c08-043"
+    ],
+    "frames": [
+      "ms-c08-f01",
+      "ms-c08-f02"
+    ],
+    "scene": "pakaian-kedai"
+  }
+}

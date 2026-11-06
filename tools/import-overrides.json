@@ -1,0 +1,75 @@
+{
+  "_note": "Hand-written additions merged by import_vocab_bank.py. All Japanese here is a Claude draft: it needs a native check before students see it (spec section 13).",
+  "live_kelas": ["c01", "c02", "c03"],
+  "live_dunia": ["pejabat-pagi", "pasar-pagi", "rumah-bangun-pagi"],
+  "chapter_titles": {
+    "1": {"ms": "Salam dan Sapaan", "en": "Greetings", "ja": "あいさつ"},
+    "2": {"ms": "Kata Ganti Nama dan Perkenalan Diri", "en": "Pronouns and introducing yourself", "ja": "代名詞と自己紹介"},
+    "3": {"ms": "Nombor, Wang dan Ukuran", "en": "Numbers, money and measurements", "ja": "数・お金・単位"},
+    "4": {"ms": "Masa dan Kala", "en": "Time and tense", "ja": "時間と時制"},
+    "5": {"ms": "Kata Sifat", "en": "Adjectives", "ja": "形容詞"},
+    "6": {"ms": "Perbandingan", "en": "Comparison", "ja": "比較"},
+    "7": {"ms": "Arah dan Lokasi", "en": "Directions and location", "ja": "方向と場所"},
+    "8": {"ms": "Penjodoh Bilangan", "en": "Counters", "ja": "助数詞"},
+    "9": {"ms": "Ayat Pasif di-", "en": "The di- passive", "ja": "受け身の di-"}
+  },
+  "scenario_titles_ja": {
+    "1": "会社の初日",
+    "2": "チームとの顔合わせ",
+    "3": "パサール・マラム（夜市）で"
+  },
+  "world_slugs": {
+    "Rumah (Home)": "rumah", "Dapur (Kitchen)": "dapur", "Pejabat (Office)": "pejabat",
+    "Badan (Body)": "badan", "Pakaian (Clothes)": "pakaian", "Pasar (Market)": "pasar",
+    "Jalan (Street)": "jalan", "Cuaca (Weather)": "cuaca", "Kata Kerja Harian (Daily verbs)": "kata-kerja"
+  },
+  "world_ja": {
+    "rumah": "家", "dapur": "台所", "pejabat": "オフィス", "badan": "からだ", "pakaian": "服",
+    "pasar": "市場", "jalan": "道", "cuaca": "天気", "kata-kerja": "毎日の動詞"
+  },
+  "scene_ja": {
+    "rumah-bangun-pagi": {"title": "朝、起きる", "setting": "朝6時半、田中さんの目覚まし時計が鳴ります。起きて、出かける準備をします。"},
+    "rumah-ruang-tamu": {"title": "リビングで", "setting": "田中さんが携帯電話を探しています。どこに置いたのでしょう？"},
+    "dapur-masak": {"title": "ナシゴレンを作る", "setting": "田中さんが初めてナシゴレンを作ってみます。"},
+    "pejabat-pagi": {"title": "オフィスの朝", "setting": "田中さんの最初の仕事：会議の前に書類を印刷して、メールを送ること。"},
+    "badan-klinik": {"title": "クリニックで", "setting": "田中さんは熱があって、クリニックに行きます。"},
+    "pakaian-kedai": {"title": "服を買う", "setting": "会社の夕食会のために、田中さんはバティックのシャツが必要です。"},
+    "pasar-pagi": {"title": "朝市", "setting": "田中さんはロスナおばさんの店で野菜と魚を買います。"},
+    "jalan-lintas": {"title": "道を渡る", "setting": "田中さんはLRTの駅から、にぎやかな道の向こうのレストランまで歩きます。"},
+    "cuaca-hujan": {"title": "午後の雨", "setting": "暑い朝、そして午後は激しいにわか雨。とてもKLらしい一日です。"},
+    "hari-tanaka": {"title": "田中さんの一日", "setting": "一日を時間の流れで追うので、動詞がリストではなく場面の中にあります。"}
+  },
+  "frame_meaning_ja": {
+    "ms-c01-f01": "おはようございます、アイニさん。",
+    "ms-c01-f02": "お元気ですか、ラーマンさん。",
+    "ms-c01-f03": "元気です、ありがとう。あなたは？",
+    "ms-c01-f04": "すみません、ちょっとお尋ねします。",
+    "ms-c01-f05": "お先に失礼します。また明日！",
+    "ms-c02-f01": "私の名前は田中です。",
+    "ms-c02-f02": "お名前は何ですか。",
+    "ms-c02-f03": "私は日本人です。大阪出身です。",
+    "ms-c02-f04": "日本の会社で働いています。エンジニアです。",
+    "ms-c02-f05": "マラヤ大学で勉強しています。",
+    "ms-c02-f06": "モントキアラに住んでいます。",
+    "ms-c02-f07": "趣味はバドミントンです。マレーシア料理が好きです。",
+    "ms-c02-f08": "あなたのオフィスはどこですか。",
+    "ms-c03-f01": "このマンゴーはいくらですか。",
+    "ms-c03-f02": "8リンギット50センです。",
+    "ms-c03-f03": "私は35歳です。",
+    "ms-c03-f04": "マレーシアは今回が2回目です。",
+    "ms-c03-f05": "20パーセント引きです。",
+    "ms-c03-f06": "このビルの高さは300メートルです。",
+    "ms-c03-f07": "私の電話番号は012…です。"
+  },
+  "images": {
+    "ms-d-rumah-bangun-pagi-01": "🌅", "ms-d-rumah-bangun-pagi-02": "🛏️", "ms-d-rumah-bangun-pagi-05": "⏰",
+    "ms-d-rumah-bangun-pagi-06": "🛁", "ms-d-rumah-bangun-pagi-07": "🪞", "ms-d-rumah-bangun-pagi-08": "🦷",
+    "ms-d-rumah-bangun-pagi-09": "🪥", "ms-d-rumah-bangun-pagi-12": "🧼", "ms-d-rumah-bangun-pagi-14": "👕",
+    "ms-d-pejabat-pagi-01": "💻", "ms-d-pejabat-pagi-02": "📄", "ms-d-pejabat-pagi-03": "📁",
+    "ms-d-pejabat-pagi-04": "📧", "ms-d-pejabat-pagi-05": "🖨️", "ms-d-pejabat-pagi-06": "📤",
+    "ms-d-pejabat-pagi-07": "💾", "ms-d-pejabat-pagi-08": "✍️", "ms-d-pejabat-pagi-12": "🏖️",
+    "ms-d-pasar-pagi-01": "🏪", "ms-d-pasar-pagi-02": "🥬", "ms-d-pasar-pagi-03": "🍎",
+    "ms-d-pasar-pagi-04": "🐟", "ms-d-pasar-pagi-05": "🥩", "ms-d-pasar-pagi-06": "🌶️",
+    "ms-d-pasar-pagi-08": "⚖️", "ms-d-pasar-pagi-10": "🛍️"
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "pasar-pagi",
+  "chapter": 3,
+  "status": "live",
+  "ja_review": "pending",
+  "world": {
+    "id": "pasar",
+    "ms": "Pasar",
+    "en": "Market",
+    "ja": "市場"
+  },
+  "title": {
+    "ms": "Pasar pagi",
+    "en": "Morning market",
+    "ja": "朝市"
+  },
+  "setting": {
+    "en": "Tanaka shops for vegetables and fish with Mak Cik Rosnah.",
+    "ja": "田中さんはロスナおばさんの店で野菜と魚を買います。"
+  },
+  "cards": [
+    {
+      "id": "ms-d-pasar-pagi-01",
+      "lang": "ms",
+      "term": "pasar",
+      "gloss_en": "market",
+      "gloss_ja": "市場",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pasar-pagi"
+        },
+        {
+          "type": "bunyi",
+          "text": "Sounds like バザー."
+        }
+      ],
+      "scene": "dunia-pasar-pagi",
+      "chapter": 3,
+      "image": "🏪"
+    },
+    {
+      "id": "ms-d-pasar-pagi-02",
+      "lang": "ms",
+      "term": "sayur",
+      "gloss_en": "vegetables",
+      "gloss_ja": "野菜",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pasar-pagi"
+        }
+      ],
+      "scene": "dunia-pasar-pagi",
+      "chapter": 3,
+      "image": "🥬"
+    },
+    {
+      "id": "ms-d-pasar-pagi-03",
+      "lang": "ms",
+      "term": "buah",
+      "gloss_en": "fruit",
+      "gloss_ja": "果物",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pasar-pagi"
+        },
+        {
+          "type": "keluarga",
+          "text": "Also the general counter (Ch8): sebuah kereta."
+        }
+      ],
+      "scene": "dunia-pasar-pagi",
+      "chapter": 3,
+      "seen_in_class": 8,
+      "image": "🍎"
+    },
+    {
+      "id": "ms-d-pasar-pagi-04",
+      "lang": "ms",
+      "term": "ikan",
+      "gloss_en": "fish",
+      "gloss_ja": "魚",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pasar-pagi"
+        },
+        {
+          "type": "amaran",
+          "text": "Not イカ! Squid is sotong. ikan = fish."
+        }
+      ],
+      "scene": "dunia-pasar-pagi",
+      "chapter": 3,
+      "seen_in_class": 8,
+      "image": "🐟"
+    },
+    {
+      "id": "ms-d-pasar-pagi-05",
+      "lang": "ms",
+      "term": "daging",
+      "gloss_en": "meat",
+      "gloss_ja": "肉",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pasar-pagi"
+        }
+      ],
+      "scene": "dunia-pasar-pagi",
+      "chapter": 3,
+      "image": "🥩"
+    },
+    {
+      "id": "ms-d-pasar-pagi-06",
+      "lang": "ms",
+      "term": "cili",
+      "gloss_en": "chilli",
+      "gloss_ja": "唐辛子",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pasar-pagi"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'chilli'."
+        }
+      ],
+      "scene": "dunia-pasar-pagi",
+      "chapter": 3,
+      "image": "🌶️"
+    },
+    {
+      "id": "ms-d-pasar-pagi-07",
+      "lang": "ms",
+      "term": "segar",
+      "gloss_en": "fresh",
+      "gloss_ja": "新鮮",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pasar-pagi"
+        }
+      ],
+      "scene": "dunia-pasar-pagi",
+      "chapter": 3
+    },
+    {
+      "id": "ms-d-pasar-pagi-08",
+      "lang": "ms",
+      "term": "timbang",
+      "gloss_en": "to weigh",
+      "gloss_ja": "量る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pasar-pagi"
+        }
+      ],
+      "scene": "dunia-pasar-pagi",
+      "chapter": 3,
+      "image": "⚖️"
+    },
+    {
+      "id": "ms-d-pasar-pagi-09",
+      "lang": "ms",
+      "term": "tawar",
+      "gloss_en": "to bargain; bland",
+      "gloss_ja": "値切る；味がない",
+      "pos": "verb/adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pasar-pagi"
+        },
+        {
+          "type": "keluarga",
+          "text": "Same word as tawar (bland) in Ch5: two meanings to connect."
+        }
+      ],
+      "scene": "dunia-pasar-pagi",
+      "chapter": 3,
+      "seen_in_class": 5
+    },
+    {
+      "id": "ms-d-pasar-pagi-10",
+      "lang": "ms",
+      "term": "plastik",
+      "gloss_en": "plastic bag",
+      "gloss_ja": "ビニール袋",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pasar-pagi"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'plastic'."
+        }
+      ],
+      "scene": "dunia-pasar-pagi",
+      "chapter": 3,
+      "image": "🛍️"
+    },
+    {
+      "id": "ms-d-pasar-pagi-11",
+      "lang": "ms",
+      "term": "kurang sikit",
+      "gloss_en": "a bit cheaper? (bargaining)",
+      "gloss_ja": "少しまけて",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-pasar-pagi"
+        }
+      ],
+      "scene": "dunia-pasar-pagi",
+      "chapter": 3
+    }
+  ]
+}

@@ -1,0 +1,1174 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c04",
+  "chapter": 4,
+  "status": "draft",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Masa dan Kala",
+    "en": "Time and tense",
+    "ja": "時間と時制"
+  },
+  "cards": [
+    {
+      "id": "ms-c04-001",
+      "lang": "ms",
+      "term": "masa",
+      "gloss_en": "time (general)",
+      "gloss_ja": "時間（一般）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Ada masa?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-002",
+      "lang": "ms",
+      "term": "waktu",
+      "gloss_en": "time period, set time",
+      "gloss_ja": "時間帯・時刻",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "waktu pejabat",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-003",
+      "lang": "ms",
+      "term": "pukul",
+      "gloss_en": "o'clock",
+      "gloss_ja": "〜時",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "pukul tiga",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-004",
+      "lang": "ms",
+      "term": "jam",
+      "gloss_en": "hour (duration); clock, watch",
+      "gloss_ja": "〜時間；時計",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "dua jam = 2 hours. Ch7 adds a third meaning.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-005",
+      "lang": "ms",
+      "term": "minit",
+      "gloss_en": "minute",
+      "gloss_ja": "分",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-006",
+      "lang": "ms",
+      "term": "saat",
+      "gloss_en": "second",
+      "gloss_ja": "秒",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-007",
+      "lang": "ms",
+      "term": "sekarang",
+      "gloss_en": "now",
+      "gloss_ja": "今",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-008",
+      "lang": "ms",
+      "term": "pagi",
+      "gloss_en": "morning",
+      "gloss_ja": "朝",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-009",
+      "lang": "ms",
+      "term": "tengah hari",
+      "gloss_en": "midday",
+      "gloss_ja": "昼",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-010",
+      "lang": "ms",
+      "term": "petang",
+      "gloss_en": "afternoon, early evening",
+      "gloss_ja": "午後・夕方",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-011",
+      "lang": "ms",
+      "term": "malam",
+      "gloss_en": "night",
+      "gloss_ja": "夜",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-012",
+      "lang": "ms",
+      "term": "hari",
+      "gloss_en": "day",
+      "gloss_ja": "日",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-013",
+      "lang": "ms",
+      "term": "minggu",
+      "gloss_en": "week",
+      "gloss_ja": "週",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-014",
+      "lang": "ms",
+      "term": "bulan",
+      "gloss_en": "month; moon",
+      "gloss_ja": "月",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-015",
+      "lang": "ms",
+      "term": "hari ini",
+      "gloss_en": "today",
+      "gloss_ja": "今日",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-016",
+      "lang": "ms",
+      "term": "semalam",
+      "gloss_en": "yesterday",
+      "gloss_ja": "昨日",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-017",
+      "lang": "ms",
+      "term": "kelmarin",
+      "gloss_en": "the day before yesterday",
+      "gloss_ja": "おととい",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-018",
+      "lang": "ms",
+      "term": "lusa",
+      "gloss_en": "the day after tomorrow",
+      "gloss_ja": "あさって",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-019",
+      "lang": "ms",
+      "term": "depan",
+      "gloss_en": "next (time); front",
+      "gloss_ja": "次の；前",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "minggu depan = next week",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-020",
+      "lang": "ms",
+      "term": "lepas",
+      "gloss_en": "last (time); after",
+      "gloss_ja": "先〜；〜の後",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "minggu lepas = last week",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-021",
+      "lang": "ms",
+      "term": "Isnin",
+      "gloss_en": "Monday",
+      "gloss_ja": "月曜日",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-022",
+      "lang": "ms",
+      "term": "Selasa",
+      "gloss_en": "Tuesday",
+      "gloss_ja": "火曜日",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-023",
+      "lang": "ms",
+      "term": "Rabu",
+      "gloss_en": "Wednesday",
+      "gloss_ja": "水曜日",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-024",
+      "lang": "ms",
+      "term": "Khamis",
+      "gloss_en": "Thursday",
+      "gloss_ja": "木曜日",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-025",
+      "lang": "ms",
+      "term": "Jumaat",
+      "gloss_en": "Friday",
+      "gloss_ja": "金曜日",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-026",
+      "lang": "ms",
+      "term": "Sabtu",
+      "gloss_en": "Saturday",
+      "gloss_ja": "土曜日",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-027",
+      "lang": "ms",
+      "term": "Ahad",
+      "gloss_en": "Sunday",
+      "gloss_ja": "日曜日",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-028",
+      "lang": "ms",
+      "term": "setiap",
+      "gloss_en": "every",
+      "gloss_ja": "毎〜",
+      "pos": "det",
+      "affix_tag": "root",
+      "note": "setiap hari",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-029",
+      "lang": "ms",
+      "term": "selalu",
+      "gloss_en": "always, often",
+      "gloss_ja": "いつも",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-030",
+      "lang": "ms",
+      "term": "biasanya",
+      "gloss_en": "usually",
+      "gloss_ja": "普段は",
+      "pos": "adv",
+      "affix_tag": "-nya",
+      "note": "biasa (usual) + -nya",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-031",
+      "lang": "ms",
+      "term": "kadang-kadang",
+      "gloss_en": "sometimes",
+      "gloss_ja": "時々",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-032",
+      "lang": "ms",
+      "term": "jarang",
+      "gloss_en": "rarely",
+      "gloss_ja": "めったに〜ない",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-033",
+      "lang": "ms",
+      "term": "tidak pernah",
+      "gloss_en": "never",
+      "gloss_ja": "一度も〜ない",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-034",
+      "lang": "ms",
+      "term": "sekali",
+      "gloss_en": "once",
+      "gloss_ja": "一回",
+      "pos": "adv",
+      "affix_tag": "se-",
+      "note": "seminggu sekali = once a week",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-035",
+      "lang": "ms",
+      "term": "sedang",
+      "gloss_en": "in the middle of (-ing)",
+      "gloss_ja": "〜しているところ",
+      "pos": "aspect",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-036",
+      "lang": "ms",
+      "term": "tengah",
+      "gloss_en": "in the middle of (spoken)",
+      "gloss_ja": "〜してる（口語）",
+      "pos": "aspect",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-037",
+      "lang": "ms",
+      "term": "masih",
+      "gloss_en": "still",
+      "gloss_ja": "まだ（〜している）",
+      "pos": "aspect",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-038",
+      "lang": "ms",
+      "term": "akan",
+      "gloss_en": "will",
+      "gloss_ja": "〜する予定",
+      "pos": "aspect",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-039",
+      "lang": "ms",
+      "term": "sudah / dah",
+      "gloss_en": "already, done",
+      "gloss_ja": "もう〜した",
+      "pos": "aspect",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-040",
+      "lang": "ms",
+      "term": "belum",
+      "gloss_en": "not yet",
+      "gloss_ja": "まだ〜していない",
+      "pos": "aspect",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-041",
+      "lang": "ms",
+      "term": "baru",
+      "gloss_en": "just (now); new",
+      "gloss_ja": "〜したばかり；新しい",
+      "pos": "aspect",
+      "affix_tag": "root",
+      "note": "Ch6 uses baru = new.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-042",
+      "lang": "ms",
+      "term": "pernah",
+      "gloss_en": "ever, have done before",
+      "gloss_ja": "〜したことがある",
+      "pos": "aspect",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-043",
+      "lang": "ms",
+      "term": "makan",
+      "gloss_en": "to eat",
+      "gloss_ja": "食べる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-044",
+      "lang": "ms",
+      "term": "minum",
+      "gloss_en": "to drink",
+      "gloss_ja": "飲む",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-045",
+      "lang": "ms",
+      "term": "tidur",
+      "gloss_en": "to sleep",
+      "gloss_ja": "寝る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-046",
+      "lang": "ms",
+      "term": "bangun",
+      "gloss_en": "to wake up, get up",
+      "gloss_ja": "起きる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-047",
+      "lang": "ms",
+      "term": "mandi",
+      "gloss_en": "to bathe, shower",
+      "gloss_ja": "シャワーを浴びる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-048",
+      "lang": "ms",
+      "term": "pergi",
+      "gloss_en": "to go",
+      "gloss_ja": "行く",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-049",
+      "lang": "ms",
+      "term": "balik / pulang",
+      "gloss_en": "to go back, return home",
+      "gloss_ja": "帰る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-050",
+      "lang": "ms",
+      "term": "sampai",
+      "gloss_en": "to arrive; until",
+      "gloss_ja": "着く；〜まで",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-051",
+      "lang": "ms",
+      "term": "tunggu",
+      "gloss_en": "to wait",
+      "gloss_ja": "待つ",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-052",
+      "lang": "ms",
+      "term": "mula",
+      "gloss_en": "to start",
+      "gloss_ja": "始まる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-053",
+      "lang": "ms",
+      "term": "habis",
+      "gloss_en": "to finish, run out",
+      "gloss_ja": "終わる・なくなる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-054",
+      "lang": "ms",
+      "term": "awal",
+      "gloss_en": "early",
+      "gloss_ja": "早い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-055",
+      "lang": "ms",
+      "term": "lambat",
+      "gloss_en": "late, slow",
+      "gloss_ja": "遅い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-056",
+      "lang": "ms",
+      "term": "mesyuarat",
+      "gloss_en": "meeting",
+      "gloss_ja": "会議",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c04-f01",
+      "frame": "Pukul berapa sekarang? / Sekarang pukul ___.",
+      "example": "Sekarang pukul empat kurang suku.",
+      "meaning_en": "It's a quarter to four.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c04-f02",
+      "frame": "Saya ___ setiap ___.",
+      "example": "Saya minum kopi setiap pagi.",
+      "meaning_en": "I drink coffee every morning.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c04-f03",
+      "frame": "Saya sedang / masih ___.",
+      "example": "Saya masih makan.",
+      "meaning_en": "I'm still eating.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c04-f04",
+      "frame": "Saya akan ___ (time).",
+      "example": "Saya akan balik ke Jepun bulan depan.",
+      "meaning_en": "I'll go back to Japan next month.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c04-f05",
+      "frame": "Sudah ___? / Sudah. / Belum.",
+      "example": "Sudah makan? Belum.",
+      "meaning_en": "Have you eaten? Not yet.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c04-f06",
+      "frame": "Saya pernah / belum pernah ___.",
+      "example": "Saya belum pernah makan durian.",
+      "meaning_en": "I've never eaten durian.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c04-f07",
+      "frame": "___ mula pukul ___ dan habis pukul ___.",
+      "example": "Mesyuarat mula pukul tiga dan habis pukul lima.",
+      "meaning_en": "The meeting starts at 3 and ends at 5.",
+      "meaning_ja": null
+    }
+  ],
+  "scenario": {
+    "title_en": "Sudah makan?",
+    "title_ja": null,
+    "lines": [
+      {
+        "id": "ms-c04-s01",
+        "speaker": "Encik Rahman",
+        "ms": "Encik Tanaka, sudah makan?",
+        "en": "Mr Tanaka, have you eaten?"
+      },
+      {
+        "id": "ms-c04-s02",
+        "speaker": "Tanaka",
+        "ms": "Belum. Saya masih ada kerja.",
+        "en": "Not yet. I still have work."
+      },
+      {
+        "id": "ms-c04-s03",
+        "speaker": "Encik Rahman",
+        "ms": "Sekarang pukul satu kurang suku. Jom makan!",
+        "en": "It's a quarter to one. Let's eat!"
+      },
+      {
+        "id": "ms-c04-s04",
+        "speaker": "Tanaka",
+        "ms": "Baik. Mesyuarat kita pukul berapa?",
+        "en": "Okay. What time is our meeting?"
+      },
+      {
+        "id": "ms-c04-s05",
+        "speaker": "Encik Rahman",
+        "ms": "Mesyuarat akan mula pukul tiga petang.",
+        "en": "The meeting starts at 3 p.m."
+      },
+      {
+        "id": "ms-c04-s06",
+        "speaker": "Tanaka",
+        "ms": "Saya biasanya makan di kedai mamak. Encik pula?",
+        "en": "I usually eat at a mamak shop. And you?"
+      },
+      {
+        "id": "ms-c04-s07",
+        "speaker": "Encik Rahman",
+        "ms": "Saya kadang-kadang makan di sana. Setiap Jumaat saya makan nasi kandar.",
+        "en": "Sometimes I eat there. Every Friday I have nasi kandar."
+      },
+      {
+        "id": "ms-c04-s08",
+        "speaker": "Tanaka",
+        "ms": "Saya belum pernah makan nasi kandar!",
+        "en": "I've never had nasi kandar!"
+      },
+      {
+        "id": "ms-c04-s09",
+        "speaker": "Encik Rahman",
+        "ms": "Jom, hari ini kita makan nasi kandar!",
+        "en": "Come on, today we'll have nasi kandar!"
+      },
+      {
+        "id": "ms-c04-s10",
+        "speaker": "(Phone, 1:15 p.m.)",
+        "ms": "Puan Aini: Encik Tanaka sedang makan. Dia akan balik pukul dua.",
+        "en": "Mr Tanaka is having lunch. He'll be back at 2."
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c04-003",
+      "ms-c04-007",
+      "ms-c04-008",
+      "ms-c04-010",
+      "ms-c04-012",
+      "ms-c04-014",
+      "ms-c04-015",
+      "ms-c04-019",
+      "ms-c04-025",
+      "ms-c04-028",
+      "ms-c04-030",
+      "ms-c04-031",
+      "ms-c04-035",
+      "ms-c04-037",
+      "ms-c04-038",
+      "ms-c04-039",
+      "ms-c04-040",
+      "ms-c04-042",
+      "ms-c04-043",
+      "ms-c04-044",
+      "ms-c04-049",
+      "ms-c04-052",
+      "ms-c04-053",
+      "ms-c04-056"
+    ],
+    "frames": [
+      "ms-c04-f01",
+      "ms-c04-f02"
+    ],
+    "scene": "rumah-bangun-pagi"
+  }
+}

@@ -1,0 +1,835 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c01",
+  "chapter": 1,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Salam dan Sapaan",
+    "en": "Greetings",
+    "ja": "あいさつ"
+  },
+  "cards": [
+    {
+      "id": "ms-c01-001",
+      "lang": "ms",
+      "term": "selamat",
+      "gloss_en": "safe, well; 'may it be well' (greeting opener)",
+      "gloss_ja": "無事な／〜を祈る（挨拶の頭）",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "From Arabic salāma (wellbeing).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-002",
+      "lang": "ms",
+      "term": "Selamat pagi",
+      "gloss_en": "Good morning",
+      "gloss_ja": "おはようございます",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-003",
+      "lang": "ms",
+      "term": "Selamat tengah hari",
+      "gloss_en": "Good afternoon (around midday)",
+      "gloss_ja": "こんにちは（昼）",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-004",
+      "lang": "ms",
+      "term": "Selamat petang",
+      "gloss_en": "Good afternoon / early evening",
+      "gloss_ja": "こんにちは（午後〜夕方）",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Petang runs roughly from mid-afternoon to dusk.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-005",
+      "lang": "ms",
+      "term": "Selamat malam",
+      "gloss_en": "Good evening / good night",
+      "gloss_ja": "こんばんは／おやすみなさい",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-006",
+      "lang": "ms",
+      "term": "Selamat datang",
+      "gloss_en": "Welcome",
+      "gloss_ja": "ようこそ",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "datang = come",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-007",
+      "lang": "ms",
+      "term": "Selamat jalan",
+      "gloss_en": "Goodbye (said to the one leaving)",
+      "gloss_ja": "いってらっしゃい／お気をつけて",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Literally 'safe going'.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-008",
+      "lang": "ms",
+      "term": "Selamat tinggal",
+      "gloss_en": "Goodbye (said to the one staying)",
+      "gloss_ja": "さようなら（残る人へ）",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Literally 'safe staying'. Sounds final; daily partings prefer 'Jumpa lagi'.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-009",
+      "lang": "ms",
+      "term": "Assalamualaikum",
+      "gloss_en": "Peace be upon you (Muslim greeting)",
+      "gloss_ja": "アッサラーム・アライクム（イスラム式の挨拶）",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Reply: Waalaikumsalam. Same s-l-m root as selamat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-010",
+      "lang": "ms",
+      "term": "apa",
+      "gloss_en": "what",
+      "gloss_ja": "何",
+      "pos": "question",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-011",
+      "lang": "ms",
+      "term": "khabar",
+      "gloss_en": "news; how someone is",
+      "gloss_ja": "便り・様子",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "From Arabic khabar (news).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-012",
+      "lang": "ms",
+      "term": "Apa khabar?",
+      "gloss_en": "How are you? (lit. what news?)",
+      "gloss_ja": "お元気ですか",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-013",
+      "lang": "ms",
+      "term": "baik",
+      "gloss_en": "good, well, fine",
+      "gloss_ja": "良い・元気",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-014",
+      "lang": "ms",
+      "term": "Khabar baik.",
+      "gloss_en": "I'm fine. (lit. good news)",
+      "gloss_ja": "元気です",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-015",
+      "lang": "ms",
+      "term": "pula",
+      "gloss_en": "in turn; 'and you?'",
+      "gloss_ja": "〜は？（今度は）",
+      "pos": "particle",
+      "affix_tag": "root",
+      "note": "Encik pula? = And you, sir?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-016",
+      "lang": "ms",
+      "term": "terima kasih",
+      "gloss_en": "thank you",
+      "gloss_ja": "ありがとう",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "terima (receive) + kasih (affection).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-017",
+      "lang": "ms",
+      "term": "sama-sama",
+      "gloss_en": "you're welcome",
+      "gloss_ja": "どういたしまして",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Literally 'same-same'. Returns in Ch2 as 'together'.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-018",
+      "lang": "ms",
+      "term": "maaf",
+      "gloss_en": "sorry; excuse me",
+      "gloss_ja": "すみません",
+      "pos": "interj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-019",
+      "lang": "ms",
+      "term": "tumpang tanya",
+      "gloss_en": "excuse me, may I ask",
+      "gloss_ja": "ちょっとお尋ねします",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "tumpang (ride along / borrow) + tanya (ask).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-020",
+      "lang": "ms",
+      "term": "minta",
+      "gloss_en": "to ask for, request",
+      "gloss_ja": "頼む・求める",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-021",
+      "lang": "ms",
+      "term": "diri",
+      "gloss_en": "self",
+      "gloss_ja": "自分",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-022",
+      "lang": "ms",
+      "term": "minta diri",
+      "gloss_en": "to take one's leave",
+      "gloss_ja": "失礼します（退出時）",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Saya minta diri dulu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-023",
+      "lang": "ms",
+      "term": "dulu",
+      "gloss_en": "first, before others",
+      "gloss_ja": "先に",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Standard form: dahulu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-024",
+      "lang": "ms",
+      "term": "jumpa",
+      "gloss_en": "to meet, see (someone)",
+      "gloss_ja": "会う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-025",
+      "lang": "ms",
+      "term": "lagi",
+      "gloss_en": "again; more",
+      "gloss_ja": "また・もっと",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-026",
+      "lang": "ms",
+      "term": "Jumpa lagi!",
+      "gloss_en": "See you again!",
+      "gloss_ja": "またね",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-027",
+      "lang": "ms",
+      "term": "esok",
+      "gloss_en": "tomorrow",
+      "gloss_ja": "明日",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Jumpa esok!",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-028",
+      "lang": "ms",
+      "term": "nanti",
+      "gloss_en": "later",
+      "gloss_ja": "後で",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Jumpa nanti!",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-029",
+      "lang": "ms",
+      "term": "jaga diri",
+      "gloss_en": "take care of yourself",
+      "gloss_ja": "体に気をつけて",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "jaga (guard, look after) + diri.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-030",
+      "lang": "ms",
+      "term": "hati-hati",
+      "gloss_en": "be careful",
+      "gloss_ja": "気をつけて",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-031",
+      "lang": "ms",
+      "term": "Selamat berkenalan",
+      "gloss_en": "Nice to meet you",
+      "gloss_ja": "はじめまして／よろしく",
+      "pos": "phrase",
+      "affix_tag": "chunk*",
+      "note": "Contains ber-. Learn as a fixed phrase; do not unpack.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-032",
+      "lang": "ms",
+      "term": "ya",
+      "gloss_en": "yes",
+      "gloss_ja": "はい",
+      "pos": "interj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-033",
+      "lang": "ms",
+      "term": "tidak / tak",
+      "gloss_en": "no, not",
+      "gloss_ja": "いいえ・〜ない",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "tak is the spoken form.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-034",
+      "lang": "ms",
+      "term": "Encik",
+      "gloss_en": "Mr (polite 'you' for a man)",
+      "gloss_ja": "〜さん（男性）",
+      "pos": "title",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-035",
+      "lang": "ms",
+      "term": "Puan",
+      "gloss_en": "Mrs / Ms (polite 'you' for a married or senior woman)",
+      "gloss_ja": "〜さん（女性）",
+      "pos": "title",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-036",
+      "lang": "ms",
+      "term": "Cik",
+      "gloss_en": "Miss (young or unmarried woman)",
+      "gloss_ja": "〜さん（若い女性）",
+      "pos": "title",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-037",
+      "lang": "ms",
+      "term": "Abang / Kakak (Kak)",
+      "gloss_en": "older brother / older sister (friendly address)",
+      "gloss_ja": "お兄さん／お姉さん（呼びかけ）",
+      "pos": "title",
+      "affix_tag": "root",
+      "note": "Used for waiters, drivers, shopkeepers of similar age.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    },
+    {
+      "id": "ms-c01-038",
+      "lang": "ms",
+      "term": "Pak cik / Mak cik",
+      "gloss_en": "uncle / auntie (older man / woman)",
+      "gloss_ja": "おじさん／おばさん",
+      "pos": "title",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c01"
+        }
+      ],
+      "scene": "kelas-c01",
+      "chapter": 1
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c01-f01",
+      "frame": "Selamat ___, (title) ___.",
+      "example": "Selamat pagi, Puan Aini.",
+      "meaning_en": "Good morning, Mrs Aini.",
+      "meaning_ja": "おはようございます、アイニさん。"
+    },
+    {
+      "id": "ms-c01-f02",
+      "frame": "Apa khabar, (title)?",
+      "example": "Apa khabar, Encik Rahman?",
+      "meaning_en": "How are you, Mr Rahman?",
+      "meaning_ja": "お元気ですか、ラーマンさん。"
+    },
+    {
+      "id": "ms-c01-f03",
+      "frame": "Khabar baik, terima kasih. (title) pula?",
+      "example": "Khabar baik, terima kasih. Puan pula?",
+      "meaning_en": "Fine, thanks. And you?",
+      "meaning_ja": "元気です、ありがとう。あなたは？"
+    },
+    {
+      "id": "ms-c01-f04",
+      "frame": "Maaf, tumpang tanya.",
+      "example": "Maaf, tumpang tanya.",
+      "meaning_en": "Excuse me, may I ask something?",
+      "meaning_ja": "すみません、ちょっとお尋ねします。"
+    },
+    {
+      "id": "ms-c01-f05",
+      "frame": "Saya minta diri dulu. Jumpa ___!",
+      "example": "Saya minta diri dulu. Jumpa esok!",
+      "meaning_en": "I'll take my leave. See you tomorrow!",
+      "meaning_ja": "お先に失礼します。また明日！"
+    }
+  ],
+  "scenario": {
+    "title_en": "First day at the office",
+    "title_ja": "会社の初日",
+    "lines": [
+      {
+        "id": "ms-c01-s01",
+        "speaker": "Puan Aini",
+        "ms": "Selamat pagi! Selamat datang.",
+        "en": "Good morning! Welcome."
+      },
+      {
+        "id": "ms-c01-s02",
+        "speaker": "Tanaka",
+        "ms": "Selamat pagi. Saya Tanaka.",
+        "en": "Good morning. I'm Tanaka."
+      },
+      {
+        "id": "ms-c01-s03",
+        "speaker": "Puan Aini",
+        "ms": "Apa khabar, Encik Tanaka?",
+        "en": "How are you, Mr Tanaka?"
+      },
+      {
+        "id": "ms-c01-s04",
+        "speaker": "Tanaka",
+        "ms": "Khabar baik, terima kasih. Puan pula?",
+        "en": "Fine, thank you. And you?"
+      },
+      {
+        "id": "ms-c01-s05",
+        "speaker": "Puan Aini",
+        "ms": "Baik, terima kasih. Selamat berkenalan.",
+        "en": "Fine, thanks. Nice to meet you."
+      },
+      {
+        "id": "ms-c01-s06",
+        "speaker": "Tanaka",
+        "ms": "Selamat berkenalan.",
+        "en": "Nice to meet you."
+      },
+      {
+        "id": "ms-c01-s07",
+        "speaker": "(Narrator)",
+        "ms": "Petang. (Evening.)",
+        "en": "Evening."
+      },
+      {
+        "id": "ms-c01-s08",
+        "speaker": "Tanaka",
+        "ms": "Puan Aini, saya minta diri dulu.",
+        "en": "Mrs Aini, I'll take my leave now."
+      },
+      {
+        "id": "ms-c01-s09",
+        "speaker": "Puan Aini",
+        "ms": "Baik. Jumpa esok, Encik Tanaka. Selamat jalan!",
+        "en": "Okay. See you tomorrow. Safe journey!"
+      },
+      {
+        "id": "ms-c01-s10",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih. Jumpa esok!",
+        "en": "Thank you. See you tomorrow!"
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c01-001",
+      "ms-c01-002",
+      "ms-c01-004",
+      "ms-c01-006",
+      "ms-c01-007",
+      "ms-c01-010",
+      "ms-c01-011",
+      "ms-c01-012",
+      "ms-c01-013",
+      "ms-c01-014",
+      "ms-c01-015",
+      "ms-c01-016",
+      "ms-c01-018",
+      "ms-c01-019",
+      "ms-c01-020",
+      "ms-c01-021",
+      "ms-c01-022",
+      "ms-c01-023",
+      "ms-c01-024",
+      "ms-c01-027",
+      "ms-c01-031",
+      "ms-c01-034",
+      "ms-c01-035"
+    ],
+    "frames": [
+      "ms-c01-f01",
+      "ms-c01-f02"
+    ],
+    "scene": null
+  }
+}

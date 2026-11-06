@@ -1,0 +1,687 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c09",
+  "chapter": 9,
+  "status": "draft",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Ayat Pasif di-",
+    "en": "The di- passive",
+    "ja": "受け身の di-"
+  },
+  "cards": [
+    {
+      "id": "ms-c09-001",
+      "lang": "ms",
+      "term": "oleh",
+      "gloss_en": "by (agent)",
+      "gloss_ja": "〜によって",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-002",
+      "lang": "ms",
+      "term": "pada",
+      "gloss_en": "at, on (time)",
+      "gloss_ja": "〜に（時間）",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": "pada pukul sembilan",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-003",
+      "lang": "ms",
+      "term": "tadi",
+      "gloss_en": "earlier (today)",
+      "gloss_ja": "さっき",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "pagi tadi = this morning",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-004",
+      "lang": "ms",
+      "term": "dibuat",
+      "gloss_en": "made",
+      "gloss_ja": "作られた",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "buat (make)",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-005",
+      "lang": "ms",
+      "term": "dibeli",
+      "gloss_en": "bought",
+      "gloss_ja": "買われた",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "beli",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-006",
+      "lang": "ms",
+      "term": "dijual",
+      "gloss_en": "sold; for sale",
+      "gloss_ja": "売られた・売り出し中",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "jual",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-007",
+      "lang": "ms",
+      "term": "dimakan",
+      "gloss_en": "eaten",
+      "gloss_ja": "食べられた",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "makan",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-008",
+      "lang": "ms",
+      "term": "diminum",
+      "gloss_en": "drunk",
+      "gloss_ja": "飲まれた",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "minum",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-009",
+      "lang": "ms",
+      "term": "dibaca",
+      "gloss_en": "read",
+      "gloss_ja": "読まれた",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "baca",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-010",
+      "lang": "ms",
+      "term": "ditulis",
+      "gloss_en": "written",
+      "gloss_ja": "書かれた",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "tulis",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-011",
+      "lang": "ms",
+      "term": "dibuka",
+      "gloss_en": "opened; open",
+      "gloss_ja": "開けられた・営業中",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "buka (open)",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-012",
+      "lang": "ms",
+      "term": "ditutup",
+      "gloss_en": "closed",
+      "gloss_ja": "閉められた・休業",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "tutup (close)",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-013",
+      "lang": "ms",
+      "term": "dibayar",
+      "gloss_en": "paid",
+      "gloss_ja": "支払われた",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "bayar",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-014",
+      "lang": "ms",
+      "term": "dihantar",
+      "gloss_en": "sent, delivered",
+      "gloss_ja": "送られた・届けられた",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "hantar (send)",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-015",
+      "lang": "ms",
+      "term": "diambil",
+      "gloss_en": "taken",
+      "gloss_ja": "取られた",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "ambil (take)",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-016",
+      "lang": "ms",
+      "term": "dipanggil",
+      "gloss_en": "called",
+      "gloss_ja": "呼ばれた",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "panggil (call)",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-017",
+      "lang": "ms",
+      "term": "dimasak",
+      "gloss_en": "cooked",
+      "gloss_ja": "料理された",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "masak",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-018",
+      "lang": "ms",
+      "term": "dicuci",
+      "gloss_en": "washed",
+      "gloss_ja": "洗われた",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "cuci (wash)",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-019",
+      "lang": "ms",
+      "term": "dibawa",
+      "gloss_en": "brought, carried",
+      "gloss_ja": "持ってこられた",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "bawa (bring, carry)",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-020",
+      "lang": "ms",
+      "term": "disewa",
+      "gloss_en": "rented; for rent",
+      "gloss_ja": "貸し出し中",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "sewa (rent)",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-021",
+      "lang": "ms",
+      "term": "dilarang",
+      "gloss_en": "forbidden, prohibited",
+      "gloss_ja": "禁止",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "larang (forbid)",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-022",
+      "lang": "ms",
+      "term": "Dilarang masuk",
+      "gloss_en": "No entry",
+      "gloss_ja": "立入禁止",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-023",
+      "lang": "ms",
+      "term": "Dilarang makan dan minum",
+      "gloss_en": "No eating or drinking",
+      "gloss_ja": "飲食禁止",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-024",
+      "lang": "ms",
+      "term": "Dilarang merokok",
+      "gloss_en": "No smoking",
+      "gloss_ja": "禁煙",
+      "pos": "phrase",
+      "affix_tag": "chunk*",
+      "note": "Contains me- (merokok). Learn as a sign only.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-025",
+      "lang": "ms",
+      "term": "sila",
+      "gloss_en": "please (polite instruction)",
+      "gloss_ja": "〜してください（丁寧）",
+      "pos": "particle",
+      "affix_tag": "root",
+      "note": "Sila masuk.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-026",
+      "lang": "ms",
+      "term": "papan tanda",
+      "gloss_en": "signboard",
+      "gloss_ja": "看板",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-027",
+      "lang": "ms",
+      "term": "kek",
+      "gloss_en": "cake",
+      "gloss_ja": "ケーキ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-028",
+      "lang": "ms",
+      "term": "pinggan",
+      "gloss_en": "plate",
+      "gloss_ja": "皿",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Also a counter (Ch8).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-029",
+      "lang": "ms",
+      "term": "jamuan",
+      "gloss_en": "feast, party with food",
+      "gloss_ja": "パーティー・会食",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "jamu (treat a guest) → jamuan",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-030",
+      "lang": "ms",
+      "term": "siap",
+      "gloss_en": "ready, done",
+      "gloss_ja": "できた・完了",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c09-f01",
+      "frame": "___ dibuat oleh ___.",
+      "example": "Kek ini dibuat oleh isteri saya.",
+      "meaning_en": "This cake was made by my wife.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c09-f02",
+      "frame": "___ di-(verb) di ___.",
+      "example": "Nasi lemak ini dibeli di kedai mamak.",
+      "meaning_en": "This nasi lemak was bought at the mamak.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c09-f03",
+      "frame": "___ sudah / belum di-(verb).",
+      "example": "Teh tarik sudah diminum semua.",
+      "meaning_en": "The teh tarik has all been drunk.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c09-f04",
+      "frame": "Kedai ini dibuka / ditutup pada pukul ___.",
+      "example": "Kedai ini dibuka pada pukul sembilan pagi.",
+      "meaning_en": "This shop opens at 9 a.m.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c09-f05",
+      "frame": "Dilarang ___.",
+      "example": "Dilarang masuk.",
+      "meaning_en": "No entry.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c09-f06",
+      "frame": "(thing) saya / awak (verb).",
+      "example": "Pinggan saya cuci.",
+      "meaning_en": "I'll wash the plates.",
+      "meaning_ja": null
+    }
+  ],
+  "scenario": {
+    "title_en": "The office jamuan",
+    "title_ja": null,
+    "lines": [
+      {
+        "id": "ms-c09-s01",
+        "speaker": "Puan Aini",
+        "ms": "Wah, banyak makanan! Kek ini dibuat oleh siapa?",
+        "en": "Wow, so much food! Who made this cake?"
+      },
+      {
+        "id": "ms-c09-s02",
+        "speaker": "Tanaka",
+        "ms": "Kek itu dibuat oleh isteri saya.",
+        "en": "My wife made that cake."
+      },
+      {
+        "id": "ms-c09-s03",
+        "speaker": "Puan Aini",
+        "ms": "Sedap sekali! Nasi lemak ini dibeli di mana?",
+        "en": "Really delicious! Where was this nasi lemak bought?"
+      },
+      {
+        "id": "ms-c09-s04",
+        "speaker": "Encik Rahman",
+        "ms": "Nasi lemak itu dibeli oleh Encik Tanaka pagi tadi.",
+        "en": "Mr Tanaka bought it this morning."
+      },
+      {
+        "id": "ms-c09-s05",
+        "speaker": "Cik Mei Ling",
+        "ms": "Teh tarik sudah diminum semua!",
+        "en": "The teh tarik is all gone!"
+      },
+      {
+        "id": "ms-c09-s06",
+        "speaker": "Tanaka",
+        "ms": "Durian ada?",
+        "en": "Is there any durian?"
+      },
+      {
+        "id": "ms-c09-s07",
+        "speaker": "Puan Aini",
+        "ms": "Tak ada. Durian dilarang di pejabat!",
+        "en": "No. Durian is banned in the office!"
+      },
+      {
+        "id": "ms-c09-s08",
+        "speaker": "Encik Rahman",
+        "ms": "Pejabat akan ditutup pukul enam. Jom kemas.",
+        "en": "The office closes at six. Let's tidy up."
+      },
+      {
+        "id": "ms-c09-s09",
+        "speaker": "Tanaka",
+        "ms": "Baik. Pinggan saya cuci.",
+        "en": "Okay. I'll wash the plates."
+      },
+      {
+        "id": "ms-c09-s10",
+        "speaker": "Puan Aini",
+        "ms": "Terima kasih, Encik Tanaka. Jumpa esok!",
+        "en": "Thank you, Mr Tanaka. See you tomorrow!"
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c09-001",
+      "ms-c09-002",
+      "ms-c09-003",
+      "ms-c09-004",
+      "ms-c09-005",
+      "ms-c09-008",
+      "ms-c09-011",
+      "ms-c09-012",
+      "ms-c09-021",
+      "ms-c09-022",
+      "ms-c09-027",
+      "ms-c09-028"
+    ],
+    "frames": [
+      "ms-c09-f01",
+      "ms-c09-f02"
+    ],
+    "scene": null
+  }
+}

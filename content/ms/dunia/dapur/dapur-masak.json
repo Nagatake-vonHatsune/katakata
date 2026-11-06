@@ -1,0 +1,308 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "dapur-masak",
+  "chapter": 5,
+  "status": "draft",
+  "ja_review": "pending",
+  "world": {
+    "id": "dapur",
+    "ms": "Dapur",
+    "en": "Kitchen",
+    "ja": "台所"
+  },
+  "title": {
+    "ms": "Masak nasi goreng",
+    "en": "Cooking fried rice",
+    "ja": "ナシゴレンを作る"
+  },
+  "setting": {
+    "en": "Tanaka tries to cook nasi goreng for the first time.",
+    "ja": "田中さんが初めてナシゴレンを作ってみます。"
+  },
+  "cards": [
+    {
+      "id": "ms-d-dapur-masak-01",
+      "lang": "ms",
+      "term": "dapur",
+      "gloss_en": "kitchen; stove",
+      "gloss_ja": "台所・コンロ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-dapur-masak"
+        }
+      ],
+      "scene": "dunia-dapur-masak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-dapur-masak-02",
+      "lang": "ms",
+      "term": "peti sejuk",
+      "gloss_en": "fridge",
+      "gloss_ja": "冷蔵庫",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-dapur-masak"
+        },
+        {
+          "type": "kanji",
+          "text": "peti (box) + sejuk (cold): 'cold box', like 冷蔵庫."
+        }
+      ],
+      "scene": "dunia-dapur-masak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-dapur-masak-03",
+      "lang": "ms",
+      "term": "kuali",
+      "gloss_en": "wok, frying pan",
+      "gloss_ja": "中華鍋",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-dapur-masak"
+        }
+      ],
+      "scene": "dunia-dapur-masak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-dapur-masak-04",
+      "lang": "ms",
+      "term": "periuk",
+      "gloss_en": "pot",
+      "gloss_ja": "鍋",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-dapur-masak"
+        }
+      ],
+      "scene": "dunia-dapur-masak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-dapur-masak-05",
+      "lang": "ms",
+      "term": "pisau",
+      "gloss_en": "knife",
+      "gloss_ja": "包丁・ナイフ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-dapur-masak"
+        }
+      ],
+      "scene": "dunia-dapur-masak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-dapur-masak-06",
+      "lang": "ms",
+      "term": "sudu",
+      "gloss_en": "spoon",
+      "gloss_ja": "スプーン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-dapur-masak"
+        }
+      ],
+      "scene": "dunia-dapur-masak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-dapur-masak-07",
+      "lang": "ms",
+      "term": "garpu",
+      "gloss_en": "fork",
+      "gloss_ja": "フォーク",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-dapur-masak"
+        },
+        {
+          "type": "pinjam",
+          "text": "From Portuguese garfo, a word from the age of sailing ships."
+        }
+      ],
+      "scene": "dunia-dapur-masak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-dapur-masak-08",
+      "lang": "ms",
+      "term": "potong",
+      "gloss_en": "to cut",
+      "gloss_ja": "切る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-dapur-masak"
+        }
+      ],
+      "scene": "dunia-dapur-masak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-dapur-masak-09",
+      "lang": "ms",
+      "term": "goreng",
+      "gloss_en": "to fry; fried",
+      "gloss_ja": "揚げる・炒める",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-dapur-masak"
+        },
+        {
+          "type": "keluarga",
+          "text": "nasi goreng, mi goreng, ayam goreng: one word, many dishes."
+        }
+      ],
+      "scene": "dunia-dapur-masak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-dapur-masak-10",
+      "lang": "ms",
+      "term": "rebus",
+      "gloss_en": "to boil",
+      "gloss_ja": "茹でる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-dapur-masak"
+        }
+      ],
+      "scene": "dunia-dapur-masak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-dapur-masak-11",
+      "lang": "ms",
+      "term": "basuh",
+      "gloss_en": "to wash",
+      "gloss_ja": "洗う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-dapur-masak"
+        }
+      ],
+      "scene": "dunia-dapur-masak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-dapur-masak-12",
+      "lang": "ms",
+      "term": "garam",
+      "gloss_en": "salt",
+      "gloss_ja": "塩",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-dapur-masak"
+        }
+      ],
+      "scene": "dunia-dapur-masak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-dapur-masak-13",
+      "lang": "ms",
+      "term": "gula",
+      "gloss_en": "sugar",
+      "gloss_ja": "砂糖",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-dapur-masak"
+        }
+      ],
+      "scene": "dunia-dapur-masak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-dapur-masak-14",
+      "lang": "ms",
+      "term": "minyak",
+      "gloss_en": "oil",
+      "gloss_ja": "油",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-dapur-masak"
+        }
+      ],
+      "scene": "dunia-dapur-masak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-dapur-masak-15",
+      "lang": "ms",
+      "term": "bawang",
+      "gloss_en": "onion",
+      "gloss_ja": "玉ねぎ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-dapur-masak"
+        }
+      ],
+      "scene": "dunia-dapur-masak",
+      "chapter": 5
+    }
+  ]
+}

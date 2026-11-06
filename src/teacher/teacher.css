@@ -1,0 +1,111 @@
+.desk {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.drop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 28px 16px;
+  border: 2px dashed var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  cursor: pointer;
+  text-align: center;
+}
+
+.drop.over {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table.grid {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+table.grid th,
+table.grid td {
+  border-bottom: 1px solid var(--line);
+  padding: 6px 8px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+td.ready {
+  color: var(--ok);
+  font-weight: 700;
+}
+
+.agenda-ch {
+  margin-top: 12px;
+}
+
+.agenda-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px dotted var(--line);
+  break-inside: avoid;
+}
+
+.agenda-item ul {
+  margin: 4px 0 0;
+  padding-left: 18px;
+}
+
+.dup {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.box {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+@page {
+  size: A4;
+  margin: 14mm;
+}
+
+@media print {
+  :root {
+    --bg: #fff;
+    --surface: #fff;
+    --text: #000;
+    --line: #bbb;
+  }
+  body {
+    font-size: 11pt;
+    background: #fff;
+    color: #000;
+  }
+  .no-print,
+  .toast {
+    display: none !important;
+  }
+  .screen {
+    padding: 0;
+  }
+  .card-box {
+    border: 0;
+    padding: 0;
+  }
+}

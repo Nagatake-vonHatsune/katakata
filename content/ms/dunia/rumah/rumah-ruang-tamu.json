@@ -1,0 +1,299 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "rumah-ruang-tamu",
+  "chapter": 7,
+  "status": "draft",
+  "ja_review": "pending",
+  "world": {
+    "id": "rumah",
+    "ms": "Rumah",
+    "en": "Home",
+    "ja": "家"
+  },
+  "title": {
+    "ms": "Di ruang tamu",
+    "en": "In the living room",
+    "ja": "リビングで"
+  },
+  "setting": {
+    "en": "Tanaka looks for his phone. Where did he put it?",
+    "ja": "田中さんが携帯電話を探しています。どこに置いたのでしょう？"
+  },
+  "cards": [
+    {
+      "id": "ms-d-rumah-ruang-tamu-01",
+      "lang": "ms",
+      "term": "ruang tamu",
+      "gloss_en": "living room",
+      "gloss_ja": "リビング・客間",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-ruang-tamu"
+        },
+        {
+          "type": "kanji",
+          "text": "ruang (space) + tamu (guest): 'guest space', like 客間."
+        }
+      ],
+      "scene": "dunia-rumah-ruang-tamu",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-rumah-ruang-tamu-02",
+      "lang": "ms",
+      "term": "pintu",
+      "gloss_en": "door",
+      "gloss_ja": "ドア",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-ruang-tamu"
+        },
+        {
+          "type": "bunyi",
+          "text": "ピント: focus on the door."
+        }
+      ],
+      "scene": "dunia-rumah-ruang-tamu",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-rumah-ruang-tamu-03",
+      "lang": "ms",
+      "term": "tingkap",
+      "gloss_en": "window",
+      "gloss_ja": "窓",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-ruang-tamu"
+        }
+      ],
+      "scene": "dunia-rumah-ruang-tamu",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-rumah-ruang-tamu-04",
+      "lang": "ms",
+      "term": "meja",
+      "gloss_en": "table",
+      "gloss_ja": "テーブル・机",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-ruang-tamu"
+        },
+        {
+          "type": "bunyi",
+          "text": "メジャー: measure the table with a tape measure. (Meja comes from Portuguese mesa.)"
+        }
+      ],
+      "scene": "dunia-rumah-ruang-tamu",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-rumah-ruang-tamu-05",
+      "lang": "ms",
+      "term": "kerusi",
+      "gloss_en": "chair",
+      "gloss_ja": "椅子",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-ruang-tamu"
+        }
+      ],
+      "scene": "dunia-rumah-ruang-tamu",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-rumah-ruang-tamu-06",
+      "lang": "ms",
+      "term": "lampu",
+      "gloss_en": "lamp, light",
+      "gloss_ja": "電灯・ランプ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-ruang-tamu"
+        },
+        {
+          "type": "bunyi",
+          "text": "Sounds like ランプ."
+        }
+      ],
+      "scene": "dunia-rumah-ruang-tamu",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-rumah-ruang-tamu-07",
+      "lang": "ms",
+      "term": "kipas",
+      "gloss_en": "fan",
+      "gloss_ja": "扇風機",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-ruang-tamu"
+        }
+      ],
+      "scene": "dunia-rumah-ruang-tamu",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-rumah-ruang-tamu-08",
+      "lang": "ms",
+      "term": "lantai",
+      "gloss_en": "floor",
+      "gloss_ja": "床",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-ruang-tamu"
+        }
+      ],
+      "scene": "dunia-rumah-ruang-tamu",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-rumah-ruang-tamu-09",
+      "lang": "ms",
+      "term": "dinding",
+      "gloss_en": "wall",
+      "gloss_ja": "壁",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-ruang-tamu"
+        }
+      ],
+      "scene": "dunia-rumah-ruang-tamu",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-rumah-ruang-tamu-10",
+      "lang": "ms",
+      "term": "telefon",
+      "gloss_en": "phone",
+      "gloss_ja": "電話",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-ruang-tamu"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English, like テレフォン."
+        }
+      ],
+      "scene": "dunia-rumah-ruang-tamu",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-rumah-ruang-tamu-11",
+      "lang": "ms",
+      "term": "letak",
+      "gloss_en": "to put, place",
+      "gloss_ja": "置く",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-ruang-tamu"
+        }
+      ],
+      "scene": "dunia-rumah-ruang-tamu",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-rumah-ruang-tamu-12",
+      "lang": "ms",
+      "term": "cari",
+      "gloss_en": "to look for",
+      "gloss_ja": "探す",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-ruang-tamu"
+        }
+      ],
+      "scene": "dunia-rumah-ruang-tamu",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-rumah-ruang-tamu-13",
+      "lang": "ms",
+      "term": "jumpa",
+      "gloss_en": "to find; to meet",
+      "gloss_ja": "見つける・会う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-ruang-tamu"
+        }
+      ],
+      "scene": "dunia-rumah-ruang-tamu",
+      "chapter": 7,
+      "seen_in_class": 1
+    },
+    {
+      "id": "ms-d-rumah-ruang-tamu-14",
+      "lang": "ms",
+      "term": "tengok",
+      "gloss_en": "to watch, look",
+      "gloss_ja": "見る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-ruang-tamu"
+        }
+      ],
+      "scene": "dunia-rumah-ruang-tamu",
+      "chapter": 7
+    }
+  ]
+}

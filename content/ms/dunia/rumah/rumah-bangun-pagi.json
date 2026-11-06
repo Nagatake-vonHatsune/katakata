@@ -1,0 +1,316 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "rumah-bangun-pagi",
+  "chapter": 4,
+  "status": "live",
+  "ja_review": "pending",
+  "world": {
+    "id": "rumah",
+    "ms": "Rumah",
+    "en": "Home",
+    "ja": "家"
+  },
+  "title": {
+    "ms": "Bangun pagi",
+    "en": "Waking up",
+    "ja": "朝、起きる"
+  },
+  "setting": {
+    "en": "Encik Tanaka's alarm rings at 6:30. He gets up and gets ready.",
+    "ja": "朝6時半、田中さんの目覚まし時計が鳴ります。起きて、出かける準備をします。"
+  },
+  "cards": [
+    {
+      "id": "ms-d-rumah-bangun-pagi-01",
+      "lang": "ms",
+      "term": "bangun",
+      "gloss_en": "to wake up, get up",
+      "gloss_ja": "起きる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-bangun-pagi"
+        }
+      ],
+      "scene": "dunia-rumah-bangun-pagi",
+      "chapter": 4,
+      "seen_in_class": 4,
+      "image": "🌅"
+    },
+    {
+      "id": "ms-d-rumah-bangun-pagi-02",
+      "lang": "ms",
+      "term": "katil",
+      "gloss_en": "bed",
+      "gloss_ja": "ベッド",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-bangun-pagi"
+        }
+      ],
+      "scene": "dunia-rumah-bangun-pagi",
+      "chapter": 4,
+      "image": "🛏️"
+    },
+    {
+      "id": "ms-d-rumah-bangun-pagi-03",
+      "lang": "ms",
+      "term": "bantal",
+      "gloss_en": "pillow",
+      "gloss_ja": "枕",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-bangun-pagi"
+        }
+      ],
+      "scene": "dunia-rumah-bangun-pagi",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-rumah-bangun-pagi-04",
+      "lang": "ms",
+      "term": "selimut",
+      "gloss_en": "blanket",
+      "gloss_ja": "毛布",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-bangun-pagi"
+        }
+      ],
+      "scene": "dunia-rumah-bangun-pagi",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-rumah-bangun-pagi-05",
+      "lang": "ms",
+      "term": "jam loceng",
+      "gloss_en": "alarm clock",
+      "gloss_ja": "目覚まし時計",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-bangun-pagi"
+        },
+        {
+          "type": "kanji",
+          "text": "jam (clock) + loceng (bell): 'bell clock', built like a kanji compound."
+        }
+      ],
+      "scene": "dunia-rumah-bangun-pagi",
+      "chapter": 4,
+      "image": "⏰"
+    },
+    {
+      "id": "ms-d-rumah-bangun-pagi-06",
+      "lang": "ms",
+      "term": "bilik air",
+      "gloss_en": "bathroom",
+      "gloss_ja": "浴室・トイレ",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-bangun-pagi"
+        },
+        {
+          "type": "kanji",
+          "text": "bilik (room) + air (water): 'water room', like 水回り."
+        }
+      ],
+      "scene": "dunia-rumah-bangun-pagi",
+      "chapter": 4,
+      "image": "🛁"
+    },
+    {
+      "id": "ms-d-rumah-bangun-pagi-07",
+      "lang": "ms",
+      "term": "cermin",
+      "gloss_en": "mirror",
+      "gloss_ja": "鏡",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-bangun-pagi"
+        }
+      ],
+      "scene": "dunia-rumah-bangun-pagi",
+      "chapter": 4,
+      "image": "🪞"
+    },
+    {
+      "id": "ms-d-rumah-bangun-pagi-08",
+      "lang": "ms",
+      "term": "gigi",
+      "gloss_en": "teeth",
+      "gloss_ja": "歯",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-bangun-pagi"
+        },
+        {
+          "type": "bunyi",
+          "text": "ギギッ: the sound of grinding teeth."
+        }
+      ],
+      "scene": "dunia-rumah-bangun-pagi",
+      "chapter": 4,
+      "image": "🦷"
+    },
+    {
+      "id": "ms-d-rumah-bangun-pagi-09",
+      "lang": "ms",
+      "term": "berus gigi",
+      "gloss_en": "toothbrush",
+      "gloss_ja": "歯ブラシ",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-bangun-pagi"
+        },
+        {
+          "type": "pinjam",
+          "text": "berus is from English 'brush', like ブラシ. A root, not a ber- word."
+        }
+      ],
+      "scene": "dunia-rumah-bangun-pagi",
+      "chapter": 4,
+      "image": "🪥"
+    },
+    {
+      "id": "ms-d-rumah-bangun-pagi-10",
+      "lang": "ms",
+      "term": "ubat gigi",
+      "gloss_en": "toothpaste",
+      "gloss_ja": "歯磨き粉",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-bangun-pagi"
+        },
+        {
+          "type": "kanji",
+          "text": "ubat (medicine) + gigi (teeth): 'tooth medicine'."
+        }
+      ],
+      "scene": "dunia-rumah-bangun-pagi",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-rumah-bangun-pagi-11",
+      "lang": "ms",
+      "term": "gosok",
+      "gloss_en": "to brush, rub; to iron",
+      "gloss_ja": "磨く・こする",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-bangun-pagi"
+        }
+      ],
+      "scene": "dunia-rumah-bangun-pagi",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-rumah-bangun-pagi-12",
+      "lang": "ms",
+      "term": "sabun",
+      "gloss_en": "soap",
+      "gloss_ja": "石けん",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-bangun-pagi"
+        },
+        {
+          "type": "bunyi",
+          "text": "Sounds like シャボン (シャボン玉)."
+        }
+      ],
+      "scene": "dunia-rumah-bangun-pagi",
+      "chapter": 4,
+      "image": "🧼"
+    },
+    {
+      "id": "ms-d-rumah-bangun-pagi-13",
+      "lang": "ms",
+      "term": "tuala",
+      "gloss_en": "towel",
+      "gloss_ja": "タオル",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-bangun-pagi"
+        },
+        {
+          "type": "bunyi",
+          "text": "Sounds close to タオル."
+        }
+      ],
+      "scene": "dunia-rumah-bangun-pagi",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-rumah-bangun-pagi-14",
+      "lang": "ms",
+      "term": "pakai",
+      "gloss_en": "to wear; to use",
+      "gloss_ja": "着る・使う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-rumah-bangun-pagi"
+        }
+      ],
+      "scene": "dunia-rumah-bangun-pagi",
+      "chapter": 4,
+      "image": "👕"
+    }
+  ]
+}

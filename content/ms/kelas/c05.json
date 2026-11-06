@@ -1,0 +1,1201 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c05",
+  "chapter": 5,
+  "status": "draft",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Kata Sifat",
+    "en": "Adjectives",
+    "ja": "形容詞"
+  },
+  "cards": [
+    {
+      "id": "ms-c05-001",
+      "lang": "ms",
+      "term": "rasa",
+      "gloss_en": "taste; to feel",
+      "gloss_ja": "味；感じる",
+      "pos": "noun/verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-002",
+      "lang": "ms",
+      "term": "bagaimana",
+      "gloss_en": "how",
+      "gloss_ja": "どう・どのように",
+      "pos": "question",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-003",
+      "lang": "ms",
+      "term": "macam mana",
+      "gloss_en": "how (spoken)",
+      "gloss_ja": "どう（口語）",
+      "pos": "question",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-004",
+      "lang": "ms",
+      "term": "yang",
+      "gloss_en": "the one that is; which",
+      "gloss_ja": "〜の（もの）・〜な",
+      "pos": "particle",
+      "affix_tag": "root",
+      "note": "yang merah = the red one",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-005",
+      "lang": "ms",
+      "term": "mahu / nak",
+      "gloss_en": "to want",
+      "gloss_ja": "欲しい・〜したい",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "nak is spoken.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-006",
+      "lang": "ms",
+      "term": "atau",
+      "gloss_en": "or",
+      "gloss_ja": "または",
+      "pos": "conj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-007",
+      "lang": "ms",
+      "term": "tetapi / tapi",
+      "gloss_en": "but",
+      "gloss_ja": "でも",
+      "pos": "conj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-008",
+      "lang": "ms",
+      "term": "sedikit / sikit",
+      "gloss_en": "a little",
+      "gloss_ja": "少し",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-009",
+      "lang": "ms",
+      "term": "banyak",
+      "gloss_en": "a lot, many",
+      "gloss_ja": "たくさん",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-010",
+      "lang": "ms",
+      "term": "manis",
+      "gloss_en": "sweet",
+      "gloss_ja": "甘い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-011",
+      "lang": "ms",
+      "term": "masin",
+      "gloss_en": "salty",
+      "gloss_ja": "しょっぱい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-012",
+      "lang": "ms",
+      "term": "masam",
+      "gloss_en": "sour",
+      "gloss_ja": "酸っぱい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-013",
+      "lang": "ms",
+      "term": "pedas",
+      "gloss_en": "spicy (chilli hot)",
+      "gloss_ja": "辛い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-014",
+      "lang": "ms",
+      "term": "pahit",
+      "gloss_en": "bitter",
+      "gloss_ja": "苦い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-015",
+      "lang": "ms",
+      "term": "tawar",
+      "gloss_en": "bland, unsweetened",
+      "gloss_ja": "味がない",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-016",
+      "lang": "ms",
+      "term": "sedap",
+      "gloss_en": "delicious",
+      "gloss_ja": "おいしい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-017",
+      "lang": "ms",
+      "term": "kurang manis",
+      "gloss_en": "less sweet (less sugar)",
+      "gloss_ja": "甘さ控えめ",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Essential ordering phrase.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-018",
+      "lang": "ms",
+      "term": "warna",
+      "gloss_en": "colour",
+      "gloss_ja": "色",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-019",
+      "lang": "ms",
+      "term": "merah",
+      "gloss_en": "red",
+      "gloss_ja": "赤",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-020",
+      "lang": "ms",
+      "term": "oren / jingga",
+      "gloss_en": "orange",
+      "gloss_ja": "オレンジ色",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-021",
+      "lang": "ms",
+      "term": "kuning",
+      "gloss_en": "yellow",
+      "gloss_ja": "黄色",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-022",
+      "lang": "ms",
+      "term": "hijau",
+      "gloss_en": "green",
+      "gloss_ja": "緑",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-023",
+      "lang": "ms",
+      "term": "biru",
+      "gloss_en": "blue",
+      "gloss_ja": "青",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-024",
+      "lang": "ms",
+      "term": "ungu",
+      "gloss_en": "purple",
+      "gloss_ja": "紫",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-025",
+      "lang": "ms",
+      "term": "merah jambu",
+      "gloss_en": "pink",
+      "gloss_ja": "ピンク",
+      "pos": "adj",
+      "affix_tag": "chunk",
+      "note": "lit. jambu-fruit red",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-026",
+      "lang": "ms",
+      "term": "coklat",
+      "gloss_en": "brown",
+      "gloss_ja": "茶色",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-027",
+      "lang": "ms",
+      "term": "hitam",
+      "gloss_en": "black",
+      "gloss_ja": "黒",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-028",
+      "lang": "ms",
+      "term": "putih",
+      "gloss_en": "white",
+      "gloss_ja": "白",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-029",
+      "lang": "ms",
+      "term": "kelabu",
+      "gloss_en": "grey",
+      "gloss_ja": "灰色",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-030",
+      "lang": "ms",
+      "term": "besar",
+      "gloss_en": "big",
+      "gloss_ja": "大きい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-031",
+      "lang": "ms",
+      "term": "kecil",
+      "gloss_en": "small",
+      "gloss_ja": "小さい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-032",
+      "lang": "ms",
+      "term": "pendek",
+      "gloss_en": "short",
+      "gloss_ja": "短い・背が低い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-033",
+      "lang": "ms",
+      "term": "rendah",
+      "gloss_en": "low",
+      "gloss_ja": "低い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-034",
+      "lang": "ms",
+      "term": "ringan",
+      "gloss_en": "light (weight)",
+      "gloss_ja": "軽い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-035",
+      "lang": "ms",
+      "term": "tebal",
+      "gloss_en": "thick",
+      "gloss_ja": "厚い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-036",
+      "lang": "ms",
+      "term": "nipis",
+      "gloss_en": "thin",
+      "gloss_ja": "薄い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-037",
+      "lang": "ms",
+      "term": "sempit",
+      "gloss_en": "narrow, cramped",
+      "gloss_ja": "狭い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-038",
+      "lang": "ms",
+      "term": "gembira",
+      "gloss_en": "happy",
+      "gloss_ja": "嬉しい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-039",
+      "lang": "ms",
+      "term": "sedih",
+      "gloss_en": "sad",
+      "gloss_ja": "悲しい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-040",
+      "lang": "ms",
+      "term": "marah",
+      "gloss_en": "angry",
+      "gloss_ja": "怒っている",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-041",
+      "lang": "ms",
+      "term": "takut",
+      "gloss_en": "afraid",
+      "gloss_ja": "怖い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-042",
+      "lang": "ms",
+      "term": "penat",
+      "gloss_en": "tired",
+      "gloss_ja": "疲れた",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-043",
+      "lang": "ms",
+      "term": "lapar",
+      "gloss_en": "hungry",
+      "gloss_ja": "お腹が空いた",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-044",
+      "lang": "ms",
+      "term": "kenyang",
+      "gloss_en": "full (after eating)",
+      "gloss_ja": "お腹いっぱい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-045",
+      "lang": "ms",
+      "term": "dahaga",
+      "gloss_en": "thirsty",
+      "gloss_ja": "喉が渇いた",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-046",
+      "lang": "ms",
+      "term": "bosan",
+      "gloss_en": "bored",
+      "gloss_ja": "退屈",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-047",
+      "lang": "ms",
+      "term": "seronok",
+      "gloss_en": "fun, enjoyable",
+      "gloss_ja": "楽しい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-048",
+      "lang": "ms",
+      "term": "risau",
+      "gloss_en": "worried",
+      "gloss_ja": "心配",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-049",
+      "lang": "ms",
+      "term": "sakit",
+      "gloss_en": "sick; painful",
+      "gloss_ja": "痛い・病気",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-050",
+      "lang": "ms",
+      "term": "panas",
+      "gloss_en": "hot",
+      "gloss_ja": "熱い・暑い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-051",
+      "lang": "ms",
+      "term": "sejuk",
+      "gloss_en": "cold",
+      "gloss_ja": "冷たい・寒い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-052",
+      "lang": "ms",
+      "term": "ais",
+      "gloss_en": "ice",
+      "gloss_ja": "氷",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-053",
+      "lang": "ms",
+      "term": "air",
+      "gloss_en": "water; drink",
+      "gloss_ja": "水・飲み物",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-054",
+      "lang": "ms",
+      "term": "air kosong",
+      "gloss_en": "plain water",
+      "gloss_ja": "お水",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "kosong = zero, empty (Ch3).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-055",
+      "lang": "ms",
+      "term": "teh / kopi",
+      "gloss_en": "tea / coffee",
+      "gloss_ja": "紅茶／コーヒー",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "teh O = tea without milk",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-056",
+      "lang": "ms",
+      "term": "nasi",
+      "gloss_en": "cooked rice",
+      "gloss_ja": "ご飯",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-057",
+      "lang": "ms",
+      "term": "mi",
+      "gloss_en": "noodles",
+      "gloss_ja": "麺",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-058",
+      "lang": "ms",
+      "term": "roti",
+      "gloss_en": "bread",
+      "gloss_ja": "パン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c05-f01",
+      "frame": "(noun) ini (adjective).",
+      "example": "Kopi ini pahit.",
+      "meaning_en": "This coffee is bitter.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c05-f02",
+      "frame": "Bagaimana rasa ___? / ___, tetapi ___.",
+      "example": "Bagaimana rasa nasi lemak ini? Sedap, tetapi pedas.",
+      "meaning_en": "How's this nasi lemak? Delicious, but spicy.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c05-f03",
+      "frame": "Saya mahu ___ yang ___.",
+      "example": "Saya mahu baju yang biru.",
+      "meaning_en": "I want the blue shirt.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c05-f04",
+      "frame": "Saya rasa ___.",
+      "example": "Saya rasa penat.",
+      "meaning_en": "I feel tired.",
+      "meaning_ja": null
+    },
+    {
+      "id": "ms-c05-f05",
+      "frame": "Saya mahu ___, kurang manis, ais sedikit.",
+      "example": "Saya mahu teh tarik, kurang manis, ais sedikit.",
+      "meaning_en": "Teh tarik, less sweet, a little ice.",
+      "meaning_ja": null
+    }
+  ],
+  "scenario": {
+    "title_en": "At the mamak",
+    "title_ja": null,
+    "lines": [
+      {
+        "id": "ms-c05-s01",
+        "speaker": "Abang Rashid",
+        "ms": "Selamat petang! Encik mahu minum apa?",
+        "en": "Good afternoon! What would you like to drink?"
+      },
+      {
+        "id": "ms-c05-s02",
+        "speaker": "Tanaka",
+        "ms": "Saya mahu teh tarik, kurang manis.",
+        "en": "I'd like teh tarik, less sweet."
+      },
+      {
+        "id": "ms-c05-s03",
+        "speaker": "Abang Rashid",
+        "ms": "Panas atau sejuk?",
+        "en": "Hot or cold?"
+      },
+      {
+        "id": "ms-c05-s04",
+        "speaker": "Tanaka",
+        "ms": "Sejuk. Ais sedikit.",
+        "en": "Cold. A little ice."
+      },
+      {
+        "id": "ms-c05-s05",
+        "speaker": "Abang Rashid",
+        "ms": "Makan?",
+        "en": "Anything to eat?"
+      },
+      {
+        "id": "ms-c05-s06",
+        "speaker": "Tanaka",
+        "ms": "Nasi lemak satu. Sambalnya pedas?",
+        "en": "One nasi lemak. Is the sambal spicy?"
+      },
+      {
+        "id": "ms-c05-s07",
+        "speaker": "Abang Rashid",
+        "ms": "Pedas sedikit, tapi sedap!",
+        "en": "A little spicy, but delicious!"
+      },
+      {
+        "id": "ms-c05-s08",
+        "speaker": "(Later)",
+        "ms": "Abang Rashid: Macam mana? Sedap?",
+        "en": "How is it? Good?"
+      },
+      {
+        "id": "ms-c05-s09",
+        "speaker": "Tanaka",
+        "ms": "Sedap! Tapi pedas. Saya rasa panas!",
+        "en": "Delicious! But spicy. I feel hot!"
+      },
+      {
+        "id": "ms-c05-s10",
+        "speaker": "Abang Rashid",
+        "ms": "Ini air kosong.",
+        "en": "Here's some plain water."
+      },
+      {
+        "id": "ms-c05-s11",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih, abang. Saya kenyang!",
+        "en": "Thanks. I'm full!"
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c05-001",
+      "ms-c05-002",
+      "ms-c05-003",
+      "ms-c05-004",
+      "ms-c05-005",
+      "ms-c05-006",
+      "ms-c05-007",
+      "ms-c05-008",
+      "ms-c05-010",
+      "ms-c05-013",
+      "ms-c05-014",
+      "ms-c05-016",
+      "ms-c05-017",
+      "ms-c05-023",
+      "ms-c05-042",
+      "ms-c05-044",
+      "ms-c05-050",
+      "ms-c05-051",
+      "ms-c05-052",
+      "ms-c05-053",
+      "ms-c05-054",
+      "ms-c05-055",
+      "ms-c05-056"
+    ],
+    "frames": [
+      "ms-c05-f01",
+      "ms-c05-f02"
+    ],
+    "scene": "dapur-masak"
+  }
+}
