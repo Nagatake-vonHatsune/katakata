@@ -4,15 +4,18 @@ import { getLang, t } from '../core/i18n';
 import { chapterProgress, knownCount, minutesThisWeek, sceneProgress, streak } from '../core/progress';
 import { buildSavefile, mergeStates, parseSavefile, summarise } from '../core/savefile';
 import { pickFile, safeName, shareOrDownload } from '../core/share';
+import { seconds } from '../core/score';
 import { replaceState, state, update } from '../core/state';
 import { button, confirmDialog, h, mount, progressBar, sheet, toast } from '../core/ui';
 import { stampEl } from './stamps';
 import { topBar } from './widgets';
 
 export function applyTheme(): void {
-  const th = state.settings.theme;
-  if (th === 'auto') document.documentElement.removeAttribute('data-theme');
-  else document.documentElement.setAttribute('data-theme', th);
+  const root = document.documentElement;
+  const set = (attr: string, value: string, unless: string) => (value === unless ? root.removeAttribute(attr) : root.setAttribute(attr, value));
+  set('data-theme', state.settings.theme, 'auto');
+  set('data-palette', state.settings.palette, 'kancil');
+  set('data-text', state.settings.textSize, 'm');
 }
 
 function fmtDate(iso: string): string {
@@ -56,6 +59,27 @@ async function importSave(redraw: () => void): Promise<void> {
   redraw();
 }
 
+function scoreRecords(): HTMLElement {
+  const r = state.scores;
+  const row = (label: string, value: string) => h('div', { class: 'rec-row' }, h('span', null, label), h('b', null, value));
+  return h(
+    'section',
+    { class: 'card-box' },
+    h('h2', null, '★ ', t('score.records')),
+    r.total
+      ? h(
+          'div',
+          null,
+          row(t('score.best_session'), `★ ${r.bestSession}`),
+          row(t('score.laju_best'), `⚡ ${r.lajuBest}`),
+          row(t('score.combo'), `🔥 ${r.bestCombo}`),
+          row(t('score.fastest'), r.fastestMs === null ? '–' : t('score.sec', { n: seconds(r.fastestMs) })),
+          row(t('score.total'), `★ ${r.total}`),
+        )
+      : h('p', { class: 'muted' }, t('score.none')),
+  );
+}
+
 export function renderRekod(root: HTMLElement, go: (r: string) => void): void {
   const draw = () => {
     const stamps = state.stamps.slice().sort((a, b) => b.date.localeCompare(a.date));
@@ -74,6 +98,7 @@ export function renderRekod(root: HTMLElement, go: (r: string) => void): void {
           h('div', { class: 'stat' }, h('b', null, String(minutesThisWeek())), h('span', null, t('misc.min_week'))),
         ),
         h('p', { class: 'muted small center' }, t('home.streak_rest')),
+        scoreRecords(),
         h('section', { class: 'card-box' }, h('h2', null, t('rekod.stamps')), stamps.length ? h('div', { class: 'stamp-grid' }, stamps.map(stampEl)) : h('p', { class: 'muted' }, t('rekod.no_stamps'))),
         h(
           'section',

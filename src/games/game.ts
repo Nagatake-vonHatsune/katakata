@@ -15,6 +15,12 @@ export interface GameContext {
   dontKnow(onClick: () => void): HTMLElement;
   /** Ask teacher, report, and the one obvious next action. */
   footer(context: ItemContext, onNext: () => void, nextLabel?: string): HTMLElement;
+  /**
+   * Call the moment the learner answers, before showing feedback. Scores the answer (points, speed bonus,
+   * combo) and returns a small "+12 ⚡ 🔥3" badge to show with the feedback, or null (no points, or points
+   * are switched off). `at` is when the answer was given if that was earlier (self-rated recall).
+   */
+  answered(correct: boolean, opts?: { at?: number; base?: number }): HTMLElement | null;
 }
 
 export interface Game<S extends Step = Step> {

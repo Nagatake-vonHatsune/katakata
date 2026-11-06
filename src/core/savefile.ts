@@ -1,4 +1,5 @@
 // Savefile (spec 10.2): one .katakata file, JSON inside, with schema version and checksum.
+import { emptyRecords, mergeRecords } from './score';
 import { migrate } from './state';
 import type { AppState, SrsState } from './types';
 
@@ -114,6 +115,7 @@ export function mergeStates(local: AppState, incoming: AppState): AppState {
     stamps,
     studySeconds: maxRec(local.studySeconds, incoming.studySeconds),
     howToSeen: { ...incoming.howToSeen, ...local.howToSeen },
+    scores: mergeRecords(local.scores ?? emptyRecords(), incoming.scores ?? emptyRecords()),
     lastBackupAt: later(incoming.lastBackupAt, local.lastBackupAt) ? incoming.lastBackupAt : local.lastBackupAt,
   };
 }

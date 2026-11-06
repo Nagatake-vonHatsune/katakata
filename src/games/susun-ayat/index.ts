@@ -69,10 +69,11 @@ function run(step: SusunStep, ctx: GameContext): Promise<StepResult> {
     const finish = (correct: boolean) => {
       if (done) return;
       done = true;
+      const badge = ctx.answered(correct);
       controls.remove();
       void speak(frame.example);
       add(result, 
-        h('p', { class: correct ? 'feedback ok' : 'feedback neutral' }, correct ? t('sess.correct') : t('sess.again_later')),
+        h('p', { class: correct ? 'feedback ok' : 'feedback neutral' }, correct ? t('sess.correct') : t('sess.again_later'), badge),
         h('p', { class: 'sentence', lang: 'ms' }, frame.example),
         audioButtons(frame.example),
         h('p', { class: 'frame-pattern' }, `${t('game.susun.frame')}: `, h('span', { lang: 'ms' }, frame.frame)),

@@ -41,10 +41,11 @@ function mc(step: Extract<Step, { kind: 'mc' }>, ctx: GameContext): Promise<Step
         if (b.dataset.id === card.id) b.classList.add(correct ? 'opt-correct' : 'opt-answer');
       });
       if (chosen && !correct) chosen.classList.add('opt-chosen');
+      const badge = ctx.answered(correct);
       dk.remove();
       if (toMalay) void speak(card.term, { cardId: card.id });
       add(answer, 
-        h('p', { class: correct ? 'feedback ok' : 'feedback neutral' }, correct ? t('sess.correct') : t('sess.again_later')),
+        h('p', { class: correct ? 'feedback ok' : 'feedback neutral' }, correct ? t('sess.correct') : t('sess.again_later'), badge),
         toMalay ? wordHeader(card, { kana: false }) : null,
         !toMalay || !correct ? glossLine(card) : null,
         chips(card),
@@ -76,8 +77,13 @@ function recall(step: Extract<Step, { kind: 'recall' }>, ctx: GameContext): Prom
   return new Promise((resolve) => {
     const answer = h('div', { class: 'answer', 'aria-live': 'polite' });
     const reveal = (gaveUp: boolean) => {
+      const at = performance.now();
       actions.remove();
-      const rate = (g: Grade) => resolve({ outcome: 'rated', grade: g });
+      const rate = (g: Grade) => {
+        // Speed counts up to "Show"; a Hard self-rating still keeps the combo but earns fewer points.
+        ctx.answered(!gaveUp && g !== Rating.Again, { at, base: g === Rating.Hard ? 6 : undefined });
+        resolve({ outcome: 'rated', grade: g });
+      };
       add(answer, 
         wordHeader(card, { autoplay: true, kana: false }),
         chips(card),

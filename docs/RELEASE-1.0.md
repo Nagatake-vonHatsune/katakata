@@ -3,7 +3,7 @@
 **Proposed definition (for Sam to confirm):** the same as Hanashishou's, chosen on 2 November 2026:
 **1.0 = release-ready, plus the classroom features.** Content keeps growing through 1.x.
 
-The current version is **0.9.1** (release candidate). Bump `package.json` to 1.0.0 once every item below is ticked.
+The current version is **0.10.0** (release candidate). Bump `package.json` to 1.0.0 once every item below is ticked.
 
 ## Status
 

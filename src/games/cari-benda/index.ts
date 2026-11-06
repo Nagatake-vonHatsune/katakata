@@ -38,6 +38,7 @@ function run(step: CariStep, ctx: GameContext): Promise<StepResult> {
     const finish = (correct: boolean, chosen?: HTMLElement) => {
       if (done) return;
       done = true;
+      const badge = ctx.answered(correct);
       dk.remove();
       word.classList.remove('hidden');
       board.querySelectorAll<HTMLButtonElement>('.cari-obj').forEach((b) => {
@@ -46,7 +47,7 @@ function run(step: CariStep, ctx: GameContext): Promise<StepResult> {
       });
       if (chosen && !correct) chosen.classList.add('obj-chosen');
       add(answer, 
-        h('p', { class: correct ? 'feedback ok' : 'feedback neutral' }, correct ? t('sess.correct') : t('sess.again_later')),
+        h('p', { class: correct ? 'feedback ok' : 'feedback neutral' }, correct ? t('sess.correct') : t('sess.again_later'), badge),
         glossLine(target),
         ctx.footer(contextFor(target), () => resolve({ outcome: correct ? 'correct' : 'wrong' })),
       );

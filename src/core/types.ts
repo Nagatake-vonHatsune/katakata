@@ -1,4 +1,5 @@
 // Shared data shapes. Card fields match the Hanashishou word-library format (spec 5.5).
+import type { ScoreRecords } from './score';
 
 export type LinkType = 'babak' | 'bunyi' | 'kanji' | 'pinjam' | 'keluarga' | 'pasangan' | 'amaran' | 'hook_saya';
 
@@ -125,6 +126,12 @@ export interface Settings {
   kanaHints: boolean;
   backupReminder: boolean;
   speechRate: number;
+  /** Colour palette (light and dark variants each); see styles.css [data-palette]. */
+  palette: 'kancil' | 'cyan' | 'royal' | 'rebel';
+  /** Text size: sets the root font size, everything else is in rem. */
+  textSize: 's' | 'm' | 'l' | 'xl';
+  /** Show points, speed bonus and combo during practice (records are kept either way). */
+  showPoints: boolean;
 }
 
 export interface AppState {
@@ -144,4 +151,6 @@ export interface AppState {
   studySeconds: Record<string, number>;
   howToSeen: Record<string, boolean>;
   lastBackupAt?: string;
+  /** Personal bests for points (src/core/score.ts). */
+  scores: ScoreRecords;
 }

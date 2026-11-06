@@ -95,6 +95,7 @@ export function renderHome(root: HTMLElement, nav: Nav): void {
         tile('mode.sedia', 'sedia', '🎒'),
         tile('mode.ulang', 'ulang', '🔁'),
         tile('mode.main', 'main', '🎲'),
+        tile('mode.laju', 'laju', '⚡'),
         tile('mode.tanya', 'tanya', '🙋'),
         tile('mode.jaring', 'jaring', '🕸️'),
         tile('mode.rekod', 'rekod', '📒'),

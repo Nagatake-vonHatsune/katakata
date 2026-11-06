@@ -1,4 +1,5 @@
 import * as db from './db';
+import { emptyRecords } from './score';
 import { migrateSrs } from './srs';
 import type { AppState } from './types';
 
@@ -9,7 +10,7 @@ export function defaultState(): AppState {
     schemaVersion: 1,
     createdAt: new Date().toISOString(),
     profile: { name: '', onboarded: false },
-    settings: { lang: 'ja', theme: 'auto', kanaHints: true, backupReminder: true, speechRate: 0.9 },
+    settings: { lang: 'ja', theme: 'auto', kanaHints: true, backupReminder: true, speechRate: 0.9, palette: 'kancil', textSize: 'm', showPoints: true },
     srs: {},
     kanaSeen: {},
     frames: {},
@@ -19,6 +20,7 @@ export function defaultState(): AppState {
     stamps: [],
     studySeconds: {},
     howToSeen: {},
+    scores: emptyRecords(),
   };
 }
 
@@ -31,6 +33,7 @@ export function migrate(raw: Partial<AppState> & Record<string, unknown>): AppSt
     schemaVersion: 1,
     profile: { ...base.profile, ...(raw.profile ?? {}) },
     settings: { ...base.settings, ...(raw.settings ?? {}) },
+    scores: { ...base.scores, ...((raw.scores as object) ?? {}) },
     srs: Object.fromEntries(Object.entries(raw.srs ?? {}).map(([k, v]) => [k, migrateSrs(v as unknown as Record<string, unknown>)])),
   } as AppState;
 }

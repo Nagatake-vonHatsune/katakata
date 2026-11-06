@@ -3,6 +3,7 @@ import { content, gloss, srsKey } from '../core/content';
 import { getLang, t } from '../core/i18n';
 import { addStudySeconds, awardStamps, isReady, nextChapter } from '../core/progress';
 import { estimateMinutes, gameOf, requeue, type Session, type Step } from '../core/session';
+import { foldRecords, Scorer } from '../core/score';
 import { newSrs, Rating, review, weakness } from '../core/srs';
 import { saveNow, state, update } from '../core/state';
 import { stopSpeech } from '../core/tts';
@@ -15,6 +16,7 @@ import { susunAyat } from '../games/susun-ayat';
 import { askTeacher, howTo, reportContent } from './widgets';
 import { stampEl } from './stamps';
 import { langButton } from './langswitch';
+import { pointsBadge, scorePill, scoreStats } from './points';
 
 const games: Record<'kad' | 'cari' | 'susun', Game> = {
   kad: kadKata as Game,
@@ -65,6 +67,9 @@ export async function runSession(root: HTMLElement, session: Session, onExit: ()
   const missed = new Set<string>();
   const reviewed = new Set<string>();
   const started = Date.now();
+  const scorer = new Scorer();
+  const showPoints = state.settings.showPoints;
+  const pill = scorePill();
   let lastTick = Date.now();
   let quit = false;
   const tick = () => {
@@ -100,11 +105,19 @@ export async function runSession(root: HTMLElement, session: Session, onExit: ()
       ),
       progressBar(i, steps.length, t('sess.progress', { i: i + 1, n: steps.length })),
       h('span', { class: 'count' }, t('sess.progress', { i: i + 1, n: steps.length })),
+      showPoints ? pill.el : null,
       h('button', { class: 'icon-btn', type: 'button', 'aria-label': t('common.help'), onclick: () => void howTo(gameId, true) }, '?'),
       langButton(t('lang.next_question')),
     );
     mount(root, h('div', { class: 'screen session' }, header, body));
+    const shownAt = performance.now();
     const ctx: GameContext = {
+      answered: (correct, opts = {}) => {
+        const hit = scorer.hit(gameId, correct, (opts.at ?? performance.now()) - shownAt, opts.base);
+        if (!showPoints) return null;
+        pill.update(scorer);
+        return pointsBadge(hit);
+      },
       body,
       dontKnow: (onClick) => button(t('sess.dont_know'), onClick, 'btn btn-ghost btn-dontknow'),
       footer: (context: ItemContext, onNext: () => void, nextLabel?: string) =>
@@ -133,14 +146,17 @@ export async function runSession(root: HTMLElement, session: Session, onExit: ()
   }
   if (quit) return;
   const stamps = awardStamps(true);
+  let beat = { score: false, combo: false, fastest: false };
+  update((s) => (beat = foldRecords(s.scores, scorer, 'session')));
   void saveNow();
-  showSummary(root, session, { learned, missed, reviewed, seconds: Math.round((Date.now() - started) / 1000), stamps }, onExit);
+  const points = showPoints && scorer.right > 0 ? scoreStats(scorer, beat) : null;
+  showSummary(root, session, { learned, missed, reviewed, seconds: Math.round((Date.now() - started) / 1000), stamps, points }, onExit);
 }
 
 function showSummary(
   root: HTMLElement,
   session: Session,
-  r: { learned: Set<string>; missed: Set<string>; reviewed: Set<string>; seconds: number; stamps: ReturnType<typeof awardStamps> },
+  r: { learned: Set<string>; missed: Set<string>; reviewed: Set<string>; seconds: number; stamps: ReturnType<typeof awardStamps>; points: HTMLElement | null },
   onExit: () => void,
 ): void {
   const lang = getLang();
@@ -166,6 +182,7 @@ function showSummary(
         h('div', { class: 'stat' }, h('b', null, String(r.reviewed.size)), h('span', null, t('sum.reviewed'))),
         h('div', { class: 'stat' }, h('b', null, `${mins}`), h('span', null, `${t('sum.minutes')} (${t('misc.min')})`)),
       ),
+      r.points,
       hardest.length
         ? h(
             'section',

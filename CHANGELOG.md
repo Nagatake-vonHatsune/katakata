@@ -1,6 +1,18 @@
 # Changelog
 
-## Unreleased
+## 0.10.0 (6 November 2026)
+
+- **Points.** Every right answer earns points, with a ⚡ speed bonus and a 🔥 combo multiplier (up to ×2).
+  A miss never takes points away; it only resets the combo. Points never change the review schedule.
+  The summary shows score, best combo and fastest answer with "New best!" tags; Records keeps personal bests.
+  Settings can hide points.
+- **Laju!** (⚡ on Home): a 60-second round on words you already know (needs 8). Practice only: it does not
+  change the review schedule. The clock pauses when the app is in the background.
+- **Colour palettes:** Kancil Green (default), First Sound Cyan, Royal Red Gold and Rebel Blue, each with a light
+  and a dark variant; every text/background pair meets WCAG AA (4.5:1). Kancil's accent is a shade darker for
+  the same reason.
+- **Text size:** S, M, L, XL (the whole app scales).
+- New end-to-end test `tests/e2e/fun.cjs` (points, Laju!, palettes, text size).
 
 - Ch4 time frame: "pukul empat kurang suku" (not used in everyday Malay) replaced with "pukul empat suku";
   the Ch4 lunch scenario line now says "pukul satu suku" (Sam's correction).

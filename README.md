@@ -10,7 +10,7 @@ device only when the learner exports it.
 - Settings: `/#/settings` (language, display, sound). Records (`/#/rekod`) holds stamps, progress and the savefile.
 - Language links for sharing: `/?lang=ja`, `/?lang=en`, `/?lang=ms`
 - Teacher Desk: `/teacher/` (drop in student files, merge questions, print the class agenda)
-- Version **0.9.1**, a 1.0 release candidate: see [docs/RELEASE-1.0.md](docs/RELEASE-1.0.md) and [CHANGELOG.md](CHANGELOG.md).
+- Version **0.10.0**, a 1.0 release candidate: see [docs/RELEASE-1.0.md](docs/RELEASE-1.0.md) and [CHANGELOG.md](CHANGELOG.md).
 
 With the English or Malay interface, word meanings are shown in English (the Vocab Bank has English
 and Japanese glosses). Katakana hints only appear in the Japanese interface.
@@ -30,6 +30,8 @@ and Japanese glosses). Katakana hints only appear in the Japanese interface.
 | Teacher Desk: merge, duplicate counts, prep table, weakest words, A4 agenda | `teacher/`, `src/teacher/` |
 | Offline after first visit | service worker generated at build (`src/sw-template.js`) |
 | 話匠へ: hand words on to Hanashishou (stage 3, Jambatan) | `src/core/bridge.ts`, `src/views/jambatan.ts` |
+| Points (speed bonus, combo, personal bests; never subtracted) and the 60-second Laju! round | `src/core/score.ts`, `src/views/points.ts`, `src/views/laju.ts` |
+| Colour palettes (Kancil Green, First Sound Cyan, Royal Red Gold, Rebel Blue) and text size S–XL | `src/views/settings.ts`, `src/styles.css` |
 
 Also in: Japanese-first UI with an English toggle, やり方 cards and a `?` button on every activity,
 わからない on every question, no red crosses (misses come back later in the session),
@@ -74,6 +76,7 @@ End-to-end smoke test (onboarding → session → ask teacher → send → Teach
 ```bash
 npx vite build && npx vite preview --port 4173 &
 node tests/e2e/smoke.cjs
+node tests/e2e/fun.cjs     # points, Laju!, palettes, text size
 ```
 
 ## Deploy (Cloudflare Workers static assets, free plan)
