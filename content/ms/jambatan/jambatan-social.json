@@ -1,0 +1,369 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "jambatan-social",
+  "chapter": 9,
+  "status": "live",
+  "ja_review": "pending",
+  "source": "hanashishou@347a969 content/packs/social/targets/ms (bands 1-2)",
+  "world": {
+    "id": "jambatan",
+    "ms": "Jambatan",
+    "en": "Bridge to Hanashishou",
+    "ja": "話匠への橋"
+  },
+  "title": {
+    "ms": "Bersosial",
+    "en": "Social life",
+    "ja": "人づきあい"
+  },
+  "setting": {
+    "en": "Words you will meet in Hanashishou's social life episodes, so they are already familiar when you arrive.",
+    "ja": "話匠の「人づきあい」のエピソードに出てくる言葉。先に覚えておけば、話匠に進んだときに見覚えがあります。"
+  },
+  "cards": [
+    {
+      "id": "ms-j-social-01",
+      "lang": "ms",
+      "term": "hujung minggu",
+      "gloss_en": "Weekend",
+      "gloss_ja": "週末",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Apa awak buat hujung minggu ini?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-02",
+      "lang": "ms",
+      "term": "set",
+      "gloss_en": "\"Deal!\" / \"Agreed!\" (everyday speech)",
+      "gloss_ja": "「決まり！」（日常の話し言葉）",
+      "pos": "expression",
+      "affix_tag": "root",
+      "note": "Hanashishou: Set!",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-03",
+      "lang": "ms",
+      "term": "jalan sesak",
+      "gloss_en": "Traffic jam; heavy traffic",
+      "gloss_ja": "渋滞",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Jalan sesak.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-04",
+      "lang": "ms",
+      "term": "belakang pentas",
+      "gloss_en": "Backstage",
+      "gloss_ja": "舞台裏",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Saya tolong di belakang pentas.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-05",
+      "lang": "ms",
+      "term": "senarai lagu",
+      "gloss_en": "Setlist; song list",
+      "gloss_ja": "セットリスト、曲順",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Senarai lagu saya hilang!",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-06",
+      "lang": "ms",
+      "term": "jujur",
+      "gloss_en": "Honest",
+      "gloss_ja": "正直な",
+      "pos": "adjective",
+      "affix_tag": "root",
+      "note": "Hanashishou: Cakap jujur.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-07",
+      "lang": "ms",
+      "term": "krew",
+      "gloss_en": "Crew",
+      "gloss_ja": "スタッフ、クルー",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Krew sudah sedia.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-08",
+      "lang": "ms",
+      "term": "bunga api",
+      "gloss_en": "Fireworks",
+      "gloss_ja": "花火",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Saya suka bunga api.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-09",
+      "lang": "ms",
+      "term": "janji",
+      "gloss_en": "A promise; to promise",
+      "gloss_ja": "約束（する）",
+      "pos": "noun / verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Janji?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-10",
+      "lang": "ms",
+      "term": "jujurnya",
+      "gloss_en": "Honestly; to be honest",
+      "gloss_ja": "正直に言うと",
+      "pos": "adverb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Jujurnya, saya suka.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-11",
+      "lang": "ms",
+      "term": "tepat",
+      "gloss_en": "Precise; exact",
+      "gloss_ja": "的確な、正確な",
+      "pos": "adjective",
+      "affix_tag": "root",
+      "note": "Hanashishou: Cakap dengan tepat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-12",
+      "lang": "ms",
+      "term": "bunga api tangan",
+      "gloss_en": "Sparklers (hand-held fireworks)",
+      "gloss_ja": "手持ち花火",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Kita main bunga api tangan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-13",
+      "lang": "ms",
+      "term": "sepupu",
+      "gloss_en": "Cousin",
+      "gloss_ja": "いとこ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya pergi kenduri kahwin sepupu saya.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-14",
+      "lang": "ms",
+      "term": "lenguh",
+      "gloss_en": "Aching, stiff (muscles)",
+      "gloss_ja": "（筋肉が）だるい、痛い",
+      "pos": "adjective",
+      "affix_tag": "root",
+      "note": "Hanashishou: Kaki saya lenguh hari ini.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-15",
+      "lang": "ms",
+      "term": "gear",
+      "gloss_en": "Gear (of a bicycle)",
+      "gloss_ja": "ギア",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Ada bunyi bila saya tukar gear.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-16",
+      "lang": "ms",
+      "term": "belanja",
+      "gloss_en": "To treat someone (pay for them)",
+      "gloss_ja": "おごる、ごちそうする",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Hari ini saya belanja.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-17",
+      "lang": "ms",
+      "term": "balkoni",
+      "gloss_en": "Balcony",
+      "gloss_ja": "ベランダ、バルコニー",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Ia hantar ke balkoni.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-18",
+      "lang": "ms",
+      "term": "tanpa ais",
+      "gloss_en": "Without ice",
+      "gloss_ja": "氷なし",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Tanpa ais, ya.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-19",
+      "lang": "ms",
+      "term": "gula perang",
+      "gloss_en": "Brown sugar",
+      "gloss_ja": "黒糖、ブラウンシュガー",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Teh susu gula perang.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social"
+        }
+      ],
+      "scene": "dunia-jambatan-social",
+      "chapter": 9
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "jambatan-office",
+  "chapter": 9,
+  "status": "live",
+  "ja_review": "pending",
+  "source": "hanashishou@347a969 content/packs/office/targets/ms (bands 1-2)",
+  "world": {
+    "id": "jambatan",
+    "ms": "Jambatan",
+    "en": "Bridge to Hanashishou",
+    "ja": "話匠への橋"
+  },
+  "title": {
+    "ms": "Pejabat",
+    "en": "At work",
+    "ja": "仕事で"
+  },
+  "setting": {
+    "en": "Words you will meet in Hanashishou's at work episodes, so they are already familiar when you arrive.",
+    "ja": "話匠の「仕事で」のエピソードに出てくる言葉。先に覚えておけば、話匠に進んだときに見覚えがあります。"
+  },
+  "cards": [
+    {
+      "id": "ms-j-office-01",
+      "lang": "ms",
+      "term": "angka",
+      "gloss_en": "Figures; numbers",
+      "gloss_ja": "数字、数値",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya perlukan angka jualan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-02",
+      "lang": "ms",
+      "term": "deadline",
+      "gloss_en": "Deadline (the everyday word, borrowed from English)",
+      "gloss_ja": "締め切り（英語から入った日常の言葉）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya ada deadline hari Jumaat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-03",
+      "lang": "ms",
+      "term": "hujung bulan",
+      "gloss_en": "The end of the month",
+      "gloss_ja": "月末",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Hujung bulan sangat sibuk.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-04",
+      "lang": "ms",
+      "term": "draf",
+      "gloss_en": "A draft",
+      "gloss_ja": "下書き",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Ini masih draf.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-05",
+      "lang": "ms",
+      "term": "versi akhir",
+      "gloss_en": "The final version",
+      "gloss_ja": "最終版",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Saya hantar versi akhir esok.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-06",
+      "lang": "ms",
+      "term": "kerjasama",
+      "gloss_en": "Cooperation",
+      "gloss_ja": "協力",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Terima kasih atas kerjasama anda.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-07",
+      "lang": "ms",
+      "term": "kelewatan",
+      "gloss_en": "A delay",
+      "gloss_ja": "遅れ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Maaf atas kelewatan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-08",
+      "lang": "ms",
+      "term": "rancangan",
+      "gloss_en": "A plan",
+      "gloss_ja": "計画、予定",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Apa rancangan awak?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-09",
+      "lang": "ms",
+      "term": "jualan",
+      "gloss_en": "Sales",
+      "gloss_ja": "売上、販売",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Daniel di bahagian Jualan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-10",
+      "lang": "ms",
+      "term": "minta tolong",
+      "gloss_en": "To ask for help; to ask a favour",
+      "gloss_ja": "頼む、お願いする",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Boleh saya minta tolong?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-11",
+      "lang": "ms",
+      "term": "klien",
+      "gloss_en": "Client",
+      "gloss_ja": "顧客、取引先",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Klien itu Encik Tan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-12",
+      "lang": "ms",
+      "term": "sebab",
+      "gloss_en": "Reason; because",
+      "gloss_ja": "理由、〜なので",
+      "pos": "noun / conjunction",
+      "affix_tag": "root",
+      "note": "Hanashishou: Apa sebabnya?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-13",
+      "lang": "ms",
+      "term": "ajak",
+      "gloss_en": "To invite along; to ask someone to come (informal)",
+      "gloss_ja": "（気軽に）誘う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Terima kasih ajak!",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-14",
+      "lang": "ms",
+      "term": "tak tahan",
+      "gloss_en": "Can't handle; can't stand (informal)",
+      "gloss_ja": "耐えられない、苦手だ（くだけた言い方）",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Saya tak tahan pedas.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-15",
+      "lang": "ms",
+      "term": "lauk",
+      "gloss_en": "A dish eaten with rice",
+      "gloss_ja": "（ご飯と一緒に食べる）おかず",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya nak lauk yang tak pedas.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-16",
+      "lang": "ms",
+      "term": "simpan tempat",
+      "gloss_en": "To save a seat (for someone)",
+      "gloss_ja": "席を取っておく",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Kami simpan tempat untuk awak.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-17",
+      "lang": "ms",
+      "term": "lancar",
+      "gloss_en": "To launch (melancarkan in standard writing)",
+      "gloss_ja": "リリースする、発売する（標準の書き言葉では melancarkan）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Kita lancar aplikasi pada bulan Mac.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-18",
+      "lang": "ms",
+      "term": "borang cuti",
+      "gloss_en": "Leave form",
+      "gloss_ja": "休暇届",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Boleh tandatangan borang cuti saya?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-19",
+      "lang": "ms",
+      "term": "pantri",
+      "gloss_en": "Office pantry; kitchenette",
+      "gloss_ja": "給湯室、パントリー",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Pantri di sebelah kiri.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-20",
+      "lang": "ms",
+      "term": "slaid",
+      "gloss_en": "Slide (in a presentation)",
+      "gloss_ja": "スライド",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Ada 14 slaid.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-21",
+      "lang": "ms",
+      "term": "cuti tahunan",
+      "gloss_en": "Annual leave",
+      "gloss_ja": "有給休暇、年次休暇",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Saya nak ambil cuti tahunan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-22",
+      "lang": "ms",
+      "term": "ganti",
+      "gloss_en": "To replace; to stand in for someone",
+      "gloss_ja": "代わりをする、代わる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya ganti Farah minggu ini.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-23",
+      "lang": "ms",
+      "term": "bilik mesyuarat",
+      "gloss_en": "Meeting room",
+      "gloss_ja": "会議室",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Bilik mesyuarat di mana?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-24",
+      "lang": "ms",
+      "term": "ganggu",
+      "gloss_en": "To disturb; to interrupt",
+      "gloss_ja": "じゃまする",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Maaf ganggu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-25",
+      "lang": "ms",
+      "term": "silakan",
+      "gloss_en": "Please (go ahead); after you",
+      "gloss_ja": "どうぞ",
+      "pos": "phrase",
+      "affix_tag": "root",
+      "note": "Hanashishou: Silakan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    }
+  ]
+}

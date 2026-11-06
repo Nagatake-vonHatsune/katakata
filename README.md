@@ -9,11 +9,12 @@ device only when the learner exports it.
 - Student app: `/` (Japanese, English or Malay interface; the first screen asks)
 - Language links for sharing: `/?lang=ja`, `/?lang=en`, `/?lang=ms`
 - Teacher Desk: `/teacher/` (drop in student files, merge questions, print the class agenda)
+- Version **0.9.0**, a 1.0 release candidate: see [docs/RELEASE-1.0.md](docs/RELEASE-1.0.md) and [CHANGELOG.md](CHANGELOG.md).
 
 With the English or Malay interface, word meanings are shown in English (the Vocab Bank has English
 and Japanese glosses). Katakana hints only appear in the Japanese interface.
 
-## Phase 1 (this version)
+## Features
 
 | Spec item | Where |
 |---|---|
@@ -27,6 +28,7 @@ and Japanese glosses). Katakana hints only appear in the Japanese interface.
 | Stamp card, gentle streak (one rest day allowed), weekly backup reminder | `src/core/progress.ts` |
 | Teacher Desk: merge, duplicate counts, prep table, weakest words, A4 agenda | `teacher/`, `src/teacher/` |
 | Offline after first visit | service worker generated at build (`src/sw-template.js`) |
+| 話匠へ: hand words on to Hanashishou (stage 3, Jambatan) | `src/core/bridge.ts`, `src/views/jambatan.ts` |
 
 Also in: Japanese-first UI with an English toggle, やり方 cards and a `?` button on every activity,
 わからない on every question, no red crosses (misses come back later in the session),
@@ -78,7 +80,19 @@ set in the Cloudflare dashboard (Worker `katakata` → Settings → Builds):
 
 Workers Builds does not run Wrangler's custom-build setting, so the build command must be set there.
 
-## Scheduler
+## Hanashishou continuity
 
-FSRS via [`ts-fsrs`](https://github.com/open-spaced-repetition/ts-fsrs) (MIT). Spec 10.4 asks for the same
-algorithm as Hanashishou; confirm Hanashishou also uses FSRS.
+Kata-Kata is the step before [Hanashishou 話匠](https://hanashishou.vonhatsune.workers.dev/), the conversation-practice app.
+
+- **Same scheduler:** SM-2 with Hanashishou's exact card state (`ease, interval, reps, due, lapses`), see
+  `src/core/srs.ts`. A word's progress carries over unchanged. Saves from before 0.9.0 (FSRS) migrate on load.
+- **Jambatan scenes** (`content/ms/jambatan/`): Hanashishou's band 1-2 Malay words that Kata-Kata does not
+  teach yet, with Hanashishou's own English and Japanese meanings. Example sentences that break the
+  root-word rule are left out. Regenerate after Hanashishou's vocabulary changes:
+  `npm run bridge:import` (expects a Hanashishou checkout at `../hanashishou`).
+- **Hand-off:** 話匠へ exports `katakata-words_<name>_<date>.json` (format: `src/core/bridge.ts`, version 1)
+  and opens Hanashishou's `#/katakata?ui=<lang>` import screen. Hanashishou adds matching words to its Malay
+  deck, sets Malay as the learnt language and suggests a starting band (2 once all nine chapters are
+  "ready", else 1).
+- Cross-app test: build and preview both apps (Kata-Kata on 4173, Hanashishou on 4179), then
+  `node tests/e2e/bridge.cjs`.

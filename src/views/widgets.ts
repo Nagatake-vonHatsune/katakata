@@ -1,4 +1,5 @@
 // Shared pieces: word header, association chips, Ask Teacher and Report sheets, How-to cards.
+import { isInHanashishou } from '../core/bridge';
 import { content, gloss } from '../core/content';
 import { uid } from '../core/dates';
 import { getLang, t } from '../core/i18n';
@@ -62,6 +63,7 @@ export function chips(card: Card): HTMLElement {
     else add(t(`link.${l.type}`), l.text ?? (l.target ? content.cards.get(l.target)?.term ?? '' : ''), `chip-${l.type}`);
   }
   if (card.seen_in_class) add(t('sess.seen_in_class', { n: card.seen_in_class }), null, 'chip-class');
+  if (isInHanashishou(card.term)) add('🦁 ' + t('link.hanashishou'), null, 'chip-class');
   const mine = state.myHooks[card.id];
   if (mine) add(t('link.hook_saya'), mine, 'chip-mine');
   if (card.note) add(t('misc.note'), card.note, 'chip-note');

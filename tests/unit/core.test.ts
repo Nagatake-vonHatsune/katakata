@@ -8,10 +8,11 @@ import { pronTips, toKana } from '../../src/core/kana';
 import { buildReport, isReport, reportFilename } from '../../src/core/report';
 import { buildSavefile, mergeStates, parseSavefile } from '../../src/core/savefile';
 import { buildSedia, buildToday, newWordBlock, requeue } from '../../src/core/session';
-import { isKnown, newSrs, Rating, review } from '../../src/core/srs';
+import { isKnown, migrateSrs, newSrs, Rating, review } from '../../src/core/srs';
 import { defaultState } from '../../src/core/state';
 import { streak } from '../../src/core/progress';
 import { addReports, groupQuestions } from '../../src/teacher/merge';
+import { buildWordLibrary, isInHanashishou } from '../../src/core/bridge';
 
 function allPacks() {
   const walk = (d: string): string[] => readdirSync(d).flatMap((n) => (statSync(join(d, n)).isDirectory() ? walk(join(d, n)) : n.endsWith('.json') ? [join(d, n)] : []));
@@ -48,12 +49,12 @@ describe('katakana hints', () => {
 });
 
 describe('content', () => {
-  it('ships all nine chapters and fourteen scenes', () => {
+  it('ships all nine chapters and fourteen Dunia scenes', () => {
     expect(content.chapters.map((c) => c.chapter)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-    expect(content.scenes).toHaveLength(14);
+    expect(content.scenes.filter((s) => s.world.id !== 'jambatan')).toHaveLength(14);
   });
-  it('every scene has enough pictures for Cari Benda', () => {
-    for (const s of content.scenes) expect(s.cards.filter((c) => c.image).length, s.id).toBeGreaterThanOrEqual(4);
+  it('every Dunia scene has enough pictures for Cari Benda', () => {
+    for (const s of content.scenes.filter((x) => x.world.id !== 'jambatan')) expect(s.cards.filter((c) => c.image).length, s.id).toBeGreaterThanOrEqual(4);
   });
   it('learning path starts with Chapter 1 core words and has no duplicates', () => {
     expect(content.cards.get(content.path[0])!.chapter).toBe(1);
@@ -63,9 +64,11 @@ describe('content', () => {
 
 describe('scheduler', () => {
   it('Good on a new card schedules it later and counts as known', () => {
-    const s = review(newSrs(new Date('2026-11-06T00:00:00Z')), Rating.Good, new Date('2026-11-06T00:00:00Z'));
-    expect(s.reps).toBe(1);
-    expect(new Date(s.due).getTime()).toBeGreaterThan(new Date('2026-11-06T00:00:00Z').getTime());
+    const now = new Date('2026-11-06T00:00:00Z');
+    const s = review(newSrs(now), Rating.Good, now);
+    expect(s).toMatchObject({ reps: 1, interval: 1, lapses: 0 });
+    expect(s.due).toBe(now.getTime() + 86_400_000);
+    expect(isKnown(s)).toBe(true);
   });
   it('Again keeps it unknown', () => {
     const s = review(undefined, Rating.Again, new Date());
@@ -100,6 +103,29 @@ describe('sessions', () => {
   });
 });
 
+describe('SM-2 parity with Hanashishou', () => {
+  // Same inputs as Hanashishou's sm2.review must give the same outputs.
+  it('matches the SM-2 interval sequence 1, 6, 15 at ease 2.5', () => {
+    const t0 = new Date('2026-11-06T00:00:00Z');
+    const a = review(newSrs(t0), Rating.Good, t0);
+    const b = review(a, Rating.Good, t0);
+    const c = review(b, Rating.Good, t0);
+    expect([a.interval, b.interval, c.interval]).toEqual([1, 6, 15]);
+    expect(a.ease).toBeCloseTo(2.5);
+  });
+  it('a miss resets reps, counts a lapse and comes back in 10 minutes', () => {
+    const t0 = new Date('2026-11-06T00:00:00Z');
+    const s = review(review(newSrs(t0), Rating.Good, t0), Rating.Again, t0);
+    expect(s).toMatchObject({ reps: 0, interval: 0, lapses: 1 });
+    expect(s.due).toBe(t0.getTime() + 600_000);
+    expect(s.ease).toBeCloseTo(1.7);
+  });
+  it('migrates an old FSRS save', () => {
+    const m = migrateSrs({ due: '2026-11-10T00:00:00.000Z', stability: 3, difficulty: 5, scheduled_days: 4, reps: 2, lapses: 1, state: 2, last_review: '2026-11-06T00:00:00.000Z' });
+    expect(m).toEqual({ ease: 2.5, interval: 4, reps: 2, due: Date.parse('2026-11-10T00:00:00.000Z'), lapses: 1, last: Date.parse('2026-11-06T00:00:00.000Z') });
+  });
+});
+
 describe('savefile', () => {
   it('round-trips and rejects edited files', async () => {
     const st = defaultState();
@@ -115,8 +141,8 @@ describe('savefile', () => {
   it('merge keeps the newer review and unions questions', () => {
     const a = defaultState();
     const b = defaultState();
-    a.srs.x = { ...newSrs(), reps: 1, last_review: '2026-11-01T00:00:00Z' };
-    b.srs.x = { ...newSrs(), reps: 3, last_review: '2026-11-05T00:00:00Z' };
+    a.srs.x = { ...newSrs(), reps: 1, last: Date.parse('2026-11-01T00:00:00Z') };
+    b.srs.x = { ...newSrs(), reps: 3, last: Date.parse('2026-11-05T00:00:00Z') };
     a.questions.push({ id: 'q1', createdAt: '', type: 'other', text: 'a', context: { kind: 'general' }, answered: false });
     b.questions.push({ id: 'q1', createdAt: '', type: 'other', text: 'a', context: { kind: 'general' }, answered: true });
     b.questions.push({ id: 'q2', createdAt: '', type: 'other', text: 'b', context: { kind: 'general' }, answered: false });
@@ -157,5 +183,26 @@ describe('teacher report and desk', () => {
     const g = groupQuestions(reports);
     expect(g[0]).toMatchObject({ chapter: 2, about: 'kami', students: ['A', 'B'] });
     expect(g[1].chapter).toBe(3);
+  });
+});
+
+describe('Hanashishou bridge', () => {
+  it('exports met words with SM-2 state in the shared shape', () => {
+    const st = defaultState();
+    st.profile.name = 'Aiko';
+    st.srs[srsKey('ms-c01-002')] = review(undefined, Rating.Good, new Date('2026-11-06T00:00:00Z'));
+    const lib = buildWordLibrary(st, new Date('2026-11-06T00:00:00Z'));
+    expect(lib).toMatchObject({ app: 'katakata', kind: 'katakata-word-library', version: 1, student: 'Aiko', suggestedBand: 1 });
+    expect(lib.words).toHaveLength(1);
+    expect(Object.keys(lib.words[0].srs).sort()).toEqual(['due', 'ease', 'interval', 'lapses', 'reps']);
+  });
+  it('knows which words Hanashishou teaches', () => {
+    expect(isInHanashishou('pejabat pos')).toBe(true);
+    expect(isInHanashishou('Selamat pagi')).toBe(false);
+  });
+  it('ships Jambatan scenes after the class track', () => {
+    const bridge = content.scenes.filter((s) => s.world.id === 'jambatan');
+    expect(bridge.length).toBeGreaterThanOrEqual(4);
+    expect(bridge.every((s) => s.chapter === 9)).toBe(true);
   });
 });

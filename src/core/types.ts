@@ -75,18 +75,14 @@ export interface DuniaPack {
 
 export type Pack = KelasPack | DuniaPack;
 
-/** FSRS card state as stored (dates as ISO strings so it survives JSON). */
+/** SM-2 card state, the same shape as Hanashishou's SrsState (plus `last`, the last review time). */
 export interface SrsState {
-  due: string;
-  stability: number;
-  difficulty: number;
-  elapsed_days: number;
-  scheduled_days: number;
-  learning_steps: number;
+  ease: number;
+  interval: number; // days
   reps: number;
+  due: number; // epoch ms
   lapses: number;
-  state: number;
-  last_review?: string;
+  last?: number; // epoch ms
 }
 
 export type QuestionType = 'meaning' | 'usage' | 'pronunciation' | 'grammar' | 'other';

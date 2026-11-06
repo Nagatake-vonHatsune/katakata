@@ -1,4 +1,5 @@
 import * as db from './db';
+import { migrateSrs } from './srs';
 import type { AppState } from './types';
 
 const KEY = 'state';
@@ -30,6 +31,7 @@ export function migrate(raw: Partial<AppState> & Record<string, unknown>): AppSt
     schemaVersion: 1,
     profile: { ...base.profile, ...(raw.profile ?? {}) },
     settings: { ...base.settings, ...(raw.settings ?? {}) },
+    srs: Object.fromEntries(Object.entries(raw.srs ?? {}).map(([k, v]) => [k, migrateSrs(v as unknown as Record<string, unknown>)])),
   } as AppState;
 }
 

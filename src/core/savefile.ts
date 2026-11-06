@@ -77,7 +77,7 @@ export function mergeStates(local: AppState, incoming: AppState): AppState {
   const srs: Record<string, SrsState> = { ...local.srs };
   for (const [id, s] of Object.entries(incoming.srs)) {
     const mine = srs[id];
-    if (!mine || later(s.last_review, mine.last_review) || (!mine.last_review && s.reps > mine.reps)) srs[id] = s;
+    if (!mine || (s.last ?? 0) > (mine.last ?? 0) || (!mine.last && !s.last && s.reps > mine.reps)) srs[id] = s;
   }
   const byId = <T extends { id: string }>(a: T[], b: T[]) => {
     const m = new Map(a.map((x) => [x.id, x]));

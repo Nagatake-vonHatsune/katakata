@@ -1,0 +1,693 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "jambatan-daily-life",
+  "chapter": 9,
+  "status": "live",
+  "ja_review": "pending",
+  "source": "hanashishou@347a969 content/packs/daily-life/targets/ms (bands 1-2)",
+  "world": {
+    "id": "jambatan",
+    "ms": "Jambatan",
+    "en": "Bridge to Hanashishou",
+    "ja": "話匠への橋"
+  },
+  "title": {
+    "ms": "Kehidupan harian",
+    "en": "Daily life",
+    "ja": "毎日の暮らし"
+  },
+  "setting": {
+    "en": "Words you will meet in Hanashishou's daily life episodes, so they are already familiar when you arrive.",
+    "ja": "話匠の「毎日の暮らし」のエピソードに出てくる言葉。先に覚えておけば、話匠に進んだときに見覚えがあります。"
+  },
+  "cards": [
+    {
+      "id": "ms-j-daily-life-01",
+      "lang": "ms",
+      "term": "teka",
+      "gloss_en": "To guess",
+      "gloss_ja": "推測する、当てる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Cuba teka.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-02",
+      "lang": "ms",
+      "term": "nombor plat",
+      "gloss_en": "Car number plate",
+      "gloss_ja": "車のナンバー（ナンバープレート）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Apakah nombor platnya?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-03",
+      "lang": "ms",
+      "term": "pintu masuk",
+      "gloss_en": "Entrance",
+      "gloss_ja": "入口",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Saya di pintu masuk utama.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-04",
+      "lang": "ms",
+      "term": "senyap",
+      "gloss_en": "Quiet; silent",
+      "gloss_ja": "静かな、黙っている",
+      "pos": "adjective",
+      "affix_tag": "root",
+      "note": "Hanashishou: Pemandu senyap seketika.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-05",
+      "lang": "ms",
+      "term": "sehala",
+      "gloss_en": "One-way (road)",
+      "gloss_ja": "一方通行の",
+      "pos": "adjective",
+      "affix_tag": "root",
+      "note": "Hanashishou: Jalan ini sehala.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-06",
+      "lang": "ms",
+      "term": "pengawal",
+      "gloss_en": "Security guard",
+      "gloss_ja": "警備員",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-07",
+      "lang": "ms",
+      "term": "jelas",
+      "gloss_en": "Clear",
+      "gloss_ja": "はっきりした、明確な",
+      "pos": "adjective",
+      "affix_tag": "root",
+      "note": "Hanashishou: Cakap dengan jelas.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-08",
+      "lang": "ms",
+      "term": "ketuk",
+      "gloss_en": "To knock (mengetuk in standard writing)",
+      "gloss_ja": "ノックする、たたく",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya ketuk pintu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-09",
+      "lang": "ms",
+      "term": "lambai",
+      "gloss_en": "To wave (melambai in standard writing)",
+      "gloss_ja": "手を振る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Dia lambai pada saya.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-10",
+      "lang": "ms",
+      "term": "keliru",
+      "gloss_en": "Confused",
+      "gloss_ja": "困惑した、混乱した",
+      "pos": "adjective",
+      "affix_tag": "root",
+      "note": "Hanashishou: Dia kelihatan keliru.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-11",
+      "lang": "ms",
+      "term": "perjalanan",
+      "gloss_en": "A journey; a ride",
+      "gloss_ja": "移動、乗車、旅",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Perjalanan itu singkat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-12",
+      "lang": "ms",
+      "term": "pesanan",
+      "gloss_en": "An order (food or goods)",
+      "gloss_ja": "注文",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Ini pesanan saya.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-13",
+      "lang": "ms",
+      "term": "bil",
+      "gloss_en": "The bill",
+      "gloss_ja": "会計、伝票",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Boleh saya minta bil?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-14",
+      "lang": "ms",
+      "term": "resit",
+      "gloss_en": "Receipt",
+      "gloss_ja": "レシート、領収書",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Ini resitnya.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-15",
+      "lang": "ms",
+      "term": "tukar",
+      "gloss_en": "To change; to exchange (menukar in standard writing)",
+      "gloss_ja": "交換する、変える（標準の書き言葉では menukar）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Boleh tukar?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-16",
+      "lang": "ms",
+      "term": "bilik persalinan",
+      "gloss_en": "Fitting room",
+      "gloss_ja": "試着室",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Di mana bilik persalinan?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-17",
+      "lang": "ms",
+      "term": "makanan ringan",
+      "gloss_en": "Snacks",
+      "gloss_ja": "お菓子、軽食",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Ini makanan ringan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-18",
+      "lang": "ms",
+      "term": "pos udara",
+      "gloss_en": "Airmail",
+      "gloss_ja": "航空便",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Pos udara, ya.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-19",
+      "lang": "ms",
+      "term": "nombor tracking",
+      "gloss_en": "Tracking number (everyday word; formal: nombor penjejakan)",
+      "gloss_ja": "追跡番号（日常の言い方。あらたまった言い方は nombor penjejakan）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Ini nombor tracking saya.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-20",
+      "lang": "ms",
+      "term": "talian bank",
+      "gloss_en": "Bank hotline",
+      "gloss_ja": "銀行の問い合わせ電話",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Saya telefon talian bank.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-21",
+      "lang": "ms",
+      "term": "PIN",
+      "gloss_en": "PIN (secret card number)",
+      "gloss_ja": "暗証番号",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya lupa PIN.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-22",
+      "lang": "ms",
+      "term": "buka sekatan",
+      "gloss_en": "To unblock",
+      "gloss_ja": "ロックを解除する",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Boleh buka sekatan kad saya?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-23",
+      "lang": "ms",
+      "term": "segera",
+      "gloss_en": "Urgent; right away",
+      "gloss_ja": "急ぎの、すぐに",
+      "pos": "adjective / adverb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Ini segera!",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-24",
+      "lang": "ms",
+      "term": "atas nama",
+      "gloss_en": "Under the name (of)",
+      "gloss_ja": "〜の名前で",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Saya ada tempahan atas nama Tanaka.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-25",
+      "lang": "ms",
+      "term": "sarapan",
+      "gloss_en": "Breakfast",
+      "gloss_ja": "朝食",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Sarapan pukul 7.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-26",
+      "lang": "ms",
+      "term": "daftar keluar",
+      "gloss_en": "Check out (of a hotel)",
+      "gloss_ja": "チェックアウトする",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Daftar keluar pukul 12.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-27",
+      "lang": "ms",
+      "term": "stesen minyak",
+      "gloss_en": "Petrol station",
+      "gloss_ja": "ガソリンスタンド",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Pejabat saya selepas stesen minyak.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-28",
+      "lang": "ms",
+      "term": "tangkap layar",
+      "gloss_en": "Screenshot",
+      "gloss_ja": "スクリーンショット",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Ini tangkap layar.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-29",
+      "lang": "ms",
+      "term": "kulit",
+      "gloss_en": "Leather; also skin",
+      "gloss_ja": "革；皮膚",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Dompet kulit warna coklat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-30",
+      "lang": "ms",
+      "term": "tertinggal",
+      "gloss_en": "To be left behind by accident",
+      "gloss_ja": "（うっかり）置き忘れる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya tertinggal dompet dalam tren.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-31",
+      "lang": "ms",
+      "term": "sesak",
+      "gloss_en": "Crowded; jammed (of traffic)",
+      "gloss_ja": "混んでいる、渋滞している",
+      "pos": "adjective",
+      "affix_tag": "root",
+      "note": "Hanashishou: Jalan sangat sesak.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-32",
+      "lang": "ms",
+      "term": "terlepas",
+      "gloss_en": "To miss (a bus, a chance)",
+      "gloss_ja": "（バスやチャンスを）逃す、乗り遅れる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya terlepas bas.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-33",
+      "lang": "ms",
+      "term": "tanda harga",
+      "gloss_en": "Price tag",
+      "gloss_ja": "値札",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Tiada tanda harga.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-34",
+      "lang": "ms",
+      "term": "beg tangan",
+      "gloss_en": "Hand luggage (also: handbag)",
+      "gloss_ja": "手荷物、ハンドバッグ",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Beg tangan maksimum 7 kilo.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-35",
+      "lang": "ms",
+      "term": "tunjuk jalan",
+      "gloss_en": "To show (someone) the way",
+      "gloss_ja": "道を教える",
+      "pos": "verb",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Boleh tunjuk jalan?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-36",
+      "lang": "ms",
+      "term": "arah",
+      "gloss_en": "Direction; directions",
+      "gloss_ja": "方向、道順",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Arah itu jelas.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-37",
+      "lang": "ms",
+      "term": "muat",
+      "gloss_en": "To fit (the right size)",
+      "gloss_ja": "（サイズが）合う、入る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Kasut ini muat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    }
+  ]
+}

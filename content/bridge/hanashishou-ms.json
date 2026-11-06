@@ -1,0 +1,1449 @@
+{
+ "source": "hanashishou@347a969",
+ "words": {
+  "sampai": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "teka": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "nombor plat": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "papan tanda": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "tengok": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "pintu masuk": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "berlainan": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "senyap": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "sehala": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "pengawal": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "kelam-kabut": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "mengesahkan": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "kabur": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "jelas": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "ketuk": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "lambai": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "keliru": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "salah faham": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "menghargai": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "perjalanan": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "tempah": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "mercu tanda": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "tunggu": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "pesanan": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "kurang manis": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "asing": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "tersilap": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "mengganggu": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "bil": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "resit": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "tukar": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "saiz": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "ternyata": {
+   "band": 4,
+   "pack": "daily-life"
+  },
+  "bayaran balik": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "stok": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "cuba": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "bilik persalinan": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "pejabat pos": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "makanan ringan": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "bungkusan": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "isi": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "mudah pecah": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "pos udara": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "pos laut": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "tamat tempoh": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "borang kastam": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "nombor tracking": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "status": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "ditolak": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "talian bank": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "disekat": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "PIN": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "buka sekatan": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "penipuan": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "segera": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "kod TAC": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "kaunter": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "atas nama": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "dalam talian": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "sarapan": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "mudah terjaga": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "daftar keluar": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "daftar keluar lewat": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "stesen minyak": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "mencelah": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "sejurus": {
+   "band": 4,
+   "pack": "daily-life"
+  },
+  "prabayar": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "berulang-alik": {
+   "band": 4,
+   "pack": "daily-life"
+  },
+  "tangkap layar": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "kulit": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "tertinggal": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "singgah": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "alah": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "hidangan": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "kacang tumbuk": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "sesak": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "terlepas": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "tanda harga": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "tunai": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "jalan tengah": {
+   "band": 4,
+   "pack": "daily-life"
+  },
+  "lebihan bagasi": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "beg tangan": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "bagasi kabin": {
+   "band": 4,
+   "pack": "daily-life"
+  },
+  "pastikan": {
+   "band": 3,
+   "pack": "daily-life"
+  },
+  "tidak sengaja": {
+   "band": 4,
+   "pack": "daily-life"
+  },
+  "tunjuk jalan": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "belok": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "arah": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "muat": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "penyambut tetamu": {
+   "band": 2,
+   "pack": "health"
+  },
+  "pasport": {
+   "band": 1,
+   "pack": "health"
+  },
+  "bayar sendiri": {
+   "band": 2,
+   "pack": "health"
+  },
+  "kurang dengar": {
+   "band": 2,
+   "pack": "health"
+  },
+  "istilah": {
+   "band": 3,
+   "pack": "health"
+  },
+  "menanggung": {
+   "band": 4,
+   "pack": "health"
+  },
+  "klinik panel": {
+   "band": 2,
+   "pack": "health"
+  },
+  "berpura-pura": {
+   "band": 3,
+   "pack": "health"
+  },
+  "demam": {
+   "band": 1,
+   "pack": "health"
+  },
+  "sakit tekak": {
+   "band": 1,
+   "pack": "health"
+  },
+  "menelan": {
+   "band": 3,
+   "pack": "health"
+  },
+  "letih": {
+   "band": 2,
+   "pack": "health"
+  },
+  "batuk": {
+   "band": 1,
+   "pack": "health"
+  },
+  "alahan": {
+   "band": 2,
+   "pack": "health"
+  },
+  "setahu saya": {
+   "band": 3,
+   "pack": "health"
+  },
+  "jangkitan": {
+   "band": 3,
+   "pack": "health"
+  },
+  "simptom": {
+   "band": 2,
+   "pack": "health"
+  },
+  "larat": {
+   "band": 3,
+   "pack": "health"
+  },
+  "menjangkiti": {
+   "band": 4,
+   "pack": "health"
+  },
+  "rehat": {
+   "band": 1,
+   "pack": "health"
+  },
+  "antibiotik": {
+   "band": 3,
+   "pack": "health"
+  },
+  "biji": {
+   "band": 2,
+   "pack": "health"
+  },
+  "lepas makan": {
+   "band": 1,
+   "pack": "health"
+  },
+  "habiskan": {
+   "band": 3,
+   "pack": "health"
+  },
+  "bila perlu": {
+   "band": 2,
+   "pack": "health"
+  },
+  "semoga cepat sembuh": {
+   "band": 1,
+   "pack": "health"
+  },
+  "ngilu": {
+   "band": 3,
+   "pack": "health"
+  },
+  "temu janji": {
+   "band": 2,
+   "pack": "health"
+  },
+  "pemeriksaan": {
+   "band": 3,
+   "pack": "health"
+  },
+  "eja": {
+   "band": 2,
+   "pack": "health"
+  },
+  "urusan mendadak": {
+   "band": 3,
+   "pack": "health"
+  },
+  "sebaik-baiknya": {
+   "band": 4,
+   "pack": "health"
+  },
+  "yuran": {
+   "band": 2,
+   "pack": "health"
+  },
+  "waktu puncak": {
+   "band": 3,
+   "pack": "health"
+  },
+  "tangguh": {
+   "band": 2,
+   "pack": "health"
+  },
+  "hidung sumbat": {
+   "band": 2,
+   "pack": "health"
+  },
+  "batuk kering": {
+   "band": 3,
+   "pack": "health"
+  },
+  "mengantuk": {
+   "band": 3,
+   "pack": "health"
+  },
+  "puasa": {
+   "band": 2,
+   "pack": "health"
+  },
+  "terlupa": {
+   "band": 2,
+   "pack": "health"
+  },
+  "berterus terang": {
+   "band": 4,
+   "pack": "health"
+  },
+  "belakang bawah": {
+   "band": 2,
+   "pack": "health"
+  },
+  "sakit tumpul": {
+   "band": 4,
+   "pack": "health"
+  },
+  "lega": {
+   "band": 3,
+   "pack": "health"
+  },
+  "kali pertama": {
+   "band": 1,
+   "pack": "health"
+  },
+  "isi borang": {
+   "band": 2,
+   "pack": "health"
+  },
+  "daftar": {
+   "band": 2,
+   "pack": "health"
+  },
+  "siling": {
+   "band": 1,
+   "pack": "home-condo"
+  },
+  "menitis": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "bilik air": {
+   "band": 1,
+   "pack": "home-condo"
+  },
+  "pejabat pengurusan": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "kebocoran": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "semakin teruk": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "bertenang": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "juruteknik": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "blok": {
+   "band": 1,
+   "pack": "home-condo"
+  },
+  "unit": {
+   "band": 1,
+   "pack": "home-condo"
+  },
+  "slot": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "lapang": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "bolehkah": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "tempat kerja": {
+   "band": 1,
+   "pack": "home-condo"
+  },
+  "malangnya": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "pondok pengawal": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "tingkat atas": {
+   "band": 1,
+   "pack": "home-condo"
+  },
+  "jiran": {
+   "band": 1,
+   "pack": "home-condo"
+  },
+  "paip": {
+   "band": 1,
+   "pack": "home-condo"
+  },
+  "pemilik": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "menghubungi": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "mengelak": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "gerudi": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "dinding": {
+   "band": 1,
+   "pack": "home-condo"
+  },
+  "ubah suai": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "menyukarkan": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "kontraktor": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "ingatkan": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "berjiran": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "lobi lif": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "pindah": {
+   "band": 1,
+   "pack": "home-condo"
+  },
+  "berkenalan": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "menyesuaikan diri": {
+   "band": 4,
+   "pack": "home-condo"
+  },
+  "encik pula": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "asalnya": {
+   "band": 4,
+   "pack": "home-condo"
+  },
+  "sampah": {
+   "band": 1,
+   "pack": "home-condo"
+  },
+  "kitar semula": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "tong": {
+   "band": 1,
+   "pack": "home-condo"
+  },
+  "jumpa lagi": {
+   "band": 1,
+   "pack": "home-condo"
+  },
+  "oh ya": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "menyimpan": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "kesudian": {
+   "band": 4,
+   "pack": "home-condo"
+  },
+  "pelawat": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "deposit": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "kesan": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "baki": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "pecahan kos": {
+   "band": 4,
+   "pack": "home-condo"
+  },
+  "parkir berganda": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "alih": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "tanda maaf": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "menyalak": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "perasan": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "berkesan": {
+   "band": 4,
+   "pack": "home-condo"
+  },
+  "parti": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "majlis": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "selewat-lewatnya": {
+   "band": 4,
+   "pack": "home-condo"
+  },
+  "kemas": {
+   "band": 2,
+   "pack": "home-condo"
+  },
+  "notifikasi": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "ambil": {
+   "band": 1,
+   "pack": "home-condo"
+  },
+  "penghala": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "berkelip": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "talian": {
+   "band": 3,
+   "pack": "home-condo"
+  },
+  "angka": {
+   "band": 1,
+   "pack": "office"
+  },
+  "deadline": {
+   "band": 1,
+   "pack": "office"
+  },
+  "tarikh akhir": {
+   "band": 4,
+   "pack": "office"
+  },
+  "hujung bulan": {
+   "band": 2,
+   "pack": "office"
+  },
+  "menyemak": {
+   "band": 3,
+   "pack": "office"
+  },
+  "draf": {
+   "band": 2,
+   "pack": "office"
+  },
+  "versi akhir": {
+   "band": 2,
+   "pack": "office"
+  },
+  "maklumkan": {
+   "band": 3,
+   "pack": "office"
+  },
+  "mesyuarat": {
+   "band": 1,
+   "pack": "office"
+  },
+  "sibuk": {
+   "band": 1,
+   "pack": "office"
+  },
+  "pengurus": {
+   "band": 1,
+   "pack": "office"
+  },
+  "kenal pasti": {
+   "band": 3,
+   "pack": "office"
+  },
+  "dengan segera": {
+   "band": 3,
+   "pack": "office"
+  },
+  "tepat pada masanya": {
+   "band": 3,
+   "pack": "office"
+  },
+  "kerjasama": {
+   "band": 2,
+   "pack": "office"
+  },
+  "kelewatan": {
+   "band": 2,
+   "pack": "office"
+  },
+  "rancangan": {
+   "band": 1,
+   "pack": "office"
+  },
+  "menyusahkan": {
+   "band": 3,
+   "pack": "office"
+  },
+  "jualan": {
+   "band": 1,
+   "pack": "office"
+  },
+  "suku tahun": {
+   "band": 3,
+   "pack": "office"
+  },
+  "muktamad": {
+   "band": 4,
+   "pack": "office"
+  },
+  "luar kawasan": {
+   "band": 3,
+   "pack": "office"
+  },
+  "minta tolong": {
+   "band": 1,
+   "pack": "office"
+  },
+  "klien": {
+   "band": 2,
+   "pack": "office"
+  },
+  "notis": {
+   "band": 3,
+   "pack": "office"
+  },
+  "taklimat": {
+   "band": 4,
+   "pack": "office"
+  },
+  "susulan": {
+   "band": 3,
+   "pack": "office"
+  },
+  "terikat": {
+   "band": 4,
+   "pack": "office"
+  },
+  "sebab": {
+   "band": 1,
+   "pack": "office"
+  },
+  "sudi": {
+   "band": 3,
+   "pack": "office"
+  },
+  "jemput": {
+   "band": 2,
+   "pack": "office"
+  },
+  "majlis perpisahan": {
+   "band": 3,
+   "pack": "office"
+  },
+  "ajak": {
+   "band": 1,
+   "pack": "office"
+  },
+  "hadir": {
+   "band": 3,
+   "pack": "office"
+  },
+  "pedas": {
+   "band": 1,
+   "pack": "office"
+  },
+  "tak tahan": {
+   "band": 2,
+   "pack": "office"
+  },
+  "lauk": {
+   "band": 2,
+   "pack": "office"
+  },
+  "sesuai dengan": {
+   "band": 4,
+   "pack": "office"
+  },
+  "terlajak": {
+   "band": 3,
+   "pack": "office"
+  },
+  "berlarutan": {
+   "band": 4,
+   "pack": "office"
+  },
+  "simpan tempat": {
+   "band": 2,
+   "pack": "office"
+  },
+  "lancar": {
+   "band": 2,
+   "pack": "office"
+  },
+  "awalkan": {
+   "band": 3,
+   "pack": "office"
+  },
+  "separuh jalan": {
+   "band": 3,
+   "pack": "office"
+  },
+  "kebimbangan": {
+   "band": 3,
+   "pack": "office"
+  },
+  "pelancaran awal": {
+   "band": 4,
+   "pack": "office"
+  },
+  "tindakan": {
+   "band": 3,
+   "pack": "office"
+  },
+  "borang cuti": {
+   "band": 2,
+   "pack": "office"
+  },
+  "sebelum saya terlupa": {
+   "band": 3,
+   "pack": "office"
+  },
+  "pantau": {
+   "band": 3,
+   "pack": "office"
+  },
+  "folder kongsi": {
+   "band": 3,
+   "pack": "office"
+  },
+  "terhutang budi": {
+   "band": 4,
+   "pack": "office"
+  },
+  "jangan segan": {
+   "band": 3,
+   "pack": "office"
+  },
+  "berjaga-jaga": {
+   "band": 4,
+   "pack": "office"
+  },
+  "pantri": {
+   "band": 2,
+   "pack": "office"
+  },
+  "tinjauan": {
+   "band": 3,
+   "pack": "office"
+  },
+  "dijangka": {
+   "band": 4,
+   "pack": "office"
+  },
+  "sehaluan": {
+   "band": 4,
+   "pack": "office"
+  },
+  "slaid": {
+   "band": 2,
+   "pack": "office"
+  },
+  "ringkaskan": {
+   "band": 3,
+   "pack": "office"
+  },
+  "menonjol": {
+   "band": 3,
+   "pack": "office"
+  },
+  "cuti tahunan": {
+   "band": 2,
+   "pack": "office"
+  },
+  "serah tugas": {
+   "band": 3,
+   "pack": "office"
+  },
+  "tercicir": {
+   "band": 4,
+   "pack": "office"
+  },
+  "town hall": {
+   "band": 3,
+   "pack": "office"
+  },
+  "berkuat kuasa": {
+   "band": 4,
+   "pack": "office"
+  },
+  "rintis": {
+   "band": 4,
+   "pack": "office"
+  },
+  "ganti": {
+   "band": 2,
+   "pack": "office"
+  },
+  "keutamaan": {
+   "band": 3,
+   "pack": "office"
+  },
+  "timbul": {
+   "band": 3,
+   "pack": "office"
+  },
+  "hubungi semula": {
+   "band": 4,
+   "pack": "office"
+  },
+  "bilik mesyuarat": {
+   "band": 2,
+   "pack": "office"
+  },
+  "ganggu": {
+   "band": 2,
+   "pack": "office"
+  },
+  "bersiap": {
+   "band": 3,
+   "pack": "office"
+  },
+  "silakan": {
+   "band": 2,
+   "pack": "office"
+  },
+  "pelancaran": {
+   "band": 3,
+   "pack": "office"
+  },
+  "mengikut jadual": {
+   "band": 4,
+   "pack": "office"
+  },
+  "hujung minggu": {
+   "band": 1,
+   "pack": "social"
+  },
+  "mendaki": {
+   "band": 3,
+   "pack": "social"
+  },
+  "ada kemungkinan": {
+   "band": 4,
+   "pack": "social"
+  },
+  "set": {
+   "band": 1,
+   "pack": "social"
+  },
+  "jalan sesak": {
+   "band": 1,
+   "pack": "social"
+  },
+  "tersangkut": {
+   "band": 3,
+   "pack": "social"
+  },
+  "menyusul": {
+   "band": 4,
+   "pack": "social"
+  },
+  "belakang pentas": {
+   "band": 2,
+   "pack": "social"
+  },
+  "senarai lagu": {
+   "band": 2,
+   "pack": "social"
+  },
+  "bilik persalinan artis": {
+   "band": 3,
+   "pack": "social"
+  },
+  "jujur": {
+   "band": 1,
+   "pack": "social"
+  },
+  "pada pendapat saya": {
+   "band": 3,
+   "pack": "social"
+  },
+  "krew": {
+   "band": 2,
+   "pack": "social"
+  },
+  "bunga api": {
+   "band": 1,
+   "pack": "social"
+  },
+  "nyalakan": {
+   "band": 3,
+   "pack": "social"
+  },
+  "janji": {
+   "band": 1,
+   "pack": "social"
+  },
+  "jujurnya": {
+   "band": 2,
+   "pack": "social"
+  },
+  "kemuncak": {
+   "band": 4,
+   "pack": "social"
+  },
+  "tepat": {
+   "band": 2,
+   "pack": "social"
+  },
+  "struktur": {
+   "band": 3,
+   "pack": "social"
+  },
+  "menghadam": {
+   "band": 4,
+   "pack": "social"
+  },
+  "jeda": {
+   "band": 3,
+   "pack": "social"
+  },
+  "tolong": {
+   "band": 1,
+   "pack": "social"
+  },
+  "gabungkan": {
+   "band": 3,
+   "pack": "social"
+  },
+  "bunga api tangan": {
+   "band": 2,
+   "pack": "social"
+  },
+  "bergilir-gilir": {
+   "band": 3,
+   "pack": "social"
+  },
+  "sepupu": {
+   "band": 1,
+   "pack": "social"
+  },
+  "lenguh": {
+   "band": 2,
+   "pack": "social"
+  },
+  "berbaloi": {
+   "band": 3,
+   "pack": "social"
+  },
+  "memikat hati": {
+   "band": 4,
+   "pack": "social"
+  },
+  "memadai": {
+   "band": 4,
+   "pack": "social"
+  },
+  "termasuk": {
+   "band": 4,
+   "pack": "social"
+  },
+  "gementar": {
+   "band": 3,
+   "pack": "social"
+  },
+  "asalkan": {
+   "band": 4,
+   "pack": "social"
+  },
+  "melegakan": {
+   "band": 4,
+   "pack": "social"
+  },
+  "bagi pihak": {
+   "band": 4,
+   "pack": "social"
+  },
+  "kebetulan": {
+   "band": 3,
+   "pack": "social"
+  },
+  "sedangkan": {
+   "band": 4,
+   "pack": "social"
+  },
+  "perlahankan": {
+   "band": 3,
+   "pack": "social"
+  },
+  "mod peperiksaan": {
+   "band": 4,
+   "pack": "social"
+  },
+  "teruja": {
+   "band": 3,
+   "pack": "social"
+  },
+  "terbawa-bawa": {
+   "band": 4,
+   "pack": "social"
+  },
+  "bilik perbincangan": {
+   "band": 3,
+   "pack": "social"
+  },
+  "kesimpulannya": {
+   "band": 4,
+   "pack": "social"
+  },
+  "terima cabaran": {
+   "band": 4,
+   "pack": "social"
+  },
+  "dengan teliti": {
+   "band": 4,
+   "pack": "social"
+  },
+  "gear": {
+   "band": 2,
+   "pack": "social"
+  },
+  "teruskan": {
+   "band": 3,
+   "pack": "social"
+  },
+  "awal pagi": {
+   "band": 3,
+   "pack": "social"
+  },
+  "dimasak semula": {
+   "band": 4,
+   "pack": "social"
+  },
+  "menyelesaikan": {
+   "band": 3,
+   "pack": "social"
+  },
+  "budi bahasa": {
+   "band": 4,
+   "pack": "social"
+  },
+  "ketuai": {
+   "band": 3,
+   "pack": "social"
+  },
+  "menerajui": {
+   "band": 4,
+   "pack": "social"
+  },
+  "membuang masa": {
+   "band": 4,
+   "pack": "social"
+  },
+  "peruncitan": {
+   "band": 4,
+   "pack": "social"
+  },
+  "jawatan": {
+   "band": 4,
+   "pack": "social"
+  },
+  "cenderung": {
+   "band": 4,
+   "pack": "social"
+  },
+  "tabiat": {
+   "band": 4,
+   "pack": "social"
+  },
+  "bertanggungjawab": {
+   "band": 4,
+   "pack": "social"
+  },
+  "dikenakan caj": {
+   "band": 4,
+   "pack": "social"
+  },
+  "bergilir": {
+   "band": 3,
+   "pack": "social"
+  },
+  "bermakna": {
+   "band": 4,
+   "pack": "social"
+  },
+  "edarkan": {
+   "band": 4,
+   "pack": "social"
+  },
+  "berhasrat": {
+   "band": 4,
+   "pack": "social"
+  },
+  "dieja": {
+   "band": 4,
+   "pack": "social"
+  },
+  "teringat": {
+   "band": 3,
+   "pack": "social"
+  },
+  "tergesa-gesa": {
+   "band": 4,
+   "pack": "social"
+  },
+  "belanja": {
+   "band": 2,
+   "pack": "social"
+  },
+  "akad nikah": {
+   "band": 3,
+   "pack": "social"
+  },
+  "lepaskan peluang": {
+   "band": 4,
+   "pack": "social"
+  },
+  "pengantin": {
+   "band": 3,
+   "pack": "social"
+  },
+  "balkoni": {
+   "band": 2,
+   "pack": "social"
+  },
+  "mengesan": {
+   "band": 4,
+   "pack": "social"
+  },
+  "otak di sebalik": {
+   "band": 4,
+   "pack": "social"
+  },
+  "pembekal": {
+   "band": 3,
+   "pack": "social"
+  },
+  "bertanya lanjut": {
+   "band": 4,
+   "pack": "social"
+  },
+  "ringkasnya": {
+   "band": 4,
+   "pack": "social"
+  },
+  "raptai": {
+   "band": 3,
+   "pack": "social"
+  },
+  "tanpa ais": {
+   "band": 2,
+   "pack": "social"
+  },
+  "gula perang": {
+   "band": 2,
+   "pack": "social"
+  },
+  "sifu": {
+   "band": 1,
+   "pack": "tutorial"
+  },
+  "kegemaran": {
+   "band": 1,
+   "pack": "tutorial"
+  },
+  "tidak sabar": {
+   "band": 3,
+   "pack": "tutorial"
+  },
+  "ingin tahu": {
+   "band": 3,
+   "pack": "tutorial"
+  },
+  "bersedia": {
+   "band": 3,
+   "pack": "tutorial"
+  }
+ }
+}

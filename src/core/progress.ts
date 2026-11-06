@@ -85,7 +85,7 @@ export function minutesThisWeek(s: AppState = state): number {
 
 export function weakestWords(limit = 10, s: AppState = state) {
   return Object.entries(s.srs)
-    .filter(([id, x]) => x.reps > 0 && content.cards.has(id) && (x.lapses > 0 || x.difficulty > 6))
+    .filter(([id, x]) => x.reps > 0 && content.cards.has(id) && (x.lapses > 0 || x.ease < 2.2))
     .sort((a, b) => weakness(b[1]) - weakness(a[1]))
     .slice(0, limit)
     .map(([id, x]) => {

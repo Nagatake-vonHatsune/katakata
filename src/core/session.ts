@@ -39,7 +39,7 @@ export function dueIds(s: AppState = state, now = new Date()): string[] {
   const live = liveIds();
   return Object.entries(s.srs)
     .filter(([id, x]) => live.has(id) && isDue(x, now))
-    .sort((a, b) => a[1].due.localeCompare(b[1].due))
+    .sort((a, b) => a[1].due - b[1].due)
     .map(([id]) => id);
 }
 
@@ -56,7 +56,7 @@ export function newIds(n: number, s: AppState = state, pool: string[] = content.
 export function reviewStep(id: string, s: AppState = state): Step {
   const card = content.cards.get(id)!;
   const x = s.srs[id];
-  if (card.recognise_only || !x || x.reps < 2 || x.stability < 4) return { kind: 'mc', cardId: id, dir: 'ms2x' };
+  if (card.recognise_only || !x || x.reps < 2 || x.interval < 6) return { kind: 'mc', cardId: id, dir: 'ms2x' };
   return Math.random() < 0.5 ? { kind: 'recall', cardId: id } : { kind: 'mc', cardId: id, dir: 'x2ms' };
 }
 

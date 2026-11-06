@@ -91,6 +91,7 @@ export function renderHome(root: HTMLElement, nav: Nav): void {
         tile('mode.tanya', 'tanya', '🙋'),
         tile('mode.jaring', 'jaring', '🕸️'),
         tile('mode.rekod', 'rekod', '📒'),
+        tile('mode.jambatan', 'jambatan', '🌉'),
         tile('mode.cerita', null, '📖'),
       ),
       h('p', { class: 'muted small center' }, t('rekod.known_total', { n: knownCount() })),

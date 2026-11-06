@@ -1257,3 +1257,30 @@ textarea.input {
   width: 100%;
   margin-top: 8px;
 }
+
+.bridge-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.bridge-arrow {
+  font-size: 2rem;
+  color: var(--muted);
+}
+
+.bridge-lion {
+  font-size: 3.6rem;
+}
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+a {
+  color: var(--brand);
+}

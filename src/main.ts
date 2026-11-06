@@ -10,6 +10,7 @@ import { renderOnboarding } from './views/onboarding';
 import { applyTheme, renderRekod } from './views/rekod';
 import { runSession } from './views/session';
 import { renderTanya } from './views/tanya';
+import { renderJambatan } from './views/jambatan';
 
 const root = document.getElementById('app')!;
 let inSession = false;
@@ -49,6 +50,8 @@ function render(): void {
       return renderTanya(root, go);
     case 'rekod':
       return renderRekod(root, go);
+    case 'jambatan':
+      return renderJambatan(root, go);
     default:
       return renderHome(root, nav);
   }
