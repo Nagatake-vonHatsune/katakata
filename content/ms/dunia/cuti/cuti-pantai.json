@@ -164,6 +164,7 @@
       ],
       "scene": "dunia-cuti-pantai",
       "chapter": 4,
+      "seen_in_class": 7,
       "image": "✈️"
     },
     {
@@ -285,6 +286,7 @@
       ],
       "scene": "dunia-cuti-pantai",
       "chapter": 4,
+      "seen_in_class": 5,
       "image": "😄"
     }
   ]

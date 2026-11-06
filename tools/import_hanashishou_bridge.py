@@ -17,6 +17,7 @@ Re-run after Hanashishou's Malay vocabulary changes.
 
 import glob
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -57,7 +58,7 @@ def main(hana):
     known = set()
     for f in glob.glob(str(ROOT / "content/ms/kelas/*.json")) + glob.glob(str(ROOT / "content/ms/dunia/**/*.json"), recursive=True):
         for c in json.load(open(f, encoding="utf-8"))["cards"]:
-            known.add(c["term"].lower())
+            known.add(re.sub(r"[.!?,]", "", c["term"]).strip().lower())  # "Jumpa lagi!" = "jumpa lagi"
 
     index = {}
     for pack in sorted(p.name for p in (hana / "content/packs").iterdir()):
@@ -65,6 +66,12 @@ def main(hana):
         if not vf.exists():
             continue
         vocab = json.load(open(vf, encoding="utf-8"))
+        # Card IDs are permanent (learners' progress is keyed by them): reuse the ID a word already has,
+        # number new words after the highest one, and never reuse the ID of a word that was dropped.
+        out_path = ROOT / f"content/ms/jambatan/jambatan-{pack}.json"
+        old = json.load(open(out_path, encoding="utf-8"))["cards"] if out_path.exists() else []
+        old_ids = {c["term"]: c["id"] for c in old}
+        next_n = max([int(c["id"].rsplit("-", 1)[1]) for c in old] or [0]) + 1
         lang = {l: json.load(open(hana / f"content/packs/{pack}/targets/ms/lang/{l}.json", encoding="utf-8")) for l in ("en", "ja")}
         cards = []
         for word, card in vocab.items():
@@ -74,8 +81,12 @@ def main(hana):
             ex = card.get("examples", {})
             # Only band 1-2 examples that keep Kata-Kata's root-word rule.
             example = next((ex[b] for b in ("1", "2") if ex.get(b) and not affixed(ex[b])), None)
+            cid = old_ids.get(word)
+            if not cid:
+                cid = f"ms-j-{pack}-{next_n:02d}"
+                next_n += 1
             cards.append({
-                "id": f"ms-j-{pack}-{len(cards) + 1:02d}",
+                "id": cid,
                 "lang": "ms",
                 "term": word,
                 "gloss_en": meaning(lang["en"].get(f"vocab.{word}.meaning")),
@@ -107,7 +118,7 @@ def main(hana):
             },
             "cards": cards,
         }
-        path = ROOT / f"content/ms/jambatan/jambatan-{pack}.json"
+        path = out_path
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"jambatan-{pack}: {len(cards)} cards")
