@@ -11,6 +11,8 @@ import { applyTheme, renderRekod } from './views/rekod';
 import { runSession } from './views/session';
 import { renderTanya } from './views/tanya';
 import { renderJambatan } from './views/jambatan';
+import { renderSettings } from './views/settings';
+import { LANG_EVENT } from './views/langswitch';
 
 const root = document.getElementById('app')!;
 let inSession = false;
@@ -52,10 +54,17 @@ function render(): void {
       return renderRekod(root, go);
     case 'jambatan':
       return renderJambatan(root, go);
+    case 'settings':
+      return renderSettings(root, go);
     default:
       return renderHome(root, nav);
   }
 }
+
+// Language changed from a 🌐 button: redraw the current screen (a running session picks it up on the next step).
+window.addEventListener(LANG_EVENT, () => {
+  if (!inSession && state.profile.onboarded) render();
+});
 
 window.addEventListener('hashchange', () => {
   if (inSession) return;

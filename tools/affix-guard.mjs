@@ -4,7 +4,7 @@
 export const ALLOW_LIST = new Set([
   'berat', 'bersih', 'belok', 'belakang', 'belas', 'belum', 'beli', 'besar', 'bebas',
   'beliau', 'berus', 'merah', 'meja', 'meter', 'mesyuarat', 'mereka', 'mendung', 'menu',
-  // Added 6 Nov 2026 (not in spec 11.4's list): a root that looks like be- + l, from Hanashishou's band 1-2 Malay deck.
+  // Added 6 Nov 2026, approved by Sam (not in spec 11.4's list): a root that looks like be- + l, from Hanashishou's band 1-2 Malay deck.
   'belanja',
 ]);
 

@@ -6,10 +6,11 @@ device only when the learner exports it.
 
 *Satu kata, satu langkah.* 一語ずつ、一歩ずつ。
 
-- Student app: `/` (Japanese, English or Malay interface; the first screen asks)
+- Student app: `/` (Japanese, English or Malay interface; the first screen asks, and the 🌐 button on every screen changes it)
+- Settings: `/#/settings` (language, display, sound). Records (`/#/rekod`) holds stamps, progress and the savefile.
 - Language links for sharing: `/?lang=ja`, `/?lang=en`, `/?lang=ms`
 - Teacher Desk: `/teacher/` (drop in student files, merge questions, print the class agenda)
-- Version **0.9.0**, a 1.0 release candidate: see [docs/RELEASE-1.0.md](docs/RELEASE-1.0.md) and [CHANGELOG.md](CHANGELOG.md).
+- Version **0.9.1**, a 1.0 release candidate: see [docs/RELEASE-1.0.md](docs/RELEASE-1.0.md) and [CHANGELOG.md](CHANGELOG.md).
 
 With the English or Malay interface, word meanings are shown in English (the Vocab Bank has English
 and Japanese glosses). Katakana hints only appear in the Japanese interface.

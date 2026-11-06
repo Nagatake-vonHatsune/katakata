@@ -256,5 +256,16 @@
  "jambatan.private": "ファイルはこの端末から話匠へ、あなたが渡すだけです。どこにも送信されません。",
  "jambatan.saved": "単語ファイルを保存しました。次に話匠を開いてください。",
  "jambatan.nothing": "まだ覚えた単語がありません。まず今日の練習をしましょう。",
- "jambatan.keep": "話匠に進んだあとも、Kata-Kata の復習は続けられます。"
+ "jambatan.keep": "話匠に進んだあとも、Kata-Kata の復習は続けられます。",
+ "mode.settings": "設定",
+ "lang.change": "表示言語を変える",
+ "lang.anytime": "どの画面でも右上の 🌐 から変えられます。",
+ "lang.next_question": "練習中に変えた場合は、次の問題から切り替わります。",
+ "settings.body": "表示言語、見た目、音声の設定です。進み具合とセーブデータは「記録」にあります。",
+ "settings.display": "表示",
+ "settings.sound": "音声",
+ "settings.data": "データ",
+ "settings.data_body": "進み具合の確認とセーブデータの書き出し・読み込みは「記録」で。",
+ "rekod.body": "スタンプ、課と場面ごとの進み具合、セーブデータ。",
+ "rekod.settings_moved": "表示言語・テーマ・音声などは「設定」にあります。"
 }

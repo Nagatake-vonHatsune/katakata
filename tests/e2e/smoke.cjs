@@ -103,13 +103,28 @@ fs.mkdirSync(OUT, { recursive: true });
   console.log('offline reload ok');
   await ctx.setOffline(false);
 
-  // English toggle
-  await page.goto(BASE + '#/rekod');
-  await page.locator('select').first().selectOption('en');
-  await page.waitForTimeout(100);
+  // Settings is its own screen; Records points to it.
+  await page.goto(BASE + '#/settings');
+  await page.waitForSelector('.seg-lang');
+  await shot('10b-settings');
+  // Change language from anywhere: the 🌐 button on Home.
   await page.goto(BASE);
   await page.waitForSelector('.today');
+  await page.getByRole('button', { name: '表示言語を変える' }).first().click();
+  await page.getByRole('radio', { name: 'English' }).click();
+  await page.waitForSelector('text=Today\'s practice');
   await shot('11-home-en');
+  // ...and mid-session: the next question switches.
+  await page.click('.today');
+  const got = page.getByRole('button', { name: 'Got it' });
+  if (await got.count()) await got.first().click();
+  await page.waitForSelector('.step-body');
+  await page.getByRole('button', { name: 'Change language' }).click();
+  await page.getByRole('radio', { name: 'Bahasa Melayu' }).click();
+  console.log('language switched mid-session:', await page.evaluate(() => document.documentElement.lang));
+  await page.goto(BASE);
+  await page.waitForSelector('text=Latihan hari ini');
+  console.log('home now in Malay');
 
   // Malay interface from a shareable link, fresh device.
   const ctx2 = await browser.newContext({ ...devices['Pixel 7'] });

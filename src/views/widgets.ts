@@ -1,5 +1,6 @@
 // Shared pieces: word header, association chips, Ask Teacher and Report sheets, How-to cards.
 import { isInHanashishou } from '../core/bridge';
+import { langButton } from './langswitch';
 import { content, gloss } from '../core/content';
 import { uid } from '../core/dates';
 import { getLang, t } from '../core/i18n';
@@ -231,6 +232,6 @@ export function topBar(title: string, onBack: () => void, extra?: HTMLElement | 
     { class: 'topbar' },
     h('button', { class: 'icon-btn', type: 'button', 'aria-label': t('common.back'), onclick: onBack }, '‹'),
     h('h1', { class: 'topbar-title' }, title),
-    extra ?? h('span', { class: 'icon-btn-spacer' }),
+    extra ?? langButton(),
   );
 }

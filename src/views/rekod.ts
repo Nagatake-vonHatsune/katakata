@@ -1,18 +1,13 @@
-// Rekod: stamp card, progress, savefile tools, settings.
+// Rekod (記録): stamp card, progress by chapter and scene, savefile tools. Settings live in views/settings.ts.
 import { content } from '../core/content';
-import * as db from '../core/db';
-import { getLang, LANGS, setLang, t, type Lang } from '../core/i18n';
+import { getLang, t } from '../core/i18n';
 import { chapterProgress, knownCount, minutesThisWeek, sceneProgress, streak } from '../core/progress';
 import { buildSavefile, mergeStates, parseSavefile, summarise } from '../core/savefile';
 import { pickFile, safeName, shareOrDownload } from '../core/share';
-import { defaultState, replaceState, saveNow, state, update } from '../core/state';
-import { setRate } from '../core/tts';
+import { replaceState, state, update } from '../core/state';
 import { button, confirmDialog, h, mount, progressBar, sheet, toast } from '../core/ui';
-import { voiceCheck } from './onboarding';
 import { stampEl } from './stamps';
 import { topBar } from './widgets';
-
-declare const __APP_VERSION__: string;
 
 export function applyTheme(): void {
   const th = state.settings.theme;
@@ -64,36 +59,13 @@ async function importSave(redraw: () => void): Promise<void> {
 export function renderRekod(root: HTMLElement, go: (r: string) => void): void {
   const draw = () => {
     const stamps = state.stamps.slice().sort((a, b) => b.date.localeCompare(a.date));
-    const toggle = (label: string, on: boolean, set: (v: boolean) => void) => {
-      const cb = h('input', { type: 'checkbox', checked: on, role: 'switch' }) as HTMLInputElement;
-      cb.addEventListener('change', () => {
-        set(cb.checked);
-        void saveNow();
-        draw();
-      });
-      return h('label', { class: 'setting' }, h('span', null, label), cb);
-    };
-    const select = <T extends string>(label: string, value: T, options: Array<[T, string]>, set: (v: T) => void) => {
-      const sel = h('select', { class: 'input select' }, options.map(([v, l]) => h('option', { value: v, selected: v === value }, l))) as HTMLSelectElement;
-      sel.addEventListener('change', () => {
-        set(sel.value as T);
-        void saveNow();
-        draw();
-      });
-      return h('label', { class: 'setting' }, h('span', null, label), sel);
-    };
-    const nameInput = h('input', { class: 'input', type: 'text', maxlength: 40 }) as HTMLInputElement;
-    nameInput.value = state.profile.name;
-    nameInput.addEventListener('change', () => {
-      update((s) => (s.profile.name = nameInput.value.trim()));
-      void saveNow();
-    });
     mount(
       root,
       h(
         'div',
         { class: 'screen' },
-        topBar(t('rekod.title'), () => go('')),
+        topBar('📒 ' + t('rekod.title'), () => go('')),
+        h('p', { class: 'lead' }, t('rekod.body')),
         h(
           'div',
           { class: 'stats' },
@@ -128,38 +100,10 @@ export function renderRekod(root: HTMLElement, go: (r: string) => void): void {
         ),
         h(
           'section',
-          { class: 'card-box settings' },
-          h('h2', null, t('rekod.settings')),
-          h('label', { class: 'setting' }, h('span', null, t('rekod.name')), nameInput),
-          select(t('rekod.lang'), state.settings.lang, LANGS.map((l) => [l.id, l.label] as [Lang, string]), (v) => {
-            update((s) => (s.settings.lang = v));
-            setLang(v);
-          }),
-          select(t('rekod.theme'), state.settings.theme, [['auto', t('rekod.theme.auto')], ['light', t('rekod.theme.light')], ['dark', t('rekod.theme.dark')]], (v) => {
-            update((s) => (s.settings.theme = v));
-            applyTheme();
-          }),
-          select(t('rekod.speed'), String(state.settings.speechRate) as string, [['0.7', '0.7×'], ['0.9', '0.9×'], ['1', '1.0×']], (v) => {
-            update((s) => (s.settings.speechRate = Number(v)));
-            setRate(Number(v));
-          }),
-          toggle(t('rekod.kana'), state.settings.kanaHints, (v) => update((s) => (s.settings.kanaHints = v))),
-          toggle(t('rekod.backup_rem'), state.settings.backupReminder, (v) => update((s) => (s.settings.backupReminder = v))),
-          button(t('rekod.voice_check'), () => void sheet((close) => voiceCheck(() => close())), 'btn btn-ghost'),
-          button(
-            t('rekod.reset'),
-            async () => {
-              if (!(await confirmDialog(t('rekod.reset_confirm'), t('rekod.reset'), t('common.cancel'), true))) return;
-              await db.del('state');
-              await replaceState(defaultState());
-              await saveNow();
-              location.hash = '';
-              location.reload();
-            },
-            'btn btn-danger-ghost',
-          ),
+          { class: 'card-box stack' },
+          h('p', { class: 'small' }, t('rekod.settings_moved')),
+          button('⚙️ ' + t('rekod.settings'), () => go('settings'), 'btn btn-ghost btn-wide'),
         ),
-        h('section', { class: 'card-box' }, h('h2', null, t('rekod.about')), h('p', { class: 'small' }, t('rekod.privacy')), h('p', { class: 'muted small' }, `Kata-Kata v${__APP_VERSION__}`)),
       ),
     );
   };

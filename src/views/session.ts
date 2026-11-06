@@ -14,6 +14,7 @@ import { kadKata } from '../games/kad-kata';
 import { susunAyat } from '../games/susun-ayat';
 import { askTeacher, howTo, reportContent } from './widgets';
 import { stampEl } from './stamps';
+import { langButton } from './langswitch';
 
 const games: Record<'kad' | 'cari' | 'susun', Game> = {
   kad: kadKata as Game,
@@ -100,6 +101,7 @@ export async function runSession(root: HTMLElement, session: Session, onExit: ()
       progressBar(i, steps.length, t('sess.progress', { i: i + 1, n: steps.length })),
       h('span', { class: 'count' }, t('sess.progress', { i: i + 1, n: steps.length })),
       h('button', { class: 'icon-btn', type: 'button', 'aria-label': t('common.help'), onclick: () => void howTo(gameId, true) }, '?'),
+      langButton(t('lang.next_question')),
     );
     mount(root, h('div', { class: 'screen session' }, header, body));
     const ctx: GameContext = {

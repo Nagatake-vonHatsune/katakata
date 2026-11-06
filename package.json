@@ -1,6 +1,6 @@
 {
   "name": "katakata",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "private": true,
   "description": "Kata-Kata: offline Malay word trainer for Japanese learners",
   "type": "module",

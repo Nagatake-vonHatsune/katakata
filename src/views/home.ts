@@ -6,6 +6,7 @@ import { chapterProgress, knownCount, minutesThisWeek, nextChapter, streak } fro
 import { buildToday } from '../core/session';
 import { state } from '../core/state';
 import { button, h, mount, progressBar, sheet } from '../core/ui';
+import { langButton } from './langswitch';
 import { iosSteps } from './onboarding';
 import { sessionMeta } from './session';
 
@@ -59,6 +60,12 @@ export function renderHome(root: HTMLElement, nav: Nav): void {
         h('div', null, h('div', { class: 'brand-sm' }, 'Kata-Kata'), h('div', { class: 'subtitle-sm' }, t('app.subtitle'))),
         h(
           'div',
+          { class: 'head-actions' },
+          langButton(),
+          h('button', { class: 'icon-btn', type: 'button', 'aria-label': t('rekod.settings'), title: t('rekod.settings'), onclick: () => nav.go('settings') }, '⚙️'),
+        ),
+        h(
+          'div',
           { class: 'head-stats' },
           st ? h('span', { class: 'pill', title: t('home.streak_rest') }, '🔥 ' + t('home.streak', { n: st })) : null,
           h('span', { class: 'pill' }, t('home.week', { n: minutesThisWeek() })),
@@ -92,6 +99,7 @@ export function renderHome(root: HTMLElement, nav: Nav): void {
         tile('mode.jaring', 'jaring', '🕸️'),
         tile('mode.rekod', 'rekod', '📒'),
         tile('mode.jambatan', 'jambatan', '🌉'),
+        tile('mode.settings', 'settings', '⚙️'),
         tile('mode.cerita', null, '📖'),
       ),
       h('p', { class: 'muted small center' }, t('rekod.known_total', { n: knownCount() })),

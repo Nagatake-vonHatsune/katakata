@@ -256,5 +256,16 @@
  "jambatan.private": "Fail ini hanya berpindah daripada anda ke Hanashishou di peranti anda. Tiada apa-apa dimuat naik.",
  "jambatan.saved": "Fail kata disimpan. Sekarang buka Hanashishou.",
  "jambatan.nothing": "Belum ada kata. Mulakan dengan Latihan hari ini.",
- "jambatan.keep": "Anda masih boleh mengulang kaji dalam Kata-Kata selepas berpindah."
+ "jambatan.keep": "Anda masih boleh mengulang kaji dalam Kata-Kata selepas berpindah.",
+ "mode.settings": "Tetapan",
+ "lang.change": "Tukar bahasa",
+ "lang.anytime": "Anda boleh menukarnya melalui butang 🌐 di bahagian atas mana-mana skrin.",
+ "lang.next_question": "Semasa latihan, bahasa baharu bermula dari soalan seterusnya.",
+ "settings.body": "Bahasa, paparan dan bunyi. Kemajuan dan fail simpanan anda ada dalam Rekod.",
+ "settings.display": "Paparan",
+ "settings.sound": "Bunyi",
+ "settings.data": "Data anda",
+ "settings.data_body": "Lihat kemajuan dan eksport atau import fail simpanan dalam Rekod.",
+ "rekod.body": "Setem, kemajuan mengikut bab dan babak, dan fail simpanan anda.",
+ "rekod.settings_moved": "Bahasa, tema, bunyi dan pilihan lain ada dalam Tetapan."
 }

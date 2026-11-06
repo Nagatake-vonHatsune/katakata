@@ -1284,3 +1284,42 @@ textarea.input {
 a {
   color: var(--brand);
 }
+
+.head-actions {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+
+.home-head .head-stats {
+  margin-left: 0;
+}
+
+.seg-lang .seg-btn {
+  flex: 1 1 0;
+  min-height: 48px;
+  font-size: 1rem;
+}
+
+.session-bar .icon-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 1.1rem;
+}
+
+/* Home header: brand + 🌐 ⚙️ on one row, streak and minutes pills on the next. */
+.home-head {
+  flex-wrap: wrap;
+}
+
+.brand-sm {
+  white-space: nowrap;
+}
+
+.home-head .head-stats {
+  order: 3;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}

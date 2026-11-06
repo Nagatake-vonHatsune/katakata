@@ -256,5 +256,16 @@
  "jambatan.private": "The file goes from you to Hanashishou on your device. Nothing is uploaded.",
  "jambatan.saved": "Word file saved. Now open Hanashishou.",
  "jambatan.nothing": "No words yet. Start with Today's practice.",
- "jambatan.keep": "You can keep reviewing in Kata-Kata after you move on."
+ "jambatan.keep": "You can keep reviewing in Kata-Kata after you move on.",
+ "mode.settings": "Settings",
+ "lang.change": "Change language",
+ "lang.anytime": "You can change this from the 🌐 button at the top of any screen.",
+ "lang.next_question": "During practice, the new language starts from the next question.",
+ "settings.body": "Language, display and sound. Your progress and savefile are in Records.",
+ "settings.display": "Display",
+ "settings.sound": "Sound",
+ "settings.data": "Your data",
+ "settings.data_body": "See your progress and export or import your savefile in Records.",
+ "rekod.body": "Stamps, progress by chapter and scene, and your savefile.",
+ "rekod.settings_moved": "Language, theme, sound and other options are in Settings."
 }

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.1 (6 November 2026)
+
+- New ⚙️ Settings screen (language, display, sound, reset, about). Records (記録) now holds only stamps,
+  progress and the savefile, and says where settings went.
+- Change the interface language at any time: a 🌐 button at the top of every screen, including during
+  practice (the new language starts from the next question).
+
 ## 0.9.0 (6 November 2026), release candidate
 
 - **Hanashishou continuity.** New 話匠へ (To Hanashishou) screen exports a word file that Hanashishou's
