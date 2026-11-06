@@ -13,7 +13,7 @@ The current version is **0.9.1** (release candidate). Bump `package.json` to 1.0
 | 2 | Content: all nine Kelas chapters, 14 Dunia scenes, 5 Jambatan (bridge) scenes: 742 cards. Schema, affix guard and link check pass | ✅ Done | Claude |
 | 3 | Interface in Japanese, English and Malay; language chosen on the first screen; `?lang=` links | ✅ Done | Claude |
 | 4 | Hanashishou parity: same scheduler (SM-2) and card state; same hosting, offline approach and three interface languages | ✅ Done | Claude |
-| 5 | Hanashishou continuity: the apps stay separate (Sam, 6 Nov 2026); progress moves across through a word file. Kata-Kata exports it (話匠へ); Hanashishou imports it into the Malay deck | ✅ Kata-Kata side live. ⏳ Hanashishou side on branch `claude/katakata-bridge`, not merged | Sam |
+| 5 | Hanashishou continuity: the apps stay separate (Sam, 6 Nov 2026); progress moves across through a word file. Kata-Kata exports it (話匠へ); Hanashishou imports it into the Malay deck | ✅ Done: both sides live; Hanashishou import merged to `main` and deployed 6 Nov 2026 | Claude |
 | 6 | **Native-speaker review of all Japanese**: glosses, frame meanings, scene titles, interface, katakana hints (spec decision 13.2) | ⏳ To do | Sam to find a reviewer |
 | 7 | **Malay review**: interface (`i18n/ms.json`) and the four v3 scenes (Bank dan pos, Cuti ke pantai, Telefon baru, Rumah terbuka Hari Raya). (`belanja` on the affix allow-list: approved by Sam, 6 Nov 2026) | ⏳ To do | Sam |
 | 8 | **Real-phone test** (spec 12: every phase on real student phones in airplane mode): iPhone Safari and Android Chrome, Add to Home Screen, voices and the text-only fallback, share sheet for Send to teacher and the word file | ⏳ To do | Sam |
