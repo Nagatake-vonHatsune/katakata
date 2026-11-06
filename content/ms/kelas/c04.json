@@ -1025,9 +1025,9 @@
     {
       "id": "ms-c04-f01",
       "frame": "Pukul berapa sekarang? / Sekarang pukul ___.",
-      "example": "Sekarang pukul empat kurang suku.",
-      "meaning_en": "It's a quarter to four.",
-      "meaning_ja": "4時15分前です。"
+      "example": "Sekarang pukul empat suku.",
+      "meaning_en": "It's a quarter past four.",
+      "meaning_ja": "4時15分です。"
     },
     {
       "id": "ms-c04-f02",
@@ -1091,8 +1091,8 @@
       {
         "id": "ms-c04-s03",
         "speaker": "Encik Rahman",
-        "ms": "Sekarang pukul satu kurang suku. Jom makan!",
-        "en": "It's a quarter to one. Let's eat!"
+        "ms": "Sekarang pukul satu suku. Jom makan!",
+        "en": "It's a quarter past one. Let's eat!"
       },
       {
         "id": "ms-c04-s04",

@@ -22,6 +22,10 @@ import subprocess
 import sys
 from pathlib import Path
 
+# Both spellings are in common use (Sam, 6 Nov 2026: "holistic, not dogmatic").
+# Mirrors the Malay ledger; Hanashishou keeps the variant as a synonym.
+ALSO_SPELT = {"krew": "kru"}
+
 ROOT = Path(__file__).resolve().parent.parent
 SCENES = {
     "office": ("Pejabat", "At work", "仕事で"),
@@ -85,6 +89,10 @@ def main(hana):
             if not cid:
                 cid = f"ms-j-{pack}-{next_n:02d}"
                 next_n += 1
+            note = f"Hanashishou: {example}" if example else None
+            if word in ALSO_SPELT:
+                note = f"{note} " if note else ""
+                note += f"Also spelt {ALSO_SPELT[word]}."
             cards.append({
                 "id": cid,
                 "lang": "ms",
@@ -93,7 +101,7 @@ def main(hana):
                 "gloss_ja": meaning(lang["ja"].get(f"vocab.{word}.meaning")),
                 "pos": card.get("pos", ""),
                 "affix_tag": "chunk" if " " in word else "root",
-                "note": f"Hanashishou: {example}" if example else None,
+                "note": note,
                 "links": [{"type": "babak", "target": f"dunia-jambatan-{pack}"}],
                 "scene": f"dunia-jambatan-{pack}",
                 "chapter": 9,

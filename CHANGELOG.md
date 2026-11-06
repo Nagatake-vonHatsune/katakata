@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Ch4 time frame: "pukul empat kurang suku" (not used in everyday Malay) replaced with "pukul empat suku";
+  the Ch4 lunch scenario line now says "pukul satu suku" (Sam's correction).
+- Both common spellings taught: emel / e-mel, selsema / selesema, stokin / stoking, krew / kru (Sam's decision,
+  recorded in the ledger's Rules tab).
+
 ## 0.9.1 (6 November 2026)
 
 - New ⚙️ Settings screen (language, display, sound, reset, about). Records (記録) now holds only stamps,
