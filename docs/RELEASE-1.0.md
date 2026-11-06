@@ -10,7 +10,7 @@ The current version is **0.9.1** (release candidate). Bump `package.json` to 1.0
 | # | Item | Status | Who |
 |---|---|---|---|
 | 1 | Spec phase 1 (MVP): onboarding, Kad Kata, Cari Benda, Susun Ayat, Sedia Kelas, Tanya Cikgu export, savefile, Teacher Desk, stamp card | ✅ Done; `tests/e2e/smoke.cjs` checks it end to end, offline included | Claude |
-| 2 | Content: all nine Kelas chapters, 14 Dunia scenes, 5 Jambatan (bridge) scenes: 742 cards. Schema, affix guard and link check pass | ✅ Done | Claude |
+| 2 | Content: all nine Kelas chapters, 19 Dunia scenes (five colloquial ones added in v4), 5 Jambatan (bridge) scenes: 805 cards. Schema, affix guard and link check pass | ✅ Done | Claude |
 | 3 | Interface in Japanese, English and Malay; language chosen on the first screen; `?lang=` links | ✅ Done | Claude |
 | 4 | Hanashishou parity: same scheduler (SM-2) and card state; same hosting, offline approach and three interface languages | ✅ Done | Claude |
 | 5 | Hanashishou continuity: the apps stay separate (Sam, 6 Nov 2026); progress moves across through a word file. Kata-Kata exports it (話匠へ); Hanashishou imports it into the Malay deck | ✅ Done: both sides live; Hanashishou import merged to `main` and deployed 6 Nov 2026 | Claude |

@@ -1,5 +1,5 @@
 {
- "source": "hanashishou@347a969",
+ "source": "hanashishou@fce4f15",
  "words": {
   "sampai": {
    "band": 1,
@@ -357,6 +357,22 @@
    "band": 2,
    "pack": "daily-life"
   },
+  "tapau": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "teh tarik": {
+   "band": 1,
+   "pack": "daily-life"
+  },
+  "boleh tahan": {
+   "band": 2,
+   "pack": "daily-life"
+  },
+  "panjang tangan": {
+   "band": 3,
+   "pack": "daily-life"
+  },
   "penyambut tetamu": {
    "band": 2,
    "pack": "health"
@@ -542,6 +558,22 @@
    "pack": "health"
   },
   "daftar": {
+   "band": 2,
+   "pack": "health"
+  },
+  "bahu": {
+   "band": 1,
+   "pack": "health"
+  },
+  "lutut": {
+   "band": 1,
+   "pack": "health"
+  },
+  "pinggang": {
+   "band": 2,
+   "pack": "health"
+  },
+  "peluh": {
    "band": 2,
    "pack": "health"
   },
@@ -1101,6 +1133,26 @@
    "band": 4,
    "pack": "office"
   },
+  "alamak": {
+   "band": 1,
+   "pack": "office"
+  },
+  "ringan tulang": {
+   "band": 3,
+   "pack": "office"
+  },
+  "cakar ayam": {
+   "band": 3,
+   "pack": "office"
+  },
+  "jangan ambil hati": {
+   "band": 3,
+   "pack": "office"
+  },
+  "air muka": {
+   "band": 4,
+   "pack": "office"
+  },
   "hujung minggu": {
    "band": 1,
    "pack": "social"
@@ -1423,6 +1475,34 @@
   },
   "gula perang": {
    "band": 2,
+   "pack": "social"
+  },
+  "lepak": {
+   "band": 1,
+   "pack": "social"
+  },
+  "lama tak jumpa": {
+   "band": 1,
+   "pack": "social"
+  },
+  "mana ada": {
+   "band": 2,
+   "pack": "social"
+  },
+  "buah tangan": {
+   "band": 3,
+   "pack": "social"
+  },
+  "kepala batu": {
+   "band": 3,
+   "pack": "social"
+  },
+  "mulut murai": {
+   "band": 3,
+   "pack": "social"
+  },
+  "tangan kosong": {
+   "band": 3,
    "pack": "social"
   },
   "sifu": {

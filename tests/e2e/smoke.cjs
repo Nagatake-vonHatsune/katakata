@@ -122,6 +122,7 @@ fs.mkdirSync(OUT, { recursive: true });
   await page.getByRole('button', { name: 'Change language' }).click();
   await page.getByRole('radio', { name: 'Bahasa Melayu' }).click();
   console.log('language switched mid-session:', await page.evaluate(() => document.documentElement.lang));
+  await page.waitForTimeout(500); // let the IndexedDB write finish before reloading
   await page.goto(BASE);
   await page.waitForSelector('text=Latihan hari ini');
   console.log('home now in Malay');

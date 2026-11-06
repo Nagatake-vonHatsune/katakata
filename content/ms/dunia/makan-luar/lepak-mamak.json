@@ -1,0 +1,277 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "lepak-mamak",
+  "chapter": 5,
+  "status": "live",
+  "ja_review": "pending",
+  "world": {
+    "id": "makan-luar",
+    "ms": "Makan Luar",
+    "en": "Eating out",
+    "ja": "外食"
+  },
+  "title": {
+    "ms": "Lepak di kedai mamak",
+    "en": "Hanging out at the mamak",
+    "ja": "ママッでのんびり"
+  },
+  "setting": {
+    "en": "After futsal, Tanaka's colleagues take him to a 24-hour mamak for teh tarik and roti canai.",
+    "ja": "フットサルのあと、同僚たちが田中さんを24時間営業のママッに連れて行きます。テ・タリッとロティ・チャナイで一休み。"
+  },
+  "cards": [
+    {
+      "id": "ms-d-lepak-mamak-01",
+      "lang": "ms",
+      "term": "mamak",
+      "gloss_en": "mamak stall (Indian-Muslim eatery, often open late)",
+      "gloss_ja": "ママッ（インド系ムスリムの大衆食堂、深夜営業も多い）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-lepak-mamak"
+        }
+      ],
+      "scene": "dunia-lepak-mamak",
+      "chapter": 5,
+      "image": "🍛"
+    },
+    {
+      "id": "ms-d-lepak-mamak-02",
+      "lang": "ms",
+      "term": "lepak",
+      "gloss_en": "to hang out, chill",
+      "gloss_ja": "ぶらぶらする・だべる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-lepak-mamak"
+        }
+      ],
+      "scene": "dunia-lepak-mamak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-lepak-mamak-03",
+      "lang": "ms",
+      "term": "sembang",
+      "gloss_en": "to chat",
+      "gloss_ja": "おしゃべりする",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-lepak-mamak"
+        }
+      ],
+      "scene": "dunia-lepak-mamak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-lepak-mamak-04",
+      "lang": "ms",
+      "term": "teh tarik",
+      "gloss_en": "pulled milk tea",
+      "gloss_ja": "テ・タリッ（泡立てたミルクティー）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-lepak-mamak"
+        },
+        {
+          "type": "kanji",
+          "text": "teh (tea) + tarik (pull): the tea is 'pulled', poured from cup to cup until it froths. The same tarik as in tarik duit."
+        }
+      ],
+      "scene": "dunia-lepak-mamak",
+      "chapter": 5,
+      "image": "🧋"
+    },
+    {
+      "id": "ms-d-lepak-mamak-05",
+      "lang": "ms",
+      "term": "roti canai",
+      "gloss_en": "roti canai (flaky flatbread with curry)",
+      "gloss_ja": "ロティ・チャナイ（カレーで食べる薄焼きパン）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-lepak-mamak"
+        }
+      ],
+      "scene": "dunia-lepak-mamak",
+      "chapter": 5,
+      "image": "🫓"
+    },
+    {
+      "id": "ms-d-lepak-mamak-06",
+      "lang": "ms",
+      "term": "kopi O",
+      "gloss_en": "black coffee (with sugar)",
+      "gloss_ja": "ブラックコーヒー（砂糖入り）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-lepak-mamak"
+        },
+        {
+          "type": "pinjam",
+          "text": "O is from Hokkien 烏 'black'. Kopi O kosong = no sugar either."
+        }
+      ],
+      "scene": "dunia-lepak-mamak",
+      "chapter": 5,
+      "image": "☕"
+    },
+    {
+      "id": "ms-d-lepak-mamak-07",
+      "lang": "ms",
+      "term": "tapau",
+      "gloss_en": "to take away (food)",
+      "gloss_ja": "持ち帰りにする",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-lepak-mamak"
+        },
+        {
+          "type": "pinjam",
+          "text": "From Cantonese 打包 'pack up'; everyone in Malaysia says it. Same job as bungkus (Ch8)."
+        }
+      ],
+      "scene": "dunia-lepak-mamak",
+      "chapter": 5,
+      "image": "🥡"
+    },
+    {
+      "id": "ms-d-lepak-mamak-08",
+      "lang": "ms",
+      "term": "makan sini",
+      "gloss_en": "to eat here (dine in)",
+      "gloss_ja": "店内で食べる",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-lepak-mamak"
+        },
+        {
+          "type": "kanji",
+          "text": "makan (eat) + sini (here). The waiter asks: Makan sini atau tapau?"
+        }
+      ],
+      "scene": "dunia-lepak-mamak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-lepak-mamak-09",
+      "lang": "ms",
+      "term": "boleh tahan",
+      "gloss_en": "not bad, pretty good",
+      "gloss_ja": "なかなかいい・けっこういける",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-lepak-mamak"
+        },
+        {
+          "type": "kanji",
+          "text": "boleh (can, Ch2) + tahan (bear): 'bearable'. Said with a nod, it is real praise."
+        }
+      ],
+      "scene": "dunia-lepak-mamak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-lepak-mamak-10",
+      "lang": "ms",
+      "term": "tak apa",
+      "gloss_en": "never mind, it's OK",
+      "gloss_ja": "大丈夫・気にしないで",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-lepak-mamak"
+        },
+        {
+          "type": "kanji",
+          "text": "tak (not) + apa (what): 'it's nothing'. Often said takpe."
+        }
+      ],
+      "scene": "dunia-lepak-mamak",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-lepak-mamak-11",
+      "lang": "ms",
+      "term": "kira",
+      "gloss_en": "to count; Kira! = the bill, please",
+      "gloss_ja": "数える・（店で）お会計",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-lepak-mamak"
+        }
+      ],
+      "scene": "dunia-lepak-mamak",
+      "chapter": 5,
+      "image": "🧾"
+    },
+    {
+      "id": "ms-d-lepak-mamak-12",
+      "lang": "ms",
+      "term": "abang",
+      "gloss_en": "older brother; friendly way to call a waiter",
+      "gloss_ja": "兄・（店員への呼びかけ）お兄さん",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-lepak-mamak"
+        },
+        {
+          "type": "keluarga",
+          "text": "Family word used for strangers too, often cut to bang: Bang, teh tarik satu!"
+        }
+      ],
+      "scene": "dunia-lepak-mamak",
+      "chapter": 5,
+      "seen_in_class": 1
+    }
+  ]
+}

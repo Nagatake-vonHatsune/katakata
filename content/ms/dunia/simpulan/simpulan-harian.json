@@ -1,0 +1,338 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "simpulan-harian",
+  "chapter": 9,
+  "status": "live",
+  "ja_review": "pending",
+  "world": {
+    "id": "simpulan",
+    "ms": "Simpulan Bahasa",
+    "en": "Idioms",
+    "ja": "慣用句"
+  },
+  "title": {
+    "ms": "Simpulan bahasa harian",
+    "en": "Everyday idioms",
+    "ja": "毎日の慣用句"
+  },
+  "setting": {
+    "en": "Over lunch, Encik Rahman describes the office in idioms. Most are built from body words, so each one is a picture.",
+    "ja": "昼ごはんのとき、ラーマンさんが職場の人たちを慣用句で説明します。ほとんどが体の言葉でできているので、一つ一つが絵になります。"
+  },
+  "cards": [
+    {
+      "id": "ms-d-simpulan-harian-01",
+      "lang": "ms",
+      "term": "kepala batu",
+      "gloss_en": "stubborn (person)",
+      "gloss_ja": "頑固（な人）",
+      "pos": "adj",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-simpulan-harian"
+        },
+        {
+          "type": "kanji",
+          "text": "kepala (head) + batu (stone): 'stone head', just like 石頭・頭が固い."
+        }
+      ],
+      "scene": "dunia-simpulan-harian",
+      "chapter": 9,
+      "image": "🪨"
+    },
+    {
+      "id": "ms-d-simpulan-harian-02",
+      "lang": "ms",
+      "term": "besar kepala",
+      "gloss_en": "big-headed, arrogant",
+      "gloss_ja": "思い上がった・天狗になった",
+      "pos": "adj",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-simpulan-harian"
+        },
+        {
+          "type": "kanji",
+          "text": "besar (big, Ch5) + kepala (head): 'big head', as in English. In Japanese: 天狗になる."
+        }
+      ],
+      "scene": "dunia-simpulan-harian",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-simpulan-harian-03",
+      "lang": "ms",
+      "term": "ringan tulang",
+      "gloss_en": "hard-working, always ready to help",
+      "gloss_ja": "働き者・まめな",
+      "pos": "adj",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-simpulan-harian"
+        },
+        {
+          "type": "kanji",
+          "text": "ringan (light, Ch5) + tulang (bone): light bones get up and help. The opposite is berat tulang (lazy)."
+        }
+      ],
+      "scene": "dunia-simpulan-harian",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-simpulan-harian-04",
+      "lang": "ms",
+      "term": "panjang tangan",
+      "gloss_en": "light-fingered, likely to steal",
+      "gloss_ja": "手癖が悪い",
+      "pos": "adj",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-simpulan-harian"
+        },
+        {
+          "type": "kanji",
+          "text": "panjang (long, Ch3) + tangan (hand): Japanese says it the same way, 手が長い."
+        }
+      ],
+      "scene": "dunia-simpulan-harian",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-simpulan-harian-05",
+      "lang": "ms",
+      "term": "buah hati",
+      "gloss_en": "darling, sweetheart (often your child)",
+      "gloss_ja": "最愛の人・いとしい子",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-simpulan-harian"
+        },
+        {
+          "type": "kanji",
+          "text": "buah (fruit, Ch8) + hati (heart): 'fruit of the heart'."
+        }
+      ],
+      "scene": "dunia-simpulan-harian",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-simpulan-harian-06",
+      "lang": "ms",
+      "term": "buah tangan",
+      "gloss_en": "a gift you bring when visiting",
+      "gloss_ja": "手土産",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-simpulan-harian"
+        },
+        {
+          "type": "kanji",
+          "text": "buah (fruit) + tangan (hand): what you carry in your hand, exactly 手土産."
+        }
+      ],
+      "scene": "dunia-simpulan-harian",
+      "chapter": 9,
+      "image": "🎁"
+    },
+    {
+      "id": "ms-d-simpulan-harian-07",
+      "lang": "ms",
+      "term": "mulut murai",
+      "gloss_en": "chatterbox",
+      "gloss_ja": "おしゃべりな人",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-simpulan-harian"
+        },
+        {
+          "type": "kanji",
+          "text": "mulut (mouth) + murai (magpie robin, a very noisy bird)."
+        }
+      ],
+      "scene": "dunia-simpulan-harian",
+      "chapter": 9,
+      "image": "🐦"
+    },
+    {
+      "id": "ms-d-simpulan-harian-08",
+      "lang": "ms",
+      "term": "kaki bangku",
+      "gloss_en": "hopeless at football (or sport)",
+      "gloss_ja": "サッカーが下手な人・運動音痴",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-simpulan-harian"
+        },
+        {
+          "type": "kanji",
+          "text": "kaki (leg, Ch8) + bangku (bench): legs as stiff as a bench's."
+        }
+      ],
+      "scene": "dunia-simpulan-harian",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-simpulan-harian-09",
+      "lang": "ms",
+      "term": "mata duitan",
+      "gloss_en": "money-minded, greedy for money",
+      "gloss_ja": "金に目がない",
+      "pos": "adj",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-simpulan-harian"
+        },
+        {
+          "type": "kanji",
+          "text": "mata (eye) + duit (money) + -an: eyes full of money, like 金に目がない."
+        }
+      ],
+      "scene": "dunia-simpulan-harian",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-simpulan-harian-10",
+      "lang": "ms",
+      "term": "sakit hati",
+      "gloss_en": "hurt and annoyed",
+      "gloss_ja": "腹が立つ・心が傷つく",
+      "pos": "adj",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-simpulan-harian"
+        },
+        {
+          "type": "kanji",
+          "text": "sakit (sick, Ch5) + hati (heart, liver): a sore heart."
+        }
+      ],
+      "scene": "dunia-simpulan-harian",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-simpulan-harian-11",
+      "lang": "ms",
+      "term": "jangan ambil hati",
+      "gloss_en": "don't take it to heart",
+      "gloss_ja": "気を悪くしないで",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-simpulan-harian"
+        },
+        {
+          "type": "kanji",
+          "text": "jangan (don't) + ambil (take) + hati (heart): word for word 'don't take it to heart'."
+        }
+      ],
+      "scene": "dunia-simpulan-harian",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-simpulan-harian-12",
+      "lang": "ms",
+      "term": "air muka",
+      "gloss_en": "look on your face; face (pride)",
+      "gloss_ja": "顔色・表情；面目",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-simpulan-harian"
+        },
+        {
+          "type": "kanji",
+          "text": "air (water, Ch5) + muka (face). jaga air muka = to save face (面子を保つ)."
+        }
+      ],
+      "scene": "dunia-simpulan-harian",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-simpulan-harian-13",
+      "lang": "ms",
+      "term": "tangan kosong",
+      "gloss_en": "empty-handed",
+      "gloss_ja": "手ぶら",
+      "pos": "adj",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-simpulan-harian"
+        },
+        {
+          "type": "kanji",
+          "text": "tangan (hand) + kosong (empty): 手ぶら. Never go to an open house tangan kosong!"
+        }
+      ],
+      "scene": "dunia-simpulan-harian",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-simpulan-harian-14",
+      "lang": "ms",
+      "term": "cakar ayam",
+      "gloss_en": "messy handwriting",
+      "gloss_ja": "ひどく汚い字",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-simpulan-harian"
+        },
+        {
+          "type": "kanji",
+          "text": "cakar (claw, scratch) + ayam (chicken, Ch8): chicken scratches, like ミミズが這ったような字."
+        }
+      ],
+      "scene": "dunia-simpulan-harian",
+      "chapter": 9,
+      "image": "🐔"
+    }
+  ]
+}

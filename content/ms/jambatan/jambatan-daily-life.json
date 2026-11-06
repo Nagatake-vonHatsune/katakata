@@ -6,7 +6,7 @@
   "chapter": 9,
   "status": "live",
   "ja_review": "pending",
-  "source": "hanashishou@347a969 content/packs/daily-life/targets/ms (bands 1-2)",
+  "source": "hanashishou@fce4f15 content/packs/daily-life/targets/ms (bands 1-2)",
   "world": {
     "id": "jambatan",
     "ms": "Jambatan",
@@ -50,24 +50,6 @@
       "pos": "noun",
       "affix_tag": "chunk",
       "note": "Hanashishou: Apakah nombor platnya?",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-daily-life"
-        }
-      ],
-      "scene": "dunia-jambatan-daily-life",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-daily-life-03",
-      "lang": "ms",
-      "term": "pintu masuk",
-      "gloss_en": "Entrance",
-      "gloss_ja": "入口",
-      "pos": "noun",
-      "affix_tag": "chunk",
-      "note": "Hanashishou: Saya di pintu masuk utama.",
       "links": [
         {
           "type": "babak",

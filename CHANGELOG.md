@@ -6,6 +6,12 @@
   the Ch4 lunch scenario line now says "pukul satu suku" (Sam's correction).
 - Both common spellings taught: emel / e-mel, selsema / selesema, stokin / stoking, krew / kru (Sam's decision,
   recorded in the ledger's Rules tab).
+- Five colloquial Dunia scenes (Vocab Bank v4, 64 cards, Claude drafts): Lepak di kedai mamak (tapau, boleh tahan,
+  teh tarik...), Sembang di pantri (alamak, mana ada, lama tak jumpa...), Gambar bayi (face words), Main badminton
+  (arm and leg words; it also gives Ch6 class prep a Cari Benda round) and Simpulan bahasa harian (14 idioms such
+  as kepala batu, panjang tangan, buah tangan, each checked against Kamus Dewan, with a Japanese idiom hook).
+- Jambatan no longer repeats a class word written as an alternative ("pintu masuk" is taught in Ch7).
+- Malay ledger: rows L-0919 to L-0981 added with `tools/ledger/append_ledger.py`, which keeps existing IDs.
 
 ## 0.9.1 (6 November 2026)
 

@@ -1,0 +1,250 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "badan-bayi",
+  "chapter": 5,
+  "status": "live",
+  "ja_review": "pending",
+  "world": {
+    "id": "badan",
+    "ms": "Badan",
+    "en": "Body",
+    "ja": "からだ"
+  },
+  "title": {
+    "ms": "Gambar bayi",
+    "en": "Baby photos",
+    "ja": "赤ちゃんの写真"
+  },
+  "setting": {
+    "en": "Aini shows the team photos of her new baby. Whose nose? Whose eyes?",
+    "ja": "アイニさんが生まれたばかりの赤ちゃんの写真を見せてくれます。鼻はだれ似？目はだれ似？"
+  },
+  "cards": [
+    {
+      "id": "ms-d-badan-bayi-01",
+      "lang": "ms",
+      "term": "bayi",
+      "gloss_en": "baby",
+      "gloss_ja": "赤ちゃん",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-badan-bayi"
+        }
+      ],
+      "scene": "dunia-badan-bayi",
+      "chapter": 5,
+      "image": "👶"
+    },
+    {
+      "id": "ms-d-badan-bayi-02",
+      "lang": "ms",
+      "term": "comel",
+      "gloss_en": "cute",
+      "gloss_ja": "かわいい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-badan-bayi"
+        }
+      ],
+      "scene": "dunia-badan-bayi",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-badan-bayi-03",
+      "lang": "ms",
+      "term": "tembam",
+      "gloss_en": "chubby (cheeks, face)",
+      "gloss_ja": "ぽっちゃりした・ふっくらした",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-badan-bayi"
+        }
+      ],
+      "scene": "dunia-badan-bayi",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-badan-bayi-04",
+      "lang": "ms",
+      "term": "muka",
+      "gloss_en": "face",
+      "gloss_ja": "顔",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-badan-bayi"
+        }
+      ],
+      "scene": "dunia-badan-bayi",
+      "chapter": 5,
+      "image": "🙂"
+    },
+    {
+      "id": "ms-d-badan-bayi-05",
+      "lang": "ms",
+      "term": "hidung",
+      "gloss_en": "nose",
+      "gloss_ja": "鼻",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-badan-bayi"
+        }
+      ],
+      "scene": "dunia-badan-bayi",
+      "chapter": 5,
+      "image": "👃"
+    },
+    {
+      "id": "ms-d-badan-bayi-06",
+      "lang": "ms",
+      "term": "mulut",
+      "gloss_en": "mouth",
+      "gloss_ja": "口",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-badan-bayi"
+        }
+      ],
+      "scene": "dunia-badan-bayi",
+      "chapter": 5,
+      "image": "👄"
+    },
+    {
+      "id": "ms-d-badan-bayi-07",
+      "lang": "ms",
+      "term": "telinga",
+      "gloss_en": "ear",
+      "gloss_ja": "耳",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-badan-bayi"
+        }
+      ],
+      "scene": "dunia-badan-bayi",
+      "chapter": 5,
+      "image": "👂"
+    },
+    {
+      "id": "ms-d-badan-bayi-08",
+      "lang": "ms",
+      "term": "pipi",
+      "gloss_en": "cheek",
+      "gloss_ja": "ほお",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-badan-bayi"
+        }
+      ],
+      "scene": "dunia-badan-bayi",
+      "chapter": 5
+    },
+    {
+      "id": "ms-d-badan-bayi-09",
+      "lang": "ms",
+      "term": "rambut",
+      "gloss_en": "hair (on the head)",
+      "gloss_ja": "髪",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-badan-bayi"
+        }
+      ],
+      "scene": "dunia-badan-bayi",
+      "chapter": 5,
+      "image": "💇"
+    },
+    {
+      "id": "ms-d-badan-bayi-10",
+      "lang": "ms",
+      "term": "jari",
+      "gloss_en": "finger",
+      "gloss_ja": "指",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-badan-bayi"
+        }
+      ],
+      "scene": "dunia-badan-bayi",
+      "chapter": 5,
+      "image": "☝️"
+    },
+    {
+      "id": "ms-d-badan-bayi-11",
+      "lang": "ms",
+      "term": "senyum",
+      "gloss_en": "to smile; a smile",
+      "gloss_ja": "ほほえむ・笑顔",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-badan-bayi"
+        }
+      ],
+      "scene": "dunia-badan-bayi",
+      "chapter": 5,
+      "image": "😊"
+    },
+    {
+      "id": "ms-d-badan-bayi-12",
+      "lang": "ms",
+      "term": "macam",
+      "gloss_en": "like, similar to (spoken)",
+      "gloss_ja": "〜みたい・〜のような",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-badan-bayi"
+        }
+      ],
+      "scene": "dunia-badan-bayi",
+      "chapter": 5
+    }
+  ]
+}

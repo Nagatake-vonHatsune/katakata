@@ -20,7 +20,7 @@ and Japanese glosses). Katakana hints only appear in the Japanese interface.
 | Spec item | Where |
 |---|---|
 | Onboarding: name, voice check, iOS "Add to Home Screen" step | `src/views/onboarding.ts` |
-| All nine Kelas chapters and 14 Dunia scenes (611 cards) | `content/ms/` (packs with `"status": "live"`) |
+| All nine Kelas chapters, 19 Dunia scenes and 5 Jambatan scenes (805 cards) | `content/ms/` (packs with `"status": "live"`) |
 | 今日の練習: due reviews, then 5–8 new words, one frame drill, one Cari Benda round | `src/core/session.ts` |
 | Kad Kata, Cari Benda, Susun Ayat | `src/games/<id>/` (common `Game` interface) |
 | 授業の準備 (Sedia Kelas) with "Ready" stamp | `src/views/modes.ts` |
@@ -45,11 +45,13 @@ One JSON file per chapter or scene, validated against `content/schema/pack.schem
 Card fields follow the shared Hanashishou format: `id, lang, term, gloss_en, gloss_ja, pos,
 affix_tag, note, links[], scene, chapter, image`.
 
-- Master workbook: `content/source/2026-11-06_KataKata_VocabBank_v3.xlsx` (v2 plus four new scenes:
-  Bank dan pos, Cuti ke pantai, Telefon baru, Rumah terbuka Hari Raya; these rows are Claude drafts).
+- Master workbook: `content/source/2026-11-06_KataKata_VocabBank_v4.xlsx`. v3 added four scenes (Bank dan pos,
+  Cuti ke pantai, Telefon baru, Rumah terbuka Hari Raya); v4 adds five colloquial ones (Lepak di kedai mamak,
+  Sembang di pantri, Gambar bayi, Main badminton, Simpulan bahasa harian), built by `tools/make_vocab_bank_v4.py`.
+  All v3 and v4 rows are Claude drafts.
 - Only packs with `"status": "live"` ship in the app (set by `live_kelas` / `live_dunia` in
   `tools/import-overrides.json`). All packs are live at the moment.
-- Re-import from the workbook: `python3 -I tools/import_vocab_bank.py content/source/2026-11-06_KataKata_VocabBank_v3.xlsx`
+- Re-import from the workbook: `python3 -I tools/import_vocab_bank.py content/source/2026-11-06_KataKata_VocabBank_v4.xlsx`
 - Japanese frame meanings, scene titles and Cari Benda emoji live in `tools/import-overrides.json`.
 - Content checks (also run by `npm run build` and CI): `npm run content:check`
   - schema check on every pack
@@ -57,7 +59,7 @@ affix_tag, note, links[], scene, chapter, image`.
   - link check (targets exist; pair links only to same or earlier chapter)
 - Recorded audio (plan B for phones without a Malay voice): `public/audio/ms/<card-id>.mp3`
 
-**All Japanese text (glosses, frame meanings, scene titles, interface) is a Claude draft and needs a native check before students see it. The Malay interface (`i18n/ms.json`) and the four new v3 scenes are Claude drafts too.**
+**All Japanese text (glosses, frame meanings, scene titles, interface) is a Claude draft and needs a native check before students see it. The Malay interface (`i18n/ms.json`) and the v3/v4 scenes are Claude drafts too.**
 
 ## Develop
 

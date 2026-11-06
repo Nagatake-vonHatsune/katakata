@@ -62,7 +62,10 @@ def main(hana):
     known = set()
     for f in glob.glob(str(ROOT / "content/ms/kelas/*.json")) + glob.glob(str(ROOT / "content/ms/dunia/**/*.json"), recursive=True):
         for c in json.load(open(f, encoding="utf-8"))["cards"]:
-            known.add(re.sub(r"[.!?,]", "", c["term"]).strip().lower())  # "Jumpa lagi!" = "jumpa lagi"
+            t = re.sub(r"[.!?,]", "", c["term"]).strip().lower()  # "Jumpa lagi!" = "jumpa lagi"
+            known.add(t)
+            # "pintu masuk / pintu keluar" also covers "pintu masuk"; "(Kak)" style notes are dropped.
+            known.update(a.strip() for a in re.sub(r"\(.*?\)", "", t).split("/") if a.strip())
 
     index = {}
     for pack in sorted(p.name for p in (hana / "content/packs").iterdir()):

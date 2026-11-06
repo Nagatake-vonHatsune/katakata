@@ -25,7 +25,12 @@
     "bank-pos",
     "cuti-pantai",
     "telefon-baru",
-    "perayaan-raya"
+    "perayaan-raya",
+    "lepak-mamak",
+    "pejabat-sembang",
+    "badan-bayi",
+    "sukan-badminton",
+    "simpulan-harian"
   ],
   "chapter_titles": {
     "1": {
@@ -98,7 +103,10 @@
     "Bank dan Pos (Bank and post)": "bank-pos",
     "Cuti (Holidays)": "cuti",
     "Telefon (Phone)": "telefon",
-    "Perayaan (Festivals)": "perayaan"
+    "Perayaan (Festivals)": "perayaan",
+    "Makan Luar (Eating out)": "makan-luar",
+    "Sukan (Sport)": "sukan",
+    "Simpulan Bahasa (Idioms)": "simpulan"
   },
   "world_ja": {
     "rumah": "家",
@@ -113,7 +121,10 @@
     "bank-pos": "銀行と郵便",
     "cuti": "休暇",
     "telefon": "携帯電話",
-    "perayaan": "お祭り"
+    "perayaan": "お祭り",
+    "makan-luar": "外食",
+    "sukan": "スポーツ",
+    "simpulan": "慣用句"
   },
   "scene_ja": {
     "rumah-bangun-pagi": {
@@ -171,6 +182,26 @@
     "perayaan-raya": {
       "title": "ハリラヤのオープンハウス",
       "setting": "ラーマンさんが田中さんをハリラヤのオープンハウスに招きます。"
+    },
+    "lepak-mamak": {
+      "title": "ママッでのんびり",
+      "setting": "フットサルのあと、同僚たちが田中さんを24時間営業のママッに連れて行きます。テ・タリッとロティ・チャナイで一休み。"
+    },
+    "pejabat-sembang": {
+      "title": "給湯室でおしゃべり",
+      "setting": "月曜の朝、オフィスの給湯室。チームが週末の話で盛り上がります。"
+    },
+    "badan-bayi": {
+      "title": "赤ちゃんの写真",
+      "setting": "アイニさんが生まれたばかりの赤ちゃんの写真を見せてくれます。鼻はだれ似？目はだれ似？"
+    },
+    "sukan-badminton": {
+      "title": "バドミントンをする",
+      "setting": "土曜日、会社のチームでバドミントン。田中さんはやる気満々ですが、腕とひざが言うことを聞きません。"
+    },
+    "simpulan-harian": {
+      "title": "毎日の慣用句",
+      "setting": "昼ごはんのとき、ラーマンさんが職場の人たちを慣用句で説明します。ほとんどが体の言葉でできているので、一つ一つが絵になります。"
     }
   },
   "frame_meaning_ja": {
@@ -355,6 +386,37 @@
     "ms-d-perayaan-raya-09": "🍡",
     "ms-d-perayaan-raya-10": "💵",
     "ms-d-perayaan-raya-11": "🪔",
-    "ms-d-perayaan-raya-12": "🚗"
+    "ms-d-perayaan-raya-12": "🚗",
+    "ms-d-lepak-mamak-01": "🍛",
+    "ms-d-lepak-mamak-04": "🧋",
+    "ms-d-lepak-mamak-05": "🫓",
+    "ms-d-lepak-mamak-06": "☕",
+    "ms-d-lepak-mamak-07": "🥡",
+    "ms-d-lepak-mamak-11": "🧾",
+    "ms-d-badan-bayi-01": "👶",
+    "ms-d-badan-bayi-04": "🙂",
+    "ms-d-badan-bayi-05": "👃",
+    "ms-d-badan-bayi-06": "👄",
+    "ms-d-badan-bayi-07": "👂",
+    "ms-d-badan-bayi-09": "💇",
+    "ms-d-badan-bayi-10": "☝️",
+    "ms-d-badan-bayi-11": "😊",
+    "ms-d-sukan-badminton-01": "🏸",
+    "ms-d-sukan-badminton-03": "🏟️",
+    "ms-d-sukan-badminton-04": "🔢",
+    "ms-d-sukan-badminton-07": "🏆",
+    "ms-d-sukan-badminton-08": "💦",
+    "ms-d-sukan-badminton-09": "✋",
+    "ms-d-sukan-badminton-10": "💪",
+    "ms-d-sukan-badminton-13": "🦵",
+    "ms-d-pejabat-sembang-01": "😱",
+    "ms-d-pejabat-sembang-02": "🤩",
+    "ms-d-pejabat-sembang-11": "👯",
+    "ms-d-simpulan-harian-01": "🪨",
+    "ms-d-simpulan-harian-06": "🎁",
+    "ms-d-simpulan-harian-07": "🐦",
+    "ms-d-simpulan-harian-14": "🐔",
+    "ms-d-pejabat-sembang-09": "👍",
+    "ms-d-pejabat-sembang-12": "🚶"
   }
 }

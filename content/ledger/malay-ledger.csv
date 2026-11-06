@@ -32,7 +32,7 @@ L-0030,tidak / tak,"no, not",いいえ・〜ない,adv,root,,Headword,p.4489 / p
 L-0031,Encik,Mr (polite 'you' for a man),〜さん（男性）,title,root,,Headword,p.1039,ms-c01-034,Ch1,,,,Vocab Bank v2,Draft,,,2026-11-06,Claude (seed)
 L-0032,Puan,Mrs / Ms (polite 'you' for a married or senior woman),〜さん（女性）,title,root,,Headword,p.3315,ms-c01-035,Ch1,,,,Vocab Bank v2,Draft,,,2026-11-06,Claude (seed)
 L-0033,Cik,Miss (young or unmarried woman),〜さん（若い女性）,title,root,,Headword,p.739,ms-c01-036,Ch1,,,,Vocab Bank v2,Draft,,,2026-11-06,Claude (seed)
-L-0034,Abang / Kakak (Kak),older brother / older sister (friendly address),お兄さん／お姉さん（呼びかけ）,title,root,,Headword,p.4 / p.1739,ms-c01-037,Ch1,,,,Vocab Bank v2,Draft,,,2026-11-06,Claude (seed)
+L-0034,Abang / Kakak (Kak),older brother / older sister (friendly address),お兄さん／お姉さん（呼びかけ）,title,root,,Headword,p.4 / p.1739,"ms-c01-037, ms-d-lepak-mamak-12",Ch1; Dunia · Lepak di kedai mamak (primes Ch5),,,,Vocab Bank v2,Draft,,,2026-11-06,Claude
 L-0035,Pak cik / Mak cik,uncle / auntie (older man / woman),おじさん／おばさん,title,root,pak / mak,Phrase under headword,p.2986 / p.2622,ms-c01-038,Ch1,,,,Vocab Bank v2,Draft,,,2026-11-06,Claude (seed)
 L-0036,saya,"I, me (polite)",私,pron,root,,Headword,p.3743,ms-c02-001,Ch2,,,,Vocab Bank v2,Draft,,,2026-11-06,Claude (seed)
 L-0037,aku,"I, me (casual, close friends)",俺・あたし（親しい間柄）,pron,root,,Headword,p.72,ms-c02-002,Ch2,,,,Vocab Bank v2,Draft,,,2026-11-06,Claude (seed)
@@ -590,7 +590,7 @@ L-0588,rosak,"broken, out of order",壊れた・故障した,adj,root,,Headword,
 L-0589,kamera,camera,カメラ,noun,root,,Headword,p.1760,ms-d-telefon-baru-12,Dunia · Telefon baru (primes Ch7),,,,Vocab Bank v3 (Claude),Draft,,,2026-11-06,Claude (seed)
 L-0590,teka,To guess,推測する、当てる,verb,root,,Headword,p.4351,ms-j-daily-life-01,Jambatan · Daily life,daily-life · band 1,Yes,,Hanashishou (bridge),Draft,,,2026-11-06,Claude (seed)
 L-0591,nombor plat,Car number plate,車のナンバー（ナンバープレート）,noun,chunk,nombor,Phrase under headword,p.2903,ms-j-daily-life-02,Jambatan · Daily life,daily-life · band 2,Yes,,Hanashishou (bridge),Draft,,,2026-11-06,Claude (seed)
-L-0592,pintu masuk,Entrance,入口,noun,chunk,masuk,Phrase under headword,p.2685,ms-j-daily-life-03,Jambatan · Daily life,daily-life · band 1,Yes,,Hanashishou (bridge),Draft,,,2026-11-06,Claude (seed)
+L-0592,pintu masuk,Entrance,入口,noun,chunk,masuk,Phrase under headword,p.2685,ms-c07-036,Ch7,daily-life · band 1,Yes,,Hanashishou (bridge),Draft,,,2026-11-06,Claude
 L-0593,senyap,Quiet; silent,静かな、黙っている,adjective,root,,Headword,p.3894,ms-j-daily-life-04,Jambatan · Daily life,daily-life · band 2,Yes,,Hanashishou (bridge),Draft,,,2026-11-06,Claude (seed)
 L-0594,sehala,One-way (road),一方通行の,adjective,root,hala,Root only,p.1326,ms-j-daily-life-05,Jambatan · Daily life,daily-life · band 2,Yes,,Hanashishou (bridge),Draft,,,2026-11-06,Claude (seed)
 L-0595,pengawal,Security guard,警備員,noun,root,kawal,Under root,p.1830,ms-j-daily-life-06,Jambatan · Daily life,daily-life · band 2,Yes,,Hanashishou (bridge),Draft,"Hanashishou root-word rule: band 2 example ""Pengawal itu menyuruh kereta bergerak."" uses menyuruh, bergerak",,2026-11-06,Claude (seed)
@@ -917,3 +917,66 @@ L-0915,sifu,Master or teacher (from Cantonese); used in Malaysia for an expert o
 L-0916,bersedia,"To be ready or prepared (standard form of ""sedia"")",準備ができている（「sedia」の標準形）,verb,,sedia,Under root,p.3762,,,tutorial · band 3,,,Hanashishou,Draft,,,2026-11-06,Claude (seed)
 L-0917,ingin tahu,Curious; wanting to know,知りたい、興味がある,expression,,,Words found separately,"ingin p.1526, tahu p.4198",,,tutorial · band 3,,,Hanashishou,Draft,,,2026-11-06,Claude (seed)
 L-0918,tidak sabar,Can't wait; really looking forward to something,待ちきれない、とても楽しみにしている,expression,,,Words found separately,"tidak p.4489, sabar p.3638",,,tutorial · band 3,,,Hanashishou,Draft,,,2026-11-06,Claude (seed)
+L-0919,bayi,baby,赤ちゃん,noun,root,,Headword,p.374,ms-d-badan-bayi-01,Dunia · Gambar bayi (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0920,comel,cute,かわいい,adj,root,,Headword,p.758,ms-d-badan-bayi-02,Dunia · Gambar bayi (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0921,tembam,"chubby (cheeks, face)",ぽっちゃりした・ふっくらした,adj,root,,Headword,p.4383,ms-d-badan-bayi-03,Dunia · Gambar bayi (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0922,muka,face,顔,noun,root,,Headword,p.2810,ms-d-badan-bayi-04,Dunia · Gambar bayi (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0923,hidung,nose,鼻,noun,root,,Headword,p.1405,ms-d-badan-bayi-05,Dunia · Gambar bayi (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0924,mulut,mouth,口,noun,root,,Headword,p.2820,ms-d-badan-bayi-06,Dunia · Gambar bayi (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0925,telinga,ear,耳,noun,root,,Headword,p.4372,ms-d-badan-bayi-07,Dunia · Gambar bayi (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0926,pipi,cheek,ほお,noun,root,,Headword,p.3248,ms-d-badan-bayi-08,Dunia · Gambar bayi (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0927,rambut,hair (on the head),髪,noun,root,,Headword,p.3416,ms-d-badan-bayi-09,Dunia · Gambar bayi (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0928,jari,finger,指,noun,root,,Headword,p.1611,ms-d-badan-bayi-10,Dunia · Gambar bayi (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0929,senyum,to smile; a smile,ほほえむ・笑顔,verb,root,,Headword,p.3895,ms-d-badan-bayi-11,Dunia · Gambar bayi (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0930,macam,"like, similar to (spoken)",〜みたい・〜のような,prep,root,,Headword,p.2602,ms-d-badan-bayi-12,Dunia · Gambar bayi (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0931,mamak,"mamak stall (Indian-Muslim eatery, often open late)",ママッ（インド系ムスリムの大衆食堂、深夜営業も多い）,noun,root,,Headword,p.2646,ms-d-lepak-mamak-01,Dunia · Lepak di kedai mamak (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0932,lepak,"to hang out, chill",ぶらぶらする・だべる,verb,root,,Headword,p.2481,ms-d-lepak-mamak-02,Dunia · Lepak di kedai mamak (primes Ch5),social · band 1,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0933,sembang,to chat,おしゃべりする,verb,root,,Headword,p.3837,ms-d-lepak-mamak-03,Dunia · Lepak di kedai mamak (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0934,teh tarik,pulled milk tea,テ・タリッ（泡立てたミルクティー）,noun,chunk,,Words found separately,"teh p.4350, tarik p.4303",ms-d-lepak-mamak-04,Dunia · Lepak di kedai mamak (primes Ch5),daily-life · band 1,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0935,roti canai,roti canai (flaky flatbread with curry),ロティ・チャナイ（カレーで食べる薄焼きパン）,noun,chunk,roti,Phrase under headword,p.3595,ms-d-lepak-mamak-05,Dunia · Lepak di kedai mamak (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0936,kopi O,black coffee (with sugar),ブラックコーヒー（砂糖入り）,noun,chunk,o,Phrase under headword,p.2924,ms-d-lepak-mamak-06,Dunia · Lepak di kedai mamak (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0937,tapau,to take away (food),持ち帰りにする,verb,root,,Headword,p.4295,ms-d-lepak-mamak-07,Dunia · Lepak di kedai mamak (primes Ch5),daily-life · band 1,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0938,makan sini,to eat here (dine in),店内で食べる,phrase,chunk,,Words found separately,"makan p.2624, sini p.4014",ms-d-lepak-mamak-08,Dunia · Lepak di kedai mamak (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0939,boleh tahan,"not bad, pretty good",なかなかいい・けっこういける,phrase,chunk,boleh,Phrase under headword,p.524,ms-d-lepak-mamak-09,Dunia · Lepak di kedai mamak (primes Ch5),daily-life · band 2,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0940,tak apa,"never mind, it's OK",大丈夫・気にしないで,phrase,chunk,tak,Phrase under headword,p.4209,ms-d-lepak-mamak-10,Dunia · Lepak di kedai mamak (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0941,kira,"to count; Kira! = the bill, please",数える・（店で）お会計,verb,root,,Headword,p.2117,ms-d-lepak-mamak-11,Dunia · Lepak di kedai mamak (primes Ch5),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0942,alamak,"oh no!, oops",しまった！・あらら,interj,root,,Headword,p.80,ms-d-pejabat-sembang-01,Dunia · Sembang di pantri (primes Ch2),office · band 1,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0943,wah,wow,わあ！,interj,root,,Headword,p.4789,ms-d-pejabat-sembang-02,Dunia · Sembang di pantri (primes Ch2),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0944,betul ke?,really?,本当？,phrase,chunk,,Words found separately,"betul p.466, ke p.1843",ms-d-pejabat-sembang-03,Dunia · Sembang di pantri (primes Ch2),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0945,mana ada,"not at all, no way (brushing something off)",そんなことないよ,phrase,chunk,ada,Phrase under headword,p.15,ms-d-pejabat-sembang-04,Dunia · Sembang di pantri (primes Ch2),social · band 2,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0946,jangan risau,don't worry,心配しないで,phrase,chunk,,Words found separately,"jangan p.1598, risau p.3571",ms-d-pejabat-sembang-05,Dunia · Sembang di pantri (primes Ch2),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0947,lama tak jumpa,long time no see,久しぶり,phrase,chunk,,Words found separately,"lama p.2341, tak p.4209, jumpa p.1695",ms-d-pejabat-sembang-06,Dunia · Sembang di pantri (primes Ch2),social · band 1,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0948,sikit je,just a little,ちょっとだけ,phrase,chunk,,Not found,missing: je,ms-d-pejabat-sembang-07,Dunia · Sembang di pantri (primes Ch2),,,,Vocab Bank v4 (Claude),Draft,,"Kept under the spelling and loanword rule: contemporary common usage (Sam, 6 Nov 2026).",2026-11-06,Claude
+L-0949,kot / kut,"maybe, I think (at the end of a sentence)",〜かな・たぶん,particle,root,,Headword,p.2208 / p.2300,ms-d-pejabat-sembang-08,Dunia · Sembang di pantri (primes Ch2),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0950,best,"great, awesome",最高・すごくいい,adj,root,,Not found,,ms-d-pejabat-sembang-09,Dunia · Sembang di pantri (primes Ch2),,,,Vocab Bank v4 (Claude),Draft,,"Kept under the spelling and loanword rule: contemporary common usage (Sam, 6 Nov 2026).",2026-11-06,Claude
+L-0951,syok,"really fun, enjoyable",楽しい・気持ちいい,adj,root,,Headword,p.4172,ms-d-pejabat-sembang-10,Dunia · Sembang di pantri (primes Ch2),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0952,geng,"group of friends, crew",仲間・グループ,noun,root,,Headword,p.1209,ms-d-pejabat-sembang-11,Dunia · Sembang di pantri (primes Ch2),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0953,tumpang lalu,"excuse me, may I get past",すみません、通ります,phrase,chunk,,Words found separately,"tumpang p.4628, lalu p.2338",ms-d-pejabat-sembang-12,Dunia · Sembang di pantri (primes Ch2),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0954,kepala batu,stubborn (person),頑固（な人）,adj,chunk,kepala,Phrase under headword,p.1982,ms-d-simpulan-harian-01,Dunia · Simpulan bahasa harian (primes Ch9),social · band 3,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0955,besar kepala,"big-headed, arrogant",思い上がった・天狗になった,adj,chunk,besar,Phrase under headword,p.458,ms-d-simpulan-harian-02,Dunia · Simpulan bahasa harian (primes Ch9),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0956,ringan tulang,"hard-working, always ready to help",働き者・まめな,adj,chunk,ringan,Phrase under headword,p.3563,ms-d-simpulan-harian-03,Dunia · Simpulan bahasa harian (primes Ch9),office · band 3,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0957,panjang tangan,"light-fingered, likely to steal",手癖が悪い,adj,chunk,panjang,Phrase under headword,p.3032,ms-d-simpulan-harian-04,Dunia · Simpulan bahasa harian (primes Ch9),daily-life · band 3,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0958,buah hati,"darling, sweetheart (often your child)",最愛の人・いとしい子,noun,chunk,buah,Phrase under headword,p.546,ms-d-simpulan-harian-05,Dunia · Simpulan bahasa harian (primes Ch9),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0959,buah tangan,a gift you bring when visiting,手土産,noun,chunk,buah,Phrase under headword,p.546,ms-d-simpulan-harian-06,Dunia · Simpulan bahasa harian (primes Ch9),social · band 3,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0960,mulut murai,chatterbox,おしゃべりな人,noun,chunk,mulut,Phrase under headword,p.2820,ms-d-simpulan-harian-07,Dunia · Simpulan bahasa harian (primes Ch9),social · band 3,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0961,kaki bangku,hopeless at football (or sport),サッカーが下手な人・運動音痴,noun,chunk,kaki,Phrase under headword,p.1740,ms-d-simpulan-harian-08,Dunia · Simpulan bahasa harian (primes Ch9),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0962,mata duitan,"money-minded, greedy for money",金に目がない,adj,chunk,mata,Phrase under headword,p.2689,ms-d-simpulan-harian-09,Dunia · Simpulan bahasa harian (primes Ch9),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0963,sakit hati,hurt and annoyed,腹が立つ・心が傷つく,adj,chunk,sakit,Phrase under headword,p.3659,ms-d-simpulan-harian-10,Dunia · Simpulan bahasa harian (primes Ch9),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0964,jangan ambil hati,don't take it to heart,気を悪くしないで,phrase,chunk,,Words found separately,"jangan p.1598, ambil p.116, hati p.1373",ms-d-simpulan-harian-11,Dunia · Simpulan bahasa harian (primes Ch9),office · band 3,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0965,air muka,look on your face; face (pride),顔色・表情；面目,noun,chunk,air,Phrase under headword,p.45,ms-d-simpulan-harian-12,Dunia · Simpulan bahasa harian (primes Ch9),office · band 4,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0966,tangan kosong,empty-handed,手ぶら,adj,chunk,tangan,Phrase under headword,p.4269,ms-d-simpulan-harian-13,Dunia · Simpulan bahasa harian (primes Ch9),social · band 3,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0967,cakar ayam,messy handwriting,ひどく汚い字,noun,chunk,cakar,Phrase under headword,p.629,ms-d-simpulan-harian-14,Dunia · Simpulan bahasa harian (primes Ch9),office · band 3,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0968,badminton,badminton (also: bulu tangkis),バドミントン,noun,root,,Headword,p.266,ms-d-sukan-badminton-01,Dunia · Main badminton (primes Ch6),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0969,raket,racket,ラケット,noun,root,,Headword,p.3405,ms-d-sukan-badminton-02,Dunia · Main badminton (primes Ch6),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0970,gelanggang,court (for sport),コート（競技場）,noun,root,,Headword,p.1175,ms-d-sukan-badminton-03,Dunia · Main badminton (primes Ch6),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0971,skor,score,点数・スコア,noun,root,,Headword,p.4037,ms-d-sukan-badminton-04,Dunia · Main badminton (primes Ch6),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0972,lompat,to jump,跳ぶ,verb,root,,Headword,p.2552,ms-d-sukan-badminton-05,Dunia · Main badminton (primes Ch6),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0973,kalah,to lose (a game),負ける,verb,root,,Headword,p.1744,ms-d-sukan-badminton-06,Dunia · Main badminton (primes Ch6),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0974,juara,champion,優勝者・チャンピオン,noun,root,,Headword,p.1687,ms-d-sukan-badminton-07,Dunia · Main badminton (primes Ch6),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0975,peluh,sweat,汗,noun,root,,Headword,p.3124,ms-d-sukan-badminton-08,Dunia · Main badminton (primes Ch6),health · band 2,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0976,tangan,hand,手,noun,root,,Headword,p.4269,ms-d-sukan-badminton-09,Dunia · Main badminton (primes Ch6),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0977,lengan,arm,腕,noun,root,,Headword,p.2466,ms-d-sukan-badminton-10,Dunia · Main badminton (primes Ch6),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0978,bahu,shoulder,肩,noun,root,,Headword,p.283,ms-d-sukan-badminton-11,Dunia · Main badminton (primes Ch6),health · band 1,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0979,siku,elbow,ひじ,noun,root,,Headword,p.3987,ms-d-sukan-badminton-12,Dunia · Main badminton (primes Ch6),,,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0980,lutut,knee,ひざ,noun,root,,Headword,p.2598,ms-d-sukan-badminton-13,Dunia · Main badminton (primes Ch6),health · band 1,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude
+L-0981,pinggang,"waist, lower back",腰,noun,root,,Headword,p.3241,ms-d-sukan-badminton-14,Dunia · Main badminton (primes Ch6),health · band 2,Yes,,Vocab Bank v4 (Claude),Draft,,,2026-11-06,Claude

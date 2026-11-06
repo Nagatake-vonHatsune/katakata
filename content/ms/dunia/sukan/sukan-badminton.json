@@ -1,0 +1,298 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "sukan-badminton",
+  "chapter": 6,
+  "status": "live",
+  "ja_review": "pending",
+  "world": {
+    "id": "sukan",
+    "ms": "Sukan",
+    "en": "Sport",
+    "ja": "スポーツ"
+  },
+  "title": {
+    "ms": "Main badminton",
+    "en": "Playing badminton",
+    "ja": "バドミントンをする"
+  },
+  "setting": {
+    "en": "Saturday badminton with the office team. Tanaka is keen, but his arms and knees disagree.",
+    "ja": "土曜日、会社のチームでバドミントン。田中さんはやる気満々ですが、腕とひざが言うことを聞きません。"
+  },
+  "cards": [
+    {
+      "id": "ms-d-sukan-badminton-01",
+      "lang": "ms",
+      "term": "badminton",
+      "gloss_en": "badminton (also: bulu tangkis)",
+      "gloss_ja": "バドミントン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-sukan-badminton"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English. The Malay word bulu tangkis is also used."
+        }
+      ],
+      "scene": "dunia-sukan-badminton",
+      "chapter": 6,
+      "image": "🏸"
+    },
+    {
+      "id": "ms-d-sukan-badminton-02",
+      "lang": "ms",
+      "term": "raket",
+      "gloss_en": "racket",
+      "gloss_ja": "ラケット",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-sukan-badminton"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'racket', like ラケット."
+        }
+      ],
+      "scene": "dunia-sukan-badminton",
+      "chapter": 6
+    },
+    {
+      "id": "ms-d-sukan-badminton-03",
+      "lang": "ms",
+      "term": "gelanggang",
+      "gloss_en": "court (for sport)",
+      "gloss_ja": "コート（競技場）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-sukan-badminton"
+        }
+      ],
+      "scene": "dunia-sukan-badminton",
+      "chapter": 6,
+      "image": "🏟️"
+    },
+    {
+      "id": "ms-d-sukan-badminton-04",
+      "lang": "ms",
+      "term": "skor",
+      "gloss_en": "score",
+      "gloss_ja": "点数・スコア",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-sukan-badminton"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'score'."
+        }
+      ],
+      "scene": "dunia-sukan-badminton",
+      "chapter": 6,
+      "image": "🔢"
+    },
+    {
+      "id": "ms-d-sukan-badminton-05",
+      "lang": "ms",
+      "term": "lompat",
+      "gloss_en": "to jump",
+      "gloss_ja": "跳ぶ",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-sukan-badminton"
+        }
+      ],
+      "scene": "dunia-sukan-badminton",
+      "chapter": 6
+    },
+    {
+      "id": "ms-d-sukan-badminton-06",
+      "lang": "ms",
+      "term": "kalah",
+      "gloss_en": "to lose (a game)",
+      "gloss_ja": "負ける",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-sukan-badminton"
+        }
+      ],
+      "scene": "dunia-sukan-badminton",
+      "chapter": 6
+    },
+    {
+      "id": "ms-d-sukan-badminton-07",
+      "lang": "ms",
+      "term": "juara",
+      "gloss_en": "champion",
+      "gloss_ja": "優勝者・チャンピオン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-sukan-badminton"
+        }
+      ],
+      "scene": "dunia-sukan-badminton",
+      "chapter": 6,
+      "image": "🏆"
+    },
+    {
+      "id": "ms-d-sukan-badminton-08",
+      "lang": "ms",
+      "term": "peluh",
+      "gloss_en": "sweat",
+      "gloss_ja": "汗",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-sukan-badminton"
+        }
+      ],
+      "scene": "dunia-sukan-badminton",
+      "chapter": 6,
+      "image": "💦"
+    },
+    {
+      "id": "ms-d-sukan-badminton-09",
+      "lang": "ms",
+      "term": "tangan",
+      "gloss_en": "hand",
+      "gloss_ja": "手",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-sukan-badminton"
+        }
+      ],
+      "scene": "dunia-sukan-badminton",
+      "chapter": 6,
+      "image": "✋"
+    },
+    {
+      "id": "ms-d-sukan-badminton-10",
+      "lang": "ms",
+      "term": "lengan",
+      "gloss_en": "arm",
+      "gloss_ja": "腕",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-sukan-badminton"
+        }
+      ],
+      "scene": "dunia-sukan-badminton",
+      "chapter": 6,
+      "image": "💪"
+    },
+    {
+      "id": "ms-d-sukan-badminton-11",
+      "lang": "ms",
+      "term": "bahu",
+      "gloss_en": "shoulder",
+      "gloss_ja": "肩",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-sukan-badminton"
+        }
+      ],
+      "scene": "dunia-sukan-badminton",
+      "chapter": 6
+    },
+    {
+      "id": "ms-d-sukan-badminton-12",
+      "lang": "ms",
+      "term": "siku",
+      "gloss_en": "elbow",
+      "gloss_ja": "ひじ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-sukan-badminton"
+        }
+      ],
+      "scene": "dunia-sukan-badminton",
+      "chapter": 6
+    },
+    {
+      "id": "ms-d-sukan-badminton-13",
+      "lang": "ms",
+      "term": "lutut",
+      "gloss_en": "knee",
+      "gloss_ja": "ひざ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-sukan-badminton"
+        }
+      ],
+      "scene": "dunia-sukan-badminton",
+      "chapter": 6,
+      "image": "🦵"
+    },
+    {
+      "id": "ms-d-sukan-badminton-14",
+      "lang": "ms",
+      "term": "pinggang",
+      "gloss_en": "waist, lower back",
+      "gloss_ja": "腰",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-sukan-badminton"
+        }
+      ],
+      "scene": "dunia-sukan-badminton",
+      "chapter": 6
+    }
+  ]
+}
