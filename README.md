@@ -38,6 +38,9 @@ a simple 単語ネット word list with "my hook" notes.
 
 ## Content
 
+**Malay vocabulary source of truth:** the Google Sheet "Malay Vocabulary Ledger" (see `content/ledger/README.md`).
+Changes start there, are logged in its Journal, and are pushed to the content files below.
+
 One JSON file per chapter or scene, validated against `content/schema/pack.schema.json`.
 Card fields follow the shared Hanashishou format: `id, lang, term, gloss_en, gloss_ja, pos,
 affix_tag, note, links[], scene, chapter, image`.
