@@ -4,7 +4,7 @@
   "kind": "kelas",
   "id": "c07",
   "chapter": 7,
-  "status": "draft",
+  "status": "live",
   "ja_review": "pending",
   "title": {
     "ms": "Arah dan Lokasi",
@@ -901,40 +901,40 @@
       "frame": "(title) mahu pergi ke mana? / Saya mahu pergi ke ___.",
       "example": "Saya mahu pergi ke stesen LRT.",
       "meaning_en": "I want to go to the LRT station.",
-      "meaning_ja": null
+      "meaning_ja": "LRTの駅に行きたいです。"
     },
     {
       "id": "ms-c07-f02",
       "frame": "___ di (position) ___.",
       "example": "Stesen itu di depan bank.",
       "meaning_en": "The station is in front of the bank.",
-      "meaning_ja": null
+      "meaning_ja": "駅は銀行の前にあります。"
     },
     {
       "id": "ms-c07-f03",
       "frame": "Jalan lurus, kemudian belok kiri/kanan di ___.",
       "example": "Jalan lurus, kemudian belok kanan di lampu isyarat.",
       "meaning_en": "Go straight, then turn right at the lights.",
-      "meaning_ja": null
+      "meaning_ja": "まっすぐ行って、信号を右に曲がってください。"
     },
     {
       "id": "ms-c07-f04",
       "frame": "Berapa jauh ___ dari sini? / Lebih kurang ___.",
       "example": "Berapa jauh stesen dari sini? Lebih kurang lima ratus meter.",
       "meaning_en": "How far is the station? About 500 m.",
-      "meaning_ja": null
+      "meaning_ja": "駅はここからどのくらいですか。約500メートルです。"
     },
     {
       "id": "ms-c07-f05",
       "frame": "Berapa lama ke ___? / Lebih kurang ___ minit naik ___.",
       "example": "Berapa lama ke KLCC? Lebih kurang dua puluh minit naik LRT.",
       "meaning_en": "How long to KLCC? About 20 minutes by LRT.",
-      "meaning_ja": null
+      "meaning_ja": "KLCCまでどのくらいかかりますか。LRTで約20分です。"
     }
   ],
   "scenario": {
     "title_en": "Finding the LRT, then a Grab ride",
-    "title_ja": null,
+    "title_ja": "LRTを探して、Grabに乗る",
     "lines": [
       {
         "id": "ms-c07-s01",

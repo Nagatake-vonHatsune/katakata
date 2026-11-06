@@ -1,0 +1,291 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "cuti-pantai",
+  "chapter": 4,
+  "status": "live",
+  "ja_review": "pending",
+  "world": {
+    "id": "cuti",
+    "ms": "Cuti",
+    "en": "Holidays",
+    "ja": "休暇"
+  },
+  "title": {
+    "ms": "Cuti ke pantai",
+    "en": "A beach holiday",
+    "ja": "海辺で休暇"
+  },
+  "setting": {
+    "en": "Tanaka plans a long weekend at the beach in Langkawi.",
+    "ja": "田中さんは三連休にランカウイの海辺へ行く計画を立てます。"
+  },
+  "cards": [
+    {
+      "id": "ms-d-cuti-pantai-01",
+      "lang": "ms",
+      "term": "pantai",
+      "gloss_en": "beach",
+      "gloss_ja": "海辺・ビーチ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuti-pantai"
+        }
+      ],
+      "scene": "dunia-cuti-pantai",
+      "chapter": 4,
+      "image": "🏖️"
+    },
+    {
+      "id": "ms-d-cuti-pantai-02",
+      "lang": "ms",
+      "term": "laut",
+      "gloss_en": "sea",
+      "gloss_ja": "海",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuti-pantai"
+        }
+      ],
+      "scene": "dunia-cuti-pantai",
+      "chapter": 4,
+      "image": "🌊"
+    },
+    {
+      "id": "ms-d-cuti-pantai-03",
+      "lang": "ms",
+      "term": "pulau",
+      "gloss_en": "island",
+      "gloss_ja": "島",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuti-pantai"
+        }
+      ],
+      "scene": "dunia-cuti-pantai",
+      "chapter": 4,
+      "image": "🏝️"
+    },
+    {
+      "id": "ms-d-cuti-pantai-04",
+      "lang": "ms",
+      "term": "pasir",
+      "gloss_en": "sand",
+      "gloss_ja": "砂",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuti-pantai"
+        }
+      ],
+      "scene": "dunia-cuti-pantai",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-cuti-pantai-05",
+      "lang": "ms",
+      "term": "hotel",
+      "gloss_en": "hotel",
+      "gloss_ja": "ホテル",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuti-pantai"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'hotel', like ホテル."
+        }
+      ],
+      "scene": "dunia-cuti-pantai",
+      "chapter": 4,
+      "image": "🏨"
+    },
+    {
+      "id": "ms-d-cuti-pantai-06",
+      "lang": "ms",
+      "term": "tiket",
+      "gloss_en": "ticket",
+      "gloss_ja": "チケット・切符",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuti-pantai"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'ticket', like チケット."
+        }
+      ],
+      "scene": "dunia-cuti-pantai",
+      "chapter": 4,
+      "image": "🎫"
+    },
+    {
+      "id": "ms-d-cuti-pantai-07",
+      "lang": "ms",
+      "term": "kapal terbang",
+      "gloss_en": "aeroplane",
+      "gloss_ja": "飛行機",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuti-pantai"
+        },
+        {
+          "type": "kanji",
+          "text": "kapal (ship) + terbang (fly): 'flying ship', like 飛行機."
+        }
+      ],
+      "scene": "dunia-cuti-pantai",
+      "chapter": 4,
+      "image": "✈️"
+    },
+    {
+      "id": "ms-d-cuti-pantai-08",
+      "lang": "ms",
+      "term": "lapangan terbang",
+      "gloss_en": "airport",
+      "gloss_ja": "空港",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuti-pantai"
+        },
+        {
+          "type": "kanji",
+          "text": "lapangan (field) + terbang (fly): 'flying field', like 飛行場."
+        }
+      ],
+      "scene": "dunia-cuti-pantai",
+      "chapter": 4,
+      "image": "🛫"
+    },
+    {
+      "id": "ms-d-cuti-pantai-09",
+      "lang": "ms",
+      "term": "tempah",
+      "gloss_en": "to book, reserve",
+      "gloss_ja": "予約する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuti-pantai"
+        }
+      ],
+      "scene": "dunia-cuti-pantai",
+      "chapter": 4
+    },
+    {
+      "id": "ms-d-cuti-pantai-10",
+      "lang": "ms",
+      "term": "peta",
+      "gloss_en": "map",
+      "gloss_ja": "地図",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuti-pantai"
+        }
+      ],
+      "scene": "dunia-cuti-pantai",
+      "chapter": 4,
+      "image": "🗺️"
+    },
+    {
+      "id": "ms-d-cuti-pantai-11",
+      "lang": "ms",
+      "term": "ambil gambar",
+      "gloss_en": "to take a photo",
+      "gloss_ja": "写真を撮る",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuti-pantai"
+        },
+        {
+          "type": "kanji",
+          "text": "ambil (take) + gambar (picture): 'take a picture', built like 写真を撮る."
+        }
+      ],
+      "scene": "dunia-cuti-pantai",
+      "chapter": 4,
+      "image": "📷"
+    },
+    {
+      "id": "ms-d-cuti-pantai-12",
+      "lang": "ms",
+      "term": "cenderamata",
+      "gloss_en": "souvenir",
+      "gloss_ja": "お土産",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuti-pantai"
+        }
+      ],
+      "scene": "dunia-cuti-pantai",
+      "chapter": 4,
+      "image": "🎁"
+    },
+    {
+      "id": "ms-d-cuti-pantai-13",
+      "lang": "ms",
+      "term": "seronok",
+      "gloss_en": "fun, enjoyable",
+      "gloss_ja": "楽しい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-cuti-pantai"
+        }
+      ],
+      "scene": "dunia-cuti-pantai",
+      "chapter": 4,
+      "image": "😄"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 // Onboarding (spec phase 1): welcome, name, voice check, iOS Home Screen step, how it works.
-import { t } from '../core/i18n';
+import { getLang, LANGS, setLang, t } from '../core/i18n';
 import { inIOSBrowserTab, isIOS, requestPersistence } from '../core/platform';
 import { saveNow, state, update } from '../core/state';
 import { speak, voiceKind } from '../core/tts';
@@ -39,10 +39,31 @@ export function voiceCheck(onDone: () => void): HTMLElement {
   );
 }
 
-export function renderOnboarding(root: HTMLElement, onDone: () => void): void {
+export function renderOnboarding(root: HTMLElement, onDone: () => void, startAt = 0): void {
   const name = h('input', { class: 'input', type: 'text', placeholder: t('onb.name_ph'), maxlength: 40, autocomplete: 'name', 'aria-label': t('onb.name_title') }) as HTMLInputElement;
   name.value = state.profile.name;
   const panels: Panel[] = [
+    // Language first, written in all three languages so anyone can pick.
+    () =>
+      h(
+        'div',
+        { class: 'stack center' },
+        h('img', { class: 'mascot', src: './kancil.svg', alt: 'Sang Kancil' }),
+        h('h1', { class: 'brand' }, 'Kata-Kata'),
+        h('p', { class: 'muted' }, '言語 · Language · Bahasa'),
+        h(
+          'div',
+          { class: 'stack lang-pick' },
+          LANGS.map((l) =>
+            button(l.label, () => {
+              update((s) => (s.settings.lang = l.id));
+              void saveNow();
+              setLang(l.id);
+              renderOnboarding(root, onDone, 1);
+            }, l.id === getLang() ? 'btn btn-primary btn-wide' : 'btn btn-wide'),
+          ),
+        ),
+      ),
     (next) =>
       h(
         'div',
@@ -53,6 +74,7 @@ export function renderOnboarding(root: HTMLElement, onDone: () => void): void {
         h('p', { class: 'tagline', lang: 'ms' }, 'Satu kata, satu langkah.'),
         h('p', { class: 'tagline-sub' }, t('app.tagline')),
         h('p', null, t('onb.welcome_body')),
+        getLang() === 'ja' ? null : h('p', { class: 'note' }, t('lang.gloss_note')),
         h('p', { class: 'muted' }, t('onb.kancil')),
         button(t('common.next'), next, 'btn btn-primary btn-wide'),
       ),
@@ -84,7 +106,7 @@ export function renderOnboarding(root: HTMLElement, onDone: () => void): void {
     ),
   );
 
-  let i = 0;
+  let i = startAt;
   const show = () => {
     if (i >= panels.length) {
       void requestPersistence().then((ok) => update((s) => (s.profile.persisted = ok)));

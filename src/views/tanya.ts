@@ -1,6 +1,6 @@
 // Tanya Cikgu list and 先生に送る (send to teacher).
 import { content } from '../core/content';
-import { getLang, t } from '../core/i18n';
+import { t } from '../core/i18n';
 import { chapterProgress, isReady, minutesThisWeek, weakestWords } from '../core/progress';
 import { buildReport, reportFilename, type Section } from '../core/report';
 import { safeName, shareOrDownload } from '../core/share';
@@ -88,7 +88,6 @@ export async function sendToTeacher(): Promise<void> {
     cb.addEventListener('change', () => (include[key] = cb.checked));
     return h('div', { class: 'send-row' }, h('label', { class: 'check' }, cb, h('span', null, label)), detail ?? null);
   };
-  const lang = getLang();
   const ok = await sheet((close) => [
     h('h3', null, t('send.title')),
     h('p', { class: 'sheet-text' }, t('send.body')),
@@ -105,7 +104,7 @@ export async function sendToTeacher(): Promise<void> {
   if (!Object.values(include).some(Boolean)) return toast(t('send.nothing'));
   const student = name.value.trim() || state.profile.name;
   if (student !== state.profile.name) update((s) => (s.profile.name = student));
-  const report = buildReport(student || (lang === 'ja' ? '学生' : 'student'), { questions: openQs, reports: state.reports, progress: progressRows(), weakest, minutes }, include);
+  const report = buildReport(student || t('misc.student'), { questions: openQs, reports: state.reports, progress: progressRows(), weakest, minutes }, include);
   const res = await shareOrDownload(reportFilename(safeName(student)), JSON.stringify(report, null, 2));
   if (res === 'downloaded') toast(t('send.downloaded'));
 }

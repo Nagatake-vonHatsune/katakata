@@ -4,7 +4,7 @@
   "kind": "dunia",
   "id": "jalan-lintas",
   "chapter": 7,
-  "status": "draft",
+  "status": "live",
   "ja_review": "pending",
   "world": {
     "id": "jalan",
@@ -42,7 +42,8 @@
         }
       ],
       "scene": "dunia-jalan-lintas",
-      "chapter": 7
+      "chapter": 7,
+      "image": "🏍️"
     },
     {
       "id": "ms-d-jalan-lintas-02",
@@ -64,7 +65,8 @@
         }
       ],
       "scene": "dunia-jalan-lintas",
-      "chapter": 7
+      "chapter": 7,
+      "image": "🚚"
     },
     {
       "id": "ms-d-jalan-lintas-03",
@@ -86,7 +88,8 @@
         }
       ],
       "scene": "dunia-jalan-lintas",
-      "chapter": 7
+      "chapter": 7,
+      "image": "🚲"
     },
     {
       "id": "ms-d-jalan-lintas-04",
@@ -104,7 +107,8 @@
         }
       ],
       "scene": "dunia-jalan-lintas",
-      "chapter": 7
+      "chapter": 7,
+      "image": "🚸"
     },
     {
       "id": "ms-d-jalan-lintas-05",
@@ -126,7 +130,8 @@
         }
       ],
       "scene": "dunia-jalan-lintas",
-      "chapter": 7
+      "chapter": 7,
+      "image": "🅿️"
     },
     {
       "id": "ms-d-jalan-lintas-06",
@@ -148,7 +153,8 @@
         }
       ],
       "scene": "dunia-jalan-lintas",
-      "chapter": 7
+      "chapter": 7,
+      "image": "🚶"
     },
     {
       "id": "ms-d-jalan-lintas-07",
@@ -166,7 +172,8 @@
         }
       ],
       "scene": "dunia-jalan-lintas",
-      "chapter": 7
+      "chapter": 7,
+      "image": "🌉"
     },
     {
       "id": "ms-d-jalan-lintas-08",
@@ -185,7 +192,8 @@
       ],
       "scene": "dunia-jalan-lintas",
       "chapter": 7,
-      "seen_in_class": 4
+      "seen_in_class": 4,
+      "image": "⏳"
     },
     {
       "id": "ms-d-jalan-lintas-09",
@@ -222,7 +230,8 @@
         }
       ],
       "scene": "dunia-jalan-lintas",
-      "chapter": 7
+      "chapter": 7,
+      "image": "⚠️"
     },
     {
       "id": "ms-d-jalan-lintas-11",

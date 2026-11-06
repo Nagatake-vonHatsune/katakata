@@ -162,7 +162,7 @@ function showSummary(
         { class: 'stats' },
         h('div', { class: 'stat' }, h('b', null, String(r.learned.size)), h('span', null, t('sum.learned'))),
         h('div', { class: 'stat' }, h('b', null, String(r.reviewed.size)), h('span', null, t('sum.reviewed'))),
-        h('div', { class: 'stat' }, h('b', null, `${mins}`), h('span', null, `${t('sum.minutes')} (${lang === 'ja' ? '分' : 'min'})`)),
+        h('div', { class: 'stat' }, h('b', null, `${mins}`), h('span', null, `${t('sum.minutes')} (${t('misc.min')})`)),
       ),
       hardest.length
         ? h(

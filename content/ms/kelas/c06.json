@@ -4,7 +4,7 @@
   "kind": "kelas",
   "id": "c06",
   "chapter": 6,
-  "status": "draft",
+  "status": "live",
   "ja_review": "pending",
   "title": {
     "ms": "Perbandingan",
@@ -631,47 +631,47 @@
       "frame": "A lebih ___ daripada B.",
       "example": "Kondo A lebih besar daripada kondo B.",
       "meaning_en": "Condo A is bigger than condo B.",
-      "meaning_ja": null
+      "meaning_ja": "コンドAはコンドBより大きいです。"
     },
     {
       "id": "ms-c06-f02",
       "frame": "A kurang ___ daripada B.",
       "example": "Kondo B kurang mahal daripada kondo A.",
       "meaning_en": "Condo B is less expensive than condo A.",
-      "meaning_ja": null
+      "meaning_ja": "コンドBはコンドAほど高くないです。"
     },
     {
       "id": "ms-c06-f03",
       "frame": "A sama ___ dengan B. / A se-___ B.",
       "example": "Kondo D semahal kondo A.",
       "meaning_en": "Condo D is as expensive as condo A.",
-      "meaning_ja": null
+      "meaning_ja": "コンドDはコンドAと同じくらい高いです。"
     },
     {
       "id": "ms-c06-f04",
       "frame": "___ paling ___. / ___ ter-___.",
       "example": "Kondo C paling murah. Kondo C termurah.",
       "meaning_en": "Condo C is the cheapest.",
-      "meaning_ja": null
+      "meaning_ja": "コンドCが一番安いです。"
     },
     {
       "id": "ms-c06-f05",
       "frame": "Yang mana lebih ___?",
       "example": "Yang mana lebih selesa?",
       "meaning_en": "Which one is more comfortable?",
-      "meaning_ja": null
+      "meaning_ja": "どちらのほうが快適ですか。"
     },
     {
       "id": "ms-c06-f06",
       "frame": "___ ini terlalu ___.",
       "example": "Kondo ini terlalu jauh.",
       "meaning_en": "This condo is too far.",
-      "meaning_ja": null
+      "meaning_ja": "このコンドは遠すぎます。"
     }
   ],
   "scenario": {
     "title_en": "Choosing a condo",
-    "title_ja": null,
+    "title_ja": "コンドミニアム選び",
     "lines": [
       {
         "id": "ms-c06-s01",

@@ -226,5 +226,15 @@
  "tip.ng": "ng and ny are nasal sounds",
  "pos.label": "Part of speech",
  "update.ready": "A new version is ready.",
- "update.reload": "Update"
+ "update.reload": "Update",
+ "onb.lang_title": "Choose your language",
+ "onb.lang_body": "You can change this later in Records → Settings.",
+ "lang.gloss_note": "Meanings are shown in English.",
+ "misc.patterns": "patterns",
+ "misc.min": "min",
+ "misc.student": "student",
+ "misc.words_known": "words known",
+ "misc.day_streak": "day streak",
+ "misc.min_week": "min this week",
+ "misc.note": "Note"
 }

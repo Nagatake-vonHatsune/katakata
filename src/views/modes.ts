@@ -132,7 +132,7 @@ export function renderMain(root: HTMLElement, nav: ModeNav, sub?: string): void 
               'button',
               { class: 'list-item', type: 'button', onclick: () => nav.run(buildSusun(ch.chapter)) },
               h('span', { class: 'li-title' }, `${t('common.chapter', { n: ch.chapter })}  `, h('span', { lang: 'ms' }, ch.title.ms)),
-              h('span', { class: 'muted small' }, `${ch.frames.length} ${lang === 'ja' ? '文型' : 'patterns'}`),
+              h('span', { class: 'muted small' }, `${ch.frames.length} ${t('misc.patterns')}`),
             ),
           ),
         ),

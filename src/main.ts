@@ -1,8 +1,8 @@
 import './styles.css';
 import { content } from './core/content';
-import { setLang } from './core/i18n';
+import { isLang, setLang } from './core/i18n';
 import { buildToday, buildUlang, type Session } from './core/session';
-import { loadState, state } from './core/state';
+import { loadState, saveNow, state, update } from './core/state';
 import { setRate } from './core/tts';
 import { renderHome } from './views/home';
 import { renderJaring, renderMain, renderSediaChapter, renderSediaList } from './views/modes';
@@ -61,6 +61,12 @@ window.addEventListener('hashchange', () => {
 
 async function start(): Promise<void> {
   await loadState();
+  // Shareable language links: /?lang=en or /?lang=ms (or ja).
+  const fromUrl = new URLSearchParams(location.search).get('lang');
+  if (isLang(fromUrl) && fromUrl !== state.settings.lang) {
+    update((s) => (s.settings.lang = fromUrl));
+    await saveNow();
+  }
   setLang(state.settings.lang);
   setRate(state.settings.speechRate);
   applyTheme();

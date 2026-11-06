@@ -1,4 +1,5 @@
 import { packs as livePacks } from 'virtual:katakata-content';
+import type { Lang } from './i18n';
 import type { Card, DuniaPack, Frame, KelasPack, Pack } from './types';
 
 export interface Content {
@@ -10,7 +11,7 @@ export interface Content {
   alias: Map<string, string>;
   /** The order new words are introduced in. */
   path: string[];
-  sceneName(sceneId: string, lang: 'ja' | 'en'): string;
+  sceneName(sceneId: string, lang: Lang): string;
 }
 
 export function norm(term: string): string {
@@ -19,7 +20,7 @@ export function norm(term: string): string {
 
 export function buildContent(packs: Pack[]): Content {
   const chapters = packs.filter((p): p is KelasPack => p.kind === 'kelas').sort((a, b) => a.chapter - b.chapter);
-  const scenes = packs.filter((p): p is DuniaPack => p.kind === 'dunia');
+  const scenes = packs.filter((p): p is DuniaPack => p.kind === 'dunia').sort((a, b) => a.chapter - b.chapter || a.id.localeCompare(b.id));
   const cards = new Map<string, Card>();
   const frames = new Map<string, Frame & { chapter: number }>();
   for (const p of packs) for (const c of p.cards) cards.set(c.id, c);
@@ -48,8 +49,11 @@ export function buildContent(packs: Pack[]): Content {
   const usedScenes = new Set<string>();
   for (const ch of chapters) {
     for (const id of ch.sedia_kelas.cards) push(id);
-    const scene = scenes.find((s) => s.id === ch.sedia_kelas.scene);
-    if (scene) {
+    // The Sedia Kelas scene first, then any other scene that primes this chapter.
+    const primed = scenes
+      .filter((s) => s.chapter === ch.chapter)
+      .sort((a, b) => Number(b.id === ch.sedia_kelas.scene) - Number(a.id === ch.sedia_kelas.scene));
+    for (const scene of primed) {
       usedScenes.add(scene.id);
       for (const c of scene.cards) push(c.id);
     }
@@ -83,6 +87,7 @@ export function srsKey(cardId: string): string {
   return content.alias.get(cardId) ?? cardId;
 }
 
-export function gloss(card: Card, lang: 'ja' | 'en'): string {
+/** Japanese learners see Japanese; English and Malay interfaces show the English meaning. */
+export function gloss(card: Card, lang: Lang): string {
   return lang === 'ja' ? card.gloss_ja : card.gloss_en;
 }

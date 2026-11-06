@@ -226,5 +226,15 @@
  "tip.ng": "ng・ny は鼻に抜ける音",
  "pos.label": "品詞",
  "update.ready": "新しいバージョンがあります。",
- "update.reload": "更新する"
+ "update.reload": "更新する",
+ "onb.lang_title": "言語を選んでください",
+ "onb.lang_body": "あとで「記録」→「設定」で変えられます。",
+ "lang.gloss_note": "",
+ "misc.patterns": "文型",
+ "misc.min": "分",
+ "misc.student": "学生",
+ "misc.words_known": "覚えた単語",
+ "misc.day_streak": "連続日数",
+ "misc.min_week": "今週（分）",
+ "misc.note": "メモ"
 }

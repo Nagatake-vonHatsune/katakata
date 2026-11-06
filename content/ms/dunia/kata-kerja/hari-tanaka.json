@@ -4,7 +4,7 @@
   "kind": "dunia",
   "id": "hari-tanaka",
   "chapter": 4,
-  "status": "draft",
+  "status": "live",
   "ja_review": "pending",
   "world": {
     "id": "kata-kerja",
@@ -38,7 +38,8 @@
         }
       ],
       "scene": "dunia-hari-tanaka",
-      "chapter": 4
+      "chapter": 4,
+      "image": "🪑"
     },
     {
       "id": "ms-d-hari-tanaka-02",
@@ -56,7 +57,8 @@
         }
       ],
       "scene": "dunia-hari-tanaka",
-      "chapter": 4
+      "chapter": 4,
+      "image": "👂"
     },
     {
       "id": "ms-d-hari-tanaka-03",
@@ -74,7 +76,8 @@
         }
       ],
       "scene": "dunia-hari-tanaka",
-      "chapter": 4
+      "chapter": 4,
+      "image": "🗣️"
     },
     {
       "id": "ms-d-hari-tanaka-04",
@@ -92,7 +95,8 @@
         }
       ],
       "scene": "dunia-hari-tanaka",
-      "chapter": 4
+      "chapter": 4,
+      "image": "📖"
     },
     {
       "id": "ms-d-hari-tanaka-05",
@@ -110,7 +114,8 @@
         }
       ],
       "scene": "dunia-hari-tanaka",
-      "chapter": 4
+      "chapter": 4,
+      "image": "✍️"
     },
     {
       "id": "ms-d-hari-tanaka-06",
@@ -240,7 +245,8 @@
         }
       ],
       "scene": "dunia-hari-tanaka",
-      "chapter": 4
+      "chapter": 4,
+      "image": "🎁"
     },
     {
       "id": "ms-d-hari-tanaka-13",
@@ -258,7 +264,8 @@
         }
       ],
       "scene": "dunia-hari-tanaka",
-      "chapter": 4
+      "chapter": 4,
+      "image": "🧳"
     },
     {
       "id": "ms-d-hari-tanaka-14",
@@ -276,7 +283,8 @@
         }
       ],
       "scene": "dunia-hari-tanaka",
-      "chapter": 4
+      "chapter": 4,
+      "image": "🔓"
     },
     {
       "id": "ms-d-hari-tanaka-15",
@@ -294,7 +302,8 @@
         }
       ],
       "scene": "dunia-hari-tanaka",
-      "chapter": 4
+      "chapter": 4,
+      "image": "🔒"
     },
     {
       "id": "ms-d-hari-tanaka-16",
@@ -335,7 +344,8 @@
       ],
       "scene": "dunia-hari-tanaka",
       "chapter": 4,
-      "seen_in_class": 8
+      "seen_in_class": 8,
+      "image": "📕"
     },
     {
       "id": "ms-d-hari-tanaka-18",
@@ -358,7 +368,8 @@
       ],
       "scene": "dunia-hari-tanaka",
       "chapter": 4,
-      "seen_in_class": 8
+      "seen_in_class": 8,
+      "image": "🦶"
     }
   ]
 }

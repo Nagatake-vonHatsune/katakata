@@ -6,15 +6,19 @@ device only when the learner exports it.
 
 *Satu kata, satu langkah.* 一語ずつ、一歩ずつ。
 
-- Student app: `/`
+- Student app: `/` (Japanese, English or Malay interface; the first screen asks)
+- Language links for sharing: `/?lang=ja`, `/?lang=en`, `/?lang=ms`
 - Teacher Desk: `/teacher/` (drop in student files, merge questions, print the class agenda)
+
+With the English or Malay interface, word meanings are shown in English (the Vocab Bank has English
+and Japanese glosses). Katakana hints only appear in the Japanese interface.
 
 ## Phase 1 (this version)
 
 | Spec item | Where |
 |---|---|
 | Onboarding: name, voice check, iOS "Add to Home Screen" step | `src/views/onboarding.ts` |
-| Kelas Ch1–3, three Dunia scenes (Pagi di pejabat, Pasar pagi, Bangun pagi) | `content/ms/` (packs with `"status": "live"`) |
+| All nine Kelas chapters and 14 Dunia scenes (611 cards) | `content/ms/` (packs with `"status": "live"`) |
 | 今日の練習: due reviews, then 5–8 new words, one frame drill, one Cari Benda round | `src/core/session.ts` |
 | Kad Kata, Cari Benda, Susun Ayat | `src/games/<id>/` (common `Game` interface) |
 | 授業の準備 (Sedia Kelas) with "Ready" stamp | `src/views/modes.ts` |
@@ -35,17 +39,19 @@ One JSON file per chapter or scene, validated against `content/schema/pack.schem
 Card fields follow the shared Hanashishou format: `id, lang, term, gloss_en, gloss_ja, pos,
 affix_tag, note, links[], scene, chapter, image`.
 
-- Only packs with `"status": "live"` ship in the app. Ch4–9 and seven scenes are in the repo as `draft`.
-  To release one, set it to `live` (or add its id to `live_kelas` / `live_dunia` in
-  `tools/import-overrides.json` and re-import).
-- Re-import from the workbook: `python3 -I tools/import_vocab_bank.py path/to/VocabBank.xlsx`
+- Master workbook: `content/source/2026-11-06_KataKata_VocabBank_v3.xlsx` (v2 plus four new scenes:
+  Bank dan pos, Cuti ke pantai, Telefon baru, Rumah terbuka Hari Raya; these rows are Claude drafts).
+- Only packs with `"status": "live"` ship in the app (set by `live_kelas` / `live_dunia` in
+  `tools/import-overrides.json`). All packs are live at the moment.
+- Re-import from the workbook: `python3 -I tools/import_vocab_bank.py content/source/2026-11-06_KataKata_VocabBank_v3.xlsx`
+- Japanese frame meanings, scene titles and Cari Benda emoji live in `tools/import-overrides.json`.
 - Content checks (also run by `npm run build` and CI): `npm run content:check`
   - schema check on every pack
   - affix guard (ber-, be- before k/l, me- + consonant) with the spec's allow-list; the v2 bank passes with 0 flags
   - link check (targets exist; pair links only to same or earlier chapter)
 - Recorded audio (plan B for phones without a Malay voice): `public/audio/ms/<card-id>.mp3`
 
-**All Japanese text (glosses, frame meanings, scene titles, interface) is a Claude draft and needs a native check before students see it.**
+**All Japanese text (glosses, frame meanings, scene titles, interface) is a Claude draft and needs a native check before students see it. The Malay interface (`i18n/ms.json`) and the four new v3 scenes are Claude drafts too.**
 
 ## Develop
 

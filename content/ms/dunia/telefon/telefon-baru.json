@@ -1,0 +1,288 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "telefon-baru",
+  "chapter": 7,
+  "status": "live",
+  "ja_review": "pending",
+  "world": {
+    "id": "telefon",
+    "ms": "Telefon",
+    "en": "Phone",
+    "ja": "携帯電話"
+  },
+  "title": {
+    "ms": "Telefon baru",
+    "en": "A new phone",
+    "ja": "新しい携帯"
+  },
+  "setting": {
+    "en": "Tanaka's phone breaks just before a Grab ride, so he sets up a new one.",
+    "ja": "Grab に乗る直前に田中さんの携帯が壊れたので、新しい携帯を設定します。"
+  },
+  "cards": [
+    {
+      "id": "ms-d-telefon-baru-01",
+      "lang": "ms",
+      "term": "telefon bimbit",
+      "gloss_en": "mobile phone",
+      "gloss_ja": "携帯電話",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-telefon-baru"
+        },
+        {
+          "type": "kanji",
+          "text": "telefon + bimbit (carry in the hand): 'carry phone', just like 携帯電話."
+        }
+      ],
+      "scene": "dunia-telefon-baru",
+      "chapter": 7,
+      "image": "📱"
+    },
+    {
+      "id": "ms-d-telefon-baru-02",
+      "lang": "ms",
+      "term": "aplikasi",
+      "gloss_en": "app",
+      "gloss_ja": "アプリ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-telefon-baru"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'application', like アプリ."
+        }
+      ],
+      "scene": "dunia-telefon-baru",
+      "chapter": 7,
+      "image": "📲"
+    },
+    {
+      "id": "ms-d-telefon-baru-03",
+      "lang": "ms",
+      "term": "muat turun",
+      "gloss_en": "to download",
+      "gloss_ja": "ダウンロードする",
+      "pos": "verb",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-telefon-baru"
+        },
+        {
+          "type": "kanji",
+          "text": "muat (load) + turun (go down): 'load down', a word-for-word download."
+        }
+      ],
+      "scene": "dunia-telefon-baru",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-telefon-baru-04",
+      "lang": "ms",
+      "term": "kata laluan",
+      "gloss_en": "password",
+      "gloss_ja": "パスワード",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-telefon-baru"
+        },
+        {
+          "type": "kanji",
+          "text": "kata (word) + laluan (way through): 'pass word'. The same kata as in Kata-Kata."
+        }
+      ],
+      "scene": "dunia-telefon-baru",
+      "chapter": 7,
+      "image": "🔑"
+    },
+    {
+      "id": "ms-d-telefon-baru-05",
+      "lang": "ms",
+      "term": "bateri",
+      "gloss_en": "battery",
+      "gloss_ja": "バッテリー・電池",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-telefon-baru"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'battery'."
+        }
+      ],
+      "scene": "dunia-telefon-baru",
+      "chapter": 7,
+      "image": "🔋"
+    },
+    {
+      "id": "ms-d-telefon-baru-06",
+      "lang": "ms",
+      "term": "cas",
+      "gloss_en": "to charge (a battery)",
+      "gloss_ja": "充電する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-telefon-baru"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'charge': cas bateri."
+        }
+      ],
+      "scene": "dunia-telefon-baru",
+      "chapter": 7,
+      "image": "🔌"
+    },
+    {
+      "id": "ms-d-telefon-baru-07",
+      "lang": "ms",
+      "term": "skrin",
+      "gloss_en": "screen",
+      "gloss_ja": "画面",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-telefon-baru"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'screen', like スクリーン."
+        }
+      ],
+      "scene": "dunia-telefon-baru",
+      "chapter": 7,
+      "image": "🖥️"
+    },
+    {
+      "id": "ms-d-telefon-baru-08",
+      "lang": "ms",
+      "term": "tekan",
+      "gloss_en": "to press, tap",
+      "gloss_ja": "押す・タップする",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-telefon-baru"
+        }
+      ],
+      "scene": "dunia-telefon-baru",
+      "chapter": 7,
+      "image": "👆"
+    },
+    {
+      "id": "ms-d-telefon-baru-09",
+      "lang": "ms",
+      "term": "internet",
+      "gloss_en": "internet",
+      "gloss_ja": "インターネット",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-telefon-baru"
+        }
+      ],
+      "scene": "dunia-telefon-baru",
+      "chapter": 7,
+      "image": "🌐"
+    },
+    {
+      "id": "ms-d-telefon-baru-10",
+      "lang": "ms",
+      "term": "talian",
+      "gloss_en": "line, connection",
+      "gloss_ja": "回線",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-telefon-baru"
+        },
+        {
+          "type": "keluarga",
+          "text": "From tali (rope, string): a phone line is a long string."
+        }
+      ],
+      "scene": "dunia-telefon-baru",
+      "chapter": 7
+    },
+    {
+      "id": "ms-d-telefon-baru-11",
+      "lang": "ms",
+      "term": "rosak",
+      "gloss_en": "broken, out of order",
+      "gloss_ja": "壊れた・故障した",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-telefon-baru"
+        }
+      ],
+      "scene": "dunia-telefon-baru",
+      "chapter": 7,
+      "image": "🔧"
+    },
+    {
+      "id": "ms-d-telefon-baru-12",
+      "lang": "ms",
+      "term": "kamera",
+      "gloss_en": "camera",
+      "gloss_ja": "カメラ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-telefon-baru"
+        },
+        {
+          "type": "pinjam",
+          "text": "From English 'camera', like カメラ."
+        }
+      ],
+      "scene": "dunia-telefon-baru",
+      "chapter": 7,
+      "image": "📸"
+    }
+  ]
+}

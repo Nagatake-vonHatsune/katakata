@@ -4,7 +4,7 @@
   "kind": "kelas",
   "id": "c09",
   "chapter": 9,
-  "status": "draft",
+  "status": "live",
   "ja_review": "pending",
   "title": {
     "ms": "Ayat Pasif di-",
@@ -559,47 +559,47 @@
       "frame": "___ dibuat oleh ___.",
       "example": "Kek ini dibuat oleh isteri saya.",
       "meaning_en": "This cake was made by my wife.",
-      "meaning_ja": null
+      "meaning_ja": "このケーキは妻が作りました。"
     },
     {
       "id": "ms-c09-f02",
       "frame": "___ di-(verb) di ___.",
       "example": "Nasi lemak ini dibeli di kedai mamak.",
       "meaning_en": "This nasi lemak was bought at the mamak.",
-      "meaning_ja": null
+      "meaning_ja": "このナシレマはママッで買いました。"
     },
     {
       "id": "ms-c09-f03",
       "frame": "___ sudah / belum di-(verb).",
       "example": "Teh tarik sudah diminum semua.",
       "meaning_en": "The teh tarik has all been drunk.",
-      "meaning_ja": null
+      "meaning_ja": "テタレはもう全部飲まれました。"
     },
     {
       "id": "ms-c09-f04",
       "frame": "Kedai ini dibuka / ditutup pada pukul ___.",
       "example": "Kedai ini dibuka pada pukul sembilan pagi.",
       "meaning_en": "This shop opens at 9 a.m.",
-      "meaning_ja": null
+      "meaning_ja": "この店は朝9時に開きます。"
     },
     {
       "id": "ms-c09-f05",
       "frame": "Dilarang ___.",
       "example": "Dilarang masuk.",
       "meaning_en": "No entry.",
-      "meaning_ja": null
+      "meaning_ja": "立入禁止。"
     },
     {
       "id": "ms-c09-f06",
       "frame": "(thing) saya / awak (verb).",
       "example": "Pinggan saya cuci.",
       "meaning_en": "I'll wash the plates.",
-      "meaning_ja": null
+      "meaning_ja": "お皿は私が洗います。"
     }
   ],
   "scenario": {
     "title_en": "The office jamuan",
-    "title_ja": null,
+    "title_ja": "会社のジャムアン（宴会）",
     "lines": [
       {
         "id": "ms-c09-s01",
@@ -682,6 +682,6 @@
       "ms-c09-f01",
       "ms-c09-f02"
     ],
-    "scene": null
+    "scene": "perayaan-raya"
   }
 }

@@ -4,7 +4,7 @@
   "kind": "dunia",
   "id": "badan-klinik",
   "chapter": 5,
-  "status": "draft",
+  "status": "live",
   "ja_review": "pending",
   "world": {
     "id": "badan",
@@ -42,7 +42,8 @@
         }
       ],
       "scene": "dunia-badan-klinik",
-      "chapter": 5
+      "chapter": 5,
+      "image": "🩺"
     },
     {
       "id": "ms-d-badan-klinik-02",
@@ -64,7 +65,8 @@
         }
       ],
       "scene": "dunia-badan-klinik",
-      "chapter": 5
+      "chapter": 5,
+      "image": "🧑‍⚕️"
     },
     {
       "id": "ms-d-badan-klinik-03",
@@ -86,7 +88,8 @@
         }
       ],
       "scene": "dunia-badan-klinik",
-      "chapter": 5
+      "chapter": 5,
+      "image": "💊"
     },
     {
       "id": "ms-d-badan-klinik-04",
@@ -104,7 +107,8 @@
         }
       ],
       "scene": "dunia-badan-klinik",
-      "chapter": 5
+      "chapter": 5,
+      "image": "🤒"
     },
     {
       "id": "ms-d-badan-klinik-05",
@@ -122,7 +126,8 @@
         }
       ],
       "scene": "dunia-badan-klinik",
-      "chapter": 5
+      "chapter": 5,
+      "image": "😷"
     },
     {
       "id": "ms-d-badan-klinik-06",
@@ -180,7 +185,8 @@
         }
       ],
       "scene": "dunia-badan-klinik",
-      "chapter": 5
+      "chapter": 5,
+      "image": "🤕"
     },
     {
       "id": "ms-d-badan-klinik-09",
@@ -238,7 +244,8 @@
         }
       ],
       "scene": "dunia-badan-klinik",
-      "chapter": 5
+      "chapter": 5,
+      "image": "🏥"
     },
     {
       "id": "ms-d-badan-klinik-12",
@@ -256,7 +263,8 @@
         }
       ],
       "scene": "dunia-badan-klinik",
-      "chapter": 5
+      "chapter": 5,
+      "image": "🛌"
     }
   ]
 }

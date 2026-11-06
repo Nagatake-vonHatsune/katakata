@@ -18,6 +18,7 @@ fs.mkdirSync(OUT, { recursive: true });
   const shot = (n) => page.screenshot({ path: path.join(OUT, n + '.png'), fullPage: false });
 
   await page.goto(BASE);
+  await page.getByRole('button', { name: '日本語' }).click();
   await page.getByRole('button', { name: '次へ' }).click();
   await page.getByRole('textbox').fill('Tanaka');
   await page.getByRole('button', { name: '次へ' }).click();
@@ -109,6 +110,27 @@ fs.mkdirSync(OUT, { recursive: true });
   await page.goto(BASE);
   await page.waitForSelector('.today');
   await shot('11-home-en');
+
+  // Malay interface from a shareable link, fresh device.
+  const ctx2 = await browser.newContext({ ...devices['Pixel 7'] });
+  const mpage = await ctx2.newPage();
+  mpage.on('pageerror', (e) => errors.push(e.message));
+  await mpage.goto(BASE + '?lang=ms');
+  await mpage.getByRole('button', { name: 'Bahasa Melayu' }).click();
+  await mpage.getByRole('button', { name: 'Seterusnya' }).click();
+  await mpage.getByRole('textbox').fill('Aiko');
+  await mpage.getByRole('button', { name: 'Seterusnya' }).click();
+  await mpage.getByRole('button', { name: 'Saya tidak dengar' }).click();
+  await mpage.getByRole('button', { name: 'Seterusnya' }).click();
+  await mpage.getByRole('button', { name: 'Jom mula' }).click();
+  await mpage.waitForSelector('.today');
+  await mpage.screenshot({ path: path.join(OUT, '12-home-ms.png') });
+  await mpage.click('.today');
+  const ok = mpage.getByRole('button', { name: 'Faham' });
+  if (await ok.count()) await ok.first().click();
+  await mpage.waitForSelector('.step-body');
+  await mpage.screenshot({ path: path.join(OUT, '13-step-ms.png') });
+  console.log('malay ui ok:', await mpage.locator('.today, .step-body').first().count() > 0);
 
   console.log(errors.length ? 'PAGE ERRORS:\n' + errors.join('\n') : 'no page errors');
   await browser.close();

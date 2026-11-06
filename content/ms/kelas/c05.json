@@ -4,7 +4,7 @@
   "kind": "kelas",
   "id": "c05",
   "chapter": 5,
-  "status": "draft",
+  "status": "live",
   "ja_review": "pending",
   "title": {
     "ms": "Kata Sifat",
@@ -1063,40 +1063,40 @@
       "frame": "(noun) ini (adjective).",
       "example": "Kopi ini pahit.",
       "meaning_en": "This coffee is bitter.",
-      "meaning_ja": null
+      "meaning_ja": "このコーヒーは苦いです。"
     },
     {
       "id": "ms-c05-f02",
       "frame": "Bagaimana rasa ___? / ___, tetapi ___.",
       "example": "Bagaimana rasa nasi lemak ini? Sedap, tetapi pedas.",
       "meaning_en": "How's this nasi lemak? Delicious, but spicy.",
-      "meaning_ja": null
+      "meaning_ja": "このナシレマはどうですか。おいしいけど辛いです。"
     },
     {
       "id": "ms-c05-f03",
       "frame": "Saya mahu ___ yang ___.",
       "example": "Saya mahu baju yang biru.",
       "meaning_en": "I want the blue shirt.",
-      "meaning_ja": null
+      "meaning_ja": "青いシャツがほしいです。"
     },
     {
       "id": "ms-c05-f04",
       "frame": "Saya rasa ___.",
       "example": "Saya rasa penat.",
       "meaning_en": "I feel tired.",
-      "meaning_ja": null
+      "meaning_ja": "疲れました。"
     },
     {
       "id": "ms-c05-f05",
       "frame": "Saya mahu ___, kurang manis, ais sedikit.",
       "example": "Saya mahu teh tarik, kurang manis, ais sedikit.",
       "meaning_en": "Teh tarik, less sweet, a little ice.",
-      "meaning_ja": null
+      "meaning_ja": "テタレ、甘さ控えめ、氷少なめでお願いします。"
     }
   ],
   "scenario": {
     "title_en": "At the mamak",
-    "title_ja": null,
+    "title_ja": "ママッ（食堂）で",
     "lines": [
       {
         "id": "ms-c05-s01",

@@ -4,7 +4,7 @@
   "kind": "kelas",
   "id": "c08",
   "chapter": 8,
-  "status": "draft",
+  "status": "live",
   "ja_review": "pending",
   "title": {
     "ms": "Penjodoh Bilangan",
@@ -793,40 +793,40 @@
       "frame": "Saya mahu (number) (counter) (noun).",
       "example": "Saya mahu dua ekor ikan.",
       "meaning_en": "I'd like two fish.",
-      "meaning_ja": null
+      "meaning_ja": "魚を2匹ください。"
     },
     {
       "id": "ms-c08-f02",
       "frame": "se-(counter) (noun)",
       "example": "sebiji telur, seekor ayam",
       "meaning_en": "one egg, one chicken",
-      "meaning_ja": null
+      "meaning_ja": "卵1個、鶏1羽"
     },
     {
       "id": "ms-c08-f03",
       "frame": "Berapa (counter) ___?",
       "example": "Berapa biji telur?",
       "meaning_en": "How many eggs?",
-      "meaning_ja": null
+      "meaning_ja": "卵は何個ですか。"
     },
     {
       "id": "ms-c08-f04",
       "frame": "___ ringgit se-(counter).",
       "example": "Lima ringgit sekuntum.",
       "meaning_en": "Five ringgit per flower.",
-      "meaning_ja": null
+      "meaning_ja": "花1本5リンギットです。"
     },
     {
       "id": "ms-c08-f05",
       "frame": "Tolong bungkus (number) ___.",
       "example": "Tolong bungkus tiga nasi lemak.",
       "meaning_en": "Three nasi lemak to go, please.",
-      "meaning_ja": null
+      "meaning_ja": "ナシレマを3つ、持ち帰りでお願いします。"
     }
   ],
   "scenario": {
     "title_en": "Morning market and takeaway",
-    "title_ja": null,
+    "title_ja": "朝市とテイクアウト",
     "lines": [
       {
         "id": "ms-c08-s01",

@@ -1,43 +1,177 @@
 {
   "_note": "Hand-written additions merged by import_vocab_bank.py. All Japanese here is a Claude draft: it needs a native check before students see it (spec section 13).",
-  "live_kelas": ["c01", "c02", "c03"],
-  "live_dunia": ["pejabat-pagi", "pasar-pagi", "rumah-bangun-pagi"],
+  "live_kelas": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09"
+  ],
+  "live_dunia": [
+    "rumah-bangun-pagi",
+    "rumah-ruang-tamu",
+    "dapur-masak",
+    "pejabat-pagi",
+    "badan-klinik",
+    "pakaian-kedai",
+    "pasar-pagi",
+    "jalan-lintas",
+    "cuaca-hujan",
+    "hari-tanaka",
+    "bank-pos",
+    "cuti-pantai",
+    "telefon-baru",
+    "perayaan-raya"
+  ],
   "chapter_titles": {
-    "1": {"ms": "Salam dan Sapaan", "en": "Greetings", "ja": "あいさつ"},
-    "2": {"ms": "Kata Ganti Nama dan Perkenalan Diri", "en": "Pronouns and introducing yourself", "ja": "代名詞と自己紹介"},
-    "3": {"ms": "Nombor, Wang dan Ukuran", "en": "Numbers, money and measurements", "ja": "数・お金・単位"},
-    "4": {"ms": "Masa dan Kala", "en": "Time and tense", "ja": "時間と時制"},
-    "5": {"ms": "Kata Sifat", "en": "Adjectives", "ja": "形容詞"},
-    "6": {"ms": "Perbandingan", "en": "Comparison", "ja": "比較"},
-    "7": {"ms": "Arah dan Lokasi", "en": "Directions and location", "ja": "方向と場所"},
-    "8": {"ms": "Penjodoh Bilangan", "en": "Counters", "ja": "助数詞"},
-    "9": {"ms": "Ayat Pasif di-", "en": "The di- passive", "ja": "受け身の di-"}
+    "1": {
+      "ms": "Salam dan Sapaan",
+      "en": "Greetings",
+      "ja": "あいさつ"
+    },
+    "2": {
+      "ms": "Kata Ganti Nama dan Perkenalan Diri",
+      "en": "Pronouns and introducing yourself",
+      "ja": "代名詞と自己紹介"
+    },
+    "3": {
+      "ms": "Nombor, Wang dan Ukuran",
+      "en": "Numbers, money and measurements",
+      "ja": "数・お金・単位"
+    },
+    "4": {
+      "ms": "Masa dan Kala",
+      "en": "Time and tense",
+      "ja": "時間と時制"
+    },
+    "5": {
+      "ms": "Kata Sifat",
+      "en": "Adjectives",
+      "ja": "形容詞"
+    },
+    "6": {
+      "ms": "Perbandingan",
+      "en": "Comparison",
+      "ja": "比較"
+    },
+    "7": {
+      "ms": "Arah dan Lokasi",
+      "en": "Directions and location",
+      "ja": "方向と場所"
+    },
+    "8": {
+      "ms": "Penjodoh Bilangan",
+      "en": "Counters",
+      "ja": "助数詞"
+    },
+    "9": {
+      "ms": "Ayat Pasif di-",
+      "en": "The di- passive",
+      "ja": "受け身の di-"
+    }
   },
   "scenario_titles_ja": {
     "1": "会社の初日",
     "2": "チームとの顔合わせ",
-    "3": "パサール・マラム（夜市）で"
+    "3": "パサール・マラム（夜市）で",
+    "4": "もう食べた？",
+    "5": "ママッ（食堂）で",
+    "6": "コンドミニアム選び",
+    "7": "LRTを探して、Grabに乗る",
+    "8": "朝市とテイクアウト",
+    "9": "会社のジャムアン（宴会）"
   },
   "world_slugs": {
-    "Rumah (Home)": "rumah", "Dapur (Kitchen)": "dapur", "Pejabat (Office)": "pejabat",
-    "Badan (Body)": "badan", "Pakaian (Clothes)": "pakaian", "Pasar (Market)": "pasar",
-    "Jalan (Street)": "jalan", "Cuaca (Weather)": "cuaca", "Kata Kerja Harian (Daily verbs)": "kata-kerja"
+    "Rumah (Home)": "rumah",
+    "Dapur (Kitchen)": "dapur",
+    "Pejabat (Office)": "pejabat",
+    "Badan (Body)": "badan",
+    "Pakaian (Clothes)": "pakaian",
+    "Pasar (Market)": "pasar",
+    "Jalan (Street)": "jalan",
+    "Cuaca (Weather)": "cuaca",
+    "Kata Kerja Harian (Daily verbs)": "kata-kerja",
+    "Bank dan Pos (Bank and post)": "bank-pos",
+    "Cuti (Holidays)": "cuti",
+    "Telefon (Phone)": "telefon",
+    "Perayaan (Festivals)": "perayaan"
   },
   "world_ja": {
-    "rumah": "家", "dapur": "台所", "pejabat": "オフィス", "badan": "からだ", "pakaian": "服",
-    "pasar": "市場", "jalan": "道", "cuaca": "天気", "kata-kerja": "毎日の動詞"
+    "rumah": "家",
+    "dapur": "台所",
+    "pejabat": "オフィス",
+    "badan": "からだ",
+    "pakaian": "服",
+    "pasar": "市場",
+    "jalan": "道",
+    "cuaca": "天気",
+    "kata-kerja": "毎日の動詞",
+    "bank-pos": "銀行と郵便",
+    "cuti": "休暇",
+    "telefon": "携帯電話",
+    "perayaan": "お祭り"
   },
   "scene_ja": {
-    "rumah-bangun-pagi": {"title": "朝、起きる", "setting": "朝6時半、田中さんの目覚まし時計が鳴ります。起きて、出かける準備をします。"},
-    "rumah-ruang-tamu": {"title": "リビングで", "setting": "田中さんが携帯電話を探しています。どこに置いたのでしょう？"},
-    "dapur-masak": {"title": "ナシゴレンを作る", "setting": "田中さんが初めてナシゴレンを作ってみます。"},
-    "pejabat-pagi": {"title": "オフィスの朝", "setting": "田中さんの最初の仕事：会議の前に書類を印刷して、メールを送ること。"},
-    "badan-klinik": {"title": "クリニックで", "setting": "田中さんは熱があって、クリニックに行きます。"},
-    "pakaian-kedai": {"title": "服を買う", "setting": "会社の夕食会のために、田中さんはバティックのシャツが必要です。"},
-    "pasar-pagi": {"title": "朝市", "setting": "田中さんはロスナおばさんの店で野菜と魚を買います。"},
-    "jalan-lintas": {"title": "道を渡る", "setting": "田中さんはLRTの駅から、にぎやかな道の向こうのレストランまで歩きます。"},
-    "cuaca-hujan": {"title": "午後の雨", "setting": "暑い朝、そして午後は激しいにわか雨。とてもKLらしい一日です。"},
-    "hari-tanaka": {"title": "田中さんの一日", "setting": "一日を時間の流れで追うので、動詞がリストではなく場面の中にあります。"}
+    "rumah-bangun-pagi": {
+      "title": "朝、起きる",
+      "setting": "朝6時半、田中さんの目覚まし時計が鳴ります。起きて、出かける準備をします。"
+    },
+    "rumah-ruang-tamu": {
+      "title": "リビングで",
+      "setting": "田中さんが携帯電話を探しています。どこに置いたのでしょう？"
+    },
+    "dapur-masak": {
+      "title": "ナシゴレンを作る",
+      "setting": "田中さんが初めてナシゴレンを作ってみます。"
+    },
+    "pejabat-pagi": {
+      "title": "オフィスの朝",
+      "setting": "田中さんの最初の仕事：会議の前に書類を印刷して、メールを送ること。"
+    },
+    "badan-klinik": {
+      "title": "クリニックで",
+      "setting": "田中さんは熱があって、クリニックに行きます。"
+    },
+    "pakaian-kedai": {
+      "title": "服を買う",
+      "setting": "会社の夕食会のために、田中さんはバティックのシャツが必要です。"
+    },
+    "pasar-pagi": {
+      "title": "朝市",
+      "setting": "田中さんはロスナおばさんの店で野菜と魚を買います。"
+    },
+    "jalan-lintas": {
+      "title": "道を渡る",
+      "setting": "田中さんはLRTの駅から、にぎやかな道の向こうのレストランまで歩きます。"
+    },
+    "cuaca-hujan": {
+      "title": "午後の雨",
+      "setting": "暑い朝、そして午後は激しいにわか雨。とてもKLらしい一日です。"
+    },
+    "hari-tanaka": {
+      "title": "田中さんの一日",
+      "setting": "一日を時間の流れで追うので、動詞がリストではなく場面の中にあります。"
+    },
+    "bank-pos": {
+      "title": "銀行と郵便局へ",
+      "setting": "田中さんは銀行で口座を作り、それから日本へ小包を送ります。"
+    },
+    "cuti-pantai": {
+      "title": "海辺で休暇",
+      "setting": "田中さんは三連休にランカウイの海辺へ行く計画を立てます。"
+    },
+    "telefon-baru": {
+      "title": "新しい携帯",
+      "setting": "Grab に乗る直前に田中さんの携帯が壊れたので、新しい携帯を設定します。"
+    },
+    "perayaan-raya": {
+      "title": "ハリラヤのオープンハウス",
+      "setting": "ラーマンさんが田中さんをハリラヤのオープンハウスに招きます。"
+    }
   },
   "frame_meaning_ja": {
     "ms-c01-f01": "おはようございます、アイニさん。",
@@ -59,17 +193,168 @@
     "ms-c03-f04": "マレーシアは今回が2回目です。",
     "ms-c03-f05": "20パーセント引きです。",
     "ms-c03-f06": "このビルの高さは300メートルです。",
-    "ms-c03-f07": "私の電話番号は012…です。"
+    "ms-c03-f07": "私の電話番号は012…です。",
+    "ms-c04-f01": "4時15分前です。",
+    "ms-c04-f02": "毎朝コーヒーを飲みます。",
+    "ms-c04-f03": "まだ食べています。",
+    "ms-c04-f04": "来月日本に帰ります。",
+    "ms-c04-f05": "もう食べましたか。まだです。",
+    "ms-c04-f06": "ドリアンを食べたことがありません。",
+    "ms-c04-f07": "会議は3時に始まって5時に終わります。",
+    "ms-c05-f01": "このコーヒーは苦いです。",
+    "ms-c05-f02": "このナシレマはどうですか。おいしいけど辛いです。",
+    "ms-c05-f03": "青いシャツがほしいです。",
+    "ms-c05-f04": "疲れました。",
+    "ms-c05-f05": "テタレ、甘さ控えめ、氷少なめでお願いします。",
+    "ms-c06-f01": "コンドAはコンドBより大きいです。",
+    "ms-c06-f02": "コンドBはコンドAほど高くないです。",
+    "ms-c06-f03": "コンドDはコンドAと同じくらい高いです。",
+    "ms-c06-f04": "コンドCが一番安いです。",
+    "ms-c06-f05": "どちらのほうが快適ですか。",
+    "ms-c06-f06": "このコンドは遠すぎます。",
+    "ms-c07-f01": "LRTの駅に行きたいです。",
+    "ms-c07-f02": "駅は銀行の前にあります。",
+    "ms-c07-f03": "まっすぐ行って、信号を右に曲がってください。",
+    "ms-c07-f04": "駅はここからどのくらいですか。約500メートルです。",
+    "ms-c07-f05": "KLCCまでどのくらいかかりますか。LRTで約20分です。",
+    "ms-c08-f01": "魚を2匹ください。",
+    "ms-c08-f02": "卵1個、鶏1羽",
+    "ms-c08-f03": "卵は何個ですか。",
+    "ms-c08-f04": "花1本5リンギットです。",
+    "ms-c08-f05": "ナシレマを3つ、持ち帰りでお願いします。",
+    "ms-c09-f01": "このケーキは妻が作りました。",
+    "ms-c09-f02": "このナシレマはママッで買いました。",
+    "ms-c09-f03": "テタレはもう全部飲まれました。",
+    "ms-c09-f04": "この店は朝9時に開きます。",
+    "ms-c09-f05": "立入禁止。",
+    "ms-c09-f06": "お皿は私が洗います。"
   },
   "images": {
-    "ms-d-rumah-bangun-pagi-01": "🌅", "ms-d-rumah-bangun-pagi-02": "🛏️", "ms-d-rumah-bangun-pagi-05": "⏰",
-    "ms-d-rumah-bangun-pagi-06": "🛁", "ms-d-rumah-bangun-pagi-07": "🪞", "ms-d-rumah-bangun-pagi-08": "🦷",
-    "ms-d-rumah-bangun-pagi-09": "🪥", "ms-d-rumah-bangun-pagi-12": "🧼", "ms-d-rumah-bangun-pagi-14": "👕",
-    "ms-d-pejabat-pagi-01": "💻", "ms-d-pejabat-pagi-02": "📄", "ms-d-pejabat-pagi-03": "📁",
-    "ms-d-pejabat-pagi-04": "📧", "ms-d-pejabat-pagi-05": "🖨️", "ms-d-pejabat-pagi-06": "📤",
-    "ms-d-pejabat-pagi-07": "💾", "ms-d-pejabat-pagi-08": "✍️", "ms-d-pejabat-pagi-12": "🏖️",
-    "ms-d-pasar-pagi-01": "🏪", "ms-d-pasar-pagi-02": "🥬", "ms-d-pasar-pagi-03": "🍎",
-    "ms-d-pasar-pagi-04": "🐟", "ms-d-pasar-pagi-05": "🥩", "ms-d-pasar-pagi-06": "🌶️",
-    "ms-d-pasar-pagi-08": "⚖️", "ms-d-pasar-pagi-10": "🛍️"
+    "ms-d-rumah-bangun-pagi-01": "🌅",
+    "ms-d-rumah-bangun-pagi-02": "🛏️",
+    "ms-d-rumah-bangun-pagi-05": "⏰",
+    "ms-d-rumah-bangun-pagi-06": "🛁",
+    "ms-d-rumah-bangun-pagi-07": "🪞",
+    "ms-d-rumah-bangun-pagi-08": "🦷",
+    "ms-d-rumah-bangun-pagi-09": "🪥",
+    "ms-d-rumah-bangun-pagi-12": "🧼",
+    "ms-d-rumah-bangun-pagi-14": "👕",
+    "ms-d-pejabat-pagi-01": "💻",
+    "ms-d-pejabat-pagi-02": "📄",
+    "ms-d-pejabat-pagi-03": "📁",
+    "ms-d-pejabat-pagi-04": "📧",
+    "ms-d-pejabat-pagi-05": "🖨️",
+    "ms-d-pejabat-pagi-06": "📤",
+    "ms-d-pejabat-pagi-07": "💾",
+    "ms-d-pejabat-pagi-08": "✍️",
+    "ms-d-pejabat-pagi-12": "🏖️",
+    "ms-d-pasar-pagi-01": "🏪",
+    "ms-d-pasar-pagi-02": "🥬",
+    "ms-d-pasar-pagi-03": "🍎",
+    "ms-d-pasar-pagi-04": "🐟",
+    "ms-d-pasar-pagi-05": "🥩",
+    "ms-d-pasar-pagi-06": "🌶️",
+    "ms-d-pasar-pagi-08": "⚖️",
+    "ms-d-pasar-pagi-10": "🛍️",
+    "ms-d-rumah-ruang-tamu-01": "🛋️",
+    "ms-d-rumah-ruang-tamu-02": "🚪",
+    "ms-d-rumah-ruang-tamu-03": "🪟",
+    "ms-d-rumah-ruang-tamu-05": "🪑",
+    "ms-d-rumah-ruang-tamu-06": "💡",
+    "ms-d-rumah-ruang-tamu-09": "🧱",
+    "ms-d-rumah-ruang-tamu-10": "📱",
+    "ms-d-rumah-ruang-tamu-12": "🔍",
+    "ms-d-rumah-ruang-tamu-14": "👀",
+    "ms-d-dapur-masak-01": "🔥",
+    "ms-d-dapur-masak-03": "🍳",
+    "ms-d-dapur-masak-04": "🍲",
+    "ms-d-dapur-masak-05": "🔪",
+    "ms-d-dapur-masak-06": "🥄",
+    "ms-d-dapur-masak-07": "🍴",
+    "ms-d-dapur-masak-11": "🧽",
+    "ms-d-dapur-masak-12": "🧂",
+    "ms-d-dapur-masak-15": "🧅",
+    "ms-d-badan-klinik-01": "🩺",
+    "ms-d-badan-klinik-02": "🧑‍⚕️",
+    "ms-d-badan-klinik-03": "💊",
+    "ms-d-badan-klinik-04": "🤒",
+    "ms-d-badan-klinik-05": "😷",
+    "ms-d-badan-klinik-08": "🤕",
+    "ms-d-badan-klinik-11": "🏥",
+    "ms-d-badan-klinik-12": "🛌",
+    "ms-d-pakaian-kedai-01": "👕",
+    "ms-d-pakaian-kedai-02": "👖",
+    "ms-d-pakaian-kedai-03": "🧦",
+    "ms-d-pakaian-kedai-04": "🧢",
+    "ms-d-pakaian-kedai-05": "👜",
+    "ms-d-pakaian-kedai-06": "🔘",
+    "ms-d-jalan-lintas-01": "🏍️",
+    "ms-d-jalan-lintas-02": "🚚",
+    "ms-d-jalan-lintas-03": "🚲",
+    "ms-d-jalan-lintas-04": "🚸",
+    "ms-d-jalan-lintas-05": "🅿️",
+    "ms-d-jalan-lintas-06": "🚶",
+    "ms-d-jalan-lintas-07": "🌉",
+    "ms-d-jalan-lintas-08": "⏳",
+    "ms-d-jalan-lintas-10": "⚠️",
+    "ms-d-cuaca-hujan-02": "🌤️",
+    "ms-d-cuaca-hujan-03": "☁️",
+    "ms-d-cuaca-hujan-04": "🌧️",
+    "ms-d-cuaca-hujan-05": "⛈️",
+    "ms-d-cuaca-hujan-06": "🌬️",
+    "ms-d-cuaca-hujan-07": "☂️",
+    "ms-d-cuaca-hujan-08": "💦",
+    "ms-d-cuaca-hujan-10": "☀️",
+    "ms-d-cuaca-hujan-12": "👁️",
+    "ms-d-hari-tanaka-01": "🪑",
+    "ms-d-hari-tanaka-02": "👂",
+    "ms-d-hari-tanaka-03": "🗣️",
+    "ms-d-hari-tanaka-04": "📖",
+    "ms-d-hari-tanaka-05": "✍️",
+    "ms-d-hari-tanaka-12": "🎁",
+    "ms-d-hari-tanaka-13": "🧳",
+    "ms-d-hari-tanaka-14": "🔓",
+    "ms-d-hari-tanaka-15": "🔒",
+    "ms-d-hari-tanaka-17": "📕",
+    "ms-d-hari-tanaka-18": "🦶",
+    "ms-d-bank-pos-01": "🏦",
+    "ms-d-bank-pos-02": "📋",
+    "ms-d-bank-pos-04": "🛂",
+    "ms-d-bank-pos-05": "🎟️",
+    "ms-d-bank-pos-07": "🏧",
+    "ms-d-bank-pos-08": "🏤",
+    "ms-d-bank-pos-09": "✉️",
+    "ms-d-bank-pos-11": "🏠",
+    "ms-d-bank-pos-13": "📦",
+    "ms-d-cuti-pantai-01": "🏖️",
+    "ms-d-cuti-pantai-02": "🌊",
+    "ms-d-cuti-pantai-03": "🏝️",
+    "ms-d-cuti-pantai-05": "🏨",
+    "ms-d-cuti-pantai-06": "🎫",
+    "ms-d-cuti-pantai-07": "✈️",
+    "ms-d-cuti-pantai-08": "🛫",
+    "ms-d-cuti-pantai-10": "🗺️",
+    "ms-d-cuti-pantai-11": "📷",
+    "ms-d-cuti-pantai-12": "🎁",
+    "ms-d-cuti-pantai-13": "😄",
+    "ms-d-telefon-baru-01": "📱",
+    "ms-d-telefon-baru-02": "📲",
+    "ms-d-telefon-baru-04": "🔑",
+    "ms-d-telefon-baru-05": "🔋",
+    "ms-d-telefon-baru-06": "🔌",
+    "ms-d-telefon-baru-07": "🖥️",
+    "ms-d-telefon-baru-08": "👆",
+    "ms-d-telefon-baru-09": "🌐",
+    "ms-d-telefon-baru-11": "🔧",
+    "ms-d-telefon-baru-12": "📸",
+    "ms-d-perayaan-raya-01": "🌙",
+    "ms-d-perayaan-raya-04": "🏡",
+    "ms-d-perayaan-raya-05": "🤲",
+    "ms-d-perayaan-raya-06": "👥",
+    "ms-d-perayaan-raya-08": "🍛",
+    "ms-d-perayaan-raya-09": "🍡",
+    "ms-d-perayaan-raya-10": "💵",
+    "ms-d-perayaan-raya-11": "🪔",
+    "ms-d-perayaan-raya-12": "🚗"
   }
 }

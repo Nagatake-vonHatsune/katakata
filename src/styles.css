@@ -1252,3 +1252,8 @@ textarea.input {
     transition: none !important;
   }
 }
+
+.lang-pick {
+  width: 100%;
+  margin-top: 8px;
+}

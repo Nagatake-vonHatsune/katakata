@@ -48,9 +48,12 @@ describe('katakana hints', () => {
 });
 
 describe('content', () => {
-  it('ships only live packs: chapters 1-3 and three scenes', () => {
-    expect(content.chapters.map((c) => c.chapter)).toEqual([1, 2, 3]);
-    expect(content.scenes.map((s) => s.id).sort()).toEqual(['pasar-pagi', 'pejabat-pagi', 'rumah-bangun-pagi']);
+  it('ships all nine chapters and fourteen scenes', () => {
+    expect(content.chapters.map((c) => c.chapter)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+    expect(content.scenes).toHaveLength(14);
+  });
+  it('every scene has enough pictures for Cari Benda', () => {
+    for (const s of content.scenes) expect(s.cards.filter((c) => c.image).length, s.id).toBeGreaterThanOrEqual(4);
   });
   it('learning path starts with Chapter 1 core words and has no duplicates', () => {
     expect(content.cards.get(content.path[0])!.chapter).toBe(1);

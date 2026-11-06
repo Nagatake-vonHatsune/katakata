@@ -124,7 +124,7 @@ export interface Stamp {
 }
 
 export interface Settings {
-  lang: 'ja' | 'en';
+  lang: 'ja' | 'en' | 'ms';
   theme: 'auto' | 'light' | 'dark';
   kanaHints: boolean;
   backupReminder: boolean;

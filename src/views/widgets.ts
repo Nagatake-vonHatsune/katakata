@@ -64,7 +64,7 @@ export function chips(card: Card): HTMLElement {
   if (card.seen_in_class) add(t('sess.seen_in_class', { n: card.seen_in_class }), null, 'chip-class');
   const mine = state.myHooks[card.id];
   if (mine) add(t('link.hook_saya'), mine, 'chip-mine');
-  if (card.note) add(lang === 'ja' ? 'メモ' : 'Note', card.note, 'chip-note');
+  if (card.note) add(t('misc.note'), card.note, 'chip-note');
   const plus = h('button', { class: 'chip chip-add', type: 'button', 'aria-label': t('link.hook_saya') }, '＋ ' + t('link.hook_saya'));
   plus.addEventListener('click', async () => {
     await editHook(card);

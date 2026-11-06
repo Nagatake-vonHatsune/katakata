@@ -4,7 +4,7 @@
   "kind": "kelas",
   "id": "c04",
   "chapter": 4,
-  "status": "draft",
+  "status": "live",
   "ja_review": "pending",
   "title": {
     "ms": "Masa dan Kala",
@@ -1027,54 +1027,54 @@
       "frame": "Pukul berapa sekarang? / Sekarang pukul ___.",
       "example": "Sekarang pukul empat kurang suku.",
       "meaning_en": "It's a quarter to four.",
-      "meaning_ja": null
+      "meaning_ja": "4時15分前です。"
     },
     {
       "id": "ms-c04-f02",
       "frame": "Saya ___ setiap ___.",
       "example": "Saya minum kopi setiap pagi.",
       "meaning_en": "I drink coffee every morning.",
-      "meaning_ja": null
+      "meaning_ja": "毎朝コーヒーを飲みます。"
     },
     {
       "id": "ms-c04-f03",
       "frame": "Saya sedang / masih ___.",
       "example": "Saya masih makan.",
       "meaning_en": "I'm still eating.",
-      "meaning_ja": null
+      "meaning_ja": "まだ食べています。"
     },
     {
       "id": "ms-c04-f04",
       "frame": "Saya akan ___ (time).",
       "example": "Saya akan balik ke Jepun bulan depan.",
       "meaning_en": "I'll go back to Japan next month.",
-      "meaning_ja": null
+      "meaning_ja": "来月日本に帰ります。"
     },
     {
       "id": "ms-c04-f05",
       "frame": "Sudah ___? / Sudah. / Belum.",
       "example": "Sudah makan? Belum.",
       "meaning_en": "Have you eaten? Not yet.",
-      "meaning_ja": null
+      "meaning_ja": "もう食べましたか。まだです。"
     },
     {
       "id": "ms-c04-f06",
       "frame": "Saya pernah / belum pernah ___.",
       "example": "Saya belum pernah makan durian.",
       "meaning_en": "I've never eaten durian.",
-      "meaning_ja": null
+      "meaning_ja": "ドリアンを食べたことがありません。"
     },
     {
       "id": "ms-c04-f07",
       "frame": "___ mula pukul ___ dan habis pukul ___.",
       "example": "Mesyuarat mula pukul tiga dan habis pukul lima.",
       "meaning_en": "The meeting starts at 3 and ends at 5.",
-      "meaning_ja": null
+      "meaning_ja": "会議は3時に始まって5時に終わります。"
     }
   ],
   "scenario": {
     "title_en": "Sudah makan?",
-    "title_ja": null,
+    "title_ja": "もう食べた？",
     "lines": [
       {
         "id": "ms-c04-s01",

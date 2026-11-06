@@ -4,7 +4,7 @@
   "kind": "dunia",
   "id": "dapur-masak",
   "chapter": 5,
-  "status": "draft",
+  "status": "live",
   "ja_review": "pending",
   "world": {
     "id": "dapur",
@@ -38,7 +38,8 @@
         }
       ],
       "scene": "dunia-dapur-masak",
-      "chapter": 5
+      "chapter": 5,
+      "image": "🔥"
     },
     {
       "id": "ms-d-dapur-masak-02",
@@ -78,7 +79,8 @@
         }
       ],
       "scene": "dunia-dapur-masak",
-      "chapter": 5
+      "chapter": 5,
+      "image": "🍳"
     },
     {
       "id": "ms-d-dapur-masak-04",
@@ -96,7 +98,8 @@
         }
       ],
       "scene": "dunia-dapur-masak",
-      "chapter": 5
+      "chapter": 5,
+      "image": "🍲"
     },
     {
       "id": "ms-d-dapur-masak-05",
@@ -114,7 +117,8 @@
         }
       ],
       "scene": "dunia-dapur-masak",
-      "chapter": 5
+      "chapter": 5,
+      "image": "🔪"
     },
     {
       "id": "ms-d-dapur-masak-06",
@@ -132,7 +136,8 @@
         }
       ],
       "scene": "dunia-dapur-masak",
-      "chapter": 5
+      "chapter": 5,
+      "image": "🥄"
     },
     {
       "id": "ms-d-dapur-masak-07",
@@ -154,7 +159,8 @@
         }
       ],
       "scene": "dunia-dapur-masak",
-      "chapter": 5
+      "chapter": 5,
+      "image": "🍴"
     },
     {
       "id": "ms-d-dapur-masak-08",
@@ -230,7 +236,8 @@
         }
       ],
       "scene": "dunia-dapur-masak",
-      "chapter": 5
+      "chapter": 5,
+      "image": "🧽"
     },
     {
       "id": "ms-d-dapur-masak-12",
@@ -248,7 +255,8 @@
         }
       ],
       "scene": "dunia-dapur-masak",
-      "chapter": 5
+      "chapter": 5,
+      "image": "🧂"
     },
     {
       "id": "ms-d-dapur-masak-13",
@@ -302,7 +310,8 @@
         }
       ],
       "scene": "dunia-dapur-masak",
-      "chapter": 5
+      "chapter": 5,
+      "image": "🧅"
     }
   ]
 }

@@ -1,0 +1,289 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "perayaan-raya",
+  "chapter": 9,
+  "status": "live",
+  "ja_review": "pending",
+  "world": {
+    "id": "perayaan",
+    "ms": "Perayaan",
+    "en": "Festivals",
+    "ja": "お祭り"
+  },
+  "title": {
+    "ms": "Rumah terbuka Hari Raya",
+    "en": "A Hari Raya open house",
+    "ja": "ハリラヤのオープンハウス"
+  },
+  "setting": {
+    "en": "Encik Rahman invites Tanaka to his Hari Raya open house.",
+    "ja": "ラーマンさんが田中さんをハリラヤのオープンハウスに招きます。"
+  },
+  "cards": [
+    {
+      "id": "ms-d-perayaan-raya-01",
+      "lang": "ms",
+      "term": "Hari Raya",
+      "gloss_en": "Hari Raya (the festival at the end of Ramadan)",
+      "gloss_ja": "ハリラヤ（断食明けの祭り）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9,
+      "image": "🌙"
+    },
+    {
+      "id": "ms-d-perayaan-raya-02",
+      "lang": "ms",
+      "term": "Selamat Hari Raya",
+      "gloss_en": "Happy Hari Raya",
+      "gloss_ja": "ハリラヤおめでとう",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        },
+        {
+          "type": "keluarga",
+          "text": "The same selamat as Selamat pagi (Ch1)."
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-perayaan-raya-03",
+      "lang": "ms",
+      "term": "maaf zahir dan batin",
+      "gloss_en": "forgive me, outwardly and inwardly (Raya greeting)",
+      "gloss_ja": "これまでの非礼をお許しください（ハリラヤの挨拶）",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-perayaan-raya-04",
+      "lang": "ms",
+      "term": "rumah terbuka",
+      "gloss_en": "open house",
+      "gloss_ja": "オープンハウス（誰でも招く集まり）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        },
+        {
+          "type": "kanji",
+          "text": "rumah (house) + terbuka (open): 'open house'."
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9,
+      "image": "🏡"
+    },
+    {
+      "id": "ms-d-perayaan-raya-05",
+      "lang": "ms",
+      "term": "jemput",
+      "gloss_en": "to invite; please (help yourself)",
+      "gloss_ja": "招く・どうぞ",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9,
+      "image": "🤲"
+    },
+    {
+      "id": "ms-d-perayaan-raya-06",
+      "lang": "ms",
+      "term": "tetamu",
+      "gloss_en": "guest",
+      "gloss_ja": "客",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        },
+        {
+          "type": "keluarga",
+          "text": "The same 'guest' as tamu in ruang tamu (living room)."
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9,
+      "image": "👥"
+    },
+    {
+      "id": "ms-d-perayaan-raya-07",
+      "lang": "ms",
+      "term": "ketupat",
+      "gloss_en": "ketupat (rice cooked in a woven palm-leaf case)",
+      "gloss_ja": "クトゥパット（ヤシの葉で編んだ袋で炊いた米）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-perayaan-raya-08",
+      "lang": "ms",
+      "term": "rendang",
+      "gloss_en": "rendang (slow-cooked spiced meat)",
+      "gloss_ja": "ルンダン（スパイスで煮込んだ肉料理）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9,
+      "image": "🍛"
+    },
+    {
+      "id": "ms-d-perayaan-raya-09",
+      "lang": "ms",
+      "term": "kuih",
+      "gloss_en": "traditional cakes and sweets",
+      "gloss_ja": "クエ（伝統菓子）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9,
+      "image": "🍡"
+    },
+    {
+      "id": "ms-d-perayaan-raya-10",
+      "lang": "ms",
+      "term": "duit raya",
+      "gloss_en": "Raya money gift (for children)",
+      "gloss_ja": "ハリラヤのお年玉",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        },
+        {
+          "type": "keluarga",
+          "text": "duit (money, Ch3) + raya: festival money, like お年玉."
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9,
+      "image": "💵"
+    },
+    {
+      "id": "ms-d-perayaan-raya-11",
+      "lang": "ms",
+      "term": "pelita",
+      "gloss_en": "oil lamp",
+      "gloss_ja": "灯油ランプ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9,
+      "image": "🪔"
+    },
+    {
+      "id": "ms-d-perayaan-raya-12",
+      "lang": "ms",
+      "term": "balik kampung",
+      "gloss_en": "to go back to your hometown",
+      "gloss_ja": "帰省する",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        },
+        {
+          "type": "kanji",
+          "text": "balik (go back) + kampung (hometown, Ch2): like 帰省."
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9,
+      "image": "🚗"
+    },
+    {
+      "id": "ms-d-perayaan-raya-13",
+      "lang": "ms",
+      "term": "baju Melayu",
+      "gloss_en": "baju Melayu (traditional Malay men's outfit)",
+      "gloss_ja": "バジュ・ムラユ（男性の民族衣装）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9
+    }
+  ]
+}

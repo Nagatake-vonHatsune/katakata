@@ -4,7 +4,7 @@
   "kind": "dunia",
   "id": "cuaca-hujan",
   "chapter": 4,
-  "status": "draft",
+  "status": "live",
   "ja_review": "pending",
   "world": {
     "id": "cuaca",
@@ -56,7 +56,8 @@
         }
       ],
       "scene": "dunia-cuaca-hujan",
-      "chapter": 4
+      "chapter": 4,
+      "image": "🌤️"
     },
     {
       "id": "ms-d-cuaca-hujan-03",
@@ -74,7 +75,8 @@
         }
       ],
       "scene": "dunia-cuaca-hujan",
-      "chapter": 4
+      "chapter": 4,
+      "image": "☁️"
     },
     {
       "id": "ms-d-cuaca-hujan-04",
@@ -92,7 +94,8 @@
         }
       ],
       "scene": "dunia-cuaca-hujan",
-      "chapter": 4
+      "chapter": 4,
+      "image": "🌧️"
     },
     {
       "id": "ms-d-cuaca-hujan-05",
@@ -110,7 +113,8 @@
         }
       ],
       "scene": "dunia-cuaca-hujan",
-      "chapter": 4
+      "chapter": 4,
+      "image": "⛈️"
     },
     {
       "id": "ms-d-cuaca-hujan-06",
@@ -128,7 +132,8 @@
         }
       ],
       "scene": "dunia-cuaca-hujan",
-      "chapter": 4
+      "chapter": 4,
+      "image": "🌬️"
     },
     {
       "id": "ms-d-cuaca-hujan-07",
@@ -147,7 +152,8 @@
       ],
       "scene": "dunia-cuaca-hujan",
       "chapter": 4,
-      "seen_in_class": 8
+      "seen_in_class": 8,
+      "image": "☂️"
     },
     {
       "id": "ms-d-cuaca-hujan-08",
@@ -165,7 +171,8 @@
         }
       ],
       "scene": "dunia-cuaca-hujan",
-      "chapter": 4
+      "chapter": 4,
+      "image": "💦"
     },
     {
       "id": "ms-d-cuaca-hujan-09",
@@ -205,7 +212,8 @@
         }
       ],
       "scene": "dunia-cuaca-hujan",
-      "chapter": 4
+      "chapter": 4,
+      "image": "☀️"
     },
     {
       "id": "ms-d-cuaca-hujan-11",
@@ -245,7 +253,8 @@
         }
       ],
       "scene": "dunia-cuaca-hujan",
-      "chapter": 4
+      "chapter": 4,
+      "image": "👁️"
     }
   ]
 }

@@ -16,9 +16,11 @@ function layout(sceneId: string, n: number): Array<{ x: number; y: number }> {
   const rnd = () => ((seed = (seed * 1103515245 + 12345) >>> 0) % 1000) / 1000;
   const cols = n <= 6 ? 3 : 4;
   const rows = Math.ceil(n / cols);
+  // Keep every object fully inside the picture (objects are 64px; the board is at least ~300px wide).
+  const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
   return Array.from({ length: n }, (_, i) => ({
-    x: ((i % cols) + 0.5) / cols * 100 + (rnd() - 0.5) * (60 / cols),
-    y: (Math.floor(i / cols) + 0.5) / rows * 100 + (rnd() - 0.5) * (40 / rows),
+    x: clamp(((i % cols) + 0.5) / cols * 100 + (rnd() - 0.5) * (40 / cols), 12, 88),
+    y: clamp(((Math.floor(i / cols) + 0.5) / rows) * 100 + (rnd() - 0.5) * (30 / rows), 14, 86),
   }));
 }
 

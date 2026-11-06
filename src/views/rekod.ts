@@ -1,7 +1,7 @@
 // Rekod: stamp card, progress, savefile tools, settings.
 import { content } from '../core/content';
 import * as db from '../core/db';
-import { getLang, setLang, t } from '../core/i18n';
+import { getLang, LANGS, setLang, t, type Lang } from '../core/i18n';
 import { chapterProgress, knownCount, minutesThisWeek, sceneProgress, streak } from '../core/progress';
 import { buildSavefile, mergeStates, parseSavefile, summarise } from '../core/savefile';
 import { pickFile, safeName, shareOrDownload } from '../core/share';
@@ -22,7 +22,7 @@ export function applyTheme(): void {
 
 function fmtDate(iso: string): string {
   const d = new Date(iso);
-  return getLang() === 'ja' ? `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日` : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+  return getLang() === 'ja' ? `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日` : d.toLocaleDateString(getLang() === 'ms' ? 'ms-MY' : 'en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
 }
 
 async function exportSave(): Promise<void> {
@@ -63,7 +63,6 @@ async function importSave(redraw: () => void): Promise<void> {
 
 export function renderRekod(root: HTMLElement, go: (r: string) => void): void {
   const draw = () => {
-    const lang = getLang();
     const stamps = state.stamps.slice().sort((a, b) => b.date.localeCompare(a.date));
     const toggle = (label: string, on: boolean, set: (v: boolean) => void) => {
       const cb = h('input', { type: 'checkbox', checked: on, role: 'switch' }) as HTMLInputElement;
@@ -98,9 +97,9 @@ export function renderRekod(root: HTMLElement, go: (r: string) => void): void {
         h(
           'div',
           { class: 'stats' },
-          h('div', { class: 'stat' }, h('b', null, String(knownCount())), h('span', null, lang === 'ja' ? '覚えた単語' : 'words known')),
-          h('div', { class: 'stat' }, h('b', null, String(streak())), h('span', null, lang === 'ja' ? '連続日数' : 'day streak')),
-          h('div', { class: 'stat' }, h('b', null, String(minutesThisWeek())), h('span', null, lang === 'ja' ? '今週（分）' : 'min this week')),
+          h('div', { class: 'stat' }, h('b', null, String(knownCount())), h('span', null, t('misc.words_known'))),
+          h('div', { class: 'stat' }, h('b', null, String(streak())), h('span', null, t('misc.day_streak'))),
+          h('div', { class: 'stat' }, h('b', null, String(minutesThisWeek())), h('span', null, t('misc.min_week'))),
         ),
         h('p', { class: 'muted small center' }, t('home.streak_rest')),
         h('section', { class: 'card-box' }, h('h2', null, t('rekod.stamps')), stamps.length ? h('div', { class: 'stamp-grid' }, stamps.map(stampEl)) : h('p', { class: 'muted' }, t('rekod.no_stamps'))),
@@ -132,7 +131,7 @@ export function renderRekod(root: HTMLElement, go: (r: string) => void): void {
           { class: 'card-box settings' },
           h('h2', null, t('rekod.settings')),
           h('label', { class: 'setting' }, h('span', null, t('rekod.name')), nameInput),
-          select(t('rekod.lang'), state.settings.lang, [['ja', '日本語'], ['en', 'English']], (v) => {
+          select(t('rekod.lang'), state.settings.lang, LANGS.map((l) => [l.id, l.label] as [Lang, string]), (v) => {
             update((s) => (s.settings.lang = v));
             setLang(v);
           }),

@@ -4,7 +4,7 @@
   "kind": "dunia",
   "id": "rumah-ruang-tamu",
   "chapter": 7,
-  "status": "draft",
+  "status": "live",
   "ja_review": "pending",
   "world": {
     "id": "rumah",
@@ -42,7 +42,8 @@
         }
       ],
       "scene": "dunia-rumah-ruang-tamu",
-      "chapter": 7
+      "chapter": 7,
+      "image": "🛋️"
     },
     {
       "id": "ms-d-rumah-ruang-tamu-02",
@@ -64,7 +65,8 @@
         }
       ],
       "scene": "dunia-rumah-ruang-tamu",
-      "chapter": 7
+      "chapter": 7,
+      "image": "🚪"
     },
     {
       "id": "ms-d-rumah-ruang-tamu-03",
@@ -82,7 +84,8 @@
         }
       ],
       "scene": "dunia-rumah-ruang-tamu",
-      "chapter": 7
+      "chapter": 7,
+      "image": "🪟"
     },
     {
       "id": "ms-d-rumah-ruang-tamu-04",
@@ -122,7 +125,8 @@
         }
       ],
       "scene": "dunia-rumah-ruang-tamu",
-      "chapter": 7
+      "chapter": 7,
+      "image": "🪑"
     },
     {
       "id": "ms-d-rumah-ruang-tamu-06",
@@ -144,7 +148,8 @@
         }
       ],
       "scene": "dunia-rumah-ruang-tamu",
-      "chapter": 7
+      "chapter": 7,
+      "image": "💡"
     },
     {
       "id": "ms-d-rumah-ruang-tamu-07",
@@ -198,7 +203,8 @@
         }
       ],
       "scene": "dunia-rumah-ruang-tamu",
-      "chapter": 7
+      "chapter": 7,
+      "image": "🧱"
     },
     {
       "id": "ms-d-rumah-ruang-tamu-10",
@@ -220,7 +226,8 @@
         }
       ],
       "scene": "dunia-rumah-ruang-tamu",
-      "chapter": 7
+      "chapter": 7,
+      "image": "📱"
     },
     {
       "id": "ms-d-rumah-ruang-tamu-11",
@@ -256,7 +263,8 @@
         }
       ],
       "scene": "dunia-rumah-ruang-tamu",
-      "chapter": 7
+      "chapter": 7,
+      "image": "🔍"
     },
     {
       "id": "ms-d-rumah-ruang-tamu-13",
@@ -293,7 +301,8 @@
         }
       ],
       "scene": "dunia-rumah-ruang-tamu",
-      "chapter": 7
+      "chapter": 7,
+      "image": "👀"
     }
   ]
 }
