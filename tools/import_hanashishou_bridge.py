@@ -36,7 +36,7 @@ SCENES = {
 }
 BRIDGE_BANDS = {1, 2}
 ALLOW = {"berat", "bersih", "belok", "belakang", "belas", "belum", "beli", "besar", "bebas", "beliau", "berus", "merah", "meja",
-         "meter", "mesyuarat", "mereka", "mendung", "menu", "belanja", "berapa", "belajar", "melati", "melaka"}
+         "meter", "mesyuarat", "mereka", "mendung", "menu", "belanja", "menang", "berapa", "belajar", "melati", "melaka"}
 
 
 def affixed(sentence):

@@ -12,6 +12,7 @@ and appends the new rows to the snapshot CSV. The sheet stays the source of trut
 
 import csv
 import json
+from datetime import date
 import re
 import sys
 from pathlib import Path
@@ -26,7 +27,8 @@ COLS = ["ID", "Malay", "Meaning (EN)", "Meaning (JA)", "POS", "Affix tag", "Root
         "Review status", "Action", "Sam's notes", "Last changed", "Changed by"]
 
 
-def main(hs, kd4_txt, out, today="2026-11-06"):
+def main(hs, kd4_txt, out, today=None):
+    today = today or date.today().isoformat()
     head, blocks = bl.kd4_index(kd4_txt)
     rows = list(csv.reader(open(CSV, encoding="utf-8")))
     header, body = rows[0], rows[1:]

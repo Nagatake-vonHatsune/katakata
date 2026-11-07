@@ -6,6 +6,7 @@ export const ALLOW_LIST = new Set([
   'beliau', 'berus', 'merah', 'meja', 'meter', 'mesyuarat', 'mereka', 'mendung', 'menu',
   // Added 6 Nov 2026, approved by Sam (not in spec 11.4's list): a root that looks like be- + l, from Hanashishou's band 1-2 Malay deck.
   'belanja',
+  'menang', // approved by Sam, 7 Nov 2026: a root (to win), not me- + nang
 ]);
 
 const EXEMPT_TAGS = new Set(['chunk', 'chunk*', 'lex']);

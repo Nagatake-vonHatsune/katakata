@@ -91,6 +91,8 @@ SCENES = [
             ("siku", "elbow", "ひじ", "noun", "root", None, None),
             ("lutut", "knee", "ひざ", "noun", "root", None, None),
             ("pinggang", "waist, lower back", "腰", "noun", "root", None, None),
+            # Added 7 Nov 2026 once Sam approved the allow-list exception (a root, not me- + nang). Kept last so IDs stay stable.
+            ("menang", "to win (opposite: kalah)", "勝つ（反対は kalah）", "verb", "root", None, None),
         ],
     },
     {

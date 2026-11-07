@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- menang (to win) joins Main badminton as card 15, after Sam approved it for the affix allow-list (7 Nov 2026):
+  it is a root, not me- + nang. Malay ledger row L-0982.
+
 ## 0.10.0 (6 November 2026)
 
 - **Points.** Every right answer earns points, with a ⚡ speed bonus and a 🔥 combo multiplier (up to ×2).

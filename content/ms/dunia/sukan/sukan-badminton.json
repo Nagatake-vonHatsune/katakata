@@ -293,6 +293,25 @@
       ],
       "scene": "dunia-sukan-badminton",
       "chapter": 6
+    },
+    {
+      "id": "ms-d-sukan-badminton-15",
+      "lang": "ms",
+      "term": "menang",
+      "gloss_en": "to win (opposite: kalah)",
+      "gloss_ja": "勝つ（反対は kalah）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-sukan-badminton"
+        }
+      ],
+      "scene": "dunia-sukan-badminton",
+      "chapter": 6,
+      "image": "🥇"
     }
   ]
 }
