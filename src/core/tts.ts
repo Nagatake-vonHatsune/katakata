@@ -45,6 +45,16 @@ export function setRate(r: number): void {
 
 let current: HTMLAudioElement | null = null;
 
+/**
+ * Respellings for the device voice only (the screen keeps the real spelling). Malay and Indonesian voices
+ * read "khabar" with a harsh kh; Malaysians say "kabar" (Sam, 7 Nov 2026).
+ */
+const SAY_AS: Array<[RegExp, string]> = [[/\b([Kk])habar/g, '$1abar']];
+
+export function sayAs(text: string): string {
+  return SAY_AS.reduce((t, [re, to]) => t.replace(re, to), text);
+}
+
 export async function speak(text: string, opts: { slow?: boolean; cardId?: string } = {}): Promise<void> {
   const clip = opts.cardId ? `audio/ms/${opts.cardId}.mp3` : null;
   if (clip && clips.has(clip)) {
@@ -58,7 +68,7 @@ export async function speak(text: string, opts: { slow?: boolean; cardId?: strin
   await loadVoices();
   const { voice } = pick();
   speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text.replace(/\s*\/\s*/g, ', ').replace(/[()]/g, ''));
+  const u = new SpeechSynthesisUtterance(sayAs(text).replace(/\s*\/\s*/g, ', ').replace(/[()]/g, ''));
   u.lang = voice?.lang ?? 'ms-MY';
   if (voice) u.voice = voice;
   u.rate = opts.slow ? Math.max(0.4, rate * 0.6) : rate;

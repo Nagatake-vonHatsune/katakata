@@ -29,7 +29,8 @@ const ROWS: Record<string, [string, string, string, string, string]> = {
   sy: ['シャ', 'シェ', 'シ', 'ショ', 'シュ'],
   ny: ['ニャ', 'ニェ', 'ニ', 'ニョ', 'ニュ'],
   ng: ['ンガ', 'ンゲ', 'ンギ', 'ンゴ', 'ング'],
-  kh: ['ハ', 'ヘ', 'ヒ', 'ホ', 'フ'],
+  // kh sounds close to k in everyday Malaysian speech (Sam, 7 Nov 2026: khabar is カバー, not ハバル).
+  kh: ['カ', 'ケ', 'キ', 'コ', 'ク'],
   gh: ['ガ', 'ゲ', 'ギ', 'ゴ', 'グ'],
 };
 
@@ -40,6 +41,11 @@ const CODA: Record<string, string> = {
 };
 
 const DIGRAPHS = ['ng', 'ny', 'sy', 'kh', 'gh'];
+
+/** Whole words whose usual reading the rules can't produce (final -ar heard as a long vowel, etc.). */
+const WHOLE_WORDS: Record<string, string> = {
+  khabar: 'カバー', // Sam, 7 Nov 2026: read as "kabar" / カバー
+};
 
 function vowelIndex(v: string): number {
   return 'aeiou'.indexOf(v) === -1 ? 0 : ['a', 'e', 'i', 'o', 'u'].indexOf(v);
@@ -89,7 +95,7 @@ export function toKana(term: string): string {
         .split(/[\s-]+/)
         .map((part) => part.replace(/[^A-Za-z]/g, ''))
         .filter(Boolean)
-        .map(wordToKana)
+        .map((w) => WHOLE_WORDS[w.toLowerCase()] ?? wordToKana(w))
         .join(' '),
     )
     .filter(Boolean)

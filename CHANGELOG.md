@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- khabar is read the way Malaysians say it (Sam, 7 Nov 2026): the katakana hint is カバー (Apa khabar? = アパ カバー,
+  was アパ ハバル) and the voice is given "kabar". Other kh words now use the カ row too (akhir = アキル, was アヒル).
 - menang (to win) joins Main badminton as card 15, after Sam approved it for the affix allow-list (7 Nov 2026):
   it is a root, not me- + nang. Malay ledger row L-0982.
 

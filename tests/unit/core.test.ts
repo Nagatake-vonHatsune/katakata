@@ -5,6 +5,7 @@ import { describe, expect, it } from 'vitest';
 import { looksAffixed, runAffixGuard } from '../../tools/affix-guard.mjs';
 import { content, srsKey } from '../../src/core/content';
 import { pronTips, toKana } from '../../src/core/kana';
+import { sayAs } from '../../src/core/tts';
 import { buildReport, isReport, reportFilename } from '../../src/core/report';
 import { buildSavefile, mergeStates, parseSavefile } from '../../src/core/savefile';
 import { buildSedia, buildToday, newWordBlock, requeue } from '../../src/core/session';
@@ -44,8 +45,16 @@ describe('katakana hints', () => {
     ['tumpang tanya', 'トゥンパン タニャ'],
     ['syarikat', 'シャリカッ'],
     ['Assalamualaikum', 'アッサラムアライクム'],
+    ['Apa khabar?', 'アパ カバー'],
+    ['surat khabar', 'スラッ カバー'],
+    ['versi akhir', 'ヴェルシ アキル'],
   ])('%s -> %s', (ms, kana) => expect(toKana(ms)).toBe(kana));
   it('gives the final-consonant tip for makan', () => expect(pronTips('makan')).toContain('final'));
+  it('the voice says kabar, the screen keeps khabar', () => {
+    expect(sayAs('Apa khabar?')).toBe('Apa kabar?');
+    expect(sayAs('Khabar baik. Surat khabar.')).toBe('Kabar baik. Surat kabar.');
+    expect(sayAs('akhir')).toBe('akhir');
+  });
 });
 
 describe('content', () => {
