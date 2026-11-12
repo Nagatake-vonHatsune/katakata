@@ -1628,7 +1628,7 @@
       {
         "id": "ms-c02-s01",
         "speaker": "Encik Rahman",
-        "ms": "Selamat pagi. Nama saya Rahman. Saya pengurus di sini. Siapa nama encik?",
+        "ms": "Selamat pagi. Nama saya Rahman. Saya pengurus di pejabat ini. Siapa nama encik?",
         "en": "Good morning. I'm Rahman, the manager here. What's your name?"
       },
       {
@@ -1722,6 +1722,7 @@
       "ms-c02-048",
       "ms-c02-058",
       "ms-c02-066",
+      "ms-c02-067",
       "ms-c02-001"
     ],
     "frames": [

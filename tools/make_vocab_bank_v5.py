@@ -319,6 +319,8 @@ def ch2(b):
     # Scenario: «dari mana» is a Ch7 question word. Ask about the hometown with Ch2 language instead; the
     # answer uses frame ms-c02-f03 «Asal saya dari ___.».
     b.edit_line("ms-c02-s03", ms="Kampung encik di mana?", en="Where is your hometown?")
+    # «sini» is a Ch7 word (Sam, 12 Nov: fix it the same way).
+    b.edit_line("ms-c02-s01", ms="Selamat pagi. Nama saya Rahman. Saya pengurus di pejabat ini. Siapa nama encik?")
 
 
 def ch3(b):
@@ -333,6 +335,8 @@ def ch3(b):
     }
     for lid, note in notes.items():
         b.add_kelas(3, lid, note=note)
+    # «bagus» is a Ch6 word (Sam, 12 Nov: fix it the same way).
+    b.edit_line("ms-c03-s08", ms="Baik! Terima kasih, encik.", en="Good! Thank you.")
 
 
 def ch4(b):
@@ -478,6 +482,8 @@ def ch8(b):
     b.edit_kelas("ms-c08-008", en="counter: letters (lit. shoot)", note="sepucuk surat. A formal counter, mostly seen in writing.")
     b.edit_kelas("ms-c08-013", note="senaskhah surat khabar. A formal counter, mostly seen in writing.")
     b.edit_kelas("ms-c08-019", note="setin sup.")
+    # «siap» is a Ch9 word (Sam, 12 Nov: fix it the same way).
+    b.edit_line("ms-c08-s11", ms="Sudah! Semua dua puluh empat ringgit.")
 
 
 def ch9(b):

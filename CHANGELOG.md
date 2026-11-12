@@ -13,6 +13,7 @@
     from later chapters or words that are not in the ledger; whole-word se- and ter- frames in Ch6; formal counters marked;
     register notes (mudah / senang, tapau, oren / jingga, sahaja / saja).
   - New frames: "Kenapa / Mengapa / Apa sebab" (Ch5), "Saya pilih ___" (Ch6).
+  - Three more scenario lines no longer use later-chapter words (Ch2 "di sini", Ch3 "Bagus!", Ch8 "Siap!").
   - Scenes: "Rumah terbuka Hari Raya" is now a general "Rumah terbuka" with six festival cards and a note for each;
     new Dunia scene "Salam di pejabat" for Chapter 1; Di klinik says hospital; ママック (Sam's rendering) everywhere.
   - Workbook v5, `tools/make_vocab_bank_v5.py`, `tools/ledger/sheet_to_snapshot.py`, a Dunia `Note` column and

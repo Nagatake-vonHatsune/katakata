@@ -26,7 +26,7 @@ The current version is **0.10.0** (release candidate). Bump `package.json` to 1.
 ## After the clean-up (12 Nov 2026)
 
 Open items from [CLEANUP-2026-11-12.md](CLEANUP-2026-11-12.md): the Cikgu Sensai snapshot refresh (`c01.json` to `c09.json`),
-the Hanashishou mapping of L-0592 to L-0330, the Kamus Dewan check of L-0983 to L-1088, and Sam's four questions.
+the Hanashishou mapping of L-0592 to L-0330, and the Kamus Dewan check of L-0983 to L-1088 (with the native Japanese review, once at the end of the whole project, Sam 12 Nov).
 
 ## Phase 2 (1.x), from spec section 12
 
