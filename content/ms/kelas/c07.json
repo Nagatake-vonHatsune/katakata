@@ -157,24 +157,6 @@
       "chapter": 7
     },
     {
-      "id": "ms-c07-009",
-      "lang": "ms",
-      "term": "depan / hadapan",
-      "gloss_en": "front",
-      "gloss_ja": "前",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "hadapan is more formal.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "kelas-c07"
-        }
-      ],
-      "scene": "kelas-c07",
-      "chapter": 7
-    },
-    {
       "id": "ms-c07-010",
       "lang": "ms",
       "term": "belakang",
@@ -290,7 +272,7 @@
       "gloss_ja": "間",
       "pos": "noun",
       "affix_tag": "root",
-      "note": "di antara A dan B",
+      "note": "Use: di antara A dan B, e.g. Bank di antara kedai dan stesen.",
       "links": [
         {
           "type": "babak",
@@ -434,7 +416,7 @@
       "gloss_ja": "まっすぐ",
       "pos": "adj",
       "affix_tag": "root",
-      "note": "jalan lurus = go straight",
+      "note": "lurus = straight, of a straight road or line. For directions say terus: jalan terus, pergi terus, terus depan.",
       "links": [
         {
           "type": "babak",
@@ -776,7 +758,7 @@
       "gloss_ja": "モスク",
       "pos": "noun",
       "affix_tag": "root",
-      "note": null,
+      "note": "Used as a landmark in directions, one of the set masjid, gereja, kuil, tokong, gurdwara, surau.",
       "links": [
         {
           "type": "babak",
@@ -884,7 +866,313 @@
       "gloss_ja": "渋滞",
       "pos": "noun",
       "affix_tag": "root",
-      "note": "Third meaning of jam.",
+      "note": "Third meaning of jam. Say kalau tidak sesak or kalau tidak jam, so it is clear this is traffic, not the hour.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-050",
+      "lang": "ms",
+      "term": "sesak",
+      "gloss_en": "Crowded; jammed (of traffic)",
+      "gloss_ja": "混んでいる、渋滞している",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "sesak is standard. In speech jam also means traffic: kalau tidak sesak, kalau tidak jam.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-051",
+      "lang": "ms",
+      "term": "tempat",
+      "gloss_en": "place",
+      "gloss_ja": "場所",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-052",
+      "lang": "ms",
+      "term": "utara",
+      "gloss_en": "north",
+      "gloss_ja": "北",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-053",
+      "lang": "ms",
+      "term": "selatan",
+      "gloss_en": "south",
+      "gloss_ja": "南",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-054",
+      "lang": "ms",
+      "term": "timur",
+      "gloss_en": "east",
+      "gloss_ja": "東",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-055",
+      "lang": "ms",
+      "term": "barat",
+      "gloss_en": "west",
+      "gloss_ja": "西",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-056",
+      "lang": "ms",
+      "term": "lintasan",
+      "gloss_en": "crossing (lintasan pejalan kaki = pedestrian crossing)",
+      "gloss_ja": "横断歩道・渡る場所",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-057",
+      "lang": "ms",
+      "term": "gereja",
+      "gloss_en": "church",
+      "gloss_ja": "教会",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Used as a landmark in directions, one of the set masjid, gereja, kuil, tokong, gurdwara, surau.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-058",
+      "lang": "ms",
+      "term": "kuil",
+      "gloss_en": "Hindu temple",
+      "gloss_ja": "ヒンドゥー教寺院",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Used as a landmark in directions, one of the set masjid, gereja, kuil, tokong, gurdwara, surau.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-059",
+      "lang": "ms",
+      "term": "tokong",
+      "gloss_en": "Chinese temple",
+      "gloss_ja": "中国寺院（廟）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Used as a landmark in directions, one of the set masjid, gereja, kuil, tokong, gurdwara, surau.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-060",
+      "lang": "ms",
+      "term": "gurdwara",
+      "gloss_en": "Sikh temple",
+      "gloss_ja": "シク教寺院（グルドワラ）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Used as a landmark in directions, one of the set masjid, gereja, kuil, tokong, gurdwara, surau.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-061",
+      "lang": "ms",
+      "term": "surau",
+      "gloss_en": "small prayer hall",
+      "gloss_ja": "礼拝所（スラウ）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Used as a landmark in directions, one of the set masjid, gereja, kuil, tokong, gurdwara, surau.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-062",
+      "lang": "ms",
+      "term": "kilometer",
+      "gloss_en": "kilometre",
+      "gloss_ja": "キロメートル",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Malaysian spelling: kilometer.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-063",
+      "lang": "ms",
+      "term": "terus",
+      "gloss_en": "straight on; directly (terus depan = straight ahead)",
+      "gloss_ja": "まっすぐ・そのまま",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Jalan terus. Pergi terus. Terus depan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-064",
+      "lang": "ms",
+      "term": "tangga",
+      "gloss_en": "stairs",
+      "gloss_ja": "階段",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Naik tangga.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-065",
+      "lang": "ms",
+      "term": "jangan",
+      "gloss_en": "do not (negative command)",
+      "gloss_ja": "〜しないで・〜するな",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Jangan belok kiri. = Don't turn left.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c07"
+        }
+      ],
+      "scene": "kelas-c07",
+      "chapter": 7
+    },
+    {
+      "id": "ms-c07-066",
+      "lang": "ms",
+      "term": "sebulan",
+      "gloss_en": "per month; one month (sewa sebulan = rent per month)",
+      "gloss_ja": "1か月・月に",
+      "pos": "noun",
+      "affix_tag": "se-",
+      "note": "sewa sebulan = rent per month. A whole word: the short form of setiap bulan.",
       "links": [
         {
           "type": "babak",
@@ -899,9 +1187,9 @@
     {
       "id": "ms-c07-f01",
       "frame": "(title) mahu pergi ke mana? / Saya mahu pergi ke ___.",
-      "example": "Saya mahu pergi ke stesen LRT.",
-      "meaning_en": "I want to go to the LRT station.",
-      "meaning_ja": "LRTの駅に行きたいです。"
+      "example": "Saya mahu pergi ke stesen.",
+      "meaning_en": "I want to go to the station.",
+      "meaning_ja": "駅に行きたいです。"
     },
     {
       "id": "ms-c07-f02",
@@ -912,9 +1200,9 @@
     },
     {
       "id": "ms-c07-f03",
-      "frame": "Jalan lurus, kemudian belok kiri/kanan di ___.",
-      "example": "Jalan lurus, kemudian belok kanan di lampu isyarat.",
-      "meaning_en": "Go straight, then turn right at the lights.",
+      "frame": "Jalan terus, kemudian belok kiri / kanan di ___.",
+      "example": "Jalan terus, kemudian belok kanan di lampu isyarat.",
+      "meaning_en": "Go straight on, then turn right at the lights.",
       "meaning_ja": "まっすぐ行って、信号を右に曲がってください。"
     },
     {
@@ -927,26 +1215,26 @@
     {
       "id": "ms-c07-f05",
       "frame": "Berapa lama ke ___? / Lebih kurang ___ minit naik ___.",
-      "example": "Berapa lama ke KLCC? Lebih kurang dua puluh minit naik LRT.",
-      "meaning_en": "How long to KLCC? About 20 minutes by LRT.",
-      "meaning_ja": "KLCCまでどのくらいかかりますか。LRTで約20分です。"
+      "example": "Berapa lama ke pejabat? Lebih kurang dua puluh minit naik teksi.",
+      "meaning_en": "How long to the office? About 20 minutes by taxi.",
+      "meaning_ja": "オフィスまでどのくらいかかりますか。タクシーで約20分です。"
     }
   ],
   "scenario": {
-    "title_en": "Finding the LRT, then a Grab ride",
-    "title_ja": "LRTを探して、Grabに乗る",
+    "title_en": "Finding the station, then a taxi ride",
+    "title_ja": "駅を探して、タクシーに乗る",
     "lines": [
       {
         "id": "ms-c07-s01",
         "speaker": "Tanaka",
-        "ms": "Maaf, tumpang tanya. Stesen LRT di mana?",
-        "en": "Excuse me, where's the LRT station?"
+        "ms": "Maaf, tumpang tanya. Stesen di mana?",
+        "en": "Excuse me, where's the station?"
       },
       {
         "id": "ms-c07-s02",
         "speaker": "Kak Siti",
-        "ms": "Encik jalan lurus, kemudian belok kanan di lampu isyarat.",
-        "en": "Go straight, then turn right at the traffic lights."
+        "ms": "Encik jalan terus, kemudian belok kanan di lampu isyarat.",
+        "en": "Go straight on, then turn right at the traffic lights."
       },
       {
         "id": "ms-c07-s03",
@@ -986,21 +1274,21 @@
       },
       {
         "id": "ms-c07-s09",
-        "speaker": "(Later, in a Grab)",
+        "speaker": "(Later, in a taxi)",
         "ms": "Pemandu: Encik mahu pergi ke mana?",
         "en": "Where would you like to go?"
       },
       {
         "id": "ms-c07-s10",
         "speaker": "Tanaka",
-        "ms": "Ke Pavilion. Berapa lama?",
-        "en": "To Pavilion. How long will it take?"
+        "ms": "Ke pejabat. Berapa lama?",
+        "en": "To the office. How long will it take?"
       },
       {
         "id": "ms-c07-s11",
         "speaker": "Pemandu",
-        "ms": "Lebih kurang dua puluh minit, kalau tak jam.",
-        "en": "About twenty minutes, if there's no jam."
+        "ms": "Lebih kurang dua puluh minit, kalau tidak sesak.",
+        "en": "About twenty minutes, if there is no traffic jam."
       },
       {
         "id": "ms-c07-s12",
@@ -1024,14 +1312,12 @@
       "ms-c07-004",
       "ms-c07-007",
       "ms-c07-008",
-      "ms-c07-009",
       "ms-c07-015",
       "ms-c07-019",
       "ms-c07-020",
       "ms-c07-021",
       "ms-c07-022",
       "ms-c07-023",
-      "ms-c07-024",
       "ms-c07-025",
       "ms-c07-026",
       "ms-c07-027",
@@ -1043,8 +1329,11 @@
       "ms-c07-036",
       "ms-c07-040",
       "ms-c07-041",
+      "ms-c07-045",
       "ms-c07-048",
-      "ms-c07-049"
+      "ms-c07-050",
+      "ms-c07-063",
+      "ms-c04-019"
     ],
     "frames": [
       "ms-c07-f01",

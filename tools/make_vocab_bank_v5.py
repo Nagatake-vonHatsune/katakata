@@ -413,7 +413,49 @@ def ch6(b):
                 en="Yes. D is as expensive as A, but D is the newest, has three rooms and is very spacious.")
 
 
-CHAPTERS = {1: ch1, 2: ch2, 3: ch3, 4: ch4, 5: ch5, 6: ch6}
+def ch7(b):
+    worship = "Used as a landmark in directions, one of the set masjid, gereja, kuil, tokong, gurdwara, surau."
+    new = [
+        ("L-0620", dict(note="sesak is standard. In speech jam also means traffic: kalau tidak sesak, kalau tidak jam.",
+                        drop=["ms-j-daily-life-31"], place="Ch7")),
+        ("L-1010", {}), ("L-1011", {}), ("L-1012", {}), ("L-1013", {}), ("L-1014", {}), ("L-1015", {}),
+        ("L-1054", dict(note=worship)), ("L-1055", dict(note=worship)), ("L-1056", dict(note=worship)),
+        ("L-1057", dict(note=worship)), ("L-1058", dict(note=worship)),
+        ("L-1059", dict(note="Malaysian spelling: kilometer.")),
+        ("L-1060", dict(note="Jalan terus. Pergi terus. Terus depan.")),
+        ("L-1061", dict(note="Naik tangga.")),
+        ("L-1062", dict(note="Jangan belok kiri. = Don't turn left.")),
+        ("L-1063", dict(note="sewa sebulan = rent per month. A whole word: the short form of setiap bulan.")),
+    ]
+    for lid, kw in new:
+        b.add_kelas(7, lid, **kw)
+    b.edit_kelas("ms-c07-043", note=worship)  # masjid, with the same even-handed set (Sam, 12 Nov)
+    # «jalan lurus» is not used for directions (Sam, 12 Nov): terus, jalan terus, pergi terus, terus depan.
+    b.led("L-0318")  # lurus: card and frame fixed, so the ledger action is done
+    b.edit_kelas("ms-c07-024", note="lurus = straight, of a straight road or line. For directions say terus: jalan terus, pergi terus, terus depan.")
+    b.edit_frame("ms-c07-f03", frame="Jalan terus, kemudian belok kiri / kanan di ___.", example="Jalan terus, kemudian belok kanan di lampu isyarat.",
+                 meaning="Go straight on, then turn right at the lights.")
+    b.edit_kelas("ms-c07-049", note="Third meaning of jam. Say kalau tidak sesak or kalau tidak jam, so it is clear this is traffic, not the hour.")
+    b.edit_kelas("ms-c07-016", note="Use: di antara A dan B, e.g. Bank di antara kedai dan stesen.")
+    # depan / hadapan duplicates depan (ms-c04-019): one card, with the formal form in its note (Sam, in session).
+    b.remove_kelas("ms-c07-009")
+    b.edit_kelas("ms-c04-019", note="minggu depan = next week. hadapan is the formal form.")
+    b.led("L-0304", ids=["ms-c04-019"], place="Ch4 (one card with L-0173; reviewed in Ch7)")
+    b.led("L-0173", place="Ch4 (reviewed in Ch7)")
+    # pintu masuk: L-0592 is Retired; the card ms-c07-036 belongs to L-0330 only.
+    b.led("L-0592", ids=[], place="Retired: duplicate of L-0330")
+    # Frames and scenario: LRT, Grab, Pavilion and KLCC are not ledger words, and 'kalau tak jam' used spoken tak.
+    b.edit_frame("ms-c07-f01", example="Saya mahu pergi ke stesen.", meaning="I want to go to the station.")
+    b.edit_frame("ms-c07-f05", example="Berapa lama ke pejabat? Lebih kurang dua puluh minit naik teksi.", meaning="How long to the office? About 20 minutes by taxi.")
+    b.retitle_scenario(7, "Finding the station, then a taxi ride")
+    b.edit_line("ms-c07-s01", ms="Maaf, tumpang tanya. Stesen di mana?", en="Excuse me, where's the station?")
+    b.edit_line("ms-c07-s02", ms="Encik jalan terus, kemudian belok kanan di lampu isyarat.", en="Go straight on, then turn right at the traffic lights.")
+    b.edit_line("ms-c07-s09", speaker="(Later, in a taxi)")
+    b.edit_line("ms-c07-s10", ms="Ke pejabat. Berapa lama?", en="To the office. How long will it take?")
+    b.edit_line("ms-c07-s11", ms="Lebih kurang dua puluh minit, kalau tidak sesak.", en="About twenty minutes, if there is no traffic jam.")
+
+
+CHAPTERS = {1: ch1, 2: ch2, 3: ch3, 4: ch4, 5: ch5, 6: ch6, 7: ch7}
 
 
 def main():

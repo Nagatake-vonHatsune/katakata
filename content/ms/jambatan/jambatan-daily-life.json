@@ -528,24 +528,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-daily-life-31",
-      "lang": "ms",
-      "term": "sesak",
-      "gloss_en": "Crowded; jammed (of traffic)",
-      "gloss_ja": "混んでいる、渋滞している",
-      "pos": "adjective",
-      "affix_tag": "root",
-      "note": "Hanashishou: Jalan sangat sesak.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-daily-life"
-        }
-      ],
-      "scene": "dunia-jambatan-daily-life",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-daily-life-32",
       "lang": "ms",
       "term": "terlepas",
