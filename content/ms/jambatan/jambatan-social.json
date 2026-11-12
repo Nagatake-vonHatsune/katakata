@@ -24,24 +24,6 @@
   },
   "cards": [
     {
-      "id": "ms-j-social-01",
-      "lang": "ms",
-      "term": "hujung minggu",
-      "gloss_en": "Weekend",
-      "gloss_ja": "週末",
-      "pos": "noun",
-      "affix_tag": "chunk",
-      "note": "Hanashishou: Apa awak buat hujung minggu ini?",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social"
-        }
-      ],
-      "scene": "dunia-jambatan-social",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-02",
       "lang": "ms",
       "term": "set",

@@ -947,6 +947,348 @@
       ],
       "scene": "kelas-c04",
       "chapter": 4
+    },
+    {
+      "id": "ms-c04-057",
+      "lang": "ms",
+      "term": "sarapan",
+      "gloss_en": "Breakfast",
+      "gloss_ja": "朝食",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Sarapan pukul tujuh.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-058",
+      "lang": "ms",
+      "term": "hujung minggu",
+      "gloss_en": "Weekend",
+      "gloss_ja": "週末",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-059",
+      "lang": "ms",
+      "term": "datang",
+      "gloss_en": "to come",
+      "gloss_ja": "来る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-060",
+      "lang": "ms",
+      "term": "bila",
+      "gloss_en": "when",
+      "gloss_ja": "いつ",
+      "pos": "question",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-061",
+      "lang": "ms",
+      "term": "tarikh",
+      "gloss_en": "date (day and month)",
+      "gloss_ja": "日付",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Apa tarikh hari ini? asks the full date. Hari ini hari bulan berapa? asks the day of the month (answer: hari bulan sebelas).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-062",
+      "lang": "ms",
+      "term": "Januari",
+      "gloss_en": "January",
+      "gloss_ja": "1月",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-063",
+      "lang": "ms",
+      "term": "Februari",
+      "gloss_en": "February",
+      "gloss_ja": "2月",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-064",
+      "lang": "ms",
+      "term": "Mac",
+      "gloss_en": "March",
+      "gloss_ja": "3月",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Malaysian spelling: Mac.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-065",
+      "lang": "ms",
+      "term": "April",
+      "gloss_en": "April",
+      "gloss_ja": "4月",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-066",
+      "lang": "ms",
+      "term": "Mei",
+      "gloss_en": "May",
+      "gloss_ja": "5月",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-067",
+      "lang": "ms",
+      "term": "Jun",
+      "gloss_en": "June",
+      "gloss_ja": "6月",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Malaysian spelling: Jun.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-068",
+      "lang": "ms",
+      "term": "Julai",
+      "gloss_en": "July",
+      "gloss_ja": "7月",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Malaysian spelling: Julai.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-069",
+      "lang": "ms",
+      "term": "Ogos",
+      "gloss_en": "August",
+      "gloss_ja": "8月",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Malaysian spelling: Ogos.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-070",
+      "lang": "ms",
+      "term": "September",
+      "gloss_en": "September",
+      "gloss_ja": "9月",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-071",
+      "lang": "ms",
+      "term": "Oktober",
+      "gloss_en": "October",
+      "gloss_ja": "10月",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-072",
+      "lang": "ms",
+      "term": "November",
+      "gloss_en": "November",
+      "gloss_ja": "11月",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-073",
+      "lang": "ms",
+      "term": "Disember",
+      "gloss_en": "December",
+      "gloss_ja": "12月",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Malaysian spelling: Disember.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-074",
+      "lang": "ms",
+      "term": "sekejap",
+      "gloss_en": "a moment, briefly",
+      "gloss_ja": "ちょっとの間",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Tunggu sekejap. = Wait a moment.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-c04-075",
+      "lang": "ms",
+      "term": "lewat",
+      "gloss_en": "late",
+      "gloss_ja": "遅れて・遅い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Everyday word for 'late'; lambat also means slow.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c04"
+        }
+      ],
+      "scene": "kelas-c04",
+      "chapter": 4
     }
   ],
   "frames": [
@@ -960,9 +1302,9 @@
     {
       "id": "ms-c04-f02",
       "frame": "Saya ___ setiap ___.",
-      "example": "Saya minum kopi setiap pagi.",
-      "meaning_en": "I drink coffee every morning.",
-      "meaning_ja": "毎朝コーヒーを飲みます。"
+      "example": "Saya bangun setiap pagi.",
+      "meaning_en": "I get up every morning.",
+      "meaning_ja": "毎朝起きます。"
     },
     {
       "id": "ms-c04-f03",
@@ -974,9 +1316,9 @@
     {
       "id": "ms-c04-f04",
       "frame": "Saya akan ___ (time).",
-      "example": "Saya akan balik ke Jepun bulan depan.",
-      "meaning_en": "I'll go back to Japan next month.",
-      "meaning_ja": "来月日本に帰ります。"
+      "example": "Saya akan balik bulan depan.",
+      "meaning_en": "I'll go home next month.",
+      "meaning_ja": "来月帰ります。"
     },
     {
       "id": "ms-c04-f05",
@@ -988,9 +1330,9 @@
     {
       "id": "ms-c04-f06",
       "frame": "Saya pernah / belum pernah ___.",
-      "example": "Saya belum pernah makan durian.",
-      "meaning_en": "I've never eaten durian.",
-      "meaning_ja": "ドリアンを食べたことがありません。"
+      "example": "Saya belum pernah makan mangga.",
+      "meaning_en": "I've never eaten a mango.",
+      "meaning_ja": "マンゴーを食べたことがありません。"
     },
     {
       "id": "ms-c04-f07",
@@ -1037,26 +1379,26 @@
       {
         "id": "ms-c04-s06",
         "speaker": "Tanaka",
-        "ms": "Saya biasanya makan di kedai mamak. Encik pula?",
-        "en": "I usually eat at a mamak shop. And you?"
+        "ms": "Saya biasanya makan di pejabat. Encik pula?",
+        "en": "I usually eat at the office. And you?"
       },
       {
         "id": "ms-c04-s07",
         "speaker": "Encik Rahman",
-        "ms": "Saya kadang-kadang makan di sana. Setiap Jumaat saya makan nasi kandar.",
-        "en": "Sometimes I eat there. Every Friday I have nasi kandar."
+        "ms": "Saya kadang-kadang makan dengan kawan. Setiap Jumaat saya makan dengan isteri saya.",
+        "en": "Sometimes I eat with friends. Every Friday I eat with my wife."
       },
       {
         "id": "ms-c04-s08",
         "speaker": "Tanaka",
-        "ms": "Saya belum pernah makan nasi kandar!",
-        "en": "I've never had nasi kandar!"
+        "ms": "Hari ini boleh saya makan dengan encik?",
+        "en": "May I eat with you today?"
       },
       {
         "id": "ms-c04-s09",
         "speaker": "Encik Rahman",
-        "ms": "Jom, hari ini kita makan nasi kandar!",
-        "en": "Come on, today we'll have nasi kandar!"
+        "ms": "Boleh! Jom, hari ini kita makan sama-sama!",
+        "en": "Of course! Come on, let's eat together today!"
       },
       {
         "id": "ms-c04-s10",
@@ -1085,7 +1427,7 @@
       "ms-c04-040",
       "ms-c04-042",
       "ms-c04-043",
-      "ms-c04-044",
+      "ms-c04-046",
       "ms-c04-049",
       "ms-c04-052",
       "ms-c04-053",

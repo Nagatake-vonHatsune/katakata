@@ -322,7 +322,34 @@ def ch3(b):
         b.add_kelas(3, lid, note=note)
 
 
-CHAPTERS = {1: ch1, 2: ch2, 3: ch3}
+def ch4(b):
+    # 19 new cards. sarapan and hujung minggu had only Jambatan cards; the Jambatan twins drop out when the
+    # bridge importer is re-run (class words are not repeated there), so the ledger rows lose those IDs.
+    b.add_kelas(4, "L-0614", note="Sarapan pukul tujuh.", drop=["ms-j-daily-life-25"], place="Ch4")
+    b.add_kelas(4, "L-0702", drop=["ms-j-social-01"], place="Ch4")
+    b.add_kelas(4, "L-1006")
+    b.add_kelas(4, "L-1007")
+    b.add_kelas(4, "L-1032", note="Apa tarikh hari ini? asks the full date. Hari ini hari bulan berapa? asks the day of the month "
+                                  "(answer: hari bulan sebelas).")
+    spelling = {"L-1035": "Mac", "L-1038": "Jun", "L-1039": "Julai", "L-1040": "Ogos", "L-1044": "Disember"}
+    for n in range(1033, 1045):
+        lid = f"L-{n}"
+        b.add_kelas(4, lid, note=f"Malaysian spelling: {spelling[lid]}." if lid in spelling else None)
+    b.add_kelas(4, "L-1046", note="Tunggu sekejap. = Wait a moment.")
+    b.add_kelas(4, "L-1047", note="Everyday word for 'late'; lambat also means slow.")
+    # Frames that used words from later chapters (kopi Ch5, ke Ch7, durian not in the ledger). Frame IDs stay.
+    b.edit_frame("ms-c04-f02", example="Saya bangun setiap pagi.", meaning="I get up every morning.")
+    b.edit_frame("ms-c04-f04", example="Saya akan balik bulan depan.", meaning="I'll go home next month.")
+    b.edit_frame("ms-c04-f06", example="Saya belum pernah makan mangga.", meaning="I've never eaten a mango.")
+    # Scenario: kedai mamak (Ch5/7), nasi kandar (not in the ledger) and "di sana" (Ch7) are replaced by Ch1-4 words.
+    b.edit_line("ms-c04-s06", ms="Saya biasanya makan di pejabat. Encik pula?", en="I usually eat at the office. And you?")
+    b.edit_line("ms-c04-s07", ms="Saya kadang-kadang makan dengan kawan. Setiap Jumaat saya makan dengan isteri saya.",
+                en="Sometimes I eat with friends. Every Friday I eat with my wife.")
+    b.edit_line("ms-c04-s08", ms="Hari ini boleh saya makan dengan encik?", en="May I eat with you today?")
+    b.edit_line("ms-c04-s09", ms="Boleh! Jom, hari ini kita makan sama-sama!", en="Of course! Come on, let's eat together today!")
+
+
+CHAPTERS = {1: ch1, 2: ch2, 3: ch3, 4: ch4}
 
 
 def main():
