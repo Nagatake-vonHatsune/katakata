@@ -30,7 +30,8 @@
     "pejabat-sembang",
     "badan-bayi",
     "sukan-badminton",
-    "simpulan-harian"
+    "simpulan-harian",
+    "pejabat-salam"
   ],
   "chapter_titles": {
     "1": {
@@ -202,6 +203,10 @@
     "simpulan-harian": {
       "title": "毎日の慣用句",
       "setting": "昼ごはんのとき、ラーマンさんが職場の人たちを慣用句で説明します。ほとんどが体の言葉でできているので、一つ一つが絵になります。"
+    },
+    "pejabat-salam": {
+      "title": "オフィスのあいさつ",
+      "setting": "田中さんの最初の週。朝はチームにあいさつし、エレベーターで同僚に会い、夕方に別れのあいさつをします。"
     }
   },
   "frame_meaning_ja": {
@@ -418,6 +423,24 @@
     "ms-d-simpulan-harian-14": "🐔",
     "ms-d-pejabat-sembang-09": "👍",
     "ms-d-pejabat-sembang-12": "🚶",
-    "ms-d-sukan-badminton-15": "🥇"
+    "ms-d-sukan-badminton-15": "🥇",
+    "ms-d-pejabat-salam-01": "🌅",
+    "ms-d-pejabat-salam-02": "🤝",
+    "ms-d-pejabat-salam-04": "👨‍💼",
+    "ms-d-pejabat-salam-05": "👩‍💼",
+    "ms-d-pejabat-salam-07": "🙏",
+    "ms-d-pejabat-salam-09": "🌇",
+    "ms-d-pejabat-salam-11": "👋"
+  },
+  "sedia_kelas_review": {
+    "2": [
+      "ms-c02-001"
+    ],
+    "4": [
+      "ms-c04-008",
+      "ms-c04-009",
+      "ms-c04-010",
+      "ms-c04-011"
+    ]
   }
 }

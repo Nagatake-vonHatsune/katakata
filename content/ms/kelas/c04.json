@@ -139,78 +139,6 @@
       "chapter": 4
     },
     {
-      "id": "ms-c04-008",
-      "lang": "ms",
-      "term": "pagi",
-      "gloss_en": "morning",
-      "gloss_ja": "朝",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": null,
-      "links": [
-        {
-          "type": "babak",
-          "target": "kelas-c04"
-        }
-      ],
-      "scene": "kelas-c04",
-      "chapter": 4
-    },
-    {
-      "id": "ms-c04-009",
-      "lang": "ms",
-      "term": "tengah hari",
-      "gloss_en": "midday",
-      "gloss_ja": "昼",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": null,
-      "links": [
-        {
-          "type": "babak",
-          "target": "kelas-c04"
-        }
-      ],
-      "scene": "kelas-c04",
-      "chapter": 4
-    },
-    {
-      "id": "ms-c04-010",
-      "lang": "ms",
-      "term": "petang",
-      "gloss_en": "afternoon, early evening",
-      "gloss_ja": "午後・夕方",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": null,
-      "links": [
-        {
-          "type": "babak",
-          "target": "kelas-c04"
-        }
-      ],
-      "scene": "kelas-c04",
-      "chapter": 4
-    },
-    {
-      "id": "ms-c04-011",
-      "lang": "ms",
-      "term": "malam",
-      "gloss_en": "night",
-      "gloss_ja": "夜",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": null,
-      "links": [
-        {
-          "type": "babak",
-          "target": "kelas-c04"
-        }
-      ],
-      "scene": "kelas-c04",
-      "chapter": 4
-    },
-    {
       "id": "ms-c04-012",
       "lang": "ms",
       "term": "hari",
@@ -1142,8 +1070,6 @@
     "cards": [
       "ms-c04-003",
       "ms-c04-007",
-      "ms-c04-008",
-      "ms-c04-010",
       "ms-c04-012",
       "ms-c04-014",
       "ms-c04-015",
@@ -1163,7 +1089,11 @@
       "ms-c04-049",
       "ms-c04-052",
       "ms-c04-053",
-      "ms-c04-056"
+      "ms-c04-056",
+      "ms-c04-008",
+      "ms-c04-009",
+      "ms-c04-010",
+      "ms-c04-011"
     ],
     "frames": [
       "ms-c04-f01",

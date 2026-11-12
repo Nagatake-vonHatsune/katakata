@@ -58,9 +58,9 @@ describe('katakana hints', () => {
 });
 
 describe('content', () => {
-  it('ships all nine chapters and nineteen Dunia scenes', () => {
+  it('ships all nine chapters and twenty Dunia scenes', () => {
     expect(content.chapters.map((c) => c.chapter)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-    expect(content.scenes.filter((s) => s.world.id !== 'jambatan')).toHaveLength(19);
+    expect(content.scenes.filter((s) => s.world.id !== 'jambatan')).toHaveLength(20);
   });
   it('every Dunia scene has enough pictures for Cari Benda', () => {
     for (const s of content.scenes.filter((x) => x.world.id !== 'jambatan')) expect(s.cards.filter((c) => c.image).length, s.id).toBeGreaterThanOrEqual(4);

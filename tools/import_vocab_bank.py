@@ -9,6 +9,10 @@ emoji, which packs are live) come from tools/import-overrides.json.
 
 Re-running overwrites the packs, so edit the workbook or the overrides file,
 not the generated JSON, if you want changes to survive a re-import.
+
+Optional workbook column: "Note" on the Dunia scenes tab (a card note, e.g. one line per festival).
+Optional overrides key: "sedia_kelas_review": {"4": ["ms-c04-008", ...]} adds cards that live in other
+chapters (moved or merged cards) to a chapter's Sedia Kelas list, so the chapter still reviews them.
 """
 
 import json
@@ -119,6 +123,7 @@ def main(xlsx):
         for s in ch_scen:
             used.update(tokens(s["Malay"]))
         core = [c["id"] for c in cards if not c.get("recognise_only") and used_in(c["term"], used)]
+        core += [i for i in OVR.get("sedia_kelas_review", {}).get(str(ch), []) if i not in core]
 
         pack = {
             "schema": SCHEMA,
@@ -184,7 +189,7 @@ def main(xlsx):
                 "gloss_ja": clean(d["Japanese (draft)"]),
                 "pos": clean(d["POS"]),
                 "affix_tag": clean(d["Affix tag"]),
-                "note": None,
+                "note": clean(d.get("Note")),
                 "links": links,
                 "scene": f"dunia-{sid}",
                 "chapter": ch,

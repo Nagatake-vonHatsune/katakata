@@ -13,24 +13,6 @@
   },
   "cards": [
     {
-      "id": "ms-c02-001",
-      "lang": "ms",
-      "term": "saya",
-      "gloss_en": "I, me (polite)",
-      "gloss_ja": "私",
-      "pos": "pron",
-      "affix_tag": "root",
-      "note": null,
-      "links": [
-        {
-          "type": "babak",
-          "target": "kelas-c02"
-        }
-      ],
-      "scene": "kelas-c02",
-      "chapter": 2
-    },
-    {
       "id": "ms-c02-002",
       "lang": "ms",
       "term": "aku",
@@ -1281,7 +1263,6 @@
   },
   "sedia_kelas": {
     "cards": [
-      "ms-c02-001",
       "ms-c02-009",
       "ms-c02-010",
       "ms-c02-013",
@@ -1307,7 +1288,8 @@
       "ms-c02-040",
       "ms-c02-041",
       "ms-c02-048",
-      "ms-c02-058"
+      "ms-c02-058",
+      "ms-c02-001"
     ],
     "frames": [
       "ms-c02-f01",
