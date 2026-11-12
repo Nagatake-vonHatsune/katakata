@@ -478,7 +478,55 @@ def ch8(b):
     b.edit_kelas("ms-c08-019", note="setin sup.")
 
 
-CHAPTERS = {1: ch1, 2: ch2, 3: ch3, 4: ch4, 5: ch5, 6: ch6, 7: ch7, 8: ch8}
+def ch9(b):
+    # Thirteen class cards: Sam's eight chapter 9 rows (L-1076 to L-1083) and the five he approved after the
+    # brief (L-1084 to L-1088: signs and notices, and Selamat Pesta Kaamatan).
+    notes = {
+        "L-1076": "Isteri saya buat kek ini.", "L-1077": None, "L-1078": None, "L-1079": "Mostly met inside dilarang.",
+        "L-1080": None, "L-1081": "Mari makan. jom (Ch2) is the spoken equivalent: Jom makan.", "L-1082": None, "L-1083": None,
+        "L-1084": "Pesta Kaamatan; also seen in festival notices.",
+        "L-1085": "PERHATIAN on a sign or notice = Attention! Learn it as a whole word.",
+        "L-1086": "Ditutup hingga pukul enam. hingga is formal; sampai (Ch4) is the everyday word.",
+        "L-1087": "TOLAK on a door = push.",
+        "L-1088": "TARIK on a door = pull. Also in teh tarik.",
+    }
+    for lid, note in notes.items():
+        b.add_kelas(9, lid, note=note)
+    # The general open-house scene (Sam, 12 Nov): "Rumah terbuka Hari Raya" becomes "Rumah terbuka". The pack
+    # ID stays perayaan-raya, so card IDs, progress and links do not change.
+    b.rename_scene("perayaan-raya", "Rumah terbuka", "Open house",
+                   "Encik Rahman invites Tanaka to his open house. In Malaysia a rumah terbuka is held at many festivals; the notes show a few.")
+    here = "Dunia · Rumah terbuka (primes Ch9)"
+    festival = [
+        ("L-1070", "Tahun Baru Cina is the everyday name; Tahun Baharu Cina is the official one (the federal public-holiday list, Education Ministry notices). "
+                   "Greeting: Selamat Tahun Baru Cina (no Hari)."),
+        ("L-1071", "Greeting: Selamat Hari Deepavali."),
+        ("L-1072", "Celebrated by Malaysia's Christian communities. Greeting: Selamat Hari Krismas."),
+        ("L-1073", "Sarawak, 1 June, a public holiday there: gazetted on 25 September 1964 and first celebrated on 1 June 1965 (The Borneo Post, "
+                   "New Straits Times). Greeting: Selamat Hari Gawai. The communities' own greetings are not Malay, so they are not taught here."),
+        ("L-1074", "Sabah and Labuan, 30 and 31 May, a public holiday there. Greeting: Selamat Pesta Kaamatan (Bernama, 30 May 2026). "
+                   "The communities' own greetings are not Malay, so they are not taught here."),
+        ("L-1075", "angpau is the Malay spelling; English-language newspapers often write 'ang pow'."),
+    ]
+    for lid, note in festival:
+        b.add_dunia("perayaan-raya", lid, note=note, place=here)
+    # The Raya rows still named the old scene.
+    for lid, row in b.ledger.items():
+        if "ms-d-perayaan-raya-" in row["Kata-Kata (card IDs)"] and "Rumah terbuka Hari Raya" in row["Kata-Kata place"]:
+            b.led(lid, place=row["Kata-Kata place"].replace("Rumah terbuka Hari Raya", "Rumah terbuka"))
+    # Frame f06 «(thing) saya (verb)» has no card of its own: a note on dibuat, and «cuci» is a ledger word now.
+    b.edit_kelas("ms-c09-004", note="buat (make). Active: Isteri saya buat kek ini. Thing + saya + verb (frame f06): Pinggan saya cuci.")
+    # pinggan duplicates the Ch8 counter card (the ledger counts it once, L-0355): one card, with the plate sense in its note.
+    b.remove_kelas("ms-c09-028")
+    b.edit_kelas("ms-c08-016", note="sepinggan mi goreng. pinggan is also the plate itself: Pinggan saya cuci.")
+    b.led("L-0355", ids=["ms-c08-016"], place="Ch8; plate sense reviewed in Ch9")
+    # Scenario: durian (not in the ledger), spoken "jom kemas" and "tak ada" before tidak are replaced.
+    b.edit_line("ms-c09-s06", ms="Pisang goreng ada?", en="Is there any pisang goreng?")
+    b.edit_line("ms-c09-s07", ms="Sudah habis. Pisang goreng dimakan semua tadi!", en="It's finished. All the pisang goreng was eaten earlier!")
+    b.edit_line("ms-c09-s08", ms="Pejabat akan ditutup pukul enam. Mari kita kemas.", en="The office closes at six. Let's tidy up.")
+
+
+CHAPTERS = {1: ch1, 2: ch2, 3: ch3, 4: ch4, 5: ch5, 6: ch6, 7: ch7, 8: ch8, 9: ch9}
 
 
 def main():

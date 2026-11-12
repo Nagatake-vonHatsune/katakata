@@ -13,13 +13,13 @@
     "ja": "お祭り"
   },
   "title": {
-    "ms": "Rumah terbuka Hari Raya",
-    "en": "A Hari Raya open house",
-    "ja": "ハリラヤのオープンハウス"
+    "ms": "Rumah terbuka",
+    "en": "Open house",
+    "ja": "オープンハウス"
   },
   "setting": {
-    "en": "Encik Rahman invites Tanaka to his Hari Raya open house.",
-    "ja": "ラーマンさんが田中さんをハリラヤのオープンハウスに招きます。"
+    "en": "Encik Rahman invites Tanaka to his open house. In Malaysia a rumah terbuka is held at many festivals; the notes show a few.",
+    "ja": "ラーマンさんが田中さんを自宅のオープンハウスに招きます。マレーシアでは、いろいろな行事のときに開かれます。"
   },
   "cards": [
     {
@@ -284,6 +284,116 @@
       ],
       "scene": "dunia-perayaan-raya",
       "chapter": 9
+    },
+    {
+      "id": "ms-d-perayaan-raya-14",
+      "lang": "ms",
+      "term": "Tahun Baru Cina / Tahun Baharu Cina",
+      "gloss_en": "Chinese New Year (Tahun Baharu Cina is the official form)",
+      "gloss_ja": "旧正月（春節）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Tahun Baru Cina is the everyday name; Tahun Baharu Cina is the official one (the federal public-holiday list, Education Ministry notices). Greeting: Selamat Tahun Baru Cina (no Hari).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-perayaan-raya-15",
+      "lang": "ms",
+      "term": "Deepavali",
+      "gloss_en": "Deepavali (the Hindu festival of lights)",
+      "gloss_ja": "ディーパバリ（ヒンドゥー教の光のお祭り）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Greeting: Selamat Hari Deepavali.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-perayaan-raya-16",
+      "lang": "ms",
+      "term": "Krismas",
+      "gloss_en": "Christmas",
+      "gloss_ja": "クリスマス",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Celebrated by Malaysia's Christian communities. Greeting: Selamat Hari Krismas.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9,
+      "image": "🎄"
+    },
+    {
+      "id": "ms-d-perayaan-raya-17",
+      "lang": "ms",
+      "term": "Gawai",
+      "gloss_en": "Gawai (the Dayak harvest festival of Sarawak, Gawai Dayak)",
+      "gloss_ja": "ガワイ（サラワク州ダヤク族の収穫祭）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Sarawak, 1 June, a public holiday there: gazetted on 25 September 1964 and first celebrated on 1 June 1965 (The Borneo Post, New Straits Times). Greeting: Selamat Hari Gawai. The communities' own greetings are not Malay, so they are not taught here.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-perayaan-raya-18",
+      "lang": "ms",
+      "term": "Kaamatan",
+      "gloss_en": "Kaamatan (the harvest festival of Sabah)",
+      "gloss_ja": "カアマタン（サバ州の収穫祭）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Sabah and Labuan, 30 and 31 May, a public holiday there. Greeting: Selamat Pesta Kaamatan (Bernama, 30 May 2026). The communities' own greetings are not Malay, so they are not taught here.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9
+    },
+    {
+      "id": "ms-d-perayaan-raya-19",
+      "lang": "ms",
+      "term": "angpau",
+      "gloss_en": "angpau (red packet with money, given at Chinese New Year)",
+      "gloss_ja": "お年玉の赤い封筒（旧正月）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "angpau is the Malay spelling; English-language newspapers often write 'ang pow'.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-perayaan-raya"
+        }
+      ],
+      "scene": "dunia-perayaan-raya",
+      "chapter": 9,
+      "image": "🧧"
     }
   ]
 }

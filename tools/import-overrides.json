@@ -181,8 +181,8 @@
       "setting": "Grab に乗る直前に田中さんの携帯が壊れたので、新しい携帯を設定します。"
     },
     "perayaan-raya": {
-      "title": "ハリラヤのオープンハウス",
-      "setting": "ラーマンさんが田中さんをハリラヤのオープンハウスに招きます。"
+      "title": "オープンハウス",
+      "setting": "ラーマンさんが田中さんを自宅のオープンハウスに招きます。マレーシアでは、いろいろな行事のときに開かれます。"
     },
     "lepak-mamak": {
       "title": "ママックでのんびり",
@@ -432,7 +432,9 @@
     "ms-d-pejabat-salam-05": "👩‍💼",
     "ms-d-pejabat-salam-07": "🙏",
     "ms-d-pejabat-salam-09": "🌇",
-    "ms-d-pejabat-salam-11": "👋"
+    "ms-d-pejabat-salam-11": "👋",
+    "ms-d-perayaan-raya-16": "🎄",
+    "ms-d-perayaan-raya-19": "🧧"
   },
   "sedia_kelas_review": {
     "2": [
@@ -449,6 +451,9 @@
     ],
     "7": [
       "ms-c04-019"
+    ],
+    "9": [
+      "ms-c08-016"
     ]
   }
 }

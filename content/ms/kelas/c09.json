@@ -74,7 +74,7 @@
       "gloss_ja": "作られた",
       "pos": "verb",
       "affix_tag": "di-",
-      "note": "buat (make)",
+      "note": "buat (make). Active: Isteri saya buat kek ini. Thing + saya + verb (frame f06): Pinggan saya cuci.",
       "links": [
         {
           "type": "babak",
@@ -499,24 +499,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-c09-028",
-      "lang": "ms",
-      "term": "pinggan",
-      "gloss_en": "plate",
-      "gloss_ja": "皿",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Also a counter (Ch8).",
-      "links": [
-        {
-          "type": "babak",
-          "target": "kelas-c09"
-        }
-      ],
-      "scene": "kelas-c09",
-      "chapter": 9
-    },
-    {
       "id": "ms-c09-029",
       "lang": "ms",
       "term": "jamuan",
@@ -543,6 +525,240 @@
       "pos": "adj",
       "affix_tag": "root",
       "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-031",
+      "lang": "ms",
+      "term": "buat",
+      "gloss_en": "to make, to do (everyday root; dibuat = made)",
+      "gloss_ja": "作る・する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Isteri saya buat kek ini.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-032",
+      "lang": "ms",
+      "term": "panggil",
+      "gloss_en": "to call (dipanggil = called)",
+      "gloss_ja": "呼ぶ",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-033",
+      "lang": "ms",
+      "term": "cuci",
+      "gloss_en": "to wash (dicuci = washed)",
+      "gloss_ja": "洗う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-034",
+      "lang": "ms",
+      "term": "larang",
+      "gloss_en": "to forbid (dilarang = forbidden)",
+      "gloss_ja": "禁じる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Mostly met inside dilarang.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-035",
+      "lang": "ms",
+      "term": "tuan rumah",
+      "gloss_en": "host (of a gathering or house)",
+      "gloss_ja": "主催者・（家の）主人",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-036",
+      "lang": "ms",
+      "term": "mari",
+      "gloss_en": "come; let's (Mari makan = come and eat)",
+      "gloss_ja": "どうぞ・さあ〜しましょう",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Mari makan. jom (Ch2) is the spoken equivalent: Jom makan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-037",
+      "lang": "ms",
+      "term": "ibu",
+      "gloss_en": "mother",
+      "gloss_ja": "母",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-038",
+      "lang": "ms",
+      "term": "adik",
+      "gloss_en": "younger brother or sister",
+      "gloss_ja": "弟・妹",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-039",
+      "lang": "ms",
+      "term": "pesta",
+      "gloss_en": "festival; feast (Pesta Kaamatan)",
+      "gloss_ja": "祭り・祭典",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Pesta Kaamatan; also seen in festival notices.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-040",
+      "lang": "ms",
+      "term": "perhatian",
+      "gloss_en": "attention; Attention! (on notices)",
+      "gloss_ja": "注意・お知らせ",
+      "pos": "noun",
+      "affix_tag": "lex",
+      "note": "PERHATIAN on a sign or notice = Attention! Learn it as a whole word.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-041",
+      "lang": "ms",
+      "term": "hingga",
+      "gloss_en": "until (formal; sampai is everyday)",
+      "gloss_ja": "〜まで",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": "Ditutup hingga pukul enam. hingga is formal; sampai (Ch4) is the everyday word.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-042",
+      "lang": "ms",
+      "term": "tolak",
+      "gloss_en": "push (TOLAK on doors)",
+      "gloss_ja": "押す（ドアの表示）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "TOLAK on a door = push.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c09"
+        }
+      ],
+      "scene": "kelas-c09",
+      "chapter": 9
+    },
+    {
+      "id": "ms-c09-043",
+      "lang": "ms",
+      "term": "tarik",
+      "gloss_en": "pull (TARIK on doors)",
+      "gloss_ja": "引く（ドアの表示）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "TARIK on a door = pull. Also in teh tarik.",
       "links": [
         {
           "type": "babak",
@@ -634,19 +850,19 @@
       {
         "id": "ms-c09-s06",
         "speaker": "Tanaka",
-        "ms": "Durian ada?",
-        "en": "Is there any durian?"
+        "ms": "Pisang goreng ada?",
+        "en": "Is there any pisang goreng?"
       },
       {
         "id": "ms-c09-s07",
         "speaker": "Puan Aini",
-        "ms": "Tak ada. Durian dilarang di pejabat!",
-        "en": "No. Durian is banned in the office!"
+        "ms": "Sudah habis. Pisang goreng dimakan semua tadi!",
+        "en": "It's finished. All the pisang goreng was eaten earlier!"
       },
       {
         "id": "ms-c09-s08",
         "speaker": "Encik Rahman",
-        "ms": "Pejabat akan ditutup pukul enam. Jom kemas.",
+        "ms": "Pejabat akan ditutup pukul enam. Mari kita kemas.",
         "en": "The office closes at six. Let's tidy up."
       },
       {
@@ -670,13 +886,17 @@
       "ms-c09-003",
       "ms-c09-004",
       "ms-c09-005",
+      "ms-c09-007",
       "ms-c09-008",
       "ms-c09-011",
       "ms-c09-012",
       "ms-c09-021",
       "ms-c09-022",
       "ms-c09-027",
-      "ms-c09-028"
+      "ms-c09-033",
+      "ms-c09-036",
+      "ms-c09-043",
+      "ms-c08-016"
     ],
     "frames": [
       "ms-c09-f01",
