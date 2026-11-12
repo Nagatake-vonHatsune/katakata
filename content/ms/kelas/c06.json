@@ -38,7 +38,7 @@
       "gloss_ja": "より少ない",
       "pos": "adv",
       "affix_tag": "root",
-      "note": "Also 'minus' in telling time (Ch4).",
+      "note": null,
       "links": [
         {
           "type": "babak",
@@ -146,7 +146,7 @@
       "gloss_ja": "とても（後置）",
       "pos": "adv",
       "affix_tag": "se-",
-      "note": "cantik sekali. Same word as 'once' in Ch4.",
+      "note": "cantik sekali = very pretty. sekali also means 'once' (seminggu sekali, Ch4).",
       "links": [
         {
           "type": "babak",
@@ -416,7 +416,7 @@
       "gloss_ja": "簡単",
       "pos": "adj",
       "affix_tag": "root",
-      "note": null,
+      "note": "mudah is the standard form; senang is the spoken form.",
       "links": [
         {
           "type": "babak",
@@ -623,6 +623,60 @@
       ],
       "scene": "kelas-c06",
       "chapter": 6
+    },
+    {
+      "id": "ms-c06-035",
+      "lang": "ms",
+      "term": "sewa",
+      "gloss_en": "rent (sewa sebulan = rent per month)",
+      "gloss_ja": "家賃・賃貸料",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-036",
+      "lang": "ms",
+      "term": "bilik",
+      "gloss_en": "room (bilik tidur = bedroom)",
+      "gloss_ja": "部屋",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
+    },
+    {
+      "id": "ms-c06-037",
+      "lang": "ms",
+      "term": "luas",
+      "gloss_en": "spacious, roomy",
+      "gloss_ja": "広い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "The opposite of sempit (Ch5).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c06"
+        }
+      ],
+      "scene": "kelas-c06",
+      "chapter": 6
     }
   ],
   "frames": [
@@ -642,14 +696,14 @@
     },
     {
       "id": "ms-c06-f03",
-      "frame": "A sama ___ dengan B. / A se-___ B.",
+      "frame": "A sama ___ dengan B. / A setinggi / semahal B.",
       "example": "Kondo D semahal kondo A.",
       "meaning_en": "Condo D is as expensive as condo A.",
       "meaning_ja": "コンドDはコンドAと同じくらい高いです。"
     },
     {
       "id": "ms-c06-f04",
-      "frame": "___ paling ___. / ___ ter-___.",
+      "frame": "___ paling ___. / ___ termurah / terbesar / terbaik / tercantik.",
       "example": "Kondo C paling murah. Kondo C termurah.",
       "meaning_en": "Condo C is the cheapest.",
       "meaning_ja": "コンドCが一番安いです。"
@@ -664,9 +718,16 @@
     {
       "id": "ms-c06-f06",
       "frame": "___ ini terlalu ___.",
-      "example": "Kondo ini terlalu jauh.",
-      "meaning_en": "This condo is too far.",
-      "meaning_ja": "このコンドは遠すぎます。"
+      "example": "Kondo ini terlalu bising.",
+      "meaning_en": "This condo is too noisy.",
+      "meaning_ja": "このコンドはうるさすぎます。"
+    },
+    {
+      "id": "ms-c06-f07",
+      "frame": "Saya pilih ___.",
+      "example": "Saya pilih kondo D.",
+      "meaning_en": "I choose condo D.",
+      "meaning_ja": "コンドDを選びます。"
     }
   ],
   "scenario": {
@@ -688,8 +749,8 @@
       {
         "id": "ms-c06-s03",
         "speaker": "Cik Mei Ling",
-        "ms": "Kondo B kurang besar, tetapi lebih dekat dengan stesen LRT.",
-        "en": "Condo B is smaller, but closer to the LRT station."
+        "ms": "Kondo B kurang besar, tetapi sewanya lebih murah.",
+        "en": "Condo B is less big, but its rent is cheaper."
       },
       {
         "id": "ms-c06-s04",
@@ -700,20 +761,20 @@
       {
         "id": "ms-c06-s05",
         "speaker": "Cik Mei Ling",
-        "ms": "Kondo C paling murah, tetapi terlalu jauh dari pejabat.",
-        "en": "Condo C is the cheapest, but too far from the office."
+        "ms": "Kondo C paling murah, tetapi terlalu bising.",
+        "en": "Condo C is the cheapest, but too noisy."
       },
       {
         "id": "ms-c06-s06",
         "speaker": "Tanaka",
-        "ms": "Harga kondo A dan kondo D sama?",
-        "en": "Are condos A and D the same price?"
+        "ms": "Sewa kondo A dan kondo D sama?",
+        "en": "Are the rents of condo A and condo D the same?"
       },
       {
         "id": "ms-c06-s07",
         "speaker": "Cik Mei Ling",
-        "ms": "Ya. Kondo D semahal kondo A, tetapi kondo D paling baru dan sangat selesa.",
-        "en": "Yes. D is as expensive as A, but D is the newest and very comfortable."
+        "ms": "Ya. Kondo D semahal kondo A, tetapi kondo D paling baru, ada tiga bilik dan sangat luas.",
+        "en": "Yes. D is as expensive as A, but D is the newest, has three rooms and is very spacious."
       },
       {
         "id": "ms-c06-s08",
@@ -729,18 +790,24 @@
       "ms-c06-002",
       "ms-c06-003",
       "ms-c06-004",
+      "ms-c06-005",
       "ms-c06-006",
       "ms-c06-007",
       "ms-c06-010",
       "ms-c06-011",
       "ms-c06-012",
+      "ms-c06-013",
       "ms-c06-014",
+      "ms-c06-015",
       "ms-c06-016",
       "ms-c06-017",
       "ms-c06-021",
       "ms-c06-027",
+      "ms-c06-030",
       "ms-c06-033",
-      "ms-c06-034"
+      "ms-c06-035",
+      "ms-c06-036",
+      "ms-c06-037"
     ],
     "frames": [
       "ms-c06-f01",

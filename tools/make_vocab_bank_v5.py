@@ -389,7 +389,31 @@ def ch5(b):
     b.edit_dunia("ms-d-lepak-mamak-07", note="Spoken: an everyday word.")
 
 
-CHAPTERS = {1: ch1, 2: ch2, 3: ch3, 4: ch4, 5: ch5}
+def ch6(b):
+    b.add_kelas(6, "L-1051")
+    b.add_kelas(6, "L-1052")
+    b.add_kelas(6, "L-1053", note="The opposite of sempit (Ch5).")
+    # Frames f03 and f04 showed open se- and ter- slots; the chapter teaches whole words only (Sam, in session).
+    b.edit_frame("ms-c06-f03", frame="A sama ___ dengan B. / A setinggi / semahal B.")
+    b.edit_frame("ms-c06-f04", frame="___ paling ___. / ___ termurah / terbesar / terbaik / tercantik.")
+    # f06 used jauh (Ch7): same kind of fix as the scenario below.
+    b.edit_frame("ms-c06-f06", example="Kondo ini terlalu bising.", meaning="This condo is too noisy.")
+    # New frame for choosing (Sam, in session).
+    b.add_frame(6, "ms-c06-f07", "Saya pilih ___.", "Saya pilih kondo D.", "I choose condo D.")
+    # Cards: kurang loses the 'minus in telling time' note (Sam, 6 Nov: kurang suku is not used); sekali keeps
+    # teaching 'very' and says it also means 'once' (the ledger row L-0188 now says both); mudah / senang register.
+    b.edit_kelas("ms-c06-002", note=None)
+    b.edit_kelas("ms-c06-008", note="cantik sekali = very pretty. sekali also means 'once' (seminggu sekali, Ch4).")
+    b.edit_kelas("ms-c06-023", note="mudah is the standard form; senang is the spoken form.")
+    # Scenario: dekat and jauh (Ch7) and "stesen LRT" (not a ledger word) are replaced by rent, rooms, size and noise.
+    b.edit_line("ms-c06-s03", ms="Kondo B kurang besar, tetapi sewanya lebih murah.", en="Condo B is less big, but its rent is cheaper.")
+    b.edit_line("ms-c06-s05", ms="Kondo C paling murah, tetapi terlalu bising.", en="Condo C is the cheapest, but too noisy.")
+    b.edit_line("ms-c06-s06", ms="Sewa kondo A dan kondo D sama?", en="Are the rents of condo A and condo D the same?")
+    b.edit_line("ms-c06-s07", ms="Ya. Kondo D semahal kondo A, tetapi kondo D paling baru, ada tiga bilik dan sangat luas.",
+                en="Yes. D is as expensive as A, but D is the newest, has three rooms and is very spacious.")
+
+
+CHAPTERS = {1: ch1, 2: ch2, 3: ch3, 4: ch4, 5: ch5, 6: ch6}
 
 
 def main():
