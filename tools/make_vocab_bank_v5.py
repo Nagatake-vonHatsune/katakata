@@ -222,6 +222,17 @@ class Bank:
             if (self.ds.cell(rr, 1).value or "").startswith(f"ms-d-{scene_id}-"):
                 self.ds.cell(rr, 3).value = f"{scene_ms} ({scene_en})"
 
+    def replace_everywhere(self, old, new):
+        """Text replacement in every string cell of the five content tabs (e.g. a Japanese rendering Sam chose)."""
+        n = 0
+        for ws in (self.kv, self.kf, self.ks, self.ds, self.di):
+            for row in ws.iter_rows():
+                for c in row:
+                    if isinstance(c.value, str) and old in c.value:
+                        c.value = c.value.replace(old, new)
+                        n += 1
+        return n
+
     def mark_seen_twins(self):
         """A Dunia card that repeats a class word is marked 'seen in class' (Rules tab), when the class
         chapter is not later than the chapter the scene primes."""
@@ -349,7 +360,36 @@ def ch4(b):
     b.edit_line("ms-c04-s09", ms="Boleh! Jom, hari ini kita makan sama-sama!", en="Of course! Come on, let's eat together today!")
 
 
-CHAPTERS = {1: ch1, 2: ch2, 3: ch3, 4: ch4}
+def ch5(b):
+    b.add_kelas(5, "L-0688", note="The answer to kenapa: Kenapa? Sebab ...", drop=["ms-j-office-12"], place="Ch5")
+    b.add_kelas(5, "L-1008")
+    b.add_kelas(5, "L-1009", note="Answer with sebab or kerana (Sam).")
+    b.add_kelas(5, "L-1048", note="roti canai dengan kuah.")
+    b.add_kelas(5, "L-1049", note="Same as kenapa. A fixed word, not a verb with me-.")
+    b.add_kelas(5, "L-1050", note="Answers kenapa / mengapa, like sebab.")
+    # New frame (Sam said yes in session): the "why" set in one place.
+    b.add_frame(5, "ms-c05-f06", "Kenapa / Mengapa / Apa sebab ___? Sebab / Kerana ___.", "Kenapa awak marah? Sebab saya penat.",
+                "Why are you angry? Because I'm tired.")
+    # Frames and scenario that used nasi lemak (Ch8) and baju (Ch8), and sambalnya (not in the ledger).
+    b.edit_frame("ms-c05-f02", example="Bagaimana rasa roti canai ini? Sedap, tetapi pedas.", meaning="How is this roti canai? Delicious, but spicy.")
+    b.edit_frame("ms-c05-f03", example="Saya mahu kopi yang panas.", meaning="I want the hot coffee.")
+    b.edit_line("ms-c05-s06", ms="Roti canai satu. Kuahnya pedas?", en="One roti canai. Is the gravy spicy?")
+    # Cards: oren / jingga (Sam: both correct), tawar (ledger L-0520 has both senses).
+    b.edit_kelas("ms-c05-020", note="jingga is the standard word; oren is the everyday one. Both are correct.")
+    b.edit_kelas("ms-c05-015", en="to bargain; bland", ja="値切る；味がない", note="Also 'unsweetened' (of a drink).")
+    # Dunia "Di klinik": hospital, not rumah sakit (L-0416 Retired; L-0336 hospital is the Malaysian word).
+    b.edit_dunia("ms-d-badan-klinik-11", term="hospital", en="hospital", ja="病院", hook_type=None, hook=None)
+    b.led("L-0416", ids=[], place="Retired: use L-0336 hospital")
+    b.led("L-0336", ids=["ms-d-badan-klinik-11", "ms-c07-042"], place="Dunia · Di klinik (primes Ch5); Ch7")
+    # Dunia "Lepak di kedai mamak": Sam's rendering ママック everywhere; the mamak note Sam approved for Cikgu
+    # Sensai unit 5; tapau is everyday speech (Sam, 12 Nov).
+    b.replace_everywhere("ママッ", "ママック")
+    b.edit_dunia("ms-d-lepak-mamak-01", note="A mamak stall is a casual eatery, traditionally run by Indian-Muslim families and often open late, "
+                 "so it is also where people lepak and sembang after work. Use the word for the stall, not for a person.")
+    b.edit_dunia("ms-d-lepak-mamak-07", note="Spoken: an everyday word.")
+
+
+CHAPTERS = {1: ch1, 2: ch2, 3: ch3, 4: ch4, 5: ch5}
 
 
 def main():

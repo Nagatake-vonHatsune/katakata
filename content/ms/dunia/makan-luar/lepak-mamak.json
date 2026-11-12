@@ -15,11 +15,11 @@
   "title": {
     "ms": "Lepak di kedai mamak",
     "en": "Hanging out at the mamak",
-    "ja": "ママッでのんびり"
+    "ja": "ママックでのんびり"
   },
   "setting": {
     "en": "After futsal, Tanaka's colleagues take him to a 24-hour mamak for teh tarik and roti canai.",
-    "ja": "フットサルのあと、同僚たちが田中さんを24時間営業のママッに連れて行きます。テ・タリッとロティ・チャナイで一休み。"
+    "ja": "フットサルのあと、同僚たちが田中さんを24時間営業のママックに連れて行きます。テ・タリッとロティ・チャナイで一休み。"
   },
   "cards": [
     {
@@ -27,10 +27,10 @@
       "lang": "ms",
       "term": "mamak",
       "gloss_en": "mamak stall (Indian-Muslim eatery, often open late)",
-      "gloss_ja": "ママッ（インド系ムスリムの大衆食堂、深夜営業も多い）",
+      "gloss_ja": "ママック（インド系ムスリムの大衆食堂、深夜営業も多い）",
       "pos": "noun",
       "affix_tag": "root",
-      "note": null,
+      "note": "A mamak stall is a casual eatery, traditionally run by Indian-Muslim families and often open late, so it is also where people lepak and sembang after work. Use the word for the stall, not for a person.",
       "links": [
         {
           "type": "babak",
@@ -150,7 +150,7 @@
       "gloss_ja": "持ち帰りにする",
       "pos": "verb",
       "affix_tag": "root",
-      "note": null,
+      "note": "Spoken: an everyday word.",
       "links": [
         {
           "type": "babak",

@@ -250,11 +250,11 @@
       "id": "ms-c05-015",
       "lang": "ms",
       "term": "tawar",
-      "gloss_en": "bland, unsweetened",
-      "gloss_ja": "味がない",
+      "gloss_en": "to bargain; bland",
+      "gloss_ja": "値切る；味がない",
       "pos": "adj",
       "affix_tag": "root",
-      "note": null,
+      "note": "Also 'unsweetened' (of a drink).",
       "links": [
         {
           "type": "babak",
@@ -344,7 +344,7 @@
       "gloss_ja": "オレンジ色",
       "pos": "adj",
       "affix_tag": "root",
-      "note": null,
+      "note": "jingga is the standard word; oren is the everyday one. Both are correct.",
       "links": [
         {
           "type": "babak",
@@ -1037,6 +1037,114 @@
       ],
       "scene": "kelas-c05",
       "chapter": 5
+    },
+    {
+      "id": "ms-c05-059",
+      "lang": "ms",
+      "term": "sebab",
+      "gloss_en": "Reason; because",
+      "gloss_ja": "理由、〜なので",
+      "pos": "noun / conjunction",
+      "affix_tag": "root",
+      "note": "The answer to kenapa: Kenapa? Sebab ...",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-060",
+      "lang": "ms",
+      "term": "kelakar",
+      "gloss_en": "funny",
+      "gloss_ja": "面白い（笑える）",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-061",
+      "lang": "ms",
+      "term": "kenapa",
+      "gloss_en": "why (same as mengapa and apa sebab)",
+      "gloss_ja": "なぜ・どうして",
+      "pos": "question",
+      "affix_tag": "root",
+      "note": "Answer with sebab or kerana (Sam).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-062",
+      "lang": "ms",
+      "term": "kuah",
+      "gloss_en": "gravy, sauce",
+      "gloss_ja": "ソース・汁（カレーなどのたれ）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "roti canai dengan kuah.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-063",
+      "lang": "ms",
+      "term": "mengapa",
+      "gloss_en": "why (same as kenapa and apa sebab)",
+      "gloss_ja": "なぜ・どうして",
+      "pos": "question",
+      "affix_tag": "lex",
+      "note": "Same as kenapa. A fixed word, not a verb with me-.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
+    },
+    {
+      "id": "ms-c05-064",
+      "lang": "ms",
+      "term": "kerana",
+      "gloss_en": "because",
+      "gloss_ja": "〜から・〜ので",
+      "pos": "conj",
+      "affix_tag": "root",
+      "note": "Answers kenapa / mengapa, like sebab.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c05"
+        }
+      ],
+      "scene": "kelas-c05",
+      "chapter": 5
     }
   ],
   "frames": [
@@ -1050,16 +1158,16 @@
     {
       "id": "ms-c05-f02",
       "frame": "Bagaimana rasa ___? / ___, tetapi ___.",
-      "example": "Bagaimana rasa nasi lemak ini? Sedap, tetapi pedas.",
-      "meaning_en": "How's this nasi lemak? Delicious, but spicy.",
-      "meaning_ja": "このナシレマはどうですか。おいしいけど辛いです。"
+      "example": "Bagaimana rasa roti canai ini? Sedap, tetapi pedas.",
+      "meaning_en": "How is this roti canai? Delicious, but spicy.",
+      "meaning_ja": "このロティ・チャナイはどうですか。おいしいけど辛いです。"
     },
     {
       "id": "ms-c05-f03",
       "frame": "Saya mahu ___ yang ___.",
-      "example": "Saya mahu baju yang biru.",
-      "meaning_en": "I want the blue shirt.",
-      "meaning_ja": "青いシャツがほしいです。"
+      "example": "Saya mahu kopi yang panas.",
+      "meaning_en": "I want the hot coffee.",
+      "meaning_ja": "熱いコーヒーがほしいです。"
     },
     {
       "id": "ms-c05-f04",
@@ -1074,11 +1182,18 @@
       "example": "Saya mahu teh tarik, kurang manis, ais sedikit.",
       "meaning_en": "Teh tarik, less sweet, a little ice.",
       "meaning_ja": "テタレ、甘さ控えめ、氷少なめでお願いします。"
+    },
+    {
+      "id": "ms-c05-f06",
+      "frame": "Kenapa / Mengapa / Apa sebab ___? Sebab / Kerana ___.",
+      "example": "Kenapa awak marah? Sebab saya penat.",
+      "meaning_en": "Why are you angry? Because I'm tired.",
+      "meaning_ja": "どうして怒っているのですか。疲れているからです。"
     }
   ],
   "scenario": {
     "title_en": "At the mamak",
-    "title_ja": "ママッ（食堂）で",
+    "title_ja": "ママック（食堂）で",
     "lines": [
       {
         "id": "ms-c05-s01",
@@ -1113,8 +1228,8 @@
       {
         "id": "ms-c05-s06",
         "speaker": "Tanaka",
-        "ms": "Nasi lemak satu. Sambalnya pedas?",
-        "en": "One nasi lemak. Is the sambal spicy?"
+        "ms": "Roti canai satu. Kuahnya pedas?",
+        "en": "One roti canai. Is the gravy spicy?"
       },
       {
         "id": "ms-c05-s07",
@@ -1162,7 +1277,7 @@
       "ms-c05-014",
       "ms-c05-016",
       "ms-c05-017",
-      "ms-c05-023",
+      "ms-c05-040",
       "ms-c05-042",
       "ms-c05-044",
       "ms-c05-050",
@@ -1171,7 +1286,11 @@
       "ms-c05-053",
       "ms-c05-054",
       "ms-c05-055",
-      "ms-c05-056",
+      "ms-c05-058",
+      "ms-c05-059",
+      "ms-c05-061",
+      "ms-c05-063",
+      "ms-c05-064",
       "ms-c05-008"
     ],
     "frames": [

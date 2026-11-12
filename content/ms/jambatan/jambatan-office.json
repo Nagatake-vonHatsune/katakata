@@ -222,24 +222,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-office-12",
-      "lang": "ms",
-      "term": "sebab",
-      "gloss_en": "Reason; because",
-      "gloss_ja": "理由、〜なので",
-      "pos": "noun / conjunction",
-      "affix_tag": "root",
-      "note": "Hanashishou: Apa sebabnya?",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-office"
-        }
-      ],
-      "scene": "dunia-jambatan-office",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-office-13",
       "lang": "ms",
       "term": "ajak",

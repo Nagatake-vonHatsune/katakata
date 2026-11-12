@@ -227,7 +227,7 @@
     {
       "id": "ms-d-badan-klinik-11",
       "lang": "ms",
-      "term": "rumah sakit",
+      "term": "hospital",
       "gloss_en": "hospital",
       "gloss_ja": "病院",
       "pos": "noun",
@@ -237,10 +237,6 @@
         {
           "type": "babak",
           "target": "dunia-badan-klinik"
-        },
-        {
-          "type": "kanji",
-          "text": "rumah (house) + sakit (sick): 'sick house', like 病院."
         }
       ],
       "scene": "dunia-badan-klinik",
