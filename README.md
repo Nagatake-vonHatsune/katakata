@@ -20,7 +20,7 @@ and Japanese glosses). Katakana hints only appear in the Japanese interface.
 | Spec item | Where |
 |---|---|
 | Onboarding: name, voice check, iOS "Add to Home Screen" step | `src/views/onboarding.ts` |
-| All nine Kelas chapters, 19 Dunia scenes and 5 Jambatan scenes (805 cards) | `content/ms/` (packs with `"status": "live"`) |
+| All nine Kelas chapters, 20 Dunia scenes and 5 Jambatan scenes (920 cards) | `content/ms/` (packs with `"status": "live"`) |
 | 今日の練習: due reviews, then 5–8 new words, one frame drill, one Cari Benda round | `src/core/session.ts` |
 | Kad Kata, Cari Benda, Susun Ayat | `src/games/<id>/` (common `Game` interface) |
 | 授業の準備 (Sedia Kelas) with "Ready" stamp | `src/views/modes.ts` |
@@ -47,14 +47,19 @@ One JSON file per chapter or scene, validated against `content/schema/pack.schem
 Card fields follow the shared Hanashishou format: `id, lang, term, gloss_en, gloss_ja, pos,
 affix_tag, note, links[], scene, chapter, image`.
 
-- Master workbook: `content/source/2026-11-06_KataKata_VocabBank_v4.xlsx`. v3 added four scenes (Bank dan pos,
+- Master workbook: `content/source/2026-11-12_KataKata_VocabBank_v5.xlsx`. v3 added four scenes (Bank dan pos,
   Cuti ke pantai, Telefon baru, Rumah terbuka Hari Raya); v4 adds five colloquial ones (Lepak di kedai mamak,
   Sembang di pantri, Gambar bayi, Main badminton, Simpulan bahasa harian), built by `tools/make_vocab_bank_v4.py`.
-  All v3 and v4 rows are Claude drafts.
+  v5 is the clean-up after Cikgu Sensai Stage 1 (new cards from ledger rows L-0983 to L-1088, moved and removed cards,
+  corrected notes and frames, the general "Rumah terbuka" scene and a new "Salam di pejabat" scene), built by
+  `tools/make_vocab_bank_v5.py`; see [docs/CLEANUP-2026-11-12.md](docs/CLEANUP-2026-11-12.md).
+  All v3, v4 and v5 rows are Claude drafts.
 - Only packs with `"status": "live"` ship in the app (set by `live_kelas` / `live_dunia` in
   `tools/import-overrides.json`). All packs are live at the moment.
-- Re-import from the workbook: `python3 -I tools/import_vocab_bank.py content/source/2026-11-06_KataKata_VocabBank_v4.xlsx`
-- Japanese frame meanings, scene titles and Cari Benda emoji live in `tools/import-overrides.json`.
+- Re-import from the workbook: `python3 -I tools/import_vocab_bank.py content/source/2026-11-12_KataKata_VocabBank_v5.xlsx`
+- Japanese frame meanings, scene titles and Cari Benda emoji live in `tools/import-overrides.json`, together with
+  `sedia_kelas_review` (cards that moved to another chapter but are still reviewed in the chapter's Sedia Kelas list).
+  The Dunia tab may carry a `Note` column (one line per card, e.g. the festival notes).
 - Content checks (also run by `npm run build` and CI): `npm run content:check`
   - schema check on every pack
   - affix guard (ber-, be- before k/l, me- + consonant) with the spec's allow-list; the v2 bank passes with 0 flags
@@ -98,7 +103,8 @@ Kata-Kata is the step before [Hanashishou 話匠](https://hanashishou.vonhatsune
 - **Jambatan scenes** (`content/ms/jambatan/`): Hanashishou's band 1-2 Malay words that Kata-Kata does not
   teach yet, with Hanashishou's own English and Japanese meanings. Example sentences that break the
   root-word rule are left out. Regenerate after Hanashishou's vocabulary changes:
-  `npm run bridge:import` (expects a Hanashishou checkout at `../hanashishou`).
+  `npm run bridge:import` (expects a Hanashishou checkout at `../hanashishou`). The packs now come from Hanashishou
+  `e5e167c`; words that became class cards (12 Nov 2026) are not repeated there.
 - **Hand-off:** 話匠へ exports `katakata-words_<name>_<date>.json` (format: `src/core/bridge.ts`, version 1)
   and opens Hanashishou's `#/katakata?ui=<lang>` import screen. Hanashishou adds matching words to its Malay
   deck, sets Malay as the learnt language and suggests a starting band (2 once all nine chapters are

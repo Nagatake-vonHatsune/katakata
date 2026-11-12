@@ -13,6 +13,9 @@ the reference for audit and development of Malay vocabulary in both Kata-Kata an
 
 ## Tools
 
+- `tools/ledger/sheet_to_snapshot.py <values.json>` turns a read of the sheet's Ledger tab (A1:T last row) into
+  `malay-ledger.csv` (CRLF, 20 columns), so a diff shows exactly the changed rows. The snapshot is at L-1088 (12 Nov 2026).
+
 - `tools/ledger/build_ledger.py ../hanashishou kd4.txt out.json` builds the rows from both apps and checks each
   term against Kamus Dewan Edisi Keempat. `kd4.txt` is `pdftotext -layout` of the KD4 PDF Sam provided (an
   unofficial text conversion; page numbers are PDF pages). The dictionary text is never committed: only

@@ -2,6 +2,22 @@
 
 ## Unreleased
 
+- **Clean-up after Cikgu Sensai Stage 1 (12 Nov 2026), 805 to 920 cards.** Report and hand-off:
+  [docs/CLEANUP-2026-11-12.md](docs/CLEANUP-2026-11-12.md). One commit per chapter:
+  - 105 new class cards from ledger rows L-0983 to L-1088 (Ch1 2, Ch2 23, Ch3 17, Ch4 19, Ch5 6, Ch6 3, Ch7 17, Ch8 5,
+    Ch9 13), each with the ledger's Malay, meanings and chapter.
+  - Moved: saya and the greeting words (pagi, tengah hari, petang, malam) to Ch1; sedikit / sikit to Ch2. IDs are unchanged
+    and the old chapter still reviews them.
+  - Removed: Assalamualaikum (faith-specific greetings are not taught), the duplicate depan, pinggan, and the kaki counter.
+  - Corrected: "jalan lurus" is now terus / jalan terus / pergi terus / terus depan; frames and scenarios no longer use words
+    from later chapters or words that are not in the ledger; whole-word se- and ter- frames in Ch6; formal counters marked;
+    register notes (mudah / senang, tapau, oren / jingga, sahaja / saja).
+  - New frames: "Kenapa / Mengapa / Apa sebab" (Ch5), "Saya pilih ___" (Ch6).
+  - Scenes: "Rumah terbuka Hari Raya" is now a general "Rumah terbuka" with six festival cards and a note for each;
+    new Dunia scene "Salam di pejabat" for Chapter 1; Di klinik says hospital; ママック (Sam's rendering) everywhere.
+  - Workbook v5, `tools/make_vocab_bank_v5.py`, `tools/ledger/sheet_to_snapshot.py`, a Dunia `Note` column and
+    `sedia_kelas_review` in the importer. The ledger snapshot is at L-1088.
+
 - khabar is read the way Malaysians say it (Sam, 7 Nov 2026): the katakana hint is カバー (Apa khabar? = アパ カバー,
   was アパ ハバル) and the voice is given "kabar". Other kh words now use the カ row too (akhir = アキル, was アヒル).
 - menang (to win) joins Main badminton as card 15, after Sam approved it for the affix allow-list (7 Nov 2026):

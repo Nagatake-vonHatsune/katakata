@@ -314,6 +314,8 @@ def ch2(b):
     # Moved: sedikit / sikit (Ch5 to Ch2) so learners can say "Saya boleh cakap bahasa Melayu sedikit."
     b.edit_kelas("ms-c05-008", chapter=2, note="Saya boleh cakap bahasa Melayu sedikit. sikit is the spoken form (sikit je, just a little).")
     b.led("L-0216", place="Ch2 (moved from Ch5; reviewed in Ch5)")
+    # A Dunia hook named the old chapter.
+    b.edit_dunia("ms-d-pasar-pagi-11", hook="Ch6 kurang + Ch2 sikit.")
     # Scenario: «dari mana» is a Ch7 question word. Ask about the hometown with Ch2 language instead; the
     # answer uses frame ms-c02-f03 «Asal saya dari ___.».
     b.edit_line("ms-c02-s03", ms="Kampung encik di mana?", en="Where is your hometown?")
