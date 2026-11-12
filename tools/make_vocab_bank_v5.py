@@ -455,7 +455,30 @@ def ch7(b):
     b.edit_line("ms-c07-s11", ms="Lebih kurang dua puluh minit, kalau tidak sesak.", en="About twenty minutes, if there is no traffic jam.")
 
 
-CHAPTERS = {1: ch1, 2: ch2, 3: ch3, 4: ch4, 5: ch5, 6: ch6, 7: ch7}
+def ch8(b):
+    b.add_kelas(8, "L-1064", note="sebungkus nasi lemak.")
+    b.add_kelas(8, "L-1065")
+    b.add_kelas(8, "L-1066")
+    b.add_kelas(8, "L-1068", note="pisang goreng is the standard form; goreng pisang is the everyday name at stalls.")
+    b.add_kelas(8, "L-1069")
+    # The counter «buah» is its own ledger row now (L-1067); the card ms-c08-003 was mapped to L-0514 (fruit).
+    b.edit_kelas("ms-c08-003", en="counter: large objects, buildings, vehicles, books (lit. fruit)", ja="〜台・〜軒・〜冊など",
+                 note="sebuah kereta, sebuah rumah, dua buah kereta.")
+    b.led("L-1067", ids=["ms-c08-003"], place="Ch8")
+    b.led("L-0514", ids=["ms-d-pasar-pagi-03"], place="Dunia · Pasar pagi (primes Ch3)")
+    # «kaki» as a counter was not added (Sam): the card goes; the Dunia card keeps the real word (foot, leg).
+    b.remove_kelas("ms-c08-010")
+    b.edit_dunia("ms-d-hari-tanaka-18", seen=None)
+    b.edit_dunia("ms-d-simpulan-harian-08", hook="kaki (leg) + bangku (bench): legs as stiff as a bench's.")
+    b.led("L-0488", ids=["ms-d-hari-tanaka-18"], place="Dunia · Satu hari Encik Tanaka (primes Ch4)")
+    # Counter senses and register (Sam, 12 Nov): orang is also 'person'; pucuk and naskhah are formal counters.
+    b.edit_kelas("ms-c08-001", note="dua orang pelajar. orang is also the word for 'person' (Ch2).")
+    b.edit_kelas("ms-c08-008", en="counter: letters (lit. shoot)", note="sepucuk surat. A formal counter, mostly seen in writing.")
+    b.edit_kelas("ms-c08-013", note="senaskhah surat khabar. A formal counter, mostly seen in writing.")
+    b.edit_kelas("ms-c08-019", note="setin sup.")
+
+
+CHAPTERS = {1: ch1, 2: ch2, 3: ch3, 4: ch4, 5: ch5, 6: ch6, 7: ch7, 8: ch8}
 
 
 def main():

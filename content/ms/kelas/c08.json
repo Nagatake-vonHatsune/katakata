@@ -20,7 +20,7 @@
       "gloss_ja": "〜人",
       "pos": "counter",
       "affix_tag": "root",
-      "note": "dua orang pelajar",
+      "note": "dua orang pelajar. orang is also the word for 'person' (Ch2).",
       "links": [
         {
           "type": "babak",
@@ -52,11 +52,11 @@
       "id": "ms-c08-003",
       "lang": "ms",
       "term": "buah",
-      "gloss_en": "counter: large or general objects (lit. fruit)",
-      "gloss_ja": "〜台・〜軒・〜個",
+      "gloss_en": "counter: large objects, buildings, vehicles, books (lit. fruit)",
+      "gloss_ja": "〜台・〜軒・〜冊など",
       "pos": "counter",
       "affix_tag": "root",
-      "note": "sebuah kereta, sebuah rumah",
+      "note": "sebuah kereta, sebuah rumah, dua buah kereta.",
       "links": [
         {
           "type": "babak",
@@ -142,11 +142,11 @@
       "id": "ms-c08-008",
       "lang": "ms",
       "term": "pucuk",
-      "gloss_en": "counter: letters, guns (lit. shoot)",
+      "gloss_en": "counter: letters (lit. shoot)",
       "gloss_ja": "〜通",
       "pos": "counter",
       "affix_tag": "root",
-      "note": "sepucuk surat",
+      "note": "sepucuk surat. A formal counter, mostly seen in writing.",
       "links": [
         {
           "type": "babak",
@@ -165,24 +165,6 @@
       "pos": "counter",
       "affix_tag": "root",
       "note": "sekuntum bunga",
-      "links": [
-        {
-          "type": "babak",
-          "target": "kelas-c08"
-        }
-      ],
-      "scene": "kelas-c08",
-      "chapter": 8
-    },
-    {
-      "id": "ms-c08-010",
-      "lang": "ms",
-      "term": "kaki",
-      "gloss_en": "counter: umbrellas (lit. leg)",
-      "gloss_ja": "〜本（傘）",
-      "pos": "counter",
-      "affix_tag": "root",
-      "note": "sekaki payung",
       "links": [
         {
           "type": "babak",
@@ -236,7 +218,7 @@
       "gloss_ja": "〜冊・〜部",
       "pos": "counter",
       "affix_tag": "root",
-      "note": "senaskhah surat khabar",
+      "note": "senaskhah surat khabar. A formal counter, mostly seen in writing.",
       "links": [
         {
           "type": "babak",
@@ -344,7 +326,7 @@
       "gloss_ja": "〜缶",
       "pos": "counter",
       "affix_tag": "root",
-      "note": null,
+      "note": "setin sup.",
       "links": [
         {
           "type": "babak",
@@ -785,6 +767,96 @@
       ],
       "scene": "kelas-c08",
       "chapter": 8
+    },
+    {
+      "id": "ms-c08-044",
+      "lang": "ms",
+      "term": "nasi lemak",
+      "gloss_en": "nasi lemak (rice cooked in coconut milk, with sambal and sides)",
+      "gloss_ja": "ナシレマ（ココナッツミルクで炊いたご飯、サンバルとおかず付き）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "sebungkus nasi lemak.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-045",
+      "lang": "ms",
+      "term": "gerai",
+      "gloss_en": "stall (food or market stall)",
+      "gloss_ja": "屋台",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-046",
+      "lang": "ms",
+      "term": "tambah",
+      "gloss_en": "to add; more (tambah satu lagi = one more)",
+      "gloss_ja": "追加する・もう一つ",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-047",
+      "lang": "ms",
+      "term": "pisang goreng / goreng pisang",
+      "gloss_en": "banana fritters",
+      "gloss_ja": "揚げバナナ",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "pisang goreng is the standard form; goreng pisang is the everyday name at stalls.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
+    },
+    {
+      "id": "ms-c08-048",
+      "lang": "ms",
+      "term": "keropok lekor",
+      "gloss_en": "keropok lekor (chewy fish sausage snack, a Terengganu speciality)",
+      "gloss_ja": "ケロポック・レコール（魚のソーセージ状のおやつ、トレンガヌ名物）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c08"
+        }
+      ],
+      "scene": "kelas-c08",
+      "chapter": 8
     }
   ],
   "frames": [
@@ -910,7 +982,8 @@
       "ms-c08-036",
       "ms-c08-041",
       "ms-c08-042",
-      "ms-c08-043"
+      "ms-c08-043",
+      "ms-c08-044"
     ],
     "frames": [
       "ms-c08-f01",
