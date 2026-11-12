@@ -1019,6 +1019,312 @@
       ],
       "scene": "kelas-c03",
       "chapter": 3
+    },
+    {
+      "id": "ms-c03-057",
+      "lang": "ms",
+      "term": "belas",
+      "gloss_en": "-teen (11 to 19)",
+      "gloss_ja": "十〜（11〜19）",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-058",
+      "lang": "ms",
+      "term": "puluh",
+      "gloss_en": "tens (dua puluh = 20)",
+      "gloss_ja": "〜十",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-059",
+      "lang": "ms",
+      "term": "ratus",
+      "gloss_en": "hundred (dua ratus = 200)",
+      "gloss_ja": "〜百",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-060",
+      "lang": "ms",
+      "term": "ribu",
+      "gloss_en": "thousand (dua ribu = 2,000)",
+      "gloss_ja": "〜千",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-061",
+      "lang": "ms",
+      "term": "juta",
+      "gloss_en": "million (dua juta = 2,000,000)",
+      "gloss_ja": "〜百万",
+      "pos": "number",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-062",
+      "lang": "ms",
+      "term": "nombor",
+      "gloss_en": "number",
+      "gloss_ja": "番号",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-063",
+      "lang": "ms",
+      "term": "jumlah",
+      "gloss_en": "total",
+      "gloss_ja": "合計",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-064",
+      "lang": "ms",
+      "term": "cukup",
+      "gloss_en": "enough",
+      "gloss_ja": "十分な・足りる",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-065",
+      "lang": "ms",
+      "term": "betul",
+      "gloss_en": "correct, right",
+      "gloss_ja": "正しい・そのとおり",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-066",
+      "lang": "ms",
+      "term": "untuk",
+      "gloss_en": "for",
+      "gloss_ja": "〜のために・〜用",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-067",
+      "lang": "ms",
+      "term": "ialah",
+      "gloss_en": "is (introduces a definition: Dua belas ialah 12)",
+      "gloss_ja": "〜である（定義）",
+      "pos": "copula",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-068",
+      "lang": "ms",
+      "term": "sahaja / saja",
+      "gloss_en": "only (sahaja standard; saja spoken)",
+      "gloss_ja": "〜だけ",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "sahaja is the standard form; saja is the spoken form.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-069",
+      "lang": "ms",
+      "term": "selepas",
+      "gloss_en": "after",
+      "gloss_ja": "〜の後",
+      "pos": "prep",
+      "affix_tag": "se-",
+      "note": "Pairs with sebelum. Returns in Ch4 with the clock.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-070",
+      "lang": "ms",
+      "term": "sebelum",
+      "gloss_en": "before",
+      "gloss_ja": "〜の前",
+      "pos": "prep",
+      "affix_tag": "se-",
+      "note": "Pairs with selepas.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-071",
+      "lang": "ms",
+      "term": "epal",
+      "gloss_en": "apple",
+      "gloss_ja": "りんご",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-072",
+      "lang": "ms",
+      "term": "pisang",
+      "gloss_en": "banana",
+      "gloss_ja": "バナナ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
+    },
+    {
+      "id": "ms-c03-073",
+      "lang": "ms",
+      "term": "mangga",
+      "gloss_en": "mango",
+      "gloss_ja": "マンゴー",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c03"
+        }
+      ],
+      "scene": "kelas-c03",
+      "chapter": 3
     }
   ],
   "frames": [
@@ -1159,7 +1465,12 @@
       "ms-c03-050",
       "ms-c03-054",
       "ms-c03-055",
-      "ms-c03-056"
+      "ms-c03-056",
+      "ms-c03-057",
+      "ms-c03-058",
+      "ms-c03-059",
+      "ms-c03-062",
+      "ms-c03-073"
     ],
     "frames": [
       "ms-c03-f01",

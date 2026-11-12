@@ -308,7 +308,21 @@ def ch2(b):
     b.edit_line("ms-c02-s03", ms="Kampung encik di mana?", en="Where is your hometown?")
 
 
-CHAPTERS = {1: ch1, 2: ch2}
+def ch3(b):
+    # 17 new cards: the number words the chapter's examples already need, a few everyday words and three fruits.
+    notes = {
+        "L-0989": None, "L-0990": None, "L-0991": None, "L-0992": None, "L-0993": None, "L-0994": None,
+        "L-0995": None, "L-0996": None, "L-0997": None, "L-0998": None, "L-0999": None,
+        "L-1000": "sahaja is the standard form; saja is the spoken form.",
+        "L-1001": "Pairs with sebelum. Returns in Ch4 with the clock.",
+        "L-1002": "Pairs with selepas.",
+        "L-1003": None, "L-1004": None, "L-1005": None,
+    }
+    for lid, note in notes.items():
+        b.add_kelas(3, lid, note=note)
+
+
+CHAPTERS = {1: ch1, 2: ch2, 3: ch3}
 
 
 def main():
