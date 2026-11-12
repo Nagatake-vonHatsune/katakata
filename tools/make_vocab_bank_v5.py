@@ -6,7 +6,7 @@ Usage (from the repo root):
 Source of the list: docs/kata-kata-cleanup.md in the Cikgu Sensai repository (12 Nov 2026), plus the five
 rows Sam approved afterwards (L-1084 to L-1088) and Sam's in-session answers to the brief's proposals
 (12 Nov 2026). The Malay ledger (content/ledger/malay-ledger.csv, a snapshot of the Google Sheet) is the
-source of truth: every new card takes its ledger row's Malay, meanings, part of speech, affix tag and
+source of truth (the script starts from the baseline snapshot in git, see LEDGER_BASELINE): every new card takes its ledger row's Malay, meanings, part of speech, affix tag and
 chapter. The script only adds notes (usage notes from the ledger or Sam's decisions, never new
 etymology), moves, removals and the frame/scenario corrections.
 
@@ -19,14 +19,20 @@ Hanashishou commit as before) so Jambatan drops words that are now class cards.
 
 import argparse
 import csv
+import io
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 
 import openpyxl
 
 ROOT = Path(__file__).resolve().parent.parent
+
+# The ledger snapshot before this clean-up touched its Kata-Kata columns (commit "Ledger snapshot matches the
+# sheet (L-0001 to L-1088)"). The script always starts from it, so a re-run gives the same result.
+LEDGER_BASELINE = "aa87ffb"
 
 POS = {
     "noun": "noun", "verb": "verb", "adj": "adj", "adjective": "adj", "adverb": "adv", "adv": "adv",
@@ -63,7 +69,10 @@ class Bank:
         self.ds, self.di = self.wb["Dunia scenes"], self.wb["Dunia index"]
         if self.ds.cell(1, 14).value != "Note":
             self.ds.cell(1, 14).value = "Note"
-        self.ledger = {r["ID"]: r for r in csv.DictReader(open(ledger_csv, encoding="utf-8", newline=""))}
+        text = (open(ledger_csv, encoding="utf-8", newline="").read() if ledger_csv else
+                subprocess.run(["git", "-C", str(ROOT), "show", f"{LEDGER_BASELINE}:content/ledger/malay-ledger.csv"],
+                               capture_output=True, text=True, check=True).stdout)
+        self.ledger = {r["ID"]: r for r in csv.DictReader(io.StringIO(text, newline=""))}
         # The highest number ever used per ID prefix, taken before any edit, so IDs are never reused.
         self.max = {}
         for ws in (self.kv, self.ds):
@@ -92,7 +101,7 @@ class Bank:
         return f"{prefix}-{self.max[prefix]:03d}" if prefix.startswith("ms-c") else f"{prefix}-{self.max[prefix]:02d}"
 
     # --- ledger bookkeeping --------------------------------------------------------------------------------
-    def led(self, lid, ids=None, place=None, drop=(), add=(), add_place=None):
+    def led(self, lid, ids=None, place=None, drop=(), add=(), add_place=None, front=False):
         """Record what the sheet's 'Kata-Kata (card IDs)' and 'Kata-Kata place' should say for a ledger row."""
         row = self.ledger[lid]
         cur = self.map.get(lid) or {
@@ -102,7 +111,9 @@ class Bank:
         if ids is not None:
             cur["ids"] = list(ids)
         else:
-            cur["ids"] = [i for i in cur["ids"] if i not in drop] + [i for i in add if i not in cur["ids"]]
+            kept = [i for i in cur["ids"] if i not in drop]
+            new = [i for i in add if i not in kept]
+            cur["ids"] = new + kept if front else kept + new
         if place is not None:
             cur["place"] = place
         elif add_place:
@@ -125,7 +136,8 @@ class Bank:
             over["pos"] if "pos" in over else pos_of(row), tag, note, f"cub::ms::c{ch:02d} {tag}",
         ])
         self.touched.add(norm(term))
-        self.led(lid, drop=drop, add=[cid], place=place)
+        # The class card goes first when the place text starts with the chapter, like the other rows.
+        self.led(lid, drop=drop, add=[cid], place=place, front=True)
         return cid
 
     def edit_kelas(self, card_id, **fields):
@@ -258,7 +270,45 @@ def ch1(b):
                     pos=v["POS"], tag=v["Affix tag"])
 
 
-CHAPTERS = {1: ch1}
+def ch2(b):
+    # New cards from ledger rows: cakap, bolehkah, badminton, ini, itu, kelas, adakah, the language words and
+    # the hobby word bank (Sam, 11 Nov). Notes come from the ledger rows and Sam's decisions.
+    n = {
+        "L-0473": "Saya boleh cakap bahasa Melayu sedikit.",
+        "L-0783": "boleh + -kah (both taught in this chapter): the polite form of boleh.",
+        "L-0968": None,
+        "L-0985": None,
+        "L-0986": None,
+        "L-0987": None,
+        "L-0988": "ada + -kah (both taught in this chapter). Adakah ...? opens a yes/no question.",
+        "L-1016": "bahasa Melayu, bahasa Inggeris, bahasa Jepun.",
+        "L-1017": "Also in baju Melayu (the open-house scene).",
+        "L-1018": "Malaysian spelling: Inggeris.",
+        "L-1019": "Malaysian spelling: muzik.",
+        "L-1020": "Malaysian spelling: filem.",
+        "L-1021": None,
+        "L-1022": None,
+        "L-1023": "suka masak = like cooking. masakan (food, cooking) is already in this chapter.",
+        "L-1024": None,
+        "L-1025": None,
+        "L-1026": "Also spelt cafe in signs and speech: both are used.",
+        "L-1027": "Spoken (an English loan), not a standard word.",
+        "L-1028": "Saya suka jalan-jalan. Covers 'travelling for fun' for now.",
+        "L-1029": "Spoken (an English loan). The standard word comes later (Ch11).",
+        "L-1030": "Spoken (an English loan). The standard phrase comes later (Ch11).",
+        "L-1031": "From the Japanese 推し活, used among fans. It is not in Kamus Dewan.",
+    }
+    for lid, note in n.items():
+        b.add_kelas(2, lid, note=note)
+    # Moved: sedikit / sikit (Ch5 to Ch2) so learners can say "Saya boleh cakap bahasa Melayu sedikit."
+    b.edit_kelas("ms-c05-008", chapter=2, note="Saya boleh cakap bahasa Melayu sedikit. sikit is the spoken form (sikit je, just a little).")
+    b.led("L-0216", place="Ch2 (moved from Ch5; reviewed in Ch5)")
+    # Scenario: «dari mana» is a Ch7 question word. Ask about the hometown with Ch2 language instead; the
+    # answer uses frame ms-c02-f03 «Asal saya dari ___.».
+    b.edit_line("ms-c02-s03", ms="Kampung encik di mana?", en="Where is your hometown?")
+
+
+CHAPTERS = {1: ch1, 2: ch2}
 
 
 def main():
@@ -267,7 +317,7 @@ def main():
     ap.add_argument("out")
     ap.add_argument("--through", type=int, default=9)
     ap.add_argument("--map")
-    ap.add_argument("--ledger", default=str(ROOT / "content" / "ledger" / "malay-ledger.csv"))
+    ap.add_argument("--ledger", help=f"ledger CSV to start from (default: the baseline snapshot, git {LEDGER_BASELINE})")
     a = ap.parse_args()
     b = Bank(a.src, a.ledger)
     for n in sorted(CHAPTERS):

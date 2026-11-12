@@ -1129,6 +1129,438 @@
       ],
       "scene": "kelas-c02",
       "chapter": 2
+    },
+    {
+      "id": "ms-c05-008",
+      "lang": "ms",
+      "term": "sedikit / sikit",
+      "gloss_en": "a little",
+      "gloss_ja": "少し",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Saya boleh cakap bahasa Melayu sedikit. sikit is the spoken form (sikit je, just a little).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-064",
+      "lang": "ms",
+      "term": "cakap",
+      "gloss_en": "to speak, say",
+      "gloss_ja": "話す・言う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Saya boleh cakap bahasa Melayu sedikit.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-065",
+      "lang": "ms",
+      "term": "bolehkah",
+      "gloss_en": "\"Can ...?\" / \"Would it be possible ...?\" (polite form of boleh)",
+      "gloss_ja": "「〜できますか」（boleh のていねいな形）",
+      "pos": "question",
+      "affix_tag": "-kah",
+      "note": "boleh + -kah (both taught in this chapter): the polite form of boleh.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-066",
+      "lang": "ms",
+      "term": "badminton",
+      "gloss_en": "badminton (also: bulu tangkis)",
+      "gloss_ja": "バドミントン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-067",
+      "lang": "ms",
+      "term": "ini",
+      "gloss_en": "this",
+      "gloss_ja": "これ・この",
+      "pos": "det",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-068",
+      "lang": "ms",
+      "term": "itu",
+      "gloss_en": "that",
+      "gloss_ja": "それ・その・あれ",
+      "pos": "det",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-069",
+      "lang": "ms",
+      "term": "kelas",
+      "gloss_en": "class",
+      "gloss_ja": "クラス・授業",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-070",
+      "lang": "ms",
+      "term": "adakah",
+      "gloss_en": "yes/no question opener (Adakah ...? = Is it ...?)",
+      "gloss_ja": "〜ですか（はい・いいえで答える質問）",
+      "pos": "question",
+      "affix_tag": "-kah",
+      "note": "ada + -kah (both taught in this chapter). Adakah ...? opens a yes/no question.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-071",
+      "lang": "ms",
+      "term": "bahasa",
+      "gloss_en": "language (bahasa Melayu = the Malay language)",
+      "gloss_ja": "言語（bahasa Melayu＝マレー語）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "bahasa Melayu, bahasa Inggeris, bahasa Jepun.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-072",
+      "lang": "ms",
+      "term": "Melayu",
+      "gloss_en": "Malay (bahasa Melayu, orang Melayu)",
+      "gloss_ja": "マレー（語・人）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Also in baju Melayu (the open-house scene).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-073",
+      "lang": "ms",
+      "term": "Inggeris",
+      "gloss_en": "English (bahasa Inggeris)",
+      "gloss_ja": "英語（bahasa Inggeris）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Malaysian spelling: Inggeris.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-074",
+      "lang": "ms",
+      "term": "muzik",
+      "gloss_en": "music",
+      "gloss_ja": "音楽",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Malaysian spelling: muzik.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-075",
+      "lang": "ms",
+      "term": "filem",
+      "gloss_en": "film, movie (tengok filem = watch a movie)",
+      "gloss_ja": "映画",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Malaysian spelling: filem.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-076",
+      "lang": "ms",
+      "term": "sukan",
+      "gloss_en": "sport",
+      "gloss_ja": "スポーツ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-077",
+      "lang": "ms",
+      "term": "lagu",
+      "gloss_en": "song",
+      "gloss_ja": "歌",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-078",
+      "lang": "ms",
+      "term": "masak",
+      "gloss_en": "to cook; cooked (suka masak = like cooking)",
+      "gloss_ja": "料理する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "suka masak = like cooking. masakan (food, cooking) is already in this chapter.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-079",
+      "lang": "ms",
+      "term": "karaoke",
+      "gloss_en": "karaoke",
+      "gloss_ja": "カラオケ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-080",
+      "lang": "ms",
+      "term": "golf",
+      "gloss_en": "golf (main golf = play golf)",
+      "gloss_ja": "ゴルフ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": null,
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-081",
+      "lang": "ms",
+      "term": "kafe",
+      "gloss_en": "café (also spelt cafe in signs and speech)",
+      "gloss_ja": "カフェ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Also spelt cafe in signs and speech: both are used.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-082",
+      "lang": "ms",
+      "term": "cafe hopping",
+      "gloss_en": "café hopping (spoken English loan)",
+      "gloss_ja": "カフェ巡り",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Spoken (an English loan), not a standard word.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-083",
+      "lang": "ms",
+      "term": "jalan-jalan",
+      "gloss_en": "going out, travelling around for fun",
+      "gloss_ja": "出かける・旅行する（遊びで）",
+      "pos": "verb",
+      "affix_tag": "chunk",
+      "note": "Saya suka jalan-jalan. Covers 'travelling for fun' for now.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-084",
+      "lang": "ms",
+      "term": "travel",
+      "gloss_en": "to travel (spoken English loan)",
+      "gloss_ja": "旅行する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Spoken (an English loan). The standard word comes later (Ch11).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-085",
+      "lang": "ms",
+      "term": "hiking",
+      "gloss_en": "hiking (spoken English loan)",
+      "gloss_ja": "ハイキング",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Spoken (an English loan). The standard phrase comes later (Ch11).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
+    },
+    {
+      "id": "ms-c02-086",
+      "lang": "ms",
+      "term": "oshikatsu",
+      "gloss_en": "supporting a favourite idol or character (Japanese loan)",
+      "gloss_ja": "推し活",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "From the Japanese 推し活, used among fans. It is not in Kamus Dewan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c02"
+        }
+      ],
+      "scene": "kelas-c02",
+      "chapter": 2
     }
   ],
   "frames": [
@@ -1208,8 +1640,8 @@
       {
         "id": "ms-c02-s03",
         "speaker": "Encik Rahman",
-        "ms": "Encik dari mana di Jepun?",
-        "en": "Where in Japan are you from?"
+        "ms": "Kampung encik di mana?",
+        "en": "Where is your hometown?"
       },
       {
         "id": "ms-c02-s04",
@@ -1289,6 +1721,7 @@
       "ms-c02-041",
       "ms-c02-048",
       "ms-c02-058",
+      "ms-c02-066",
       "ms-c02-001"
     ],
     "frames": [

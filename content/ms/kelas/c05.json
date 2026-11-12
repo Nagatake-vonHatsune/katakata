@@ -139,24 +139,6 @@
       "chapter": 5
     },
     {
-      "id": "ms-c05-008",
-      "lang": "ms",
-      "term": "sedikit / sikit",
-      "gloss_en": "a little",
-      "gloss_ja": "少し",
-      "pos": "adv",
-      "affix_tag": "root",
-      "note": null,
-      "links": [
-        {
-          "type": "babak",
-          "target": "kelas-c05"
-        }
-      ],
-      "scene": "kelas-c05",
-      "chapter": 5
-    },
-    {
       "id": "ms-c05-009",
       "lang": "ms",
       "term": "banyak",
@@ -1175,7 +1157,6 @@
       "ms-c05-005",
       "ms-c05-006",
       "ms-c05-007",
-      "ms-c05-008",
       "ms-c05-010",
       "ms-c05-013",
       "ms-c05-014",
@@ -1190,7 +1171,8 @@
       "ms-c05-053",
       "ms-c05-054",
       "ms-c05-055",
-      "ms-c05-056"
+      "ms-c05-056",
+      "ms-c05-008"
     ],
     "frames": [
       "ms-c05-f01",
