@@ -42,24 +42,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-daily-life-02",
-      "lang": "ms",
-      "term": "nombor plat",
-      "gloss_en": "Car number plate",
-      "gloss_ja": "車のナンバー（ナンバープレート）",
-      "pos": "noun",
-      "affix_tag": "chunk",
-      "note": "Hanashishou: Apakah nombor platnya?",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-daily-life"
-        }
-      ],
-      "scene": "dunia-jambatan-daily-life",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-daily-life-04",
       "lang": "ms",
       "term": "senyap",
@@ -438,24 +420,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-daily-life-29",
-      "lang": "ms",
-      "term": "kulit",
-      "gloss_en": "Leather; also skin",
-      "gloss_ja": "革；皮膚",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Dompet kulit warna coklat.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-daily-life"
-        }
-      ],
-      "scene": "dunia-jambatan-daily-life",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-daily-life-30",
       "lang": "ms",
       "term": "tertinggal",
@@ -500,24 +464,6 @@
       "pos": "noun",
       "affix_tag": "chunk",
       "note": "Hanashishou: Tiada tanda harga.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-daily-life"
-        }
-      ],
-      "scene": "dunia-jambatan-daily-life",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-daily-life-34",
-      "lang": "ms",
-      "term": "beg tangan",
-      "gloss_en": "Hand luggage (also: handbag)",
-      "gloss_ja": "手荷物、ハンドバッグ",
-      "pos": "noun",
-      "affix_tag": "chunk",
-      "note": "Hanashishou: Beg tangan maksimum 7 kilo.",
       "links": [
         {
           "type": "babak",

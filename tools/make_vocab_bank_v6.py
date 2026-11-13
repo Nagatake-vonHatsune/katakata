@@ -553,7 +553,81 @@ def ch14(b):
         b.ks.append([f"ms-c14-s{i:02d}", 14, title, speaker, ms, en])
 
 
-CHAPTERS = {10: ch10, 11: ch11, 12: ch12, 13: ch13, 14: ch14}
+def ch15(b):
+    """Chapter 15: describing a person or a lost item: noun + yang + a short clause. No new affix family.
+
+    19 ledger rows in plan order. berjalur is ber- (open since Chapter 10) + jalur; the other nouns and adjectives are
+    plain words. L-0623 «beg tangan» is narrowed to "handbag" (Sam, W11). The scene uses «hilang», not «tertinggal»,
+    which waits for Chapter 16 (plan section 5).
+    """
+    cards = [
+        ("L-1219", "Lost, missing: Dompet saya hilang. «barang hilang» = lost property.", {}),
+        ("L-1220", "A feature, a characteristic. Forms often print it doubled («ciri-ciri»): recognise both.", {}),
+        ("L-1221", "ber- + jalur: striped. Baju berjalur. The root «jalur» is not a class card.", {}),
+        ("L-1222", "A strap, a cord: beg yang ada tali panjang.", {}),
+        ("L-1223", "A pocket.", {}),
+        ("L-1224", "A wallet.", {}),
+        ("L-0623", "A handbag: beg (Dunia, Ch8) + tangan (Dunia, Ch6). Learn it as a phrase.", {}),
+        ("L-0618", "Leather; also skin. Dompet kulit = a leather wallet.", {}),
+        ("L-0591", "A car number plate: nombor (Ch3) + plat. Useful for finding an e-hailing car.", {}),
+        ("L-1225", "Shape: Bentuknya segi empat.", {}),
+        ("L-1226", "Round.", {}),
+        ("L-1227", "Square or rectangular: segi + empat (Ch3). Learn it as a phrase.", {}),
+        ("L-1228", "A zip (zipper): beg yang ada zip.", {}),
+        ("L-1229", "Like, such as. Standard; everyday speech says «macam» (Dunia, Ch5). Learn it as a whole word.", {}),
+        ("L-1230", "A man; male: Lelaki yang pakai cermin mata.", {}),
+        ("L-1231", "A woman; female.", {}),
+        ("L-1232", "Glasses: cermin (Dunia, Ch4) + mata (Dunia, Ch4). Learn it as a phrase.", {}),
+        ("L-1233", "Things, belongings: barang hilang = lost property.", {}),
+        ("L-1234", "A brand: Ada jenama?", {}),
+    ]
+    for lid, note, opt in cards:
+        kc(b, 15, lid, note, **opt)
+
+    # Frames: the plan's section 3 example (Saya mencari beg yang ada zip.) and the block goals: say what is lost,
+    # describe it with a yang clause, ask a question that separates two items, give shape and likeness.
+    frames = [
+        ("ms-c15-f01", "Saya mencari ___ yang ada ___.", "Saya mencari beg yang ada zip.", "I'm looking for a bag that has a zip."),
+        ("ms-c15-f02", "___ saya hilang.", "Dompet saya hilang.", "My wallet is lost."),
+        ("ms-c15-f03", "Lelaki yang pakai ___.", "Lelaki yang pakai cermin mata.", "The man who wears glasses."),
+        ("ms-c15-f04", "Beg itu warna ___ dan ada ___.", "Beg itu warna hitam dan ada tali panjang.",
+         "The bag is black and has a long strap."),
+        ("ms-c15-f05", "Yang mana satu? Yang ___ atau yang ___?", "Yang mana satu? Yang ada zip atau yang tidak ada zip?",
+         "Which one? The one with a zip or the one without?"),
+        ("ms-c15-f06", "Bentuknya ___, seperti ___.", "Bentuknya segi empat, seperti kotak.", "It is rectangular, like a box."),
+    ]
+    for fid, frame, example, meaning in frames:
+        b.add_frame(15, fid, frame, example, meaning)
+
+    # Scenario: the plan's scene. A wallet described at the lost property counter of a station, then a visitor identified
+    # from clothing and a meeting place. Fictional people and belongings.
+    title = "A lost wallet and a visitor"
+    lines = [
+        ("Tanaka", "Maaf, ini kaunter barang hilang? Saya mencari dompet saya.", "Excuse me, is this the lost property counter? I'm looking for my wallet."),
+        ("Kakitangan stesen", "Ya, encik. Dompet yang mana? Apa warna dompet itu?", "Yes, sir. Which wallet? What colour is it?"),
+        ("Tanaka", "Hitam. Dompet kulit. Ada zip dan satu poket kecil.", "Black. A leather wallet. It has a zip and one small pocket."),
+        ("Kakitangan stesen", "Ada jenama?", "Is there a brand?"),
+        ("Tanaka", "Saya tidak ingat jenamanya. Bentuknya segi empat, seperti kotak kecil.",
+         "I don't remember the brand. It's rectangular, like a small box."),
+        ("Kakitangan stesen", "Ada dua dompet hitam di sini. Yang mana satu? Yang ada zip atau yang tidak ada zip?",
+         "There are two black wallets here. Which one? The one with a zip or the one without?"),
+        ("Tanaka", "Yang ada zip. Kad saya ada di dalam, tetapi pasport saya tidak ada.",
+         "The one with a zip. My card is inside, but my passport isn't."),
+        ("Kakitangan stesen", "Betul, ada kad encik di dalam. Ini dompet encik.", "That's right, your card is inside. Here is your wallet."),
+        ("Tanaka", "Terima kasih banyak!", "Thank you very much!"),
+        ("Tanaka", "Encik Rahman, tetamu dari Jepun sudah sampai di stesen.", "Mr Rahman, our guest from Japan has arrived at the station."),
+        ("Encik Rahman", "Saya tidak tahu siapa dia. Lelaki yang mana?", "I don't know who he is. Which man?"),
+        ("Tanaka", "Lelaki yang pakai cermin mata dan baju berjalur. Dia dengan seorang perempuan yang pakai topi. Mereka bawa beg yang ada tali panjang.",
+         "The man who wears glasses and a striped shirt. He's with a woman who wears a hat. They're carrying a bag with a long strap."),
+        ("Encik Rahman", "Dia di mana sekarang?", "Where is he now?"),
+        ("Tanaka", "Dia dekat kaunter, di sebelah lif.", "He's near the counter, next to the lift."),
+        ("Encik Rahman", "Oh, saya sudah jumpa dia.", "Oh, I've found him."),
+    ]
+    for i, (speaker, ms, en) in enumerate(lines, 1):
+        b.ks.append([f"ms-c15-s{i:02d}", 15, title, speaker, ms, en])
+
+
+CHAPTERS = {10: ch10, 11: ch11, 12: ch12, 13: ch13, 14: ch14, 15: ch15}
 
 
 def main():

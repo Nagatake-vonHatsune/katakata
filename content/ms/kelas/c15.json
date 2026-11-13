@@ -1,0 +1,535 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c15",
+  "chapter": 15,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Memerihalkan: yang",
+    "en": "Describing with yang",
+    "ja": "yang で特徴を言う"
+  },
+  "cards": [
+    {
+      "id": "ms-c15-001",
+      "lang": "ms",
+      "term": "hilang",
+      "gloss_en": "lost / missing",
+      "gloss_ja": "なくなった",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Lost, missing: Dompet saya hilang. «barang hilang» = lost property.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-002",
+      "lang": "ms",
+      "term": "ciri",
+      "gloss_en": "feature",
+      "gloss_ja": "特徴",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A feature, a characteristic. Forms often print it doubled («ciri-ciri»): recognise both.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-003",
+      "lang": "ms",
+      "term": "berjalur",
+      "gloss_en": "striped",
+      "gloss_ja": "しま模様の",
+      "pos": "adj",
+      "affix_tag": "ber-",
+      "note": "ber- + jalur: striped. Baju berjalur. The root «jalur» is not a class card.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-004",
+      "lang": "ms",
+      "term": "tali",
+      "gloss_en": "strap / cord",
+      "gloss_ja": "ひも・ストラップ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A strap, a cord: beg yang ada tali panjang.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-005",
+      "lang": "ms",
+      "term": "poket",
+      "gloss_en": "pocket",
+      "gloss_ja": "ポケット",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A pocket.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-006",
+      "lang": "ms",
+      "term": "dompet",
+      "gloss_en": "wallet",
+      "gloss_ja": "財布",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A wallet.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-007",
+      "lang": "ms",
+      "term": "beg tangan",
+      "gloss_en": "Handbag",
+      "gloss_ja": "ハンドバッグ",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "A handbag: beg (Dunia, Ch8) + tangan (Dunia, Ch6). Learn it as a phrase.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-008",
+      "lang": "ms",
+      "term": "kulit",
+      "gloss_en": "Leather; also skin",
+      "gloss_ja": "革；皮膚",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Leather; also skin. Dompet kulit = a leather wallet.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-009",
+      "lang": "ms",
+      "term": "nombor plat",
+      "gloss_en": "Car number plate",
+      "gloss_ja": "車のナンバー（ナンバープレート）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "A car number plate: nombor (Ch3) + plat. Useful for finding an e-hailing car.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-010",
+      "lang": "ms",
+      "term": "bentuk",
+      "gloss_en": "shape",
+      "gloss_ja": "形",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Shape: Bentuknya segi empat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-011",
+      "lang": "ms",
+      "term": "bulat",
+      "gloss_en": "round",
+      "gloss_ja": "丸い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Round.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-012",
+      "lang": "ms",
+      "term": "segi empat",
+      "gloss_en": "square or rectangular (four-sided)",
+      "gloss_ja": "四角形",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Square or rectangular: segi + empat (Ch3). Learn it as a phrase.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-013",
+      "lang": "ms",
+      "term": "zip",
+      "gloss_en": "zip / zipper",
+      "gloss_ja": "ファスナー",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A zip (zipper): beg yang ada zip.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-014",
+      "lang": "ms",
+      "term": "seperti",
+      "gloss_en": "like, such as (standard; macam is spoken)",
+      "gloss_ja": "〜のような",
+      "pos": "prep",
+      "affix_tag": "lex",
+      "note": "Like, such as. Standard; everyday speech says «macam» (Dunia, Ch5). Learn it as a whole word.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-015",
+      "lang": "ms",
+      "term": "lelaki",
+      "gloss_en": "man; male",
+      "gloss_ja": "男性・男の",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A man; male: Lelaki yang pakai cermin mata.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-016",
+      "lang": "ms",
+      "term": "perempuan",
+      "gloss_en": "woman; female",
+      "gloss_ja": "女性・女の",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A woman; female.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-017",
+      "lang": "ms",
+      "term": "cermin mata",
+      "gloss_en": "glasses",
+      "gloss_ja": "めがね",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Glasses: cermin (Dunia, Ch4) + mata (Dunia, Ch4). Learn it as a phrase.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-018",
+      "lang": "ms",
+      "term": "barang",
+      "gloss_en": "thing(s); belongings",
+      "gloss_ja": "物・持ち物",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Things, belongings: barang hilang = lost property.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-019",
+      "lang": "ms",
+      "term": "jenama",
+      "gloss_en": "brand",
+      "gloss_ja": "ブランド・銘柄",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A brand: Ada jenama?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c15-f01",
+      "frame": "Saya mencari ___ yang ada ___.",
+      "example": "Saya mencari beg yang ada zip.",
+      "meaning_en": "I'm looking for a bag that has a zip.",
+      "meaning_ja": "ファスナー付きのバッグを探しています。"
+    },
+    {
+      "id": "ms-c15-f02",
+      "frame": "___ saya hilang.",
+      "example": "Dompet saya hilang.",
+      "meaning_en": "My wallet is lost.",
+      "meaning_ja": "財布をなくしました。"
+    },
+    {
+      "id": "ms-c15-f03",
+      "frame": "Lelaki yang pakai ___.",
+      "example": "Lelaki yang pakai cermin mata.",
+      "meaning_en": "The man who wears glasses.",
+      "meaning_ja": "眼鏡をかけている男性。"
+    },
+    {
+      "id": "ms-c15-f04",
+      "frame": "Beg itu warna ___ dan ada ___.",
+      "example": "Beg itu warna hitam dan ada tali panjang.",
+      "meaning_en": "The bag is black and has a long strap.",
+      "meaning_ja": "そのバッグは黒で、長いひもが付いています。"
+    },
+    {
+      "id": "ms-c15-f05",
+      "frame": "Yang mana satu? Yang ___ atau yang ___?",
+      "example": "Yang mana satu? Yang ada zip atau yang tidak ada zip?",
+      "meaning_en": "Which one? The one with a zip or the one without?",
+      "meaning_ja": "どれですか。ファスナー付きのですか、なしのですか。"
+    },
+    {
+      "id": "ms-c15-f06",
+      "frame": "Bentuknya ___, seperti ___.",
+      "example": "Bentuknya segi empat, seperti kotak.",
+      "meaning_en": "It is rectangular, like a box.",
+      "meaning_ja": "形は四角で、箱のようです。"
+    }
+  ],
+  "scenario": {
+    "title_en": "A lost wallet and a visitor",
+    "title_ja": "なくした財布と迎える客",
+    "lines": [
+      {
+        "id": "ms-c15-s01",
+        "speaker": "Tanaka",
+        "ms": "Maaf, ini kaunter barang hilang? Saya mencari dompet saya.",
+        "en": "Excuse me, is this the lost property counter? I'm looking for my wallet."
+      },
+      {
+        "id": "ms-c15-s02",
+        "speaker": "Kakitangan stesen",
+        "ms": "Ya, encik. Dompet yang mana? Apa warna dompet itu?",
+        "en": "Yes, sir. Which wallet? What colour is it?"
+      },
+      {
+        "id": "ms-c15-s03",
+        "speaker": "Tanaka",
+        "ms": "Hitam. Dompet kulit. Ada zip dan satu poket kecil.",
+        "en": "Black. A leather wallet. It has a zip and one small pocket."
+      },
+      {
+        "id": "ms-c15-s04",
+        "speaker": "Kakitangan stesen",
+        "ms": "Ada jenama?",
+        "en": "Is there a brand?"
+      },
+      {
+        "id": "ms-c15-s05",
+        "speaker": "Tanaka",
+        "ms": "Saya tidak ingat jenamanya. Bentuknya segi empat, seperti kotak kecil.",
+        "en": "I don't remember the brand. It's rectangular, like a small box."
+      },
+      {
+        "id": "ms-c15-s06",
+        "speaker": "Kakitangan stesen",
+        "ms": "Ada dua dompet hitam di sini. Yang mana satu? Yang ada zip atau yang tidak ada zip?",
+        "en": "There are two black wallets here. Which one? The one with a zip or the one without?"
+      },
+      {
+        "id": "ms-c15-s07",
+        "speaker": "Tanaka",
+        "ms": "Yang ada zip. Kad saya ada di dalam, tetapi pasport saya tidak ada.",
+        "en": "The one with a zip. My card is inside, but my passport isn't."
+      },
+      {
+        "id": "ms-c15-s08",
+        "speaker": "Kakitangan stesen",
+        "ms": "Betul, ada kad encik di dalam. Ini dompet encik.",
+        "en": "That's right, your card is inside. Here is your wallet."
+      },
+      {
+        "id": "ms-c15-s09",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih banyak!",
+        "en": "Thank you very much!"
+      },
+      {
+        "id": "ms-c15-s10",
+        "speaker": "Tanaka",
+        "ms": "Encik Rahman, tetamu dari Jepun sudah sampai di stesen.",
+        "en": "Mr Rahman, our guest from Japan has arrived at the station."
+      },
+      {
+        "id": "ms-c15-s11",
+        "speaker": "Encik Rahman",
+        "ms": "Saya tidak tahu siapa dia. Lelaki yang mana?",
+        "en": "I don't know who he is. Which man?"
+      },
+      {
+        "id": "ms-c15-s12",
+        "speaker": "Tanaka",
+        "ms": "Lelaki yang pakai cermin mata dan baju berjalur. Dia dengan seorang perempuan yang pakai topi. Mereka bawa beg yang ada tali panjang.",
+        "en": "The man who wears glasses and a striped shirt. He's with a woman who wears a hat. They're carrying a bag with a long strap."
+      },
+      {
+        "id": "ms-c15-s13",
+        "speaker": "Encik Rahman",
+        "ms": "Dia di mana sekarang?",
+        "en": "Where is he now?"
+      },
+      {
+        "id": "ms-c15-s14",
+        "speaker": "Tanaka",
+        "ms": "Dia dekat kaunter, di sebelah lif.",
+        "en": "He's near the counter, next to the lift."
+      },
+      {
+        "id": "ms-c15-s15",
+        "speaker": "Encik Rahman",
+        "ms": "Oh, saya sudah jumpa dia.",
+        "en": "Oh, I've found him."
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c15-001",
+      "ms-c15-003",
+      "ms-c15-004",
+      "ms-c15-005",
+      "ms-c15-006",
+      "ms-c15-008",
+      "ms-c15-012",
+      "ms-c15-013",
+      "ms-c15-014",
+      "ms-c15-015",
+      "ms-c15-016",
+      "ms-c15-017",
+      "ms-c15-018",
+      "ms-c15-019",
+      "ms-c05-004",
+      "ms-c06-016",
+      "ms-c05-018",
+      "ms-d-pakaian-kedai-05",
+      "ms-c08-031",
+      "ms-d-pakaian-kedai-02",
+      "ms-d-pakaian-kedai-04",
+      "ms-d-badan-bayi-09",
+      "ms-c03-026",
+      "ms-d-bank-pos-04",
+      "ms-d-bank-pos-06",
+      "ms-d-pakaian-kedai-12",
+      "ms-c12-017",
+      "ms-c06-034"
+    ],
+    "frames": [
+      "ms-c15-f01",
+      "ms-c15-f02"
+    ],
+    "scene": null
+  }
+}
