@@ -15,6 +15,8 @@ the reference for audit and development of Malay vocabulary in both Kata-Kata an
 
 - `tools/ledger/sheet_to_snapshot.py <values.json>` turns a read of the sheet's Ledger tab (A1:T last row) into
   `malay-ledger.csv` (CRLF, 20 columns), so a diff shows exactly the changed rows. The snapshot is at L-1266 (13 Nov 2026).
+- `tools/ledger/join_reads.py` joins the two reads of the tab (A1:T600 and A601:T1400); `tools/ledger/wbcalls.py` turns a plan into
+  the `update_values` ranges (J and K only).
 - `tools/ledger/writeback.py plan|verify` plans a Kata-Kata write-back (card IDs and places, columns J and K) from a
   `make_vocab_bank_vN.py --map` file, and checks a read-back of the sheet: only the planned cells may change.
 

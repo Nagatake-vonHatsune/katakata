@@ -2,6 +2,21 @@
 
 ## Unreleased
 
+- **Stage 2 chapters 11 to 18 (13 Nov 2026), 958 to 1115 cards.** Report: [docs/STAGE-2-c11-c18-report.md](docs/STAGE-2-c11-c18-report.md).
+  One commit per chapter, each with the ledger write-back (235 cells of card IDs and places, verified by a full read-back) and
+  Journal rows 153 to 175.
+  - 196 new class cards, one for every ledger row of the chapter (c11 meN- 43, c12 -kan and -i 45, c13 health 24, c14 connectors
+    20, c15 yang 19, c16 accidental ter- 23, c17 spoken Malay and invitations 22). Each affixed card shows its root and the chapter
+    that teaches it, nasal spellings (c11), the di- partner (c11), whole words (pe-, ke-an, per-an) and the contrast between
+    accident ter- and the Chapter 6 superlatives (c16). Spoken forms are marked "Spoken:" and come after their standard form;
+    «kan», «lah» and «takpe / tak apa» are recognise-only. 39 Jambatan cards became class cards.
+  - Every chapter has six frames, a scenario and a Sedia Kelas list with review cards from earlier chapters. Chapter 18 is the
+    Stage 2 review: no new words, six frames, a 22-line working-week scenario and 20 review cards from chapters 10 to 17.
+  - L-0690 «tak tahan» is not built: the ledger has no «tidak tahan» row, so the standard form cannot be taught first.
+  - Chapter 15 now teaches «seperti itu» (the standard form of the Chapter 17 «macam tu»).
+  - The importer builds a chapter without vocabulary rows, the pack schema allows `cards: []`, `check-content` accepts an empty
+    Kelas pack only when it is a review chapter. New: `tools/ledger/join_reads.py`, `tools/ledger/wbcalls.py`.
+
 - **Stage 2 begins: chapter 10, ber- verbs (13 Nov 2026), 920 to 958 cards.** Report: [docs/STAGE-2-c10-report.md](docs/STAGE-2-c10-report.md).
   - 41 class cards, one for every chapter 10 ledger row (units 10A routines and 10B background; «pindah» is recognise-only,
     the spoken partner of berpindah). Each ber- card shows its root. Six frames, a scenario (a working day; a new neighbour),

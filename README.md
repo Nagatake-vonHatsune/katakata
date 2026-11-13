@@ -20,7 +20,7 @@ and Japanese glosses). Katakana hints only appear in the Japanese interface.
 | Spec item | Where |
 |---|---|
 | Onboarding: name, voice check, iOS "Add to Home Screen" step | `src/views/onboarding.ts` |
-| Kelas chapters 1 to 10 (Stage 1 and the first Stage 2 chapter), 20 Dunia scenes and 5 Jambatan scenes (958 cards) | `content/ms/` (packs with `"status": "live"`) |
+| Kelas chapters 1 to 18 (Stage 1 and Stage 2; chapter 18 is a review pack), 20 Dunia scenes and 5 Jambatan scenes (1115 cards) | `content/ms/` (packs with `"status": "live"`) |
 | 今日の練習: due reviews, then 5–8 new words, one frame drill, one Cari Benda round | `src/core/session.ts` |
 | Kad Kata, Cari Benda, Susun Ayat | `src/games/<id>/` (common `Game` interface) |
 | 授業の準備 (Sedia Kelas) with "Ready" stamp | `src/views/modes.ts` |
@@ -54,7 +54,8 @@ affix_tag, note, links[], scene, chapter, image`.
   corrected notes and frames, the general "Rumah terbuka" scene and a new "Salam di pejabat" scene), built by
   `tools/make_vocab_bank_v5.py`; see [docs/CLEANUP-2026-11-12.md](docs/CLEANUP-2026-11-12.md).
   v6 adds the Stage 2 chapter packs from the ledger and Cikgu Sensai's Stage 2 plan, one function per chapter in
-  `tools/make_vocab_bank_v6.py` (chapter 10 so far; see [docs/STAGE-2-c10-report.md](docs/STAGE-2-c10-report.md) and the
+  `tools/make_vocab_bank_v6.py` (chapters 10 to 18; see [docs/STAGE-2-c10-report.md](docs/STAGE-2-c10-report.md),
+  [docs/STAGE-2-c11-c18-report.md](docs/STAGE-2-c11-c18-report.md) and the
   chapter template in [docs/HANDOFF.md](docs/HANDOFF.md)). All v3 to v6 rows are Claude drafts.
 - Only packs with `"status": "live"` ship in the app (set by `live_kelas` / `live_dunia` in
   `tools/import-overrides.json`). All packs are live at the moment.
