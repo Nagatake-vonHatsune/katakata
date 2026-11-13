@@ -1,0 +1,226 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c18",
+  "chapter": 18,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Ulang Kaji Peringkat 2",
+    "en": "Stage 2 review",
+    "ja": "ステージ2の復習"
+  },
+  "cards": [],
+  "frames": [
+    {
+      "id": "ms-c18-f01",
+      "frame": "Setiap pagi saya ___ pukul ___, kemudian saya ___ emel.",
+      "example": "Setiap pagi saya bertolak pukul tujuh, kemudian saya membaca emel.",
+      "meaning_en": "Every morning I set off at seven, then I read my email.",
+      "meaning_ja": "毎朝7時に出発して、それからメールを読みます。"
+    },
+    {
+      "id": "ms-c18-f02",
+      "frame": "Tolong ___ bungkusan itu di pondok pengawal.",
+      "example": "Tolong simpankan bungkusan itu di pondok pengawal.",
+      "meaning_en": "Please keep that parcel at the guardhouse.",
+      "meaning_ja": "その荷物を守衛所で預かってください。"
+    },
+    {
+      "id": "ms-c18-f03",
+      "frame": "Saya belum ___, tetapi saya mesti ___.",
+      "example": "Saya belum daftar, tetapi saya mesti berjumpa doktor.",
+      "meaning_en": "I haven't registered yet, but I must see a doctor.",
+      "meaning_ja": "まだ登録していませんが、医者に会わなければなりません。"
+    },
+    {
+      "id": "ms-c18-f04",
+      "frame": "Hari Sabtu saya tidak lapang, jadi bolehkah kita ___ hingga hari Ahad?",
+      "example": "Hari Sabtu saya tidak lapang, jadi bolehkah kita tangguh hingga hari Ahad?",
+      "meaning_en": "I'm not free on Saturday, so could we put it off until Sunday?",
+      "meaning_ja": "土曜日は都合がつかないので、日曜日まで延ばせませんか。"
+    },
+    {
+      "id": "ms-c18-f05",
+      "frame": "Saya mencari ___ yang ___.",
+      "example": "Saya mencari dompet yang ada zip.",
+      "meaning_en": "I'm looking for a wallet that has a zip.",
+      "meaning_ja": "ファスナー付きの財布を探しています。"
+    },
+    {
+      "id": "ms-c18-f06",
+      "frame": "Maaf, saya ___. Tidak mengapa, ___.",
+      "example": "Maaf, saya terlupa. Tidak mengapa, lain kali, ya?",
+      "meaning_en": "Sorry, I forgot. That's all right, another time.",
+      "meaning_ja": "すみません、うっかり忘れました。大丈夫ですよ、また今度ね。"
+    }
+  ],
+  "scenario": {
+    "title_en": "A working week",
+    "title_ja": "ある一週間",
+    "lines": [
+      {
+        "id": "ms-c18-s01",
+        "speaker": "Tanaka",
+        "ms": "Selamat pagi, Cik Mei Ling. Selamat datang! Saya berasal dari Osaka dan bekerja di Kuala Lumpur sejak tahun lepas.",
+        "en": "Good morning, Mei Ling. Welcome! I'm from Osaka and I've worked in Kuala Lumpur since last year."
+      },
+      {
+        "id": "ms-c18-s02",
+        "speaker": "Cik Mei Ling",
+        "ms": "Terima kasih, Encik Tanaka. Saya baru bekerja di sini. Saya tinggal berdua dengan kakak saya.",
+        "en": "Thank you, Mr Tanaka. I've only just started working here. I live with my older sister, just the two of us."
+      },
+      {
+        "id": "ms-c18-s03",
+        "speaker": "Tanaka",
+        "ms": "Hari ini cik akan membaca emel ini dan menyemak draf itu. Tarikh akhir hari Jumaat.",
+        "en": "Today you'll read this email and check that draft. The deadline is Friday."
+      },
+      {
+        "id": "ms-c18-s04",
+        "speaker": "Cik Mei Ling",
+        "ms": "Baik. Siapa yang menulis draf itu?",
+        "en": "Okay. Who wrote the draft?"
+      },
+      {
+        "id": "ms-c18-s05",
+        "speaker": "Tanaka",
+        "ms": "Encik Rahman yang menulis draf itu. Dia akan menghantar fail itu petang ini.",
+        "en": "Mr Rahman wrote it. He'll send the file this afternoon."
+      },
+      {
+        "id": "ms-c18-s06",
+        "speaker": "Cik Mei Ling",
+        "ms": "Encik Tanaka, ada kebocoran di siling bilik mesyuarat.",
+        "en": "Mr Tanaka, there's a leak in the ceiling of the meeting room."
+      },
+      {
+        "id": "ms-c18-s07",
+        "speaker": "Tanaka",
+        "ms": "Tolong hubungi pejabat pengurusan. Juruteknik akan membaiki paip itu.",
+        "en": "Please contact the management office. A technician will repair the pipe."
+      },
+      {
+        "id": "ms-c18-s08",
+        "speaker": "Cik Mei Ling",
+        "ms": "Baik. Saya hubungi mereka sekarang.",
+        "en": "Okay. I'll contact them now."
+      },
+      {
+        "id": "ms-c18-s09",
+        "speaker": "Cik Mei Ling",
+        "ms": "Satu lagi: bungkusan saya sudah sampai di pondok pengawal. Label itu koyak, jadi pengawal mahu tengok mesej saya.",
+        "en": "One more thing: my parcel has arrived at the guardhouse. The label is torn, so the guard wants to see my message."
+      },
+      {
+        "id": "ms-c18-s10",
+        "speaker": "Tanaka",
+        "ms": "Tidak mengapa. Pergi dulu. Pengawal akan tengok nombor penjejakan dalam mesej itu.",
+        "en": "That's all right. Go now. The guard will look at the tracking number in the message."
+      },
+      {
+        "id": "ms-c18-s11",
+        "speaker": "Cik Mei Ling",
+        "ms": "Encik Tanaka, saya demam dan sakit tekak. Saya mesti berjumpa doktor.",
+        "en": "Mr Tanaka, I have a fever and a sore throat. I must see a doctor."
+      },
+      {
+        "id": "ms-c18-s12",
+        "speaker": "Tanaka",
+        "ms": "Cik patut berehat. Cik sudah ada temu janji?",
+        "en": "You should rest. Do you have an appointment yet?"
+      },
+      {
+        "id": "ms-c18-s13",
+        "speaker": "Cik Mei Ling",
+        "ms": "Belum. Bolehkah saya minta cuti sakit?",
+        "en": "Not yet. May I ask for sick leave?"
+      },
+      {
+        "id": "ms-c18-s14",
+        "speaker": "Tanaka",
+        "ms": "Boleh. Cik mesti ada cuti sakit daripada doktor.",
+        "en": "Yes. You must have sick leave from the doctor."
+      },
+      {
+        "id": "ms-c18-s15",
+        "speaker": "Cik Mei Ling",
+        "ms": "Maaf, Encik Tanaka. Telefon saya tertinggal di rumah. Dompet saya pun hilang: dompet kulit yang ada zip.",
+        "en": "Sorry, Mr Tanaka. I left my phone at home. My wallet is lost too: a leather wallet that has a zip."
+      },
+      {
+        "id": "ms-c18-s16",
+        "speaker": "Tanaka",
+        "ms": "Jangan risau. Cuba tanya di kaunter barang hilang di stesen.",
+        "en": "Don't worry. Try asking at the lost property counter at the station."
+      },
+      {
+        "id": "ms-c18-s17",
+        "speaker": "Puan Aini",
+        "ms": "Cik Mei Ling, ini jemputan makan malam. Hari Sabtu, pukul tujuh. Bos belanja.",
+        "en": "Mei Ling, this is the invitation to dinner. Saturday at seven. The boss is treating."
+      },
+      {
+        "id": "ms-c18-s18",
+        "speaker": "Cik Mei Ling",
+        "ms": "Terima kasih, Puan Aini. Sayangnya hari Sabtu saya tidak lapang.",
+        "en": "Thank you, Puan Aini. Unfortunately I'm not free on Saturday."
+      },
+      {
+        "id": "ms-c18-s19",
+        "speaker": "Puan Aini",
+        "ms": "Tidak mengapa. Bagaimana kalau hari Ahad?",
+        "en": "That's all right. How about Sunday?"
+      },
+      {
+        "id": "ms-c18-s20",
+        "speaker": "Cik Mei Ling",
+        "ms": "Boleh. Hari Ahad saya lapang. Saya sudi datang.",
+        "en": "Yes. I'm free on Sunday. I'd be glad to come."
+      },
+      {
+        "id": "ms-c18-s21",
+        "speaker": "Puan Aini",
+        "ms": "Set! Hari Ahad, pukul tujuh.",
+        "en": "Deal! Sunday at seven."
+      },
+      {
+        "id": "ms-c18-s22",
+        "speaker": "Cik Mei Ling",
+        "ms": "Baik. Jumpa kat pejabat dulu, ya?",
+        "en": "Okay. Let's meet at the office first, shall we?"
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c10-001",
+      "ms-c10-024",
+      "ms-c11-002",
+      "ms-c11-025",
+      "ms-c11-014",
+      "ms-c11-036",
+      "ms-c12-027",
+      "ms-c12-026",
+      "ms-c12-035",
+      "ms-c12-016",
+      "ms-c13-010",
+      "ms-c13-024",
+      "ms-c13-002",
+      "ms-c13-021",
+      "ms-c16-002",
+      "ms-c15-001",
+      "ms-c15-006",
+      "ms-c17-021",
+      "ms-c17-011",
+      "ms-c17-014"
+    ],
+    "frames": [
+      "ms-c18-f01",
+      "ms-c18-f02"
+    ],
+    "scene": null
+  }
+}

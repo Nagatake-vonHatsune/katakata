@@ -38,6 +38,14 @@ for (const file of walk(contentDir)) {
   packs.push({ ...pack, _file: rel });
 }
 
+// A pack has cards, except a Kelas review chapter (Stage 2, chapter 18): no vocabulary of its own, but Sedia Kelas
+// review cards, frames and a scenario.
+for (const p of packs) {
+  if (p.cards.length) continue;
+  const review = p.kind === 'kelas' && p.sedia_kelas?.cards?.length && p.frames?.length && p.scenario?.lines?.length;
+  if (!review) errors.push(`${p._file}: no cards (only a Kelas review chapter may have none)`);
+}
+
 // IDs unique across all packs
 const cardById = new Map();
 const sceneIds = new Set();

@@ -20,7 +20,7 @@
       "properties": { "id": { "type": "string" }, "ms": { "type": "string" }, "en": { "type": "string" }, "ja": { "type": ["string", "null"] } }
     },
     "setting": { "type": "object", "properties": { "en": { "type": ["string", "null"] }, "ja": { "type": ["string", "null"] } } },
-    "cards": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/card" } },
+    "cards": { "type": "array", "items": { "$ref": "#/definitions/card" } },
     "frames": {
       "type": "array",
       "items": {

@@ -808,7 +808,72 @@ def ch17(b):
         b.ks.append([f"ms-c17-s{i:02d}", 17, title, speaker, ms, en])
 
 
-CHAPTERS = {10: ch10, 11: ch11, 12: ch12, 13: ch13, 14: ch14, 15: ch15, 16: ch16, 17: ch17}
+def ch18(b):
+    """Chapter 18: the Stage 2 review pack. No new words (plan section 2: core 0, recognition 0): no class cards, so no
+    ledger cell changes. Frames and a scenario recycle chapters 10 to 17 with only words placed in chapters 1 to 17;
+    Sedia Kelas holds review cards only (the import overrides list them, one to three per theme). The plan's chapter 18
+    scenario is an integrated working week: introduction and office handover, a parcel and a repair problem, an
+    appointment clarification and a changed invitation. Standard Malay is always accepted; the two spoken forms in the
+    last lines (set, kat) were taught in Chapter 17, and no particle is needed.
+    """
+    # One pattern from each chapter (10 and 11 share the first frame), standard forms.
+    frames = [
+        ("ms-c18-f01", "Setiap pagi saya ___ pukul ___, kemudian saya ___ emel.", "Setiap pagi saya bertolak pukul tujuh, kemudian saya membaca emel.",
+         "Every morning I set off at seven, then I read my email."),
+        ("ms-c18-f02", "Tolong ___ bungkusan itu di pondok pengawal.", "Tolong simpankan bungkusan itu di pondok pengawal.",
+         "Please keep that parcel at the guardhouse."),
+        ("ms-c18-f03", "Saya belum ___, tetapi saya mesti ___.", "Saya belum daftar, tetapi saya mesti berjumpa doktor.",
+         "I haven't registered yet, but I must see a doctor."),
+        ("ms-c18-f04", "Hari Sabtu saya tidak lapang, jadi bolehkah kita ___ hingga hari Ahad?",
+         "Hari Sabtu saya tidak lapang, jadi bolehkah kita tangguh hingga hari Ahad?",
+         "I'm not free on Saturday, so could we put it off until Sunday?"),
+        ("ms-c18-f05", "Saya mencari ___ yang ___.", "Saya mencari dompet yang ada zip.", "I'm looking for a wallet that has a zip."),
+        ("ms-c18-f06", "Maaf, saya ___. Tidak mengapa, ___.", "Maaf, saya terlupa. Tidak mengapa, lain kali, ya?",
+         "Sorry, I forgot. That's all right, another time."),
+    ]
+    for fid, frame, example, meaning in frames:
+        b.add_frame(18, fid, frame, example, meaning)
+
+    title = "A working week"
+    lines = [
+        ("Tanaka", "Selamat pagi, Cik Mei Ling. Selamat datang! Saya berasal dari Osaka dan bekerja di Kuala Lumpur sejak tahun lepas.",
+         "Good morning, Mei Ling. Welcome! I'm from Osaka and I've worked in Kuala Lumpur since last year."),
+        ("Cik Mei Ling", "Terima kasih, Encik Tanaka. Saya baru bekerja di sini. Saya tinggal berdua dengan kakak saya.",
+         "Thank you, Mr Tanaka. I've only just started working here. I live with my older sister, just the two of us."),
+        ("Tanaka", "Hari ini cik akan membaca emel ini dan menyemak draf itu. Tarikh akhir hari Jumaat.",
+         "Today you'll read this email and check that draft. The deadline is Friday."),
+        ("Cik Mei Ling", "Baik. Siapa yang menulis draf itu?", "Okay. Who wrote the draft?"),
+        ("Tanaka", "Encik Rahman yang menulis draf itu. Dia akan menghantar fail itu petang ini.",
+         "Mr Rahman wrote it. He'll send the file this afternoon."),
+        ("Cik Mei Ling", "Encik Tanaka, ada kebocoran di siling bilik mesyuarat.", "Mr Tanaka, there's a leak in the ceiling of the meeting room."),
+        ("Tanaka", "Tolong hubungi pejabat pengurusan. Juruteknik akan membaiki paip itu.",
+         "Please contact the management office. A technician will repair the pipe."),
+        ("Cik Mei Ling", "Baik. Saya hubungi mereka sekarang.", "Okay. I'll contact them now."),
+        ("Cik Mei Ling", "Satu lagi: bungkusan saya sudah sampai di pondok pengawal. Label itu koyak, jadi pengawal mahu tengok mesej saya.",
+         "One more thing: my parcel has arrived at the guardhouse. The label is torn, so the guard wants to see my message."),
+        ("Tanaka", "Tidak mengapa. Pergi dulu. Pengawal akan tengok nombor penjejakan dalam mesej itu.",
+         "That's all right. Go now. The guard will look at the tracking number in the message."),
+        ("Cik Mei Ling", "Encik Tanaka, saya demam dan sakit tekak. Saya mesti berjumpa doktor.",
+         "Mr Tanaka, I have a fever and a sore throat. I must see a doctor."),
+        ("Tanaka", "Cik patut berehat. Cik sudah ada temu janji?", "You should rest. Do you have an appointment yet?"),
+        ("Cik Mei Ling", "Belum. Bolehkah saya minta cuti sakit?", "Not yet. May I ask for sick leave?"),
+        ("Tanaka", "Boleh. Cik mesti ada cuti sakit daripada doktor.", "Yes. You must have sick leave from the doctor."),
+        ("Cik Mei Ling", "Maaf, Encik Tanaka. Telefon saya tertinggal di rumah. Dompet saya pun hilang: dompet kulit yang ada zip.",
+         "Sorry, Mr Tanaka. I left my phone at home. My wallet is lost too: a leather wallet that has a zip."),
+        ("Tanaka", "Jangan risau. Cuba tanya di kaunter barang hilang di stesen.", "Don't worry. Try asking at the lost property counter at the station."),
+        ("Puan Aini", "Cik Mei Ling, ini jemputan makan malam. Hari Sabtu, pukul tujuh. Bos belanja.",
+         "Mei Ling, this is the invitation to dinner. Saturday at seven. The boss is treating."),
+        ("Cik Mei Ling", "Terima kasih, Puan Aini. Sayangnya hari Sabtu saya tidak lapang.", "Thank you, Puan Aini. Unfortunately I'm not free on Saturday."),
+        ("Puan Aini", "Tidak mengapa. Bagaimana kalau hari Ahad?", "That's all right. How about Sunday?"),
+        ("Cik Mei Ling", "Boleh. Hari Ahad saya lapang. Saya sudi datang.", "Yes. I'm free on Sunday. I'd be glad to come."),
+        ("Puan Aini", "Set! Hari Ahad, pukul tujuh.", "Deal! Sunday at seven."),
+        ("Cik Mei Ling", "Baik. Jumpa kat pejabat dulu, ya?", "Okay. Let's meet at the office first, shall we?"),
+    ]
+    for i, (speaker, ms, en) in enumerate(lines, 1):
+        b.ks.append([f"ms-c18-s{i:02d}", 18, title, speaker, ms, en])
+
+
+CHAPTERS = {10: ch10, 11: ch11, 12: ch12, 13: ch13, 14: ch14, 15: ch15, 16: ch16, 17: ch17, 18: ch18}
 
 
 def main():

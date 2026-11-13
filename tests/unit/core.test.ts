@@ -58,8 +58,8 @@ describe('katakana hints', () => {
 });
 
 describe('content', () => {
-  it('ships the nine Stage 1 chapters, chapters 10 to 17 and twenty Dunia scenes', () => {
-    expect(content.chapters.map((c) => c.chapter)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]);
+  it('ships the nine Stage 1 chapters, chapters 10 to 18 and twenty Dunia scenes', () => {
+    expect(content.chapters.map((c) => c.chapter)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]);
     expect(content.scenes.filter((s) => s.world.id !== 'jambatan')).toHaveLength(20);
   });
   it('every Dunia scene has enough pictures for Cari Benda', () => {
@@ -71,6 +71,18 @@ describe('content', () => {
     expect(review.length).toBeGreaterThan(0);
     for (const id of review) expect(content.cards.get(id)!.chapter, id).toBeLessThan(10);
     expect(c10.cards.find((c) => c.term === 'pindah')!.recognise_only).toBe(true);
+  });
+  it('chapter 18 is a review pack: no new cards, Sedia Kelas review cards from chapters 10 to 17, frames and a scenario', () => {
+    const c18 = content.chapters.find((c) => c.chapter === 18)!;
+    expect(c18.cards).toHaveLength(0);
+    expect(c18.frames.length).toBeGreaterThanOrEqual(4);
+    expect(c18.scenario.lines.length).toBeGreaterThan(10);
+    expect(c18.sedia_kelas.cards.length).toBeGreaterThanOrEqual(15);
+    for (const id of c18.sedia_kelas.cards) {
+      const ch = content.cards.get(id)!.chapter;
+      expect(ch, id).toBeGreaterThanOrEqual(10);
+      expect(ch, id).toBeLessThan(18);
+    }
   });
   it('learning path starts with Chapter 1 core words and has no duplicates', () => {
     expect(content.cards.get(content.path[0])!.chapter).toBe(1);

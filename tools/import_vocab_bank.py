@@ -88,7 +88,10 @@ def main(xlsx):
     for r in index:
         primes.setdefault(int(r["Primes chapter"]), r["Scene ID"])
 
-    for ch in sorted({int(v["Chapter"]) for v in vocab}):
+    # A review chapter (Stage 2, chapter 18) has frames and a scenario but no vocabulary rows: its Sedia Kelas cards are
+    # the review cards listed in the overrides.
+    chapters = {int(v["Chapter"]) for v in vocab} | {int(f["Chapter"]) for f in frames} | {int(x["Chapter"]) for x in scen}
+    for ch in sorted(chapters):
         cid = f"c{ch:02d}"
         ch_frames = [f for f in frames if f["Chapter"] == ch]
         ch_scen = [s for s in scen if s["Chapter"] == ch]
