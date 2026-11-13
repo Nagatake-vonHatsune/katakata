@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+- **Stage 2 step 3d: chapters 13 to 18 finished (13 Nov 2026), 1116 to 1121 cards.** Report: [docs/STAGE-2-step3d-report.md](docs/STAGE-2-step3d-report.md).
+  - Six new class cards, each last in its pack: L-1268 mendaftar (c13), L-1269 tangguhkan and L-1270 batalkan (c14), L-1271 memakai and
+    L-1272 berwarna (c15), L-0690 «tak tahan» (c17, "Spoken:", after «tidak boleh tahan»). Jambatan card `ms-j-office-14` dropped.
+  - Nine held-back lines now use the new forms (c14 3, c15 3, c17 1, c18 2); none failed the check. Japanese drafts updated for c15 f04 and c18 f04.
+  - Rules copied from Cikgu Sensai `a24a993` (R3 pair «tak tahan» → «tidak boleh tahan»); all 77 shared fixtures agree (test count 72 → 77).
+  - Ledger: 7 cells written and verified (J691:K691, J1269:J1273); Journal rows 185 to 189.
+
 - **Stage 2 step 3c: Malay fixes to chapters 12 to 18 (13 Nov 2026), 1115 to 1116 cards.** Report: [docs/STAGE-2-step3c-report.md](docs/STAGE-2-step3c-report.md).
   - 18 lines changed after Sam's review (c12 1, c13 3, c15 3, c16 2, c17 6, c18 3), each checked with `tools/stage-check.mjs` first:
     «Borang ini wajib diisi», «Sudikah encik datang?», «Seperti ini?» / «Ya, seperti itu, tetapi ada zip.», «Takpelah», Tanaka's refusal

@@ -1,18 +1,18 @@
 # Kata-Kata hand-off
 
-Last updated 13 Nov 2026 (Stage 2 build step 3c done: Malay fixes to c12 to c18, [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
+Last updated 13 Nov 2026 (Stage 2 build step 3d done: chapters 13 to 18 finished, [report](STAGE-2-step3d-report.md); step 3c [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
 Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-1.0.md).
 
 ## State
 
-- 43 live packs, 1116 cards: Kelas chapters 1 to 18 (chapter 18 is a review pack with no cards of its own), 20 Dunia scenes,
+- 43 live packs, 1121 cards: Kelas chapters 1 to 18 (chapter 18 is a review pack with no cards of its own), 20 Dunia scenes,
   5 Jambatan scenes.
 - Workbook: `content/source/2026-11-13_KataKata_VocabBank_v6.xlsx`, built by `tools/make_vocab_bank_v6.py` (v5 + chapters 10 to 18).
-- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the step 3c write-back (L-0001 to L-1267; chapter 18 has no ledger cells).
-- Affix guard: stage-aware, rules from Cikgu Sensai `56627dc` (`content/rules/`).
+- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the step 3d write-back (L-0001 to L-1272; chapter 18 has no ledger cells).
+- Affix guard: stage-aware, rules from Cikgu Sensai `a24a993` (`content/rules/`).
 - Kata-Kata's half of Stage 2 (build step 3) is finished. Next: Cikgu Sensai step 4 (suites c10 to c17, step 5 chapter 18) and
   Hanashishou step 6; Cikgu Sensai should refresh `curriculum/reference/katakata/` with `c10.json` to `c18.json` and the ledger
-  copy (this repo does not edit it). Open questions for Sam: [STAGE-2-step3c-report.md](STAGE-2-step3c-report.md) section 6 (and [STAGE-2-c11-c18-report.md](STAGE-2-c11-c18-report.md) section 5).
+  copy (this repo does not edit it). Open questions for Sam: [STAGE-2-step3d-report.md](STAGE-2-step3d-report.md) section 7.
 
 ## Backlog
 
@@ -21,8 +21,6 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
   pattern (a Dunia scene with pictures, `Note`/emoji images in `tools/import-overrides.json`, at least 4 picture cards, see
   `tests/unit/core.test.ts` "every Dunia scene has enough pictures"), using only words placed up to chapter 10. Chapters 11 to 18
   get a picture scene only if the plan names one (it names none).
-- **L-0690 «tak tahan»** is not built: the shared register pair R3 says «tidak tahan», Sam's standard is «tidak boleh tahan» (L-1267, built). When Cikgu Sensai's pair reads «tidak boleh tahan», copy the rules, add the card after L-1267 in `ch17` (the approved note is a comment there) and drop `ms-j-office-14`.
-- **Seven lines kept with their old wording** because the new form has no ledger row (memakai, berwarna, tangguhkan, batalkan, mendaftar): see [STAGE-2-step3c-report.md](STAGE-2-step3c-report.md) section 2. Add the rows (Sam), then apply the wording.
 - The end-of-project Kamus Dewan and native Japanese checks.
 
 ## Chapter template (how c10 to c18 were built)
@@ -32,7 +30,7 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
 1. Cikgu Sensai (read only; never edit it): `docs/stage-2-plan.md` for the chapter's unit tables (section 2), its row in the
    section 3 affix table, its section 5 scene, and its revision anchors ("Revision, recognition and deferred candidates");
    `docs/stage-2-decisions.md`; the newest `docs/STAGE-2-*` report and `HANDOFF.md`. Check whether `curriculum/stage-rules.json`
-   changed since `56627dc` (see "Rules" below).
+   changed since `a24a993` (see "Rules" below; last copied from `a24a993`, 77 fixtures).
 2. This repo: this file, the newest chapter function in `tools/make_vocab_bank_v6.py` (`ch17`; `ch18` for a review chapter),
    `content/ms/kelas/c17.json`.
 
@@ -89,14 +87,14 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
 ```bash
 python3 -I tools/make_vocab_bank_v6.py content/source/2026-11-12_KataKata_VocabBank_v5.xlsx content/source/2026-11-13_KataKata_VocabBank_v6.xlsx --map <scratch>/map.json
 python3 -I tools/import_vocab_bank.py content/source/2026-11-13_KataKata_VocabBank_v6.xlsx
-python3 -I tools/import_hanashishou_bridge.py ../hanashishou   # Hanashishou checked out at e5e167c
+python3 -I tools/import_hanashishou_bridge.py ../hanashishou   # Hanashishou checked out at the full commit e5e167cb32d554f1da926b875d4a0e7516de6cd9 (a short SHA cannot be fetched)
 node tools/stage-check.mjs N "<every note example you wrote>"
 npm run check
 npx vite build && npx vite preview --port 4173 &
 node tests/e2e/smoke.cjs && node tests/e2e/fun.cjs
 ```
 
-- The script always starts from v5 and the ledger at `LEDGER_BASELINE` (`c3e4a5a`), and rebuilds every chapter function, so
+- The script always starts from v5 and the ledger at `LEDGER_BASELINE` (`484ad8d`), and rebuilds every chapter function, so
   earlier packs must come out unchanged (`git diff content/ms/kelas` shows only the new pack). The bridge importer must change
   only the Jambatan cards whose words became class cards. Re-run the script a second time and compare: it must be identical.
 - If the ledger rows for the new chapter changed after `323b5fc` (a ledger session edited them), bump `LEDGER_BASELINE` to the
@@ -120,7 +118,7 @@ node tests/e2e/smoke.cjs && node tests/e2e/fun.cjs
    "Changed by" alone. Do the "after" read in a separate step, not in the same batch as the writes.
 3. Read the whole tab again (the "after" read) and run `python3 -I tools/ledger/writeback.py verify <before> <after> <map>`:
    it must say the changed cells are exactly the planned ones.
-4. Append Journal rows (`Journal!A1:I1` with `append_values`; columns Date, Entry, Field, Before, After, By, Reason / source,
+4. Add Journal rows with `update_values` at the next free row (read the tab's tail first; do NOT use `append_values`: the blank row 176 makes it insert above that row and shift Sam's rows, as happened once in step 3d; fixed by a row move). Columns: Date, Entry, Field, Before, After, By, Reason / source,
    Pushed to, Status): one row for the new rows' card IDs, one per group of existing rows, one per decision or finding. "Pushed
    to" = "Sheet; Kata-Kata <pack commit>". Read the new Journal rows back.
 5. `python3 -I tools/ledger/sheet_to_snapshot.py <after.json>` and commit the snapshot ("Ledger snapshot after the chapter N
