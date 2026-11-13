@@ -1,0 +1,642 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c13",
+  "chapter": 13,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Kesihatan: Boleh, Perlu, Patut",
+    "en": "Health: may, need, should",
+    "ja": "健康：許可・必要・助言"
+  },
+  "cards": [
+    {
+      "id": "ms-c13-001",
+      "lang": "ms",
+      "term": "perlu",
+      "gloss_en": "need / necessary",
+      "gloss_ja": "必要である",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Need: Saya perlu berjumpa doktor. Compare patut (should) and mesti (must) below.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-002",
+      "lang": "ms",
+      "term": "patut",
+      "gloss_en": "should / advisable",
+      "gloss_ja": "〜したほうがよい",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Should, as advice: Encik patut berehat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-003",
+      "lang": "ms",
+      "term": "wajib",
+      "gloss_en": "compulsory",
+      "gloss_ja": "義務である・必須の",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Compulsory, as on a notice or a form, in the everyday sense: Wajib isi borang ini.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-004",
+      "lang": "ms",
+      "term": "dibenarkan",
+      "gloss_en": "allowed",
+      "gloss_ja": "許可されている",
+      "pos": "verb",
+      "affix_tag": "di- -kan",
+      "note": "di- + benar + -kan: allowed. Tidak dibenarkan minum di sini. The opposite of dilarang (Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-005",
+      "lang": "ms",
+      "term": "kebenaran",
+      "gloss_en": "permission (minta kebenaran)",
+      "gloss_ja": "許可",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "Learn it as a whole word: ke- … -an words come in Stage 3. Root in the ledger: benar. Taught only as «permission»: Encik mesti minta kebenaran doktor.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-006",
+      "lang": "ms",
+      "term": "nasihat",
+      "gloss_en": "advice",
+      "gloss_ja": "助言",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Advice.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-007",
+      "lang": "ms",
+      "term": "alahan",
+      "gloss_en": "Allergy",
+      "gloss_ja": "アレルギー",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Allergy. Learn it as a whole word. Root in the ledger: alah.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-008",
+      "lang": "ms",
+      "term": "simptom",
+      "gloss_en": "Symptom",
+      "gloss_ja": "症状",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A symptom.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-009",
+      "lang": "ms",
+      "term": "sakit tekak",
+      "gloss_en": "Sore throat",
+      "gloss_ja": "のどの痛み",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Sore throat: sakit (Ch5) + tekak (Dunia, Ch5). Learn it as a phrase.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-010",
+      "lang": "ms",
+      "term": "temu janji",
+      "gloss_en": "Appointment",
+      "gloss_ja": "予約、約束",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "An appointment. Learn it as a phrase: Ada temu janji? The word janji comes in Ch14.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-011",
+      "lang": "ms",
+      "term": "farmasi",
+      "gloss_en": "pharmacy",
+      "gloss_ja": "薬局",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A pharmacy.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-012",
+      "lang": "ms",
+      "term": "dos",
+      "gloss_en": "dose (on a medicine label)",
+      "gloss_ja": "用量",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A dose, as printed on a medicine label. For reading a label only.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-013",
+      "lang": "ms",
+      "term": "arahan",
+      "gloss_en": "instruction",
+      "gloss_ja": "指示",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "An instruction. Learn it as a whole word. Root in the ledger: arah.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-014",
+      "lang": "ms",
+      "term": "kesihatan",
+      "gloss_en": "health",
+      "gloss_ja": "健康",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "Learn it as a whole word: ke- … -an words come in Stage 3. Root in the ledger: sihat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-015",
+      "lang": "ms",
+      "term": "rawatan",
+      "gloss_en": "treatment",
+      "gloss_ja": "治療",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Treatment. Learn it as a whole word. Root in the ledger: rawat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-016",
+      "lang": "ms",
+      "term": "elakkan",
+      "gloss_en": "avoid (request)",
+      "gloss_ja": "避けてください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "elak + -kan: avoid something (a request or an instruction).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-017",
+      "lang": "ms",
+      "term": "sesuai",
+      "gloss_en": "suitable",
+      "gloss_ja": "適している",
+      "pos": "adj",
+      "affix_tag": "lex",
+      "note": "Suitable. Learn it as a whole word. Root in the ledger: suai.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-018",
+      "lang": "ms",
+      "term": "kecemasan",
+      "gloss_en": "emergency",
+      "gloss_ja": "緊急事態",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "Learn it as a whole word: ke- … -an words come in Stage 3. Root in the ledger: cemas.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-019",
+      "lang": "ms",
+      "term": "penyambut tetamu",
+      "gloss_en": "Receptionist",
+      "gloss_ja": "受付係",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "A receptionist. Learn it as a phrase.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-020",
+      "lang": "ms",
+      "term": "bila perlu",
+      "gloss_en": "When needed",
+      "gloss_ja": "必要なときに",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "When needed. A fixed phrase: bila (Ch4) + perlu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-021",
+      "lang": "ms",
+      "term": "mesti",
+      "gloss_en": "must",
+      "gloss_ja": "〜しなければならない",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Must. mesti is a root: it is not me- + sti.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-022",
+      "lang": "ms",
+      "term": "klinik panel",
+      "gloss_en": "Panel clinic (one your company has an agreement with)",
+      "gloss_ja": "パネルクリニック（会社が契約しているクリニック）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "A panel clinic: one that your company has an agreement with.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-023",
+      "lang": "ms",
+      "term": "daftar",
+      "gloss_en": "To register",
+      "gloss_ja": "登録する、受付をする",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To register: Encik perlu daftar dulu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-024",
+      "lang": "ms",
+      "term": "cuti sakit / MC",
+      "gloss_en": "sick leave (cuti sakit standard; MC spoken, from \"medical certificate\")",
+      "gloss_ja": "病気休暇（話し言葉：MC）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "cuti (Dunia, Ch2) + sakit (Ch5). Standard: cuti sakit. Spoken: «MC».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c13-f01",
+      "frame": "Saya belum ___.",
+      "example": "Saya belum makan.",
+      "meaning_en": "I haven't eaten yet.",
+      "meaning_ja": "まだ食べていません。"
+    },
+    {
+      "id": "ms-c13-f02",
+      "frame": "Bolehkah saya ___?",
+      "example": "Bolehkah saya masuk?",
+      "meaning_en": "May I come in?",
+      "meaning_ja": "入ってもよろしいですか。"
+    },
+    {
+      "id": "ms-c13-f03",
+      "frame": "Saya perlu ___.",
+      "example": "Saya perlu berjumpa doktor.",
+      "meaning_en": "I need to see a doctor.",
+      "meaning_ja": "医者に会う必要があります。"
+    },
+    {
+      "id": "ms-c13-f04",
+      "frame": "Encik patut ___.",
+      "example": "Encik patut berehat.",
+      "meaning_en": "You should rest.",
+      "meaning_ja": "休んだほうがいいですよ。"
+    },
+    {
+      "id": "ms-c13-f05",
+      "frame": "Tidak dibenarkan ___ di sini.",
+      "example": "Tidak dibenarkan minum di sini.",
+      "meaning_en": "Drinking is not allowed here.",
+      "meaning_ja": "ここでは飲むことは許可されていません。"
+    },
+    {
+      "id": "ms-c13-f06",
+      "frame": "Wajib ___ borang ini.",
+      "example": "Wajib isi borang ini.",
+      "meaning_en": "You must fill in this form.",
+      "meaning_ja": "この用紙への記入は必須です。"
+    }
+  ],
+  "scenario": {
+    "title_en": "At the clinic and the pharmacy",
+    "title_ja": "クリニックと薬局で",
+    "lines": [
+      {
+        "id": "ms-c13-s01",
+        "speaker": "Penyambut tetamu",
+        "ms": "Selamat pagi, encik. Ada temu janji?",
+        "en": "Good morning, sir. Do you have an appointment?"
+      },
+      {
+        "id": "ms-c13-s02",
+        "speaker": "Tanaka",
+        "ms": "Tidak ada. Saya demam dan sakit tekak. Saya batuk juga.",
+        "en": "No. I have a fever and a sore throat. I'm coughing too."
+      },
+      {
+        "id": "ms-c13-s03",
+        "speaker": "Penyambut tetamu",
+        "ms": "Encik perlu daftar dulu. Wajib isi borang ini.",
+        "en": "You need to register first. You must fill in this form."
+      },
+      {
+        "id": "ms-c13-s04",
+        "speaker": "Tanaka",
+        "ms": "Baik. Saya belum isi borang. Bolehkah saya isi borang di sini?",
+        "en": "Okay. I haven't filled in the form yet. May I fill it in here?"
+      },
+      {
+        "id": "ms-c13-s05",
+        "speaker": "Penyambut tetamu",
+        "ms": "Boleh. Ini klinik panel syarikat encik?",
+        "en": "Yes. Is this your company's panel clinic?"
+      },
+      {
+        "id": "ms-c13-s06",
+        "speaker": "Tanaka",
+        "ms": "Ya. Boleh saya minum air di sini?",
+        "en": "Yes. Can I drink water here?"
+      },
+      {
+        "id": "ms-c13-s07",
+        "speaker": "Penyambut tetamu",
+        "ms": "Maaf, tidak dibenarkan minum di sini. Dilarang makan dan minum di bilik menunggu.",
+        "en": "Sorry, drinking isn't allowed here. No eating or drinking in the waiting room."
+      },
+      {
+        "id": "ms-c13-s08",
+        "speaker": "Tanaka",
+        "ms": "Baik, saya faham. Terima kasih.",
+        "en": "Okay, I understand. Thank you."
+      },
+      {
+        "id": "ms-c13-s09",
+        "speaker": "Penyambut tetamu",
+        "ms": "Encik ada alahan?",
+        "en": "Do you have any allergies?"
+      },
+      {
+        "id": "ms-c13-s10",
+        "speaker": "Tanaka",
+        "ms": "Tidak. Saya tidak ada alahan.",
+        "en": "No. I don't have any allergies."
+      },
+      {
+        "id": "ms-c13-s11",
+        "speaker": "Doktor",
+        "ms": "Encik patut berehat di rumah. Encik tidak perlu datang ke pejabat esok.",
+        "en": "You should rest at home. You don't need to come to the office tomorrow."
+      },
+      {
+        "id": "ms-c13-s12",
+        "speaker": "Tanaka",
+        "ms": "Doktor, boleh saya minta cuti sakit untuk esok?",
+        "en": "Doctor, may I ask for sick leave for tomorrow?"
+      },
+      {
+        "id": "ms-c13-s13",
+        "speaker": "Doktor",
+        "ms": "Boleh. Saya bagi cuti sakit satu hari.",
+        "en": "Yes. I'll give you one day of sick leave."
+      },
+      {
+        "id": "ms-c13-s14",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih, doktor.",
+        "en": "Thank you, doctor."
+      },
+      {
+        "id": "ms-c13-s15",
+        "speaker": "Tanaka",
+        "ms": "Maaf, boleh cakap lagi sekali? Saya tidak faham arahan itu.",
+        "en": "Sorry, could you say that once more? I don't understand that instruction."
+      },
+      {
+        "id": "ms-c13-s16",
+        "speaker": "Ahli farmasi",
+        "ms": "Boleh. Encik mesti baca arahan di label. Dos ada di label itu.",
+        "en": "Of course. You must read the instructions on the label. The dose is on the label."
+      },
+      {
+        "id": "ms-c13-s17",
+        "speaker": "Tanaka",
+        "ms": "Baik, saya baca label itu. Terima kasih.",
+        "en": "Okay, I'll read the label. Thank you."
+      },
+      {
+        "id": "ms-c13-s18",
+        "speaker": "Ahli farmasi",
+        "ms": "Sama-sama. Kalau ada soalan, tanya saya lagi.",
+        "en": "You're welcome. If you have a question, ask me again."
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c13-001",
+      "ms-c13-002",
+      "ms-c13-003",
+      "ms-c13-004",
+      "ms-c13-007",
+      "ms-c13-009",
+      "ms-c13-010",
+      "ms-c13-012",
+      "ms-c13-013",
+      "ms-c13-021",
+      "ms-c13-022",
+      "ms-c13-023",
+      "ms-c13-024",
+      "ms-c01-033",
+      "ms-c03-032",
+      "ms-c04-040",
+      "ms-c07-065",
+      "ms-c02-041",
+      "ms-d-badan-klinik-12",
+      "ms-c09-021",
+      "ms-d-badan-klinik-02",
+      "ms-d-badan-klinik-03",
+      "ms-d-badan-klinik-04",
+      "ms-d-badan-klinik-05",
+      "ms-c10-005",
+      "ms-d-bank-pos-02",
+      "ms-c01-020"
+    ],
+    "frames": [
+      "ms-c13-f01",
+      "ms-c13-f02"
+    ],
+    "scene": null
+  }
+}

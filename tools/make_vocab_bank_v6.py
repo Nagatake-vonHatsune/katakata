@@ -387,7 +387,87 @@ def ch12(b):
         b.ks.append([f"ms-c12-s{i:02d}", 12, title, speaker, ms, en])
 
 
-CHAPTERS = {10: ch10, 11: ch11, 12: ch12}
+def ch13(b):
+    """Chapter 13: health situations: negation, permission, obligation and advice. No new affix family.
+
+    24 ledger rows in plan order. «mesti» is a root (it has no me- prefix); dibenarkan is a di- … -kan form (the
+    Chapter 9 passive and the Chapter 12 -kan). The scenes are fictional and ask for clarification: no diagnosis,
+    treatment or dose is authored (plan section 3 and section 5).
+    """
+    whole = "Learn it as a whole word: ke- … -an words come in Stage 3."
+    cards = [
+        ("L-1185", "Need: Saya perlu berjumpa doktor. Compare patut (should) and mesti (must) below.", {}),
+        ("L-1186", "Should, as advice: Encik patut berehat.", {}),
+        ("L-1187", "Compulsory, as on a notice or a form, in the everyday sense: Wajib isi borang ini.", {}),
+        ("L-1188", "di- + benar + -kan: allowed. Tidak dibenarkan minum di sini. The opposite of dilarang (Ch9).", {}),
+        ("L-1189", whole + " Root in the ledger: benar. Taught only as «permission»: Encik mesti minta kebenaran doktor.", {}),
+        ("L-1190", "Advice.", {}),
+        ("L-0633", "Allergy. Learn it as a whole word. Root in the ledger: alah.", {}),
+        ("L-0634", "A symptom.", {}),
+        ("L-0631", "Sore throat: sakit (Ch5) + tekak (Dunia, Ch5). Learn it as a phrase.", {}),
+        ("L-0638", "An appointment. Learn it as a phrase: Ada temu janji? The word janji comes in Ch14.", {}),
+        ("L-1191", "A pharmacy.", {}),
+        ("L-1192", "A dose, as printed on a medicine label. For reading a label only.", {}),
+        ("L-1193", "An instruction. Learn it as a whole word. Root in the ledger: arah.", {}),
+        ("L-1194", whole + " Root in the ledger: sihat.", {}),
+        ("L-1195", "Treatment. Learn it as a whole word. Root in the ledger: rawat.", {}),
+        ("L-1196", "elak + -kan: avoid something (a request or an instruction).", {}),
+        ("L-1197", "Suitable. Learn it as a whole word. Root in the ledger: suai.", {}),
+        ("L-1198", whole + " Root in the ledger: cemas.", {}),
+        ("L-0627", "A receptionist. Learn it as a phrase.", {}),
+        ("L-0636", "When needed. A fixed phrase: bila (Ch4) + perlu.", {}),
+        ("L-1199", "Must. mesti is a root: it is not me- + sti.", {}),
+        ("L-0630", "A panel clinic: one that your company has an agreement with.", {}),
+        ("L-0648", "To register: Encik perlu daftar dulu.", {}),
+        ("L-1200", "cuti (Dunia, Ch2) + sakit (Ch5). Standard: cuti sakit. Spoken: «MC».", {}),
+    ]
+    for lid, note, opt in cards:
+        kc(b, 13, lid, note, **opt)
+
+    # Frames: the plan's section 3 examples (Saya belum makan. / Bolehkah saya masuk? / Saya perlu berjumpa doktor.), the
+    # advice and prohibition contrast, and a notice. Belum, boleh and jangan return from Chapters 4, 2 and 7.
+    frames = [
+        ("ms-c13-f01", "Saya belum ___.", "Saya belum makan.", "I haven't eaten yet."),
+        ("ms-c13-f02", "Bolehkah saya ___?", "Bolehkah saya masuk?", "May I come in?"),
+        ("ms-c13-f03", "Saya perlu ___.", "Saya perlu berjumpa doktor.", "I need to see a doctor."),
+        ("ms-c13-f04", "Encik patut ___.", "Encik patut berehat.", "You should rest."),
+        ("ms-c13-f05", "Tidak dibenarkan ___ di sini.", "Tidak dibenarkan minum di sini.", "Drinking is not allowed here."),
+        ("ms-c13-f06", "Wajib ___ borang ini.", "Wajib isi borang ini.", "You must fill in this form."),
+    ]
+    for fid, frame, example, meaning in frames:
+        b.add_frame(13, fid, frame, example, meaning)
+
+    # Scenario: the plan's scene (a fictional clinic notice, then a pharmacist asked to repeat an instruction).
+    title = "At the clinic and the pharmacy"
+    lines = [
+        ("Penyambut tetamu", "Selamat pagi, encik. Ada temu janji?", "Good morning, sir. Do you have an appointment?"),
+        ("Tanaka", "Tidak ada. Saya demam dan sakit tekak. Saya batuk juga.", "No. I have a fever and a sore throat. I'm coughing too."),
+        ("Penyambut tetamu", "Encik perlu daftar dulu. Wajib isi borang ini.", "You need to register first. You must fill in this form."),
+        ("Tanaka", "Baik. Saya belum isi borang. Bolehkah saya isi borang di sini?",
+         "Okay. I haven't filled in the form yet. May I fill it in here?"),
+        ("Penyambut tetamu", "Boleh. Ini klinik panel syarikat encik?", "Yes. Is this your company's panel clinic?"),
+        ("Tanaka", "Ya. Boleh saya minum air di sini?", "Yes. Can I drink water here?"),
+        ("Penyambut tetamu", "Maaf, tidak dibenarkan minum di sini. Dilarang makan dan minum di bilik menunggu.",
+         "Sorry, drinking isn't allowed here. No eating or drinking in the waiting room."),
+        ("Tanaka", "Baik, saya faham. Terima kasih.", "Okay, I understand. Thank you."),
+        ("Penyambut tetamu", "Encik ada alahan?", "Do you have any allergies?"),
+        ("Tanaka", "Tidak. Saya tidak ada alahan.", "No. I don't have any allergies."),
+        ("Doktor", "Encik patut berehat di rumah. Encik tidak perlu datang ke pejabat esok.",
+         "You should rest at home. You don't need to come to the office tomorrow."),
+        ("Tanaka", "Doktor, boleh saya minta cuti sakit untuk esok?", "Doctor, may I ask for sick leave for tomorrow?"),
+        ("Doktor", "Boleh. Saya bagi cuti sakit satu hari.", "Yes. I'll give you one day of sick leave."),
+        ("Tanaka", "Terima kasih, doktor.", "Thank you, doctor."),
+        ("Tanaka", "Maaf, boleh cakap lagi sekali? Saya tidak faham arahan itu.", "Sorry, could you say that once more? I don't understand that instruction."),
+        ("Ahli farmasi", "Boleh. Encik mesti baca arahan di label. Dos ada di label itu.",
+         "Of course. You must read the instructions on the label. The dose is on the label."),
+        ("Tanaka", "Baik, saya baca label itu. Terima kasih.", "Okay, I'll read the label. Thank you."),
+        ("Ahli farmasi", "Sama-sama. Kalau ada soalan, tanya saya lagi.", "You're welcome. If you have a question, ask me again."),
+    ]
+    for i, (speaker, ms, en) in enumerate(lines, 1):
+        b.ks.append([f"ms-c13-s{i:02d}", 13, title, speaker, ms, en])
+
+
+CHAPTERS = {10: ch10, 11: ch11, 12: ch12, 13: ch13}
 
 
 def main():
