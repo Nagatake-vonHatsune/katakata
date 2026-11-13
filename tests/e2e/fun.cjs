@@ -64,6 +64,17 @@ async function seed(page, state) {
   const shot = (n) => page.screenshot({ path: path.join(OUT, n + '.png') });
 
   // 1. Practice shows a score pill and, after a right answer, a points badge.
+  // Seeded Math.random (mulberry32) so the option order, and with it the step where the first option happens to be
+  // the right one, is the same on every run: the test used to need one lucky click in 25 steps and could flake.
+  await ctx.addInitScript(() => {
+    let a = 0x6d2b79f5;
+    Math.random = () => {
+      a = (a + 0x6d2b79f5) | 0;
+      let t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  });
   await page.clock.install();
   await seed(page, seededState());
   await page.waitForSelector('.today');

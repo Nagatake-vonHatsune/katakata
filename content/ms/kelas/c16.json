@@ -37,7 +37,7 @@
       "gloss_en": "To be left behind by accident",
       "gloss_ja": "（うっかり）置き忘れる",
       "pos": "verb",
-      "affix_tag": "root",
+      "affix_tag": "ter-",
       "note": "ter- + tinggal (Ch2): to be left behind by accident. Not the ter- of termurah and terbaik (Ch6), which means «the most». Saya tertinggal telefon di pejabat.",
       "links": [
         {
@@ -55,7 +55,7 @@
       "gloss_en": "To forget (by accident)",
       "gloss_ja": "うっかり忘れる",
       "pos": "verb",
-      "affix_tag": "root",
+      "affix_tag": "ter-",
       "note": "ter- + lupa (Dunia, Ch4): to forget, without meaning to. Maaf, saya terlupa.",
       "links": [
         {
@@ -91,7 +91,7 @@
       "gloss_en": "To miss (a bus, a chance)",
       "gloss_ja": "（バスやチャンスを）逃す、乗り遅れる",
       "pos": "verb",
-      "affix_tag": "root",
+      "affix_tag": "ter-",
       "note": "ter- + lepas (Ch4): to miss (a bus, a chance). Saya terlepas bas.",
       "links": [
         {
@@ -458,10 +458,10 @@
     },
     {
       "id": "ms-c16-f05",
-      "frame": "Ini ___, tetapi saya ___.",
-      "example": "Ini termurah, tetapi saya tertinggal dompet saya.",
-      "meaning_en": "This is the cheapest, but I left my wallet behind.",
-      "meaning_ja": "これが一番安いですが、財布を置き忘れました。"
+      "frame": "Yang ini ___, tetapi dompet saya ___ di rumah.",
+      "example": "Yang ini termurah, tetapi dompet saya tertinggal di rumah.",
+      "meaning_en": "This one is the cheapest, but my wallet is left at home.",
+      "meaning_ja": "これが一番安いですが、家に財布を置き忘れました。"
     },
     {
       "id": "ms-c16-f06",
@@ -514,7 +514,7 @@
       {
         "id": "ms-c16-s07",
         "speaker": "Tanaka",
-        "ms": "Jangan risau. Mesyuarat belum mula.",
+        "ms": "Jangan risau. Mesyuarat belum bermula.",
         "en": "Don't worry. The meeting hasn't started."
       },
       {

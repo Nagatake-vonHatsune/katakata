@@ -94,7 +94,7 @@
       "gloss_ja": "喜んで〜する（ていねい）",
       "pos": "verb",
       "affix_tag": "root",
-      "note": "To be willing, glad to (polite): Encik sudi datang?",
+      "note": "To be willing, glad to (polite). We use it to ask the other person, not about ourselves: Sudikah encik datang?",
       "links": [
         {
           "type": "babak",
@@ -148,7 +148,7 @@
       "gloss_ja": "断る",
       "pos": "verb",
       "affix_tag": "meN-",
-      "note": "meN- + tolak (Ch9). The t drops: menolak. A new sense of tolak (push): to decline, to refuse. Saya segan menolak jemputan itu.",
+      "note": "meN- + tolak (Ch9). The t drops: menolak. A new sense of tolak (push): to decline, to refuse. Saya segan untuk menolak jemputan puan.",
       "links": [
         {
           "type": "babak",
@@ -184,7 +184,7 @@
       "gloss_ja": "遠慮する・気が引ける",
       "pos": "adj",
       "affix_tag": "root",
-      "note": "Hesitant, shy about doing something: Saya segan menolak jemputan itu.",
+      "note": "Hesitant, shy about doing something: Saya segan untuk menolak jemputan puan.",
       "links": [
         {
           "type": "babak",
@@ -410,15 +410,33 @@
       "scene": "kelas-c17",
       "chapter": 17,
       "recognise_only": true
+    },
+    {
+      "id": "ms-c17-023",
+      "lang": "ms",
+      "term": "tidak boleh tahan",
+      "gloss_en": "can't stand; can't handle (e.g. spicy food) (spoken: tak tahan)",
+      "gloss_ja": "耐えられない、苦手だ（例：辛いもの）（話し言葉：tak tahan）",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "Can't stand, can't handle (for example spicy food): Saya tidak boleh tahan pedas. The standard form; the spoken partner is «tak tahan» (below). It is not the same as «boleh tahan» (Dunia, Ch5), which means «not bad».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
     }
   ],
   "frames": [
     {
       "id": "ms-c17-f01",
-      "frame": "Encik sudi ___?",
-      "example": "Encik sudi datang?",
-      "meaning_en": "Would you be glad to come?",
-      "meaning_ja": "喜んで来ていただけますか。"
+      "frame": "Sudikah encik ___?",
+      "example": "Sudikah encik datang?",
+      "meaning_en": "Would you like to come? (polite)",
+      "meaning_ja": "いらっしゃいませんか。（丁寧な誘い方）"
     },
     {
       "id": "ms-c17-f02",
@@ -475,14 +493,14 @@
       {
         "id": "ms-c17-s03",
         "speaker": "Puan Aini",
-        "ms": "Bos belanja. Encik sudi datang?",
-        "en": "The boss is treating. Would you be glad to come?"
+        "ms": "Bos belanja. Sudikah encik datang?",
+        "en": "The boss is treating. Would you like to come?"
       },
       {
         "id": "ms-c17-s04",
         "speaker": "Tanaka",
-        "ms": "Sayangnya hari Sabtu saya tidak lapang. Saya segan menolak jemputan itu.",
-        "en": "Unfortunately I'm not free on Saturday. I'm reluctant to turn down the invitation."
+        "ms": "Sayangnya hari Sabtu saya tidak lapang. Saya segan untuk menolak jemputan puan.",
+        "en": "Unfortunately I'm not free on Saturday. I'm reluctant to turn down your invitation, Puan."
       },
       {
         "id": "ms-c17-s05",
@@ -517,19 +535,19 @@
       {
         "id": "ms-c17-s10",
         "speaker": "Cik Mei Ling",
-        "ms": "Encik Tanaka, jom makan kat kafe ni! Saya ajak encik.",
-        "en": "Mr Tanaka, let's eat at this cafe! My invitation."
+        "ms": "Encik Tanaka, jom makan kat kafe ni! Saya belanja!",
+        "en": "Mr Tanaka, let's eat at this cafe! My treat!"
       },
       {
         "id": "ms-c17-s11",
         "speaker": "Tanaka",
-        "ms": "Terima kasih. Tetapi kafe itu pedas, dan saya tidak suka makanan pedas.",
-        "en": "Thank you. But that cafe is spicy, and I don't like spicy food."
+        "ms": "Tetapi makanan di kafe itu pedas. Saya tidak boleh tahan pedas.",
+        "en": "But the food at that cafe is spicy. I can't stand spicy food."
       },
       {
         "id": "ms-c17-s12",
         "speaker": "Cik Mei Ling",
-        "ms": "Takpe lah. Kita cari kedai lain. Macam tu boleh?",
+        "ms": "Takpelah. Kita cari kedai lain. Macam tu boleh?",
         "en": "No problem. We'll look for another place. Would that be all right?"
       },
       {
@@ -585,8 +603,6 @@
   "sedia_kelas": {
     "cards": [
       "ms-c17-001",
-      "ms-c17-004",
-      "ms-c17-005",
       "ms-c17-006",
       "ms-c17-007",
       "ms-c17-008",
@@ -602,6 +618,7 @@
       "ms-c17-019",
       "ms-c17-020",
       "ms-c17-021",
+      "ms-c17-023",
       "ms-c01-033",
       "ms-c05-005",
       "ms-c04-039",

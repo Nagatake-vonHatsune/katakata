@@ -56,7 +56,7 @@
       "gloss_ja": "義務である・必須の",
       "pos": "adj",
       "affix_tag": "root",
-      "note": "Compulsory, as on a notice or a form, in the everyday sense: Wajib isi borang ini.",
+      "note": "Compulsory, as on a notice or a form: Borang ini wajib diisi.",
       "links": [
         {
           "type": "babak",
@@ -483,10 +483,10 @@
     },
     {
       "id": "ms-c13-f06",
-      "frame": "Wajib ___ borang ini.",
-      "example": "Wajib isi borang ini.",
-      "meaning_en": "You must fill in this form.",
-      "meaning_ja": "この用紙への記入は必須です。"
+      "frame": "Borang ini wajib ___.",
+      "example": "Borang ini wajib diisi.",
+      "meaning_en": "This form must be filled in.",
+      "meaning_ja": "この用紙は記入が必須です。"
     }
   ],
   "scenario": {
@@ -508,8 +508,8 @@
       {
         "id": "ms-c13-s03",
         "speaker": "Penyambut tetamu",
-        "ms": "Encik perlu daftar dulu. Wajib isi borang ini.",
-        "en": "You need to register first. You must fill in this form."
+        "ms": "Encik perlu daftar dulu. Sila isi borang ini.",
+        "en": "You need to register first. Please fill in this form."
       },
       {
         "id": "ms-c13-s04",
@@ -568,7 +568,7 @@
       {
         "id": "ms-c13-s13",
         "speaker": "Doktor",
-        "ms": "Boleh. Saya bagi cuti sakit satu hari.",
+        "ms": "Boleh. Saya berikan cuti sakit satu hari.",
         "en": "Yes. I'll give you one day of sick leave."
       },
       {

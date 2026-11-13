@@ -35,6 +35,26 @@ describe('stage rules (shared with Cikgu Sensai)', () => {
   });
 });
 
+describe('written -lah (Kata-Kata addition, 13 Nov 2026)', () => {
+  const seg = (chapter: number, text: string) => [{ unit: `fixture-c${chapter}`, chapter, source: 'fixture', text, kind: 'model' }];
+  const found = (chapter: number, text: string) => {
+    const r = checker.inspect(seg(chapter, text));
+    return [...Object.values(r.violations), ...Object.values(r.ledger_gaps)].map((e: any) => `${e.check}:${e.term}`);
+  };
+  it('reads «takpelah» as takpe + lah, like bolehkah, from chapter 17', () => {
+    expect(found(17, 'Takpelah. Kita cari kedai lain.')).toEqual([]);
+    expect(found(17, 'Bolehkah saya masuk?')).toEqual([]);
+  });
+  it('does not read it before the particle row is placed, nor in words that only end in -lah', () => {
+    expect(found(16, 'Takpelah.')).toContain('ledger gap:takpelah');
+    // masalah, adalah and salah have no ledger row; what matters is that none is read as a base + lah.
+    const lah = (text: string) => checker.inspect(seg(17, text)).derivations.filter((d: any) => d.rule === '-lah');
+    expect(lah('Itu masalah saya. Dia adalah guru. Itu salah.')).toEqual([]);
+    expect(lah('Takpelah.')).toHaveLength(1);
+    expect(found(17, 'Xyzlah.')).toContain('ledger gap:xyzlah');
+  });
+});
+
 describe('stage-aware affix guard', () => {
   const pack = (chapter: number, term: string, tag = 'root') => ({ kind: 'kelas', id: `t${chapter}`, chapter, cards: [{ id: `ms-t-${chapter}`, term, affix_tag: tag }] });
   it('checks each text at its own chapter', () => {

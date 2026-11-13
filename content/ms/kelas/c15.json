@@ -436,59 +436,71 @@
       {
         "id": "ms-c15-s06",
         "speaker": "Kakitangan stesen",
-        "ms": "Ada dua dompet hitam di sini. Yang mana satu? Yang ada zip atau yang tidak ada zip?",
-        "en": "There are two black wallets here. Which one? The one with a zip or the one without?"
+        "ms": "Seperti ini?",
+        "en": "Like this one?"
       },
       {
         "id": "ms-c15-s07",
         "speaker": "Tanaka",
-        "ms": "Yang ada zip, seperti itu. Kad saya ada di dalam, tetapi pasport saya tidak ada.",
-        "en": "The one with a zip, like that one. My card is inside, but my passport isn't."
+        "ms": "Ya, seperti itu, tetapi ada zip.",
+        "en": "Yes, like that one, but it has a zip."
       },
       {
         "id": "ms-c15-s08",
+        "speaker": "Kakitangan stesen",
+        "ms": "Ada dua dompet hitam di sini. Yang mana satu? Yang ada zip atau yang tidak ada zip?",
+        "en": "There are two black wallets here. Which one? The one with a zip or the one without?"
+      },
+      {
+        "id": "ms-c15-s09",
+        "speaker": "Tanaka",
+        "ms": "Yang ada zip. Yang itu! Kad saya ada di dalam, tetapi pasport saya tidak ada.",
+        "en": "The one with a zip. That one! My card is inside, but my passport isn't."
+      },
+      {
+        "id": "ms-c15-s10",
         "speaker": "Kakitangan stesen",
         "ms": "Betul, ada kad encik di dalam. Ini dompet encik.",
         "en": "That's right, your card is inside. Here is your wallet."
       },
       {
-        "id": "ms-c15-s09",
+        "id": "ms-c15-s11",
         "speaker": "Tanaka",
         "ms": "Terima kasih banyak!",
         "en": "Thank you very much!"
       },
       {
-        "id": "ms-c15-s10",
+        "id": "ms-c15-s12",
         "speaker": "Tanaka",
         "ms": "Encik Rahman, tetamu dari Jepun sudah sampai di stesen.",
         "en": "Mr Rahman, our guest from Japan has arrived at the station."
       },
       {
-        "id": "ms-c15-s11",
+        "id": "ms-c15-s13",
         "speaker": "Encik Rahman",
         "ms": "Saya tidak tahu siapa dia. Lelaki yang mana?",
         "en": "I don't know who he is. Which man?"
       },
       {
-        "id": "ms-c15-s12",
+        "id": "ms-c15-s14",
         "speaker": "Tanaka",
         "ms": "Lelaki yang pakai cermin mata dan baju berjalur. Dia dengan seorang perempuan yang pakai topi. Mereka bawa beg yang ada tali panjang.",
         "en": "The man who wears glasses and a striped shirt. He's with a woman who wears a hat. They're carrying a bag with a long strap."
       },
       {
-        "id": "ms-c15-s13",
+        "id": "ms-c15-s15",
         "speaker": "Encik Rahman",
         "ms": "Dia di mana sekarang?",
         "en": "Where is he now?"
       },
       {
-        "id": "ms-c15-s14",
+        "id": "ms-c15-s16",
         "speaker": "Tanaka",
         "ms": "Dia dekat kaunter, di sebelah lif.",
         "en": "He's near the counter, next to the lift."
       },
       {
-        "id": "ms-c15-s15",
+        "id": "ms-c15-s17",
         "speaker": "Encik Rahman",
         "ms": "Oh, saya sudah jumpa dia.",
         "en": "Oh, I've found him."

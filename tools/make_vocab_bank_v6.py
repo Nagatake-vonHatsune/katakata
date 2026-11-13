@@ -30,10 +30,11 @@ sys.path.insert(0, str(ROOT / "tools"))  # -I leaves the script's folder off sys
 
 import make_vocab_bank_v5 as v5  # noqa: E402
 
-# "Ledger snapshot synced from the sheet (Affix tag ber- on L-0779, L-0781, L-0807, L-0916)": the sheet after
-# Cikgu Sensai's Stage 2 build steps 1 and 2, with Claude's four ber- tags (Journal row 152), before Kata-Kata
-# wrote any chapter 10 card ID. It replaced acff0ca (the same rows without those four tags).
-LEDGER_BASELINE = "323b5fc"
+# "Ledger snapshot after Sam's Affix-tag fixes and new row L-1267 (Journal rows 177, 178)": the sheet after the
+# chapter 17 write-back plus Sam's 16 Affix tags (13 blank rows, three root ter- rows) and the new row L-1267
+# «tidak boleh tahan». It replaced 323b5fc (the same rows without those changes; 323b5fc replaced acff0ca, which
+# lacked Claude's four ber- tags, Journal row 152).
+LEDGER_BASELINE = "c3e4a5a"
 v5.LEDGER_BASELINE = LEDGER_BASELINE
 
 
@@ -195,9 +196,9 @@ def ch11(b):
         # --- unit 11B ---
         ("L-1143", "meN- + sewa (Ch6). The s of sewa drops and meny- is used: menyewa. Passive: disewa (Ch9).", {}),
         ("L-1144", "meN- + lancong. me- before l. It takes no object, so it has no di- passive.", {}),
-        ("L-0865", "meN- + daki. men- before d. A hobby word: Hujung minggu ini saya mahu mendaki dengan kawan saya.", {"tag": "meN-"}),
-        ("L-0792", "meN- + simpan (Dunia, Ch2). The s of simpan drops: menyimpan. The standard form of «simpan».", {"tag": "meN-"}),
-        ("L-0819", "meN- + semak (this chapter). The s of semak drops: menyemak.", {"tag": "meN-"}),
+        ("L-0865", "meN- + daki. men- before d. A hobby word: Hujung minggu ini saya mahu mendaki dengan kawan saya.", {}),
+        ("L-0792", "meN- + simpan (Dunia, Ch2). The s of simpan drops: menyimpan. The standard form of «simpan».", {}),
+        ("L-0819", "meN- + semak (this chapter). The s of semak drops: menyemak.", {}),
         ("L-1145", "meN- + tukar (this chapter). The t of tukar drops: menukar. The standard form; everyday speech says «tukar» (below).", {}),
         ("L-1146", "meN- + kira (Dunia, Ch5). The k of kira drops and meng- is used: mengira.", {}),
         ("L-1147", "meN- + isi (Dunia, Ch3). meng- before a vowel.", {}),
@@ -208,7 +209,7 @@ def ch11(b):
         ("L-1152", "meN- + ajar. meng- before a vowel. Isteri saya mengajar saya memasak.", {}),
         ("L-0680", "Tolong semak draf ini.", {"drop": ["ms-j-office-04"], "place": "Ch11 (unit 11B)"}),
         ("L-0696", "A slide in a presentation.", {"drop": ["ms-j-office-20"], "place": "Ch11 (unit 11B)"}),
-        ("L-0849", "Formal and written. Everyday speech says «deadline» (below). Tarikh akhir draf itu hari Jumaat.", {"tag": "chunk"}),
+        ("L-0849", "Formal and written. Everyday speech says «deadline» (below). Tarikh akhir draf itu hari Jumaat.", {}),
         ("L-0684", "Learn it as a whole word.", {"drop": ["ms-j-office-08"], "place": "Ch11 (unit 11B)"}),
         ("L-1153", "The root of menyemak, used as a request: Tolong semak draf ini.", {}),
         ("L-1154", "Nanti saya menghantar mesej.", {}),
@@ -295,7 +296,7 @@ def ch12(b):
         ("L-1165", "pulang (Ch4) + -kan: give something back. Tolong pulangkan buku itu.", {}),
         ("L-1166", "beri + -kan: give. beri is a root, so berikan is not ber- + ikan. Everyday speech says «bagi» (Dunia, Ch4).", {}),
         ("L-1167", "tunjuk + -kan. Double k: tunjukkan. Boleh tunjukkan mesej itu?", {}),
-        ("L-0743", "pasti + -kan: to make sure. The root «pasti» alone has no class card.", {"tag": "-kan"}),
+        ("L-0743", "pasti + -kan: to make sure. The root «pasti» alone has no class card.", {}),
         ("L-0595", whole + " Root in the ledger: kawal.", {}),
         ("L-0654", "A flat in a condo: Blok B, unit 12-3.", {}),
         ("L-0650", "The condo management office. Learn it as a phrase.", {}),
@@ -313,7 +314,7 @@ def ch12(b):
         ("L-1173", "baik (Ch1) + -i: to repair, as a request: Tolong baiki paip ini. Same spelling as baik (good), different meaning.", {}),
         ("L-1174", "meN- + baiki (baik + -i). mem- before b. To repair: Juruteknik sedang membaiki paip.", {}),
         ("L-1175", "hubung + -i: contact someone. Common on notices and in requests: Boleh hubungi juruteknik?", {}),
-        ("L-0789", "meN- + hubungi (hubung + -i). meng- before h. To contact: Kami akan menghubungi juruteknik.", {"tag": "meN- -i"}),
+        ("L-0789", "meN- + hubungi (hubung + -i). meng- before h. To contact: Kami akan menghubungi juruteknik.", {}),
         ("L-1176", "tempah (Dunia, Ch4) + -an: a booking or reservation.", {}),
         ("L-1177", "isi (Dunia, Ch3) + -kan: fill in, put in. Everyday speech prefers «isi»: Sila isi borang ini.", {}),
         ("L-1178", "kosong (Ch3) + -kan: empty or clear something. Tolong kosongkan kotak itu.", {}),
@@ -329,7 +330,7 @@ def ch12(b):
         ("L-1182", "Learn it as a whole word: ke- … -an words come in Stage 3. Root: rosak (Dunia, Ch7).", {}),
         ("L-1183", "A complaint or problem report. Root in the ledger: adu.", {}),
         ("L-1184", "ganti (this chapter) + -kan: replace something. Tolong gantikan lampu itu.", {}),
-        ("L-0871", "perlahan (Ch6) + -kan: to slow down, or to lower the voice or the volume. Tolong perlahankan muzik itu.", {"tag": "-kan"}),
+        ("L-0871", "perlahan (Ch6) + -kan: to slow down, or to lower the voice or the volume. Tolong perlahankan muzik itu.", {}),
         ("L-0698", "To replace, or to stand in for someone. The root of gantikan.", {}),
     ]
     for lid, note, opt in cards:
@@ -379,8 +380,8 @@ def ch12(b):
          "Okay, I'm switching the light off now. When can the technician come?"),
         ("Pejabat pengurusan", "Ada slot petang ini, pukul tiga. Boleh?", "There's a slot this afternoon at three. Is that all right?"),
         ("Tanaka", "Boleh. Tolong hubungi saya sebelum juruteknik sampai.", "That's fine. Please contact me before the technician arrives."),
-        ("Pejabat pengurusan", "Baik. Juruteknik akan membaiki paip itu. Saya isi borang aduan sekarang.",
-         "Okay. The technician will repair the pipe. I'm filling in the complaint form now."),
+        ("Pejabat pengurusan", "Baik. Juruteknik akan melihat siling itu. Saya isi borang aduan sekarang.",
+         "Okay. The technician will look at the ceiling. I'm filling in the complaint form now."),
         ("Tanaka", "Terima kasih. Saya tunggu di rumah.", "Thank you. I'll wait at home."),
     ]
     for i, (speaker, ms, en) in enumerate(lines, 1):
@@ -398,7 +399,7 @@ def ch13(b):
     cards = [
         ("L-1185", "Need: Saya perlu berjumpa doktor. Compare patut (should) and mesti (must) below.", {}),
         ("L-1186", "Should, as advice: Encik patut berehat.", {}),
-        ("L-1187", "Compulsory, as on a notice or a form, in the everyday sense: Wajib isi borang ini.", {}),
+        ("L-1187", "Compulsory, as on a notice or a form: Borang ini wajib diisi.", {}),
         ("L-1188", "di- + benar + -kan: allowed. Tidak dibenarkan minum di sini. The opposite of dilarang (Ch9).", {}),
         ("L-1189", whole + " Root in the ledger: benar. Taught only as «permission»: Encik mesti minta kebenaran doktor.", {}),
         ("L-1190", "Advice.", {}),
@@ -432,7 +433,7 @@ def ch13(b):
         ("ms-c13-f03", "Saya perlu ___.", "Saya perlu berjumpa doktor.", "I need to see a doctor."),
         ("ms-c13-f04", "Encik patut ___.", "Encik patut berehat.", "You should rest."),
         ("ms-c13-f05", "Tidak dibenarkan ___ di sini.", "Tidak dibenarkan minum di sini.", "Drinking is not allowed here."),
-        ("ms-c13-f06", "Wajib ___ borang ini.", "Wajib isi borang ini.", "You must fill in this form."),
+        ("ms-c13-f06", "Borang ini wajib ___.", "Borang ini wajib diisi.", "This form must be filled in."),
     ]
     for fid, frame, example, meaning in frames:
         b.add_frame(13, fid, frame, example, meaning)
@@ -442,7 +443,7 @@ def ch13(b):
     lines = [
         ("Penyambut tetamu", "Selamat pagi, encik. Ada temu janji?", "Good morning, sir. Do you have an appointment?"),
         ("Tanaka", "Tidak ada. Saya demam dan sakit tekak. Saya batuk juga.", "No. I have a fever and a sore throat. I'm coughing too."),
-        ("Penyambut tetamu", "Encik perlu daftar dulu. Wajib isi borang ini.", "You need to register first. You must fill in this form."),
+        ("Penyambut tetamu", "Encik perlu daftar dulu. Sila isi borang ini.", "You need to register first. Please fill in this form."),
         ("Tanaka", "Baik. Saya belum isi borang. Bolehkah saya isi borang di sini?",
          "Okay. I haven't filled in the form yet. May I fill it in here?"),
         ("Penyambut tetamu", "Boleh. Ini klinik panel syarikat encik?", "Yes. Is this your company's panel clinic?"),
@@ -455,7 +456,7 @@ def ch13(b):
         ("Doktor", "Encik patut berehat di rumah. Encik tidak perlu datang ke pejabat esok.",
          "You should rest at home. You don't need to come to the office tomorrow."),
         ("Tanaka", "Doktor, boleh saya minta cuti sakit untuk esok?", "Doctor, may I ask for sick leave for tomorrow?"),
-        ("Doktor", "Boleh. Saya bagi cuti sakit satu hari.", "Yes. I'll give you one day of sick leave."),
+        ("Doktor", "Boleh. Saya berikan cuti sakit satu hari.", "Yes. I'll give you one day of sick leave."),
         ("Tanaka", "Terima kasih, doktor.", "Thank you, doctor."),
         ("Tanaka", "Maaf, boleh cakap lagi sekali? Saya tidak faham arahan itu.", "Sorry, could you say that once more? I don't understand that instruction."),
         ("Ahli farmasi", "Boleh. Encik mesti baca arahan di label. Dos ada di label itu.",
@@ -609,10 +610,12 @@ def ch15(b):
         ("Kakitangan stesen", "Ada jenama?", "Is there a brand?"),
         ("Tanaka", "Saya tidak ingat jenamanya. Bentuknya segi empat, seperti kotak kecil.",
          "I don't remember the brand. It's rectangular, like a small box."),
+        ("Kakitangan stesen", "Seperti ini?", "Like this one?"),
+        ("Tanaka", "Ya, seperti itu, tetapi ada zip.", "Yes, like that one, but it has a zip."),
         ("Kakitangan stesen", "Ada dua dompet hitam di sini. Yang mana satu? Yang ada zip atau yang tidak ada zip?",
          "There are two black wallets here. Which one? The one with a zip or the one without?"),
-        ("Tanaka", "Yang ada zip, seperti itu. Kad saya ada di dalam, tetapi pasport saya tidak ada.",
-         "The one with a zip, like that one. My card is inside, but my passport isn't."),
+        ("Tanaka", "Yang ada zip. Yang itu! Kad saya ada di dalam, tetapi pasport saya tidak ada.",
+         "The one with a zip. That one! My card is inside, but my passport isn't."),
         ("Kakitangan stesen", "Betul, ada kad encik di dalam. Ini dompet encik.", "That's right, your card is inside. Here is your wallet."),
         ("Tanaka", "Terima kasih banyak!", "Thank you very much!"),
         ("Tanaka", "Encik Rahman, tetamu dari Jepun sudah sampai di stesen.", "Mr Rahman, our guest from Japan has arrived at the station."),
@@ -643,7 +646,7 @@ def ch16(b):
         ("L-0644", "ter- + lupa (Dunia, Ch4): to forget, without meaning to. Maaf, saya terlupa.", {}),
         ("L-1236", "ter- + tidur (Ch4): to fall asleep without meaning to.", {}),
         ("L-0621", "ter- + lepas (Ch4): to miss (a bus, a chance). Saya terlepas bas.", {}),
-        ("L-0752", "ter- + silap: to get something wrong, by mistake. The root «silap» is not a class card.", {"tag": "ter-"}),
+        ("L-0752", "ter- + silap: to get something wrong, by mistake. The root «silap» is not a class card.", {}),
         ("L-1237", "ter- + tumpah (this chapter): to spill by accident. Air kopi tertumpah di meja.", {}),
         ("L-1238", "ter- + langgar: to bump into something by accident. Saya tidak sengaja terlanggar kerusi.", {}),
         ("L-1239", "ter- + kunci (this chapter): locked. It names a state (Pintu terkunci) as well as an accident.", {}),
@@ -651,8 +654,8 @@ def ch16(b):
         ("L-1241", "ter- + gelincir: to slip. Saya tergelincir di tangga tadi.", {}),
         ("L-1242", "ter- + bakar: burnt, on fire.", {}),
         ("L-1243", "ter- + putus: cut off, disconnected. It names a resulting state, for example a water supply or a call.", {}),
-        ("L-0875", "ter- + sangkut: stuck, for example in traffic.", {"tag": "ter-"}),
-        ("L-0758", "By accident, not on purpose. Spoken: «tak sengaja». Awak tidak sengaja.", {"tag": "chunk"}),
+        ("L-0875", "ter- + sangkut: stuck, for example in traffic.", {}),
+        ("L-0758", "By accident, not on purpose. Spoken: «tak sengaja». Awak tidak sengaja.", {}),
         ("L-1244", "An accident. Learn it as a whole word: ke- … -an words come in Stage 3. Root in the ledger: malang.", {}),
         ("L-1245", "A wound.", {}),
         ("L-1246", "A bruise.", {}),
@@ -672,8 +675,8 @@ def ch16(b):
         ("ms-c16-f02", "Maaf, saya ___.", "Maaf, saya terlupa.", "Sorry, I forgot."),
         ("ms-c16-f03", "___ tertumpah di ___.", "Air kopi tertumpah di meja.", "Coffee spilled on the table."),
         ("ms-c16-f04", "Saya tidak sengaja ___ ___.", "Saya tidak sengaja terlanggar kerusi.", "I bumped into the chair by accident."),
-        ("ms-c16-f05", "Ini ___, tetapi saya ___.", "Ini termurah, tetapi saya tertinggal dompet saya.",
-         "This is the cheapest, but I left my wallet behind."),
+        ("ms-c16-f05", "Yang ini ___, tetapi dompet saya ___ di rumah.", "Yang ini termurah, tetapi dompet saya tertinggal di rumah.",
+         "This one is the cheapest, but my wallet is left at home."),
         ("ms-c16-f06", "Pintu terkunci. Boleh tolong ___?", "Pintu terkunci. Boleh tolong hubungi pejabat pengurusan?",
          "The door is locked. Could you please contact the management office?"),
     ]
@@ -692,7 +695,7 @@ def ch16(b):
         ("Tanaka", "Baik. Terima kasih banyak.", "Okay. Thank you very much."),
         ("Cik Mei Ling", "Maaf, saya lambat. Saya terlepas bas, kemudian saya tersangkut di jalan yang sesak.",
          "Sorry I'm late. I missed the bus, then I got stuck on a congested road."),
-        ("Tanaka", "Jangan risau. Mesyuarat belum mula.", "Don't worry. The meeting hasn't started."),
+        ("Tanaka", "Jangan risau. Mesyuarat belum bermula.", "Don't worry. The meeting hasn't started."),
         ("Cik Mei Ling", "Maaf, Encik Tanaka! Air kopi saya tertumpah di meja. Cawan saya pun pecah.",
          "Sorry, Mr Tanaka! My coffee spilled on the table. My cup broke too."),
         ("Tanaka", "Awak tidak sengaja. Jangan risau.", "You didn't do it on purpose. Don't worry."),
@@ -713,7 +716,7 @@ def ch16(b):
 def ch17(b):
     """Chapter 17: standard and spoken choices, particles, invitations and refusals. No new productive affix.
 
-    22 of the 23 ledger rows; L-0690 «tak tahan» is not built (see below). Standard form first: every spoken form
+    23 of the 24 ledger rows; L-0690 «tak tahan» is not built (see below). Standard form first: every spoken form
     is a card whose note begins "Spoken: …" and names its standard partner; the standard form is taught earlier in
     the pack or in an earlier chapter (the register check needs that order). «kan» (confirmation, not the suffix -kan)
     and «lah» (tone-dependent) are recognition only (R4), and so is «takpe», the slang short form of «tak apa» (ledger
@@ -723,36 +726,45 @@ def ch17(b):
 
     The ledger's Affix tag is blank for L-0828 sudi, L-0787 malangnya and L-0748 singgah (cards say root, -nya, root).
 
-    NOT BUILT: L-0690 «tak tahan». The register check needs «tidak tahan» taught before it, but the ledger has no
-    row for «tidak tahan» or «tahan» (only «tak tahan» and «boleh tahan»), so writing «tidak tahan» is a ledger gap
-    that blocks the build, and the card itself fails the check without it. A decision for Sam: add a «tidak tahan»
-    row (then both cards can be built), or leave L-0690 as a Jambatan card. Its ledger cells are left untouched.
+    L-1267 «tidak boleh tahan» (Sam, 13 Nov 2026) is the standard core card, last in the pack so that the earlier card
+    IDs stay the same. NOT BUILT: L-0690 «tak tahan». The shared register pair R3 is «tak tahan» -> «tidak tahan» and
+    the check needs that exact standard form taught before the spoken card; the ledger's standard is «tidak boleh
+    tahan», so the card fails the check. It stays the Jambatan card it was; its ledger cells are left untouched. A
+    decision for Sam and Cikgu Sensai (change the pair to «tidak boleh tahan»).
     """
     cards = [
         ("L-1252", "Spoken: «kat» for «di» (at, in). Standard first: di (Ch2). Ada kedai mamak kat depan pejabat.", {}),
         ("L-1253", "Spoken: «kan» = «right?», «isn't it?» (a confirmation particle). It is not the suffix -kan (Ch12). You will hear it; saying it is optional. Recognise only.", {}),
         ("L-1254", "Spoken: «lah» softens or stresses what is said; the meaning depends on the tone, so it has no one-word translation. You will hear it; saying it is optional. Recognise only.", {}),
         ("L-0689", "To invite someone along, informally: Saya ajak encik. Compare jom (Ch2) and jemput (Dunia, Ch9): the tone differs; they are not the same word in short form.", {}),
-        ("L-0828", "To be willing, glad to (polite): Encik sudi datang?", {"tag": "root"}),
+        ("L-0828", "To be willing, glad to (polite). We use it to ask the other person, not about ourselves: Sudikah encik datang?", {}),
         ("L-0656", "Free, not busy: Hari Sabtu saya tidak lapang.", {}),
         ("L-1255", "To agree. The standard form; the spoken partner is «set!» (below). Learn it as a whole word.", {}),
-        ("L-1256", "meN- + tolak (Ch9). The t drops: menolak. A new sense of tolak (push): to decline, to refuse. Saya segan menolak jemputan itu.", {}),
+        ("L-1256", "meN- + tolak (Ch9). The t drops: menolak. A new sense of tolak (push): to decline, to refuse. Saya segan untuk menolak jemputan puan.", {}),
         ("L-1257", "cadang + -an: a suggestion. Itu cadangan yang bagus.", {}),
-        ("L-1258", "Hesitant, shy about doing something: Saya segan menolak jemputan itu.", {}),
+        ("L-1258", "Hesitant, shy about doing something: Saya segan untuk menolak jemputan puan.", {}),
         ("L-1259", "sayang + -nya: what a pity. Sayangnya hari Sabtu saya tidak lapang.", {}),
-        ("L-0787", "malang + -nya: unfortunately. Malangnya saya ada mesyuarat.", {"tag": "-nya"}),
+        ("L-0787", "malang + -nya: unfortunately. Malangnya saya ada mesyuarat.", {}),
         ("L-1260", "Another time: lain (Ch6) + kali (Ch3). A fixed phrase: Lain kali, ya?", {}),
         ("L-1261", "Never mind; it's all right. The standard form. Everyday speech usually says «tak apa» or «takpe» (spoken).", {}),
         ("L-1262", "Spoken: «macam tu» for «seperti itu» (like that). Standard first: seperti itu (Ch15).", {}),
         ("L-0703", "Spoken: «Set!» = Deal! Agreed! Standard first: setuju (above).", {}),
         ("L-0717", "To treat someone, to pay for them: Bos belanja. belanja on its own is a root; you know berbelanja (Ch10) = to spend money, to shop.", {}),
-        ("L-0748", "To drop in, to stop by: Encik singgah di pejabat dulu, ya?", {"tag": "root"}),
+        ("L-0748", "To drop in, to stop by: Encik singgah di pejabat dulu, ya?", {}),
         ("L-1263", "Spoken: «ni» for «ini» (this). Standard first: ini (Ch2).", {}),
         ("L-1264", "Spoken: «tu» for «itu» (that). Standard first: itu (Ch2).", {}),
         ("L-1265", "jemput (Dunia, Ch9) + -an: an invitation. Ini jemputan makan malam.", {}),
         # Recognition (ledger L-1266, added after the plan): the slang short form of tak apa.
         ("L-1266", "Spoken: «takpe» is the short form of «tak apa» (never mind); both are everyday speech. The standard form is tidak mengapa (above). «tak apa» is also the Chapter 5 Dunia card. Recognise only.",
          {"term": "takpe / tak apa"}),
+        # Sam, 13 Nov 2026 (ledger L-1267, Journal row 178): the standard line first, then its spoken partner.
+        ("L-1267", "Can't stand, can't handle (for example spicy food): Saya tidak boleh tahan pedas. The standard form; the spoken partner is «tak tahan» (below). "
+                   "It is not the same as «boleh tahan» (Dunia, Ch5), which means «not bad».", {}),
+        # L-0690 «tak tahan» is NOT built: the shared register pair R3 (content/rules/stage-rules.json, from Cikgu Sensai) is
+        # «tak tahan» -> «tidak tahan», and the check wants that exact standard taught first; Sam's standard form is «tidak boleh
+        # tahan» (L-1267). Held for Sam (13 Nov report, question 1). The card wording Sam approved, ready to use once the pair
+        # reads «tidak boleh tahan»: "Spoken: «tak tahan» for «tidak boleh tahan» (can't stand, can't handle). Standard first:
+        # tidak boleh tahan (above). Everyday alternatives: Saya tak nak pedas. Saya tak suka pedas."
     ]
     for lid, note, opt in cards:
         kc(b, 17, lid, note, **opt)
@@ -760,7 +772,7 @@ def ch17(b):
     # Frames: the plan's functions (invite, accept, decline with a reason or an alternative, suggest, agree), standard form
     # first; the spoken partners are in the card notes and in the scenario's casual lines.
     frames = [
-        ("ms-c17-f01", "Encik sudi ___?", "Encik sudi datang?", "Would you be glad to come?"),
+        ("ms-c17-f01", "Sudikah encik ___?", "Sudikah encik datang?", "Would you like to come? (polite)"),
         ("ms-c17-f02", "Sayangnya saya tidak ___. Lain kali, ya?", "Sayangnya saya tidak lapang. Lain kali, ya?",
          "Unfortunately I'm not free. Another time, then?"),
         ("ms-c17-f03", "Bagaimana kalau ___?", "Bagaimana kalau hari Jumaat?", "How about Friday?"),
@@ -781,19 +793,19 @@ def ch17(b):
         ("Puan Aini", "Encik Tanaka, ini jemputan makan malam pejabat. Hari Sabtu, pukul tujuh.",
          "Mr Tanaka, this is the invitation to the office dinner. Saturday at seven."),
         ("Tanaka", "Terima kasih, Puan Aini. Siapa yang belanja?", "Thank you, Puan Aini. Who is treating?"),
-        ("Puan Aini", "Bos belanja. Encik sudi datang?", "The boss is treating. Would you be glad to come?"),
-        ("Tanaka", "Sayangnya hari Sabtu saya tidak lapang. Saya segan menolak jemputan itu.",
-         "Unfortunately I'm not free on Saturday. I'm reluctant to turn down the invitation."),
+        ("Puan Aini", "Bos belanja. Sudikah encik datang?", "The boss is treating. Would you like to come?"),
+        ("Tanaka", "Sayangnya hari Sabtu saya tidak lapang. Saya segan untuk menolak jemputan puan.",
+         "Unfortunately I'm not free on Saturday. I'm reluctant to turn down your invitation, Puan."),
         ("Puan Aini", "Tidak mengapa. Ada cadangan lain?", "That's all right. Do you have another suggestion?"),
         ("Tanaka", "Bagaimana kalau hari Jumaat?", "How about Friday?"),
         ("Puan Aini", "Itu cadangan yang bagus. Saya tanya bos dulu.", "That's a good suggestion. I'll ask the boss first."),
         ("Puan Aini", "Bos setuju. Hari Jumaat, pukul tujuh. Encik singgah di pejabat dulu, ya? Kita pergi sama-sama.",
          "The boss agrees. Friday at seven. Drop by the office first, will you? We'll go together."),
         ("Tanaka", "Baik. Terima kasih!", "Fine. Thank you!"),
-        ("Cik Mei Ling", "Encik Tanaka, jom makan kat kafe ni! Saya ajak encik.", "Mr Tanaka, let's eat at this cafe! My invitation."),
-        ("Tanaka", "Terima kasih. Tetapi kafe itu pedas, dan saya tidak suka makanan pedas.",
-         "Thank you. But that cafe is spicy, and I don't like spicy food."),
-        ("Cik Mei Ling", "Takpe lah. Kita cari kedai lain. Macam tu boleh?", "No problem. We'll look for another place. Would that be all right?"),
+        ("Cik Mei Ling", "Encik Tanaka, jom makan kat kafe ni! Saya belanja!", "Mr Tanaka, let's eat at this cafe! My treat!"),
+        ("Tanaka", "Tetapi makanan di kafe itu pedas. Saya tidak boleh tahan pedas.",
+         "But the food at that cafe is spicy. I can't stand spicy food."),
+        ("Cik Mei Ling", "Takpelah. Kita cari kedai lain. Macam tu boleh?", "No problem. We'll look for another place. Would that be all right?"),
         ("Tanaka", "Tadi cik cakap «takpe». Itu sama dengan «tidak mengapa», ya?", "You said «takpe» just now. That's the same as «tidak mengapa», right?"),
         ("Cik Mei Ling", "Ya! Orang selalu cakap «tak apa» atau «takpe».", "Yes! People usually say «tak apa» or «takpe»."),
         ("Tanaka", "Dan «lah» dan «kan»? Saya faham, tetapi saya tidak perlu cakap «lah», ya?",
@@ -846,8 +858,8 @@ def ch18(b):
         ("Tanaka", "Encik Rahman yang menulis draf itu. Dia akan menghantar fail itu petang ini.",
          "Mr Rahman wrote it. He'll send the file this afternoon."),
         ("Cik Mei Ling", "Encik Tanaka, ada kebocoran di siling bilik mesyuarat.", "Mr Tanaka, there's a leak in the ceiling of the meeting room."),
-        ("Tanaka", "Tolong hubungi pejabat pengurusan. Juruteknik akan membaiki paip itu.",
-         "Please contact the management office. A technician will repair the pipe."),
+        ("Tanaka", "Tolong hubungi pejabat pengurusan. Juruteknik akan melihat siling itu.",
+         "Please contact the management office. A technician will look at the ceiling."),
         ("Cik Mei Ling", "Baik. Saya hubungi mereka sekarang.", "Okay. I'll contact them now."),
         ("Cik Mei Ling", "Satu lagi: bungkusan saya sudah sampai di pondok pengawal. Label itu koyak, jadi pengawal mahu tengok mesej saya.",
          "One more thing: my parcel has arrived at the guardhouse. The label is torn, so the guard wants to see my message."),
@@ -857,7 +869,7 @@ def ch18(b):
          "Mr Tanaka, I have a fever and a sore throat. I must see a doctor."),
         ("Tanaka", "Cik patut berehat. Cik sudah ada temu janji?", "You should rest. Do you have an appointment yet?"),
         ("Cik Mei Ling", "Belum. Bolehkah saya minta cuti sakit?", "Not yet. May I ask for sick leave?"),
-        ("Tanaka", "Boleh. Cik mesti ada cuti sakit daripada doktor.", "Yes. You must have sick leave from the doctor."),
+        ("Tanaka", "Boleh. Cik perlu minta cuti sakit daripada doktor.", "Yes. You need to ask the doctor for sick leave."),
         ("Cik Mei Ling", "Maaf, Encik Tanaka. Telefon saya tertinggal di rumah. Dompet saya pun hilang: dompet kulit yang ada zip.",
          "Sorry, Mr Tanaka. I left my phone at home. My wallet is lost too: a leather wallet that has a zip."),
         ("Tanaka", "Jangan risau. Cuba tanya di kaunter barang hilang di stesen.", "Don't worry. Try asking at the lost property counter at the station."),
@@ -865,7 +877,7 @@ def ch18(b):
          "Mei Ling, this is the invitation to dinner. Saturday at seven. The boss is treating."),
         ("Cik Mei Ling", "Terima kasih, Puan Aini. Sayangnya hari Sabtu saya tidak lapang.", "Thank you, Puan Aini. Unfortunately I'm not free on Saturday."),
         ("Puan Aini", "Tidak mengapa. Bagaimana kalau hari Ahad?", "That's all right. How about Sunday?"),
-        ("Cik Mei Ling", "Boleh. Hari Ahad saya lapang. Saya sudi datang.", "Yes. I'm free on Sunday. I'd be glad to come."),
+        ("Cik Mei Ling", "Boleh. Hari Ahad saya lapang.", "Yes. I'm free on Sunday."),
         ("Puan Aini", "Set! Hari Ahad, pukul tujuh.", "Deal! Sunday at seven."),
         ("Cik Mei Ling", "Baik. Jumpa kat pejabat dulu, ya?", "Okay. Let's meet at the office first, shall we?"),
     ]

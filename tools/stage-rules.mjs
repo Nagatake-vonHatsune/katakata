@@ -160,6 +160,11 @@ export class Checker {
     if (w.endsWith('nya') && w.length > 4 && ch >= g['-nya'] && (this.entries.has(w.slice(0, -3)) || this.cards.has(w.slice(0, -3)) || w === 'ceritanya'))
       return [w.slice(0, -3), '-nya'];
     if (w.endsWith('kah') && w.length > 4 && ch >= g['-kah']) return [w.slice(0, -3), '-kah'];
+    // Written particle «lah» joins the word (takpelah, like bolehkah). Kata-Kata addition (13 Nov 2026, Sam), not in
+    // Cikgu Sensai's checker: it reads «Xlah» as X + lah once the particle's own ledger row is placed, when X is a known
+    // form and the whole word is not a ledger word or a listed non-particle (adalah, masalah).
+    if (w.endsWith('lah') && w.length > 5 && this.placedBy('lah', ch) && !this.entries.has(w) && !this.notParticle.has(w) && this.known.has(w.slice(0, -3)))
+      return [w.slice(0, -3), '-lah'];
     if (w.startsWith('se') && w.length > 3) {
       const base = w.slice(2);
       if (this.noun(base)) return [base, 'se- noun; base chapter checked separately'];
