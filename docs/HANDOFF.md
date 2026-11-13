@@ -23,6 +23,10 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
   get a picture scene only if the plan names one (it names none).
 - The end-of-project Kamus Dewan and native Japanese checks.
 
+## Naturalness notes
+
+- **No «keputusan» phrasing in casual speech** (Sam, 13 Nov 2026): «Itu keputusan kita» sounds like a court or management ruling. Casual Malay would say something like «Baiklah, kita buat begini».
+
 ## Chapter template (how c10 to c18 were built)
 
 ### 0. Read first

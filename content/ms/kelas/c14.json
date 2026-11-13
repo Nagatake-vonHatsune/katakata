@@ -526,8 +526,8 @@
       {
         "id": "ms-c14-s12",
         "speaker": "Tanaka",
-        "ms": "Kita batalkan rancangan mendaki, tetapi kita masih makan di kafe. Itu keputusan kita.",
-        "en": "The hike is off, but we still eat at the cafe. That's our decision."
+        "ms": "Kita batalkan rancangan mendaki, tetapi kita masih makan di kafe.",
+        "en": "The hike is off, but we still eat at the cafe."
       },
       {
         "id": "ms-c14-s13",
@@ -560,7 +560,6 @@
       "ms-c14-009",
       "ms-c14-013",
       "ms-c14-014",
-      "ms-c14-015",
       "ms-c14-016",
       "ms-c14-019",
       "ms-c14-021",
@@ -579,7 +578,9 @@
       "ms-d-cuaca-hujan-04",
       "ms-c11-023",
       "ms-c10-010",
-      "ms-c04-055"
+      "ms-c04-055",
+      "ms-c14-018",
+      "ms-c14-020"
     ],
     "frames": [
       "ms-c14-f01",
