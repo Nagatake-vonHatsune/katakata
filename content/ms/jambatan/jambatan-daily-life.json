@@ -96,24 +96,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-daily-life-06",
-      "lang": "ms",
-      "term": "pengawal",
-      "gloss_en": "Security guard",
-      "gloss_ja": "警備員",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": null,
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-daily-life"
-        }
-      ],
-      "scene": "dunia-jambatan-daily-life",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-daily-life-07",
       "lang": "ms",
       "term": "jelas",
@@ -302,24 +284,6 @@
       "pos": "noun",
       "affix_tag": "chunk",
       "note": "Hanashishou: Pos udara, ya.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-daily-life"
-        }
-      ],
-      "scene": "dunia-jambatan-daily-life",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-daily-life-19",
-      "lang": "ms",
-      "term": "nombor tracking",
-      "gloss_en": "Tracking number (everyday word; formal: nombor penjejakan)",
-      "gloss_ja": "追跡番号（日常の言い方。あらたまった言い方は nombor penjejakan）",
-      "pos": "noun",
-      "affix_tag": "chunk",
-      "note": "Hanashishou: Ini nombor tracking saya.",
       "links": [
         {
           "type": "babak",

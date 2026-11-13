@@ -312,24 +312,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-office-22",
-      "lang": "ms",
-      "term": "ganti",
-      "gloss_en": "To replace; to stand in for someone",
-      "gloss_ja": "代わりをする、代わる",
-      "pos": "verb",
-      "affix_tag": "root",
-      "note": "Hanashishou: Saya ganti Farah minggu ini.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-office"
-        }
-      ],
-      "scene": "dunia-jambatan-office",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-office-23",
       "lang": "ms",
       "term": "bilik mesyuarat",

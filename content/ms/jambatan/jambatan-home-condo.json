@@ -24,132 +24,6 @@
   },
   "cards": [
     {
-      "id": "ms-j-home-condo-01",
-      "lang": "ms",
-      "term": "siling",
-      "gloss_en": "Ceiling",
-      "gloss_ja": "天井",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Ada air dari siling.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-02",
-      "lang": "ms",
-      "term": "pejabat pengurusan",
-      "gloss_en": "The (condo) management office",
-      "gloss_ja": "管理事務所",
-      "pos": "noun",
-      "affix_tag": "chunk",
-      "note": "Hanashishou: Saya telefon pejabat pengurusan.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-03",
-      "lang": "ms",
-      "term": "kebocoran",
-      "gloss_en": "A leak",
-      "gloss_ja": "水漏れ、漏れ",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": null,
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-04",
-      "lang": "ms",
-      "term": "juruteknik",
-      "gloss_en": "Technician",
-      "gloss_ja": "技術者、修理の人",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Juruteknik datang esok.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-05",
-      "lang": "ms",
-      "term": "blok",
-      "gloss_en": "Block (of a building)",
-      "gloss_ja": "棟（ブロック）",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Saya di Blok B.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-06",
-      "lang": "ms",
-      "term": "unit",
-      "gloss_en": "Unit; flat (in a condo)",
-      "gloss_ja": "部屋、住戸",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Unit nombor berapa?",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-07",
-      "lang": "ms",
-      "term": "slot",
-      "gloss_en": "Time slot (a booked period of time)",
-      "gloss_ja": "時間帯、枠",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": null,
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-home-condo-08",
       "lang": "ms",
       "term": "lapang",
@@ -186,24 +60,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-home-condo-10",
-      "lang": "ms",
-      "term": "pondok pengawal",
-      "gloss_en": "Guardhouse",
-      "gloss_ja": "守衛所、警備員室",
-      "pos": "noun",
-      "affix_tag": "chunk",
-      "note": null,
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-home-condo-11",
       "lang": "ms",
       "term": "tingkat atas",
@@ -212,42 +68,6 @@
       "pos": "noun",
       "affix_tag": "chunk",
       "note": "Hanashishou: Dia tinggal di tingkat atas.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-13",
-      "lang": "ms",
-      "term": "paip",
-      "gloss_en": "Pipe",
-      "gloss_ja": "配管、パイプ",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Paip itu bocor.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-14",
-      "lang": "ms",
-      "term": "pemilik",
-      "gloss_en": "Owner",
-      "gloss_ja": "所有者、オーナー",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Siapa pemilik unit ini?",
       "links": [
         {
           "type": "babak",
@@ -284,24 +104,6 @@
       "pos": "verb",
       "affix_tag": "chunk",
       "note": "Hanashishou: Mereka ubah suai dapur.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-17",
-      "lang": "ms",
-      "term": "kontraktor",
-      "gloss_en": "Contractor",
-      "gloss_ja": "工事業者、請負業者",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Kontraktor datang awal.",
       "links": [
         {
           "type": "babak",

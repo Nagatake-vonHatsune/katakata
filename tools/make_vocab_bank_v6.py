@@ -37,6 +37,18 @@ LEDGER_BASELINE = "323b5fc"
 v5.LEDGER_BASELINE = LEDGER_BASELINE
 
 
+import re  # noqa: E402
+
+
+def kc(b, ch, lid, note, **opt):
+    """A class card for ledger row `lid`. If the row also lists Jambatan cards, the class card replaces them: they are
+    dropped and the place loses its "Jambatan · …" part (as for jiran, pindah and sepupu in chapter 10)."""
+    row = b.ledger[lid]
+    drop = [i.strip() for i in row["Kata-Kata (card IDs)"].split(",") if i.strip().startswith("ms-j-")]
+    place = re.sub(r";\s*Jambatan · [^;]+", "", row["Kata-Kata place"]) if drop else None
+    b.add_kelas(ch, lid, note=note, drop=drop, place=place, **opt)
+
+
 def ch10(b):
     """Chapter 10: ber- verbs. Unit 10A (routines, work and movement) and 10B (background).
 
@@ -260,7 +272,122 @@ def ch11(b):
         b.ks.append([f"ms-c11-s{i:02d}", 11, title, speaker, ms, en])
 
 
-CHAPTERS = {10: ch10, 11: ch11}
+def ch12(b):
+    """Chapter 12: -kan and -i (requests, actions for another person, repair and contact). Unit 12A (parcels at a
+    condo guardhouse: selected -kan requests) and 12B (-i, a few -kan families, a leak and a technician).
+
+    45 ledger rows: 23 in 12A, 21 in 12B and the recognition row L-0608 «nombor tracking». Each -kan or -i card shows
+    its root and the chapter where Kata-Kata teaches it. Whole words with Stage 3 affixes (pengawal, pemilik, penerima,
+    kebocoran, kerosakan) are marked as whole words, as the plan says. The ledger's Affix tag is blank for L-0743,
+    L-0789 and L-0871 (cards say -kan, meN- -i and -kan).
+    """
+    whole = "Learn it as a whole word: pe- … words come in Stage 3."
+    cards = [
+        # --- unit 12A ---
+        ("L-1157", "hantar (Dunia, Ch2) + -kan: send or deliver something for someone. Tolong hantarkan bungkusan itu ke unit 8-1.", {}),
+        ("L-1158", "simpan (Dunia, Ch2) + -kan: keep something for someone. Tolong simpankan bungkusan ini.", {}),
+        ("L-1159", "ambil (Dunia, Ch4) + -kan: get something for someone. Boleh ambilkan fail itu?", {}),
+        ("L-1160", "beli (Ch3) + -kan: buy something for someone. Boleh belikan kopi?", {}),
+        ("L-1161", "bawa (Dunia, Ch4) + -kan: bring something for someone.", {}),
+        ("L-1162", "tutup (Dunia, Ch4) + -kan: close something for someone. Tolong tutupkan pintu itu.", {}),
+        ("L-1163", "buka (Dunia, Ch4) + -kan: open something for someone. Boleh bukakan pintu itu?", {}),
+        ("L-1164", "letak (Dunia, Ch7) + -kan. Double k: letakkan. Put or place something: Tolong letakkan beg di sini.", {}),
+        ("L-1165", "pulang (Ch4) + -kan: give something back. Tolong pulangkan buku itu.", {}),
+        ("L-1166", "beri + -kan: give. beri is a root, so berikan is not ber- + ikan. Everyday speech says «bagi» (Dunia, Ch4).", {}),
+        ("L-1167", "tunjuk + -kan. Double k: tunjukkan. Boleh tunjukkan mesej itu?", {}),
+        ("L-0743", "pasti + -kan: to make sure. The root «pasti» alone has no class card.", {"tag": "-kan"}),
+        ("L-0595", whole + " Root in the ledger: kawal.", {}),
+        ("L-0654", "A flat in a condo: Blok B, unit 12-3.", {}),
+        ("L-0650", "The condo management office. Learn it as a phrase.", {}),
+        ("L-0658", "The guardhouse. Learn it as a phrase.", {}),
+        ("L-0662", whole + " Root in the ledger: milik.", {}),
+        ("L-1168", "A label on a parcel.", {}),
+        ("L-1169", whole + " Root in the ledger: terima. The recipient named on a parcel label.", {}),
+        ("L-1170", "The written, formal term on a label. Everyday speech says «nombor tracking» (below).", {}),
+        ("L-1171", "The lobby.", {}),
+        ("L-1172", "Torn: Label ini koyak.", {}),
+        ("L-0653", "A block of a building: Blok B, unit 12-3.", {}),
+        # Recognition (plan: the spoken partner of the new standard «nombor penjejakan», not a new core word).
+        ("L-0608", "Spoken: the everyday word for nombor penjejakan. Recognise only.", {}),
+        # --- unit 12B ---
+        ("L-1173", "baik (Ch1) + -i: to repair, as a request: Tolong baiki paip ini. Same spelling as baik (good), different meaning.", {}),
+        ("L-1174", "meN- + baiki (baik + -i). mem- before b. To repair: Juruteknik sedang membaiki paip.", {}),
+        ("L-1175", "hubung + -i: contact someone. Common on notices and in requests: Boleh hubungi juruteknik?", {}),
+        ("L-0789", "meN- + hubungi (hubung + -i). meng- before h. To contact: Kami akan menghubungi juruteknik.", {"tag": "meN- -i"}),
+        ("L-1176", "tempah (Dunia, Ch4) + -an: a booking or reservation.", {}),
+        ("L-1177", "isi (Dunia, Ch3) + -kan: fill in, put in. Everyday speech prefers «isi»: Sila isi borang ini.", {}),
+        ("L-1178", "kosong (Ch3) + -kan: empty or clear something. Tolong kosongkan kotak itu.", {}),
+        ("L-1179", "hidup + -kan: switch on. Everyday speech says «buka» for lights and aircon.", {}),
+        ("L-1180", "mati + -kan: switch off. Everyday speech says «tutup» for lights and aircon. Tolong matikan lampu itu.", {}),
+        ("L-1181", "bersih (Ch6) + -kan, not ber- + sih. To clean something: Tolong bersihkan meja itu.", {}),
+        ("L-0651", "Learn it as a whole word: ke- … -an words come in Stage 3. Root in the ledger: bocor.", {}),
+        ("L-0652", "A technician.", {}),
+        ("L-0661", "A pipe.", {}),
+        ("L-0649", "A ceiling.", {}),
+        ("L-0665", "A contractor.", {}),
+        ("L-0655", "A booked period of time: Ada slot petang ini.", {}),
+        ("L-1182", "Learn it as a whole word: ke- … -an words come in Stage 3. Root: rosak (Dunia, Ch7).", {}),
+        ("L-1183", "A complaint or problem report. Root in the ledger: adu.", {}),
+        ("L-1184", "ganti (this chapter) + -kan: replace something. Tolong gantikan lampu itu.", {}),
+        ("L-0871", "perlahan (Ch6) + -kan: to slow down, or to lower the voice or the volume. Tolong perlahankan muzik itu.", {"tag": "-kan"}),
+        ("L-0698", "To replace, or to stand in for someone. The root of gantikan.", {}),
+    ]
+    for lid, note, opt in cards:
+        kc(b, 12, lid, note, **opt)
+
+    # Frames: the plan's section 3 examples (Tolong simpankan bungkusan ini; Boleh hubungi juruteknik; Juruteknik sedang
+    # membaiki paip) and the lines of its parcel scene (Saya mahu ambil bungkusan. Sudah sampai?; Boleh tunjukkan mesej?).
+    frames = [
+        ("ms-c12-f01", "Tolong ___ bungkusan ini.", "Tolong simpankan bungkusan ini.", "Please keep this parcel for me."),
+        ("ms-c12-f02", "Boleh ___ mesej itu?", "Boleh tunjukkan mesej itu?", "Can you show me the message?"),
+        ("ms-c12-f03", "Saya mahu ambil ___. Sudah sampai?", "Saya mahu ambil bungkusan. Sudah sampai?",
+         "I'd like to collect my parcel. Has it arrived?"),
+        ("ms-c12-f04", "Juruteknik sedang ___ paip.", "Juruteknik sedang membaiki paip.", "The technician is repairing the pipe."),
+        ("ms-c12-f05", "Boleh ___ juruteknik?", "Boleh hubungi juruteknik?", "Can you contact the technician?"),
+        ("ms-c12-f06", "Ada kebocoran di ___ saya.", "Ada kebocoran di siling saya.", "There's a leak in my ceiling."),
+    ]
+    for fid, frame, example, meaning in frames:
+        b.add_frame(12, fid, frame, example, meaning)
+
+    # Scenario: the plan's two scenes (fictional condo procedures). 12A: two parcels at the guardhouse, the small box
+    # belongs to another unit (the label is torn), and a clear outcome. 12B: water at the ceiling and a technician's visit.
+    title = "Parcels and a leak"
+    lines = [
+        ("Tanaka", "Selamat petang. Saya mahu ambil bungkusan. Sudah sampai?",
+         "Good afternoon. I'd like to collect a parcel. Has it arrived?"),
+        ("Pengawal", "Sudah, encik. Unit berapa?", "Yes, sir. Which unit?"),
+        ("Tanaka", "Blok B, unit 12-3.", "Block B, unit 12-3."),
+        ("Pengawal", "Ada dua bungkusan. Boleh tunjukkan mesej itu?", "There are two parcels. Can you show me the message?"),
+        ("Tanaka", "Boleh. Nombor penjejakan ada dalam mesej ini.", "Sure. The tracking number is in this message."),
+        ("Pengawal", "Terima kasih. Bungkusan besar ini untuk encik. Bungkusan kecil itu bukan untuk encik. Label ini koyak, tetapi nombor unit ada di sini: Blok A, unit 8-1.",
+         "Thank you. This big parcel is for you. That small parcel is not for you. The label is torn, but the unit number is here: Block A, unit 8-1."),
+        ("Tanaka", "Oh, bukan untuk saya. Boleh tolong hantarkan bungkusan kecil itu ke unit 8-1?",
+         "Oh, it's not mine. Could you please deliver that small parcel to unit 8-1?"),
+        ("Pengawal", "Pemilik unit itu belum ada di rumah. Saya simpankan bungkusan itu di pondok pengawal dulu.",
+         "The owner of that unit isn't home yet. I'll keep the parcel in the guardhouse for now."),
+        ("Tanaka", "Baik. Tolong hubungi pemilik unit itu nanti. Saya bawa bungkusan besar ini ke atas.",
+         "Fine. Please contact the owner of that unit later. I'll take this big parcel upstairs."),
+        ("Pengawal", "Baik, encik. Selamat petang!", "Fine, sir. Good afternoon!"),
+        ("Tanaka", "Selamat pagi. Saya Tanaka, Blok B, unit 12-3. Ada kebocoran di siling bilik air saya.",
+         "Good morning. This is Tanaka, Block B, unit 12-3. There's a leak in my bathroom ceiling."),
+        ("Pejabat pengurusan", "Selamat pagi, Encik Tanaka. Air turun dari siling atau dari paip?",
+         "Good morning, Mr Tanaka. Is the water coming from the ceiling or from a pipe?"),
+        ("Tanaka", "Dari siling, dekat lampu. Saya takut lampu itu rosak.", "From the ceiling, near the light. I'm afraid the light is damaged."),
+        ("Pejabat pengurusan", "Tolong matikan lampu itu dulu. Kami akan menghubungi juruteknik.",
+         "Please switch that light off first. We'll contact a technician."),
+        ("Tanaka", "Baik, saya matikan lampu itu sekarang. Bila juruteknik boleh datang?",
+         "Okay, I'm switching the light off now. When can the technician come?"),
+        ("Pejabat pengurusan", "Ada slot petang ini, pukul tiga. Boleh?", "There's a slot this afternoon at three. Is that all right?"),
+        ("Tanaka", "Boleh. Tolong hubungi saya sebelum juruteknik sampai.", "That's fine. Please contact me before the technician arrives."),
+        ("Pejabat pengurusan", "Baik. Juruteknik akan membaiki paip itu. Saya isi borang aduan sekarang.",
+         "Okay. The technician will repair the pipe. I'm filling in the complaint form now."),
+        ("Tanaka", "Terima kasih. Saya tunggu di rumah.", "Thank you. I'll wait at home."),
+    ]
+    for i, (speaker, ms, en) in enumerate(lines, 1):
+        b.ks.append([f"ms-c12-s{i:02d}", 12, title, speaker, ms, en])
+
+
+CHAPTERS = {10: ch10, 11: ch11, 12: ch12}
 
 
 def main():

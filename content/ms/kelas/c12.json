@@ -1,0 +1,1036 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c12",
+  "chapter": 12,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Kata Kerja -kan dan -i",
+    "en": "-kan and -i verbs",
+    "ja": "-kan と -i の動詞"
+  },
+  "cards": [
+    {
+      "id": "ms-c12-001",
+      "lang": "ms",
+      "term": "hantarkan",
+      "gloss_en": "send / deliver for someone (request)",
+      "gloss_ja": "送ってあげる・届けてください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "hantar (Dunia, Ch2) + -kan: send or deliver something for someone. Tolong hantarkan bungkusan itu ke unit 8-1.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-002",
+      "lang": "ms",
+      "term": "simpankan",
+      "gloss_en": "keep for someone (request)",
+      "gloss_ja": "預かってください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "simpan (Dunia, Ch2) + -kan: keep something for someone. Tolong simpankan bungkusan ini.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-003",
+      "lang": "ms",
+      "term": "ambilkan",
+      "gloss_en": "get for someone (request)",
+      "gloss_ja": "取ってきてください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "ambil (Dunia, Ch4) + -kan: get something for someone. Boleh ambilkan fail itu?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-004",
+      "lang": "ms",
+      "term": "belikan",
+      "gloss_en": "buy for someone (request)",
+      "gloss_ja": "買ってきてください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "beli (Ch3) + -kan: buy something for someone. Boleh belikan kopi?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-005",
+      "lang": "ms",
+      "term": "bawakan",
+      "gloss_en": "bring for someone (request)",
+      "gloss_ja": "持ってきてください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "bawa (Dunia, Ch4) + -kan: bring something for someone.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-006",
+      "lang": "ms",
+      "term": "tutupkan",
+      "gloss_en": "close for someone (request)",
+      "gloss_ja": "閉めてください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "tutup (Dunia, Ch4) + -kan: close something for someone. Tolong tutupkan pintu itu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-007",
+      "lang": "ms",
+      "term": "bukakan",
+      "gloss_en": "open for someone (request)",
+      "gloss_ja": "開けてください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "buka (Dunia, Ch4) + -kan: open something for someone. Boleh bukakan pintu itu?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-008",
+      "lang": "ms",
+      "term": "letakkan",
+      "gloss_en": "put / place (request)",
+      "gloss_ja": "置いてください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "letak (Dunia, Ch7) + -kan. Double k: letakkan. Put or place something: Tolong letakkan beg di sini.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-009",
+      "lang": "ms",
+      "term": "pulangkan",
+      "gloss_en": "return something (request)",
+      "gloss_ja": "返してください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "pulang (Ch4) + -kan: give something back. Tolong pulangkan buku itu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-010",
+      "lang": "ms",
+      "term": "berikan",
+      "gloss_en": "give (request)",
+      "gloss_ja": "渡してください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "beri + -kan: give. beri is a root, so berikan is not ber- + ikan. Everyday speech says «bagi» (Dunia, Ch4).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-011",
+      "lang": "ms",
+      "term": "tunjukkan",
+      "gloss_en": "show (request)",
+      "gloss_ja": "見せてください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "tunjuk + -kan. Double k: tunjukkan. Boleh tunjukkan mesej itu?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-012",
+      "lang": "ms",
+      "term": "pastikan",
+      "gloss_en": "To make sure",
+      "gloss_ja": "確かめる、必ず〜するようにする",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "pasti + -kan: to make sure. The root «pasti» alone has no class card.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-013",
+      "lang": "ms",
+      "term": "pengawal",
+      "gloss_en": "Security guard",
+      "gloss_ja": "警備員",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Learn it as a whole word: pe- … words come in Stage 3. Root in the ledger: kawal.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-014",
+      "lang": "ms",
+      "term": "unit",
+      "gloss_en": "Unit; flat (in a condo)",
+      "gloss_ja": "部屋、住戸",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A flat in a condo: Blok B, unit 12-3.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-015",
+      "lang": "ms",
+      "term": "pejabat pengurusan",
+      "gloss_en": "The (condo) management office",
+      "gloss_ja": "管理事務所",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "The condo management office. Learn it as a phrase.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-016",
+      "lang": "ms",
+      "term": "pondok pengawal",
+      "gloss_en": "Guardhouse",
+      "gloss_ja": "守衛所、警備員室",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "The guardhouse. Learn it as a phrase.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-017",
+      "lang": "ms",
+      "term": "pemilik",
+      "gloss_en": "Owner",
+      "gloss_ja": "所有者、オーナー",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Learn it as a whole word: pe- … words come in Stage 3. Root in the ledger: milik.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-018",
+      "lang": "ms",
+      "term": "label",
+      "gloss_en": "label",
+      "gloss_ja": "ラベル",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A label on a parcel.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-019",
+      "lang": "ms",
+      "term": "penerima",
+      "gloss_en": "recipient (on parcel labels)",
+      "gloss_ja": "受取人",
+      "pos": "noun",
+      "affix_tag": "pe-",
+      "note": "Learn it as a whole word: pe- … words come in Stage 3. Root in the ledger: terima. The recipient named on a parcel label.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-020",
+      "lang": "ms",
+      "term": "nombor penjejakan",
+      "gloss_en": "tracking number (written label; nombor tracking is spoken)",
+      "gloss_ja": "追跡番号（書き言葉・ラベル表記。話し言葉は nombor tracking）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "The written, formal term on a label. Everyday speech says «nombor tracking» (below).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-021",
+      "lang": "ms",
+      "term": "lobi",
+      "gloss_en": "lobby",
+      "gloss_ja": "ロビー",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "The lobby.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-022",
+      "lang": "ms",
+      "term": "koyak",
+      "gloss_en": "torn",
+      "gloss_ja": "破れた",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Torn: Label ini koyak.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-023",
+      "lang": "ms",
+      "term": "blok",
+      "gloss_en": "Block (of a building)",
+      "gloss_ja": "棟（ブロック）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A block of a building: Blok B, unit 12-3.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-024",
+      "lang": "ms",
+      "term": "nombor tracking",
+      "gloss_en": "Tracking number (everyday word; formal: nombor penjejakan)",
+      "gloss_ja": "追跡番号（日常の言い方。あらたまった言い方は nombor penjejakan）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Spoken: the everyday word for nombor penjejakan. Recognise only.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12,
+      "recognise_only": true
+    },
+    {
+      "id": "ms-c12-025",
+      "lang": "ms",
+      "term": "baiki",
+      "gloss_en": "repair (request)",
+      "gloss_ja": "修理してください",
+      "pos": "verb",
+      "affix_tag": "-i",
+      "note": "baik (Ch1) + -i: to repair, as a request: Tolong baiki paip ini. Same spelling as baik (good), different meaning.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-026",
+      "lang": "ms",
+      "term": "membaiki",
+      "gloss_en": "to repair",
+      "gloss_ja": "修理する",
+      "pos": "verb",
+      "affix_tag": "meN- -i",
+      "note": "meN- + baiki (baik + -i). mem- before b. To repair: Juruteknik sedang membaiki paip.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-027",
+      "lang": "ms",
+      "term": "hubungi",
+      "gloss_en": "contact (request)",
+      "gloss_ja": "連絡してください",
+      "pos": "verb",
+      "affix_tag": "-i",
+      "note": "hubung + -i: contact someone. Common on notices and in requests: Boleh hubungi juruteknik?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-028",
+      "lang": "ms",
+      "term": "menghubungi",
+      "gloss_en": "To contact",
+      "gloss_ja": "連絡する",
+      "pos": "verb",
+      "affix_tag": "meN- -i",
+      "note": "meN- + hubungi (hubung + -i). meng- before h. To contact: Kami akan menghubungi juruteknik.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-029",
+      "lang": "ms",
+      "term": "tempahan",
+      "gloss_en": "booking / reservation",
+      "gloss_ja": "予約",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "tempah (Dunia, Ch4) + -an: a booking or reservation.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-030",
+      "lang": "ms",
+      "term": "isikan",
+      "gloss_en": "fill in, put in (request; isi alone is more common in speech)",
+      "gloss_ja": "記入してください・入れてください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "isi (Dunia, Ch3) + -kan: fill in, put in. Everyday speech prefers «isi»: Sila isi borang ini.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-031",
+      "lang": "ms",
+      "term": "kosongkan",
+      "gloss_en": "empty / clear (request)",
+      "gloss_ja": "空にしてください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "kosong (Ch3) + -kan: empty or clear something. Tolong kosongkan kotak itu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-032",
+      "lang": "ms",
+      "term": "hidupkan",
+      "gloss_en": "switch on (request; buka is everyday for lights and aircon)",
+      "gloss_ja": "つけてください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "hidup + -kan: switch on. Everyday speech says «buka» for lights and aircon.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-033",
+      "lang": "ms",
+      "term": "matikan",
+      "gloss_en": "switch off (request; tutup is everyday for lights and aircon)",
+      "gloss_ja": "消してください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "mati + -kan: switch off. Everyday speech says «tutup» for lights and aircon. Tolong matikan lampu itu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-034",
+      "lang": "ms",
+      "term": "bersihkan",
+      "gloss_en": "clean (request)",
+      "gloss_ja": "きれいにしてください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "bersih (Ch6) + -kan, not ber- + sih. To clean something: Tolong bersihkan meja itu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-035",
+      "lang": "ms",
+      "term": "kebocoran",
+      "gloss_en": "A leak",
+      "gloss_ja": "水漏れ、漏れ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Learn it as a whole word: ke- … -an words come in Stage 3. Root in the ledger: bocor.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-036",
+      "lang": "ms",
+      "term": "juruteknik",
+      "gloss_en": "Technician",
+      "gloss_ja": "技術者、修理の人",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A technician.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-037",
+      "lang": "ms",
+      "term": "paip",
+      "gloss_en": "Pipe",
+      "gloss_ja": "配管、パイプ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A pipe.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-038",
+      "lang": "ms",
+      "term": "siling",
+      "gloss_en": "Ceiling",
+      "gloss_ja": "天井",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A ceiling.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-039",
+      "lang": "ms",
+      "term": "kontraktor",
+      "gloss_en": "Contractor",
+      "gloss_ja": "工事業者、請負業者",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A contractor.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-040",
+      "lang": "ms",
+      "term": "slot",
+      "gloss_en": "Time slot (a booked period of time)",
+      "gloss_ja": "時間帯、枠",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A booked period of time: Ada slot petang ini.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-041",
+      "lang": "ms",
+      "term": "kerosakan",
+      "gloss_en": "damage / fault",
+      "gloss_ja": "故障・破損",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "Learn it as a whole word: ke- … -an words come in Stage 3. Root: rosak (Dunia, Ch7).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-042",
+      "lang": "ms",
+      "term": "aduan",
+      "gloss_en": "complaint / problem report",
+      "gloss_ja": "苦情・問題の報告",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "A complaint or problem report. Root in the ledger: adu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-043",
+      "lang": "ms",
+      "term": "gantikan",
+      "gloss_en": "replace (request)",
+      "gloss_ja": "交換してください",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "ganti (this chapter) + -kan: replace something. Tolong gantikan lampu itu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-044",
+      "lang": "ms",
+      "term": "perlahankan",
+      "gloss_en": "To lower (the voice); to slow down",
+      "gloss_ja": "（声を）小さくする、ゆっくりにする",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "perlahan (Ch6) + -kan: to slow down, or to lower the voice or the volume. Tolong perlahankan muzik itu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-045",
+      "lang": "ms",
+      "term": "ganti",
+      "gloss_en": "To replace; to stand in for someone",
+      "gloss_ja": "代わりをする、代わる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To replace, or to stand in for someone. The root of gantikan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c12-f01",
+      "frame": "Tolong ___ bungkusan ini.",
+      "example": "Tolong simpankan bungkusan ini.",
+      "meaning_en": "Please keep this parcel for me.",
+      "meaning_ja": "この荷物を預かってください。"
+    },
+    {
+      "id": "ms-c12-f02",
+      "frame": "Boleh ___ mesej itu?",
+      "example": "Boleh tunjukkan mesej itu?",
+      "meaning_en": "Can you show me the message?",
+      "meaning_ja": "そのメッセージを見せてもらえますか。"
+    },
+    {
+      "id": "ms-c12-f03",
+      "frame": "Saya mahu ambil ___. Sudah sampai?",
+      "example": "Saya mahu ambil bungkusan. Sudah sampai?",
+      "meaning_en": "I'd like to collect my parcel. Has it arrived?",
+      "meaning_ja": "荷物を受け取りたいのですが。もう届いていますか。"
+    },
+    {
+      "id": "ms-c12-f04",
+      "frame": "Juruteknik sedang ___ paip.",
+      "example": "Juruteknik sedang membaiki paip.",
+      "meaning_en": "The technician is repairing the pipe.",
+      "meaning_ja": "技術者がパイプを修理しています。"
+    },
+    {
+      "id": "ms-c12-f05",
+      "frame": "Boleh ___ juruteknik?",
+      "example": "Boleh hubungi juruteknik?",
+      "meaning_en": "Can you contact the technician?",
+      "meaning_ja": "技術者に連絡してもらえますか。"
+    },
+    {
+      "id": "ms-c12-f06",
+      "frame": "Ada kebocoran di ___ saya.",
+      "example": "Ada kebocoran di siling saya.",
+      "meaning_en": "There's a leak in my ceiling.",
+      "meaning_ja": "天井から水漏れがあります。"
+    }
+  ],
+  "scenario": {
+    "title_en": "Parcels and a leak",
+    "title_ja": "荷物の受け取りと水漏れ",
+    "lines": [
+      {
+        "id": "ms-c12-s01",
+        "speaker": "Tanaka",
+        "ms": "Selamat petang. Saya mahu ambil bungkusan. Sudah sampai?",
+        "en": "Good afternoon. I'd like to collect a parcel. Has it arrived?"
+      },
+      {
+        "id": "ms-c12-s02",
+        "speaker": "Pengawal",
+        "ms": "Sudah, encik. Unit berapa?",
+        "en": "Yes, sir. Which unit?"
+      },
+      {
+        "id": "ms-c12-s03",
+        "speaker": "Tanaka",
+        "ms": "Blok B, unit 12-3.",
+        "en": "Block B, unit 12-3."
+      },
+      {
+        "id": "ms-c12-s04",
+        "speaker": "Pengawal",
+        "ms": "Ada dua bungkusan. Boleh tunjukkan mesej itu?",
+        "en": "There are two parcels. Can you show me the message?"
+      },
+      {
+        "id": "ms-c12-s05",
+        "speaker": "Tanaka",
+        "ms": "Boleh. Nombor penjejakan ada dalam mesej ini.",
+        "en": "Sure. The tracking number is in this message."
+      },
+      {
+        "id": "ms-c12-s06",
+        "speaker": "Pengawal",
+        "ms": "Terima kasih. Bungkusan besar ini untuk encik. Bungkusan kecil itu bukan untuk encik. Label ini koyak, tetapi nombor unit ada di sini: Blok A, unit 8-1.",
+        "en": "Thank you. This big parcel is for you. That small parcel is not for you. The label is torn, but the unit number is here: Block A, unit 8-1."
+      },
+      {
+        "id": "ms-c12-s07",
+        "speaker": "Tanaka",
+        "ms": "Oh, bukan untuk saya. Boleh tolong hantarkan bungkusan kecil itu ke unit 8-1?",
+        "en": "Oh, it's not mine. Could you please deliver that small parcel to unit 8-1?"
+      },
+      {
+        "id": "ms-c12-s08",
+        "speaker": "Pengawal",
+        "ms": "Pemilik unit itu belum ada di rumah. Saya simpankan bungkusan itu di pondok pengawal dulu.",
+        "en": "The owner of that unit isn't home yet. I'll keep the parcel in the guardhouse for now."
+      },
+      {
+        "id": "ms-c12-s09",
+        "speaker": "Tanaka",
+        "ms": "Baik. Tolong hubungi pemilik unit itu nanti. Saya bawa bungkusan besar ini ke atas.",
+        "en": "Fine. Please contact the owner of that unit later. I'll take this big parcel upstairs."
+      },
+      {
+        "id": "ms-c12-s10",
+        "speaker": "Pengawal",
+        "ms": "Baik, encik. Selamat petang!",
+        "en": "Fine, sir. Good afternoon!"
+      },
+      {
+        "id": "ms-c12-s11",
+        "speaker": "Tanaka",
+        "ms": "Selamat pagi. Saya Tanaka, Blok B, unit 12-3. Ada kebocoran di siling bilik air saya.",
+        "en": "Good morning. This is Tanaka, Block B, unit 12-3. There's a leak in my bathroom ceiling."
+      },
+      {
+        "id": "ms-c12-s12",
+        "speaker": "Pejabat pengurusan",
+        "ms": "Selamat pagi, Encik Tanaka. Air turun dari siling atau dari paip?",
+        "en": "Good morning, Mr Tanaka. Is the water coming from the ceiling or from a pipe?"
+      },
+      {
+        "id": "ms-c12-s13",
+        "speaker": "Tanaka",
+        "ms": "Dari siling, dekat lampu. Saya takut lampu itu rosak.",
+        "en": "From the ceiling, near the light. I'm afraid the light is damaged."
+      },
+      {
+        "id": "ms-c12-s14",
+        "speaker": "Pejabat pengurusan",
+        "ms": "Tolong matikan lampu itu dulu. Kami akan menghubungi juruteknik.",
+        "en": "Please switch that light off first. We'll contact a technician."
+      },
+      {
+        "id": "ms-c12-s15",
+        "speaker": "Tanaka",
+        "ms": "Baik, saya matikan lampu itu sekarang. Bila juruteknik boleh datang?",
+        "en": "Okay, I'm switching the light off now. When can the technician come?"
+      },
+      {
+        "id": "ms-c12-s16",
+        "speaker": "Pejabat pengurusan",
+        "ms": "Ada slot petang ini, pukul tiga. Boleh?",
+        "en": "There's a slot this afternoon at three. Is that all right?"
+      },
+      {
+        "id": "ms-c12-s17",
+        "speaker": "Tanaka",
+        "ms": "Boleh. Tolong hubungi saya sebelum juruteknik sampai.",
+        "en": "That's fine. Please contact me before the technician arrives."
+      },
+      {
+        "id": "ms-c12-s18",
+        "speaker": "Pejabat pengurusan",
+        "ms": "Baik. Juruteknik akan membaiki paip itu. Saya isi borang aduan sekarang.",
+        "en": "Okay. The technician will repair the pipe. I'm filling in the complaint form now."
+      },
+      {
+        "id": "ms-c12-s19",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih. Saya tunggu di rumah.",
+        "en": "Thank you. I'll wait at home."
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c12-001",
+      "ms-c12-002",
+      "ms-c12-011",
+      "ms-c12-013",
+      "ms-c12-014",
+      "ms-c12-016",
+      "ms-c12-017",
+      "ms-c12-018",
+      "ms-c12-020",
+      "ms-c12-022",
+      "ms-c12-023",
+      "ms-c12-026",
+      "ms-c12-027",
+      "ms-c12-028",
+      "ms-c12-033",
+      "ms-c12-035",
+      "ms-c12-036",
+      "ms-c12-037",
+      "ms-c12-038",
+      "ms-c12-040",
+      "ms-c12-042",
+      "ms-c08-042",
+      "ms-d-bank-pos-13",
+      "ms-c08-020",
+      "ms-d-rumah-ruang-tamu-02",
+      "ms-d-pejabat-pagi-07",
+      "ms-d-bank-pos-03",
+      "ms-d-hari-tanaka-14",
+      "ms-d-hari-tanaka-15",
+      "ms-d-cuti-pantai-09",
+      "ms-c11-014",
+      "ms-c11-024",
+      "ms-c11-025",
+      "ms-c11-039",
+      "ms-d-pejabat-pagi-06",
+      "ms-d-hari-tanaka-11"
+    ],
+    "frames": [
+      "ms-c12-f01",
+      "ms-c12-f02"
+    ],
+    "scene": null
+  }
+}
