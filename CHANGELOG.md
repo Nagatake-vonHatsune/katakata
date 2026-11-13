@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+- **Stage 2 begins: chapter 10, ber- verbs (13 Nov 2026), 920 to 958 cards.** Report: [docs/STAGE-2-c10-report.md](docs/STAGE-2-c10-report.md).
+  - 41 class cards, one for every chapter 10 ledger row (units 10A routines and 10B background; «pindah» is recognise-only,
+    the spoken partner of berpindah). Each ber- card shows its root. Six frames, a scenario (a working day; a new neighbour),
+    and a Sedia Kelas list that reviews 13 root words from chapters 1 to 9. Jambatan drops jiran, pindah and sepupu.
+  - The affix guard is stage-aware: its rules come from Cikgu Sensai's `stage-rules.json` (copied with its commit), each text is
+    checked at its own chapter, and chunk exemptions only count from their own chapter. All 72 shared fixtures pass and agree
+    with Cikgu Sensai's Python checker. Stage 2 packs must use only words the ledger places by their chapter.
+  - Workbook v6 (`tools/make_vocab_bank_v6.py`), `tools/stage-check.mjs`, `tools/ledger/writeback.py`; the importer takes every
+    chapter in the workbook. The ledger snapshot is at L-1266. Hanashishou's starting band still depends on chapters 1 to 9.
+
 - **Clean-up after Cikgu Sensai Stage 1 (12 Nov 2026), 805 to 920 cards.** Report and hand-off:
   [docs/CLEANUP-2026-11-12.md](docs/CLEANUP-2026-11-12.md). One commit per chapter:
   - 105 new class cards from ledger rows L-0983 to L-1088 (Ch1 2, Ch2 23, Ch3 17, Ch4 19, Ch5 6, Ch6 3, Ch7 17, Ch8 5,

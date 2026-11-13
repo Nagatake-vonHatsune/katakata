@@ -20,7 +20,7 @@ and Japanese glosses). Katakana hints only appear in the Japanese interface.
 | Spec item | Where |
 |---|---|
 | Onboarding: name, voice check, iOS "Add to Home Screen" step | `src/views/onboarding.ts` |
-| All nine Kelas chapters, 20 Dunia scenes and 5 Jambatan scenes (920 cards) | `content/ms/` (packs with `"status": "live"`) |
+| Kelas chapters 1 to 10 (Stage 1 and the first Stage 2 chapter), 20 Dunia scenes and 5 Jambatan scenes (958 cards) | `content/ms/` (packs with `"status": "live"`) |
 | 今日の練習: due reviews, then 5–8 new words, one frame drill, one Cari Benda round | `src/core/session.ts` |
 | Kad Kata, Cari Benda, Susun Ayat | `src/games/<id>/` (common `Game` interface) |
 | 授業の準備 (Sedia Kelas) with "Ready" stamp | `src/views/modes.ts` |
@@ -53,16 +53,22 @@ affix_tag, note, links[], scene, chapter, image`.
   v5 is the clean-up after Cikgu Sensai Stage 1 (new cards from ledger rows L-0983 to L-1088, moved and removed cards,
   corrected notes and frames, the general "Rumah terbuka" scene and a new "Salam di pejabat" scene), built by
   `tools/make_vocab_bank_v5.py`; see [docs/CLEANUP-2026-11-12.md](docs/CLEANUP-2026-11-12.md).
-  All v3, v4 and v5 rows are Claude drafts.
+  v6 adds the Stage 2 chapter packs from the ledger and Cikgu Sensai's Stage 2 plan, one function per chapter in
+  `tools/make_vocab_bank_v6.py` (chapter 10 so far; see [docs/STAGE-2-c10-report.md](docs/STAGE-2-c10-report.md) and the
+  chapter template in [docs/HANDOFF.md](docs/HANDOFF.md)). All v3 to v6 rows are Claude drafts.
 - Only packs with `"status": "live"` ship in the app (set by `live_kelas` / `live_dunia` in
   `tools/import-overrides.json`). All packs are live at the moment.
-- Re-import from the workbook: `python3 -I tools/import_vocab_bank.py content/source/2026-11-12_KataKata_VocabBank_v5.xlsx`
+- Re-import from the workbook: `python3 -I tools/import_vocab_bank.py content/source/2026-11-13_KataKata_VocabBank_v6.xlsx`
 - Japanese frame meanings, scene titles and Cari Benda emoji live in `tools/import-overrides.json`, together with
   `sedia_kelas_review` (cards that moved to another chapter but are still reviewed in the chapter's Sedia Kelas list).
   The Dunia tab may carry a `Note` column (one line per card, e.g. the festival notes).
 - Content checks (also run by `npm run build` and CI): `npm run content:check`
   - schema check on every pack
-  - affix guard (ber-, be- before k/l, me- + consonant) with the spec's allow-list; the v2 bank passes with 0 flags
+  - stage-aware affix guard: the rules (affix gates, whole words, look-alike roots, register pairs, Indonesian forms) are an
+    unedited copy of Cikgu Sensai's `curriculum/stage-rules.json` in `content/rules/` (source commit in `SOURCE.json`), read by
+    `tools/stage-rules.mjs`. Every text is checked at its own chapter; chunk exemptions count only from their own chapter.
+    Stage 2 packs (chapter 10 on) must also use only ledger words placed by their chapter. The 72 shared fixtures run in the
+    unit tests. Check a line before writing it: `node tools/stage-check.mjs 10 "Pukul berapa kita bertolak?"`
   - link check (targets exist; pair links only to same or earlier chapter)
 - Recorded audio (plan B for phones without a Malay voice): `public/audio/ms/<card-id>.mp3`
 
