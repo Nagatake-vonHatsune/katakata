@@ -24,24 +24,6 @@
   },
   "cards": [
     {
-      "id": "ms-j-social-02",
-      "lang": "ms",
-      "term": "set",
-      "gloss_en": "\"Deal!\" / \"Agreed!\" (everyday speech)",
-      "gloss_ja": "「決まり！」（日常の話し言葉）",
-      "pos": "expression",
-      "affix_tag": "root",
-      "note": "Hanashishou: Set!",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social"
-        }
-      ],
-      "scene": "dunia-jambatan-social",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-03",
       "lang": "ms",
       "term": "jalan sesak",
@@ -230,24 +212,6 @@
       "pos": "noun",
       "affix_tag": "root",
       "note": "Hanashishou: Ada bunyi bila saya tukar gear.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social"
-        }
-      ],
-      "scene": "dunia-jambatan-social",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-social-16",
-      "lang": "ms",
-      "term": "belanja",
-      "gloss_en": "To treat someone (pay for them)",
-      "gloss_ja": "おごる、ごちそうする",
-      "pos": "verb",
-      "affix_tag": "root",
-      "note": "Hanashishou: Hari ini saya belanja.",
       "links": [
         {
           "type": "babak",

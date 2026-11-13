@@ -710,7 +710,105 @@ def ch16(b):
         b.ks.append([f"ms-c16-s{i:02d}", 16, title, speaker, ms, en])
 
 
-CHAPTERS = {10: ch10, 11: ch11, 12: ch12, 13: ch13, 14: ch14, 15: ch15, 16: ch16}
+def ch17(b):
+    """Chapter 17: standard and spoken choices, particles, invitations and refusals. No new productive affix.
+
+    22 of the 23 ledger rows; L-0690 «tak tahan» is not built (see below). Standard form first: every spoken form
+    is a card whose note begins "Spoken: …" and names its standard partner; the standard form is taught earlier in
+    the pack or in an earlier chapter (the register check needs that order). «kan» (confirmation, not the suffix -kan)
+    and «lah» (tone-dependent) are recognition only (R4), and so is «takpe», the slang short form of «tak apa» (ledger
+    L-1266, added after the plan; «tak apa» itself is the Chapter 5 Dunia card L-0940). The plan's teaching order is
+    kept except that the standard «tidak mengapa» comes before «takpe». The card for L-1266 shows both spoken forms
+    («takpe / tak apa», like «mahu / nak» in Stage 1) so that «tak apa» is labelled as spoken before the scenario uses it.
+
+    The ledger's Affix tag is blank for L-0828 sudi, L-0787 malangnya and L-0748 singgah (cards say root, -nya, root).
+
+    NOT BUILT: L-0690 «tak tahan». The register check needs «tidak tahan» taught before it, but the ledger has no
+    row for «tidak tahan» or «tahan» (only «tak tahan» and «boleh tahan»), so writing «tidak tahan» is a ledger gap
+    that blocks the build, and the card itself fails the check without it. A decision for Sam: add a «tidak tahan»
+    row (then both cards can be built), or leave L-0690 as a Jambatan card. Its ledger cells are left untouched.
+    """
+    cards = [
+        ("L-1252", "Spoken: «kat» for «di» (at, in). Standard first: di (Ch2). Ada kedai mamak kat depan pejabat.", {}),
+        ("L-1253", "Spoken: «kan» = «right?», «isn't it?» (a confirmation particle). It is not the suffix -kan (Ch12). You will hear it; saying it is optional. Recognise only.", {}),
+        ("L-1254", "Spoken: «lah» softens or stresses what is said; the meaning depends on the tone, so it has no one-word translation. You will hear it; saying it is optional. Recognise only.", {}),
+        ("L-0689", "To invite someone along, informally: Saya ajak encik. Compare jom (Ch2) and jemput (Dunia, Ch9): the tone differs; they are not the same word in short form.", {}),
+        ("L-0828", "To be willing, glad to (polite): Encik sudi datang?", {"tag": "root"}),
+        ("L-0656", "Free, not busy: Hari Sabtu saya tidak lapang.", {}),
+        ("L-1255", "To agree. The standard form; the spoken partner is «set!» (below). Learn it as a whole word.", {}),
+        ("L-1256", "meN- + tolak (Ch9). The t drops: menolak. A new sense of tolak (push): to decline, to refuse. Saya segan menolak jemputan itu.", {}),
+        ("L-1257", "cadang + -an: a suggestion. Itu cadangan yang bagus.", {}),
+        ("L-1258", "Hesitant, shy about doing something: Saya segan menolak jemputan itu.", {}),
+        ("L-1259", "sayang + -nya: what a pity. Sayangnya hari Sabtu saya tidak lapang.", {}),
+        ("L-0787", "malang + -nya: unfortunately. Malangnya saya ada mesyuarat.", {"tag": "-nya"}),
+        ("L-1260", "Another time: lain (Ch6) + kali (Ch3). A fixed phrase: Lain kali, ya?", {}),
+        ("L-1261", "Never mind; it's all right. The standard form. Everyday speech usually says «tak apa» or «takpe» (spoken).", {}),
+        ("L-1262", "Spoken: «macam tu» for «seperti itu» (like that). Standard first: seperti itu (Ch15).", {}),
+        ("L-0703", "Spoken: «Set!» = Deal! Agreed! Standard first: setuju (above).", {}),
+        ("L-0717", "To treat someone, to pay for them: Bos belanja. belanja on its own is a root; you know berbelanja (Ch10) = to spend money, to shop.", {}),
+        ("L-0748", "To drop in, to stop by: Encik singgah di pejabat dulu, ya?", {"tag": "root"}),
+        ("L-1263", "Spoken: «ni» for «ini» (this). Standard first: ini (Ch2).", {}),
+        ("L-1264", "Spoken: «tu» for «itu» (that). Standard first: itu (Ch2).", {}),
+        ("L-1265", "jemput (Dunia, Ch9) + -an: an invitation. Ini jemputan makan malam.", {}),
+        # Recognition (ledger L-1266, added after the plan): the slang short form of tak apa.
+        ("L-1266", "Spoken: «takpe» is the short form of «tak apa» (never mind); both are everyday speech. The standard form is tidak mengapa (above). «tak apa» is also the Chapter 5 Dunia card. Recognise only.",
+         {"term": "takpe / tak apa"}),
+    ]
+    for lid, note, opt in cards:
+        kc(b, 17, lid, note, **opt)
+
+    # Frames: the plan's functions (invite, accept, decline with a reason or an alternative, suggest, agree), standard form
+    # first; the spoken partners are in the card notes and in the scenario's casual lines.
+    frames = [
+        ("ms-c17-f01", "Encik sudi ___?", "Encik sudi datang?", "Would you be glad to come?"),
+        ("ms-c17-f02", "Sayangnya saya tidak ___. Lain kali, ya?", "Sayangnya saya tidak lapang. Lain kali, ya?",
+         "Unfortunately I'm not free. Another time, then?"),
+        ("ms-c17-f03", "Bagaimana kalau ___?", "Bagaimana kalau hari Jumaat?", "How about Friday?"),
+        ("ms-c17-f04", "___! Hari Jumaat, pukul tujuh.", "Setuju! Hari Jumaat, pukul tujuh.",
+         "Agreed! Friday at seven. (Spoken: Set!)"),
+        ("ms-c17-f05", "Tidak mengapa. ___.", "Tidak mengapa. Kita cuba lain kali.",
+         "It's all right. We'll try another time. (Spoken: Takpe.)"),
+        ("ms-c17-f06", "Jom makan kat ___ ni!", "Jom makan kat kafe ni!",
+         "Let's eat at this cafe! (Spoken: kat = di, ni = ini.)"),
+    ]
+    for fid, frame, example, meaning in frames:
+        b.add_frame(17, fid, frame, example, meaning)
+
+    # Scenario: the plan's scene. An invitation to a team dinner that Tanaka declines with a reason and an alternative
+    # (standard Malay), then a casual lunch invitation in which the spoken forms are heard and explained.
+    title = "An invitation, and how people really talk"
+    lines = [
+        ("Puan Aini", "Encik Tanaka, ini jemputan makan malam pejabat. Hari Sabtu, pukul tujuh.",
+         "Mr Tanaka, this is the invitation to the office dinner. Saturday at seven."),
+        ("Tanaka", "Terima kasih, Puan Aini. Siapa yang belanja?", "Thank you, Puan Aini. Who is treating?"),
+        ("Puan Aini", "Bos belanja. Encik sudi datang?", "The boss is treating. Would you be glad to come?"),
+        ("Tanaka", "Sayangnya hari Sabtu saya tidak lapang. Saya segan menolak jemputan itu.",
+         "Unfortunately I'm not free on Saturday. I'm reluctant to turn down the invitation."),
+        ("Puan Aini", "Tidak mengapa. Ada cadangan lain?", "That's all right. Do you have another suggestion?"),
+        ("Tanaka", "Bagaimana kalau hari Jumaat?", "How about Friday?"),
+        ("Puan Aini", "Itu cadangan yang bagus. Saya tanya bos dulu.", "That's a good suggestion. I'll ask the boss first."),
+        ("Puan Aini", "Bos setuju. Hari Jumaat, pukul tujuh. Encik singgah di pejabat dulu, ya? Kita pergi sama-sama.",
+         "The boss agrees. Friday at seven. Drop by the office first, will you? We'll go together."),
+        ("Tanaka", "Baik. Terima kasih!", "Fine. Thank you!"),
+        ("Cik Mei Ling", "Encik Tanaka, jom makan kat kafe ni! Saya ajak encik.", "Mr Tanaka, let's eat at this cafe! My invitation."),
+        ("Tanaka", "Terima kasih. Tetapi kafe itu pedas, dan saya tidak suka makanan pedas.",
+         "Thank you. But that cafe is spicy, and I don't like spicy food."),
+        ("Cik Mei Ling", "Takpe lah. Kita cari kedai lain. Macam tu boleh?", "No problem. We'll look for another place. Would that be all right?"),
+        ("Tanaka", "Tadi cik cakap «takpe». Itu sama dengan «tidak mengapa», ya?", "You said «takpe» just now. That's the same as «tidak mengapa», right?"),
+        ("Cik Mei Ling", "Ya! Orang selalu cakap «tak apa» atau «takpe».", "Yes! People usually say «tak apa» or «takpe»."),
+        ("Tanaka", "Dan «lah» dan «kan»? Saya faham, tetapi saya tidak perlu cakap «lah», ya?",
+         "And «lah» and «kan»? I understand them, but I don't have to say «lah», do I?"),
+        ("Cik Mei Ling", "Betul. Cakap seperti itu pun bagus, kan?", "Right. Speaking like that is fine too, isn't it?"),
+        ("Tanaka", "Ada kedai mamak dekat pejabat?", "Is there a mamak stall near the office?"),
+        ("Cik Mei Ling", "Ada, kedai mamak kat depan pejabat tu. Dekat sahaja.", "Yes, the mamak stall in front of the office. It's very close."),
+        ("Tanaka", "Setuju! Mari kita pergi.", "Agreed! Let's go."),
+        ("Cik Mei Ling", "Set!", "Deal!"),
+    ]
+    for i, (speaker, ms, en) in enumerate(lines, 1):
+        b.ks.append([f"ms-c17-s{i:02d}", 17, title, speaker, ms, en])
+
+
+CHAPTERS = {10: ch10, 11: ch11, 12: ch12, 13: ch13, 14: ch14, 15: ch15, 16: ch16, 17: ch17}
 
 
 def main():

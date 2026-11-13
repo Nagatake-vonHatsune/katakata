@@ -1,0 +1,626 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c17",
+  "chapter": 17,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Bahasa Lisan dan Jemputan",
+    "en": "Spoken Malay and invitations",
+    "ja": "話し言葉と誘い方"
+  },
+  "cards": [
+    {
+      "id": "ms-c17-001",
+      "lang": "ms",
+      "term": "kat",
+      "gloss_en": "at, in (spoken; standard di)",
+      "gloss_ja": "〜で・〜に（話し言葉）",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": "Spoken: «kat» for «di» (at, in). Standard first: di (Ch2). Ada kedai mamak kat depan pejabat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-002",
+      "lang": "ms",
+      "term": "kan",
+      "gloss_en": "\"right?\", \"isn't it?\" (confirmation particle, spoken)",
+      "gloss_ja": "〜でしょう・〜よね（話し言葉）",
+      "pos": "particle",
+      "affix_tag": "root",
+      "note": "Spoken: «kan» = «right?», «isn't it?» (a confirmation particle). It is not the suffix -kan (Ch12). You will hear it; saying it is optional. Recognise only.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17,
+      "recognise_only": true
+    },
+    {
+      "id": "ms-c17-003",
+      "lang": "ms",
+      "term": "lah",
+      "gloss_en": "softening or emphasis particle (spoken; meaning depends on tone)",
+      "gloss_ja": "語調を調整する助詞（話し言葉・文脈による）",
+      "pos": "particle",
+      "affix_tag": "root",
+      "note": "Spoken: «lah» softens or stresses what is said; the meaning depends on the tone, so it has no one-word translation. You will hear it; saying it is optional. Recognise only.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17,
+      "recognise_only": true
+    },
+    {
+      "id": "ms-c17-004",
+      "lang": "ms",
+      "term": "ajak",
+      "gloss_en": "To invite along; to ask someone to come (informal)",
+      "gloss_ja": "（気軽に）誘う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To invite someone along, informally: Saya ajak encik. Compare jom (Ch2) and jemput (Dunia, Ch9): the tone differs; they are not the same word in short form.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-005",
+      "lang": "ms",
+      "term": "sudi",
+      "gloss_en": "To be willing; glad to (polite)",
+      "gloss_ja": "喜んで〜する（ていねい）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To be willing, glad to (polite): Encik sudi datang?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-006",
+      "lang": "ms",
+      "term": "lapang",
+      "gloss_en": "Free (not busy)",
+      "gloss_ja": "手が空いている、暇な",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Free, not busy: Hari Sabtu saya tidak lapang.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-007",
+      "lang": "ms",
+      "term": "setuju",
+      "gloss_en": "agree",
+      "gloss_ja": "賛成する",
+      "pos": "verb",
+      "affix_tag": "lex",
+      "note": "To agree. The standard form; the spoken partner is «set!» (below). Learn it as a whole word.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-008",
+      "lang": "ms",
+      "term": "menolak",
+      "gloss_en": "to decline, to refuse (also to push)",
+      "gloss_ja": "断る",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + tolak (Ch9). The t drops: menolak. A new sense of tolak (push): to decline, to refuse. Saya segan menolak jemputan itu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-009",
+      "lang": "ms",
+      "term": "cadangan",
+      "gloss_en": "suggestion",
+      "gloss_ja": "提案",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "cadang + -an: a suggestion. Itu cadangan yang bagus.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-010",
+      "lang": "ms",
+      "term": "segan",
+      "gloss_en": "hesitant / shy",
+      "gloss_ja": "遠慮する・気が引ける",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Hesitant, shy about doing something: Saya segan menolak jemputan itu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-011",
+      "lang": "ms",
+      "term": "sayangnya",
+      "gloss_en": "what a pity",
+      "gloss_ja": "残念なことに",
+      "pos": "adv",
+      "affix_tag": "-nya",
+      "note": "sayang + -nya: what a pity. Sayangnya hari Sabtu saya tidak lapang.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-012",
+      "lang": "ms",
+      "term": "malangnya",
+      "gloss_en": "Unfortunately",
+      "gloss_ja": "残念ながら、あいにく",
+      "pos": "adv",
+      "affix_tag": "-nya",
+      "note": "malang + -nya: unfortunately. Malangnya saya ada mesyuarat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-013",
+      "lang": "ms",
+      "term": "lain kali",
+      "gloss_en": "another time",
+      "gloss_ja": "また今度",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Another time: lain (Ch6) + kali (Ch3). A fixed phrase: Lain kali, ya?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-014",
+      "lang": "ms",
+      "term": "tidak mengapa",
+      "gloss_en": "never mind; it's all right (standard; spoken: takpe / tak apa)",
+      "gloss_ja": "大丈夫・かまわない（話し言葉は takpe / tak apa）",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "Never mind; it's all right. The standard form. Everyday speech usually says «tak apa» or «takpe» (spoken).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-015",
+      "lang": "ms",
+      "term": "macam tu",
+      "gloss_en": "like that (spoken; standard seperti itu)",
+      "gloss_ja": "そんなふうに（話し言葉）",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Spoken: «macam tu» for «seperti itu» (like that). Standard first: seperti itu (Ch15).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-016",
+      "lang": "ms",
+      "term": "set",
+      "gloss_en": "\"Deal!\" / \"Agreed!\" (everyday speech)",
+      "gloss_ja": "「決まり！」（日常の話し言葉）",
+      "pos": "expression",
+      "affix_tag": "root",
+      "note": "Spoken: «Set!» = Deal! Agreed! Standard first: setuju (above).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-017",
+      "lang": "ms",
+      "term": "belanja",
+      "gloss_en": "To treat someone (pay for them)",
+      "gloss_ja": "おごる、ごちそうする",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To treat someone, to pay for them: Bos belanja. belanja on its own is a root; you know berbelanja (Ch10) = to spend money, to shop.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-018",
+      "lang": "ms",
+      "term": "singgah",
+      "gloss_en": "To drop in; to stop by",
+      "gloss_ja": "立ち寄る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To drop in, to stop by: Encik singgah di pejabat dulu, ya?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-019",
+      "lang": "ms",
+      "term": "ni",
+      "gloss_en": "this (spoken; standard ini)",
+      "gloss_ja": "これ・この（話し言葉）",
+      "pos": "det",
+      "affix_tag": "root",
+      "note": "Spoken: «ni» for «ini» (this). Standard first: ini (Ch2).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-020",
+      "lang": "ms",
+      "term": "tu",
+      "gloss_en": "that (spoken; standard itu)",
+      "gloss_ja": "それ・その（話し言葉）",
+      "pos": "det",
+      "affix_tag": "root",
+      "note": "Spoken: «tu» for «itu» (that). Standard first: itu (Ch2).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-021",
+      "lang": "ms",
+      "term": "jemputan",
+      "gloss_en": "invitation",
+      "gloss_ja": "招待・招待状",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "jemput (Dunia, Ch9) + -an: an invitation. Ini jemputan makan malam.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-022",
+      "lang": "ms",
+      "term": "takpe / tak apa",
+      "gloss_en": "never mind; it's OK (spoken short form of tak apa; standard tidak mengapa)",
+      "gloss_ja": "大丈夫・かまわない（くだけた話し言葉、標準は tidak mengapa）",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "Spoken: «takpe» is the short form of «tak apa» (never mind); both are everyday speech. The standard form is tidak mengapa (above). «tak apa» is also the Chapter 5 Dunia card. Recognise only.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17,
+      "recognise_only": true
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c17-f01",
+      "frame": "Encik sudi ___?",
+      "example": "Encik sudi datang?",
+      "meaning_en": "Would you be glad to come?",
+      "meaning_ja": "喜んで来ていただけますか。"
+    },
+    {
+      "id": "ms-c17-f02",
+      "frame": "Sayangnya saya tidak ___. Lain kali, ya?",
+      "example": "Sayangnya saya tidak lapang. Lain kali, ya?",
+      "meaning_en": "Unfortunately I'm not free. Another time, then?",
+      "meaning_ja": "あいにく手が空いていません。また今度にしましょうか。"
+    },
+    {
+      "id": "ms-c17-f03",
+      "frame": "Bagaimana kalau ___?",
+      "example": "Bagaimana kalau hari Jumaat?",
+      "meaning_en": "How about Friday?",
+      "meaning_ja": "金曜日はいかがですか。"
+    },
+    {
+      "id": "ms-c17-f04",
+      "frame": "___! Hari Jumaat, pukul tujuh.",
+      "example": "Setuju! Hari Jumaat, pukul tujuh.",
+      "meaning_en": "Agreed! Friday at seven. (Spoken: Set!)",
+      "meaning_ja": "決まり！ 金曜日の7時ですね。（話し言葉：Set!）"
+    },
+    {
+      "id": "ms-c17-f05",
+      "frame": "Tidak mengapa. ___.",
+      "example": "Tidak mengapa. Kita cuba lain kali.",
+      "meaning_en": "It's all right. We'll try another time. (Spoken: Takpe.)",
+      "meaning_ja": "大丈夫ですよ。また今度やってみましょう。（話し言葉：Takpe.）"
+    },
+    {
+      "id": "ms-c17-f06",
+      "frame": "Jom makan kat ___ ni!",
+      "example": "Jom makan kat kafe ni!",
+      "meaning_en": "Let's eat at this cafe! (Spoken: kat = di, ni = ini.)",
+      "meaning_ja": "このカフェで食べよう！（話し言葉：kat＝di、ni＝ini）"
+    }
+  ],
+  "scenario": {
+    "title_en": "An invitation, and how people really talk",
+    "title_ja": "お誘いと、ふだんの話し方",
+    "lines": [
+      {
+        "id": "ms-c17-s01",
+        "speaker": "Puan Aini",
+        "ms": "Encik Tanaka, ini jemputan makan malam pejabat. Hari Sabtu, pukul tujuh.",
+        "en": "Mr Tanaka, this is the invitation to the office dinner. Saturday at seven."
+      },
+      {
+        "id": "ms-c17-s02",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih, Puan Aini. Siapa yang belanja?",
+        "en": "Thank you, Puan Aini. Who is treating?"
+      },
+      {
+        "id": "ms-c17-s03",
+        "speaker": "Puan Aini",
+        "ms": "Bos belanja. Encik sudi datang?",
+        "en": "The boss is treating. Would you be glad to come?"
+      },
+      {
+        "id": "ms-c17-s04",
+        "speaker": "Tanaka",
+        "ms": "Sayangnya hari Sabtu saya tidak lapang. Saya segan menolak jemputan itu.",
+        "en": "Unfortunately I'm not free on Saturday. I'm reluctant to turn down the invitation."
+      },
+      {
+        "id": "ms-c17-s05",
+        "speaker": "Puan Aini",
+        "ms": "Tidak mengapa. Ada cadangan lain?",
+        "en": "That's all right. Do you have another suggestion?"
+      },
+      {
+        "id": "ms-c17-s06",
+        "speaker": "Tanaka",
+        "ms": "Bagaimana kalau hari Jumaat?",
+        "en": "How about Friday?"
+      },
+      {
+        "id": "ms-c17-s07",
+        "speaker": "Puan Aini",
+        "ms": "Itu cadangan yang bagus. Saya tanya bos dulu.",
+        "en": "That's a good suggestion. I'll ask the boss first."
+      },
+      {
+        "id": "ms-c17-s08",
+        "speaker": "Puan Aini",
+        "ms": "Bos setuju. Hari Jumaat, pukul tujuh. Encik singgah di pejabat dulu, ya? Kita pergi sama-sama.",
+        "en": "The boss agrees. Friday at seven. Drop by the office first, will you? We'll go together."
+      },
+      {
+        "id": "ms-c17-s09",
+        "speaker": "Tanaka",
+        "ms": "Baik. Terima kasih!",
+        "en": "Fine. Thank you!"
+      },
+      {
+        "id": "ms-c17-s10",
+        "speaker": "Cik Mei Ling",
+        "ms": "Encik Tanaka, jom makan kat kafe ni! Saya ajak encik.",
+        "en": "Mr Tanaka, let's eat at this cafe! My invitation."
+      },
+      {
+        "id": "ms-c17-s11",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih. Tetapi kafe itu pedas, dan saya tidak suka makanan pedas.",
+        "en": "Thank you. But that cafe is spicy, and I don't like spicy food."
+      },
+      {
+        "id": "ms-c17-s12",
+        "speaker": "Cik Mei Ling",
+        "ms": "Takpe lah. Kita cari kedai lain. Macam tu boleh?",
+        "en": "No problem. We'll look for another place. Would that be all right?"
+      },
+      {
+        "id": "ms-c17-s13",
+        "speaker": "Tanaka",
+        "ms": "Tadi cik cakap «takpe». Itu sama dengan «tidak mengapa», ya?",
+        "en": "You said «takpe» just now. That's the same as «tidak mengapa», right?"
+      },
+      {
+        "id": "ms-c17-s14",
+        "speaker": "Cik Mei Ling",
+        "ms": "Ya! Orang selalu cakap «tak apa» atau «takpe».",
+        "en": "Yes! People usually say «tak apa» or «takpe»."
+      },
+      {
+        "id": "ms-c17-s15",
+        "speaker": "Tanaka",
+        "ms": "Dan «lah» dan «kan»? Saya faham, tetapi saya tidak perlu cakap «lah», ya?",
+        "en": "And «lah» and «kan»? I understand them, but I don't have to say «lah», do I?"
+      },
+      {
+        "id": "ms-c17-s16",
+        "speaker": "Cik Mei Ling",
+        "ms": "Betul. Cakap seperti itu pun bagus, kan?",
+        "en": "Right. Speaking like that is fine too, isn't it?"
+      },
+      {
+        "id": "ms-c17-s17",
+        "speaker": "Tanaka",
+        "ms": "Ada kedai mamak dekat pejabat?",
+        "en": "Is there a mamak stall near the office?"
+      },
+      {
+        "id": "ms-c17-s18",
+        "speaker": "Cik Mei Ling",
+        "ms": "Ada, kedai mamak kat depan pejabat tu. Dekat sahaja.",
+        "en": "Yes, the mamak stall in front of the office. It's very close."
+      },
+      {
+        "id": "ms-c17-s19",
+        "speaker": "Tanaka",
+        "ms": "Setuju! Mari kita pergi.",
+        "en": "Agreed! Let's go."
+      },
+      {
+        "id": "ms-c17-s20",
+        "speaker": "Cik Mei Ling",
+        "ms": "Set!",
+        "en": "Deal!"
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c17-001",
+      "ms-c17-004",
+      "ms-c17-005",
+      "ms-c17-006",
+      "ms-c17-007",
+      "ms-c17-008",
+      "ms-c17-009",
+      "ms-c17-010",
+      "ms-c17-011",
+      "ms-c17-013",
+      "ms-c17-014",
+      "ms-c17-015",
+      "ms-c17-016",
+      "ms-c17-017",
+      "ms-c17-018",
+      "ms-c17-019",
+      "ms-c17-020",
+      "ms-c17-021",
+      "ms-c01-033",
+      "ms-c05-005",
+      "ms-c04-039",
+      "ms-c05-008",
+      "ms-c03-068",
+      "ms-c05-007",
+      "ms-c05-003",
+      "ms-c01-039",
+      "ms-c02-040",
+      "ms-d-perayaan-raya-05",
+      "ms-d-pejabat-sembang-03",
+      "ms-d-lepak-mamak-10",
+      "ms-d-badan-bayi-12",
+      "ms-c15-014"
+    ],
+    "frames": [
+      "ms-c17-f01",
+      "ms-c17-f02"
+    ],
+    "scene": null
+  }
+}

@@ -24,24 +24,6 @@
   },
   "cards": [
     {
-      "id": "ms-j-home-condo-08",
-      "lang": "ms",
-      "term": "lapang",
-      "gloss_en": "Free (not busy)",
-      "gloss_ja": "手が空いている、暇な",
-      "pos": "adjective",
-      "affix_tag": "root",
-      "note": "Hanashishou: Saya lapang pada hari Sabtu.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-home-condo-09",
       "lang": "ms",
       "term": "tempat kerja",

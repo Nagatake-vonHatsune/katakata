@@ -168,24 +168,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-office-13",
-      "lang": "ms",
-      "term": "ajak",
-      "gloss_en": "To invite along; to ask someone to come (informal)",
-      "gloss_ja": "（気軽に）誘う",
-      "pos": "verb",
-      "affix_tag": "root",
-      "note": "Hanashishou: Terima kasih ajak!",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-office"
-        }
-      ],
-      "scene": "dunia-jambatan-office",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-office-14",
       "lang": "ms",
       "term": "tak tahan",
