@@ -1,15 +1,15 @@
 # Kata-Kata hand-off
 
-Last updated 13 Nov 2026 (Stage 2 build step 3a: stage-aware guard and pack c10, [report](STAGE-2-c10-report.md)).
+Last updated 13 Nov 2026 (Stage 2 build step 3b in progress: packs c11 to c18, one per commit; step 3a [report](STAGE-2-c10-report.md)).
 Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-1.0.md).
 
 ## State
 
-- 35 live packs, 958 cards: Kelas chapters 1 to 10, 20 Dunia scenes, 5 Jambatan scenes.
-- Workbook: `content/source/2026-11-13_KataKata_VocabBank_v6.xlsx`, built by `tools/make_vocab_bank_v6.py` (v5 + chapter 10).
-- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the chapter 10 write-back (L-0001 to L-1266).
+- 36 live packs, 996 cards: Kelas chapters 1 to 11, 20 Dunia scenes, 5 Jambatan scenes.
+- Workbook: `content/source/2026-11-13_KataKata_VocabBank_v6.xlsx`, built by `tools/make_vocab_bank_v6.py` (v5 + chapters 10 to 11).
+- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the chapter 11 write-back (L-0001 to L-1266).
 - Affix guard: stage-aware, rules from Cikgu Sensai `56627dc` (`content/rules/`).
-- Next: chapters 11 to 17 (one pack each, units A and B in the same pack where the plan splits a chapter) and chapter 18
+- Next: chapters 12 to 17 (one pack each, units A and B in the same pack where the plan splits a chapter) and chapter 18
   (review only, no new words). Sam (G3): build them all, in order, each with an Opus check of its frames before the next.
 
 ## Chapter template (how c10 was built; use it for c11 to c18)
