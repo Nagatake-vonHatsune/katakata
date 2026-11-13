@@ -1,0 +1,622 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c16",
+  "chapter": 16,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Kata Kerja ter-",
+    "en": "Accidents with ter-",
+    "ja": "ter- で「うっかり」を言う"
+  },
+  "cards": [
+    {
+      "id": "ms-c16-001",
+      "lang": "ms",
+      "term": "terjatuh",
+      "gloss_en": "to fall accidentally",
+      "gloss_ja": "うっかり落ちる・転ぶ",
+      "pos": "verb",
+      "affix_tag": "ter-",
+      "note": "ter- + jatuh: to fall by accident. Not the ter- of termurah and terbaik (Ch6), which means «the most». The root «jatuh» is not a class card.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-002",
+      "lang": "ms",
+      "term": "tertinggal",
+      "gloss_en": "To be left behind by accident",
+      "gloss_ja": "（うっかり）置き忘れる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "ter- + tinggal (Ch2): to be left behind by accident. Not the ter- of termurah and terbaik (Ch6), which means «the most». Saya tertinggal telefon di pejabat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-003",
+      "lang": "ms",
+      "term": "terlupa",
+      "gloss_en": "To forget (by accident)",
+      "gloss_ja": "うっかり忘れる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "ter- + lupa (Dunia, Ch4): to forget, without meaning to. Maaf, saya terlupa.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-004",
+      "lang": "ms",
+      "term": "tertidur",
+      "gloss_en": "to fall asleep unintentionally",
+      "gloss_ja": "うっかり寝てしまう",
+      "pos": "verb",
+      "affix_tag": "ter-",
+      "note": "ter- + tidur (Ch4): to fall asleep without meaning to.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-005",
+      "lang": "ms",
+      "term": "terlepas",
+      "gloss_en": "To miss (a bus, a chance)",
+      "gloss_ja": "（バスやチャンスを）逃す、乗り遅れる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "ter- + lepas (Ch4): to miss (a bus, a chance). Saya terlepas bas.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-006",
+      "lang": "ms",
+      "term": "tersilap",
+      "gloss_en": "To be mistaken; to get something wrong (by accident)",
+      "gloss_ja": "間違える、間違いが起きる（うっかり）",
+      "pos": "verb",
+      "affix_tag": "ter-",
+      "note": "ter- + silap: to get something wrong, by mistake. The root «silap» is not a class card.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-007",
+      "lang": "ms",
+      "term": "tertumpah",
+      "gloss_en": "to spill accidentally",
+      "gloss_ja": "こぼれてしまう",
+      "pos": "verb",
+      "affix_tag": "ter-",
+      "note": "ter- + tumpah (this chapter): to spill by accident. Air kopi tertumpah di meja.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-008",
+      "lang": "ms",
+      "term": "terlanggar",
+      "gloss_en": "to bump into accidentally",
+      "gloss_ja": "うっかりぶつかる",
+      "pos": "verb",
+      "affix_tag": "ter-",
+      "note": "ter- + langgar: to bump into something by accident. Saya tidak sengaja terlanggar kerusi.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-009",
+      "lang": "ms",
+      "term": "terkunci",
+      "gloss_en": "locked / accidentally locked",
+      "gloss_ja": "鍵がかかっている・かかってしまう",
+      "pos": "verb",
+      "affix_tag": "ter-",
+      "note": "ter- + kunci (this chapter): locked. It names a state (Pintu terkunci) as well as an accident.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-010",
+      "lang": "ms",
+      "term": "tercedera",
+      "gloss_en": "injured",
+      "gloss_ja": "けがをする",
+      "pos": "verb",
+      "affix_tag": "ter-",
+      "note": "ter- + cedera: injured, hurt. It names a state rather than an action.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-011",
+      "lang": "ms",
+      "term": "tergelincir",
+      "gloss_en": "to slip",
+      "gloss_ja": "滑る",
+      "pos": "verb",
+      "affix_tag": "ter-",
+      "note": "ter- + gelincir: to slip. Saya tergelincir di tangga tadi.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-012",
+      "lang": "ms",
+      "term": "terbakar",
+      "gloss_en": "burnt / on fire",
+      "gloss_ja": "燃える・焼ける",
+      "pos": "verb",
+      "affix_tag": "ter-",
+      "note": "ter- + bakar: burnt, on fire.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-013",
+      "lang": "ms",
+      "term": "terputus",
+      "gloss_en": "cut off / disconnected",
+      "gloss_ja": "切れてしまう・途切れる",
+      "pos": "verb",
+      "affix_tag": "ter-",
+      "note": "ter- + putus: cut off, disconnected. It names a resulting state, for example a water supply or a call.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-014",
+      "lang": "ms",
+      "term": "tersangkut",
+      "gloss_en": "Stuck (in traffic or somewhere)",
+      "gloss_ja": "（渋滞などで）身動きがとれない",
+      "pos": "verb",
+      "affix_tag": "ter-",
+      "note": "ter- + sangkut: stuck, for example in traffic.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-015",
+      "lang": "ms",
+      "term": "tidak sengaja",
+      "gloss_en": "By accident; not on purpose",
+      "gloss_ja": "うっかり、わざとではなく",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "By accident, not on purpose. Spoken: «tak sengaja». Awak tidak sengaja.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-016",
+      "lang": "ms",
+      "term": "kemalangan",
+      "gloss_en": "accident",
+      "gloss_ja": "事故",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "An accident. Learn it as a whole word: ke- … -an words come in Stage 3. Root in the ledger: malang.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-017",
+      "lang": "ms",
+      "term": "luka",
+      "gloss_en": "wound",
+      "gloss_ja": "傷",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A wound.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-018",
+      "lang": "ms",
+      "term": "lebam",
+      "gloss_en": "bruise",
+      "gloss_ja": "あざ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A bruise.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-019",
+      "lang": "ms",
+      "term": "bengkak",
+      "gloss_en": "swollen",
+      "gloss_ja": "腫れた",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Swollen.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-020",
+      "lang": "ms",
+      "term": "licin",
+      "gloss_en": "slippery",
+      "gloss_ja": "滑りやすい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Slippery: Hati-hati, lantai licin.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-021",
+      "lang": "ms",
+      "term": "pecah",
+      "gloss_en": "broken / shattered",
+      "gloss_ja": "割れた",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Broken, shattered: Cawan saya pecah.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-022",
+      "lang": "ms",
+      "term": "tumpah",
+      "gloss_en": "spill / spilled",
+      "gloss_ja": "こぼれる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To spill; spilled. The root of tertumpah.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-023",
+      "lang": "ms",
+      "term": "kunci",
+      "gloss_en": "key",
+      "gloss_ja": "鍵",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A key. The root of terkunci.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c16-f01",
+      "frame": "Saya tertinggal ___ di ___.",
+      "example": "Saya tertinggal telefon di pejabat.",
+      "meaning_en": "I left my phone at the office.",
+      "meaning_ja": "電話をオフィスに置き忘れました。"
+    },
+    {
+      "id": "ms-c16-f02",
+      "frame": "Maaf, saya ___.",
+      "example": "Maaf, saya terlupa.",
+      "meaning_en": "Sorry, I forgot.",
+      "meaning_ja": "すみません、うっかり忘れました。"
+    },
+    {
+      "id": "ms-c16-f03",
+      "frame": "___ tertumpah di ___.",
+      "example": "Air kopi tertumpah di meja.",
+      "meaning_en": "Coffee spilled on the table.",
+      "meaning_ja": "コーヒーが机にこぼれました。"
+    },
+    {
+      "id": "ms-c16-f04",
+      "frame": "Saya tidak sengaja ___ ___.",
+      "example": "Saya tidak sengaja terlanggar kerusi.",
+      "meaning_en": "I bumped into the chair by accident.",
+      "meaning_ja": "うっかり椅子にぶつかってしまいました。"
+    },
+    {
+      "id": "ms-c16-f05",
+      "frame": "Ini ___, tetapi saya ___.",
+      "example": "Ini termurah, tetapi saya tertinggal dompet saya.",
+      "meaning_en": "This is the cheapest, but I left my wallet behind.",
+      "meaning_ja": "これが一番安いですが、財布を置き忘れました。"
+    },
+    {
+      "id": "ms-c16-f06",
+      "frame": "Pintu terkunci. Boleh tolong ___?",
+      "example": "Pintu terkunci. Boleh tolong hubungi pejabat pengurusan?",
+      "meaning_en": "The door is locked. Could you please contact the management office?",
+      "meaning_ja": "ドアに鍵がかかってしまいました。管理事務所に連絡してもらえますか。"
+    }
+  ],
+  "scenario": {
+    "title_en": "A locked door, a spill and a slip",
+    "title_ja": "鍵、こぼれたコーヒー、転倒",
+    "lines": [
+      {
+        "id": "ms-c16-s01",
+        "speaker": "Tanaka",
+        "ms": "Selamat malam. Maaf, kunci saya tertinggal di dalam rumah. Pintu terkunci.",
+        "en": "Good evening. Sorry, my key is left inside the flat. The door is locked."
+      },
+      {
+        "id": "ms-c16-s02",
+        "speaker": "Pengawal",
+        "ms": "Unit berapa, encik?",
+        "en": "Which unit, sir?"
+      },
+      {
+        "id": "ms-c16-s03",
+        "speaker": "Tanaka",
+        "ms": "Blok B, unit 12-3. Saya terlupa kunci tadi.",
+        "en": "Block B, unit 12-3. I forgot the key earlier."
+      },
+      {
+        "id": "ms-c16-s04",
+        "speaker": "Pengawal",
+        "ms": "Encik tunggu di sini. Saya hubungi pejabat pengurusan.",
+        "en": "Please wait here. I'll contact the management office."
+      },
+      {
+        "id": "ms-c16-s05",
+        "speaker": "Tanaka",
+        "ms": "Baik. Terima kasih banyak.",
+        "en": "Okay. Thank you very much."
+      },
+      {
+        "id": "ms-c16-s06",
+        "speaker": "Cik Mei Ling",
+        "ms": "Maaf, saya lambat. Saya terlepas bas, kemudian saya tersangkut di jalan yang sesak.",
+        "en": "Sorry I'm late. I missed the bus, then I got stuck on a congested road."
+      },
+      {
+        "id": "ms-c16-s07",
+        "speaker": "Tanaka",
+        "ms": "Jangan risau. Mesyuarat belum mula.",
+        "en": "Don't worry. The meeting hasn't started."
+      },
+      {
+        "id": "ms-c16-s08",
+        "speaker": "Cik Mei Ling",
+        "ms": "Maaf, Encik Tanaka! Air kopi saya tertumpah di meja. Cawan saya pun pecah.",
+        "en": "Sorry, Mr Tanaka! My coffee spilled on the table. My cup broke too."
+      },
+      {
+        "id": "ms-c16-s09",
+        "speaker": "Tanaka",
+        "ms": "Awak tidak sengaja. Jangan risau.",
+        "en": "You didn't do it on purpose. Don't worry."
+      },
+      {
+        "id": "ms-c16-s10",
+        "speaker": "Cik Mei Ling",
+        "ms": "Saya ambil tisu. Fail encik sedikit basah.",
+        "en": "I'll get tissues. Your file is a little wet."
+      },
+      {
+        "id": "ms-c16-s11",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih. Hati-hati, lantai licin.",
+        "en": "Thank you. Careful, the floor is slippery."
+      },
+      {
+        "id": "ms-c16-s12",
+        "speaker": "Tanaka",
+        "ms": "Selamat pagi. Saya tergelincir di tangga tadi.",
+        "en": "Good morning. I slipped on the stairs earlier."
+      },
+      {
+        "id": "ms-c16-s13",
+        "speaker": "Penyambut tetamu",
+        "ms": "Encik tercedera? Di mana yang sakit?",
+        "en": "Are you hurt? Where does it hurt?"
+      },
+      {
+        "id": "ms-c16-s14",
+        "speaker": "Tanaka",
+        "ms": "Tangan saya bengkak dan ada luka kecil. Lutut saya pun lebam.",
+        "en": "My hand is swollen and there's a small wound. My knee is bruised too."
+      },
+      {
+        "id": "ms-c16-s15",
+        "speaker": "Penyambut tetamu",
+        "ms": "Encik perlu daftar dulu. Ini borang.",
+        "en": "You need to register first. Here is the form."
+      },
+      {
+        "id": "ms-c16-s16",
+        "speaker": "Tanaka",
+        "ms": "Baik. Boleh doktor melihat tangan saya sekarang?",
+        "en": "Okay. Can the doctor look at my hand now?"
+      },
+      {
+        "id": "ms-c16-s17",
+        "speaker": "Penyambut tetamu",
+        "ms": "Boleh. Sila tunggu sekejap.",
+        "en": "Yes. Please wait a moment."
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c16-002",
+      "ms-c16-003",
+      "ms-c16-005",
+      "ms-c16-007",
+      "ms-c16-008",
+      "ms-c16-009",
+      "ms-c16-010",
+      "ms-c16-011",
+      "ms-c16-014",
+      "ms-c16-015",
+      "ms-c16-017",
+      "ms-c16-018",
+      "ms-c16-019",
+      "ms-c16-020",
+      "ms-c16-021",
+      "ms-c16-023",
+      "ms-c06-012",
+      "ms-c06-014",
+      "ms-c01-018",
+      "ms-d-telefon-baru-11",
+      "ms-d-rumah-ruang-tamu-08",
+      "ms-d-rumah-ruang-tamu-02",
+      "ms-c12-042",
+      "ms-c12-041",
+      "ms-c12-045",
+      "ms-c13-008",
+      "ms-c02-036",
+      "ms-d-hari-tanaka-09",
+      "ms-c04-045",
+      "ms-c04-020",
+      "ms-c12-015"
+    ],
+    "frames": [
+      "ms-c16-f01",
+      "ms-c16-f02"
+    ],
+    "scene": null
+  }
+}

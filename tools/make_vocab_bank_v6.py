@@ -627,7 +627,90 @@ def ch15(b):
         b.ks.append([f"ms-c15-s{i:02d}", 15, title, speaker, ms, en])
 
 
-CHAPTERS = {10: ch10, 11: ch11, 12: ch12, 13: ch13, 14: ch14, 15: ch15}
+def ch16(b):
+    """Chapter 16: accidental and resulting-state ter-, contrasted with the Chapter 6 superlatives.
+
+    23 ledger rows in plan order. The ledger's Affix tag is ter- for the 11 new verbs, root for L-0619, L-0621 and
+    L-0644 (existing rows, left as the ledger has them) and blank for L-0752, L-0875 (cards say ter-) and L-0758
+    (card says chunk). The first cards carry the contrast with termurah and terbaik (Ch6): the superlative ter- means
+    "the most"; this ter- is something that happens without meaning to, or the state that results. Not every ter-
+    word means an accident (terkunci, tercedera, terputus are states), and other readings wait (plan section 3).
+    """
+    contrast = "Not the ter- of termurah and terbaik (Ch6), which means «the most»."
+    cards = [
+        ("L-1235", "ter- + jatuh: to fall by accident. " + contrast + " The root «jatuh» is not a class card.", {}),
+        ("L-0619", "ter- + tinggal (Ch2): to be left behind by accident. " + contrast + " Saya tertinggal telefon di pejabat.", {}),
+        ("L-0644", "ter- + lupa (Dunia, Ch4): to forget, without meaning to. Maaf, saya terlupa.", {}),
+        ("L-1236", "ter- + tidur (Ch4): to fall asleep without meaning to.", {}),
+        ("L-0621", "ter- + lepas (Ch4): to miss (a bus, a chance). Saya terlepas bas.", {}),
+        ("L-0752", "ter- + silap: to get something wrong, by mistake. The root «silap» is not a class card.", {"tag": "ter-"}),
+        ("L-1237", "ter- + tumpah (this chapter): to spill by accident. Air kopi tertumpah di meja.", {}),
+        ("L-1238", "ter- + langgar: to bump into something by accident. Saya tidak sengaja terlanggar kerusi.", {}),
+        ("L-1239", "ter- + kunci (this chapter): locked. It names a state (Pintu terkunci) as well as an accident.", {}),
+        ("L-1240", "ter- + cedera: injured, hurt. It names a state rather than an action.", {}),
+        ("L-1241", "ter- + gelincir: to slip. Saya tergelincir di tangga tadi.", {}),
+        ("L-1242", "ter- + bakar: burnt, on fire.", {}),
+        ("L-1243", "ter- + putus: cut off, disconnected. It names a resulting state, for example a water supply or a call.", {}),
+        ("L-0875", "ter- + sangkut: stuck, for example in traffic.", {"tag": "ter-"}),
+        ("L-0758", "By accident, not on purpose. Spoken: «tak sengaja». Awak tidak sengaja.", {"tag": "chunk"}),
+        ("L-1244", "An accident. Learn it as a whole word: ke- … -an words come in Stage 3. Root in the ledger: malang.", {}),
+        ("L-1245", "A wound.", {}),
+        ("L-1246", "A bruise.", {}),
+        ("L-1247", "Swollen.", {}),
+        ("L-1248", "Slippery: Hati-hati, lantai licin.", {}),
+        ("L-1249", "Broken, shattered: Cawan saya pecah.", {}),
+        ("L-1250", "To spill; spilled. The root of tertumpah.", {}),
+        ("L-1251", "A key. The root of terkunci.", {}),
+    ]
+    for lid, note, opt in cards:
+        kc(b, 16, lid, note, **opt)
+
+    # Frames: the plan's section 3 examples (Saya tertinggal telefon di pejabat. / Maaf, saya terlupa.), the other
+    # accidents of the scenes, "tidak sengaja", the contrast with the Chapter 6 superlative and a practical request.
+    frames = [
+        ("ms-c16-f01", "Saya tertinggal ___ di ___.", "Saya tertinggal telefon di pejabat.", "I left my phone at the office."),
+        ("ms-c16-f02", "Maaf, saya ___.", "Maaf, saya terlupa.", "Sorry, I forgot."),
+        ("ms-c16-f03", "___ tertumpah di ___.", "Air kopi tertumpah di meja.", "Coffee spilled on the table."),
+        ("ms-c16-f04", "Saya tidak sengaja ___ ___.", "Saya tidak sengaja terlanggar kerusi.", "I bumped into the chair by accident."),
+        ("ms-c16-f05", "Ini ___, tetapi saya ___.", "Ini termurah, tetapi saya tertinggal dompet saya.",
+         "This is the cheapest, but I left my wallet behind."),
+        ("ms-c16-f06", "Pintu terkunci. Boleh tolong ___?", "Pintu terkunci. Boleh tolong hubungi pejabat pengurusan?",
+         "The door is locked. Could you please contact the management office?"),
+    ]
+    for fid, frame, example, meaning in frames:
+        b.add_frame(16, fid, frame, example, meaning)
+
+    # Scenario: the plan's scene (a key left inside the flat, a small spill, a minor fall at a clinic reception;
+    # fictional details; state what happened and ask for a practical next step).
+    title = "A locked door, a spill and a slip"
+    lines = [
+        ("Tanaka", "Selamat malam. Maaf, kunci saya tertinggal di dalam rumah. Pintu terkunci.",
+         "Good evening. Sorry, my key is left inside the flat. The door is locked."),
+        ("Pengawal", "Unit berapa, encik?", "Which unit, sir?"),
+        ("Tanaka", "Blok B, unit 12-3. Saya terlupa kunci tadi.", "Block B, unit 12-3. I forgot the key earlier."),
+        ("Pengawal", "Encik tunggu di sini. Saya hubungi pejabat pengurusan.", "Please wait here. I'll contact the management office."),
+        ("Tanaka", "Baik. Terima kasih banyak.", "Okay. Thank you very much."),
+        ("Cik Mei Ling", "Maaf, saya lambat. Saya terlepas bas, kemudian saya tersangkut di jalan yang sesak.",
+         "Sorry I'm late. I missed the bus, then I got stuck on a congested road."),
+        ("Tanaka", "Jangan risau. Mesyuarat belum mula.", "Don't worry. The meeting hasn't started."),
+        ("Cik Mei Ling", "Maaf, Encik Tanaka! Air kopi saya tertumpah di meja. Cawan saya pun pecah.",
+         "Sorry, Mr Tanaka! My coffee spilled on the table. My cup broke too."),
+        ("Tanaka", "Awak tidak sengaja. Jangan risau.", "You didn't do it on purpose. Don't worry."),
+        ("Cik Mei Ling", "Saya ambil tisu. Fail encik sedikit basah.", "I'll get tissues. Your file is a little wet."),
+        ("Tanaka", "Terima kasih. Hati-hati, lantai licin.", "Thank you. Careful, the floor is slippery."),
+        ("Tanaka", "Selamat pagi. Saya tergelincir di tangga tadi.", "Good morning. I slipped on the stairs earlier."),
+        ("Penyambut tetamu", "Encik tercedera? Di mana yang sakit?", "Are you hurt? Where does it hurt?"),
+        ("Tanaka", "Tangan saya bengkak dan ada luka kecil. Lutut saya pun lebam.",
+         "My hand is swollen and there's a small wound. My knee is bruised too."),
+        ("Penyambut tetamu", "Encik perlu daftar dulu. Ini borang.", "You need to register first. Here is the form."),
+        ("Tanaka", "Baik. Boleh doktor melihat tangan saya sekarang?", "Okay. Can the doctor look at my hand now?"),
+        ("Penyambut tetamu", "Boleh. Sila tunggu sekejap.", "Yes. Please wait a moment."),
+    ]
+    for i, (speaker, ms, en) in enumerate(lines, 1):
+        b.ks.append([f"ms-c16-s{i:02d}", 16, title, speaker, ms, en])
+
+
+CHAPTERS = {10: ch10, 11: ch11, 12: ch12, 13: ch13, 14: ch14, 15: ch15, 16: ch16}
 
 
 def main():
