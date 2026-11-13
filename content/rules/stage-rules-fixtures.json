@@ -735,8 +735,8 @@
    "check": "register"
   },
   {
-   "id": "tak-tahan-before-tidak-tahan-fails",
-   "why": "R3: «tak tahan» with no earlier «tidak tahan»",
+   "id": "tak-tahan-before-tidak-boleh-tahan-fails",
+   "why": "R3: «tak tahan» with no earlier «tidak boleh tahan» (Sam 13 Nov 2026; «tidak tahan» alone is not the standard form)",
    "expect": "fail",
    "check": "register",
    "segments": [
@@ -753,6 +753,77 @@
     },
     {
      "text": "Saya tak tahan.",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "tak-tahan-after-tidak-boleh-tahan-passes",
+   "why": "R3: «tidak boleh tahan» taught first, then «tak tahan» labelled spoken",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "tidak boleh tahan",
+     "chapter": 17,
+     "kind": "vocabulary"
+    },
+    {
+     "text": "tak tahan",
+     "chapter": 17,
+     "kind": "vocabulary",
+     "source_text": "tak tahan [spoken]"
+    },
+    {
+     "text": "Saya tak tahan pedas.",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "joined-lah-17-passes",
+   "why": "Joined -lah is read as word + lah from chapter 17 (like -kah): «tidak mengapalah» = tidak mengapa + lah",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Tidak mengapalah.",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "joined-lah-16-fails",
+   "why": "Before chapter 17 «mengapalah» is not read as mengapa + lah, so it is an unplaced meN- shaped form",
+   "expect": "fail",
+   "check": "affix",
+   "segments": [
+    {
+     "text": "Tidak mengapalah.",
+     "chapter": 16
+    }
+   ]
+  },
+  {
+   "id": "joined-lah-takpelah-17-passes",
+   "why": "«Takpelah» at chapter 17 (the Kata-Kata example); no violation",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Takpelah.",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "real-lah-words-never-split-passes",
+   "why": "sekolah and salah end in -lah but are words (sekolah is a ledger word; sekola is not read as a base)",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Saya ke sekolah.",
+     "chapter": 17
+    },
+    {
+     "text": "Itu salah.",
      "chapter": 17
     }
    ]
