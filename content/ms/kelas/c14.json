@@ -308,7 +308,7 @@
       "gloss_ja": "だから・そのため",
       "pos": "conj",
       "affix_tag": "root",
-      "note": "So, therefore (everyday). The partner of the formal oleh itu: Jadi, boleh kita tangguh hingga hari Ahad?",
+      "note": "So, therefore (everyday). The partner of the formal oleh itu: Jadi, boleh kita tangguhkan ke hari Ahad?",
       "links": [
         {
           "type": "babak",
@@ -326,7 +326,7 @@
       "gloss_ja": "延期する、一時休む",
       "pos": "verb",
       "affix_tag": "root",
-      "note": "To put off, to postpone: Boleh kita tangguh hingga hari Ahad?",
+      "note": "To put off, to postpone. In a full sentence, tangguh + -kan (below): Boleh kita tangguhkan ke hari Ahad?",
       "links": [
         {
           "type": "babak",
@@ -363,6 +363,42 @@
       "pos": "verb",
       "affix_tag": "root",
       "note": "To cancel; cancelled. Mendaki batal.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-021",
+      "lang": "ms",
+      "term": "tangguhkan",
+      "gloss_en": "to postpone; to put (something) off",
+      "gloss_ja": "延期する、先に延ばす",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "tangguh + -kan (Ch14): to postpone, to put something off. Boleh kita tangguhkan ke hari Ahad?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-022",
+      "lang": "ms",
+      "term": "batalkan",
+      "gloss_en": "to cancel (something)",
+      "gloss_ja": "取り消す、キャンセルする",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "batal + -kan (Ch14): to cancel something. Kita batalkan rancangan mendaki.",
       "links": [
         {
           "type": "babak",
@@ -448,7 +484,7 @@
       {
         "id": "ms-c14-s05",
         "speaker": "Tanaka",
-        "ms": "Ada dua pilihan: kita tangguh hingga hari Ahad atau hingga hari Sabtu depan.",
+        "ms": "Ada dua pilihan: kita tangguhkan ke hari Ahad atau ke hari Sabtu depan.",
         "en": "There are two choices: we put it off until Sunday or until next Saturday."
       },
       {
@@ -490,13 +526,13 @@
       {
         "id": "ms-c14-s12",
         "speaker": "Tanaka",
-        "ms": "Mendaki batal, tetapi kita masih makan di kafe. Itu keputusan kita.",
+        "ms": "Kita batalkan rancangan mendaki, tetapi kita masih makan di kafe. Itu keputusan kita.",
         "en": "The hike is off, but we still eat at the cafe. That's our decision."
       },
       {
         "id": "ms-c14-s13",
         "speaker": "Cik Mei Ling",
-        "ms": "Baik. Saya sudah tulis mesej untuk kawan kita. Jika hujan, kita tangguh. Apabila cuaca cerah, kita mendaki.",
+        "ms": "Baik. Saya sudah tulis mesej untuk kawan kita. Jika hujan, kita tangguhkan. Apabila cuaca cerah, kita mendaki.",
         "en": "Fine. I've written a message for our friends. If it rains, we put it off. When the weather is clear, we hike."
       },
       {
@@ -526,9 +562,9 @@
       "ms-c14-014",
       "ms-c14-015",
       "ms-c14-016",
-      "ms-c14-018",
       "ms-c14-019",
-      "ms-c14-020",
+      "ms-c14-021",
+      "ms-c14-022",
       "ms-c05-064",
       "ms-c05-059",
       "ms-c07-048",

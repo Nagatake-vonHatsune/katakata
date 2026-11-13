@@ -30,11 +30,12 @@ sys.path.insert(0, str(ROOT / "tools"))  # -I leaves the script's folder off sys
 
 import make_vocab_bank_v5 as v5  # noqa: E402
 
-# "Ledger snapshot after Sam's Affix-tag fixes and new row L-1267 (Journal rows 177, 178)": the sheet after the
+# "Ledger snapshot after Sam's five new rows L-1268 to L-1272 (Journal row 184)": c3e4a5a plus those rows (mendaftar,
+# tangguhkan, batalkan, memakai, berwarna). Before it: "Ledger snapshot after Sam's Affix-tag fixes and new row L-1267 (Journal rows 177, 178)": the sheet after the
 # chapter 17 write-back plus Sam's 16 Affix tags (13 blank rows, three root ter- rows) and the new row L-1267
 # «tidak boleh tahan». It replaced 323b5fc (the same rows without those changes; 323b5fc replaced acff0ca, which
 # lacked Claude's four ber- tags, Journal row 152).
-LEDGER_BASELINE = "c3e4a5a"
+LEDGER_BASELINE = "484ad8d"
 v5.LEDGER_BASELINE = LEDGER_BASELINE
 
 
@@ -391,7 +392,7 @@ def ch12(b):
 def ch13(b):
     """Chapter 13: health situations: negation, permission, obligation and advice. No new affix family.
 
-    24 ledger rows in plan order. «mesti» is a root (it has no me- prefix); dibenarkan is a di- … -kan form (the
+    24 ledger rows in plan order, then L-1268 «mendaftar» (step 3d, last so no earlier card ID moves). «mesti» is a root (it has no me- prefix); dibenarkan is a di- … -kan form (the
     Chapter 9 passive and the Chapter 12 -kan). The scenes are fictional and ask for clarification: no diagnosis,
     treatment or dose is authored (plan section 3 and section 5).
     """
@@ -421,6 +422,8 @@ def ch13(b):
         ("L-0630", "A panel clinic: one that your company has an agreement with.", {}),
         ("L-0648", "To register: Encik perlu daftar dulu.", {}),
         ("L-1200", "cuti (Dunia, Ch2) + sakit (Ch5). Standard: cuti sakit. Spoken: «MC».", {}),
+        # Step 3d (Sam, 13 Nov 2026; ledger L-1268): the meN- form beside its root daftar (above).
+        ("L-1268", "meN- + daftar (Ch13): to register. The standard form of daftar: Saya belum mendaftar.", {}),
     ]
     for lid, note, opt in cards:
         kc(b, 13, lid, note, **opt)
@@ -471,7 +474,7 @@ def ch13(b):
 def ch14(b):
     """Chapter 14: reasons, conditions, purpose, contrast and sequence. No new affix family.
 
-    20 ledger rows in plan order: connectors (the formal ones beside their everyday partners, R5), sequence words,
+    20 ledger rows in plan order, then L-1269 «tangguhkan» and L-1270 «batalkan» (step 3d, last so no earlier card ID moves): connectors (the formal ones beside their everyday partners, R5), sequence words,
     four nouns and the "change of plan" words tangguh, janji and batal. kerana, kalau, tetapi, kemudian and the other
     Stage 1 connectors are revision: the new work is joining clauses. Words with Stage 3 affixes (keputusan,
     perubahan, tujuan, pilihan) are whole words.
@@ -494,10 +497,13 @@ def ch14(b):
         ("L-1214", "pilih (Ch6) + -an: a choice. Ada dua pilihan.", {}),
         ("L-1215", whole.format("ke- … -an") + " Root in the ledger: putus. Decision, or result.", {}),
         ("L-1216", whole.format("per- … -an") + " Root in the ledger: ubah. Perubahan rancangan = a change of plan.", {}),
-        ("L-1217", "So, therefore (everyday). The partner of the formal oleh itu: Jadi, boleh kita tangguh hingga hari Ahad?", {}),
-        ("L-0641", "To put off, to postpone: Boleh kita tangguh hingga hari Ahad?", {}),
+        ("L-1217", "So, therefore (everyday). The partner of the formal oleh itu: Jadi, boleh kita tangguhkan ke hari Ahad?", {}),
+        ("L-0641", "To put off, to postpone. In a full sentence, tangguh + -kan (below): Boleh kita tangguhkan ke hari Ahad?", {}),
         ("L-0710", "A promise; to promise. You know it from temu janji (Ch13). Janji!", {}),
         ("L-1218", "To cancel; cancelled. Mendaki batal.", {}),
+        # Step 3d (Sam, 13 Nov 2026; ledger L-1269, L-1270): the -kan forms beside their roots tangguh and batal (above).
+        ("L-1269", "tangguh + -kan (Ch14): to postpone, to put something off. Boleh kita tangguhkan ke hari Ahad?", {}),
+        ("L-1270", "batal + -kan (Ch14): to cancel something. Kita batalkan rancangan mendaki.", {}),
     ]
     for lid, note, opt in cards:
         kc(b, 14, lid, note, **opt)
@@ -531,7 +537,7 @@ def ch14(b):
          "If it rains, we'll eat at the cafe. If it doesn't rain, we'll hike."),
         ("Cik Mei Ling", "Bagus! Tetapi saya tidak boleh datang pada hari Sabtu kerana saya bekerja.",
          "Great! But I can't come on Saturday because I'm working."),
-        ("Tanaka", "Ada dua pilihan: kita tangguh hingga hari Ahad atau hingga hari Sabtu depan.",
+        ("Tanaka", "Ada dua pilihan: kita tangguhkan ke hari Ahad atau ke hari Sabtu depan.",
          "There are two choices: we put it off until Sunday or until next Saturday."),
         ("Cik Mei Ling", "Hari Ahad lebih baik. Hari Ahad saya cuti. Janji!", "Sunday is better. I'm off on Sunday. I promise!"),
         ("Tanaka", "Ada perubahan rancangan, tetapi tujuan kita sama: berehat dan berjalan.",
@@ -542,9 +548,9 @@ def ch14(b):
         ("Tanaka", "Bagus. Walaupun saya penat, saya suka mendaki. Kita boleh bercakap sambil berjalan.",
          "Good. Even though I'm tired, I like hiking. We can talk while walking."),
         ("Cik Mei Ling", "Kalau hujan lagi pada hari Ahad, bagaimana?", "What if it rains again on Sunday?"),
-        ("Tanaka", "Mendaki batal, tetapi kita masih makan di kafe. Itu keputusan kita.",
+        ("Tanaka", "Kita batalkan rancangan mendaki, tetapi kita masih makan di kafe. Itu keputusan kita.",
          "The hike is off, but we still eat at the cafe. That's our decision."),
-        ("Cik Mei Ling", "Baik. Saya sudah tulis mesej untuk kawan kita. Jika hujan, kita tangguh. Apabila cuaca cerah, kita mendaki.",
+        ("Cik Mei Ling", "Baik. Saya sudah tulis mesej untuk kawan kita. Jika hujan, kita tangguhkan. Apabila cuaca cerah, kita mendaki.",
          "Fine. I've written a message for our friends. If it rains, we put it off. When the weather is clear, we hike."),
         ("Tanaka", "Oh, itu bahasa mesej. Kalau kita bercakap, kita guna kalau dan bila, ya?",
          "Oh, that's message language. When we speak, we use kalau and bila, right?"),
@@ -557,7 +563,7 @@ def ch14(b):
 def ch15(b):
     """Chapter 15: describing a person or a lost item: noun + yang + a short clause. No new affix family.
 
-    19 ledger rows in plan order. berjalur is ber- (open since Chapter 10) + jalur; the other nouns and adjectives are
+    19 ledger rows in plan order, then L-1271 «memakai» and L-1272 «berwarna» (step 3d, last so no earlier card ID moves). berjalur is ber- (open since Chapter 10) + jalur; the other nouns and adjectives are
     plain words. L-0623 «beg tangan» is narrowed to "handbag" (Sam, W11). The scene uses «hilang», not «tertinggal»,
     which waits for Chapter 16 (plan section 5).
     """
@@ -576,11 +582,14 @@ def ch15(b):
         ("L-1227", "Square or rectangular: segi + empat (Ch3). Learn it as a phrase.", {}),
         ("L-1228", "A zip (zipper): beg yang ada zip.", {}),
         ("L-1229", "Like, such as. Standard; everyday speech says «macam» (Dunia, Ch5). Learn it as a whole word. Seperti itu = like that: the standard form of the spoken «macam tu» (Ch17).", {}),
-        ("L-1230", "A man; male: Lelaki yang pakai cermin mata.", {}),
+        ("L-1230", "A man; male: Lelaki yang memakai cermin mata.", {}),
         ("L-1231", "A woman; female.", {}),
         ("L-1232", "Glasses: cermin (Dunia, Ch4) + mata (Dunia, Ch4). Learn it as a phrase.", {}),
         ("L-1233", "Things, belongings: barang hilang = lost property.", {}),
         ("L-1234", "A brand: Ada jenama?", {}),
+        # Step 3d (Sam, 13 Nov 2026; ledger L-1271, L-1272). The root pakai is not a class card: it is the everyday form (Dunia).
+        ("L-1271", "meN- + pakai: to wear; to use. The p drops: memakai. The root pakai is not a class card: it is the everyday form you know from Dunia (Ch4). Lelaki yang memakai cermin mata.", {}),
+        ("L-1272", "ber- + warna (Ch5): coloured; berwarna hitam = black. Beg itu berwarna hitam.", {}),
     ]
     for lid, note, opt in cards:
         kc(b, 15, lid, note, **opt)
@@ -590,8 +599,8 @@ def ch15(b):
     frames = [
         ("ms-c15-f01", "Saya mencari ___ yang ada ___.", "Saya mencari beg yang ada zip.", "I'm looking for a bag that has a zip."),
         ("ms-c15-f02", "___ saya hilang.", "Dompet saya hilang.", "My wallet is lost."),
-        ("ms-c15-f03", "Lelaki yang pakai ___.", "Lelaki yang pakai cermin mata.", "The man who wears glasses."),
-        ("ms-c15-f04", "Beg itu warna ___ dan ada ___.", "Beg itu warna hitam dan ada tali panjang.",
+        ("ms-c15-f03", "Lelaki yang memakai ___.", "Lelaki yang memakai cermin mata.", "The man who wears glasses."),
+        ("ms-c15-f04", "Beg itu berwarna ___ dan ada ___.", "Beg itu berwarna hitam dan ada tali panjang.",
          "The bag is black and has a long strap."),
         ("ms-c15-f05", "Yang mana satu? Yang ___ atau yang ___?", "Yang mana satu? Yang ada zip atau yang tidak ada zip?",
          "Which one? The one with a zip or the one without?"),
@@ -620,7 +629,7 @@ def ch15(b):
         ("Tanaka", "Terima kasih banyak!", "Thank you very much!"),
         ("Tanaka", "Encik Rahman, tetamu dari Jepun sudah sampai di stesen.", "Mr Rahman, our guest from Japan has arrived at the station."),
         ("Encik Rahman", "Saya tidak tahu siapa dia. Lelaki yang mana?", "I don't know who he is. Which man?"),
-        ("Tanaka", "Lelaki yang pakai cermin mata dan baju berjalur. Dia dengan seorang perempuan yang pakai topi. Mereka bawa beg yang ada tali panjang.",
+        ("Tanaka", "Lelaki yang memakai cermin mata dan baju berjalur. Dia dengan seorang perempuan yang memakai topi. Mereka membawa beg yang ada tali panjang.",
          "The man who wears glasses and a striped shirt. He's with a woman who wears a hat. They're carrying a bag with a long strap."),
         ("Encik Rahman", "Dia di mana sekarang?", "Where is he now?"),
         ("Tanaka", "Dia dekat kaunter, di sebelah lif.", "He's near the counter, next to the lift."),
@@ -716,7 +725,7 @@ def ch16(b):
 def ch17(b):
     """Chapter 17: standard and spoken choices, particles, invitations and refusals. No new productive affix.
 
-    23 of the 24 ledger rows; L-0690 «tak tahan» is not built (see below). Standard form first: every spoken form
+    All 24 ledger rows. Standard form first: every spoken form
     is a card whose note begins "Spoken: …" and names its standard partner; the standard form is taught earlier in
     the pack or in an earlier chapter (the register check needs that order). «kan» (confirmation, not the suffix -kan)
     and «lah» (tone-dependent) are recognition only (R4), and so is «takpe», the slang short form of «tak apa» (ledger
@@ -726,11 +735,9 @@ def ch17(b):
 
     The ledger's Affix tag is blank for L-0828 sudi, L-0787 malangnya and L-0748 singgah (cards say root, -nya, root).
 
-    L-1267 «tidak boleh tahan» (Sam, 13 Nov 2026) is the standard core card, last in the pack so that the earlier card
-    IDs stay the same. NOT BUILT: L-0690 «tak tahan». The shared register pair R3 is «tak tahan» -> «tidak tahan» and
-    the check needs that exact standard form taught before the spoken card; the ledger's standard is «tidak boleh
-    tahan», so the card fails the check. It stays the Jambatan card it was; its ledger cells are left untouched. A
-    decision for Sam and Cikgu Sensai (change the pair to «tidak boleh tahan»).
+    L-1267 «tidak boleh tahan» (Sam, 13 Nov 2026) is the standard core card, and L-0690 «tak tahan» follows it as the
+    spoken partner (step 3d, after Cikgu Sensai changed the shared register pair R3 to «tak tahan» -> «tidak boleh
+    tahan», a24a993). Both are last in the pack so the earlier card IDs stay the same.
     """
     cards = [
         ("L-1252", "Spoken: «kat» for «di» (at, in). Standard first: di (Ch2). Ada kedai mamak kat depan pejabat.", {}),
@@ -759,12 +766,11 @@ def ch17(b):
          {"term": "takpe / tak apa"}),
         # Sam, 13 Nov 2026 (ledger L-1267, Journal row 178): the standard line first, then its spoken partner.
         ("L-1267", "Can't stand, can't handle (for example spicy food): Saya tidak boleh tahan pedas. The standard form; the spoken partner is «tak tahan» (below). "
-                   "It is not the same as «boleh tahan» (Dunia, Ch5), which means «not bad».", {}),
-        # L-0690 «tak tahan» is NOT built: the shared register pair R3 (content/rules/stage-rules.json, from Cikgu Sensai) is
-        # «tak tahan» -> «tidak tahan», and the check wants that exact standard taught first; Sam's standard form is «tidak boleh
-        # tahan» (L-1267). Held for Sam (13 Nov report, question 1). The card wording Sam approved, ready to use once the pair
-        # reads «tidak boleh tahan»: "Spoken: «tak tahan» for «tidak boleh tahan» (can't stand, can't handle). Standard first:
-        # tidak boleh tahan (above). Everyday alternatives: Saya tak nak pedas. Saya tak suka pedas."
+                   "It is not the same as «boleh tahan» (L-0939, Dunia, Ch5), which means «not bad»: a different expression.", {}),
+        # Step 3d (Sam, 13 Nov 2026; ledger L-0690): the spoken partner, after its standard form. Its Jambatan card (ms-j-office-14) is
+        # dropped by kc(), so the class card replaces it.
+        ("L-0690", "Spoken: «tak tahan» for «tidak boleh tahan» (can't stand, can't handle). Standard first: tidak boleh tahan (above). "
+                   "Everyday ways to say you don't want spicy food: Saya tak nak pedas. Saya tak suka pedas.", {}),
     ]
     for lid, note, opt in cards:
         kc(b, 17, lid, note, **opt)
@@ -803,7 +809,7 @@ def ch17(b):
          "The boss agrees. Friday at seven. Drop by the office first, will you? We'll go together."),
         ("Tanaka", "Baik. Terima kasih!", "Fine. Thank you!"),
         ("Cik Mei Ling", "Encik Tanaka, jom makan kat kafe ni! Saya belanja!", "Mr Tanaka, let's eat at this cafe! My treat!"),
-        ("Tanaka", "Tetapi makanan di kafe itu pedas. Saya tidak boleh tahan pedas.",
+        ("Tanaka", "Terima kasih. Tetapi makanan di kafe itu pedas. Saya tidak boleh tahan pedas.",
          "But the food at that cafe is spicy. I can't stand spicy food."),
         ("Cik Mei Ling", "Takpelah. Kita cari kedai lain. Macam tu boleh?", "No problem. We'll look for another place. Would that be all right?"),
         ("Tanaka", "Tadi cik cakap «takpe». Itu sama dengan «tidak mengapa», ya?", "You said «takpe» just now. That's the same as «tidak mengapa», right?"),
@@ -834,11 +840,11 @@ def ch18(b):
          "Every morning I set off at seven, then I read my email."),
         ("ms-c18-f02", "Tolong ___ bungkusan itu di pondok pengawal.", "Tolong simpankan bungkusan itu di pondok pengawal.",
          "Please keep that parcel at the guardhouse."),
-        ("ms-c18-f03", "Saya belum ___, tetapi saya mesti ___.", "Saya belum daftar, tetapi saya mesti berjumpa doktor.",
+        ("ms-c18-f03", "Saya belum ___, tetapi saya mesti ___.", "Saya belum mendaftar, tetapi saya mesti berjumpa doktor.",
          "I haven't registered yet, but I must see a doctor."),
-        ("ms-c18-f04", "Hari Sabtu saya tidak lapang, jadi bolehkah kita ___ hingga hari Ahad?",
-         "Hari Sabtu saya tidak lapang, jadi bolehkah kita tangguh hingga hari Ahad?",
-         "I'm not free on Saturday, so could we put it off until Sunday?"),
+        ("ms-c18-f04", "Hari Sabtu saya tidak lapang, jadi bolehkah kita ___ ke hari Ahad?",
+         "Hari Sabtu saya tidak lapang, jadi bolehkah kita tangguhkan ke hari Ahad?",
+         "I'm not free on Saturday, so could we postpone it to Sunday?"),
         ("ms-c18-f05", "Saya mencari ___ yang ___.", "Saya mencari dompet yang ada zip.", "I'm looking for a wallet that has a zip."),
         ("ms-c18-f06", "Maaf, saya ___. Tidak mengapa, ___.", "Maaf, saya terlupa. Tidak mengapa, lain kali, ya?",
          "Sorry, I forgot. That's all right, another time."),

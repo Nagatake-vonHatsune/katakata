@@ -272,7 +272,7 @@
       "gloss_ja": "男性・男の",
       "pos": "noun",
       "affix_tag": "root",
-      "note": "A man; male: Lelaki yang pakai cermin mata.",
+      "note": "A man; male: Lelaki yang memakai cermin mata.",
       "links": [
         {
           "type": "babak",
@@ -353,6 +353,42 @@
       ],
       "scene": "kelas-c15",
       "chapter": 15
+    },
+    {
+      "id": "ms-c15-020",
+      "lang": "ms",
+      "term": "memakai",
+      "gloss_en": "to wear; to use (standard form of pakai)",
+      "gloss_ja": "着る、身につける、使う（pakai の標準形）",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + pakai: to wear; to use. The p drops: memakai. The root pakai is not a class card: it is the everyday form you know from Dunia (Ch4). Lelaki yang memakai cermin mata.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-021",
+      "lang": "ms",
+      "term": "berwarna",
+      "gloss_en": "coloured; to be (a colour) (berwarna hitam = black)",
+      "gloss_ja": "〜色の、色がついている（berwarna hitam＝黒い）",
+      "pos": "adj",
+      "affix_tag": "ber-",
+      "note": "ber- + warna (Ch5): coloured; berwarna hitam = black. Beg itu berwarna hitam.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
     }
   ],
   "frames": [
@@ -372,17 +408,17 @@
     },
     {
       "id": "ms-c15-f03",
-      "frame": "Lelaki yang pakai ___.",
-      "example": "Lelaki yang pakai cermin mata.",
+      "frame": "Lelaki yang memakai ___.",
+      "example": "Lelaki yang memakai cermin mata.",
       "meaning_en": "The man who wears glasses.",
       "meaning_ja": "眼鏡をかけている男性。"
     },
     {
       "id": "ms-c15-f04",
-      "frame": "Beg itu warna ___ dan ada ___.",
-      "example": "Beg itu warna hitam dan ada tali panjang.",
+      "frame": "Beg itu berwarna ___ dan ada ___.",
+      "example": "Beg itu berwarna hitam dan ada tali panjang.",
       "meaning_en": "The bag is black and has a long strap.",
-      "meaning_ja": "そのバッグは黒で、長いひもが付いています。"
+      "meaning_ja": "そのバッグは黒色で、長いひもが付いています。"
     },
     {
       "id": "ms-c15-f05",
@@ -484,7 +520,7 @@
       {
         "id": "ms-c15-s14",
         "speaker": "Tanaka",
-        "ms": "Lelaki yang pakai cermin mata dan baju berjalur. Dia dengan seorang perempuan yang pakai topi. Mereka bawa beg yang ada tali panjang.",
+        "ms": "Lelaki yang memakai cermin mata dan baju berjalur. Dia dengan seorang perempuan yang memakai topi. Mereka membawa beg yang ada tali panjang.",
         "en": "The man who wears glasses and a striped shirt. He's with a woman who wears a hat. They're carrying a bag with a long strap."
       },
       {
@@ -523,6 +559,8 @@
       "ms-c15-017",
       "ms-c15-018",
       "ms-c15-019",
+      "ms-c15-020",
+      "ms-c15-021",
       "ms-c05-004",
       "ms-c06-016",
       "ms-c05-018",

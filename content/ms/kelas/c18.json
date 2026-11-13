@@ -30,16 +30,16 @@
     {
       "id": "ms-c18-f03",
       "frame": "Saya belum ___, tetapi saya mesti ___.",
-      "example": "Saya belum daftar, tetapi saya mesti berjumpa doktor.",
+      "example": "Saya belum mendaftar, tetapi saya mesti berjumpa doktor.",
       "meaning_en": "I haven't registered yet, but I must see a doctor.",
       "meaning_ja": "まだ登録していませんが、医者に会わなければなりません。"
     },
     {
       "id": "ms-c18-f04",
-      "frame": "Hari Sabtu saya tidak lapang, jadi bolehkah kita ___ hingga hari Ahad?",
-      "example": "Hari Sabtu saya tidak lapang, jadi bolehkah kita tangguh hingga hari Ahad?",
-      "meaning_en": "I'm not free on Saturday, so could we put it off until Sunday?",
-      "meaning_ja": "土曜日は都合がつかないので、日曜日まで延ばせませんか。"
+      "frame": "Hari Sabtu saya tidak lapang, jadi bolehkah kita ___ ke hari Ahad?",
+      "example": "Hari Sabtu saya tidak lapang, jadi bolehkah kita tangguhkan ke hari Ahad?",
+      "meaning_en": "I'm not free on Saturday, so could we postpone it to Sunday?",
+      "meaning_ja": "土曜日は都合がつかないので、日曜日に延期できませんか。"
     },
     {
       "id": "ms-c18-f05",

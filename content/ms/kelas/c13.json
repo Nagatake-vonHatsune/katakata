@@ -443,6 +443,24 @@
       ],
       "scene": "kelas-c13",
       "chapter": 13
+    },
+    {
+      "id": "ms-c13-025",
+      "lang": "ms",
+      "term": "mendaftar",
+      "gloss_en": "to register (standard form of daftar)",
+      "gloss_ja": "登録する、受付をする（daftar の標準形）",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + daftar (Ch13): to register. The standard form of daftar: Saya belum mendaftar.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
     }
   ],
   "frames": [

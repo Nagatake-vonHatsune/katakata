@@ -419,7 +419,25 @@
       "gloss_ja": "耐えられない、苦手だ（例：辛いもの）（話し言葉：tak tahan）",
       "pos": "expression",
       "affix_tag": "chunk",
-      "note": "Can't stand, can't handle (for example spicy food): Saya tidak boleh tahan pedas. The standard form; the spoken partner is «tak tahan» (below). It is not the same as «boleh tahan» (Dunia, Ch5), which means «not bad».",
+      "note": "Can't stand, can't handle (for example spicy food): Saya tidak boleh tahan pedas. The standard form; the spoken partner is «tak tahan» (below). It is not the same as «boleh tahan» (L-0939, Dunia, Ch5), which means «not bad»: a different expression.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-024",
+      "lang": "ms",
+      "term": "tak tahan",
+      "gloss_en": "Can't handle; can't stand (informal)",
+      "gloss_ja": "耐えられない、苦手だ（くだけた言い方）",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "Spoken: «tak tahan» for «tidak boleh tahan» (can't stand, can't handle). Standard first: tidak boleh tahan (above). Everyday ways to say you don't want spicy food: Saya tak nak pedas. Saya tak suka pedas.",
       "links": [
         {
           "type": "babak",
@@ -541,7 +559,7 @@
       {
         "id": "ms-c17-s11",
         "speaker": "Tanaka",
-        "ms": "Tetapi makanan di kafe itu pedas. Saya tidak boleh tahan pedas.",
+        "ms": "Terima kasih. Tetapi makanan di kafe itu pedas. Saya tidak boleh tahan pedas.",
         "en": "But the food at that cafe is spicy. I can't stand spicy food."
       },
       {
@@ -619,6 +637,7 @@
       "ms-c17-020",
       "ms-c17-021",
       "ms-c17-023",
+      "ms-c17-024",
       "ms-c01-033",
       "ms-c05-005",
       "ms-c04-039",

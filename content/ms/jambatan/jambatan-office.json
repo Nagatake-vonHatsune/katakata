@@ -168,24 +168,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-office-14",
-      "lang": "ms",
-      "term": "tak tahan",
-      "gloss_en": "Can't handle; can't stand (informal)",
-      "gloss_ja": "耐えられない、苦手だ（くだけた言い方）",
-      "pos": "expression",
-      "affix_tag": "chunk",
-      "note": "Hanashishou: Saya tak tahan pedas.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-office"
-        }
-      ],
-      "scene": "dunia-jambatan-office",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-office-15",
       "lang": "ms",
       "term": "lauk",
