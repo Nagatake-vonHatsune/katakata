@@ -30,9 +30,10 @@ sys.path.insert(0, str(ROOT / "tools"))  # -I leaves the script's folder off sys
 
 import make_vocab_bank_v5 as v5  # noqa: E402
 
-# "Ledger snapshot matches the sheet (L-0001 to L-1266, Stage 2 rows)": the sheet after Cikgu Sensai's
-# Stage 2 build steps 1 and 2, before Kata-Kata wrote any chapter 10 card ID.
-LEDGER_BASELINE = "acff0ca"
+# "Ledger snapshot synced from the sheet (Affix tag ber- on L-0779, L-0781, L-0807, L-0916)": the sheet after
+# Cikgu Sensai's Stage 2 build steps 1 and 2, with Claude's four ber- tags (Journal row 152), before Kata-Kata
+# wrote any chapter 10 card ID. It replaced acff0ca (the same rows without those four tags).
+LEDGER_BASELINE = "323b5fc"
 v5.LEDGER_BASELINE = LEDGER_BASELINE
 
 
@@ -44,7 +45,6 @@ def ch10(b):
     the chapter it was taught in. Spelling notes (be- before r and in bekerja) are the plan's section 3
     and the charter (R7). No other etymology is added.
     """
-    ber = "ber-"
     cards = [
         # --- unit 10A ---
         ("L-1089", "ber- + kerja (Ch2). Spelt be-: the first syllable of kerja ends in -er. Standard for «Saya kerja di …»: Saya bekerja di Kuala Lumpur.", {}),
@@ -62,8 +62,8 @@ def ch10(b):
         ("L-1101", "ber- + sarapan (Ch4). Everyday speech often just says sarapan.", {}),
         ("L-1102", "ber- + mula (Ch4). Mesyuarat bermula pukul sembilan.", {}),
         ("L-1103", "ber- + henti. Bas berhenti di sini. Careful: berhenti kerja = to quit a job.", {}),
-        ("L-0807", "ber- + siap (Ch9). Saya bersiap untuk ke pejabat.", {"tag": ber}),
-        ("L-0916", "ber- + sedia. Saya sudah bersedia.", {"tag": ber}),
+        ("L-0807", "ber- + siap (Ch9). Saya bersiap untuk ke pejabat.", {}),
+        ("L-0916", "ber- + sedia. Saya sudah bersedia.", {}),
         ("L-1104", "ber- + latih.", {}),
         ("L-1105", "Itu rutin saya setiap hari.", {}),
         ("L-1106", "ber- + tolak (push, Ch9): with ber- the meaning changes to 'set off'. Pukul berapa kita bertolak?", {}),
@@ -75,13 +75,13 @@ def ch10(b):
         ("L-1111", "ber- + nama (Ch2). Written or formal; everyday speech says «Nama saya …».", {}),
         ("L-1112", "ber- + sekolah (Ch2). Anak saya masih bersekolah.", {}),
         ("L-1113", "ber- + kawan (Ch2).", {}),
-        ("L-0779", "ber- + jiran (this chapter). Kami berjiran. = We are neighbours.", {"tag": ber}),
+        ("L-0779", "ber- + jiran (this chapter). Kami berjiran. = We are neighbours.", {}),
         ("L-1114", "ber- + pindah (this chapter). The standard form: Saya baru berpindah ke sini.", {}),
         ("L-1115", "ber- + cuti (Dunia, Ch2). Saya bercuti minggu depan.", {}),
         ("L-1116", "ber- + niaga.", {}),
         ("L-1117", "ber- + belanja. belanja on its own (to treat someone) comes in Ch17.", {}),
         ("L-1118", "ber- + kumpul.", {}),
-        ("L-0781", "ber- + kenalan. You know it from Selamat berkenalan (Ch1).", {"tag": ber}),
+        ("L-0781", "ber- + kenalan. You know it from Selamat berkenalan (Ch1).", {}),
         ("L-1119", "ber- + minat. Saya berminat untuk belajar bahasa Melayu.", {}),
         ("L-1120", "ber- + pakaian (root pakai, to wear: Dunia, Ch4). Mostly in berpakaian kemas (neatly dressed).", {}),
         ("L-0660", "Jiran saya baik. Also in berjiran.", {"drop": ["ms-j-home-condo-12"], "place": "Ch10 (unit 10B)"}),
@@ -148,7 +148,119 @@ def ch10(b):
         b.ks.append([f"ms-c10-s{i:02d}", 10, title, speaker, ms, en])
 
 
-CHAPTERS = {10: ch10}
+def ch11(b):
+    """Chapter 11: meN- active verbs and the nasal spelling changes. Unit 11A (familiar transitive pairs)
+    and 11B (office actions and the deferred hobby verbs).
+
+    43 ledger rows: 20 in 11A, 21 in 11B and the recognition rows L-0604 «tukar» and L-0678 «deadline».
+    The ledger's Affix tag is blank for L-0865, L-0792, L-0819 (cards say meN-) and L-0849 (card says chunk).
+    Every meN- card shows its root (the ledger's "Root (KD4)" column) and the chapter where Kata-Kata teaches it,
+    its nasal spelling (the plan's section 3 and the 11A/11B tables) and, where Chapter 9 teaches the di- form,
+    the passive partner. No di- passive is shown for verbs that take no object or have no Chapter 9 form.
+    """
+    cards = [
+        # --- unit 11A ---
+        ("L-1123", "meN- + beli (Ch3). mem- before b. Passive: dibeli (Ch9).", {}),
+        ("L-1124", "meN- + baca (Dunia, Ch4). mem- before b. Aini membaca buku itu. = Buku itu dibaca oleh Aini (dibaca, Ch9).", {}),
+        ("L-1125", "meN- + tulis (Dunia, Ch4). The t of tulis drops: menulis. Passive: ditulis (Ch9).", {}),
+        ("L-1126", "meN- + masak (Ch2). me- before m: the root keeps its m. Passive: dimasak (Ch9).", {}),
+        ("L-1127", "meN- + ambil (Dunia, Ch4). meng- before a vowel. Passive: diambil (Ch9).", {}),
+        ("L-1128", "meN- + buat (Ch9). mem- before b. Passive: dibuat (Ch9).", {}),
+        ("L-1129", "meN- + buka (Dunia, Ch4). mem- before b. Passive: dibuka (Ch9).", {}),
+        ("L-1130", "meN- + tutup (Dunia, Ch4). The t of tutup drops: menutup. Passive: ditutup (Ch9).", {}),
+        ("L-1131", "meN- + bawa (Dunia, Ch4). mem- before b. Passive: dibawa (Ch9).", {}),
+        ("L-1132", "meN- + bayar (Ch3). mem- before b. Passive: dibayar (Ch9).", {}),
+        ("L-1133", "meN- + cari (Dunia, Ch7). men- before c.", {}),
+        ("L-1134", "meN- + cuci (Ch9). men- before c. Passive: dicuci (Ch9).", {}),
+        ("L-1135", "meN- + panggil (Ch9). The p of panggil drops: memanggil. Passive: dipanggil (Ch9).", {}),
+        ("L-1136", "meN- + hantar (Dunia, Ch2). meng- before h. Passive: dihantar (Ch9). Siapa yang menghantar fail itu?", {}),
+        ("L-1137", "Learn it as a whole word: «terima» alone has no class card (only terima kasih, Ch1). The t drops: menerima.", {}),
+        ("L-1138", "meN- + jawab (Dunia, Ch2). men- before j.", {}),
+        ("L-1139", "Learn it as a whole word: «lihat» alone has no class card. Everyday speech says «tengok» (Dunia, Ch7).", {}),
+        ("L-1140", "meN- + dengar (Dunia, Ch4). men- before d.", {}),
+        ("L-1141", "meN- + tunggu (Ch4). The t of tunggu drops: menunggu.", {}),
+        ("L-1142", "meN- + jual (Ch3). men- before j. Passive: dijual (Ch9).", {}),
+        # --- unit 11B ---
+        ("L-1143", "meN- + sewa (Ch6). The s of sewa drops and meny- is used: menyewa. Passive: disewa (Ch9).", {}),
+        ("L-1144", "meN- + lancong. me- before l. It takes no object, so it has no di- passive.", {}),
+        ("L-0865", "meN- + daki. men- before d. A hobby word: Hujung minggu ini saya mahu mendaki dengan kawan saya.", {"tag": "meN-"}),
+        ("L-0792", "meN- + simpan (Dunia, Ch2). The s of simpan drops: menyimpan. The standard form of «simpan».", {"tag": "meN-"}),
+        ("L-0819", "meN- + semak (this chapter). The s of semak drops: menyemak.", {"tag": "meN-"}),
+        ("L-1145", "meN- + tukar (this chapter). The t of tukar drops: menukar. The standard form; everyday speech says «tukar» (below).", {}),
+        ("L-1146", "meN- + kira (Dunia, Ch5). The k of kira drops and meng- is used: mengira.", {}),
+        ("L-1147", "meN- + isi (Dunia, Ch3). meng- before a vowel.", {}),
+        ("L-1148", "meN- + pilih (Ch6). The p of pilih drops: memilih.", {}),
+        ("L-1149", "meN- + pinjam. The p drops: meminjam. To borrow for a while; menyewa is to rent.", {}),
+        ("L-1150", "meN- + pesan. The p drops: memesan.", {}),
+        ("L-1151", "meN- + tolong (Ch8). The t drops: menolong. «Tolong …» (Ch8) is the everyday request.", {}),
+        ("L-1152", "meN- + ajar. meng- before a vowel. Isteri saya mengajar saya memasak.", {}),
+        ("L-0680", "Tolong semak draf ini.", {"drop": ["ms-j-office-04"], "place": "Ch11 (unit 11B)"}),
+        ("L-0696", "A slide in a presentation.", {"drop": ["ms-j-office-20"], "place": "Ch11 (unit 11B)"}),
+        ("L-0849", "Formal and written. Everyday speech says «deadline» (below). Tarikh akhir draf itu hari Jumaat.", {"tag": "chunk"}),
+        ("L-0684", "Learn it as a whole word.", {"drop": ["ms-j-office-08"], "place": "Ch11 (unit 11B)"}),
+        ("L-1153", "The root of menyemak, used as a request: Tolong semak draf ini.", {}),
+        ("L-1154", "Nanti saya menghantar mesej.", {}),
+        ("L-1155", "meN- + telefon (Dunia, Ch7). The t of telefon drops: menelefon. Saya akan menelefon mereka.", {}),
+        ("L-1156", "meN- + cas (Dunia, Ch7). menge- before a one-syllable root: cas → mengecas. Saya mahu mengecas telefon saya.", {}),
+        # Recognition (plan: the spoken partners of menukar and tarikh akhir, not new core words).
+        ("L-0604", "Spoken: the everyday word for menukar. Saya mahu tukar bilik. Recognise only.",
+         {"drop": ["ms-j-daily-life-15"], "place": "Ch11 (unit 11B, recognition: spoken partner of menukar)"}),
+        ("L-0678", "Spoken: the everyday word for tarikh akhir. Deadline hari Jumaat. Recognise only.",
+         {"drop": ["ms-j-office-02"], "place": "Ch11 (unit 11B, recognition: spoken partner of tarikh akhir)"}),
+    ]
+    for lid, note, opt in cards:
+        over = {k: v for k, v in opt.items() if k not in ("drop", "place")}
+        b.add_kelas(11, lid, note=note, drop=opt.get("drop", ()), place=opt.get("place"), **over)
+
+    # Frames: the plan's section 3 pair (Aini membaca buku itu. / Buku itu dibaca oleh Aini.), the 11A and 11B
+    # block goals (who did it, ask what a colleague is doing, check a draft) and the hobby extension.
+    frames = [
+        ("ms-c11-f01", "Aini ___ buku itu.", "Aini membaca buku itu.", "Aini reads the book."),
+        ("ms-c11-f02", "Buku itu ___ oleh Aini.", "Buku itu dibaca oleh Aini.", "The book is read by Aini."),
+        ("ms-c11-f03", "Siapa yang ___ fail itu?", "Siapa yang menghantar fail itu?", "Who sent the file?"),
+        ("ms-c11-f04", "Tolong semak ___ ini.", "Tolong semak draf ini.", "Please check this draft."),
+        ("ms-c11-f05", "Awak sedang ___ apa?", "Awak sedang menulis apa?", "What are you writing?"),
+        ("ms-c11-f06", "Hujung minggu ini saya mahu ___.", "Hujung minggu ini saya mahu memasak.",
+         "This weekend I want to cook."),
+    ]
+    for fid, frame, example, meaning in frames:
+        b.add_frame(11, fid, frame, example, meaning)
+
+    # Scenario: the plan's two scenes. 11A: who read a document and who sent it on. 11B: checking a draft, the
+    # deadline, then plans for the weekend (the deferred hobby verbs).
+    title = "Who did what in the office"
+    lines = [
+        ("Tanaka", "Puan Aini, emel dari Jepun itu sudah dibaca?", "Puan Aini, has that email from Japan been read yet?"),
+        ("Puan Aini", "Sudah. Saya membaca emel itu pagi tadi, kemudian saya menghantar fail itu.",
+         "Yes. I read the email this morning, then I sent the file."),
+        ("Tanaka", "Oh, Encik Rahman yang menerima fail itu?", "Oh, Encik Rahman is the one who received the file?"),
+        ("Puan Aini", "Ya. Sekarang dia sedang membuka fail itu.", "Yes. He's opening the file now."),
+        ("Encik Rahman", "Selamat pagi, Encik Tanaka. Saya sudah membuka fail itu. Sekarang saya sedang menulis jawapan.",
+         "Good morning, Mr Tanaka. I've opened the file. Now I'm writing the reply."),
+        ("Tanaka", "Baik. Siapa yang akan menelefon pejabat di Jepun?", "Good. Who will phone the office in Japan?"),
+        ("Encik Rahman", "Saya akan menelefon mereka petang ini.", "I'll phone them this afternoon."),
+        ("Puan Aini", "Baik, encik. Saya menunggu jawapan itu.", "Fine. I'll wait for that answer."),
+        ("Tanaka", "Cik Mei Ling, draf slaid itu sudah siap?", "Mei Ling, is the slide draft ready?"),
+        ("Cik Mei Ling", "Belum. Saya masih menyemak draf itu. Tarikh akhir hari Jumaat, ya?",
+         "Not yet. I'm still checking the draft. The deadline is Friday, right?"),
+        ("Tanaka", "Ya, hari Jumaat. Saya mengira jumlah itu semalam, tetapi tolong semak sekali lagi.",
+         "Yes, Friday. I worked out the total yesterday, but please check it once more."),
+        ("Cik Mei Ling", "Baik. Draf itu akan siap petang ini. Nanti saya menghantar mesej.",
+         "Fine. The draft will be ready this afternoon. I'll send a message later."),
+        ("Tanaka", "Terima kasih. Hujung minggu ini cik buat apa?", "Thank you. What are you doing this weekend?"),
+        ("Cik Mei Ling", "Saya mahu mendaki dengan kawan saya. Encik pula?", "I'm going hiking with a friend. And you?"),
+        ("Tanaka", "Saya mahu memasak. Isteri saya mengajar saya memasak nasi lemak.",
+         "I want to cook. My wife is teaching me to cook nasi lemak."),
+        ("Cik Mei Ling", "Wah, bagus! Boleh saya mengecas telefon saya di sini? Bateri sudah habis.",
+         "Wow, great! Can I charge my phone here? The battery's dead."),
+        ("Tanaka", "Boleh. Letak telefon itu di atas meja.", "Sure. Put the phone on the table."),
+        ("Cik Mei Ling", "Terima kasih! Mari kita minum kopi. Saya yang membayar.", "Thanks! Let's have coffee. I'm paying."),
+    ]
+    for i, (speaker, ms, en) in enumerate(lines, 1):
+        b.ks.append([f"ms-c11-s{i:02d}", 11, title, speaker, ms, en])
+
+
+CHAPTERS = {10: ch10, 11: ch11}
 
 
 def main():

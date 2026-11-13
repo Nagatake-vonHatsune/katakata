@@ -258,24 +258,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-daily-life-15",
-      "lang": "ms",
-      "term": "tukar",
-      "gloss_en": "To change; to exchange (menukar in standard writing)",
-      "gloss_ja": "交換する、変える（標準の書き言葉では menukar）",
-      "pos": "verb",
-      "affix_tag": "root",
-      "note": "Hanashishou: Boleh tukar?",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-daily-life"
-        }
-      ],
-      "scene": "dunia-jambatan-daily-life",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-daily-life-16",
       "lang": "ms",
       "term": "bilik persalinan",

@@ -42,24 +42,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-office-02",
-      "lang": "ms",
-      "term": "deadline",
-      "gloss_en": "Deadline (the everyday word, borrowed from English)",
-      "gloss_ja": "締め切り（英語から入った日常の言葉）",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Saya ada deadline hari Jumaat.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-office"
-        }
-      ],
-      "scene": "dunia-jambatan-office",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-office-03",
       "lang": "ms",
       "term": "hujung bulan",
@@ -68,24 +50,6 @@
       "pos": "noun",
       "affix_tag": "chunk",
       "note": "Hanashishou: Hujung bulan sangat sibuk.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-office"
-        }
-      ],
-      "scene": "dunia-jambatan-office",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-office-04",
-      "lang": "ms",
-      "term": "draf",
-      "gloss_en": "A draft",
-      "gloss_ja": "下書き",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Ini masih draf.",
       "links": [
         {
           "type": "babak",
@@ -140,24 +104,6 @@
       "pos": "noun",
       "affix_tag": "root",
       "note": "Hanashishou: Maaf atas kelewatan.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-office"
-        }
-      ],
-      "scene": "dunia-jambatan-office",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-office-08",
-      "lang": "ms",
-      "term": "rancangan",
-      "gloss_en": "A plan",
-      "gloss_ja": "計画、予定",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Apa rancangan awak?",
       "links": [
         {
           "type": "babak",
@@ -338,24 +284,6 @@
       "pos": "noun",
       "affix_tag": "root",
       "note": "Hanashishou: Pantri di sebelah kiri.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-office"
-        }
-      ],
-      "scene": "dunia-jambatan-office",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-office-20",
-      "lang": "ms",
-      "term": "slaid",
-      "gloss_en": "Slide (in a presentation)",
-      "gloss_ja": "スライド",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Ada 14 slaid.",
       "links": [
         {
           "type": "babak",

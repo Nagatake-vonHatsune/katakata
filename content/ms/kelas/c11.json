@@ -1,0 +1,993 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c11",
+  "chapter": 11,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Kata Kerja meN-",
+    "en": "meN- verbs",
+    "ja": "meN- の動詞"
+  },
+  "cards": [
+    {
+      "id": "ms-c11-001",
+      "lang": "ms",
+      "term": "membeli",
+      "gloss_en": "to buy",
+      "gloss_ja": "買う",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + beli (Ch3). mem- before b. Passive: dibeli (Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-002",
+      "lang": "ms",
+      "term": "membaca",
+      "gloss_en": "to read",
+      "gloss_ja": "読む",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + baca (Dunia, Ch4). mem- before b. Aini membaca buku itu. = Buku itu dibaca oleh Aini (dibaca, Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-003",
+      "lang": "ms",
+      "term": "menulis",
+      "gloss_en": "to write",
+      "gloss_ja": "書く",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + tulis (Dunia, Ch4). The t of tulis drops: menulis. Passive: ditulis (Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-004",
+      "lang": "ms",
+      "term": "memasak",
+      "gloss_en": "to cook",
+      "gloss_ja": "料理する",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + masak (Ch2). me- before m: the root keeps its m. Passive: dimasak (Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-005",
+      "lang": "ms",
+      "term": "mengambil",
+      "gloss_en": "to take / collect",
+      "gloss_ja": "取る・受け取る",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + ambil (Dunia, Ch4). meng- before a vowel. Passive: diambil (Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-006",
+      "lang": "ms",
+      "term": "membuat",
+      "gloss_en": "to make / do",
+      "gloss_ja": "作る・する",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + buat (Ch9). mem- before b. Passive: dibuat (Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-007",
+      "lang": "ms",
+      "term": "membuka",
+      "gloss_en": "to open",
+      "gloss_ja": "開ける",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + buka (Dunia, Ch4). mem- before b. Passive: dibuka (Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-008",
+      "lang": "ms",
+      "term": "menutup",
+      "gloss_en": "to close",
+      "gloss_ja": "閉める",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + tutup (Dunia, Ch4). The t of tutup drops: menutup. Passive: ditutup (Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-009",
+      "lang": "ms",
+      "term": "membawa",
+      "gloss_en": "to bring / carry",
+      "gloss_ja": "持ってくる・運ぶ",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + bawa (Dunia, Ch4). mem- before b. Passive: dibawa (Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-010",
+      "lang": "ms",
+      "term": "membayar",
+      "gloss_en": "to pay",
+      "gloss_ja": "支払う",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + bayar (Ch3). mem- before b. Passive: dibayar (Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-011",
+      "lang": "ms",
+      "term": "mencari",
+      "gloss_en": "to look for",
+      "gloss_ja": "探す",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + cari (Dunia, Ch7). men- before c.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-012",
+      "lang": "ms",
+      "term": "mencuci",
+      "gloss_en": "to wash",
+      "gloss_ja": "洗う",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + cuci (Ch9). men- before c. Passive: dicuci (Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-013",
+      "lang": "ms",
+      "term": "memanggil",
+      "gloss_en": "to call someone",
+      "gloss_ja": "人を呼ぶ",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + panggil (Ch9). The p of panggil drops: memanggil. Passive: dipanggil (Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-014",
+      "lang": "ms",
+      "term": "menghantar",
+      "gloss_en": "to send / deliver",
+      "gloss_ja": "送る・届ける",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + hantar (Dunia, Ch2). meng- before h. Passive: dihantar (Ch9). Siapa yang menghantar fail itu?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-015",
+      "lang": "ms",
+      "term": "menerima",
+      "gloss_en": "to receive",
+      "gloss_ja": "受け取る",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "Learn it as a whole word: «terima» alone has no class card (only terima kasih, Ch1). The t drops: menerima.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-016",
+      "lang": "ms",
+      "term": "menjawab",
+      "gloss_en": "to answer",
+      "gloss_ja": "答える",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + jawab (Dunia, Ch2). men- before j.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-017",
+      "lang": "ms",
+      "term": "melihat",
+      "gloss_en": "to see",
+      "gloss_ja": "見る",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "Learn it as a whole word: «lihat» alone has no class card. Everyday speech says «tengok» (Dunia, Ch7).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-018",
+      "lang": "ms",
+      "term": "mendengar",
+      "gloss_en": "to hear / listen",
+      "gloss_ja": "聞く",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + dengar (Dunia, Ch4). men- before d.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-019",
+      "lang": "ms",
+      "term": "menunggu",
+      "gloss_en": "to wait",
+      "gloss_ja": "待つ",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + tunggu (Ch4). The t of tunggu drops: menunggu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-020",
+      "lang": "ms",
+      "term": "menjual",
+      "gloss_en": "to sell",
+      "gloss_ja": "売る",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + jual (Ch3). men- before j. Passive: dijual (Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-021",
+      "lang": "ms",
+      "term": "menyewa",
+      "gloss_en": "to rent as tenant",
+      "gloss_ja": "（家・部屋を）借りる（賃借する）",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + sewa (Ch6). The s of sewa drops and meny- is used: menyewa. Passive: disewa (Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-022",
+      "lang": "ms",
+      "term": "melancong",
+      "gloss_en": "to travel for leisure",
+      "gloss_ja": "旅行する",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + lancong. me- before l. It takes no object, so it has no di- passive.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-023",
+      "lang": "ms",
+      "term": "mendaki",
+      "gloss_en": "To hike; to climb (a hill)",
+      "gloss_ja": "（山を）登る、ハイキングする",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + daki. men- before d. A hobby word: Hujung minggu ini saya mahu mendaki dengan kawan saya.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-024",
+      "lang": "ms",
+      "term": "menyimpan",
+      "gloss_en": "To keep, to store (standard form of \"simpan\")",
+      "gloss_ja": "保管する、取っておく（「simpan」の標準形）",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + simpan (Dunia, Ch2). The s of simpan drops: menyimpan. The standard form of «simpan».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-025",
+      "lang": "ms",
+      "term": "menyemak",
+      "gloss_en": "To check; to review",
+      "gloss_ja": "確認する、目を通す",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + semak (this chapter). The s of semak drops: menyemak.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-026",
+      "lang": "ms",
+      "term": "menukar",
+      "gloss_en": "to change / exchange",
+      "gloss_ja": "替える・交換する",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + tukar (this chapter). The t of tukar drops: menukar. The standard form; everyday speech says «tukar» (below).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-027",
+      "lang": "ms",
+      "term": "mengira",
+      "gloss_en": "to count / calculate",
+      "gloss_ja": "数える・計算する",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + kira (Dunia, Ch5). The k of kira drops and meng- is used: mengira.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-028",
+      "lang": "ms",
+      "term": "mengisi",
+      "gloss_en": "to fill",
+      "gloss_ja": "記入する・入れる",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + isi (Dunia, Ch3). meng- before a vowel.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-029",
+      "lang": "ms",
+      "term": "memilih",
+      "gloss_en": "to choose",
+      "gloss_ja": "選ぶ",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + pilih (Ch6). The p of pilih drops: memilih.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-030",
+      "lang": "ms",
+      "term": "meminjam",
+      "gloss_en": "to borrow",
+      "gloss_ja": "（一時的に）借りる",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + pinjam. The p drops: meminjam. To borrow for a while; menyewa is to rent.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-031",
+      "lang": "ms",
+      "term": "memesan",
+      "gloss_en": "to order goods / food",
+      "gloss_ja": "注文する",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + pesan. The p drops: memesan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-032",
+      "lang": "ms",
+      "term": "menolong",
+      "gloss_en": "to help",
+      "gloss_ja": "手伝う・助ける",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + tolong (Ch8). The t drops: menolong. «Tolong …» (Ch8) is the everyday request.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-033",
+      "lang": "ms",
+      "term": "mengajar",
+      "gloss_en": "to teach",
+      "gloss_ja": "教える",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + ajar. meng- before a vowel. Isteri saya mengajar saya memasak.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-034",
+      "lang": "ms",
+      "term": "draf",
+      "gloss_en": "A draft",
+      "gloss_ja": "下書き",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Tolong semak draf ini.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-035",
+      "lang": "ms",
+      "term": "slaid",
+      "gloss_en": "Slide (in a presentation)",
+      "gloss_ja": "スライド",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A slide in a presentation.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-036",
+      "lang": "ms",
+      "term": "tarikh akhir",
+      "gloss_en": "Deadline (formal, written)",
+      "gloss_ja": "締め切り（あらたまった書き言葉）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Formal and written. Everyday speech says «deadline» (below). Tarikh akhir draf itu hari Jumaat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-037",
+      "lang": "ms",
+      "term": "rancangan",
+      "gloss_en": "A plan",
+      "gloss_ja": "計画、予定",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Learn it as a whole word.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-038",
+      "lang": "ms",
+      "term": "semak",
+      "gloss_en": "check, review (as a request: Tolong semak ...)",
+      "gloss_ja": "確認してください",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "The root of menyemak, used as a request: Tolong semak draf ini.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-039",
+      "lang": "ms",
+      "term": "mesej",
+      "gloss_en": "message",
+      "gloss_ja": "メッセージ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Nanti saya menghantar mesej.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-040",
+      "lang": "ms",
+      "term": "menelefon",
+      "gloss_en": "to phone",
+      "gloss_ja": "電話をかける",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + telefon (Dunia, Ch7). The t of telefon drops: menelefon. Saya akan menelefon mereka.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-041",
+      "lang": "ms",
+      "term": "mengecas",
+      "gloss_en": "to charge (a phone, a battery)",
+      "gloss_ja": "充電する",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + cas (Dunia, Ch7). menge- before a one-syllable root: cas → mengecas. Saya mahu mengecas telefon saya.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-042",
+      "lang": "ms",
+      "term": "tukar",
+      "gloss_en": "To change; to exchange (menukar in standard writing)",
+      "gloss_ja": "交換する、変える（標準の書き言葉では menukar）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Spoken: the everyday word for menukar. Saya mahu tukar bilik. Recognise only.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11,
+      "recognise_only": true
+    },
+    {
+      "id": "ms-c11-043",
+      "lang": "ms",
+      "term": "deadline",
+      "gloss_en": "Deadline (the everyday word, borrowed from English)",
+      "gloss_ja": "締め切り（英語から入った日常の言葉）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Spoken: the everyday word for tarikh akhir. Deadline hari Jumaat. Recognise only.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11,
+      "recognise_only": true
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c11-f01",
+      "frame": "Aini ___ buku itu.",
+      "example": "Aini membaca buku itu.",
+      "meaning_en": "Aini reads the book.",
+      "meaning_ja": "アイニさんはその本を読みます。"
+    },
+    {
+      "id": "ms-c11-f02",
+      "frame": "Buku itu ___ oleh Aini.",
+      "example": "Buku itu dibaca oleh Aini.",
+      "meaning_en": "The book is read by Aini.",
+      "meaning_ja": "その本はアイニさんに読まれます。"
+    },
+    {
+      "id": "ms-c11-f03",
+      "frame": "Siapa yang ___ fail itu?",
+      "example": "Siapa yang menghantar fail itu?",
+      "meaning_en": "Who sent the file?",
+      "meaning_ja": "誰がそのファイルを送りましたか。"
+    },
+    {
+      "id": "ms-c11-f04",
+      "frame": "Tolong semak ___ ini.",
+      "example": "Tolong semak draf ini.",
+      "meaning_en": "Please check this draft.",
+      "meaning_ja": "この下書きを確認してください。"
+    },
+    {
+      "id": "ms-c11-f05",
+      "frame": "Awak sedang ___ apa?",
+      "example": "Awak sedang menulis apa?",
+      "meaning_en": "What are you writing?",
+      "meaning_ja": "何を書いているのですか。"
+    },
+    {
+      "id": "ms-c11-f06",
+      "frame": "Hujung minggu ini saya mahu ___.",
+      "example": "Hujung minggu ini saya mahu memasak.",
+      "meaning_en": "This weekend I want to cook.",
+      "meaning_ja": "今週末は料理をしたいです。"
+    }
+  ],
+  "scenario": {
+    "title_en": "Who did what in the office",
+    "title_ja": "オフィスで、誰が何をした？",
+    "lines": [
+      {
+        "id": "ms-c11-s01",
+        "speaker": "Tanaka",
+        "ms": "Puan Aini, emel dari Jepun itu sudah dibaca?",
+        "en": "Puan Aini, has that email from Japan been read yet?"
+      },
+      {
+        "id": "ms-c11-s02",
+        "speaker": "Puan Aini",
+        "ms": "Sudah. Saya membaca emel itu pagi tadi, kemudian saya menghantar fail itu.",
+        "en": "Yes. I read the email this morning, then I sent the file."
+      },
+      {
+        "id": "ms-c11-s03",
+        "speaker": "Tanaka",
+        "ms": "Oh, Encik Rahman yang menerima fail itu?",
+        "en": "Oh, Encik Rahman is the one who received the file?"
+      },
+      {
+        "id": "ms-c11-s04",
+        "speaker": "Puan Aini",
+        "ms": "Ya. Sekarang dia sedang membuka fail itu.",
+        "en": "Yes. He's opening the file now."
+      },
+      {
+        "id": "ms-c11-s05",
+        "speaker": "Encik Rahman",
+        "ms": "Selamat pagi, Encik Tanaka. Saya sudah membuka fail itu. Sekarang saya sedang menulis jawapan.",
+        "en": "Good morning, Mr Tanaka. I've opened the file. Now I'm writing the reply."
+      },
+      {
+        "id": "ms-c11-s06",
+        "speaker": "Tanaka",
+        "ms": "Baik. Siapa yang akan menelefon pejabat di Jepun?",
+        "en": "Good. Who will phone the office in Japan?"
+      },
+      {
+        "id": "ms-c11-s07",
+        "speaker": "Encik Rahman",
+        "ms": "Saya akan menelefon mereka petang ini.",
+        "en": "I'll phone them this afternoon."
+      },
+      {
+        "id": "ms-c11-s08",
+        "speaker": "Puan Aini",
+        "ms": "Baik, encik. Saya menunggu jawapan itu.",
+        "en": "Fine. I'll wait for that answer."
+      },
+      {
+        "id": "ms-c11-s09",
+        "speaker": "Tanaka",
+        "ms": "Cik Mei Ling, draf slaid itu sudah siap?",
+        "en": "Mei Ling, is the slide draft ready?"
+      },
+      {
+        "id": "ms-c11-s10",
+        "speaker": "Cik Mei Ling",
+        "ms": "Belum. Saya masih menyemak draf itu. Tarikh akhir hari Jumaat, ya?",
+        "en": "Not yet. I'm still checking the draft. The deadline is Friday, right?"
+      },
+      {
+        "id": "ms-c11-s11",
+        "speaker": "Tanaka",
+        "ms": "Ya, hari Jumaat. Saya mengira jumlah itu semalam, tetapi tolong semak sekali lagi.",
+        "en": "Yes, Friday. I worked out the total yesterday, but please check it once more."
+      },
+      {
+        "id": "ms-c11-s12",
+        "speaker": "Cik Mei Ling",
+        "ms": "Baik. Draf itu akan siap petang ini. Nanti saya menghantar mesej.",
+        "en": "Fine. The draft will be ready this afternoon. I'll send a message later."
+      },
+      {
+        "id": "ms-c11-s13",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih. Hujung minggu ini cik buat apa?",
+        "en": "Thank you. What are you doing this weekend?"
+      },
+      {
+        "id": "ms-c11-s14",
+        "speaker": "Cik Mei Ling",
+        "ms": "Saya mahu mendaki dengan kawan saya. Encik pula?",
+        "en": "I'm going hiking with a friend. And you?"
+      },
+      {
+        "id": "ms-c11-s15",
+        "speaker": "Tanaka",
+        "ms": "Saya mahu memasak. Isteri saya mengajar saya memasak nasi lemak.",
+        "en": "I want to cook. My wife is teaching me to cook nasi lemak."
+      },
+      {
+        "id": "ms-c11-s16",
+        "speaker": "Cik Mei Ling",
+        "ms": "Wah, bagus! Boleh saya mengecas telefon saya di sini? Bateri sudah habis.",
+        "en": "Wow, great! Can I charge my phone here? The battery's dead."
+      },
+      {
+        "id": "ms-c11-s17",
+        "speaker": "Tanaka",
+        "ms": "Boleh. Letak telefon itu di atas meja.",
+        "en": "Sure. Put the phone on the table."
+      },
+      {
+        "id": "ms-c11-s18",
+        "speaker": "Cik Mei Ling",
+        "ms": "Terima kasih! Mari kita minum kopi. Saya yang membayar.",
+        "en": "Thanks! Let's have coffee. I'm paying."
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c11-002",
+      "ms-c11-003",
+      "ms-c11-004",
+      "ms-c11-007",
+      "ms-c11-010",
+      "ms-c11-014",
+      "ms-c11-015",
+      "ms-c11-019",
+      "ms-c11-023",
+      "ms-c11-025",
+      "ms-c11-027",
+      "ms-c11-033",
+      "ms-c11-034",
+      "ms-c11-035",
+      "ms-c11-036",
+      "ms-c11-038",
+      "ms-c11-039",
+      "ms-c11-040",
+      "ms-c11-041",
+      "ms-d-hari-tanaka-04",
+      "ms-d-hari-tanaka-05",
+      "ms-d-hari-tanaka-11",
+      "ms-c09-031",
+      "ms-c02-078",
+      "ms-c06-035",
+      "ms-c09-033",
+      "ms-c09-032",
+      "ms-c06-017",
+      "ms-c08-042",
+      "ms-d-rumah-ruang-tamu-10",
+      "ms-d-telefon-baru-06",
+      "ms-d-rumah-ruang-tamu-14",
+      "ms-c04-051",
+      "ms-c03-029"
+    ],
+    "frames": [
+      "ms-c11-f01",
+      "ms-c11-f02"
+    ],
+    "scene": null
+  }
+}
