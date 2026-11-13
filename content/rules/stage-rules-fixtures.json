@@ -1,0 +1,917 @@
+{
+ "note": "Shared fixtures for the stage rules in curriculum/stage-rules.json. Cikgu Sensai runs them in tests/test_stage_rules.py; Kata-Kata's affix guard should run the same cases (build step 3). Each case is a list of segments checked in order as one unit sequence. expect \"pass\": no violation of any kind. expect \"fail\": at least one violation of the named check (affix, ledger, register or malaysian-form). Segment fields: text (the Malay), chapter, unit (optional; default \"fixture-cNN\"), kind (default \"model\"; \"vocabulary\" teaches a form, \"mention\" is a ‹…› quote, \"test\" is a test item), source_text (default text; \"[spoken]\" labels a spoken form), field (\"prompt\" or \"answer_key\" for kind \"test\"), mention_source (for kind \"mention\": the source text a mentions file would hold).",
+ "cases": [
+  {
+   "id": "bercakap-9-fails",
+   "why": "ber-: bercakap before its gate or row",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "bercakap",
+     "chapter": 9
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "bercakap-10-passes",
+   "why": "ber-: bercakap at its row chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "bercakap",
+     "chapter": 10
+    }
+   ]
+  },
+  {
+   "id": "menulis-10-fails",
+   "why": "meN-: menulis before its gate or row",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "menulis",
+     "chapter": 10
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "menulis-11-passes",
+   "why": "meN-: menulis at its row chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "menulis",
+     "chapter": 11
+    }
+   ]
+  },
+  {
+   "id": "menyewa-10-fails",
+   "why": "meN-: menyewa before its gate or row",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "menyewa",
+     "chapter": 10
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "menyewa-11-passes",
+   "why": "meN-: menyewa at its row chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "menyewa",
+     "chapter": 11
+    }
+   ]
+  },
+  {
+   "id": "simpankan-11-fails",
+   "why": "-kan: simpankan before its gate or row",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "simpankan",
+     "chapter": 11
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "simpankan-12-passes",
+   "why": "-kan: simpankan at its row chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "simpankan",
+     "chapter": 12
+    }
+   ]
+  },
+  {
+   "id": "bersihkan-11-fails",
+   "why": "-kan: bersihkan before its gate or row",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "bersihkan",
+     "chapter": 11
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "bersihkan-12-passes",
+   "why": "-kan: bersihkan at its row chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "bersihkan",
+     "chapter": 12
+    }
+   ]
+  },
+  {
+   "id": "membaiki-11-fails",
+   "why": "meN- -i: membaiki before its gate or row",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "membaiki",
+     "chapter": 11
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "membaiki-12-passes",
+   "why": "meN- -i: membaiki at its row chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "membaiki",
+     "chapter": 12
+    }
+   ]
+  },
+  {
+   "id": "hubungi-11-fails",
+   "why": "-i: hubungi before its gate or row",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "hubungi",
+     "chapter": 11
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "hubungi-12-passes",
+   "why": "-i: hubungi at its row chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "hubungi",
+     "chapter": 12
+    }
+   ]
+  },
+  {
+   "id": "tertinggal-15-fails",
+   "why": "ter- accident (ledger tag says root): tertinggal before its gate or row",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "tertinggal",
+     "chapter": 15
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "tertinggal-16-passes",
+   "why": "ter- accident (ledger tag says root): tertinggal at its row chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "tertinggal",
+     "chapter": 16
+    }
+   ]
+  },
+  {
+   "id": "terjatuh-15-fails",
+   "why": "ter- accident: terjatuh before its gate or row",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "terjatuh",
+     "chapter": 15
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "terjatuh-16-passes",
+   "why": "ter- accident: terjatuh at its row chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "terjatuh",
+     "chapter": 16
+    }
+   ]
+  },
+  {
+   "id": "dibenarkan-12-fails",
+   "why": "di- -kan, row in chapter 13: dibenarkan before its gate or row",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "dibenarkan",
+     "chapter": 12
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "dibenarkan-13-passes",
+   "why": "di- -kan, row in chapter 13: dibenarkan at its row chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "dibenarkan",
+     "chapter": 13
+    }
+   ]
+  },
+  {
+   "id": "menulis-10B-fails",
+   "why": "unit 10B is chapter 10",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Saya menulis e-mel.",
+     "chapter": 10,
+     "unit": "ms-c10b"
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "menulis-11A-passes",
+   "why": "unit 11A is chapter 11",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "menulis",
+     "chapter": 11,
+     "unit": "ms-c11a"
+    }
+   ]
+  },
+  {
+   "id": "kan-suffix-11B-fails",
+   "why": "-kan opens in chapter 12",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Tolong simpankan bungkusan ini.",
+     "chapter": 11,
+     "unit": "ms-c11b"
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "kan-suffix-12A-passes",
+   "why": "-kan opens in chapter 12",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "simpankan",
+     "chapter": 12,
+     "unit": "ms-c12a"
+    }
+   ]
+  },
+  {
+   "id": "termurah-6-passes",
+   "why": "chapter 6 superlative whole word",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "termurah",
+     "chapter": 6
+    }
+   ]
+  },
+  {
+   "id": "termurah-does-not-unlock-terjatuh",
+   "why": "superlative ter- never opens accident ter-",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "termurah",
+     "chapter": 6
+    },
+    {
+     "text": "terjatuh",
+     "chapter": 6
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "final-i-is-not-suffix",
+   "why": "membeli and mengisi are meN- + beli / isi, not -i",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "membeli",
+     "chapter": 11
+    },
+    {
+     "text": "mengisi",
+     "chapter": 11
+    }
+   ]
+  },
+  {
+   "id": "makan-ikan-roots",
+   "why": "-kan shape needs a known base of 3 letters or more",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "makan",
+     "chapter": 4
+    },
+    {
+     "text": "ikan",
+     "chapter": 8
+    }
+   ]
+  },
+  {
+   "id": "whole-word-selamat-berkenalan-1",
+   "why": "lexicalised or allow-listed whole word at its own chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Selamat berkenalan",
+     "chapter": 1
+    }
+   ]
+  },
+  {
+   "id": "whole-word-belajar-2",
+   "why": "lexicalised or allow-listed whole word at its own chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "belajar",
+     "chapter": 2
+    }
+   ]
+  },
+  {
+   "id": "whole-word-berapa-3",
+   "why": "lexicalised or allow-listed whole word at its own chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "berapa",
+     "chapter": 3
+    }
+   ]
+  },
+  {
+   "id": "whole-word-mengapa-5",
+   "why": "lexicalised or allow-listed whole word at its own chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "mengapa",
+     "chapter": 5
+    }
+   ]
+  },
+  {
+   "id": "whole-word-bersih-6",
+   "why": "lexicalised or allow-listed whole word at its own chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "bersih",
+     "chapter": 6
+    }
+   ]
+  },
+  {
+   "id": "whole-word-menang-6",
+   "why": "lexicalised or allow-listed whole word at its own chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "menang",
+     "chapter": 6
+    }
+   ]
+  },
+  {
+   "id": "whole-word-rumah-terbuka-9",
+   "why": "lexicalised or allow-listed whole word at its own chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "rumah terbuka",
+     "chapter": 9
+    }
+   ]
+  },
+  {
+   "id": "whole-word-bekerja-10",
+   "why": "lexicalised or allow-listed whole word at its own chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "bekerja",
+     "chapter": 10
+    }
+   ]
+  },
+  {
+   "id": "whole-word-berehat-10",
+   "why": "lexicalised or allow-listed whole word at its own chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "berehat",
+     "chapter": 10
+    }
+   ]
+  },
+  {
+   "id": "whole-word-mesej-11",
+   "why": "lexicalised or allow-listed whole word at its own chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "mesej",
+     "chapter": 11
+    }
+   ]
+  },
+  {
+   "id": "whole-word-mesti-13",
+   "why": "lexicalised or allow-listed whole word at its own chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "mesti",
+     "chapter": 13
+    }
+   ]
+  },
+  {
+   "id": "whole-word-belanja-17",
+   "why": "lexicalised or allow-listed whole word at its own chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "belanja",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "whole-word-setuju-17",
+   "why": "lexicalised or allow-listed whole word at its own chapter",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "setuju",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "bekerja-9-fails",
+   "why": "be- spelling is still ber-: gate 10",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "bekerja",
+     "chapter": 9
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "di-rule-9-passes",
+   "why": "Stage 1 di- rule: di- + a known root from chapter 9",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "dibeli",
+     "chapter": 9
+    }
+   ]
+  },
+  {
+   "id": "di-rule-8-fails",
+   "why": "Stage 1 di- rule before chapter 9",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "dibeli",
+     "chapter": 8
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "se-classifier-8-passes",
+   "why": "se- + classifier (chapter 8)",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "sebiji",
+     "chapter": 8
+    }
+   ]
+  },
+  {
+   "id": "chapter-12-chunk-at-9-fails",
+   "why": "a chapter 12 row is not allowed in chapter 9",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "nombor penjejakan",
+     "chapter": 9
+    }
+   ],
+   "check": "ledger"
+  },
+  {
+   "id": "unplaced-row-fails",
+   "why": "a row with no chapter (L-0724 berlainan) is never allowed",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "berlainan",
+     "chapter": 12
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "retired-row-fails",
+   "why": "a retired row (L-0009) is never allowed",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Assalamualaikum",
+     "chapter": 9
+    }
+   ],
+   "check": "ledger"
+  },
+  {
+   "id": "no-ledger-row-fails",
+   "why": "an affixed form with no ledger row fails even after its gate",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "perlukan",
+     "chapter": 12
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "indonesian-berbicara-fails",
+   "why": "disallowed teaching form; use bercakap",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "berbicara",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "indonesian-perbaiki-fails",
+   "why": "disallowed teaching form; use baiki",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "perbaiki",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "indonesian-musik-fails",
+   "why": "disallowed teaching form; use muzik",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "musik",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "indonesian-film-fails",
+   "why": "disallowed teaching form; use filem",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "film",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "indonesian-olahraga-fails",
+   "why": "disallowed teaching form; use sukan",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "olahraga",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "indonesian-apotek-fails",
+   "why": "disallowed teaching form; use farmasi",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "apotek",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "indonesian-kantor-fails",
+   "why": "disallowed teaching form; use pejabat",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "kantor",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "indonesian-mobil-fails",
+   "why": "disallowed teaching form; use kereta",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "mobil",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "indonesian-uang-fails",
+   "why": "disallowed teaching form; use wang",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "uang",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "indonesian-in-do-not-use-note-passes",
+   "why": "‹berbicara› quoted in a do-not-use note",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "berbicara",
+     "chapter": 10,
+     "kind": "mention",
+     "mention_source": "Stage 2 plan section 3: Indonesian; do not use (use bercakap)"
+    }
+   ]
+  },
+  {
+   "id": "indonesian-in-other-mention-fails",
+   "why": "a mention without a do-not-use source is still checked",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "berbicara",
+     "chapter": 10,
+     "kind": "mention",
+     "mention_source": "Kata-Kata card note"
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "indonesian-in-hyphenated-word-fails",
+   "why": "whole-word match includes hyphen parts",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "film-film",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "spoken-before-standard-fails",
+   "why": "«kat» with no earlier standard «di» teaching and no spoken label",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Saya tunggu kat lobi.",
+     "chapter": 17
+    }
+   ],
+   "check": "register"
+  },
+  {
+   "id": "tak-tahan-before-tidak-tahan-fails",
+   "why": "R3: «tak tahan» with no earlier «tidak tahan»",
+   "expect": "fail",
+   "check": "register",
+   "segments": [
+    {
+     "text": "tidak",
+     "chapter": 17,
+     "kind": "vocabulary"
+    },
+    {
+     "text": "tak",
+     "chapter": 17,
+     "kind": "vocabulary",
+     "source_text": "tak [spoken]"
+    },
+    {
+     "text": "Saya tak tahan.",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "standard-then-labelled-spoken-passes",
+   "why": "R3 order: standard first, spoken form labelled",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "setuju",
+     "chapter": 17,
+     "kind": "vocabulary"
+    },
+    {
+     "text": "set",
+     "chapter": 17,
+     "kind": "vocabulary",
+     "source_text": "set [spoken]"
+    },
+    {
+     "text": "Set, jumpa esok.",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "tak-apa-before-tidak-mengapa-fails",
+   "why": "«tak apa» is a spoken form of «tidak mengapa» (chapter 17); Sam, 13 Nov 2026",
+   "expect": "fail",
+   "check": "register",
+   "segments": [
+    {
+     "text": "tidak",
+     "chapter": 12,
+     "kind": "vocabulary"
+    },
+    {
+     "text": "tak",
+     "chapter": 12,
+     "kind": "vocabulary",
+     "source_text": "tak [spoken]"
+    },
+    {
+     "text": "Tak apa, saya tunggu.",
+     "chapter": 12
+    }
+   ]
+  },
+  {
+   "id": "tidak-mengapa-with-both-spoken-forms-passes",
+   "why": "«tidak mengapa» (spoken: «takpe» / «tak apa»), standard first",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "tidak mengapa",
+     "chapter": 17,
+     "kind": "vocabulary"
+    },
+    {
+     "text": "takpe / tak apa",
+     "chapter": 17,
+     "kind": "vocabulary",
+     "source_text": "«tidak mengapa» (spoken: «takpe» / «tak apa»)"
+    },
+    {
+     "text": "Takpe, saya tunggu.",
+     "chapter": 17
+    },
+    {
+     "text": "Tak apa, saya tunggu.",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "takpe-before-tidak-mengapa-fails",
+   "why": "«takpe» before its standard form",
+   "expect": "fail",
+   "check": "register",
+   "segments": [
+    {
+     "text": "Takpe, saya tunggu.",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "spoken-then-standard-in-unit-fails",
+   "why": "spoken form taught before the standard form in the same unit",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "set",
+     "chapter": 17,
+     "kind": "vocabulary",
+     "source_text": "set [spoken]"
+    },
+    {
+     "text": "setuju",
+     "chapter": 17,
+     "kind": "vocabulary"
+    }
+   ],
+   "check": "register"
+  },
+  {
+   "id": "lah-in-answer-key-fails",
+   "why": "R4: a test must not require «lah»",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Baiklah, saya tunggu.",
+     "chapter": 17,
+     "kind": "test",
+     "field": "answer_key"
+    }
+   ],
+   "check": "register"
+  },
+  {
+   "id": "kan-in-answer-key-fails",
+   "why": "R4: a test must not require «kan»",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Betul kan?",
+     "chapter": 17,
+     "kind": "test",
+     "field": "answer_key"
+    }
+   ],
+   "check": "register"
+  },
+  {
+   "id": "kan-in-prompt-passes",
+   "why": "R4: recognition in a prompt is allowed",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Betul kan?",
+     "chapter": 17,
+     "kind": "test",
+     "field": "prompt"
+    }
+   ]
+  },
+  {
+   "id": "adalah-is-not-lah",
+   "why": "adalah is a whole word, not ada + lah",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "adalah",
+     "chapter": 17,
+     "kind": "test",
+     "field": "answer_key"
+    }
+   ]
+  }
+ ]
+}

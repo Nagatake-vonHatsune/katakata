@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "title": "Malay stage rules: affix gates, whole-word exemptions, look-alike roots, register pairs and disallowed forms",
+  "authority": "Charter section 5 (affix order; ber- has no nasal sound changes, edited 13 Nov 2026 at Sam's request, R7); docs/stage-2-plan.md section 3; Sam's answers of 13 Nov 2026 in docs/stage-2-decisions.md (R3, R4, R7) and ledger Journal rows 130 to 132; Sam's build step 2 instruction of 13 Nov 2026. Readers: Cikgu Sensai language_checks.py (now) and Kata-Kata tools/affix-guard.mjs (build step 3).",
+  "format": {
+    "summary": "Plain JSON, UTF-8. Every Malay form is lower case and compared with whole words (tokens of letters, with internal hyphens or apostrophes kept). A reader must ignore keys it does not know and must not edit this file to make content pass: a change needs Sam's approval, recorded in the ledger Journal or HANDOFF.md.",
+    "affix_gates": "List of {family, chapter, ledger_tags, detect, note}. family is the rule name used in messages. chapter is the first chapter in which the family may be used productively. ledger_tags are the ledger 'Affix tag' tokens that name the family (a tag such as 'meN- -i' names two families; the form then needs every gate). detect describes the shape test used when the ledger has no family tag for the word: 'shape' families are found from spelling alone, 'tag-only' families only from the ledger tag. enforced_by says which rule set enforces it: 'stage1' rules are the Stage 1 checks kept unchanged; 'stage2' rules are the stage-aware check below.",
+    "stage_aware_rule": "A word whose family has a 'stage2' gate passes only if (1) the unit's chapter is at or after every gate of the word's families, and (2) the word's own ledger row, or for a regular Stage 1 derivation (di-, -nya, -kah) the row of its base, is placed at or before the unit's chapter. Placement is read from the ledger 'Kata-Kata place' column only: the lowest 'ChN' after removing notes 'moved from ChN', 'reviewed in ChN', 'reused ChN', 'was ChN' and 'waits for ChN'; a retired row is never placed. A word in a ‹…› mention listed with its source in curriculum/malay-mentions.json is not taught vocabulary and is not checked.",
+    "family_resolution": "1. A word in lookalike_roots, or in whole_words at or after its chapter, has no family. 2. If any ledger row of the word has an Affix tag other than 'root' or blank (for example '-an', 'lex', 'chunk', 'ber-'), that tag decides the families. 3. Otherwise (no row, blank tag, or 'root') the shape tests decide; this is how rows tagged 'root' that are really ter- forms (L-0619 tertinggal, L-0621 terlepas, L-0644 terlupa) are still gated. 4. A ter- word is the chapter 6 superlative only if it is in ter_superlatives or it has no ledger row of its own and its base is an adjective; every other ter- word is the accident or unplanned-state family.",
+    "shape_tests": "ber-: begins with ber, or with bek or bel (be- and bel- spellings). meN-: begins with me followed by a consonant. -kan: ends in kan, longer than 5 letters, and the word without kan (and without a meN-, di-, ber- or ter- prefix, nasal changes reversed) is a known ledger or Kata-Kata form of 3 letters or more; so makan, ikan, bukan and akan are roots. -i: tag-only for bare words (selesai, pandai and kaki are roots); with a meN- or di- prefix, the word without the prefix and without its final i must be a known form of 3 letters or more, so membeli, mencari and mengisi are not -i forms. ter-: begins with ter and the rest is a known form of 3 letters or more (terima, terus and teruk are roots).",
+    "whole_words": "List of {form, chapter, ledger_id, reason}. Lexicalised or allow-listed whole words that look affixed. Each is a whole word at its own chapter (equal to its ledger row's chapter); before that chapter the normal rules apply. Never a family exemption for any other word.",
+    "ter_superlatives": "The chapter 6 lexical superlatives, whole words from chapter 6. They never open the accident ter- family.",
+    "lookalike_roots": "Roots that only look affixed (beri, merah, mesti ...). Classification only: they do not create ledger rows or chapter placements. Sam's local additions also stay in curriculum/malay-roots.json, which must remain a subset of this list.",
+    "register_pairs": "List of {spoken, standard, from_chapter, decision}. In any unit whose chapter is from_chapter or later (and in unplaced units), the spoken form fails unless the standard form has been taught earlier in vocabulary or a model and the spoken form has been taught with an explicit 'spoken' label. Multi-word forms match as whole phrases. register_notes records Sam's decisions on how a pair is presented.",
+    "particles": "List of {form, decision, rule, not_particle}. Recognition particles: allowed in prompts and listening once placed, never required in a test answer key («lah» as a word or as an ending on a known form with no ledger row of its own, except the not_particle words; «kan» as a word). A key that must name the particle quotes it as a ‹…› mention.",
+    "disallowed_forms": "Map form -> Malaysian form to use. Matched as whole words, also inside hyphenated words. Fails everywhere, including mentions, except inside a ‹…› mention whose source in curriculum/malay-mentions.json says 'do not use'."
+  },
+  "affix_gates": [
+    {"family": "-nya", "chapter": 2, "ledger_tags": ["-nya"], "detect": "shape", "enforced_by": "stage1", "note": "Possessive or definite -nya on a known word."},
+    {"family": "-kah", "chapter": 2, "ledger_tags": ["-kah"], "detect": "shape", "enforced_by": "stage1", "note": "Question particle -kah."},
+    {"family": "-an", "chapter": 2, "ledger_tags": ["-an"], "detect": "shape", "enforced_by": "stage1", "note": "Verb + -an thing noun (makanan)."},
+    {"family": "ke- ordinal", "chapter": 3, "ledger_tags": ["ke-"], "detect": "shape", "enforced_by": "stage1", "note": "ke- + number (keempat); pertama is a whole word."},
+    {"family": "ter- superlative", "chapter": 6, "ledger_tags": ["ter-"], "detect": "shape", "enforced_by": "stage1", "note": "ter- + adjective (termurah). See ter_superlatives."},
+    {"family": "se- comparison", "chapter": 6, "ledger_tags": ["se-"], "detect": "shape", "enforced_by": "stage1", "note": "se- + adjective (semurah)."},
+    {"family": "se- + classifier", "chapter": 8, "ledger_tags": ["se-"], "detect": "shape", "enforced_by": "stage1", "note": "seekor, sebiji, sebuah: se- with a counter; the counter's own chapter is checked (chapter 8). Time nouns (seminggu) follow their base's chapter (4)."},
+    {"family": "di-", "chapter": 9, "ledger_tags": ["di-"], "detect": "tag-only", "enforced_by": "stage1+stage2", "note": "di- + a known verb root from chapter 9 (dibaca, dibeli). The Stage 1 rule stays; a di- form that also carries -kan or -i needs that gate too (dibenarkan: 12, and its row is chapter 13)."},
+    {"family": "ber-", "chapter": 10, "ledger_tags": ["ber-"], "detect": "shape", "enforced_by": "stage1+stage2", "note": "No nasal sound changes (charter, R7). Spelling variants: be- before a root starting with r (berehat, berenang) or whose first syllable ends in -er (bekerja); bel- only in belajar, a chapter 2 whole word."},
+    {"family": "meN-", "chapter": 11, "ledger_tags": ["meN-"], "detect": "shape", "enforced_by": "stage1+stage2", "note": "me-, mem-, men-, meng-, meny-, menge- with nasal changes (tulis -> menulis, sewa -> menyewa, cas -> mengecas)."},
+    {"family": "-kan", "chapter": 12, "ledger_tags": ["-kan"], "detect": "shape", "enforced_by": "stage2", "note": "Selected -kan families (simpankan, hidupkan). meN-...-kan needs both 11 and 12. Not a politeness ending; kan the particle is separate (see particles)."},
+    {"family": "-i", "chapter": 12, "ledger_tags": ["-i"], "detect": "tag-only for bare words; shape after meN- or di-", "enforced_by": "stage2", "note": "Selected -i families (baiki, membaiki, hubungi). A final i is not -i (membeli, mengisi)."},
+    {"family": "ter- accident", "chapter": 16, "ledger_tags": ["ter-"], "detect": "shape", "enforced_by": "stage2", "note": "Accidental or unplanned-state ter- (terjatuh, tertinggal, terkunci). Ability, success and idiom readings are outside Stage 2."}
+  ],
+  "whole_words": [
+    {"form": "selamat berkenalan", "chapter": 1, "ledger_id": "L-0028", "reason": "Chapter 1 greeting chunk (Kata-Kata card ms-c01-031)."},
+    {"form": "belajar", "chapter": 2, "ledger_id": "L-0069", "reason": "The only bel- spelling of ber- (charter section 5, R7); a lexicalised chapter 2 word."},
+    {"form": "berapa", "chapter": 3, "ledger_id": "L-0116", "reason": "Question word, lexicalised."},
+    {"form": "mengapa", "chapter": 5, "ledger_id": "L-1049", "reason": "Question word, lexicalised (Sam, 12 Nov 2026: kenapa, mengapa and apa sebab are equivalents)."},
+    {"form": "termurah", "chapter": 6, "ledger_id": "L-0275", "reason": "Chapter 6 lexical superlative."},
+    {"form": "terbesar", "chapter": 6, "ledger_id": "L-0276", "reason": "Chapter 6 lexical superlative."},
+    {"form": "terbaik", "chapter": 6, "ledger_id": "L-0277", "reason": "Chapter 6 lexical superlative."},
+    {"form": "tercantik", "chapter": 6, "ledger_id": "L-0278", "reason": "Chapter 6 lexical superlative."},
+    {"form": "bersih", "chapter": 6, "ledger_id": "L-0292", "reason": "Root that looks like ber- + sih."},
+    {"form": "menang", "chapter": 6, "ledger_id": "L-0982", "reason": "Root that looks like meN- (Dunia, primes chapter 6)."},
+    {"form": "dilarang merokok", "chapter": 9, "ledger_id": "L-0400", "reason": "Chapter 9 sign chunk (Kata-Kata card ms-c09-024)."},
+    {"form": "bekerja", "chapter": 10, "ledger_id": "L-1089", "reason": "ber- with the be- spelling (first syllable of kerja ends in -er); a rule, not an exception (R7)."},
+    {"form": "berehat", "chapter": 10, "ledger_id": "L-1093", "reason": "ber- with the be- spelling before r (rehat)."},
+    {"form": "mesej", "chapter": 11, "ledger_id": "L-1154", "reason": "Root that looks like meN-."},
+    {"form": "mesti", "chapter": 13, "ledger_id": "L-1199", "reason": "Root that looks like meN-."},
+    {"form": "belanja", "chapter": 17, "ledger_id": "L-0717", "reason": "Root that looks like bel-."},
+    {"form": "setuju", "chapter": 17, "ledger_id": "L-1255", "reason": "Lexicalised se- word."}
+  ],
+  "ter_superlatives": ["termurah", "terbesar", "terbaik", "tercantik"],
+  "lookalike_roots": {
+    "kata_kata_allow_list": "berat bersih belok belakang belas belum beli besar bebas beliau berus merah meja meter mesyuarat mereka mendung menu belanja menang",
+    "kata_kata_note": "Exact copy of the pinned upstream Kata-Kata affix guard's root allow-list (was ROOTS in language_checks.py).",
+    "sam_local": ["beri", "mesej", "memang", "mesti", "beritahu", "mengapa"],
+    "sam_local_note": "Same list as curriculum/malay-roots.json (Sam, 11 and 12 Nov 2026)."
+  },
+  "register_pairs": [
+    {"spoken": "nak", "standard": "mahu", "from_chapter": 1, "decision": "Stage 1"},
+    {"spoken": "tak", "standard": "tidak", "from_chapter": 1, "decision": "Stage 1"},
+    {"spoken": "dah", "standard": "sudah", "from_chapter": 1, "decision": "Stage 1"},
+    {"spoken": "ni", "standard": "ini", "from_chapter": 1, "decision": "Stage 1; R3"},
+    {"spoken": "tu", "standard": "itu", "from_chapter": 1, "decision": "Stage 1; R3"},
+    {"spoken": "sikit", "standard": "sedikit", "from_chapter": 1, "decision": "Stage 1"},
+    {"spoken": "saja", "standard": "sahaja", "from_chapter": 1, "decision": "Stage 1"},
+    {"spoken": "tapi", "standard": "tetapi", "from_chapter": 1, "decision": "Stage 1"},
+    {"spoken": "macam mana", "standard": "bagaimana", "from_chapter": 1, "decision": "Stage 1"},
+    {"spoken": "macam tu", "standard": "seperti itu", "from_chapter": 1, "decision": "Stage 1; R3"},
+    {"spoken": "tak apa", "standard": "tidak mengapa", "from_chapter": 10, "decision": "R3, amended by Sam 13 Nov 2026 (see register_notes)"},
+    {"spoken": "takpe", "standard": "tidak mengapa", "from_chapter": 1, "decision": "Sam 13 Nov 2026: slang short form of tak apa, taught as a marked spoken form of tidak mengapa"},
+    {"spoken": "tak tahan", "standard": "tidak tahan", "from_chapter": 1, "decision": "R3"},
+    {"spoken": "set", "standard": "setuju", "from_chapter": 1, "decision": "R3"},
+    {"spoken": "kat", "standard": "di", "from_chapter": 1, "decision": "R3"}
+  ],
+  "register_notes": {
+    "tidak mengapa": "Sam, 13 Nov 2026: teach «tidak mengapa» with both spoken forms, shown as «tidak mengapa» (spoken: «takpe» / «tak apa»). The tak apa pair applies from chapter 10 because Stage 1 unit 5 already shows «tak apa» as Dunia recognition (L-0940, primes chapter 5). «takpe» needs a ledger row before content uses it."
+  },
+  "particles": [
+    {"form": "lah", "decision": "R4", "rule": "Recognition; production optional; never required in a test answer key.", "not_particle": ["adalah", "masalah"], "not_particle_note": "Whole words that end in -lah on a known form but contain no particle (ada + lah, masa + lah are not their sources)."},
+    {"form": "kan", "decision": "R4", "rule": "Recognition (confirmation particle, not the suffix -kan); production optional; never required in a test answer key."}
+  ],
+  "disallowed_forms": {
+    "nomor": "nombor",
+    "bis": "bas",
+    "apel": "epal",
+    "setelah": "selepas",
+    "beda": "beza",
+    "mobil": "kereta",
+    "toilet": "tandas",
+    "wc": "tandas",
+    "karcis": "tiket",
+    "toko": "kedai",
+    "uang": "wang / duit",
+    "berbicara": "bercakap",
+    "perbaiki": "baiki / membaiki",
+    "musik": "muzik",
+    "film": "filem",
+    "olahraga": "sukan / bersenam",
+    "apotek": "farmasi",
+    "kantor": "pejabat",
+    "bersepeda": "berbasikal",
+    "antre": "beratur",
+    "berwisata": "melancong",
+    "kecelakaan": "kemalangan"
+  },
+  "disallowed_forms_sources": {
+    "charter_step3": "nomor, bis, apel, setelah, beda, mobil, toilet, wc, karcis, toko, uang (the Stage 1 list).",
+    "sam_step2": "berbicara, perbaiki, musik, film, olahraga, apotek, kantor, mobil, uang (Sam, build step 2 instruction, 13 Nov 2026; the first five are docs/stage-2-plan.md section 3 item 6).",
+    "plan_section_2": "bersepeda, antre, berwisata, kecelakaan: named in docs/stage-2-plan.md section 2 as the Indonesian forms the chosen Malaysian words replace. Not added: saku, darurat, berdagang, berteman and menikah, which the plan also names but which are also used in Malaysian Malay; Sam to confirm."
+  }
+}

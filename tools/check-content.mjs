@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Content CI (spec 11.4): schema check, affix guard, link check.
+// Content CI (spec 11.4): schema check, stage-aware affix guard, link check.
 // Run: npm run content:check
 import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
@@ -78,14 +78,15 @@ for (const p of packs) {
   }
 }
 
-// Affix guard
-const { flags, passes } = runAffixGuard(packs);
-for (const f of flags) errors.push(`affix guard: ${f.id} (${f.source}) "${f.word}" in "${f.text}" is a ber-/me- form; tag it chunk, lex or recognise-only, or add it to the allow-list if it is a root`);
+// Affix guard (stage-aware: content/rules/stage-rules.json, each text checked at its own chapter)
+const { flags, passes, findings } = runAffixGuard(packs);
+for (const f of flags) errors.push(`affix guard: ${f.id} (${f.unit}, ${f.check}) "${f.word}" in "${f.text}": ${f.reason}`);
 
 const live = packs.filter((p) => p.status === 'live');
 const liveCards = live.reduce((n, p) => n + p.cards.length, 0);
 console.log(`content: ${packs.length} packs (${live.length} live, ${liveCards} live cards), ${cardById.size} cards total`);
-console.log(`affix guard: ${flags.length} flags, ${passes.length} passes`);
+const notBlocking = Object.entries(findings).map(([k, n]) => `${n} ${k}`).join(', ') || 'none';
+console.log(`affix guard: ${flags.length} flags, ${passes.length} derivations checked; Stage 1 findings that do not block: ${notBlocking}`);
 if (errors.length) {
   console.error(errors.map((e) => `  ✗ ${e}`).join('\n'));
   console.error(`content check failed: ${errors.length} problem(s)`);

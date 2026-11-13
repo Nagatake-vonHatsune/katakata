@@ -28,11 +28,11 @@ describe('affix guard', () => {
     expect(looksAffixed('Mei')).toBe(false);
     expect(looksAffixed('besar')).toBe(false);
   });
-  it('passes the whole v2 Vocab Bank with no flags (spec 11.4)', () => {
+  it('passes every pack with no flags (spec 11.4, stage-aware)', () => {
     expect(runAffixGuard(allPacks()).flags).toEqual([]);
   });
   it('flags an untagged me- verb', () => {
-    const pack = { kind: 'kelas', id: 'x', cards: [{ id: 'ms-x-1', term: 'membaca', affix_tag: 'root' }] };
+    const pack = { kind: 'kelas', id: 'x', chapter: 9, cards: [{ id: 'ms-x-1', term: 'membaca', affix_tag: 'root' }] };
     expect(runAffixGuard([pack]).flags).toHaveLength(1);
   });
 });

@@ -1,0 +1,13 @@
+{
+  "note": "Names of people, places and organisations used in the step 4 suites. They are not vocabulary: the ledger and affix checks skip them. Add a name here only if it is a proper noun.",
+  "names": [
+    "Tanaka", "Kimura", "Yamada", "Sato", "Suzuki", "Kenji", "Yuki", "Hiro", "Emi", "Ken",
+    "Aini", "Rahman", "Mei Ling", "Siti", "Kumar", "Farah", "Hafiz", "Lim", "Devi", "Nora", "Ali", "Dayak",
+    "Osaka", "Tokyo", "Kyoto", "Sapporo", "Fukuoka", "Nagoya", "Yokohama",
+    "Malaysia", "Kuala Lumpur", "KL", "Petaling Jaya", "PJ", "Mont Kiara", "Bangsar", "Shah Alam",
+    "Subang Jaya", "Cyberjaya", "Johor Bahru", "Ipoh", "Penang",
+    "Sakura", "Universiti Malaya", "WhatsApp",
+    "Melayu", "Inggeris", "Rashid", "Jalur Gemilang", "Rina",
+    "E", "F", "G"
+  ]
+}
