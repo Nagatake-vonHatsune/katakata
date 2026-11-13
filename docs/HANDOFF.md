@@ -5,9 +5,9 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
 
 ## State
 
-- 41 live packs, 1097 cards: Kelas chapters 1 to 16, 20 Dunia scenes, 5 Jambatan scenes.
-- Workbook: `content/source/2026-11-13_KataKata_VocabBank_v6.xlsx`, built by `tools/make_vocab_bank_v6.py` (v5 + chapters 10 to 16).
-- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the chapter 16 write-back (L-0001 to L-1266).
+- 42 live packs, 1115 cards: Kelas chapters 1 to 17, 20 Dunia scenes, 5 Jambatan scenes.
+- Workbook: `content/source/2026-11-13_KataKata_VocabBank_v6.xlsx`, built by `tools/make_vocab_bank_v6.py` (v5 + chapters 10 to 17).
+- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the chapter 17 write-back (L-0001 to L-1266).
 - Affix guard: stage-aware, rules from Cikgu Sensai `56627dc` (`content/rules/`).
 - Next: chapters 17 to 17 (one pack each, units A and B in the same pack where the plan splits a chapter) and chapter 18
   (review only, no new words). Sam (G3): build them all, in order, each with an Opus check of its frames before the next.
