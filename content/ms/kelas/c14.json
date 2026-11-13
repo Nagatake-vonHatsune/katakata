@@ -1,0 +1,554 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c14",
+  "chapter": 14,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Sebab, Syarat, Tujuan",
+    "en": "Reasons, conditions, purpose",
+    "ja": "理由・条件・目的"
+  },
+  "cards": [
+    {
+      "id": "ms-c14-001",
+      "lang": "ms",
+      "term": "supaya",
+      "gloss_en": "so that",
+      "gloss_ja": "〜するために・〜するように",
+      "pos": "conj",
+      "affix_tag": "root",
+      "note": "So that, for a purpose: Saya bangun awal supaya saya tidak lambat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-002",
+      "lang": "ms",
+      "term": "walaupun",
+      "gloss_en": "although / even though",
+      "gloss_ja": "〜だけれども",
+      "pos": "conj",
+      "affix_tag": "lex",
+      "note": "Although, even though. Learn it as a whole word. Root in the ledger: walau. Walaupun saya penat, saya suka mendaki.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-003",
+      "lang": "ms",
+      "term": "jika",
+      "gloss_en": "if (formal or written; kalau is everyday)",
+      "gloss_ja": "もし〜なら",
+      "pos": "conj",
+      "affix_tag": "root",
+      "note": "If. Formal or written; everyday speech says «kalau» (Ch7): Kalau hujan, kita makan di kafe.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-004",
+      "lang": "ms",
+      "term": "apabila",
+      "gloss_en": "when (formal or written; bila is everyday)",
+      "gloss_ja": "〜するとき",
+      "pos": "conj",
+      "affix_tag": "root",
+      "note": "When. Formal or written; everyday speech says «bila» (Ch4).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-005",
+      "lang": "ms",
+      "term": "sambil",
+      "gloss_en": "while doing",
+      "gloss_ja": "〜しながら",
+      "pos": "conj",
+      "affix_tag": "root",
+      "note": "While doing something else: Dia makan sambil membaca surat khabar.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-006",
+      "lang": "ms",
+      "term": "namun",
+      "gloss_en": "however (written; tapi is everyday)",
+      "gloss_ja": "しかし（書き言葉）",
+      "pos": "conj",
+      "affix_tag": "root",
+      "note": "However. Written only; everyday speech says «tapi» (Ch5).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-007",
+      "lang": "ms",
+      "term": "oleh itu",
+      "gloss_en": "therefore (formal; jadi is everyday)",
+      "gloss_ja": "そのため",
+      "pos": "conj",
+      "affix_tag": "chunk",
+      "note": "Therefore. Formal; everyday speech says «jadi» (below). A fixed phrase: oleh (Ch9) + itu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-008",
+      "lang": "ms",
+      "term": "akhirnya",
+      "gloss_en": "finally",
+      "gloss_ja": "最後に・ついに",
+      "pos": "adv",
+      "affix_tag": "-nya",
+      "note": "akhir + -nya: finally, at last. Akhirnya kita makan di kafe.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-009",
+      "lang": "ms",
+      "term": "mula-mula",
+      "gloss_en": "first / at first",
+      "gloss_ja": "最初に",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "First, at first. Learn it as a whole word (repeated words come in Stage 3). Root in the ledger: mula (Ch4).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-010",
+      "lang": "ms",
+      "term": "seterusnya",
+      "gloss_en": "next, after that (formal; lepas tu is everyday)",
+      "gloss_ja": "次に",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "Next, after that. Formal; everyday speech says «lepas tu» (spoken). Learn it as a whole word. Root in the ledger: terus (Ch7).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-011",
+      "lang": "ms",
+      "term": "semasa",
+      "gloss_en": "during / when",
+      "gloss_ja": "〜の間に",
+      "pos": "conj",
+      "affix_tag": "lex",
+      "note": "During, when. Learn it as a whole word. Root in the ledger: masa (Ch4). Semasa mendaki, kita minum air.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-012",
+      "lang": "ms",
+      "term": "sejak",
+      "gloss_en": "since",
+      "gloss_ja": "〜以来",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": "Since: Sejak bulan lepas saya suka mendaki.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-013",
+      "lang": "ms",
+      "term": "tujuan",
+      "gloss_en": "purpose",
+      "gloss_ja": "目的",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "tuju + -an: purpose. Learn it as a whole word.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-014",
+      "lang": "ms",
+      "term": "pilihan",
+      "gloss_en": "choice",
+      "gloss_ja": "選択肢",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "pilih (Ch6) + -an: a choice. Ada dua pilihan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-015",
+      "lang": "ms",
+      "term": "keputusan",
+      "gloss_en": "decision / result",
+      "gloss_ja": "決定・結果",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "Learn it as a whole word: ke- … -an words come in Stage 3. Root in the ledger: putus. Decision, or result.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-016",
+      "lang": "ms",
+      "term": "perubahan",
+      "gloss_en": "change",
+      "gloss_ja": "変更・変化",
+      "pos": "noun",
+      "affix_tag": "per-an",
+      "note": "Learn it as a whole word: per- … -an words come in Stage 3. Root in the ledger: ubah. Perubahan rancangan = a change of plan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-017",
+      "lang": "ms",
+      "term": "jadi",
+      "gloss_en": "so / therefore",
+      "gloss_ja": "だから・そのため",
+      "pos": "conj",
+      "affix_tag": "root",
+      "note": "So, therefore (everyday). The partner of the formal oleh itu: Jadi, boleh kita tangguh hingga hari Ahad?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-018",
+      "lang": "ms",
+      "term": "tangguh",
+      "gloss_en": "To put off; to pause for a while",
+      "gloss_ja": "延期する、一時休む",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To put off, to postpone: Boleh kita tangguh hingga hari Ahad?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-019",
+      "lang": "ms",
+      "term": "janji",
+      "gloss_en": "A promise; to promise",
+      "gloss_ja": "約束（する）",
+      "pos": "noun / verb",
+      "affix_tag": "root",
+      "note": "A promise; to promise. You know it from temu janji (Ch13). Janji!",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-020",
+      "lang": "ms",
+      "term": "batal",
+      "gloss_en": "to cancel; cancelled",
+      "gloss_ja": "取り消す・中止になる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To cancel; cancelled. Mendaki batal.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c14-f01",
+      "frame": "Kalau ___, kita makan di kafe.",
+      "example": "Kalau hujan, kita makan di kafe.",
+      "meaning_en": "If it rains, we'll eat at the cafe.",
+      "meaning_ja": "雨が降ったら、カフェで食べましょう。"
+    },
+    {
+      "id": "ms-c14-f02",
+      "frame": "Saya tidak datang kerana saya ___.",
+      "example": "Saya tidak datang kerana saya bekerja.",
+      "meaning_en": "I'm not coming because I'm working.",
+      "meaning_ja": "仕事があるので、行きません。"
+    },
+    {
+      "id": "ms-c14-f03",
+      "frame": "Saya bangun awal supaya saya tidak ___.",
+      "example": "Saya bangun awal supaya saya tidak lambat.",
+      "meaning_en": "I get up early so that I won't be late.",
+      "meaning_ja": "遅れないように、早く起きます。"
+    },
+    {
+      "id": "ms-c14-f04",
+      "frame": "Walaupun ___, saya mahu ___.",
+      "example": "Walaupun hujan, saya mahu berjalan kaki.",
+      "meaning_en": "Even though it's raining, I want to walk.",
+      "meaning_ja": "雨でも、歩いて行きたいです。"
+    },
+    {
+      "id": "ms-c14-f05",
+      "frame": "Dia makan sambil ___.",
+      "example": "Dia makan sambil membaca surat khabar.",
+      "meaning_en": "He eats while reading the newspaper.",
+      "meaning_ja": "彼は新聞を読みながら食べます。"
+    },
+    {
+      "id": "ms-c14-f06",
+      "frame": "Mula-mula kita ___, kemudian kita ___, akhirnya kita ___.",
+      "example": "Mula-mula kita makan, kemudian kita berjalan kaki, akhirnya kita balik.",
+      "meaning_en": "First we eat, then we walk, finally we go home.",
+      "meaning_ja": "まず食べて、それから歩いて、最後に帰ります。"
+    }
+  ],
+  "scenario": {
+    "title_en": "Rain, work and a changed plan",
+    "title_ja": "雨と仕事と予定変更",
+    "lines": [
+      {
+        "id": "ms-c14-s01",
+        "speaker": "Tanaka",
+        "ms": "Cik Mei Ling, hujung minggu ini kita masih mahu mendaki?",
+        "en": "Mei Ling, do we still want to go hiking this weekend?"
+      },
+      {
+        "id": "ms-c14-s02",
+        "speaker": "Cik Mei Ling",
+        "ms": "Masih. Tetapi cuaca mendung. Kalau hujan pada hari Sabtu, kita tidak boleh mendaki.",
+        "en": "Yes. But the weather is cloudy. If it rains on Saturday, we can't hike."
+      },
+      {
+        "id": "ms-c14-s03",
+        "speaker": "Tanaka",
+        "ms": "Kalau hujan, kita makan di kafe. Kalau tidak hujan, kita mendaki.",
+        "en": "If it rains, we'll eat at the cafe. If it doesn't rain, we'll hike."
+      },
+      {
+        "id": "ms-c14-s04",
+        "speaker": "Cik Mei Ling",
+        "ms": "Bagus! Tetapi saya tidak boleh datang pada hari Sabtu kerana saya bekerja.",
+        "en": "Great! But I can't come on Saturday because I'm working."
+      },
+      {
+        "id": "ms-c14-s05",
+        "speaker": "Tanaka",
+        "ms": "Ada dua pilihan: kita tangguh hingga hari Ahad atau hingga hari Sabtu depan.",
+        "en": "There are two choices: we put it off until Sunday or until next Saturday."
+      },
+      {
+        "id": "ms-c14-s06",
+        "speaker": "Cik Mei Ling",
+        "ms": "Hari Ahad lebih baik. Hari Ahad saya cuti. Janji!",
+        "en": "Sunday is better. I'm off on Sunday. I promise!"
+      },
+      {
+        "id": "ms-c14-s07",
+        "speaker": "Tanaka",
+        "ms": "Ada perubahan rancangan, tetapi tujuan kita sama: berehat dan berjalan.",
+        "en": "The plan has changed, but our purpose is the same: to rest and to walk."
+      },
+      {
+        "id": "ms-c14-s08",
+        "speaker": "Tanaka",
+        "ms": "Baik. Ini rancangan kita. Mula-mula kita berjumpa di stesen pukul tujuh. Kemudian kita mendaki. Akhirnya kita makan di kafe.",
+        "en": "Okay. This is our plan. First we meet at the station at seven. Then we hike. Finally we eat at the cafe."
+      },
+      {
+        "id": "ms-c14-s09",
+        "speaker": "Cik Mei Ling",
+        "ms": "Saya akan datang awal supaya kita tidak lambat.",
+        "en": "I'll come early so that we're not late."
+      },
+      {
+        "id": "ms-c14-s10",
+        "speaker": "Tanaka",
+        "ms": "Bagus. Walaupun saya penat, saya suka mendaki. Kita boleh bercakap sambil berjalan.",
+        "en": "Good. Even though I'm tired, I like hiking. We can talk while walking."
+      },
+      {
+        "id": "ms-c14-s11",
+        "speaker": "Cik Mei Ling",
+        "ms": "Kalau hujan lagi pada hari Ahad, bagaimana?",
+        "en": "What if it rains again on Sunday?"
+      },
+      {
+        "id": "ms-c14-s12",
+        "speaker": "Tanaka",
+        "ms": "Mendaki batal, tetapi kita masih makan di kafe. Itu keputusan kita.",
+        "en": "The hike is off, but we still eat at the cafe. That's our decision."
+      },
+      {
+        "id": "ms-c14-s13",
+        "speaker": "Cik Mei Ling",
+        "ms": "Baik. Saya sudah tulis mesej untuk kawan kita. Jika hujan, kita tangguh. Apabila cuaca cerah, kita mendaki.",
+        "en": "Fine. I've written a message for our friends. If it rains, we put it off. When the weather is clear, we hike."
+      },
+      {
+        "id": "ms-c14-s14",
+        "speaker": "Tanaka",
+        "ms": "Oh, itu bahasa mesej. Kalau kita bercakap, kita guna kalau dan bila, ya?",
+        "en": "Oh, that's message language. When we speak, we use kalau and bila, right?"
+      },
+      {
+        "id": "ms-c14-s15",
+        "speaker": "Cik Mei Ling",
+        "ms": "Ya, betul!",
+        "en": "Yes, exactly!"
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c14-001",
+      "ms-c14-002",
+      "ms-c14-003",
+      "ms-c14-004",
+      "ms-c14-005",
+      "ms-c14-008",
+      "ms-c14-009",
+      "ms-c14-013",
+      "ms-c14-014",
+      "ms-c14-015",
+      "ms-c14-016",
+      "ms-c14-018",
+      "ms-c14-019",
+      "ms-c14-020",
+      "ms-c05-064",
+      "ms-c05-059",
+      "ms-c07-048",
+      "ms-c03-070",
+      "ms-c03-069",
+      "ms-c05-007",
+      "ms-c07-026",
+      "ms-c04-060",
+      "ms-c09-041",
+      "ms-c04-050",
+      "ms-d-cuaca-hujan-01",
+      "ms-d-cuaca-hujan-04",
+      "ms-c11-023",
+      "ms-c10-010",
+      "ms-c04-055"
+    ],
+    "frames": [
+      "ms-c14-f01",
+      "ms-c14-f02"
+    ],
+    "scene": null
+  }
+}

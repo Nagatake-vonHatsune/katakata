@@ -150,24 +150,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-09",
-      "lang": "ms",
-      "term": "janji",
-      "gloss_en": "A promise; to promise",
-      "gloss_ja": "約束（する）",
-      "pos": "noun / verb",
-      "affix_tag": "root",
-      "note": "Hanashishou: Janji?",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social"
-        }
-      ],
-      "scene": "dunia-jambatan-social",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-10",
       "lang": "ms",
       "term": "jujurnya",

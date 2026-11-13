@@ -58,8 +58,8 @@ describe('katakana hints', () => {
 });
 
 describe('content', () => {
-  it('ships the nine Stage 1 chapters, chapters 10 to 13 and twenty Dunia scenes', () => {
-    expect(content.chapters.map((c) => c.chapter)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]);
+  it('ships the nine Stage 1 chapters, chapters 10 to 14 and twenty Dunia scenes', () => {
+    expect(content.chapters.map((c) => c.chapter)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
     expect(content.scenes.filter((s) => s.world.id !== 'jambatan')).toHaveLength(20);
   });
   it('every Dunia scene has enough pictures for Cari Benda', () => {

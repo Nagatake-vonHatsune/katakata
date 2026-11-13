@@ -467,7 +467,93 @@ def ch13(b):
         b.ks.append([f"ms-c13-s{i:02d}", 13, title, speaker, ms, en])
 
 
-CHAPTERS = {10: ch10, 11: ch11, 12: ch12, 13: ch13}
+def ch14(b):
+    """Chapter 14: reasons, conditions, purpose, contrast and sequence. No new affix family.
+
+    20 ledger rows in plan order: connectors (the formal ones beside their everyday partners, R5), sequence words,
+    four nouns and the "change of plan" words tangguh, janji and batal. kerana, kalau, tetapi, kemudian and the other
+    Stage 1 connectors are revision: the new work is joining clauses. Words with Stage 3 affixes (keputusan,
+    perubahan, tujuan, pilihan) are whole words.
+    """
+    whole = "Learn it as a whole word: {} words come in Stage 3."
+    cards = [
+        ("L-1201", "So that, for a purpose: Saya bangun awal supaya saya tidak lambat.", {}),
+        ("L-1202", "Although, even though. Learn it as a whole word. Root in the ledger: walau. Walaupun saya penat, saya suka mendaki.", {}),
+        ("L-1203", "If. Formal or written; everyday speech says «kalau» (Ch7): Kalau hujan, kita makan di kafe.", {}),
+        ("L-1204", "When. Formal or written; everyday speech says «bila» (Ch4).", {}),
+        ("L-1205", "While doing something else: Dia makan sambil membaca surat khabar.", {}),
+        ("L-1206", "However. Written only; everyday speech says «tapi» (Ch5).", {}),
+        ("L-1207", "Therefore. Formal; everyday speech says «jadi» (below). A fixed phrase: oleh (Ch9) + itu.", {}),
+        ("L-1208", "akhir + -nya: finally, at last. Akhirnya kita makan di kafe.", {}),
+        ("L-1209", "First, at first. Learn it as a whole word (repeated words come in Stage 3). Root in the ledger: mula (Ch4).", {}),
+        ("L-1210", "Next, after that. Formal; everyday speech says «lepas tu» (spoken). Learn it as a whole word. Root in the ledger: terus (Ch7).", {}),
+        ("L-1211", "During, when. Learn it as a whole word. Root in the ledger: masa (Ch4). Semasa mendaki, kita minum air.", {}),
+        ("L-1212", "Since: Sejak bulan lepas saya suka mendaki.", {}),
+        ("L-1213", "tuju + -an: purpose. Learn it as a whole word.", {}),
+        ("L-1214", "pilih (Ch6) + -an: a choice. Ada dua pilihan.", {}),
+        ("L-1215", whole.format("ke- … -an") + " Root in the ledger: putus. Decision, or result.", {}),
+        ("L-1216", whole.format("per- … -an") + " Root in the ledger: ubah. Perubahan rancangan = a change of plan.", {}),
+        ("L-1217", "So, therefore (everyday). The partner of the formal oleh itu: Jadi, boleh kita tangguh hingga hari Ahad?", {}),
+        ("L-0641", "To put off, to postpone: Boleh kita tangguh hingga hari Ahad?", {}),
+        ("L-0710", "A promise; to promise. You know it from temu janji (Ch13). Janji!", {}),
+        ("L-1218", "To cancel; cancelled. Mendaki batal.", {}),
+    ]
+    for lid, note, opt in cards:
+        kc(b, 14, lid, note, **opt)
+
+    # Frames: the plan's section 3 examples (Kalau hujan, kita makan di kafe. / Saya tidak datang kerana saya bekerja.),
+    # then the purpose, contrast, simultaneous and sequence patterns of the plan's five functions.
+    frames = [
+        ("ms-c14-f01", "Kalau ___, kita makan di kafe.", "Kalau hujan, kita makan di kafe.", "If it rains, we'll eat at the cafe."),
+        ("ms-c14-f02", "Saya tidak datang kerana saya ___.", "Saya tidak datang kerana saya bekerja.",
+         "I'm not coming because I'm working."),
+        ("ms-c14-f03", "Saya bangun awal supaya saya tidak ___.", "Saya bangun awal supaya saya tidak lambat.",
+         "I get up early so that I won't be late."),
+        ("ms-c14-f04", "Walaupun ___, saya mahu ___.", "Walaupun hujan, saya mahu berjalan kaki.",
+         "Even though it's raining, I want to walk."),
+        ("ms-c14-f05", "Dia makan sambil ___.", "Dia makan sambil membaca surat khabar.", "He eats while reading the newspaper."),
+        ("ms-c14-f06", "Mula-mula kita ___, kemudian kita ___, akhirnya kita ___.",
+         "Mula-mula kita makan, kemudian kita berjalan kaki, akhirnya kita balik.",
+         "First we eat, then we walk, finally we go home."),
+    ]
+    for fid, frame, example, meaning in frames:
+        b.add_frame(14, fid, frame, example, meaning)
+
+    # Scenario: the plan's scene (rearrange a weekend activity because of rain or a work commitment; a three-step plan with
+    # one condition and one alternative; both agree when and where, and what happens if the condition changes).
+    title = "Rain, work and a changed plan"
+    lines = [
+        ("Tanaka", "Cik Mei Ling, hujung minggu ini kita masih mahu mendaki?", "Mei Ling, do we still want to go hiking this weekend?"),
+        ("Cik Mei Ling", "Masih. Tetapi cuaca mendung. Kalau hujan pada hari Sabtu, kita tidak boleh mendaki.",
+         "Yes. But the weather is cloudy. If it rains on Saturday, we can't hike."),
+        ("Tanaka", "Kalau hujan, kita makan di kafe. Kalau tidak hujan, kita mendaki.",
+         "If it rains, we'll eat at the cafe. If it doesn't rain, we'll hike."),
+        ("Cik Mei Ling", "Bagus! Tetapi saya tidak boleh datang pada hari Sabtu kerana saya bekerja.",
+         "Great! But I can't come on Saturday because I'm working."),
+        ("Tanaka", "Ada dua pilihan: kita tangguh hingga hari Ahad atau hingga hari Sabtu depan.",
+         "There are two choices: we put it off until Sunday or until next Saturday."),
+        ("Cik Mei Ling", "Hari Ahad lebih baik. Hari Ahad saya cuti. Janji!", "Sunday is better. I'm off on Sunday. I promise!"),
+        ("Tanaka", "Ada perubahan rancangan, tetapi tujuan kita sama: berehat dan berjalan.",
+         "The plan has changed, but our purpose is the same: to rest and to walk."),
+        ("Tanaka", "Baik. Ini rancangan kita. Mula-mula kita berjumpa di stesen pukul tujuh. Kemudian kita mendaki. Akhirnya kita makan di kafe.",
+         "Okay. This is our plan. First we meet at the station at seven. Then we hike. Finally we eat at the cafe."),
+        ("Cik Mei Ling", "Saya akan datang awal supaya kita tidak lambat.", "I'll come early so that we're not late."),
+        ("Tanaka", "Bagus. Walaupun saya penat, saya suka mendaki. Kita boleh bercakap sambil berjalan.",
+         "Good. Even though I'm tired, I like hiking. We can talk while walking."),
+        ("Cik Mei Ling", "Kalau hujan lagi pada hari Ahad, bagaimana?", "What if it rains again on Sunday?"),
+        ("Tanaka", "Mendaki batal, tetapi kita masih makan di kafe. Itu keputusan kita.",
+         "The hike is off, but we still eat at the cafe. That's our decision."),
+        ("Cik Mei Ling", "Baik. Saya sudah tulis mesej untuk kawan kita. Jika hujan, kita tangguh. Apabila cuaca cerah, kita mendaki.",
+         "Fine. I've written a message for our friends. If it rains, we put it off. When the weather is clear, we hike."),
+        ("Tanaka", "Oh, itu bahasa mesej. Kalau kita bercakap, kita guna kalau dan bila, ya?",
+         "Oh, that's message language. When we speak, we use kalau and bila, right?"),
+        ("Cik Mei Ling", "Ya, betul!", "Yes, exactly!"),
+    ]
+    for i, (speaker, ms, en) in enumerate(lines, 1):
+        b.ks.append([f"ms-c14-s{i:02d}", 14, title, speaker, ms, en])
+
+
+CHAPTERS = {10: ch10, 11: ch11, 12: ch12, 13: ch13, 14: ch14}
 
 
 def main():
