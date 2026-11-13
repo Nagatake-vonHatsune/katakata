@@ -34,13 +34,17 @@ export interface WordLibrary {
   student: string;
   exportedAt: string;
   uiLang: AppState['settings']['lang'];
-  /** Hanashishou band to start Malay at: 2 once every class chapter is "ready", else 1. */
+  /** Hanashishou band to start Malay at: 2 once every Stage 1 class chapter (1 to 9) is "ready", else 1. */
   suggestedBand: 1 | 2;
   words: WordLibraryEntry[];
 }
 
+// Stage 1 (A1) is chapters 1 to 9; Stage 2 chapters (10 and later) do not move the starting band.
+export const STAGE1_LAST_CHAPTER = 9;
+
 export function suggestedBand(s: AppState): 1 | 2 {
-  return content.chapters.length > 0 && content.chapters.every((c) => isReady(c.chapter, s)) ? 2 : 1;
+  const stage1 = content.chapters.filter((c) => c.chapter <= STAGE1_LAST_CHAPTER);
+  return stage1.length > 0 && stage1.every((c) => isReady(c.chapter, s)) ? 2 : 1;
 }
 
 /** Every word the learner has met (has a schedule for), with its SM-2 state. */

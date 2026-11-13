@@ -222,24 +222,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-13",
-      "lang": "ms",
-      "term": "sepupu",
-      "gloss_en": "Cousin",
-      "gloss_ja": "いとこ",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Saya pergi kenduri kahwin sepupu saya.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social"
-        }
-      ],
-      "scene": "dunia-jambatan-social",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-14",
       "lang": "ms",
       "term": "lenguh",

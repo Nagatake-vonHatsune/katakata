@@ -1,0 +1,961 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "kelas",
+  "id": "c10",
+  "chapter": 10,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Kata Kerja ber-",
+    "en": "ber- verbs",
+    "ja": "ber- の動詞"
+  },
+  "cards": [
+    {
+      "id": "ms-c10-001",
+      "lang": "ms",
+      "term": "bekerja",
+      "gloss_en": "to work",
+      "gloss_ja": "働く",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + kerja (Ch2). Spelt be-: the first syllable of kerja ends in -er. Standard for «Saya kerja di …»: Saya bekerja di Kuala Lumpur.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-002",
+      "lang": "ms",
+      "term": "berjalan",
+      "gloss_en": "to walk",
+      "gloss_ja": "歩く",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + jalan (Ch7). Saya berjalan ke pejabat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-003",
+      "lang": "ms",
+      "term": "bercakap",
+      "gloss_en": "to speak",
+      "gloss_ja": "話す",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + cakap (Ch2). The standard form: Saya bercakap bahasa Melayu dengan jiran saya.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-004",
+      "lang": "ms",
+      "term": "bermain",
+      "gloss_en": "to play",
+      "gloss_ja": "遊ぶ・スポーツをする",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + main (Ch2). Saya bermain badminton.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-005",
+      "lang": "ms",
+      "term": "berehat",
+      "gloss_en": "to rest",
+      "gloss_ja": "休む",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + rehat. Spelt be- before r: berehat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-006",
+      "lang": "ms",
+      "term": "bersenam",
+      "gloss_en": "to exercise",
+      "gloss_ja": "運動する",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + senam.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-007",
+      "lang": "ms",
+      "term": "berenang",
+      "gloss_en": "to swim",
+      "gloss_ja": "泳ぐ",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + renang. Spelt be- before r: berenang.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-008",
+      "lang": "ms",
+      "term": "berlari",
+      "gloss_en": "to run",
+      "gloss_ja": "走る",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + lari.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-009",
+      "lang": "ms",
+      "term": "berbasikal",
+      "gloss_en": "to cycle",
+      "gloss_ja": "自転車に乗る",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + basikal (Dunia, Ch7).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-010",
+      "lang": "ms",
+      "term": "berjumpa",
+      "gloss_en": "to meet",
+      "gloss_ja": "会う",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + jumpa (Ch1). Jumpa lagi! is everyday; the verb: Saya berjumpa dengan kawan saya.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-011",
+      "lang": "ms",
+      "term": "berbual",
+      "gloss_en": "to chat",
+      "gloss_ja": "おしゃべりする",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + bual. Nanti kita berbual lagi.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-012",
+      "lang": "ms",
+      "term": "beratur",
+      "gloss_en": "to queue",
+      "gloss_ja": "列に並ぶ",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + atur. Sila beratur.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-013",
+      "lang": "ms",
+      "term": "bersarapan",
+      "gloss_en": "to have breakfast (standard; sarapan alone is everyday)",
+      "gloss_ja": "朝食をとる",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + sarapan (Ch4). Everyday speech often just says sarapan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-014",
+      "lang": "ms",
+      "term": "bermula",
+      "gloss_en": "to begin",
+      "gloss_ja": "始まる",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + mula (Ch4). Mesyuarat bermula pukul sembilan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-015",
+      "lang": "ms",
+      "term": "berhenti",
+      "gloss_en": "to stop",
+      "gloss_ja": "止まる・やめる",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + henti. Bas berhenti di sini. Careful: berhenti kerja = to quit a job.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-016",
+      "lang": "ms",
+      "term": "bersiap",
+      "gloss_en": "To get ready",
+      "gloss_ja": "準備する、したくする",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + siap (Ch9). Saya bersiap untuk ke pejabat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-017",
+      "lang": "ms",
+      "term": "bersedia",
+      "gloss_en": "To be ready or prepared (standard form of \"sedia\")",
+      "gloss_ja": "準備ができている（「sedia」の標準形）",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + sedia. Saya sudah bersedia.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-018",
+      "lang": "ms",
+      "term": "berlatih",
+      "gloss_en": "to practise",
+      "gloss_ja": "練習する",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + latih.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-019",
+      "lang": "ms",
+      "term": "rutin",
+      "gloss_en": "routine",
+      "gloss_ja": "日課",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Itu rutin saya setiap hari.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-020",
+      "lang": "ms",
+      "term": "bertolak",
+      "gloss_en": "to set off; to depart",
+      "gloss_ja": "出発する",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + tolak (push, Ch9): with ber- the meaning changes to 'set off'. Pukul berapa kita bertolak?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-021",
+      "lang": "ms",
+      "term": "berumur",
+      "gloss_en": "to be aged (standard; Umur saya ... is everyday)",
+      "gloss_ja": "〜歳である",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + umur (Ch3). Standard; everyday speech says «Umur saya …».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-022",
+      "lang": "ms",
+      "term": "berkahwin",
+      "gloss_en": "to be married / get married",
+      "gloss_ja": "結婚している・結婚する",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + kahwin. Saya sudah berkahwin.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-023",
+      "lang": "ms",
+      "term": "berkeluarga",
+      "gloss_en": "to have a family",
+      "gloss_ja": "家庭を持つ",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + keluarga (Ch2).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-024",
+      "lang": "ms",
+      "term": "berasal",
+      "gloss_en": "to originate / come from",
+      "gloss_ja": "〜の出身である",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + asal (Ch2). Asal saya dari Osaka. = Saya berasal dari Osaka.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-025",
+      "lang": "ms",
+      "term": "bernama",
+      "gloss_en": "to be named (written or formal; Nama saya ... is everyday)",
+      "gloss_ja": "〜という名前である",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + nama (Ch2). Written or formal; everyday speech says «Nama saya …».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-026",
+      "lang": "ms",
+      "term": "bersekolah",
+      "gloss_en": "to attend school",
+      "gloss_ja": "学校に通う",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + sekolah (Ch2). Anak saya masih bersekolah.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-027",
+      "lang": "ms",
+      "term": "berkawan",
+      "gloss_en": "to be friends",
+      "gloss_ja": "友達になる・付き合う",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + kawan (Ch2).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-028",
+      "lang": "ms",
+      "term": "berjiran",
+      "gloss_en": "To live as neighbours (hidup berjiran = neighbourly living)",
+      "gloss_ja": "隣同士で暮らす（hidup berjiran＝近所付き合い）",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + jiran (this chapter). Kami berjiran. = We are neighbours.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-029",
+      "lang": "ms",
+      "term": "berpindah",
+      "gloss_en": "to move home",
+      "gloss_ja": "引っ越す",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + pindah (this chapter). The standard form: Saya baru berpindah ke sini.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-030",
+      "lang": "ms",
+      "term": "bercuti",
+      "gloss_en": "to be on leave / holiday",
+      "gloss_ja": "休暇をとる",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + cuti (Dunia, Ch2). Saya bercuti minggu depan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-031",
+      "lang": "ms",
+      "term": "berniaga",
+      "gloss_en": "to trade / run a business",
+      "gloss_ja": "商売をする",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + niaga.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-032",
+      "lang": "ms",
+      "term": "berbelanja",
+      "gloss_en": "to spend money; to shop (belanja alone means to treat someone)",
+      "gloss_ja": "お金を使う・買い物をする",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + belanja. belanja on its own (to treat someone) comes in Ch17.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-033",
+      "lang": "ms",
+      "term": "berkumpul",
+      "gloss_en": "to gather",
+      "gloss_ja": "集まる",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + kumpul.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-034",
+      "lang": "ms",
+      "term": "berkenalan",
+      "gloss_en": "To get to know someone; to be introduced",
+      "gloss_ja": "知り合いになる、自己紹介し合う",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + kenalan. You know it from Selamat berkenalan (Ch1).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-035",
+      "lang": "ms",
+      "term": "berminat",
+      "gloss_en": "to be interested",
+      "gloss_ja": "興味がある",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + minat. Saya berminat untuk belajar bahasa Melayu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-036",
+      "lang": "ms",
+      "term": "berpakaian",
+      "gloss_en": "to wear clothes / be dressed",
+      "gloss_ja": "服を着ている",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + pakaian (root pakai, to wear: Dunia, Ch4). Mostly in berpakaian kemas (neatly dressed).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-037",
+      "lang": "ms",
+      "term": "jiran",
+      "gloss_en": "Neighbour",
+      "gloss_ja": "隣人、近所の人",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Jiran saya baik. Also in berjiran.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-038",
+      "lang": "ms",
+      "term": "sepupu",
+      "gloss_en": "Cousin",
+      "gloss_ja": "いとこ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Sepupu saya tinggal di Osaka.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-039",
+      "lang": "ms",
+      "term": "pengalaman",
+      "gloss_en": "experience",
+      "gloss_ja": "経験",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "Learn it as a whole word: pe- … -an words come in Stage 3. Root in the ledger: alam.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-040",
+      "lang": "ms",
+      "term": "berdua",
+      "gloss_en": "the two together",
+      "gloss_ja": "二人で",
+      "pos": "adv",
+      "affix_tag": "ber-",
+      "note": "ber- + dua (Ch3): the two of us, as a pair. Kami tinggal berdua.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-041",
+      "lang": "ms",
+      "term": "pindah",
+      "gloss_en": "To move (house) (berpindah in standard writing)",
+      "gloss_ja": "引っ越す（標準の書き言葉では berpindah）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Spoken: the everyday word for berpindah. Saya baru pindah. Recognise only.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10,
+      "recognise_only": true
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-c10-f01",
+      "frame": "Setiap pagi saya ___ pukul ___.",
+      "example": "Setiap pagi saya bertolak pukul tujuh.",
+      "meaning_en": "Every morning I set off at seven.",
+      "meaning_ja": "毎朝7時に出発します。"
+    },
+    {
+      "id": "ms-c10-f02",
+      "frame": "Pukul berapa ___ bermula / kita bertolak?",
+      "example": "Pukul berapa kita bertolak?",
+      "meaning_en": "What time do we set off?",
+      "meaning_ja": "何時に出発しますか。"
+    },
+    {
+      "id": "ms-c10-f03",
+      "frame": "Pada hujung minggu saya suka ___.",
+      "example": "Pada hujung minggu saya suka berenang dan berbasikal.",
+      "meaning_en": "At the weekend I like swimming and cycling.",
+      "meaning_ja": "週末は泳いだり、自転車に乗ったりするのが好きです。"
+    },
+    {
+      "id": "ms-c10-f04",
+      "frame": "Saya bercakap / berbual dengan ___.",
+      "example": "Saya bercakap bahasa Melayu dengan jiran saya.",
+      "meaning_en": "I speak Malay with my neighbour.",
+      "meaning_ja": "隣の人とマレー語で話します。"
+    },
+    {
+      "id": "ms-c10-f05",
+      "frame": "Saya berasal dari ___. Saya bekerja di ___.",
+      "example": "Saya berasal dari Osaka. Saya bekerja di Kuala Lumpur.",
+      "meaning_en": "I'm from Osaka. I work in Kuala Lumpur.",
+      "meaning_ja": "大阪出身です。クアラルンプールで働いています。"
+    },
+    {
+      "id": "ms-c10-f06",
+      "frame": "Saya sudah / belum ___.",
+      "example": "Saya sudah berkahwin.",
+      "meaning_en": "I'm married.",
+      "meaning_ja": "結婚しています。"
+    }
+  ],
+  "scenario": {
+    "title_en": "A working day and a new neighbour",
+    "title_ja": "いつもの一日と新しいお隣さん",
+    "lines": [
+      {
+        "id": "ms-c10-s01",
+        "speaker": "Puan Aini",
+        "ms": "Selamat pagi, Encik Tanaka! Biasanya pukul berapa encik bertolak ke pejabat?",
+        "en": "Good morning, Mr Tanaka! What time do you usually set off for the office?"
+      },
+      {
+        "id": "ms-c10-s02",
+        "speaker": "Tanaka",
+        "ms": "Saya bertolak pukul tujuh. Saya naik bas. Bas itu berhenti di depan pejabat.",
+        "en": "I set off at seven. I take the bus. It stops in front of the office."
+      },
+      {
+        "id": "ms-c10-s03",
+        "speaker": "Puan Aini",
+        "ms": "Encik bersarapan di rumah?",
+        "en": "Do you have breakfast at home?"
+      },
+      {
+        "id": "ms-c10-s04",
+        "speaker": "Tanaka",
+        "ms": "Tidak. Saya bersarapan di kedai mamak dekat pejabat.",
+        "en": "No. I have breakfast at the mamak near the office."
+      },
+      {
+        "id": "ms-c10-s05",
+        "speaker": "Puan Aini",
+        "ms": "Pada hujung minggu pula, encik buat apa?",
+        "en": "And at the weekend, what do you do?"
+      },
+      {
+        "id": "ms-c10-s06",
+        "speaker": "Tanaka",
+        "ms": "Pada hari Sabtu saya berenang. Pada hari Ahad saya berbasikal dengan kawan.",
+        "en": "On Saturday I swim. On Sunday I go cycling with a friend."
+      },
+      {
+        "id": "ms-c10-s07",
+        "speaker": "Puan Aini",
+        "ms": "Wah, encik selalu bersenam! Saya pula suka berehat di rumah.",
+        "en": "Wow, you exercise a lot! Me, I like to rest at home."
+      },
+      {
+        "id": "ms-c10-s08",
+        "speaker": "Tanaka",
+        "ms": "Itu pun bagus!",
+        "en": "That's good too!"
+      },
+      {
+        "id": "ms-c10-s09",
+        "speaker": "Puan Aini",
+        "ms": "Oh, sudah pukul sembilan. Mesyuarat kita bermula sekarang!",
+        "en": "Oh, it's nine already. Our meeting starts now!"
+      },
+      {
+        "id": "ms-c10-s10",
+        "speaker": "Puan Siti",
+        "ms": "Selamat petang. Encik jiran baru, ya?",
+        "en": "Good evening. You're the new neighbour, aren't you?"
+      },
+      {
+        "id": "ms-c10-s11",
+        "speaker": "Tanaka",
+        "ms": "Ya, saya baru berpindah minggu lepas. Nama saya Tanaka. Saya berasal dari Osaka.",
+        "en": "Yes, I moved in last week. My name is Tanaka. I'm from Osaka."
+      },
+      {
+        "id": "ms-c10-s12",
+        "speaker": "Puan Siti",
+        "ms": "Selamat berkenalan! Saya Siti. Encik bekerja di mana?",
+        "en": "Nice to meet you! I'm Siti. Where do you work?"
+      },
+      {
+        "id": "ms-c10-s13",
+        "speaker": "Tanaka",
+        "ms": "Saya bekerja di sebuah syarikat Jepun di Kuala Lumpur. Puan pula?",
+        "en": "I work at a Japanese company in Kuala Lumpur. And you?"
+      },
+      {
+        "id": "ms-c10-s14",
+        "speaker": "Puan Siti",
+        "ms": "Saya berniaga. Saya ada kedai kek dekat stesen.",
+        "en": "I run a business. I have a cake shop near the station."
+      },
+      {
+        "id": "ms-c10-s15",
+        "speaker": "Tanaka",
+        "ms": "Puan sudah lama tinggal di sini?",
+        "en": "Have you lived here long?"
+      },
+      {
+        "id": "ms-c10-s16",
+        "speaker": "Puan Siti",
+        "ms": "Sudah sepuluh tahun. Saya sudah berkahwin. Dua orang anak saya masih bersekolah.",
+        "en": "Ten years now. I'm married. My two children are still at school."
+      },
+      {
+        "id": "ms-c10-s17",
+        "speaker": "Tanaka",
+        "ms": "Saya pula tinggal berdua dengan isteri saya.",
+        "en": "And I live with my wife, just the two of us."
+      },
+      {
+        "id": "ms-c10-s18",
+        "speaker": "Puan Siti",
+        "ms": "Pada hari Ahad, kami berkumpul di rumah saya. Encik datang, ya!",
+        "en": "On Sunday we're getting together at my place. Do come!"
+      },
+      {
+        "id": "ms-c10-s19",
+        "speaker": "Tanaka",
+        "ms": "Baik, terima kasih! Nanti kita berbual lagi.",
+        "en": "Sure, thank you! Let's chat again later."
+      }
+    ]
+  },
+  "sedia_kelas": {
+    "cards": [
+      "ms-c10-001",
+      "ms-c10-003",
+      "ms-c10-005",
+      "ms-c10-006",
+      "ms-c10-007",
+      "ms-c10-009",
+      "ms-c10-011",
+      "ms-c10-013",
+      "ms-c10-014",
+      "ms-c10-015",
+      "ms-c10-020",
+      "ms-c10-022",
+      "ms-c10-024",
+      "ms-c10-026",
+      "ms-c10-029",
+      "ms-c10-031",
+      "ms-c10-033",
+      "ms-c10-034",
+      "ms-c10-037",
+      "ms-c10-040",
+      "ms-c02-030",
+      "ms-c07-027",
+      "ms-c02-064",
+      "ms-c02-039",
+      "ms-c02-034",
+      "ms-c04-058",
+      "ms-c04-057",
+      "ms-c03-033",
+      "ms-c09-042",
+      "ms-c04-052",
+      "ms-c02-027",
+      "ms-c02-032",
+      "ms-c03-003"
+    ],
+    "frames": [
+      "ms-c10-f01",
+      "ms-c10-f02"
+    ],
+    "scene": null
+  }
+}

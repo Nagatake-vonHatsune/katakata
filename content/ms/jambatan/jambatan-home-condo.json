@@ -222,24 +222,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-home-condo-12",
-      "lang": "ms",
-      "term": "jiran",
-      "gloss_en": "Neighbour",
-      "gloss_ja": "隣人、近所の人",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Dia jiran saya.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-home-condo-13",
       "lang": "ms",
       "term": "paip",
@@ -338,24 +320,6 @@
       "pos": "noun",
       "affix_tag": "chunk",
       "note": "Hanashishou: Saya jumpa jiran di lobi lif.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-19",
-      "lang": "ms",
-      "term": "pindah",
-      "gloss_en": "To move (house) (berpindah in standard writing)",
-      "gloss_ja": "引っ越す（標準の書き言葉では berpindah）",
-      "pos": "verb",
-      "affix_tag": "root",
-      "note": "Hanashishou: Saya baru pindah.",
       "links": [
         {
           "type": "babak",

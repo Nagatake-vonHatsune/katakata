@@ -76,7 +76,7 @@
         "gloss_en": { "type": "string" },
         "gloss_ja": { "type": "string" },
         "pos": { "type": "string" },
-        "affix_tag": { "enum": ["root", "chunk", "chunk*", "lex", "pe-", "pe(N)-", "-an", "ke-", "ke-an", "se-", "ter-", "di-", "-kah", "-nya"] },
+        "affix_tag": { "enum": ["root", "chunk", "chunk*", "lex", "pe-", "pe(N)-", "-an", "ke-", "ke-an", "se-", "ter-", "di-", "-kah", "-nya", "ber-", "meN-", "-kan", "-i", "meN- -kan", "meN- -i", "di- -kan", "pe-an", "per-an"] },
         "note": { "type": ["string", "null"] },
         "links": {
           "type": "array",

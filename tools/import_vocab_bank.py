@@ -88,7 +88,7 @@ def main(xlsx):
     for r in index:
         primes.setdefault(int(r["Primes chapter"]), r["Scene ID"])
 
-    for ch in range(1, 10):
+    for ch in sorted({int(v["Chapter"]) for v in vocab}):
         cid = f"c{ch:02d}"
         ch_frames = [f for f in frames if f["Chapter"] == ch]
         ch_scen = [s for s in scen if s["Chapter"] == ch]

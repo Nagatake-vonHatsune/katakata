@@ -58,12 +58,19 @@ describe('katakana hints', () => {
 });
 
 describe('content', () => {
-  it('ships all nine chapters and twenty Dunia scenes', () => {
-    expect(content.chapters.map((c) => c.chapter)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  it('ships the nine Stage 1 chapters, chapter 10 and twenty Dunia scenes', () => {
+    expect(content.chapters.map((c) => c.chapter)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
     expect(content.scenes.filter((s) => s.world.id !== 'jambatan')).toHaveLength(20);
   });
   it('every Dunia scene has enough pictures for Cari Benda', () => {
     for (const s of content.scenes.filter((x) => x.world.id !== 'jambatan')) expect(s.cards.filter((c) => c.image).length, s.id).toBeGreaterThanOrEqual(4);
+  });
+  it('chapter 10 reviews its chapter 1 to 9 roots in Sedia Kelas, and pindah is recognise-only', () => {
+    const c10 = content.chapters.find((c) => c.chapter === 10)!;
+    const review = c10.sedia_kelas.cards.filter((id) => !id.startsWith('ms-c10-'));
+    expect(review.length).toBeGreaterThan(0);
+    for (const id of review) expect(content.cards.get(id)!.chapter, id).toBeLessThan(10);
+    expect(c10.cards.find((c) => c.term === 'pindah')!.recognise_only).toBe(true);
   });
   it('learning path starts with Chapter 1 core words and has no duplicates', () => {
     expect(content.cards.get(content.path[0])!.chapter).toBe(1);
