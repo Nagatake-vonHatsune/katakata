@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+- **Stage 2 step 3c: Malay fixes to chapters 12 to 18 (13 Nov 2026), 1115 to 1116 cards.** Report: [docs/STAGE-2-step3c-report.md](docs/STAGE-2-step3c-report.md).
+  - 18 lines changed after Sam's review (c12 1, c13 3, c15 3, c16 2, c17 6, c18 3), each checked with `tools/stage-check.mjs` first:
+    «Borang ini wajib diisi», «Sudikah encik datang?», «Seperti ini?» / «Ya, seperti itu, tetapi ada zip.», «Takpelah», Tanaka's refusal
+    with «tidak boleh tahan pedas» and others. New standard card L-1267 «tidak boleh tahan» (ledger cell J1268, Journal rows 179 to 183).
+  - Seven lines keep their old wording because the new form has no ledger row (memakai, berwarna, tangguhkan, batalkan, mendaftar);
+    L-0690 «tak tahan» is still not built because the shared register pair wants «tidak tahan». Questions in the report.
+  - The checker reads written «-lah» («takpelah») from chapter 17 (Kata-Kata only); `fun.cjs` is deterministic (seeded `Math.random`).
+  - The ledger snapshot now includes Sam's 16 Affix tags; cards follow them (c16 ter- cards).
+
 - **Stage 2 chapters 11 to 18 (13 Nov 2026), 958 to 1115 cards.** Report: [docs/STAGE-2-c11-c18-report.md](docs/STAGE-2-c11-c18-report.md).
   One commit per chapter, each with the ledger write-back (235 cells of card IDs and places, verified by a full read-back) and
   Journal rows 153 to 175.

@@ -1,18 +1,18 @@
 # Kata-Kata hand-off
 
-Last updated 13 Nov 2026 (Stage 2 build step 3b done: packs c11 to c18, [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
+Last updated 13 Nov 2026 (Stage 2 build step 3c done: Malay fixes to c12 to c18, [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
 Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-1.0.md).
 
 ## State
 
-- 43 live packs, 1115 cards: Kelas chapters 1 to 18 (chapter 18 is a review pack with no cards of its own), 20 Dunia scenes,
+- 43 live packs, 1116 cards: Kelas chapters 1 to 18 (chapter 18 is a review pack with no cards of its own), 20 Dunia scenes,
   5 Jambatan scenes.
 - Workbook: `content/source/2026-11-13_KataKata_VocabBank_v6.xlsx`, built by `tools/make_vocab_bank_v6.py` (v5 + chapters 10 to 18).
-- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the chapter 17 write-back (L-0001 to L-1266; chapter 18 has no ledger cells).
+- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the step 3c write-back (L-0001 to L-1267; chapter 18 has no ledger cells).
 - Affix guard: stage-aware, rules from Cikgu Sensai `56627dc` (`content/rules/`).
 - Kata-Kata's half of Stage 2 (build step 3) is finished. Next: Cikgu Sensai step 4 (suites c10 to c17, step 5 chapter 18) and
   Hanashishou step 6; Cikgu Sensai should refresh `curriculum/reference/katakata/` with `c10.json` to `c18.json` and the ledger
-  copy (this repo does not edit it). Open questions for Sam: [STAGE-2-c11-c18-report.md](STAGE-2-c11-c18-report.md) section 5.
+  copy (this repo does not edit it). Open questions for Sam: [STAGE-2-step3c-report.md](STAGE-2-step3c-report.md) section 6 (and [STAGE-2-c11-c18-report.md](STAGE-2-c11-c18-report.md) section 5).
 
 ## Backlog
 
@@ -21,8 +21,9 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
   pattern (a Dunia scene with pictures, `Note`/emoji images in `tools/import-overrides.json`, at least 4 picture cards, see
   `tests/unit/core.test.ts` "every Dunia scene has enough pictures"), using only words placed up to chapter 10. Chapters 11 to 18
   get a picture scene only if the plan names one (it names none).
-- Ledger tags for the 13 blank rows and the three `root` ter- rows (see the report, question 2): a ledger session.
-- L-0690 «tak tahan» (needs a «tidak tahan» row, report question 1) and the end-of-project Kamus Dewan and native Japanese checks.
+- **L-0690 «tak tahan»** is not built: the shared register pair R3 says «tidak tahan», Sam's standard is «tidak boleh tahan» (L-1267, built). When Cikgu Sensai's pair reads «tidak boleh tahan», copy the rules, add the card after L-1267 in `ch17` (the approved note is a comment there) and drop `ms-j-office-14`.
+- **Seven lines kept with their old wording** because the new form has no ledger row (memakai, berwarna, tangguhkan, batalkan, mendaftar): see [STAGE-2-step3c-report.md](STAGE-2-step3c-report.md) section 2. Add the rows (Sam), then apply the wording.
+- The end-of-project Kamus Dewan and native Japanese checks.
 
 ## Chapter template (how c10 to c18 were built)
 
@@ -95,15 +96,17 @@ npx vite build && npx vite preview --port 4173 &
 node tests/e2e/smoke.cjs && node tests/e2e/fun.cjs
 ```
 
-- The script always starts from v5 and the ledger at `LEDGER_BASELINE` (`323b5fc`), and rebuilds every chapter function, so
+- The script always starts from v5 and the ledger at `LEDGER_BASELINE` (`c3e4a5a`), and rebuilds every chapter function, so
   earlier packs must come out unchanged (`git diff content/ms/kelas` shows only the new pack). The bridge importer must change
   only the Jambatan cards whose words became class cards. Re-run the script a second time and compare: it must be identical.
 - If the ledger rows for the new chapter changed after `323b5fc` (a ledger session edited them), bump `LEDGER_BASELINE` to the
   new snapshot commit and check that the earlier chapters still rebuild unchanged (done once, acff0ca to 323b5fc: four ber- tags).
 - `node tools/stage-check.mjs N "<line>"` checks one line at a time, so it reports every spoken form as unlabelled and every
   standard form as untaught; the real verdict on spoken forms is `npm run content:check` (the guard runs the whole sequence).
-- `tests/e2e/fun.cjs` can fail once at "a right answer shows a points badge" (it clicks the first option, so it needs one lucky
-  answer in 25 steps); it passed 9 of 9 reruns. Rerun it before suspecting the content.
+- `tests/e2e/fun.cjs` seeds `Math.random`, so the practice run is the same every time (it used to need one lucky first-option
+  click in 25 steps). A failure now means the content or the app changed.
+- The checker also reads written «-lah» joined to a word («takpelah») from chapter 17: a Kata-Kata addition (`tools/stage-rules.mjs`,
+  tests in `tests/unit/stage-rules.test.ts`), not in Cikgu Sensai's Python checker.
 - Update `tests/unit/core.test.ts` ("ships the … chapters") with the new chapter number.
 - Commit the pack, workbook, script and overrides together ("Chapter N pack: …").
 

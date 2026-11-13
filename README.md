@@ -20,7 +20,7 @@ and Japanese glosses). Katakana hints only appear in the Japanese interface.
 | Spec item | Where |
 |---|---|
 | Onboarding: name, voice check, iOS "Add to Home Screen" step | `src/views/onboarding.ts` |
-| Kelas chapters 1 to 18 (Stage 1 and Stage 2; chapter 18 is a review pack), 20 Dunia scenes and 5 Jambatan scenes (1115 cards) | `content/ms/` (packs with `"status": "live"`) |
+| Kelas chapters 1 to 18 (Stage 1 and Stage 2; chapter 18 is a review pack), 20 Dunia scenes and 5 Jambatan scenes (1116 cards) | `content/ms/` (packs with `"status": "live"`) |
 | 今日の練習: due reviews, then 5–8 new words, one frame drill, one Cari Benda round | `src/core/session.ts` |
 | Kad Kata, Cari Benda, Susun Ayat | `src/games/<id>/` (common `Game` interface) |
 | 授業の準備 (Sedia Kelas) with "Ready" stamp | `src/views/modes.ts` |
