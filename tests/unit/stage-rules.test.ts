@@ -15,8 +15,8 @@ describe('stage rules (shared with Cikgu Sensai)', () => {
     for (const [name, f] of Object.entries<{ sha256: string }>(source.files))
       expect(createHash('sha256').update(readFileSync(join(rulesDir, name))).digest('hex'), name).toBe(f.sha256);
   });
-  it('runs all 81 shared fixtures with the expected result', () => {
-    expect(cases).toHaveLength(81);
+  it('runs all 95 shared fixtures (including expect_gaps / expect_no_gaps) with the expected result', () => {
+    expect(cases).toHaveLength(95);
     const wrong = cases.filter((c: any) => !fixtureAgrees(c, runFixtureCase(checker, c))).map((c: any) => c.id);
     expect(wrong).toEqual([]);
   });
@@ -81,18 +81,27 @@ describe('stage-aware affix guard', () => {
   });
 });
 
-describe('Hanashishou bridge-batch rows (Kata-Kata addition, step 6b, 14 Nov 2026)', () => {
+describe('rows with no chapter (shared rule, Cikgu Sensai step 6c-1, rules commit 909596e)', () => {
   const seg = (chapter: number, text: string) => [{ unit: `fixture-c${chapter}`, chapter, source: 'fixture', text, kind: 'model' }];
-  const row = (id: string, malay: string, origin: string, place = '') => ({ ID: id, Malay: malay, 'Kata-Kata place': place, 'Affix tag': 'root', Origin: origin, 'Review status': 'Draft', POS: '' });
-  const keys = (c: any, text: string) => Object.values(c.inspect(seg(10, text)).violations).map((e: any) => `${e.check}:${e.term}`);
-  it('an unplaced bridge row is not a ledger entry (it must not turn «biasanya» into biasa + -nya)', () => {
-    const base = [row('L-0001', 'biasanya', 'Vocab Bank v2', 'Ch10')];
-    const withBridge = [...base, row('L-1351', 'biasa', 'Hanashishou bridge batch 1 (Sam approved 14 Nov)')];
+  const row = (id: string, malay: string, place = '', extra: Record<string, string> = {}) => ({ ID: id, Malay: malay, 'Kata-Kata place': place, 'Affix tag': 'root', Origin: 'Hanashishou bridge batch 1', 'Review status': 'Draft', POS: '', ...extra });
+  const keys = (c: any, text: string, ch = 10) => Object.values(c.inspect(seg(ch, text)).violations).map((e: any) => `${e.check}:${e.term}`);
+  const gaps = (c: any, text: string, ch = 10) => Object.values(c.inspect(seg(ch, text)).ledger_gaps).map((e: any) => e.term);
+  it('an unplaced row is no root: «biasanya» (placed) stays a whole word, with no exemption by origin', () => {
+    const base = [row('L-0001', 'biasanya', 'Ch10', { Origin: 'Vocab Bank v2' })];
+    const withRoot = [...base, row('L-1351', 'biasa')];
     expect(keys(new Checker({ ledger: base }), 'Biasanya saya pergi.')).toEqual([]);
-    expect(keys(new Checker({ ledger: withBridge }), 'Biasanya saya pergi.')).toEqual([]);
+    expect(keys(new Checker({ ledger: withRoot }), 'Biasanya saya pergi.')).toEqual([]);
+    expect(gaps(new Checker({ ledger: withRoot }), 'Biasanya saya pergi.')).not.toContain('biasa');
   });
-  it('an unplaced row of any other origin still blocks (as before)', () => {
-    const other = [row('L-0001', 'biasanya', 'Vocab Bank v2', 'Ch10'), row('L-0002', 'biasa', 'Vocab Bank v2')];
-    expect(keys(new Checker({ ledger: other }), 'Biasanya saya pergi.')).toEqual(['ledger:biasa']);
+  it('a row with no chapter counts as no row in a chaptered unit (a gap), whatever its origin', () => {
+    const other = [row('L-0001', 'biasanya', 'Ch10', { Origin: 'Vocab Bank v2' }), row('L-0002', 'biasa', '', { Origin: 'Vocab Bank v2' })];
+    expect(keys(new Checker({ ledger: other }), 'Biasa sahaja.')).toEqual([]);
+    expect(gaps(new Checker({ ledger: other }), 'Biasa sahaja.')).toEqual(['biasa', 'sahaja']);
+  });
+  it('before its own chapter a placed form still derives from a placed root, and a retired row is not live', () => {
+    const l = [row('L-0001', 'minggu', 'Ch2', { Origin: 'Vocab Bank v2' }), row('L-0002', 'seminggu', 'Ch10', { Origin: 'Vocab Bank v2' })];
+    expect(keys(new Checker({ ledger: l }), 'seminggu', 4)).toEqual([]);
+    expect(new Checker({ ledger: l }).derivation('seminggu', 4)).toEqual(['minggu', 'se- noun; base chapter checked separately']);
+    expect(new Checker({ ledger: l }).derivation('seminggu', 10)).toBeNull();
   });
 });

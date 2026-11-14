@@ -105,11 +105,6 @@ export class Checker {
     const push = (m, k, v) => (m.has(k) ? m.get(k).push(v) : m.set(k, [v]));
     for (const r of ledger) {
       const row = { ...r, _chapter: placedChapter(r['Kata-Kata place']) };
-      // Kata-Kata addition (Stage 2 step 6b, 14 Nov 2026): the 184 Hanashishou bridge-batch rows (Origin "Hanashishou bridge batch 1")
-      // are words the scenes meet first, outside the class sequence, like the Jambatan packs. While they have no chapter they are not
-      // ledger entries for this checker: otherwise biasa, akhir and lalu make «biasanya», «akhirnya» and «terlalu» (words the classes teach
-      // whole) read as derived forms of an unplaced base. Not in Cikgu Sensai's Python checker: see the step 6b report.
-      if (row._chapter === null && /^Hanashishou bridge batch/i.test(r.Origin ?? '')) continue;
       for (const form of row.Malay.replace(/\([^)]*\)/g, '').split('/')) if (norm(form)) push(this.entries, norm(form), row);
     }
     for (const { chapter, cards } of kelas) {
@@ -140,7 +135,18 @@ export class Checker {
     this.mentions = Object.fromEntries(Object.entries(opts.mentions ?? {}).map(([k, v]) => [norm(k), v]));
     this.proper = new Set([...PROPER, ...loaded.names.flatMap((n) => tokens(n))]);
     this.maxlen = Math.max(...[...this.entries.keys()].map((t) => t.split(' ').length));
-    this.known = new Set([...this.entries.keys(), ...this.cards.keys(), ...this.roots]);
+    // Rows and chapters (Cikgu Sensai step 6c-1, rules commit 909596e): only a form with at least one row that has a chapter can be a
+    // whole word, a root or a base. A live row with no chapter (a Jambatan row) is no root; in a unit with a chapter it counts as no row.
+    this.placed = new Set([...this.entries].filter(([, rows]) => rows.some((r) => r._chapter !== null)).map(([t]) => t));
+    this.known = new Set([...this.placed, ...this.cards.keys(), ...this.roots]);
+  }
+
+  /** A live row with no chapter (Jambatan or bridge-batch row). Retired rows are not live. */
+  static unplaced(row) { return row._chapter === null && row['Review status'] !== 'Retired'; }
+  /** Ledger rows that count for a term in a unit: in a unit with a chapter an unplaced live row is no row at all. */
+  rowsFor(term, ch) {
+    const rows = this.rowsOf(term);
+    return ch === null ? rows : rows.filter((r) => !Checker.unplaced(r));
   }
 
   rowsOf(t) { return this.entries.get(t) ?? []; }
@@ -152,7 +158,7 @@ export class Checker {
   knownBy(term, ch) { return this.rowsOf(term).some((r) => r._chapter !== null && r._chapter <= ch); }
   noun(t) {
     return this.cardsOf(t).some((c) => ['n', 'noun', 'counter', 'num'].includes(c.pos)) ||
-      this.rowsOf(t).some((r) => ['n', 'noun', 'counter'].includes(r.POS));
+      this.rowsOf(t).some((r) => r._chapter !== null && ['n', 'noun', 'counter'].includes(r.POS));
   }
   isAdj(t) { return this.cardsOf(t).some((c) => c.pos === 'adj'); }
   isVerb(t) { return this.cardsOf(t).some((c) => c.pos === 'v'); }
@@ -160,15 +166,18 @@ export class Checker {
   /** Productive Stage 1 forms only after their rule; the root is checked separately. Returns [base, rule] or null. */
   derivation(w, ch) {
     if (ch === null) return null;
+    // Rule 1: a form whose own ledger row is placed at or before this chapter is a whole word, never split (biasanya, akhirnya, terlalu).
+    // Before its row's chapter a regular derivation from a placed base still applies (seminggu in chapter 4; «disemak», placed Ch18, in 11B).
+    if (this.placedBy(w, ch)) return null;
     const g = this.gates;
     if (w.startsWith('ke') && NUMBERS.has(w.slice(2)) && ch >= g['ke- ordinal']) return [w.slice(2), 'ke- ordinal'];
-    if (w.endsWith('nya') && w.length > 4 && ch >= g['-nya'] && (this.entries.has(w.slice(0, -3)) || this.cards.has(w.slice(0, -3)) || w === 'ceritanya'))
+    if (w.endsWith('nya') && w.length > 4 && ch >= g['-nya'] && (this.placed.has(w.slice(0, -3)) || this.cards.has(w.slice(0, -3)) || (w === 'ceritanya' && !this.entries.has('cerita'))))
       return [w.slice(0, -3), '-nya'];
-    if (w.endsWith('kah') && w.length > 4 && ch >= g['-kah']) return [w.slice(0, -3), '-kah'];
+    if (w.endsWith('kah') && w.length > 4 && ch >= g['-kah'] && (this.placed.has(w.slice(0, -3)) || !this.entries.has(w.slice(0, -3)))) return [w.slice(0, -3), '-kah'];
     // Written particle «lah» joins the word (takpelah, like bolehkah). Kata-Kata addition (13 Nov 2026, Sam), not in
     // Cikgu Sensai's checker: it reads «Xlah» as X + lah once the particle's own ledger row is placed, when X is a known
     // form and the whole word is not a ledger word or a listed non-particle (adalah, masalah).
-    if (w.endsWith('lah') && w.length > 5 && this.placedBy('lah', ch) && !this.entries.has(w) && !this.notParticle.has(w) && this.known.has(w.slice(0, -3)))
+    if (w.endsWith('lah') && w.length > 5 && this.placedBy('lah', ch) && !this.placed.has(w) && !this.notParticle.has(w) && this.known.has(w.slice(0, -3)))
       return [w.slice(0, -3), '-lah'];
     if (w.startsWith('se') && w.length > 3) {
       const base = w.slice(2);
@@ -184,7 +193,7 @@ export class Checker {
   /** Chapter 6 superlative: a listed whole word, or ter- + an adjective with no ledger row of its own. */
   superlative(w) {
     if (this.superlatives.has(w)) return true;
-    return w.startsWith('ter') && !this.entries.has(w) && this.isAdj(w.slice(3));
+    return w.startsWith('ter') && !this.placed.has(w) && this.isAdj(w.slice(3));
   }
 
   bases(w) {
@@ -209,7 +218,7 @@ export class Checker {
   /** Gated Stage 2 families of one word (stage-rules.json, format.family_resolution). */
   families(w, ch) {
     if (this.roots.has(w) || this.wholeWords.some(([form, first]) => form === w && (ch === null || ch >= first))) return new Set();
-    const tags = this.rowsOf(w).flatMap((r) => r['Affix tag'].split(/\s+/).filter(Boolean));
+    const tags = this.rowsOf(w).filter((r) => r._chapter !== null).flatMap((r) => r['Affix tag'].split(/\s+/).filter(Boolean));
     const fam = tags.some((t) => t !== 'root') ? new Set(tags.filter((t) => t in TAG_FAMILY).map((t) => TAG_FAMILY[t])) : this.shapeFamilies(w);
     if (fam.has('ter-')) {
       fam.delete('ter-');
@@ -266,7 +275,7 @@ export class Checker {
       if (kind === 'test' && s.field === 'answer_key') {
         for (const w of ts)
           for (const particle of this.particles)
-            if (w === particle || (particle === 'lah' && w.endsWith('lah') && !this.entries.has(w) && !this.notParticle.has(w) && this.known.has(w.slice(0, -3))))
+            if (w === particle || (particle === 'lah' && w.endsWith('lah') && !this.placed.has(w) && !this.notParticle.has(w) && this.known.has(w.slice(0, -3))))
               add(violations, s, 'register', particle, `Particle «${particle}» is optional production (R4); a test answer key must not require it.`);
       }
       // A phrase exemption is scoped to its chapter and to this segment: it never exempts its words elsewhere.
@@ -278,9 +287,9 @@ export class Checker {
         if (ch !== null && !exempt.has(w)) {
           const early = [];
           if (ch < g['ke- ordinal'] && w.startsWith('ke') && NUMBERS.has(w.slice(2))) early.push(`ke- ordinal before chapter ${g['ke- ordinal']}`);
-          if (ch < g['-nya'] && w.endsWith('nya') && (this.entries.has(w.slice(0, -3)) || w === 'ceritanya')) early.push(`-nya before chapter ${g['-nya']}`);
-          if (ch < g['-kah'] && w.endsWith('kah') && this.entries.has(w.slice(0, -3))) early.push(`-kah before chapter ${g['-kah']}`);
-          if (ch < g['di-'] && w.startsWith('di') && this.entries.has(w.slice(2)) && this.isVerb(w.slice(2))) early.push(`di- passive before chapter ${g['di-']}`);
+          if (ch < g['-nya'] && w.endsWith('nya') && (this.placed.has(w.slice(0, -3)) || (w === 'ceritanya' && !this.entries.has('cerita')))) early.push(`-nya before chapter ${g['-nya']}`);
+          if (ch < g['-kah'] && w.endsWith('kah') && this.placed.has(w.slice(0, -3))) early.push(`-kah before chapter ${g['-kah']}`);
+          if (ch < g['di-'] && w.startsWith('di') && this.placed.has(w.slice(2)) && this.isVerb(w.slice(2))) early.push(`di- passive before chapter ${g['di-']}`);
           if (ch < g['ter- superlative'] && w.startsWith('ter') && this.isAdj(w.slice(3))) early.push(`ter- superlative before chapter ${g['ter- superlative']}`);
           for (const reason of early) add(violations, s, 'affix', w, reason);
         }
@@ -308,7 +317,8 @@ export class Checker {
         let matched = null;
         for (let size = Math.min(this.maxlen, ts.length - i); size > 0; size--) {
           const term = ts.slice(i, i + size).join(' ');
-          if (this.entries.has(term) && size > 1 && this.compositional(term, ts.slice(i, i + size))) continue;
+          // An unplaced multi-word row (a Hanashishou phrase such as «encik pula») is no entry in a unit with a chapter (rule 2): its words are checked one by one.
+          if (this.entries.has(term) && size > 1 && (this.compositional(term, ts.slice(i, i + size)) || !this.rowsFor(term, ch).length)) continue;
           if (this.entries.has(term)) { matched = [term, size]; break; }
         }
         let [term, size] = matched ?? [ts[i], 1];
@@ -319,7 +329,7 @@ export class Checker {
           derived.set(JSON.stringify(d), d);
           term = base;
         }
-        const rows = this.rowsOf(term);
+        const rows = this.rowsFor(term, ch);
         if (!rows.length) add(gaps, s, 'ledger gap', term, 'No exact ledger entry for this term/base; not a lesson violation.');
         else if (ch !== null) {
           const taught = rows.map((r) => r._chapter).filter((c) => c !== null);
@@ -342,7 +352,7 @@ export class Checker {
 
 /**
  * Run one shared fixture case (content/rules/stage-rules-fixtures.json) the way Cikgu Sensai's
- * tests/test_stage_rules.py does. Returns the violations.
+ * tests/test_stage_rules.py does. Returns the whole result ({violations, ledger_gaps, derivations}).
  */
 export function runFixtureCase(checker, c) {
   const saved = checker.mentions;
@@ -363,14 +373,16 @@ export function runFixtureCase(checker, c) {
   });
   checker.mentions = mentions;
   try {
-    return checker.inspect(segments).violations;
+    return checker.inspect(segments);
   } finally {
     checker.mentions = saved;
   }
 }
 
-/** True when a case's result matches its expectation. */
-export function fixtureAgrees(c, violations) {
-  const v = Object.values(violations);
-  return c.expect === 'pass' ? v.length === 0 : v.some((e) => e.check === c.check);
+/** True when a case's result matches its expectation, including the optional expect_gaps / expect_no_gaps (terms that must / must not be ledger gaps). */
+export function fixtureAgrees(c, result) {
+  const v = Object.values(result.violations);
+  const gaps = new Set(Object.values(result.ledger_gaps).map((e) => e.term));
+  const ok = c.expect === 'pass' ? v.length === 0 : v.some((e) => e.check === c.check);
+  return ok && (c.expect_gaps ?? []).every((t) => gaps.has(t)) && !(c.expect_no_gaps ?? []).some((t) => gaps.has(t));
 }

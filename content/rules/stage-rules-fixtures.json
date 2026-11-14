@@ -1,5 +1,5 @@
 {
- "note": "Shared fixtures for the stage rules in curriculum/stage-rules.json. Cikgu Sensai runs them in tests/test_stage_rules.py; Kata-Kata's affix guard should run the same cases (build step 3). Each case is a list of segments checked in order as one unit sequence. expect \"pass\": no violation of any kind. expect \"fail\": at least one violation of the named check (affix, ledger, register or malaysian-form). Segment fields: text (the Malay), chapter, unit (optional; default \"fixture-cNN\"), kind (default \"model\"; \"vocabulary\" teaches a form, \"mention\" is a ‹…› quote, \"test\" is a test item), source_text (default text; \"[spoken]\" labels a spoken form), field (\"prompt\" or \"answer_key\" for kind \"test\"), mention_source (for kind \"mention\": the source text a mentions file would hold).",
+ "note": "Shared fixtures for the stage rules in curriculum/stage-rules.json. Cikgu Sensai runs them in tests/test_stage_rules.py; Kata-Kata's affix guard should run the same cases (build step 3). Each case is a list of segments checked in order as one unit sequence. expect \"pass\": no violation of any kind. expect \"fail\": at least one violation of the named check (affix, ledger, register or malaysian-form). Segment fields: text (the Malay), chapter, unit (optional; default \"fixture-cNN\"), kind (default \"model\"; \"vocabulary\" teaches a form, \"mention\" is a ‹…› quote, \"test\" is a test item), source_text (default text; \"[spoken]\" labels a spoken form), field (\"prompt\" or \"answer_key\" for kind \"test\"), mention_source (for kind \"mention\": the source text a mentions file would hold). Optional keys (Stage 2 step 6c-1): expect_gaps (terms that must be reported as ledger gaps) and expect_no_gaps (terms that must not be); a gap is not a violation, so these are checked on top of expect.",
  "cases": [
   {
    "id": "bercakap-9-fails",
@@ -1033,6 +1033,241 @@
     }
    ],
    "check": "malaysian-form"
+  },
+  {
+   "id": "biasanya-own-chapter-passes",
+   "why": "rule 1: «biasanya» is its own ledger row (L-0184, chapter 4); its root «biasa» is a Jambatan row with no chapter, so the word is checked whole at chapter 4 and later, never split",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "biasanya",
+     "chapter": 4
+    },
+    {
+     "text": "biasanya",
+     "chapter": 17
+    }
+   ],
+   "expect_no_gaps": [
+    "biasanya",
+    "biasa"
+   ]
+  },
+  {
+   "id": "biasanya-before-own-chapter-fails",
+   "why": "rule 1: «biasanya» is checked as a whole word at its own row (chapter 4); chapter 3 is too early, and the unplaced root «biasa» does not change that",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "biasanya",
+     "chapter": 3
+    }
+   ],
+   "check": "ledger"
+  },
+  {
+   "id": "akhirnya-own-chapter-passes",
+   "why": "rule 1: «akhirnya» is its own ledger row (L-1208, chapter 14); its root «akhir» is a Jambatan row with no chapter, so the word is checked whole at chapter 14 and later, never split",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "akhirnya",
+     "chapter": 14
+    },
+    {
+     "text": "akhirnya",
+     "chapter": 17
+    }
+   ],
+   "expect_no_gaps": [
+    "akhirnya",
+    "akhir"
+   ]
+  },
+  {
+   "id": "akhirnya-before-own-chapter-fails",
+   "why": "rule 1: «akhirnya» is checked as a whole word at its own row (chapter 14); chapter 13 is too early, and the unplaced root «akhir» does not change that",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "akhirnya",
+     "chapter": 13
+    }
+   ],
+   "check": "ledger"
+  },
+  {
+   "id": "terlalu-own-chapter-passes",
+   "why": "rule 1: «terlalu» is its own ledger row (L-0273, chapter 6); its root «lalu» is a Jambatan row with no chapter, so the word is checked whole at chapter 6 and later, never split",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "terlalu",
+     "chapter": 6
+    },
+    {
+     "text": "terlalu",
+     "chapter": 17
+    }
+   ],
+   "expect_no_gaps": [
+    "terlalu",
+    "lalu"
+   ]
+  },
+  {
+   "id": "terlalu-before-own-chapter-fails",
+   "why": "rule 1: «terlalu» is checked as a whole word at its own row (chapter 6); chapter 5 is too early, and the unplaced root «lalu» does not change that",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "terlalu",
+     "chapter": 5
+    }
+   ],
+   "check": "ledger"
+  },
+  {
+   "id": "bridge-root-nya-form-stays-a-gap",
+   "why": "rule 2: «salah» is a Jambatan row with no chapter, so it is no root for -nya; «salahnya» at chapter 17 is still a ledger gap (not legal, not a violation)",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "salahnya",
+     "chapter": 17
+    }
+   ],
+   "expect_gaps": [
+    "salahnya"
+   ],
+   "expect_no_gaps": [
+    "salah"
+   ]
+  },
+  {
+   "id": "bridge-root-ter-form-stays-a-gap",
+   "why": "rule 2: «terakhir» is a Jambatan row with no chapter and its root «akhir» has none either; at chapter 17 it is still a ledger gap, and it opens no ter- family",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "terakhir",
+     "chapter": 17
+    }
+   ],
+   "expect_gaps": [
+    "terakhir"
+   ]
+  },
+  {
+   "id": "bridge-only-words-are-gaps-not-violations",
+   "why": "rule 2: Jambatan rows with no chapter make no form legal; used in a chapter they are gaps, as before the rows existed, never a «no chapter assignment» violation",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "salah",
+     "chapter": 17
+    },
+    {
+     "text": "biasa",
+     "chapter": 17
+    },
+    {
+     "text": "akhir",
+     "chapter": 17
+    },
+    {
+     "text": "lalu",
+     "chapter": 17
+    }
+   ],
+   "expect_gaps": [
+    "salah",
+    "biasa",
+    "akhir",
+    "lalu"
+   ]
+  },
+  {
+   "id": "bridge-row-meN-form-stays-illegal",
+   "why": "rule 2: «membantu» has a Jambatan row (L-1395) with no chapter; at chapter 17 the meN- form still has no placed row, so it still fails",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "membantu",
+     "chapter": 17
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "placed-word-from-bridge-root-passes",
+   "why": "a placed word that is also a derived form of a Jambatan row (selalu = se- + lalu, terputus = ter- + putus, rancangan = rancang + -an) passes at its own chapter and later, with no gap on the root",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "selalu",
+     "chapter": 4
+    },
+    {
+     "text": "terputus",
+     "chapter": 16
+    },
+    {
+     "text": "rancangan",
+     "chapter": 11
+    },
+    {
+     "text": "selalu",
+     "chapter": 17
+    },
+    {
+     "text": "terputus",
+     "chapter": 17
+    },
+    {
+     "text": "rancangan",
+     "chapter": 17
+    }
+   ],
+   "expect_no_gaps": [
+    "lalu",
+    "putus",
+    "rancang"
+   ]
+  },
+  {
+   "id": "placed-word-from-bridge-root-before-own-chapter-fails",
+   "why": "«terputus» is placed at chapter 16 (ter- accident); at chapter 15 it fails, and the Jambatan root «putus» does not open it",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "terputus",
+     "chapter": 15
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "derivation-before-row-chapter-still-applies",
+   "why": "rule 1 starts at the row's own chapter: «seminggu» (L-1275, chapter 10) is still se- + the placed «minggu» (chapter 4) when it appears earlier, as the Stage 1 units use it",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "seminggu",
+     "chapter": 4
+    }
+   ]
+  },
+  {
+   "id": "practice-pool-disemak-keeps-its-derivation",
+   "why": "rule 3: «disemak» is a practice-pool row (L-1305, primes Ch18); at chapter 11 it is still di- + the placed «semak» (chapter 11), as in unit 11B",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "disemak",
+     "chapter": 11
+    }
+   ]
   }
  ]
 }
