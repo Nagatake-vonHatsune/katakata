@@ -2,12 +2,28 @@
 
 ## Unreleased
 
+- **Stage 2 step 3e: new ledger rows, «tandatangan», the chapter 10 picture game (14 Nov 2026), 1121 to 1178 cards, 43 to 45 packs.** Report: [docs/STAGE-2-step3e-report.md](docs/STAGE-2-step3e-report.md).
+  - Ledger sync: exactly L-0530 «tandatangan» and 37 new rows (L-1273 to L-1309). 31 class cards (L-1273 to L-1303), each last in its pack
+    (c10 4, c11 4, c12 4, c13 4, c14 7, c15 2, c16 4, c17 2); no earlier card ID, frame or scenario line changed. Each shows its root and chapter;
+    every example passes `tools/stage-check.mjs` at its chapter. The pack schema accepts the tag `di- -i`.
+  - Practice pool (L-1304 to L-1309: menyapu, disemak, disimpan, bersukan, hidup, giliran): a new Dunia scene «Kata biasa» (world Latihan),
+    six cards with pictures, primes Ch18 so it comes last in the path and the affix guard allows its forms; override key `practice_scenes`
+    keeps it from being chapter 18's Sedia Kelas scene. Their ledger place now names Ch18 (Sam to confirm).
+  - Chapter 10 Cari Benda picture scene «Hari bekerja dan jiran baru» (20 cards, 15 pictures; kolam renang, taman, penuh), chapter 10's
+    Sedia Kelas scene. Its cards are Dunia twins of the class cards.
+  - «tandatangan» in the Dunia card `ms-d-pejabat-pagi-08`. Jambatan not rebuilt: no new row is a Hanashishou deck word.
+  - Ledger: 80 cells written and verified (J and K of 54 rows); Journal rows 193 to 199. Ledger baseline for the build: `00164ef`.
+  - Shared fixture `lah-in-answer-key-fails` no longer fails because L-1289 «baiklah» is its own word; recorded as a known divergence in the tests
+    (76 of 77 agree); the rule files are unedited. For Cikgu Sensai to change the fixture word.
+
 - **Stage 2 step 3d: chapters 13 to 18 finished (13 Nov 2026), 1116 to 1121 cards.** Report: [docs/STAGE-2-step3d-report.md](docs/STAGE-2-step3d-report.md).
   - Six new class cards, each last in its pack: L-1268 mendaftar (c13), L-1269 tangguhkan and L-1270 batalkan (c14), L-1271 memakai and
     L-1272 berwarna (c15), L-0690 «tak tahan» (c17, "Spoken:", after «tidak boleh tahan»). Jambatan card `ms-j-office-14` dropped.
   - Nine held-back lines now use the new forms (c14 3, c15 3, c17 1, c18 2); none failed the check. Japanese drafts updated for c15 f04 and c18 f04.
   - Rules copied from Cikgu Sensai `a24a993` (R3 pair «tak tahan» → «tidak boleh tahan»); all 77 shared fixtures agree (test count 72 → 77).
   - Ledger: 7 cells written and verified (J691:K691, J1269:J1273); Journal rows 185 to 189.
+  - After Sam's review (`7fbe173`, 13 Nov): the c14 batalkan line ends at «kafe.» (no «Itu keputusan kita.»: «keputusan» sounds like a ruling in
+    casual speech; naturalness note in HANDOFF), and the root cards tangguh and batal are back in the c14 Sedia Kelas list. Journal row 190.
 
 - **Stage 2 step 3c: Malay fixes to chapters 12 to 18 (13 Nov 2026), 1115 to 1116 cards.** Report: [docs/STAGE-2-step3c-report.md](docs/STAGE-2-step3c-report.md).
   - 18 lines changed after Sam's review (c12 1, c13 3, c15 3, c16 2, c17 6, c18 3), each checked with `tools/stage-check.mjs` first:

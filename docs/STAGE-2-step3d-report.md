@@ -1,7 +1,7 @@
 # Stage 2, build step 3d: chapters 13 to 18 finished (13 Nov 2026)
 
 Sam's decisions after [step 3c](STAGE-2-step3c-report.md): five new ledger rows, the R3 pair changed to «tak tahan» → «tidak boleh tahan», and the held-back lines.
-Cards 1116 → **1121** (6 new class cards, 1 Jambatan card dropped). Commits on the session branch: ledger snapshot `484ad8d`, rules `a24a993` copy, pack `0c357ab`, ledger snapshot after the write-back, then docs.
+Cards 1116 → **1121** (6 new class cards, 1 Jambatan card dropped). Commits on the session branch: ledger snapshot `484ad8d`, rules `a24a993` copy, pack `0c357ab`, ledger snapshot after the write-back, docs, then (after Sam's review) `7fbe173` (the c14 batalkan line, see section 6).
 Cikgu Sensai and Hanashishou were read only (Hanashishou checked out at `e5e167c` for the Jambatan rebuild); neither was edited.
 
 ## 1. Fixture cross-check (step 4a could not run it)
@@ -42,13 +42,16 @@ ms-c17-023 «tidak boleh tahan» now says «boleh tahan» (L-0939, Dunia, Ch5) m
 
 ## 6. Beyond the list (disclosed)
 
-- c14 notes L-1217 and L-0641 and the c15 note of L-1230 now use «tangguhkan ke» / «memakai» to match the lines (they still said «tangguh hingga» / «pakai»).
-- The c14 Sedia Kelas list now holds tangguhkan and batalkan instead of tangguh and batal: the importer picks the cards the scenario uses.
-- The c14 batalkan line keeps the old tail «Itu keputusan kita.»
+What the first version of this report listed here, and how each point ended (updated 14 Nov 2026, step 3e):
 
-## 7. Questions for Sam
+- **Card notes brought in line with the new lines** (kept). c14 notes L-1217 and L-0641 and the c15 note of L-1230 now use «tangguhkan ke» / «memakai» to match the lines (they still said «tangguh hingga» / «pakai»).
+- **The c14 Sedia Kelas list** (changed by Sam's answer). The importer picks the cards the scenario uses, so tangguhkan and batalkan replaced tangguh and batal in the list. Sam's answer (question 2, 13 Nov): keep the roots in Sedia Kelas too. `7fbe173` adds an override in `tools/import-overrides.json`, so the list holds ms-c14-018 (tangguh) and ms-c14-020 (batal) next to ms-c14-021 and ms-c14-022; ms-c14-015 (keputusan) drops out of the automatic list because no line uses it any more.
+- **The c14 batalkan line** (changed by Sam's answer). It first kept the old tail «Itu keputusan kita.» Sam's answer (question 1): end it at «kafe.» and do not use «keputusan» phrasing in casual speech («Itu keputusan kita» sounds like a court or management ruling; casual Malay would say «Baiklah, kita buat begini»). The line is now «Kita batalkan rancangan mendaki, tetapi kita masih makan di kafe.»; the rule is in HANDOFF "Naturalness notes". The ledger got the matching words in step 3e (L-1289 baiklah, L-1290 begini).
+- **One slip, fixed** (section 5): `append_values` shifted Sam's Journal rows; HANDOFF now says to write Journal rows with `update_values`.
 
-1. Keep «Itu keputusan kita.» after the batalkan line, or end the line at «kafe.»?
-2. The tangguh and batal root cards stay in c14 but are no longer in its Sedia Kelas: fine?
-3. Cikgu Sensai: refresh `curriculum/reference/katakata/` (c10 to c18, the ledger copy). Its Python checker should now match on joined -lah.
-4. Native Japanese check of the four updated frame drafts, with the end-of-project read.
+## 7. Questions for Sam (answered)
+
+1. «Itu keputusan kita.» after the batalkan line: ended the line at «kafe.» (Sam, 13 Nov; `7fbe173`).
+2. The tangguh and batal root cards in the c14 Sedia Kelas list: kept there (Sam, 13 Nov; `7fbe173`).
+3. Cikgu Sensai should refresh `curriculum/reference/katakata/` (c10 to c18, the ledger copy): still open, now also with the step 3e packs ([report](STAGE-2-step3e-report.md)).
+4. Native Japanese check of the four updated frame drafts, with the end-of-project read: still open.

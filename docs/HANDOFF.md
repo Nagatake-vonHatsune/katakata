@@ -1,27 +1,28 @@
 # Kata-Kata hand-off
 
-Last updated 13 Nov 2026 (Stage 2 build step 3d done: chapters 13 to 18 finished, [report](STAGE-2-step3d-report.md); step 3c [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
+Last updated 14 Nov 2026 (Stage 2 build step 3e done: new ledger rows, «tandatangan», the chapter 10 picture game, [report](STAGE-2-step3e-report.md); step 3d [report](STAGE-2-step3d-report.md); step 3c [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
 Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-1.0.md).
 
 ## State
 
-- 43 live packs, 1121 cards: Kelas chapters 1 to 18 (chapter 18 is a review pack with no cards of its own), 20 Dunia scenes,
-  5 Jambatan scenes.
+- 45 live packs, 1178 cards: Kelas chapters 1 to 18 (chapter 18 is a review pack with no cards of its own), 22 Dunia scenes (20 Stage 1,
+  `hari-kerja-jiran` the chapter 10 picture scene, `kata-biasa` the practice pool), 5 Jambatan scenes.
 - Workbook: `content/source/2026-11-13_KataKata_VocabBank_v6.xlsx`, built by `tools/make_vocab_bank_v6.py` (v5 + chapters 10 to 18).
-- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the step 3d write-back (L-0001 to L-1272; chapter 18 has no ledger cells).
-- Affix guard: stage-aware, rules from Cikgu Sensai `a24a993` (`content/rules/`).
+- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the step 3e write-back (L-0001 to L-1309; chapter 18 has no ledger cells).
+- Affix guard: stage-aware, rules from Cikgu Sensai `a24a993` (`content/rules/`). One shared fixture, `lah-in-answer-key-fails`, now disagrees
+  because L-1289 «baiklah» is its own word; it is a known divergence in `tests/unit/stage-rules.test.ts` until Cikgu Sensai changes the fixture
+  word. Cikgu Sensai will add «tanda tangan» to the disallowed forms: copy the rules at the next sync.
 - Kata-Kata's half of Stage 2 (build step 3) is finished. Next: Cikgu Sensai step 4 (suites c10 to c17, step 5 chapter 18) and
   Hanashishou step 6; Cikgu Sensai should refresh `curriculum/reference/katakata/` with `c10.json` to `c18.json` and the ledger
-  copy (this repo does not edit it). Open questions for Sam: [STAGE-2-step3d-report.md](STAGE-2-step3d-report.md) section 7.
+  copy (this repo does not edit it). Open questions for Sam: [STAGE-2-step3e-report.md](STAGE-2-step3e-report.md) section 11.
+- Practice words (ledger place «Kata-Kata practice pool (not core)») live in a Dunia scene that primes Ch18 (`kata-biasa`, world Latihan,
+  override key `practice_scenes`): the guard reads placement from the place column, so such rows need a ChN in their place to be used in a pack.
 
 ## Backlog
 
-- **Cari Benda picture scene for chapter 10** (Sam, 13 Nov 2026; build later, not in the c11 to c18 session): a Dunia-style
-  picture scene made of the ber- verbs and the words of the working-day and new-neighbour scenes, built to the Stage 1 Cari Benda
-  pattern (a Dunia scene with pictures, `Note`/emoji images in `tools/import-overrides.json`, at least 4 picture cards, see
-  `tests/unit/core.test.ts` "every Dunia scene has enough pictures"), using only words placed up to chapter 10. Chapters 11 to 18
-  get a picture scene only if the plan names one (it names none).
-- The end-of-project Kamus Dewan and native Japanese checks.
+- The end-of-project Kamus Dewan and native Japanese checks (the step 3e notes, the picture-scene and practice-pool drafts included).
+- Look at the chapter 10 picture scene on a phone (20 objects; the emoji are Claude's choices; never seen on screen, see the step 3e report section 10).
+- Chapters 11 to 18 get a picture scene only if the plan names one (it names none).
 
 ## Naturalness notes
 
@@ -98,7 +99,7 @@ npx vite build && npx vite preview --port 4173 &
 node tests/e2e/smoke.cjs && node tests/e2e/fun.cjs
 ```
 
-- The script always starts from v5 and the ledger at `LEDGER_BASELINE` (`484ad8d`), and rebuilds every chapter function, so
+- The script always starts from v5 and the ledger at `LEDGER_BASELINE` (`00164ef`), and rebuilds every chapter function, so
   earlier packs must come out unchanged (`git diff content/ms/kelas` shows only the new pack). The bridge importer must change
   only the Jambatan cards whose words became class cards. Re-run the script a second time and compare: it must be identical.
 - If the ledger rows for the new chapter changed after `323b5fc` (a ledger session edited them), bump `LEDGER_BASELINE` to the
@@ -109,7 +110,13 @@ node tests/e2e/smoke.cjs && node tests/e2e/fun.cjs
   click in 25 steps). A failure now means the content or the app changed.
 - The checker also reads written «-lah» joined to a word («takpelah») from chapter 17: a Kata-Kata addition (`tools/stage-rules.mjs`,
   tests in `tests/unit/stage-rules.test.ts`), not in Cikgu Sensai's Python checker.
-- Update `tests/unit/core.test.ts` ("ships the … chapters") with the new chapter number.
+- Update `tests/unit/core.test.ts` ("ships the … chapters") with the new chapter number or scene count.
+- Cards added after a chapter was finished (a later ledger batch) go in `STEP3E` (or a new dict like it) in `tools/make_vocab_bank_v6.py`, called at the end
+  of the chapter's card loop, so no existing card ID moves. Dunia scenes are built in `dunia_3e(b)` (after the chapters, before `mark_seen_twins`);
+  `--images <file>` writes the emoji of the new Dunia cards for `tools/import-overrides.json` (`images`, `live_dunia`, `scene_ja`, `world_slugs`, `world_ja`).
+- A Dunia scene is checked at the chapter it primes; a practice scene (`practice_scenes` override) primes 18 and is never a Sedia Kelas scene.
+- If the guard reads a new row's place before the sheet has the card IDs (the practice pool), put the planned J/K cells in the snapshot in the pack commit, then
+  replace the snapshot with the read-back after the write-back.
 - Commit the pack, workbook, script and overrides together ("Chapter N pack: …").
 
 ### 5. Ledger write-back (only after the pack commit)
