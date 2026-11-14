@@ -67,7 +67,7 @@
       "gloss_ja": "食後",
       "pos": "expression",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Makan ubat ini lepas makan. In 4 Hanashishou scenes: A parcel at the guardhouse, At the clinic, At the pharmacy, Team dinner. In 4 Hanashishou scenes: A parcel at the guardhouse, At the clinic, At the pharmacy, Team dinner. In 4 Hanashishou scenes: A parcel at the guardhouse, At the clinic, At the pharmacy, Team dinner.",
+      "note": "Hanashishou: Makan ubat ini lepas makan. In 4 Hanashishou scenes: A parcel at the guardhouse, At the clinic, At the pharmacy, Team dinner.",
       "links": [
         {
           "type": "babak",
@@ -103,7 +103,7 @@
       "gloss_ja": "つづりを言う",
       "pos": "verb",
       "affix_tag": "root",
-      "note": "Hanashishou: Boleh ejakan nama anda? In 3 Hanashishou scenes: Booking the dentist, The surprise party, Visitor parking. In 3 Hanashishou scenes: Booking the dentist, The surprise party, Visitor parking. In 3 Hanashishou scenes: Booking the dentist, The surprise party, Visitor parking.",
+      "note": "Hanashishou: Boleh ejakan nama anda? In 3 Hanashishou scenes: Booking the dentist, The surprise party, Visitor parking.",
       "links": [
         {
           "type": "babak",
@@ -157,7 +157,7 @@
       "gloss_ja": "初めて",
       "pos": "phrase",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Ini kali pertama. In 3 Hanashishou scenes: At the clinic, First visit at the clinic, The chatty driver. In 3 Hanashishou scenes: At the clinic, First visit at the clinic, The chatty driver. In 3 Hanashishou scenes: At the clinic, First visit at the clinic, The chatty driver.",
+      "note": "Hanashishou: Ini kali pertama. In 3 Hanashishou scenes: At the clinic, First visit at the clinic, The chatty driver.",
       "links": [
         {
           "type": "babak",
@@ -229,7 +229,7 @@
       "gloss_ja": "お大事に、早く良くなりますように",
       "pos": "expression",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Semoga cepat sembuh! In 3 Hanashishou scenes: At the clinic, At the pharmacy, Calling in sick. In 3 Hanashishou scenes: At the clinic, At the pharmacy, Calling in sick. In 3 Hanashishou scenes: At the clinic, At the pharmacy, Calling in sick.",
+      "note": "Hanashishou: Semoga cepat sembuh! In 3 Hanashishou scenes: At the clinic, At the pharmacy, Calling in sick.",
       "links": [
         {
           "type": "babak",
@@ -265,7 +265,7 @@
       "gloss_ja": "用紙に記入する",
       "pos": "verb",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Sila isi borang. In 2 Hanashishou scenes: First visit at the clinic, Posting a parcel. In 2 Hanashishou scenes: First visit at the clinic, Posting a parcel. In 2 Hanashishou scenes: First visit at the clinic, Posting a parcel.",
+      "note": "Hanashishou: Sila isi borang. In 2 Hanashishou scenes: First visit at the clinic, Posting a parcel.",
       "links": [
         {
           "type": "babak",
@@ -283,7 +283,7 @@
       "gloss_ja": "楽になる、ほっとする（melegakan＝和らげる）",
       "pos": "adjective",
       "affix_tag": "root",
-      "note": "Hanashishou: Lebih kurang 5. Jalan buat ia lega. In 2 Hanashishou scenes: The handover, The physio session.",
+      "note": "Hanashishou: Jalan buat ia lega. In 2 Hanashishou scenes: The handover, The physio session.",
       "links": [
         {
           "type": "babak",
@@ -319,7 +319,7 @@
       "gloss_ja": "自費（会社ではなく自分で払う）",
       "pos": "expression",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Saya bayar sendiri. In 1 Hanashishou scene: At the clinic. In 1 Hanashishou scene: At the clinic. In 1 Hanashishou scene: At the clinic.",
+      "note": "Hanashishou: Saya bayar sendiri. In 1 Hanashishou scene: At the clinic.",
       "links": [
         {
           "type": "babak",
@@ -337,7 +337,7 @@
       "gloss_ja": "腰",
       "pos": "noun",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Belakang bawah saya sakit. In 1 Hanashishou scene: The physio session. In 1 Hanashishou scene: The physio session. In 1 Hanashishou scene: The physio session.",
+      "note": "Hanashishou: Belakang bawah saya sakit. In 1 Hanashishou scene: The physio session.",
       "links": [
         {
           "type": "babak",
@@ -373,7 +373,7 @@
       "gloss_ja": "使い切る、飲みきる",
       "pos": "verb",
       "affix_tag": "root",
-      "note": "Hanashishou: Mesti habiskan semua, okey? Walaupun dah rasa sihat. In 1 Hanashishou scene: At the clinic.",
+      "note": "Hanashishou: Habiskan semua ubat. In 1 Hanashishou scene: At the clinic.",
       "links": [
         {
           "type": "babak",
@@ -391,7 +391,7 @@
       "gloss_ja": "鼻づまり",
       "pos": "noun",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Saya batuk dan hidung sumbat. In 1 Hanashishou scene: At the pharmacy. In 1 Hanashishou scene: At the pharmacy. In 1 Hanashishou scene: At the pharmacy.",
+      "note": "Hanashishou: Saya batuk dan hidung sumbat. In 1 Hanashishou scene: At the pharmacy.",
       "links": [
         {
           "type": "babak",
@@ -427,7 +427,7 @@
       "gloss_ja": "よく聞こえなかった、聞き取れなかった",
       "pos": "expression",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Maaf, saya kurang dengar. In 1 Hanashishou scene: At the clinic. In 1 Hanashishou scene: At the clinic. In 1 Hanashishou scene: At the clinic.",
+      "note": "Hanashishou: Maaf, saya kurang dengar. In 1 Hanashishou scene: At the clinic.",
       "links": [
         {
           "type": "babak",
@@ -499,7 +499,7 @@
       "gloss_ja": "断食する、食事をしない",
       "pos": "verb",
       "affix_tag": "root",
-      "note": "Hanashishou: Saya puasa sejak malam tadi. In 1 Hanashishou scene: The blood test. In 1 Hanashishou scene: The blood test. In 1 Hanashishou scene: The blood test.",
+      "note": "Hanashishou: Saya puasa sejak malam tadi. In 1 Hanashishou scene: The blood test.",
       "links": [
         {
           "type": "babak",
@@ -553,7 +553,7 @@
       "gloss_ja": "料金、会費",
       "pos": "noun",
       "affix_tag": "root",
-      "note": "Hanashishou: Berapa yuran sebulan? In 1 Hanashishou scene: The gym. In 1 Hanashishou scene: The gym. In 1 Hanashishou scene: The gym.",
+      "note": "Hanashishou: Berapa yuran sebulan? In 1 Hanashishou scene: The gym.",
       "links": [
         {
           "type": "babak",

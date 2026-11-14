@@ -193,7 +193,7 @@
       "gloss_ja": "パーティー",
       "pos": "noun",
       "affix_tag": "root",
-      "note": "Hanashishou: Saya nak buat parti BBQ. In 5 Hanashishou scenes: Booking the BBQ pit, Fireworks on the roof, Karaoke night, Lift chat and 1 more. In 5 Hanashishou scenes: Booking the BBQ pit, Fireworks on the roof, Karaoke night, Lift chat and 1 more. In 5 Hanashishou scenes: Booking the BBQ pit, Fireworks on the roof, Karaoke night, Lift chat and 1 more.",
+      "note": "Hanashishou: Saya nak buat parti BBQ. In 5 Hanashishou scenes: Booking the BBQ pit, Fireworks on the roof, Karaoke night, Lift chat and 1 more.",
       "links": [
         {
           "type": "babak",
@@ -211,7 +211,7 @@
       "gloss_ja": "思い出させる、念を押す",
       "pos": "verb",
       "affix_tag": "root",
-      "note": "Hanashishou: Bagus! Cuma nak ingatkan, pakej ini hanya sebelum 5 petang. Okey untuk anda? In 4 Hanashishou scenes: The food allergy, The gym, The money she owes, The renovation next door.",
+      "note": "Hanashishou: Tolong ingatkan saya. In 4 Hanashishou scenes: The food allergy, The gym, The money she owes, The renovation next door.",
       "links": [
         {
           "type": "babak",
@@ -265,7 +265,7 @@
       "gloss_ja": "「あ、そうだ」「ところで」",
       "pos": "expression",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Oh ya, ada bungkusan saya sampai ke rumah encik? In 4 Hanashishou scenes: Lift chat, The farewell dinner, The money she owes, The wrong order. In 4 Hanashishou scenes: Lift chat, The farewell dinner, The money she owes, The wrong order. In 4 Hanashishou scenes: Lift chat, The farewell dinner, The money she owes, The wrong order.",
+      "note": "Hanashishou: Oh ya, ada bungkusan saya sampai ke rumah encik? In 4 Hanashishou scenes: Lift chat, The farewell dinner, The money she owes, The wrong order.",
       "links": [
         {
           "type": "babak",
@@ -337,7 +337,7 @@
       "gloss_ja": "跡、汚れ；効果",
       "pos": "noun",
       "affix_tag": "root",
-      "note": "Hanashishou: Kesan itu sudah ada. In 3 Hanashishou scenes: Moving out, The barking dog, The renovation next door. In 3 Hanashishou scenes: Moving out, The barking dog, The renovation next door. In 3 Hanashishou scenes: Moving out, The barking dog, The renovation next door.",
+      "note": "Hanashishou: Kesan itu sudah ada. In 3 Hanashishou scenes: Moving out, The barking dog, The renovation next door.",
       "links": [
         {
           "type": "babak",
@@ -373,7 +373,7 @@
       "gloss_ja": "集まり、式、会",
       "pos": "noun",
       "affix_tag": "root",
-      "note": "Hanashishou: Pihak pengantin lelaki! Saya sepupu dia. Majlis ini cantik, kan? In 3 Hanashishou scenes: The leave request, The town hall, The wedding invitation.",
+      "note": "Hanashishou: Ada majlis hari jadi Sabtu ini. In 3 Hanashishou scenes: The leave request, The town hall, The wedding invitation.",
       "links": [
         {
           "type": "babak",
@@ -481,7 +481,7 @@
       "gloss_ja": "職場",
       "pos": "noun",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Saya di tempat kerja. In 3 Hanashishou scenes: The blocked car, The physio session, Water from the ceiling. In 3 Hanashishou scenes: The blocked car, The physio session, Water from the ceiling. In 3 Hanashishou scenes: The blocked car, The physio session, Water from the ceiling.",
+      "note": "Hanashishou: Saya di tempat kerja. In 3 Hanashishou scenes: The blocked car, The physio session, Water from the ceiling.",
       "links": [
         {
           "type": "babak",
@@ -517,7 +517,7 @@
       "gloss_ja": "敷金、保証金",
       "pos": "noun",
       "affix_tag": "root",
-      "note": "Hanashishou: berapa deposit anda? In 2 Hanashishou scenes: Booking the BBQ pit, Moving out.",
+      "note": "Hanashishou: Deposit saya RM2,400. In 2 Hanashishou scenes: Booking the BBQ pit, Moving out.",
       "links": [
         {
           "type": "babak",
@@ -535,7 +535,7 @@
       "gloss_ja": "上の階",
       "pos": "noun",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Dia tinggal di tingkat atas. In 2 Hanashishou scenes: Quiet, please, Water from the ceiling. In 2 Hanashishou scenes: Quiet, please, Water from the ceiling. In 2 Hanashishou scenes: Quiet, please, Water from the ceiling.",
+      "note": "Hanashishou: Dia tinggal di tingkat atas. In 2 Hanashishou scenes: Quiet, please, Water from the ceiling.",
       "links": [
         {
           "type": "babak",
@@ -553,7 +553,7 @@
       "gloss_ja": "リフォームする、改装する",
       "pos": "verb",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Mereka ubah suai dapur. In 2 Hanashishou scenes: Feedback on the slides, The renovation next door. In 2 Hanashishou scenes: Feedback on the slides, The renovation next door. In 2 Hanashishou scenes: Feedback on the slides, The renovation next door.",
+      "note": "Hanashishou: Mereka ubah suai dapur. In 2 Hanashishou scenes: Feedback on the slides, The renovation next door.",
       "links": [
         {
           "type": "babak",
@@ -571,7 +571,7 @@
       "gloss_ja": "動かす、移す",
       "pos": "verb",
       "affix_tag": "root",
-      "note": "Hanashishou: Saya alih kereta sekarang. In 1 Hanashishou scene: The blocked car. In 1 Hanashishou scene: The blocked car. In 1 Hanashishou scene: The blocked car.",
+      "note": "Hanashishou: Saya alih kereta sekarang. In 1 Hanashishou scene: The blocked car.",
       "links": [
         {
           "type": "babak",
@@ -607,7 +607,7 @@
       "gloss_ja": "ドリル",
       "pos": "noun",
       "affix_tag": "root",
-      "note": "Hanashishou: Bunyi gerudi sangat kuat. In 1 Hanashishou scene: The renovation next door. In 1 Hanashishou scene: The renovation next door. In 1 Hanashishou scene: The renovation next door.",
+      "note": "Hanashishou: Bunyi gerudi sangat kuat. In 1 Hanashishou scene: The renovation next door.",
       "links": [
         {
           "type": "babak",
@@ -643,7 +643,7 @@
       "gloss_ja": "リサイクル、資源ごみ",
       "pos": "noun / verb",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Botol masuk tong kitar semula. In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour.",
+      "note": "Hanashishou: Botol masuk tong kitar semula. In 1 Hanashishou scene: The new neighbour.",
       "links": [
         {
           "type": "babak",
@@ -661,7 +661,7 @@
       "gloss_ja": "エレベーターホール",
       "pos": "noun",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Saya jumpa jiran di lobi lif. In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour.",
+      "note": "Hanashishou: Saya jumpa jiran di lobi lif. In 1 Hanashishou scene: The new neighbour.",
       "links": [
         {
           "type": "babak",
@@ -715,7 +715,7 @@
       "gloss_ja": "ルーター",
       "pos": "noun",
       "affix_tag": "root",
-      "note": "Hanashishou: Maaf atas kesulitan. Sudah cuba hidupkan semula penghala itu? In 1 Hanashishou scene: The internet is down.",
+      "note": "Hanashishou: Lampu penghala merah. In 1 Hanashishou scene: The internet is down.",
       "links": [
         {
           "type": "babak",
@@ -733,7 +733,7 @@
       "gloss_ja": "ごみ",
       "pos": "noun",
       "affix_tag": "root",
-      "note": "Hanashishou: Saya buang sampah di mana? In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour.",
+      "note": "Hanashishou: Saya buang sampah di mana? In 1 Hanashishou scene: The new neighbour.",
       "links": [
         {
           "type": "babak",
@@ -751,7 +751,7 @@
       "gloss_ja": "（ごみなどの）箱、容器",
       "pos": "noun",
       "affix_tag": "root",
-      "note": "Hanashishou: Tong itu biru. In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour.",
+      "note": "Hanashishou: Tong itu biru. In 1 Hanashishou scene: The new neighbour.",
       "links": [
         {
           "type": "babak",

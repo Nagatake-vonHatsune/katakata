@@ -49,6 +49,18 @@ STANDARD = {std: spoken for spoken, std in SPOKEN.items()}
 BOTH_FINE = {"pusat beli-belah": "mall", "mall": "pusat beli-belah", "parkir": "tempat letak kereta", "tempat letak kereta": "parkir",
              "pesawat": "kapal terbang", "kapal terbang": "pesawat"}
 SHOWN_SCENES = 4
+# Words with a ber-/be-/meN- shape are left out of an example from Hanashishou's vocabulary file (the root-word rule of the first Jambatan packs).
+ALLOW = {"berat", "bersih", "belok", "belakang", "belas", "belum", "beli", "besar", "bebas", "beliau", "berus", "merah", "meja",
+         "meter", "mesyuarat", "mereka", "mendung", "menu", "belanja", "menang", "berapa", "belajar", "melati", "melaka"}
+
+
+def affixed(sentence):
+    out = []
+    for w in re.findall(r"[A-Za-z][A-Za-z'-]*", sentence or ""):
+        lw = w.lower()
+        if lw not in ALLOW and (lw.startswith("ber") or re.match(r"^be[kl]", lw) or re.match(r"^me[^aeiou\W]", lw)):
+            out.append(w)
+    return out
 # IDs of Jambatan cards dropped since they were first published (step 3c: jiran, pindah, sepupu became class cards): never reused.
 RETIRED_IDS = ["ms-j-health-22"]
 
@@ -74,12 +86,17 @@ def main(hana, map_out=None):
     # Hanashishou deck index (every Malay word, any band) and the scenes' English titles.
     index = {}
     titles = {}
+    vocab_example = {}  # Hanashishou's own example line for a word (band 1, else band 2), when it has none of the affixed shapes
     for pack in sorted(p.name for p in (hana / "content/packs").iterdir()):
         vf = hana / f"content/packs/{pack}/targets/ms/vocab.json"
         if not vf.exists():
             continue
         for word, card in json.load(open(vf, encoding="utf-8")).items():
             index[word] = {"band": card["band"], "pack": pack}
+            ex = card.get("examples", {})
+            line = next((ex[b] for b in ("1", "2") if ex.get(b) and not affixed(ex[b])), None)
+            if line and word.lower() not in vocab_example:
+                vocab_example[word.lower()] = line
         en = json.load(open(hana / f"content/packs/{pack}/targets/ms/lang/en.json", encoding="utf-8"))
         for k, v in en.items():
             m = re.fullmatch(r"episode\.(.+)\.title", k)
@@ -135,11 +152,10 @@ def main(hana, map_out=None):
         term = row["Malay"]
         alts = [a.strip().lower() for a in re.sub(r"\(.*?\)", "", term).split("/") if a.strip()]
         parts = []
-        ex = None
-        if old_card and (old_card.get("note") or "").startswith("Hanashishou: "):
-            ex = old_card["note"][len("Hanashishou: "):].split(" Also spelt ")[0].strip()
-        elif r["example"]:
+        ex = next((vocab_example[a] for a in [term.strip().lower()] + alts if a in vocab_example), None)
+        if ex is None and r["example"]:
             ex = r["example"]["text"].strip()
+        ex = ex.strip() if ex else None
         if ex:
             parts.append(f"Hanashishou: {ex}" if ex[-1] in ".!?…»\"" else f"Hanashishou: {ex}.")
         for a in alts:
