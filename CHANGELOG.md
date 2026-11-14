@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- **Stage 2 step 3f: rules sync and one card removed (14 Nov 2026), 1178 to 1177 cards.** Report: [docs/STAGE-2-step3f-report.md](docs/STAGE-2-step3f-report.md).
+  - Ledger sync: exactly L-1303 «minggu depan» Retired and L-0530 Action «KD4 check». Card `ms-c17-026` dropped (last card of c17, no ID moved, in no Sedia Kelas list); L-1303's J and K cleared (2 cells, verified); Journal rows 202 to 205.
+  - Rules re-pinned to Cikgu Sensai `4f2391b` (81 fixtures); «tanda tangan» is a disallowed form. `tools/stage-rules.mjs` matches two-word disallowed forms as Cikgu Sensai's checker does. All 81 fixtures agree; the step 3e known-divergence exemption is removed.
+
 - **Stage 2 step 3e: new ledger rows, «tandatangan», the chapter 10 picture game (14 Nov 2026), 1121 to 1178 cards, 43 to 45 packs.** Report: [docs/STAGE-2-step3e-report.md](docs/STAGE-2-step3e-report.md).
   - Ledger sync: exactly L-0530 «tandatangan» and 37 new rows (L-1273 to L-1309). 31 class cards (L-1273 to L-1303), each last in its pack
     (c10 4, c11 4, c12 4, c13 4, c14 7, c15 2, c16 4, c17 2); no earlier card ID, frame or scenario line changed. Each shows its root and chapter;

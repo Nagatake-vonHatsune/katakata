@@ -1,17 +1,16 @@
 # Kata-Kata hand-off
 
-Last updated 14 Nov 2026 (Stage 2 build step 3e done: new ledger rows, «tandatangan», the chapter 10 picture game, [report](STAGE-2-step3e-report.md); step 3d [report](STAGE-2-step3d-report.md); step 3c [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
+Last updated 14 Nov 2026 (Stage 2 build step 3f done: rules sync and one card removed, [report](STAGE-2-step3f-report.md); step 3e: new ledger rows, «tandatangan», the chapter 10 picture game, [report](STAGE-2-step3e-report.md); step 3d [report](STAGE-2-step3d-report.md); step 3c [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
 Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-1.0.md).
 
 ## State
 
-- 45 live packs, 1178 cards: Kelas chapters 1 to 18 (chapter 18 is a review pack with no cards of its own), 22 Dunia scenes (20 Stage 1,
+- 45 live packs, 1177 cards: Kelas chapters 1 to 18 (chapter 18 is a review pack with no cards of its own), 22 Dunia scenes (20 Stage 1,
   `hari-kerja-jiran` the chapter 10 picture scene, `kata-biasa` the practice pool), 5 Jambatan scenes.
 - Workbook: `content/source/2026-11-13_KataKata_VocabBank_v6.xlsx`, built by `tools/make_vocab_bank_v6.py` (v5 + chapters 10 to 18).
-- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the step 3e write-back (L-0001 to L-1309; chapter 18 has no ledger cells).
-- Affix guard: stage-aware, rules from Cikgu Sensai `a24a993` (`content/rules/`). One shared fixture, `lah-in-answer-key-fails`, now disagrees
-  because L-1289 «baiklah» is its own word; it is a known divergence in `tests/unit/stage-rules.test.ts` until Cikgu Sensai changes the fixture
-  word. Cikgu Sensai will add «tanda tangan» to the disallowed forms: copy the rules at the next sync.
+- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the step 3f write-back (L-0001 to L-1309; chapter 18 has no ledger cells).
+- Affix guard: stage-aware, rules from Cikgu Sensai `4f2391b` (`content/rules/`, 81 fixtures, all agree; no known divergences). The checker matches two-word
+  disallowed forms («tanda tangan») as Cikgu Sensai's does.
 - Kata-Kata's half of Stage 2 (build step 3) is finished. Next: Cikgu Sensai step 4 (suites c10 to c17, step 5 chapter 18) and
   Hanashishou step 6; Cikgu Sensai should refresh `curriculum/reference/katakata/` with `c10.json` to `c18.json` and the ledger
   copy (this repo does not edit it). Open questions for Sam: [STAGE-2-step3e-report.md](STAGE-2-step3e-report.md) section 11.
@@ -35,7 +34,7 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
 1. Cikgu Sensai (read only; never edit it): `docs/stage-2-plan.md` for the chapter's unit tables (section 2), its row in the
    section 3 affix table, its section 5 scene, and its revision anchors ("Revision, recognition and deferred candidates");
    `docs/stage-2-decisions.md`; the newest `docs/STAGE-2-*` report and `HANDOFF.md`. Check whether `curriculum/stage-rules.json`
-   changed since `a24a993` (see "Rules" below; last copied from `a24a993`, 77 fixtures).
+   changed since `a24a993` (see "Rules" below; last copied from `4f2391b`, 81 fixtures).
 2. This repo: this file, the newest chapter function in `tools/make_vocab_bank_v6.py` (`ch17`; `ch18` for a review chapter),
    `content/ms/kelas/c17.json`.
 
