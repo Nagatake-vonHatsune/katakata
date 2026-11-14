@@ -1,0 +1,658 @@
+word,scene form,meaning (English),meaning (Japanese draft),POS,affix tag,root,decision,reason,Hanashishou scenes count,existing ledger ID,flags
+saudari,,"Miss, Ms (formal, in letters)",〜さん（女性、あらたまった呼びかけ）,noun,root,,Ch1 (extension),titles (Ch1): formal title for a woman in letters and speeches,1,,formal
+mana,,which; where (in questions),どの、どこ,question word,root,,Ch2 (extension),"question words (Ch2, with Siapa / Apa / Di mana): which, where; 15 scenes; root of «mana-mana» (Ch15); promoted from Jambatan · Daily life (card ms-j-daily-life-41)",15,L-1330,"related: L-0052 di mana, L-0211 macam mana, L-0279 yang mana, L-0297 ke mana, L-0298 dari mana (all contain it)"
+kenal,,"to know (a person), recognise",知っている（人）、見分ける,verb,root,,Ch2 (extension),self-introduction (Ch2): know a person; 5 scenes; root of «kenalkan» (Ch12); promoted from Jambatan · At work (card ms-j-office-42),5,L-1392,"related: L-0781 berkenalan, L-0813 kenal pasti"
+ajar,,teach,教える,verb,root,,Ch2 (extension),self-introduction and work (Ch2): «Saya ajar …»; pairs with «guru / cikgu» (Ch2),1,,not spoken by a character or offered as a choice (narration)
+ayah,,father,父、お父さん,noun,root,,Ch2 (extension),family in a self-introduction (Ch2),1,,not spoken by a character or offered as a choice (narration)
+bapa,,"father (""ibu bapa"" = parents)",父（「ibu bapa」両親）,noun,root,,Ch2 (extension),family (Ch2): «ibu bapa» (parents),1,,
+kanak-kanak,,children,子ども,noun,lex,kanak,Ch2 (extension),people (Ch2),1,,
+lahir,,be born,生まれる,verb,root,,Ch2 (extension),self-introduction (Ch2): «Saya lahir di …»,1,,
+pencetak,,printer,プリンター,noun,pe(N)-,cetak,Ch2 (extension),the office on your first day (Ch2): «Pencetak di mana?»; cetak Ch2,1,,
+sukarelawan,,volunteer,ボランティア,noun,root,,Ch2 (extension),self-introduction (Ch2): what you do,1,,not spoken by a character or offered as a choice (narration)
+cuma,,"only, just; but",ただ、〜だけ、ただし,adv,root,,Ch3 (extension),"prices (Ch3): «cuma lima ringgit», next to «sahaja / saja» (Ch3); 18 scenes; promoted from Jambatan · Talking and explaining (card ms-j-social-31)",18,L-1325,near-synonym of L-1000 sahaja / saja
+beberapa,,"several, a few, some",いくつかの,det,lex,berapa,Ch3 (extension),quantities (Ch3): several; 11 scenes; promoted from Jambatan · At work (card ms-j-office-32),11,L-1343,related: L-0116 berapa
+percuma,,free of charge,無料の,adj,root,,Ch3 (extension),prices (Ch3): free of charge; 3 scenes but common on signs and offers; promoted from Jambatan · Daily life (card ms-j-daily-life-71),3,L-1465,
+bajet,,budget,予算,noun,root,,Ch3 (extension),"money and prices (Ch3): ""bajet RM…""; loan, Malaysian spelling",2,,
+kedua-dua,,both,両方の,det,lex,dua,Ch3 (extension),numbers (Ch3): ke- with a number; standard partner of «dua-dua» (Jambatan),2,,
+nilai,nilainya,value; to evaluate,価値；評価する,noun,root,,Ch3 (extension),"money (Ch3): «nilainya RM…»; scene forms «nilai», «nilainya»",2,,
+tawaran,,offer,オファー、特売,noun,-an,tawar,Ch3 (extension),prices and offers (Ch3); tawar Ch3,2,,not spoken by a character or offered as a choice (pattern)
+udara,,air,空気；«pos udara» 航空便,noun,root,,Ch3 (extension),the post office (Ch3): «pos udara»,2,,
+bilangan,,"number, count",数、人数,noun,-an,bilang,Ch3 (extension),numbers (Ch3): «bilangan orang»,1,,root «bilang» not in ledger: taught as a whole word
+debit,,debit,デビット（カード）,noun,root,,Ch3 (extension),money (Ch3): «kad debit»; loan,1,,
+digit,,digit,桁、数字,noun,root,,Ch3 (extension),numbers (Ch3): «empat digit»; loan,1,,
+hutang,,debt; owe,借金,noun,root,,Ch3 (extension),money (Ch3),1,,
+juruwang,,cashier,レジ係,noun,root,,Ch3 (extension),money and paying (Ch3),1,,
+kadar,,rate,率、料金,noun,root,,Ch3 (extension),money (Ch3): rates and fees,1,,
+kilogram,,kilogram,キログラム,noun,root,,Ch3 (extension),weights at the market (Ch3),1,,not spoken by a character or offered as a choice (narration)
+kod,,code,コード、番号,noun,root,,Ch3 (extension),"numbers (Ch3): «kod TAC» (Jambatan row), PIN codes",1,,
+kos,,cost,費用,noun,root,,Ch3 (extension),money (Ch3),1,,
+pakej,,package,パッケージ、プラン,noun,root,,Ch3 (extension),prices (Ch3): a package or phone plan,1,,
+pegawai,,"officer, official",係員、職員,noun,root,,Ch3 (extension),the bank and post office (Ch3): «pegawai bank»,1,,
+penimbang,,weighing scale,はかり,noun,pe(N)-,timbang,Ch3 (extension),the market (Ch3); timbang Ch3,1,,
+pos,,"post, mail",郵便,noun,root,,Ch3 (extension),"the post office (Ch3): «pos laju», «pos udara»",1,,
+satu-satu,,one by one,一つずつ,adv,lex,satu,Ch3 (extension),numbers (Ch3),1,,
+beri,,to give,与える、くれる,verb,root,,Ch4 (extension),"everyday verbs of the daily routine (Ch4), next to bawa, guna, tulis; 31 scenes; root of «memberi» (Ch11); promoted from Jambatan · Talking and explaining (card ms-j-social-22)",31,L-1312,related: L-1166 berikan (-kan form)
+semula,,"again, anew; back to the start",再び、元に戻して,adv,root,,Ch4 (extension),"frequency and routine (Ch4): again, anew; 19 scenes; promoted from Jambatan · Home and condo (card ms-j-home-condo-29)",19,L-1321,"related: L-0670 kitar semula, L-0841 hubungi semula, L-0890 dimasak semula (all contain it)"
+bantu,,"to help, assist",手伝う、助ける,verb,root,,Ch4 (extension),everyday verbs (Ch4): help; 14 scenes; standard near-synonym of «tolong» (Ch8); promoted from Jambatan · Daily life (card ms-j-daily-life-42),14,L-1331,near-synonym of L-0375 tolong
+ulang,,to repeat,繰り返す,verb,root,,Ch4 (extension),frequency (Ch4): repeat; 12 scenes; root of «berulang» (Ch10); promoted from Jambatan · Talking and explaining (card ms-j-social-39),12,L-1342,
+biasa,,"usual, ordinary; used to",普通の、いつもの、慣れている,adj,root,,Ch4 (extension),"routine (Ch4): usual, next to «biasanya» (Ch4); 9 scenes; promoted from Jambatan · Home and condo (card ms-j-home-condo-30)",9,L-1351,related: L-0184 biasanya
+hampir,,"nearly, almost; near",ほとんど、もう少しで、近い,adv,root,,Ch4 (extension),time (Ch4): «hampir pukul lima»; 8 scenes; promoted from Jambatan · Talking and explaining (card ms-j-social-49),8,L-1359,
+sejam,,one hour,1時間,noun,se-,jam,Ch4 (extension),"time (Ch4): se- with a time noun follows its base (jam, Ch4); 5 scenes; promoted from Jambatan · At work (card ms-j-office-44)",5,L-1399,related: L-0158 jam
+buang,,throw away,捨てる,verb,root,,Ch4 (extension),daily routine (Ch4): «buang sampah»; root of «membuang» (Ch11),2,,
+setahun,,a year,一年,noun,se-,tahun,Ch4 (extension),time (Ch4): se- with a time noun follows its base,2,,
+tahunan,,annual,年に一度の、年次の,adj,-an,tahun,Ch4 (extension),"time and frequency (Ch4): «cuti tahunan», «pemeriksaan tahunan»",2,,not spoken by a character or offered as a choice (narration)
+jadual,,schedule,予定表、時間割,noun,root,,Ch4 (extension),time and routine (Ch4),1,,
+kerap,,often,よく、頻繁に,adv,root,,Ch4 (extension),frequency (Ch4); formal partner of «selalu»,1,,not spoken by a character or offered as a choice (narration)
+malam-malam,,late at night,夜遅く,adv,lex,malam,Ch4 (extension),time (Ch4): reduplicated time word; malam Ch1,1,,
+musim,,season,季節,noun,root,,Ch4 (extension),time (Ch4): «musim hujan»,1,,
+pagi-pagi,,early in the morning,朝早く,adv,lex,pagi,Ch4 (extension),time (Ch4); pagi Ch1,1,,
+percutian,,holiday,休暇、旅行,noun,pe-an,cuti,Ch4 (extension),"time off (Ch4, with the Dunia scene «Cuti ke pantai»); cuti Ch2",1,,not spoken by a character or offered as a choice (game)
+seminit,,a minute,一分,noun,se-,minit,Ch4 (extension),time (Ch4): se- with a time noun; minit Ch4,1,,
+serentak,,at the same time,同時に,adv,root,,Ch4 (extension),time (Ch4),1,,not spoken by a character or offered as a choice (narration)
+siang,,daytime,昼間,noun,root,,Ch4 (extension),time (Ch4): «siang hari»,1,,
+salah,,"wrong, mistaken; fault",間違った、間違い,adj,root,,Ch5 (extension),"describing (Ch5): wrong, the opposite of «betul» (Ch3); 20 scenes; root of «salahkan», «tersalah»; promoted from Jambatan · Feelings and opinions (card ms-j-social-27)",20,L-1319,related: L-0747 salah faham; opposite of L-0997 betul
+tentang,,"about, concerning",〜について,prep,root,,Ch5 (extension),"talking about food, objects and feelings (Ch5): about; 19 scenes; standard partner of spoken «pasal» (Jambatan); promoted from Jambatan · Talking and explaining (card ms-j-social-30)",19,L-1323,pair: pasal (spoken)
+nampak,,"to see, spot; to look, seem",見える、見かける,verb,root,,Ch5 (extension),describing (Ch5): «nampak sedap» (looks tasty); 17 scenes; promoted from Jambatan · At work (card ms-j-office-28),17,L-1327,near-synonym of L-0577 tengok
+cara,,"way, method",方法、やり方,noun,root,,Ch5 (extension),"Bagaimana / Macam mana (Ch5): way, method; 14 scenes; promoted from Jambatan · Talking and explaining (card ms-j-social-32)",14,L-1332,
+bunyi,,"sound, noise",音,noun,root,,Ch5 (extension),"describing (Ch5): sound, noise; 11 scenes; promoted from Jambatan · Events and outings (card ms-j-social-35)",11,L-1344,
+tanpa,,without,〜なしで,prep,root,,Ch5 (extension),food and drink (Ch5): «tanpa gula»; 8 scenes; «tanpa ais» (Jambatan row) contains it; promoted from Jambatan · Daily life (card ms-j-daily-life-45),8,L-1364,related: L-0719 tanpa ais (contains it)
+buruk,,bad,悪い、ひどい,adj,root,,Ch5 (extension),describing things and feelings (Ch5); opposite of «baik» (Ch1),2,,
+durian,,durian,ドリアン,noun,root,,Ch5 (extension),food (Ch5),2,,
+kira-kira,,"about, roughly",およそ、約,adv,lex,kira,Ch5 (extension),"prices and amounts (Ch5): ""kira-kira RM45""; kira is Ch5, so not earlier",2,,
+malu,,"shy, embarrassed",恥ずかしい、照れる,adj,root,,Ch5 (extension),feelings (Ch5),2,,
+susu,,milk,牛乳、ミルク,noun,root,,Ch5 (extension),food and drink (Ch5),2,,
+bakar,,"burn; grill, bake",焼く,verb,root,,Ch5 (extension),cooking (Ch5): «ayam bakar»,1,,
+bangga,,proud,誇りに思う,adj,root,,Ch5 (extension),feelings (Ch5),1,,
+bau,baunya,smell,におい,noun,root,,Ch5 (extension),describing food (Ch5); scene form «baunya» (+ -nya),1,,
+cendawan,,mushroom,きのこ,noun,root,,Ch5 (extension),food (Ch5),1,,
+gula-gula,,"sweets, candy",あめ、キャンディー,noun,lex,gula,Ch5 (extension),food (Ch5),1,,
+halia,,ginger,しょうが,noun,root,,Ch5 (extension),food (Ch5),1,,
+istimewa,,special,特別な,adj,root,,Ch5 (extension),describing (Ch5),1,,
+kacang,,"nut, peanut, bean",ナッツ、豆,noun,root,,Ch5 (extension),food (Ch5); «kacang tanah» = peanut (food allergy),1,,
+kecewa,,disappointed,がっかりした,adj,root,,Ch5 (extension),feelings (Ch5); root of «mengecewakan» (Ch12),1,,
+lemon,,lemon,レモン,noun,root,,Ch5 (extension),food and drink (Ch5),1,,
+madu,,honey,はちみつ,noun,root,,Ch5 (extension),food and drink (Ch5),1,,
+mee,,noodles,麺,noun,root,,Ch5 (extension),food (Ch5),1,,
+nanas,,pineapple,パイナップル,noun,root,,Ch5 (extension),food (Ch5),1,,
+pandai,,"clever, good at",上手な、賢い,adj,root,,Ch5 (extension),describing people (Ch5),1,,
+pekat,,"thick, strong (of tea)",濃い（お茶・コーヒー）,adj,root,,Ch5 (extension),drinks (Ch5): «teh pekat»,1,,not spoken by a character or offered as a choice (narration)
+puas,,"satisfied (""tak puas hati"" = dissatisfied)",満足した（«tak puas hati» 不満）,adj,root,,Ch5 (extension),feelings (Ch5),1,,
+sate,,satay,サテ（串焼き）,noun,root,,Ch5 (extension),food (Ch5),1,,
+snek,,snack,スナック、おやつ,noun,root,,Ch5 (extension),food (Ch5),1,,
+tauhu,,tofu,豆腐,noun,root,,Ch5 (extension),food (Ch5),1,,
+terang,,bright,明るい,adj,root,,Ch5 (extension),describing (Ch5): colours and light,1,,not spoken by a character or offered as a choice (narration)
+pasukan,,team,チーム,noun,root,,Ch6 (extension),sport and games (Ch6): team; 14 scenes; promoted from Jambatan · At work (card ms-j-office-30),14,L-1333,
+betul-betul,,"really, truly; exactly",本当に、まさに,adv,lex,betul,Ch6 (extension),"intensity (Ch6), next to sangat, terlalu; 13 scenes; promoted from Jambatan · Feelings and opinions (card ms-j-social-34)",13,L-1337,related: L-0997 betul
+selama,,for (a length of time); during,〜の間（期間）,prep,se-,lama,Ch6 (extension),"duration (Ch6, after «lama», which is placed at 6): for (a length of time); 8 scenes; promoted from Jambatan · Talking and explaining (card ms-j-social-52)",8,L-1363,related: L-0284 lama
+lawan,,"fight, oppose",戦う、対戦相手,verb,root,,Ch6 (extension),"games and sport (Ch6): «lawan» = opponent, play against",2,,
+papan,,"board (""papan klip"" = clipboard)",板、ボード,noun,root,,Ch6 (extension),games (Ch6): «permainan papan» (board game); also «papan klip»,2,,not spoken by a character or offered as a choice (narration)
+permainan,,game,ゲーム、遊び,noun,pe-an,main,Ch6 (extension),games and sport (Ch6); main Ch2,2,,"not spoken by a character or offered as a choice (game, narration)"
+sebaik,,"as good as (""sebaik mungkin"" = as best as possible)",〜と同じくらい良く,adv,se-,baik,Ch6 (extension),se- comparison (Ch6): «sebaik mungkin» comes later with mungkin (Ch13),2,,
+beza,bezanya,difference,違い,noun,root,,Ch6 (extension),comparison (Ch6): «Apa bezanya?»; scene form «bezanya»,1,,
+catur,,chess,チェス,noun,root,,Ch6 (extension),games (Ch6),1,,
+futsal,,futsal,フットサル,noun,root,,Ch6 (extension),sport (Ch6),1,,not spoken by a character or offered as a choice (narration)
+ganda,,"fold, times (""dua kali ganda"" = double)",倍（«dua kali ganda» 二倍）,noun,root,,Ch6 (extension),comparison (Ch6): «dua kali ganda»,1,,
+kebanyakan,,"most, mostly",ほとんどの、大部分,det,ke-an,banyak,Ch6 (extension),comparison and quantity (Ch6): «kebanyakan orang»; banyak Ch5,1,,
+lari,,run,走る、逃げる,verb,root,,Ch6 (extension),sport (Ch6),1,,not spoken by a character or offered as a choice (narration)
+lemah,,weak,弱い,adj,root,,Ch6 (extension),comparison (Ch6): «lebih lemah»,1,,
+lumba,,race,レース、競走,noun,root,,Ch6 (extension),games and sport (Ch6): «permainan lumba»,1,,not spoken by a character or offered as a choice (narration)
+markah,,"mark, score",点数,noun,root,,Ch6 (extension),games and scores (Ch6),1,,
+pertandingan,,competition,競技会、コンテスト,noun,pe-an,tanding,Ch6 (extension),sport and competitions (Ch6),1,,root «tanding» not in ledger: taught as a whole word
+sebanyak,,as much as,〜もの（量・額）,adv,se-,banyak,Ch6 (extension),se- comparison and amounts (Ch6); banyak Ch5,1,,not spoken by a character or offered as a choice (narration)
+sungguh,,"truly, really",本当に,adv,root,,Ch6 (extension),intensity (Ch6): «sungguh cantik»,1,,
+syabas,,well done,よくやった,phrase,root,,Ch6 (extension),praise after a game (Ch6),1,,
+tunjuk,,"to show, point out",見せる、示す,verb,root,,Ch7 (extension),directions (Ch7): «tunjuk jalan»; 14 scenes; root of «menunjukkan» (Ch12); promoted from Jambatan · Daily life (card ms-j-daily-life-43),14,L-1336,"related: L-0624 tunjuk jalan, L-1167 tunjukkan"
+bandar,,"town, city",町、都市,noun,root,,Ch7 (extension),places and getting around (Ch7),2,,
+petak,,square (on a board),区画、マス,noun,root,,Ch7 (extension),parking (Ch7): «petak parkir»; also a board-game square,2,,
+tepi,,"side, edge",端、わき,noun,root,,Ch7 (extension),locations (Ch7): «di tepi jalan»,2,,
+tiba,,arrive,着く、到着する,verb,root,,Ch7 (extension),travel and arrival (Ch7); formal partner of «sampai»,2,,
+bagasi,,"baggage, luggage",手荷物、荷物,noun,root,,Ch7 (extension),travel (Ch7): the airport; «lebihan bagasi» is a Jambatan row,1,,not spoken by a character or offered as a choice (narration)
+brek,,brake,ブレーキ,noun,root,,Ch7 (extension),driving (Ch7); loan,1,,not spoken by a character or offered as a choice (narration)
+cepat-cepat,,"quickly, hurriedly",急いで,adv,lex,cepat,Ch7 (extension),getting there in time (Ch7); cepat Ch7 (Dunia),1,,not spoken by a character or offered as a choice (narration)
+ekspres,,express,急行の、速達の,adj,root,,Ch7 (extension),transport and post (Ch7): «bas ekspres»,1,,not spoken by a character or offered as a choice (narration)
+hujung,,"end, tip",端、突き当たり,noun,root,,Ch7 (extension),locations (Ch7): «di hujung jalan»; «hujung minggu» too,1,,
+jarak,,"distance (""jarak jauh"" = remote)",距離,noun,root,,Ch7 (extension),distance and duration (Ch7); «jarak jauh» = remote,1,,
+kastam,,customs,税関,noun,root,,Ch7 (extension),travel (Ch7): the airport,1,,
+lokasi,,location,場所、位置,noun,root,,Ch7 (extension),locations (Ch7); loan,1,,not spoken by a character or offered as a choice (pattern)
+lorong,,lane,車線、路地,noun,root,,Ch7 (extension),directions (Ch7): «lorong kiri»,1,,
+pandu,,drive,運転する,verb,root,,Ch7 (extension),transport (Ch7); root of «memandu» (Ch11),1,,
+pas,,"pass (""pas masuk"" = boarding pass)",パス（«pas masuk» 搭乗券）,noun,root,,Ch7 (extension),travel (Ch7): boarding pass,1,,
+pasar raya,raya,supermarket,スーパーマーケット,phrase,chunk,pasar + raya,Ch7 (extension),places and shops (Ch7): «pasar raya»; pasar Ch3,1,,"checker skips «pasar» as a proper-noun token (malay-proper-nouns.json), so «raya» shows as a gap: fix in the build"
+pawagam,,cinema,映画館,noun,root,,Ch7 (extension),places (Ch7),1,,not spoken by a character or offered as a choice (narration)
+pekan,,small town,町,noun,root,,Ch7 (extension),places (Ch7),1,,
+penerbangan,,flight,フライト、便,noun,pe-an,terbang,Ch7 (extension),travel (Ch7); terbang Ch7 (extension),1,,
+perhentian bas,perhentian,bus stop,バス停,phrase,chunk,perhentian + bas,Ch7 (extension),transport (Ch7): «perhentian bas»; bas Ch7,1,,not spoken by a character or offered as a choice (narration)
+perlahan-lahan,,slowly,ゆっくり,adv,lex,perlahan,Ch7 (extension),driving and walking (Ch7); perlahan Ch6,1,,
+perpustakaan,,library,図書館,noun,pe-an,pustaka,Ch7 (extension),places (Ch7),1,,root «pustaka» not in ledger: taught as a whole word; not spoken by a character or offered as a choice (narration)
+polis,,police,警察,noun,root,,Ch7 (extension),places (Ch7): «balai polis»,1,,
+pusat,,centre,センター、中心,noun,root,,Ch7 (extension),"places (Ch7): «pusat beli-belah» (Jambatan row), «pusat kesihatan»",1,,not spoken by a character or offered as a choice (narration)
+pusing,,"turn around, spin",回る、Uターンする,verb,root,,Ch7 (extension),directions (Ch7): «pusing balik»,1,,not spoken by a character or offered as a choice (narration)
+secepat,,as fast as,〜と同じくらい速く,adv,se-,cepat,Ch7 (extension),se- comparison (from Ch6); cepat Ch7 (Dunia),1,,not spoken by a character or offered as a choice (narration)
+sekeliling,,around,周り、周囲,prep,lex,,Ch7 (extension),locations (Ch7),1,,not spoken by a character or offered as a choice (narration)
+sesat,,lost,道に迷った,adj,root,,Ch7 (extension),directions (Ch7),1,,
+tambang,,fare,運賃,noun,root,,Ch7 (extension),transport (Ch7),1,,not spoken by a character or offered as a choice (narration)
+terbang,,fly,飛ぶ,verb,root,,Ch7 (extension),transport (Ch7): «kapal terbang» (Dunia); root of «penerbangan»,1,,
+terminal,,terminal (bus terminal),ターミナル,noun,root,,Ch7 (extension),transport (Ch7): «terminal bas»,1,,not spoken by a character or offered as a choice (narration)
+seorang,,one person; alone,1人、1人で,det,se-,orang,Ch8 (extension),se- + classifier (Ch8): orang is a counter; 14 scenes; root of «seseorang» (Ch15); promoted from Jambatan · Talking and explaining (card ms-j-social-33),14,L-1335,related: L-0058 orang
+sendiri,,oneself; own; by oneself,自分で、自分自身の,adv,se-,diri,Ch8 (extension),"se- words (Ch8): oneself, by oneself; the ledger tags it se-, so it waits for the se- + classifier gate (8); 13 scenes; promoted from Jambatan · Talking and explaining (card ms-j-social-37)",13,L-1339,related: L-0628 bayar sendiri (contains it)
+kualiti,,quality,品質,noun,root,,Ch8 (extension),"shopping (Ch8); loan, Malaysian spelling",2,,
+sekotak,,a box of,一箱の,det,se-,kotak,Ch8 (extension),se- + classifier (Ch8); kotak Ch8,2,,not spoken by a character or offered as a choice (narration)
+seluruh,,"entire, whole",全部の、〜じゅう,det,root,,Ch8 (extension),quantities (Ch8): «seluruh rumah»,2,,
+tambahan,,additional,追加の,adj,-an,tambah,Ch8 (extension),shopping (Ch8): «caj tambahan»; tambah Ch8,2,,
+gelas,,glass (for drinking),コップ、グラス,noun,root,,Ch8 (extension),counting and ordering (Ch8): «dua gelas air»,1,,not spoken by a character or offered as a choice (narration)
+hadiah,,"gift, prize",プレゼント、賞品,noun,root,,Ch8 (extension),shopping (Ch8): buying a gift,1,,not spoken by a character or offered as a choice (narration)
+ikat,,bunch (of vegetables); tie,束；縛る,noun,root,,Ch8 (extension),counting vegetables (Ch8): «seikat»,1,,
+jaket,,jacket,ジャケット,noun,root,,Ch8 (extension),clothes shopping (Ch8),1,,
+mainan,,toy,おもちゃ,noun,-an,main,Ch8 (extension),shopping (Ch8); main Ch2,1,,
+majalah,,magazine,雑誌,noun,root,,Ch8 (extension),shopping (Ch8),1,,not spoken by a character or offered as a choice (narration)
+perak,,silver (colour),銀（色）,adj,root,,Ch8 (extension),shopping (Ch8): the colour of an item,1,,
+secawan,,a cup of,一杯の,det,se-,cawan,Ch8 (extension),se- + classifier (Ch8); cawan Ch8,1,,not spoken by a character or offered as a choice (narration)
+sehelai,,one piece (of clothing),一枚の,det,se-,helai,Ch8 (extension),se- + classifier (Ch8); helai Ch8,1,,not spoken by a character or offered as a choice (narration)
+sepasang,,a pair of,一組の,det,se-,pasang,Ch8 (extension),se- + classifier (Ch8); pasang Ch8,1,,not spoken by a character or offered as a choice (narration)
+stik,,steak,ステーキ,noun,root,,Ch8 (extension),ordering food (Ch8); Malay spelling of the loan,1,,
+terima,"terima, diterima","to receive, accept",受け取る、受け入れる,verb,root,,Ch9 (extension),the di- passive (Ch9): «Kad kredit diterima» on notices; 10 scenes with «diterima»; promoted from Jambatan · Talking and explaining (card ms-j-social-43),10,L-1349,"scene form diterima is a regular di- form; related: L-0016 terima kasih, L-1137 menerima, L-1169 penerima"
+buatan,,"made (""buatan tangan"" = handmade)",〜製、作られたもの,noun,-an,buat,Ch9 (extension),"labels and notices (Ch9): «buatan tangan», «buatan Malaysia»; buat Ch9",2,,
+keselamatan,,"safety, security",安全、警備,noun,ke-an,selamat,Ch9 (extension),"notices (Ch9): «demi keselamatan», «pengawal keselamatan»; selamat Ch1",2,,
+kesulitan,,inconvenience,ご不便（おわびの言葉）,noun,ke-an,sulit,Ch9 (extension),notices (Ch9): «Harap maaf atas kesulitan» (official notices only),2,,"Sam 14 Nov: fine in official lines, casual lines use «masalah»; root «sulit» not in ledger: taught as a whole word"
+awam,,public,公共の、一般の,adj,root,,Ch9 (extension),"notices (Ch9): «tandas awam», «cuti awam»",1,,
+denda,,"fine, penalty",罰金,noun,root,,Ch9 (extension),notices and rules (Ch9): «Denda RM500»,1,,
+hiasan,,decoration,飾り,noun,-an,hias,Ch9 (extension),festivals (Ch9): decorations,1,,root «hias» not in ledger: taught as a whole word
+kenduri,,"feast, celebratory meal",祝宴、ごちそうの集まり,noun,root,,Ch9 (extension),"open house and festivals (Ch9, with «Rumah terbuka»)",1,,
+mulai,,starting from,〜から（開始）,prep,root,,Ch9 (extension),notices (Ch9): «Mulai 1 Disember …»,1,,formal; check Malaysian use in notices
+penduduk,,resident,住民,noun,pe(N)-,duduk,Ch9 (extension),notices (Ch9): «Perhatian kepada semua penduduk»; duduk Ch4,1,,not spoken by a character or offered as a choice (narration)
+pentas,,stage,舞台,noun,root,,Ch9 (extension),events (Ch9); «belakang pentas» is a Jambatan row,1,,not spoken by a character or offered as a choice (narration)
+persembahan,,performance,公演、パフォーマンス,noun,pe-an,sembah,Ch9 (extension),festivals and events (Ch9),1,,root «sembah» not in ledger: taught as a whole word
+sambut,,"welcome, receive",迎える、祝う,verb,root,,Ch9 (extension),festivals and open house (Ch9): «sambut Hari Raya»,1,,not spoken by a character or offered as a choice (pattern)
+sehingga,,"until, up to",〜まで,prep,se-,hingga,Ch9 (extension),notices (Ch9): «sehingga 5 petang»; hingga Ch9,1,,
+sekat,,block,ふさぐ、止める,verb,root,,Ch9 (extension),"notices (Ch9): «jalan disekat», a blocked card",1,,
+sekatan,,"block, restriction",制限、通行止め,noun,-an,sekat,Ch9 (extension),notices (Ch9): «sekatan jalan»; sekat Ch9 (extension),1,,
+tahniah,,congratulations,おめでとう,phrase,root,,Ch9 (extension),festivals and celebrations (Ch9),1,,
+tanda,,"sign, mark",しるし、標識,noun,root,,Ch9 (extension),signs and notices (Ch9),1,,not spoken by a character or offered as a choice (pattern)
+cerita,,"story; to tell, chat",話、物語、話す,noun,root,,Ch10 (extension),retell your day and your background (Ch10); 13 scenes; root of «ceritakan» (Ch12); promoted from Jambatan · Talking and explaining (card ms-j-social-36),13,L-1338,
+minat,,interest,興味,noun,root,,Ch10 (extension),background and hobbies (Ch10): root of «berminat» (Ch10),2,,
+tonton,,watch,見る（番組・映画を）,verb,root,,Ch10 (extension),leisure in retelling your day (Ch10),2,,
+ubah,,change,変える,verb,root,,Ch10 (extension),root of «berubah» (Ch10),2,,
+berada,,"be located, be present",いる、ある（あらたまった言い方）,verb,ber-,ada,Ch10 (extension),ber- (Ch10): where you are in a retelling; ada Ch2,1,,
+berbincang,,discuss,話し合う,verb,ber-,bincang,Ch10 (extension),ber- (Ch10): what you did today; bincang Ch10 (extension),1,,
+berkali-kali,,many times over,何度も,adv,ber-,kali,Ch10 (extension),"ber- (Ch10), frequency in a retelling; kali is placed earlier",1,,not spoken by a character or offered as a choice (narration)
+bersebelahan,,next to each other,隣り合った,adj,ber-,sebelah,Ch10 (extension),ber- (Ch10): «rumah kami bersebelahan»; sebelah Ch7,1,,
+bertulis,,written,書かれた、書面の,adj,ber-,tulis,Ch10 (extension),ber- (Ch10): «notis bertulis»; tulis Ch4,1,,
+berubah,,change (intransitive),変わる,verb,ber-,ubah,Ch10 (extension),ber- (Ch10); ubah Ch10 (extension),1,,
+berulang,,"repeat, recur",繰り返す、再発する,verb,ber-,ulang,Ch10 (extension),ber- (Ch10); ulang Ch4 (extension),1,,
+bidang,,field (of work),分野,noun,root,,Ch10 (extension),your background (Ch10): «bidang kerja saya»,1,,
+bincang,,discuss,話し合う,verb,root,,Ch10 (extension),root of «berbincang» (Ch10),1,,
+kaji,,"study (""ulang kaji"" = revise)",研究する（«ulang kaji» 復習する）,verb,root,,Ch10 (extension),your background and studies (Ch10),1,,
+kajian,,"study, research",研究,noun,-an,kaji,Ch10 (extension),your background and studies (Ch10); kaji Ch10 (extension),1,,
+kelemahan,,weakness,弱点,noun,ke-an,lemah,Ch10 (extension),your background (Ch10): strengths and weaknesses; lemah Ch6 (extension),1,,
+kilang,,factory,工場,noun,root,,Ch10 (extension),your background (Ch10): «Saya bekerja di kilang»,1,,
+perniagaan,,business,ビジネス、商売,noun,pe-an,niaga,Ch10 (extension),your background (Ch10): «Saya ada perniagaan sendiri»,1,,root «niaga» not in ledger: taught as a whole word
+ponteng,,"skip (class), play truant",さぼる,verb,root,,Ch10 (extension),retelling school days (Ch10),1,,
+serumah,,housemate; in the same house,同じ家に住む（人）,noun,se-,rumah,Ch10 (extension),your background (Ch10): «kawan serumah»; rumah Ch2,1,,not spoken by a character or offered as a choice (narration)
+zaman,,"era, period",時代、〜のころ,noun,root,,Ch10 (extension),your background (Ch10): «zaman sekolah»,1,,
+bahagian,,"part, section; department",部分、部（部署）,noun,root,,Ch11 (extension),"office (Ch11): department, section; 10 scenes; root of «sebahagian» (Ch11); promoted from Jambatan · At work (card ms-j-office-34)",10,L-1346,
+data,datanya,data,データ,noun,root,,Ch11 (extension),"office (Ch11); scene forms «data», «datanya»; loan",2,,
+ketua,,"head, leader",長、リーダー,noun,root,,Ch11 (extension),"people at work (Ch11): «ketua pasukan», «ketua jabatan»",2,,
+mesin,,machine,機械,noun,root,,Ch11 (extension),office (Ch11): the photocopier and coffee machine,2,,
+produk,,product,製品,noun,root,,Ch11 (extension),office (Ch11): launches and sales,2,,
+sebahagian,,"part, some",一部,noun,se-,bahagian,Ch11 (extension),office (Ch11): part of the work; bahagian Ch11 (extension),2,,
+selesai,,"finished, settled",終わる、片づく,verb,root,,Ch11 (extension),getting work done (Ch11),2,,
+staf,,staff,スタッフ、職員,noun,root,,Ch11 (extension),office (Ch11); loan,2,,
+tugas,,"duty, task",任務、仕事,noun,root,,Ch11 (extension),office (Ch11): «tugas saya»,2,,
+agensi,,agency,代理店、エージェンシー,noun,root,,Ch11 (extension),work (Ch11): where you worked before,1,,
+analisis,,analysis; analyse,分析,noun,root,,Ch11 (extension),office (Ch11); loan,1,,not spoken by a character or offered as a choice (narration)
+folder,,folder,フォルダー,noun,root,,Ch11 (extension),office (Ch11); loan,1,,
+invois,,invoice,請求書,noun,root,,Ch11 (extension),office (Ch11); loan,1,,
+kerani,,clerk,事務員,noun,root,,Ch11 (extension),office (Ch11),1,,not spoken by a character or offered as a choice (narration)
+layan,,"entertain, indulge (someone)",相手をする、応対する,verb,root,,Ch11 (extension),work (Ch11): serving customers,1,,
+matlamat,,goal,目標,noun,root,,Ch11 (extension),office (Ch11),1,,
+mekanik,mekaniknya,mechanic,整備士,noun,root,,Ch11 (extension),"jobs and who does what (Ch11); scene form «mekaniknya»; the checker reads «me-kanik» as a meN- shape, so not before 11",1,,looks like meN- (me + kanik); not spoken by a character or offered as a choice (narration)
+memandu,,drive,運転する,verb,meN-,pandu,Ch11 (extension),meN- (Ch11): who does what; pandu Ch7 (extension),1,,
+memberi,,give,与える,verb,meN-,beri,Ch11 (extension),meN- (Ch11); beri Ch4 (extension),1,,
+membuang,,throw away,捨てる,verb,meN-,buang,Ch11 (extension),meN- (Ch11); buang Ch4 (extension),1,,
+orientasi,,orientation,オリエンテーション,noun,root,,Ch11 (extension),first weeks at work (Ch11); loan,1,,
+pengguna,,user,ユーザー、利用者,noun,pe(N)-,guna,Ch11 (extension),office (Ch11); guna Ch4,1,,
+prestasi,,performance,成績、仕事ぶり,noun,root,,Ch11 (extension),work (Ch11): performance reviews,1,,
+rujuk,,refer to,参照する、照会する,verb,root,,Ch11 (extension),office (Ch11): «rujuk emel saya»,1,,
+tajuk,,"title, heading",題名、件名,noun,root,,Ch11 (extension),office (Ch11): an email subject,1,,not spoken by a character or offered as a choice (narration)
+temu duga,temu duga,(job) interview,面接,phrase,chunk,temu + duga,Ch11 (extension),work (Ch11): a job or promotion interview,1,,
+urus,,manage,管理する、手配する,verb,root,,Ch11 (extension),office (Ch11): root of «uruskan»,1,,not spoken by a character or offered as a choice (narration)
+alat,,"tool, fitting",道具、部品,noun,root,,Ch12 (extension),home repairs (Ch12): «alat salur air»,2,,
+bocor,,"leak, leaky",漏れる、漏れている,adj,root,,Ch12 (extension),reporting a repair at home (Ch12): a leaking ceiling or aircon,2,,
+cat,,paint,ペンキ、塗料,noun,root,,Ch12 (extension),home and condo (Ch12): deposit and repainting a flat,2,,
+ceritakan,,tell (a story),話して聞かせる,verb,-kan,cerita,Ch12 (extension),-kan requests (Ch12): «Ceritakan …»; cerita is placed Ch10 (extension),2,,
+lupakan,,forget (it),忘れる（〜を）、気にしないで,verb,-kan,lupa,Ch12 (extension),-kan (Ch12): «Lupakan saja»; lupa Ch4,2,,
+penghantaran,,delivery,配達,noun,pe-an,hantar,Ch12 (extension),report a delivery (Ch12); hantar Ch2,2,,
+pengurusan,,management,管理（事務所）,noun,pe-an,urus,Ch12 (extension),home and condo (Ch12): «pejabat pengurusan» (management office),2,,
+baik pulih,pulih,"repair, repair work",修理,phrase,chunk,baik + pulih,Ch12 (extension),repairs (Ch12): «kerja baik pulih»; baik Ch1,1,,not spoken by a character or offered as a choice (pattern)
+besarkan,,"enlarge, make bigger",大きくする,verb,-kan,besar,Ch12 (extension),-kan requests (Ch12): «Tolong besarkan …»; besar Ch5,1,,
+cabut,,"pull out, unplug",抜く（プラグを）,verb,root,,Ch12 (extension),home repairs (Ch12): «cabut plag»,1,,
+gas,,gas,ガス,noun,root,,Ch12 (extension),home repairs (Ch12): the aircon gas top-up,1,,
+jaga,,"look after, keep",世話をする、守る,verb,root,,Ch12 (extension),"home (Ch12): «jaga rumah», «jaga anak»",1,,not spoken by a character or offered as a choice (pattern)
+keluarkan,,take out,出す、取り出す,verb,-kan,keluar,Ch12 (extension),-kan (Ch12); keluar Ch7,1,,
+kenalkan,,introduce,紹介する,verb,-kan,kenal,Ch12 (extension),-kan (Ch12): «Saya nak kenalkan …»; kenal Ch2 (extension),1,,not spoken by a character or offered as a choice (pattern)
+langsir,,curtain,カーテン,noun,root,,Ch12 (extension),home (Ch12),1,,
+maafkan,dimaafkan,"to forgive, excuse",許される,verb,di- -kan,maaf,Ch12 (extension),-kan (Ch12); headword «maafkan»; maaf Ch1; scene form «dimaafkan» (di- Ch9),1,,
+masukkan,,"put in, enter",入れる,verb,-kan,masuk,Ch12 (extension),-kan (Ch12); masuk Ch7,1,,
+mati,,"dead; stopped working (""internet mati"" = the internet is down)",死ぬ；止まる（«internet mati»）,verb,root,,Ch12 (extension),home repairs (Ch12): the internet or a light is down,1,,
+memahami,,understand,理解する,verb,meN- -i,faham,Ch12 (extension),meN- and -i (Ch12); faham Ch4 (Dunia),1,,
+membosankan,,boring,退屈な,adj,meN- -kan,bosan,Ch12 (extension),meN- -kan (Ch12); bosan Ch5,1,,
+mengecewakan,,disappointing,がっかりさせる,adj,meN- -kan,kecewa,Ch12 (extension),meN- -kan (Ch12); kecewa Ch5 (extension),1,,
+menjalankan,,"carry out, run",行う、実施する,verb,meN- -kan,jalan,Ch12 (extension),meN- -kan (Ch12); jalan Ch7,1,,
+menunjukkan,,show,示す、見せる,verb,meN- -kan,tunjuk,Ch12 (extension),"meN- -kan (Ch12); «tunjukkan» is Ch12, tunjuk Ch7 (extension)",1,,
+menyebabkan,,cause,引き起こす,verb,meN- -kan,sebab,Ch12 (extension),meN- -kan (Ch12); sebab Ch5,1,,
+menyiapkan,menyiapkannya,"to finish, complete",仕上げる,verb,meN- -kan,siap,Ch12 (extension),meN- -kan (Ch12): finish a repair; siap Ch9; scene form «menyiapkannya»,1,,
+padam,,go out (of lights); erase,消える、消す,verb,root,,Ch12 (extension),home (Ch12): the lights go out,1,,
+penghawa dingin,penghawa,air-conditioner,エアコン,phrase,chunk,penghawa + dingin,Ch12 (extension),home repairs (Ch12): the aircon repair and service,1,,not spoken by a character or offered as a choice (narration)
+plag,,plug,プラグ,noun,root,,Ch12 (extension),home repairs (Ch12),1,,
+salur,,"pipe (""salur air"" = water pipe)",管（«salur air» 水道管）,noun,root,,Ch12 (extension),home repairs (Ch12): the water pipe,1,,
+servis,,service,サービス、点検,noun,root,,Ch12 (extension),home repairs (Ch12): the aircon service,1,,
+tempahkan,,book (for someone),予約してあげる,verb,-kan,tempah,Ch12 (extension),-kan requests (Ch12); tempah Ch4,1,,
+tiada,,"there is none, not have (= tidak ada)",ない、いない（tidak ada の短縮）,verb,lex,ada,Ch13 (extension),"negation as a system (Ch13): «tiada» = tidak ada, common on notices; 27 scenes; promoted from Jambatan · Daily life (card ms-j-daily-life-38)",27,L-1313,pair: L-0030 tidak / tak and L-0057 ada
+mungkin,,"maybe, possibly",たぶん、〜かもしれない,adv,root,,Ch13 (extension),"modals (Ch13): maybe, next to boleh, mesti, perlu, patut; 23 scenes; promoted from Jambatan · Feelings and opinions (card ms-j-social-23)",23,L-1315,related: L-0878 ada kemungkinan
+dapat,,"to get, receive; can, be able to",得る、もらう、〜できる,verb,root,,Ch13 (extension),"modals (Ch13): be able to, get; 20 scenes; promoted from Jambatan · Talking and explaining (card ms-j-social-25)",20,L-1317,related: L-0076 boleh (can)
+penting,,important,大切な、重要な,adj,root,,Ch13 (extension),advice (Ch13): «Penting untuk …»; 12 scenes; promoted from Jambatan · Health (card ms-j-health-23),12,L-1340,
+langsung,,at all (with a negative); directly,全く（〜ない）、直接,adv,root,,Ch13 (extension),negation (Ch13): «tidak … langsung» (not at all); 10 scenes; promoted from Jambatan · At work (card ms-j-office-35),10,L-1348,
+kena,,"to be subject to; must, have to; to hit",〜される、〜しなければならない、当たる,verb,root,,Ch13 (extension),need and obligation (Ch13): have to; 9 scenes; promoted from Jambatan · Talking and explaining (card ms-j-social-45),9,L-1353,related: L-0889 dikenakan caj (contains it)
+benar,,"true, real",本当の、正しい（あらたまった語）,adj,root,,Ch13 (extension),rules and permission (Ch13): root of «benarkan» / «dibenarkan» (row at Ch13); formal partner of «betul» (Ch3),2,,not spoken by a character or offered as a choice (pattern)
+daftarkan,,register (something),登録する（〜を）,verb,-kan,daftar,Ch13 (extension),"clinic and forms (Ch13); daftar is Ch13, -kan from 12",2,,
+kurangkan,,reduce,減らす,verb,-kan,kurang,Ch13 (extension),health advice (Ch13): «kurangkan gula»; kurang Ch6,2,,
+tahap,,level,レベル、程度,noun,root,,Ch13 (extension),health (Ch13): «tahap gula» (blood sugar level); also the app's level check,2,,
+benarkan,,allow,許す、許可する,verb,-kan,benar,Ch13 (extension),rules and permission (Ch13): «tidak dibenarkan» is a Ch13 row; benar Ch13 (extension),1,,
+darah,,blood,血,noun,root,,Ch13 (extension),"health (Ch13): «ujian darah», «tekanan darah»",1,,not spoken by a character or offered as a choice (narration)
+gim,,gym,ジム,noun,root,,Ch13 (extension),health and exercise (Ch13),1,,
+izin,,permission,許可,noun,root,,Ch13 (extension),permission (Ch13): «minta izin»,1,,
+jururawat,,nurse,看護師,noun,root,,Ch13 (extension),health (Ch13),1,,not spoken by a character or offered as a choice (narration)
+kolesterol,,cholesterol,コレステロール,noun,root,,Ch13 (extension),health check (Ch13); loan,1,,
+leher,,neck,首,noun,root,,Ch13 (extension),health (Ch13): body parts,1,,
+mustahil,,impossible,不可能な,adj,root,,Ch13 (extension),modals (Ch13): possible and impossible,1,,
+otot,,muscle,筋肉,noun,root,,Ch13 (extension),health (Ch13),1,,
+pakar,,"expert, specialist",専門家、専門医,noun,root,,Ch13 (extension),health (Ch13): «doktor pakar»,1,,
+panel,,panel (a clinic on an insurance panel),指定（«klinik panel» 保険指定の診療所）,noun,root,,Ch13 (extension),health (Ch13): the company's panel clinic,1,,
+paracetamol,,paracetamol,パラセタモール,noun,root,,Ch13 (extension),medicine (Ch13),1,,
+pesakit,,patient,患者,noun,pe-,sakit,Ch13 (extension),clinic notices (Ch13); Cikgu Sensai Stage 3 backlog; sakit Ch5,1,,"Stage 3 backlog (Sam, 14 Nov)"
+rehatkan,,rest (something),休ませる,verb,-kan,rehat,Ch13 (extension),health advice (Ch13): «rehatkan badan»; rehat Ch5,1,,
+secukupnya,,enough,十分に,adv,lex,cukup,Ch13 (extension),health advice (Ch13): «rehat secukupnya»; cukup Ch3,1,,
+sembuh,,"recover, heal",治る,verb,root,,Ch13 (extension),health (Ch13),1,,
+senaman,,exercise,運動,noun,-an,senam,Ch13 (extension),health (Ch13); «bersenam» is a Ch10 row,1,,root «senam» has no own row («bersenam» Ch10): taught as a whole word
+sentuh,,touch,触る,verb,root,,Ch13 (extension),rules (Ch13): «Jangan sentuh»,1,,
+sepatutnya,,"supposed to, should have",本来〜すべき,adv,lex,patut,Ch13 (extension),modals (Ch13); patut Ch13,1,,not spoken by a character or offered as a choice (narration)
+sumbat,,blocked,詰まった,adj,root,,Ch13 (extension),health (Ch13): «hidung sumbat»,1,,not spoken by a character or offered as a choice (narration)
+tajam,,sharp,鋭い,adj,root,,Ch13 (extension),health (Ch13): a sharp pain,1,,
+uji,,test,試す、検査する,verb,root,,Ch13 (extension),health (Ch13): root of «ujian»,1,,
+memang,,"indeed, really; of course",確かに、本当に、もちろん,adv,root,,Ch14 (extension),"linking and explaining (Ch14): indeed, of course; 17 scenes; promoted from Jambatan · At work (card ms-j-office-27)",17,L-1326,
+perkara,,"matter, thing, issue",事柄、こと,noun,root,,Ch14 (extension),"explaining (Ch14): matter, thing; 14 scenes; standard partner of «benda» (Jambatan); promoted from Jambatan · At work (card ms-j-office-31)",14,L-1334,
+sebenarnya,,"actually, in fact",実は、実際には,adv,-nya,sebenar,Ch14 (extension),contrast and explaining (Ch14): actually; 12 scenes; lexicalised -nya adverb; promoted from Jambatan · Feelings and opinions (card ms-j-social-38),12,L-1341,
+begitu,,"like that, so, in that way",そのように、そんなに,adv,lex,,Ch14 (extension),linking (Ch14): «kalau begitu» (if so); 9 scenes; standard partner of «macam tu»; promoted from Jambatan · Talking and explaining (card ms-j-social-40),9,L-1350,
+pasti,,"sure, certain",確かな、きっと,adj,root,,Ch14 (extension),opinions and certainty (Ch14): «Saya pasti …»; 9 scenes; promoted from Jambatan · Feelings and opinions (card ms-j-social-46),9,L-1355,"related: L-0743 pastikan, L-0813 kenal pasti"
+sebenar,,"real, actual",本当の、実際の,adj,se-,benar,Ch14 (extension),"explaining (Ch14): real, actual; 3 scenes; the base of «sebenarnya» (Ch14), so it comes with it; promoted from Jambatan · Home and condo (card ms-j-home-condo-50)",3,L-1477,
+anggap,,"assume, regard as",〜とみなす、思う,verb,root,,Ch14 (extension),giving opinions and reasons (Ch14),2,,
+gaduh,,"quarrel, argue",けんかする、言い争う,verb,root,,Ch14 (extension),social trouble and reasons (Ch14); «bergaduh» would wait for a ber- row,2,,
+kini,,"now, at present",今、現在（書き言葉）,adv,root,,Ch14 (extension),time linking in a short account (Ch14); formal partner of «sekarang» (Ch4),2,,
+kongsi,,share,分け合う、共有する,verb,root,,Ch14 (extension),social plans (Ch14): share a cost or a ride; «berkongsi» later,2,,
+kumpul,,"collect, gather",集める、集まる,verb,root,,Ch14 (extension),"social plans (Ch14): «kumpul duit», «kumpul di …»; root of «kumpulan»",2,,
+kumpulan,,group,グループ、団体,noun,-an,kumpul,Ch14 (extension),social (Ch14): a group of friends,2,,not spoken by a character or offered as a choice (narration)
+makna,maknanya,meaning,意味,noun,root,,Ch14 (extension),"explaining (Ch14); scene forms «makna», «maknanya»",2,,not spoken by a character or offered as a choice (pattern)
+maksud,,"meaning, what is meant",意味、言いたいこと,noun,root,,Ch14 (extension),explaining (Ch14): «Apa maksud awak?»; root of «bermaksud»,2,,
+masuk akal,akal,to make sense,筋が通る、理にかなう,phrase,chunk,masuk + akal,Ch14 (extension),explaining why (Ch14): «masuk akal» = makes sense; masuk Ch7,2,,
+perbualan,,conversation,会話,noun,pe-an,bual,Ch14 (extension),social talk (Ch14),2,,root «bual» not in ledger: taught as a whole word
+percaya,percayalah,"to believe, trust",信じる,verb,root,,Ch14 (extension),giving reasons (Ch14); scene form «percayalah» (+ lah),2,,«percayalah» reads as percaya + lah only from Ch17 (lah row)
+sanggup,,"willing, dare to",〜する気がある、いとわない,adj,root,,Ch14 (extension),inviting and offering (Ch14),2,,
+bermaksud,,mean,〜という意味だ,verb,ber-,maksud,Ch14 (extension),"explaining (Ch14); maksud Ch14 (extension), ber- from 10",1,,
+campur,,"mix (""masuk campur"" = get involved)",混ぜる；«masuk campur» 口を出す,verb,root,,Ch14 (extension),social (Ch14): «masuk campur»; masuk Ch7,1,,
+harap,,hope,望む、願う,verb,root,,Ch14 (extension),social (Ch14): «Saya harap …»,1,,
+meriah,,"lively, festive",にぎやかな,adj,root,,Ch14 (extension),"social events (Ch14); the checker reads «me-riah» as a meN- shape, so not before 11",1,,looks like meN- (me + riah); not spoken by a character or offered as a choice (narration)
+peduli,,"care (""tak peduli"" = don't care)",気にかける,verb,root,,Ch14 (extension),reasons and contrast (Ch14): «tak peduli»,1,,not spoken by a character or offered as a choice (pattern)
+punca,puncanya,cause,原因,noun,root,,Ch14 (extension),explaining why (Ch14): «punca masalah»; scene form «puncanya»,1,,
+rahsia,,secret,秘密,noun,root,,Ch14 (extension),social (Ch14),1,,
+rapat,,close,親しい、近い,adj,root,,Ch14 (extension),social (Ch14): close friends,1,,not spoken by a character or offered as a choice (narration)
+sangka,,"suppose (""tak sangka"" = never expected)",思う、予想する,verb,root,,Ch14 (extension),social (Ch14): «tak sangka» (didn't expect),1,,not spoken by a character or offered as a choice (narration)
+serius,seriusnya,serious,真剣な、深刻な,adj,root,,Ch14 (extension),"explaining and contrast (Ch14); scene forms «serius», «seriusnya»",1,,
+suasana,,"atmosphere, mood",雰囲気,noun,root,,Ch14 (extension),social (Ch14),1,,not spoken by a character or offered as a choice (pattern)
+topik,topiknya,topic,トピック、話題,noun,root,,Ch14 (extension),"social talk (Ch14); scene forms «topik», «topiknya»",1,,"not spoken by a character or offered as a choice (game, pattern)"
+wajar,,reasonable,妥当な、もっともな,adj,root,,Ch14 (extension),reasons (Ch14): «Itu wajar»,1,,
+yakin,,"confident, sure",確信している,adj,root,,Ch14 (extension),giving reasons (Ch14): «Saya yakin …»,1,,
+sesuatu,,something,何か、あるもの,pron,se-,suatu,Ch15 (extension),the full question-word set and indefinites (Ch15): something; 19 scenes; promoted from Jambatan · Talking and explaining (card ms-j-social-29),19,L-1322,
+apa-apa,,anything; (not) anything,何か、何でも、何も（否定）,pron,lex,apa,Ch15 (extension),indefinites with the question-word set (Ch15): anything; 18 scenes; promoted from Jambatan · At work (card ms-j-office-26),18,L-1324,related: L-1298 tidak apa-apa (contains it)
+kecuali,,except,〜を除いて,prep,root,,Ch15 (extension),describing exactly (Ch15): «semua kecuali …»,2,,not spoken by a character or offered as a choice (narration)
+seseorang,,someone,ある人、誰か,pron,se-,seorang,Ch15 (extension),indefinites with the question-word set (Ch15); seorang Ch8 (extension),2,,
+sesiapa,,anyone,誰でも、誰か,pron,se-,siapa,Ch15 (extension),indefinites with the question-word set (Ch15); siapa Ch2,2,,
+tegas,,"firm, strict",厳しい、きっぱりした,adj,root,,Ch15 (extension),describing a person (Ch15),2,,
+garang,,"fierce, stern",怖い、厳しい（人・動物が）,adj,root,,Ch15 (extension),describing a person or an animal precisely (Ch15),1,,
+gergasi,,giant,巨大な,adj,root,,Ch15 (extension),describing a lost item (Ch15),1,,
+kasar,kasarnya,rude; rough,失礼な、乱暴な；粗い,adj,root,,Ch15 (extension),describing a person (Ch15); scene form «kasarnya»,1,,
+kejam,kejamnya,cruel,ひどい、残酷な,adj,root,,Ch15 (extension),describing a person (Ch15); scene form «kejamnya»,1,,
+mana-mana,,"anywhere, any",どこでも、どれでも,det,lex,mana,Ch15 (extension),indefinites with the question-word set (Ch15); mana Ch2 (extension),1,,
+pelik,,"strange, odd",変な、奇妙な,adj,root,,Ch15 (extension),describing precisely (Ch15),1,,
+satu-satunya,,the only one,唯一の,det,lex,satu,Ch15 (extension),describing precisely (Ch15): «satu-satunya orang yang …»,1,,
+teruk,,"bad, severe, terrible",ひどい、重い,adj,root,,Ch16 (extension),"mishaps and complaints (Ch16): bad, severe; 8 scenes; «semakin teruk» (Jambatan row) contains it; promoted from Jambatan · Daily life (card ms-j-daily-life-46)",8,L-1365,related: L-0798 semakin teruk (contains it)
+gigit,,bite,かむ,verb,root,,Ch16 (extension),mishaps (Ch16): a dog bite,2,,
+nasib baik,nasib,"luckily, fortunately",運よく、よかった,phrase,chunk,nasib + baik,Ch16 (extension),mishaps (Ch16): «Nasib baik …» after a near miss; baik Ch1,2,,
+salahkan,,blame,〜のせいにする,verb,-kan,salah,Ch16 (extension),mishaps and complaints (Ch16): «Jangan salahkan saya»; salah Ch5 (extension),2,,not spoken by a character or offered as a choice (pattern)
+terasa,,"feel; ""terasa hati"" = feel hurt",感じる；«terasa hati» = 傷つく,verb,ter-,rasa,Ch16 (extension),unplanned states (Ch16): «terasa hati» when apologising; rasa Ch5,2,,not spoken by a character or offered as a choice (narration)
+habuk,,dust,ほこり,noun,root,,Ch16 (extension),complaints (Ch16): dust from a renovation,1,,not spoken by a character or offered as a choice (narration)
+jatuh,,fall,落ちる,verb,root,,Ch16 (extension),accidents (Ch16): root of «terjatuh»,1,,not spoken by a character or offered as a choice (narration)
+jerit,,shout,叫ぶ,verb,root,,Ch16 (extension),complaints about noise (Ch16),1,,
+keadaan,,"situation, condition",状況、状態,noun,ke-an,ada,Ch16 (extension),mishaps (Ch16): the state of the flat; ada Ch2,1,,not spoken by a character or offered as a choice (narration)
+kesan,kesan-kesan,"mark, trace; effect",跡、しみ,noun,root,,Ch16 (extension),complaints (Ch16): marks on the wall at the end of a tenancy; scene form «kesan-kesan»,1,,checker reads «kesan-kesan» as a ledger gap (reduplication is not resolved): use «kesan» in ⚡ lines
+kesilapan,,mistake,間違い、ミス,noun,ke-an,silap,Ch16 (extension),apologising for a mistake (Ch16); silap Ch16 (extension),1,,not spoken by a character or offered as a choice (pattern)
+sengaja,,on purpose,わざと,adv,root,,Ch16 (extension),accidents (Ch16): «tidak sengaja» (by accident) vs «sengaja»,1,,
+silap,,mistake,間違った,adj,root,,Ch16 (extension),mistakes (Ch16); root of «kesilapan» (Ch16) and «tersilap»,1,,
+terbaru,,latest,最新の,adj,ter-,baru,Ch16 (extension),"ter- (Ch16): a superlative, but the rules list only four ter- superlatives, so the checker gates it at 16; baru Ch4",1,,rules: add to ter_superlatives (Sam) to move it to Ch6; not spoken by a character or offered as a choice (narration)
+tercampur,,mixed up,混ざってしまう,verb,ter-,campur,Ch16 (extension),"ter- accidents (Ch16); campur goes to Jambatan, so taught as a whole word",1,,root «campur» not placed; not spoken by a character or offered as a choice (narration)
+terhenti,,"stopped, broke off",止まってしまう,verb,ter-,henti,Ch16 (extension),ter- unplanned states (Ch16),1,,root «henti» not in ledger: taught as a whole word; not spoken by a character or offered as a choice (narration)
+terkejut,,"surprised, shocked",驚く,adj,ter-,kejut,Ch16 (extension),ter- unplanned states (Ch16),1,,root «kejut» not in ledger: taught as a whole word; not spoken by a character or offered as a choice (narration)
+terpaksa,,"forced to, have to",〜せざるを得ない,adv,ter-,paksa,Ch16 (extension),unplanned states and complaints (Ch16),1,,root «paksa» not in ledger: taught as a whole word
+terpulang,,up to you,〜次第だ,phrase,ter-,pulang,Ch16 (extension),"«terpulang kepada awak»; ter- shape, so not before 16",1,,
+tersalah,,"wrongly, by mistake",間違って〜してしまう,verb,ter-,salah,Ch16 (extension),ter- accidents (Ch16); salah Ch5 (extension),1,,
+tertinggi,,highest,最も高い,adj,ter-,tinggi,Ch16 (extension),"ter- (Ch16): a superlative, but the rules list only four ter- superlatives, so the checker gates it at 16; tinggi Ch3",1,,rules: add to ter_superlatives (Sam) to move it to Ch6; not spoken by a character or offered as a choice (narration)
+tertulis,,written,書いてある,adj,ter-,tulis,Ch16 (extension),ter- state (Ch16); tulis Ch4,1,,not spoken by a character or offered as a choice (narration)
+tiba-tiba,,suddenly,突然,adv,lex,tiba,Ch16 (extension),mishaps (Ch16): «Tiba-tiba …»; tiba Ch7 (extension),1,,
+tuduh,,accuse,非難する、責める,verb,root,,Ch16 (extension),complaints (Ch16),1,,not spoken by a character or offered as a choice (pattern)
+je,,"just (spoken, for ""saja"")",だけ（「saja」の話し言葉）,adv,root,,Ch17 (extension),spoken register (Ch17): spoken partner of «sahaja / saja» (Ch3),2,,spoken; needs register pair je → sahaja in stage-rules.json
+punya,,"belonging to (""orang lain punya"" = someone else's; spoken)",〜の（もの）（話し言葉の所有）,verb,root,,Ch17 (extension),spoken register (Ch17): «orang lain punya» (someone else's),2,,spoken possessive use; standard «milik»/«kepunyaan» has no row
+tau,,"know (spoken, for ""tahu"")",知る（「tahu」の話し言葉）,verb,root,,Ch17 (extension),spoken register (Ch17): spoken partner of «tahu» (Ch4),2,,spoken; needs register pair tau → tahu in stage-rules.json
+balasan,,"return, in exchange (""sebagai balasan"")",お返し、見返り,noun,-an,balas,Ch17 (extension),«sebagai balasan»; balas is Ch17,1,,not spoken by a character or offered as a choice (pattern)
+bersetuju,,agree,賛成する、同意する,verb,ber-,setuju,Ch17 (extension),"setuju is Ch17, so its ber- form can come no earlier; standard partner of «set»",1,,
+bisnes,,business,ビジネス（話し言葉）,noun,root,,Ch17 (extension),"spoken register (Ch17): spoken loan; standard «perniagaan» (Ch10, extension)",1,,spoken loan; needs register pair bisnes → perniagaan; not spoken by a character or offered as a choice (narration)
+formal,formalnya,formal,あらたまった、フォーマルな,adj,root,,Ch17 (extension),"register (Ch17): formal vs spoken; scene forms «formal», «formalnya»",1,,
+kejap,,"a moment (spoken, for ""sekejap"")",ちょっと（「sekejap」の話し言葉）,adv,root,,Ch17 (extension),spoken register (Ch17): spoken partner of «sekejap» (Ch4),1,,spoken; needs register pair kejap → sekejap in stage-rules.json
+komplen,,complain (spoken),文句を言う（話し言葉）,verb,root,,Ch17 (extension),spoken register (Ch17): spoken loan; standard «aduan» (Ch12),1,,spoken loan; needs register pair komplen → aduan
+merepek,,talk nonsense,でたらめを言う,verb,root,,Ch17 (extension),spoken register (Ch17),1,,colloquial
+motor,,motorbike,バイク（「motosikal」の口語）,noun,root,,Ch17 (extension),spoken register (Ch17): short form of «motosikal» (Ch7 Dunia),1,,spoken short form; needs register pair motor → motosikal
+sangat-sangat,,very very much,とても（強調、話し言葉）,adv,lex,sangat,Ch17 (extension),spoken register (Ch17): spoken emphasis; sangat Ch6,1,,spoken
+santai,,"casual, relaxed",くつろいだ、カジュアルな,adj,root,,Ch17 (extension),register (Ch17): casual speech,1,,
+sebelah-sebelah,,side by side,隣同士で（話し言葉）,adv,lex,sebelah,Ch17 (extension),spoken register (Ch17); sebelah Ch7,1,,spoken
+seronok-seronok,,enjoy yourselves,楽しんで（話し言葉）,adv,lex,seronok,Ch17 (extension),spoken register (Ch17); seronok Ch4 (Dunia),1,,spoken
+tak ada hal,hal,no problem (spoken),大丈夫、問題ない（話し言葉）,phrase,chunk,tak + ada + hal,Ch17 (extension),spoken register (Ch17): «Tak ada hal»; tak and ada are Stage 1 words,1,,"spoken; the one-line check reports «tak» as unlabelled, the pack sequence check is the real test"
+takkan,,surely not; won't,まさか〜ない、〜するはずがない,adv,lex,tak + akan,Ch17 (extension),spoken register (Ch17): tak + akan; tidak and akan are Stage 1 words,1,,spoken contraction; check the register pair
+lembaga pengarah,lembaga,board of directors,取締役会,phrase,chunk,lembaga + pengarah,Jambatan · At work,only in «lembaga pengarah» (board of directors),2,,
+maklum balas,maklum,feedback,フィードバック,phrase,chunk,maklum + balas,Jambatan · At work,only in «maklum balas» (feedback); balas is Ch17,2,,
+pandang,,look at,見る、目を向ける,verb,root,,Jambatan · At work,narration only,2,,coach text; not spoken by a character or offered as a choice (narration)
+pengarah,,director,部長、ディレクター,noun,pe(N)-,arah,Jambatan · At work,office; root «arah» is a Jambatan row,2,,
+serahan,,handover,引き継ぎ,noun,-an,serah,Jambatan · At work,«serahan tugas»; root «serah» has no row (serah tugas is a Jambatan row),2,,
+alu-aluan,,"welcome (as in ""ucapan alu-aluan"", welcome speech)",歓迎,noun,lex,alu,Jambatan · At work,«ucapan alu-aluan» (welcome speech) at work,1,,
+berbesar hati,berbesar,"honoured, delighted (formal)",光栄に思う,phrase,chunk,ber- + besar + hati,Jambatan · At work,only in «berbesar hati» (formal letters and speeches),1,,
+bergaya,,stylish,おしゃれな,adj,ber-,gaya,Jambatan · At work,root «gaya» has no row,1,,
+bertuah,,lucky,運がいい,adj,ber-,tuah,Jambatan · At work,root «tuah» has no row,1,,
+budi,,"kindness (""budi baik"")",親切、恩,noun,root,,Jambatan · At work,«budi baik» in a formal letter,1,,
+desak,,"press, push (someone)",せかす、強く求める,verb,root,,Jambatan · At work,office,1,,
+galakkan,,encourage,励ます、勧める,verb,-kan,galak,Jambatan · At work,root «galak» has no row,1,,not spoken by a character or offered as a choice (game)
+gurauan,,"a joke, jokes",冗談,noun,-an,gurau,Jambatan · At work,root «gurau» is a Jambatan row,1,,"not spoken by a character or offered as a choice (game, pattern)"
+hubungan,,relationship,関係,noun,-an,hubung,Jambatan · At work,root «hubung» has no row,1,,not spoken by a character or offered as a choice (pattern)
+isyarat,,signal,合図、信号,noun,root,,Jambatan · At work,«lampu isyarat» is ledger; here a hand signal,1,,
+kecilkan,,"narrow down, make smaller",小さくする、絞り込む,verb,-kan,kecil,Jambatan · At work,"office ""narrow down""; weak chapter fit",1,,"not spoken by a character or offered as a choice (narration, pattern)"
+kembali,,"return, go back",戻る,verb,root,,Jambatan · At work,pattern cards and a minigame in an office scene,1,,"coach text; not spoken by a character or offered as a choice (game, pattern)"
+korek,,"dig out, pry (information)",ほじる、聞き出す,verb,root,,Jambatan · At work,office slang,1,,
+mencurigakan,,suspicious,怪しい,adj,meN- -kan,curiga,Jambatan · At work,root «curiga» has no row,1,,
+menyertai,,join,参加する,verb,meN- -i,serta,Jambatan · At work,root «serta» has no row,1,,
+ringkasan,,summary,要約,noun,-an,ringkas,Jambatan · At work,root «ringkas» is a Jambatan row,1,,not spoken by a character or offered as a choice (pattern)
+salinkan,,copy (someone in),（CCに）入れる,verb,-kan,salin,Jambatan · At work,root «salin» has no row,1,,
+tenangkan,,calm (someone) down,落ち着かせる,verb,-kan,tenang,Jambatan · At work,root «tenang» is a Jambatan row,1,,not spoken by a character or offered as a choice (narration)
+umumkan,,announce,発表する,verb,-kan,umum,Jambatan · At work,root «umum» has no row,1,,not spoken by a character or offered as a choice (narration)
+akui,,"admit, acknowledge",認める,verb,root,,Jambatan · Daily life,formal; only in narration and pattern cards,2,,"coach text; not spoken by a character or offered as a choice (narration, pattern)"
+fon,,"phone; headphones (here ""fon"" = font on the screen)",フォント（画面の文字）,noun,root,,Jambatan · Daily life,screen font in the clinic and app scenes; loan,2,,
+pengasas,,founder,創業者,noun,pe(N)-,asas,Jambatan · Daily life,narration; root «asas» has no ledger row,2,,not spoken by a character or offered as a choice (narration)
+platform,,platform,ホーム、プラットフォーム,noun,root,,Jambatan · Daily life,station platform in one scene; loan,2,,
+ramen,,ramen,ラーメン,noun,root,,Jambatan · Daily life,food in two scenes; loan,2,,
+asingkan,,"set aside, separate",分ける、別にする,verb,-kan,asing,Jambatan · Daily life,root «asing» is a Jambatan row,1,,
+berakhir,,end (with),終わる,verb,ber-,akhir,Jambatan · Daily life,root «akhir» is a Jambatan row,1,,
+bucu,,corner,角（かど）,noun,root,,Jambatan · Daily life,narration,1,,not spoken by a character or offered as a choice (narration)
+bunyikan,,"sound, make ring (the horn)",鳴らす,verb,-kan,bunyi,Jambatan · Daily life,«bunyikan hon»; narration only,1,,coach text; not spoken by a character or offered as a choice (narration)
+geleng,,shake (one's head),（首を）横に振る,verb,root,,Jambatan · Daily life,narration,1,,not spoken by a character or offered as a choice (narration)
+halau,,"chase away, drive off",追い払う,verb,root,,Jambatan · Daily life,daily-life narration,1,,
+kacang tanah,tanah,peanut,ピーナッツ,phrase,chunk,kacang + tanah,Jambatan · Daily life,only in «kacang tanah»,1,,
+kanvas,,canvas,キャンバス,noun,root,,Jambatan · Daily life,narration,1,,not spoken by a character or offered as a choice (narration)
+kesian,,"pity, poor thing (spoken)",かわいそうに（話し言葉）,adj,root,,Jambatan · Daily life,"spoken form of «kasihan», which has no row",1,,spoken; standard partner has no ledger row
+makin,,"more and more (spoken, for ""semakin"")",ますます（「semakin」の話し言葉）,adv,root,,Jambatan · Daily life,spoken form; «semakin» has no own row,1,,spoken; standard partner has no ledger row; not spoken by a character or offered as a choice (narration)
+mall,,shopping mall,ショッピングモール,noun,root,,Jambatan · Daily life,Sam's pair with «pusat beli-belah» (both fine),1,,English; Sam 14 Nov: both forms fine
+melalui,,"through, via",〜を通して,prep,meN- -i,lalu,Jambatan · Daily life,root «lalu» is a Jambatan row,1,,
+menangis,,cry,泣く,verb,meN-,tangis,Jambatan · Daily life,root «tangis» has no row,1,,
+pemanggil,,caller,電話をかけた人,noun,pe(N)-,panggil,Jambatan · Daily life,caller ID,1,,not spoken by a character or offered as a choice (narration)
+pembaharuan,,renewal,更新,noun,pe-an,baharu,Jambatan · Daily life,card renewal,1,,not spoken by a character or offered as a choice (narration)
+pembesar suara,pembesar,loudspeaker,スピーカー,phrase,chunk,pembesar + suara,Jambatan · Daily life,only in «pembesar suara»,1,,not spoken by a character or offered as a choice (narration)
+penipu,,"cheat, fraudster",詐欺師,noun,pe(N)-,tipu,Jambatan · Daily life,root «tipu» has no row,1,,
+perbaharui,diperbaharui,to renew,更新される,verb,di- per- -i,baharu,Jambatan · Daily life,-i (Ch12+); headword «perbaharui»; formal (card renewal),1,,
+pertukaran,,"change, exchange",両替、交換,noun,pe-an,tukar,Jambatan · Daily life,«pertukaran wang asing»,1,,not spoken by a character or offered as a choice (narration)
+pesawat,,aircraft,航空機,noun,root,,Jambatan · Daily life,Sam's pair with «kapal terbang» (both fine),1,,formal; Sam 14 Nov: both forms fine
+robot,,robot,ロボット,noun,root,,Jambatan · Daily life,narration,1,,not spoken by a character or offered as a choice (narration)
+tetapkan,ditetapkan,"to set, fix",定められる,verb,di- -kan,tetap,Jambatan · Daily life,headword «tetapkan»; root «tetap» is a Jambatan row,1,,
+wujud,,exist,存在する,verb,root,,Jambatan · Daily life,one scene,1,,
+api,,"fire (""bunga api"" = fireworks)",火,noun,root,,Jambatan · Events and outings,fire; «bunga api» (fireworks) and «pemetik api» (lighter) at the rooftop party,2,,
+bertih jagung,bertih,popcorn,ポップコーン,phrase,chunk,bertih + jagung,Jambatan · Events and outings,"only in «bertih jagung» (popcorn), a board-game prize",2,,
+bumbung,,roof,屋根,noun,root,,Jambatan · Events and outings,the rooftop party and fireworks scenes,2,,
+demo,,demo,デモ、実演,noun,root,,Jambatan · Events and outings,the start-up demo day; loan,2,,
+dron,,drone,ドローン,noun,root,,Jambatan · Events and outings,the drone demo; loan,2,,
+jagung,,corn,トウモロコシ,noun,root,,Jambatan · Events and outings,scene form only in «bertih jagung»; kept as the plain food word,2,,
+kelingking,,little finger,小指,noun,root,,Jambatan · Events and outings,only in «janji jari kelingking» (pinky promise),2,,
+konfeti,,confetti,紙吹雪,noun,root,,Jambatan · Events and outings,board-game prize; loan,2,,
+radio,,radio,ラジオ,noun,root,,Jambatan · Events and outings,one party scene; loan,2,,
+aksi,,action (film genre),アクション（映画のジャンル）,noun,root,,Jambatan · Events and outings,film genres at movie night,1,,
+barbeku,,barbecue,バーベキュー,noun,root,,Jambatan · Events and outings,rooftop party; Malay spelling of the loan,1,,
+bawang perai,perai,leek,ポロネギ,phrase,chunk,bawang + perai,Jambatan · Events and outings,only in «bawang perai»,1,,
+belon,,balloon,風船,noun,root,,Jambatan · Events and outings,"party decorations; the checker reads «belon» as a ber- shape (be + lon), so it cannot be placed before Ch10",1,,looks like ber-; would need a lookalike_roots entry
+bengkel,,workshop,工房、ワークショップ,noun,root,,Jambatan · Events and outings,the bike workshop,1,,not spoken by a character or offered as a choice (narration)
+berduet,,sing a duet,デュエットする,verb,ber-,duet,Jambatan · Events and outings,karaoke; root «duet» also Jambatan,1,,
+bersorak,,cheer,歓声を上げる,verb,ber-,sorak,Jambatan · Events and outings,root «sorak» has no row,1,,
+capai,,"reach for, grab",手を伸ばして取る,verb,root,,Jambatan · Events and outings,narration,1,,not spoken by a character or offered as a choice (narration)
+daun bawang,daun,spring onion,ネギ（青ネギ）,phrase,chunk,daun + bawang,Jambatan · Events and outings,only in «daun bawang» (spring onion) at the market stall,1,,
+dokumentari,,documentary,ドキュメンタリー,noun,root,,Jambatan · Events and outings,movie night; loan,1,,
+duet,,duet,デュエット,noun,root,,Jambatan · Events and outings,karaoke; loan,1,,
+gogal,,goggles,ゴーグル,noun,root,,Jambatan · Events and outings,workshop narration,1,,not spoken by a character or offered as a choice (narration)
+hero,,hero,ヒーロー,noun,root,,Jambatan · Events and outings,loan,1,,
+jelaga,,soot,すす,noun,root,,Jambatan · Events and outings,narration,1,,not spoken by a character or offered as a choice (narration)
+jelajah,,tour,ツアー,noun,root,,Jambatan · Events and outings,concert tour narration,1,,not spoken by a character or offered as a choice (narration)
+kacau,,stir; disturb,かき混ぜる；邪魔する,verb,root,,Jambatan · Events and outings,narration,1,,not spoken by a character or offered as a choice (narration)
+katering,,catering,ケータリング,noun,root,,Jambatan · Events and outings,loan,1,,not spoken by a character or offered as a choice (narration)
+kejutan,,surprise,サプライズ,noun,-an,kejut,Jambatan · Events and outings,root «kejut» has no row,1,,not spoken by a character or offered as a choice (narration)
+kimpal,,weld,溶接する,verb,root,,Jambatan · Events and outings,workshop narration,1,,not spoken by a character or offered as a choice (narration)
+klip,,"clip (""papan klip"" = clipboard)",クリップ,noun,root,,Jambatan · Events and outings,«papan klip»,1,,not spoken by a character or offered as a choice (narration)
+koir,,choir,合唱団,noun,root,,Jambatan · Events and outings,narration,1,,not spoken by a character or offered as a choice (narration)
+korus,korusnya,chorus,サビ（コーラス）,noun,root,,Jambatan · Events and outings,scene form «korusnya»,1,,not spoken by a character or offered as a choice (narration)
+laluan,,"route, path",ルート、通り道,noun,-an,lalu,Jambatan · Events and outings,root «lalu» is a Jambatan row,1,,
+lapis,,"layer (""kuih lapis"" = layered cake)",層,noun,root,,Jambatan · Events and outings,«kuih lapis»,1,,
+letupkan,diletupkan,to blow up,爆破される,verb,di- -kan,letup,Jambatan · Events and outings,"regular di- form of «letupkan»; root «letup» has no row (letupan, meletup are Jambatan rows)",1,,not spoken by a character or offered as a choice (narration)
+lipat,,fold,たたむ,verb,root,,Jambatan · Events and outings,narration,1,,not spoken by a character or offered as a choice (narration)
+mengetuai,,lead,率いる,verb,meN- -i,ketua,Jambatan · Events and outings,root «ketuai» is a Jambatan row,1,,
+merata,,"everywhere (""merata tempat"")",あちこちに,adv,root,,Jambatan · Events and outings,«merata tempat»,1,,not spoken by a character or offered as a choice (narration)
+meriam,,cannon,大砲,noun,root,,Jambatan · Events and outings,a toy cannon,1,,
+mewah,,luxurious,豪華な,adj,root,,Jambatan · Events and outings,narration,1,,not spoken by a character or offered as a choice (narration)
+mikrofon,,microphone,マイク,noun,root,,Jambatan · Events and outings,karaoke,1,,
+muzikal,,musical,ミュージカル,noun,root,,Jambatan · Events and outings,loan,1,,
+nyala,,"glow, burn",燃える、光る,verb,root,,Jambatan · Events and outings,narration,1,,not spoken by a character or offered as a choice (narration)
+onde-onde,,onde-onde (sweet glutinous rice balls),オンデオンデ（ココナツまぶしの団子）,noun,lex,onde,Jambatan · Events and outings,food at a party,1,,
+patung,,"statue, figure",像、人形,noun,root,,Jambatan · Events and outings,narration,1,,
+pelabur,,investor,投資家,noun,pe-,labur,Jambatan · Events and outings,root has no row,1,,
+pemasa,,timer,タイマー,noun,pe-,masa,Jambatan · Events and outings,one scene,1,,not spoken by a character or offered as a choice (narration)
+pemetik api,pemetik,lighter,ライター,phrase,chunk,pemetik + api,Jambatan · Events and outings,only in «pemetik api»,1,,not spoken by a character or offered as a choice (narration)
+pemutar skru,pemutar,screwdriver,ドライバー（ねじ回し）,phrase,chunk,pemutar + skru,Jambatan · Events and outings,only in «pemutar skru»,1,,not spoken by a character or offered as a choice (narration)
+pencuci mulut,pencuci,dessert,デザート,phrase,chunk,pencuci + mulut,Jambatan · Events and outings,only in «pencuci mulut» (dessert),1,,
+penggera,,alarm,警報、アラーム,noun,root,,Jambatan · Events and outings,narration,1,,
+pengunjung,,visitor,訪問者,noun,pe-,kunjung,Jambatan · Events and outings,root has no row,1,,
+petik,,snap (fingers); pluck,（指を）鳴らす,verb,root,,Jambatan · Events and outings,narration,1,,not spoken by a character or offered as a choice (narration)
+pustakawan,,librarian,司書,noun,-wan,pustaka,Jambatan · Events and outings,narration,1,,"not spoken by a character or offered as a choice (game, narration)"
+rancak,,lively,にぎやかな、活発な,adj,root,,Jambatan · Events and outings,pattern card,1,,not spoken by a character or offered as a choice (pattern)
+reka,,"design, invent (""reka bentuk"" = design)",考案する（«reka bentuk» デザイン）,verb,root,,Jambatan · Events and outings,«reka bentuk»,1,,
+renung,,stare at,じっと見る,verb,root,,Jambatan · Events and outings,narration,1,,not spoken by a character or offered as a choice (narration)
+roket,,rocket,ロケット（花火）,noun,root,,Jambatan · Events and outings,fireworks,1,,
+sengih,,grin,にやりと笑う,verb,root,,Jambatan · Events and outings,narration,1,,not spoken by a character or offered as a choice (narration)
+setimbun,,a pile of,山のような,det,se-,timbun,Jambatan · Events and outings,root has no row,1,,
+skru,,screw,ねじ,noun,root,,Jambatan · Events and outings,bike workshop; also in «pemutar skru»,1,,not spoken by a character or offered as a choice (narration)
+solo,,solo,ソロ,noun,root,,Jambatan · Events and outings,loan,1,,
+tangki,,tank,タンク,noun,root,,Jambatan · Events and outings,narration,1,,
+teratur,,orderly,整然とした,adj,ter-,atur,Jambatan · Events and outings,state ter- (16+); one scene,1,,
+topeng,,mask,仮面、マスク,noun,root,,Jambatan · Events and outings,narration,1,,
+tumpuan,tumpuannya,"focus, concentration",集中,noun,-an,tumpu,Jambatan · Events and outings,scene form «tumpuannya»,1,,not spoken by a character or offered as a choice (narration)
+ukuran,,"measure, yardstick",尺度、ものさし,noun,-an,ukur,Jambatan · Events and outings,one scene,1,,
+pujian,,compliment,ほめ言葉,noun,-an,puji,Jambatan · Feelings and opinions,root «puji» is a Jambatan row,2,,
+aman,,"peaceful, calm",平和な、穏やかな,adj,root,,Jambatan · Feelings and opinions,narration only,1,,not spoken by a character or offered as a choice (narration)
+berkilau,,"sparkle, shiny",きらきら光る,verb,ber-,kilau,Jambatan · Feelings and opinions,root «kilau» has no row,1,,
+berseri-seri,,"radiant, beaming",輝くような（笑顔）,adj,ber-,seri,Jambatan · Feelings and opinions,narration only,1,,not spoken by a character or offered as a choice (narration)
+bertahan,,"last, hold out",持ちこたえる,verb,ber-,tahan,Jambatan · Feelings and opinions,root «tahan» goes to Jambatan (no standard row),1,,not spoken by a character or offered as a choice (narration)
+fikiran,,"mind, thoughts",考え、心,noun,-an,fikir,Jambatan · Feelings and opinions,root «fikir» is a Jambatan row,1,,not spoken by a character or offered as a choice (narration)
+gila,,"crazy; very (spoken ""lapar gila"" = starving)",狂った；（話し言葉）すごく,adj,root,,Jambatan · Feelings and opinions,spoken intensifier «lapar gila»,1,,slang intensifier
+ikhlas,,sincere,誠実な,adj,root,,Jambatan · Feelings and opinions,pattern card,1,,not spoken by a character or offered as a choice (pattern)
+kagum,,"impressed, amazed",感心する,adj,root,,Jambatan · Feelings and opinions,feelings,1,,
+keadilan,,"fairness, justice",公平さ,noun,ke-an,adil,Jambatan · Feelings and opinions,root «adil» is a Jambatan row,1,,
+kepastian,,certainty,確実さ、確証,noun,ke-an,pasti,Jambatan · Feelings and opinions,one scene,1,,
+kerisauan,,"worry, concern",心配,noun,ke-an,risau,Jambatan · Feelings and opinions,pattern card,1,,
+keyakinan,,confidence,自信,noun,ke-an,yakin,Jambatan · Feelings and opinions,one scene,1,,
+melampau,,"excessive, over the top",行き過ぎた,adj,meN-,lampau,Jambatan · Feelings and opinions,root «lampau» has no row,1,,
+melenting,,"flare up, snap",かっとなる,verb,meN-,lenting,Jambatan · Feelings and opinions,root has no row,1,,
+mengampu,,"flatter, suck up to",ごまをする,verb,meN-,ampu,Jambatan · Feelings and opinions,root has no row; slang,1,,
+menunjuk-nunjuk,,show off,見せびらかす,verb,meN-,tunjuk,Jambatan · Feelings and opinions,reduplicated; one scene,1,,
+perfeksionis,,perfectionist,完璧主義者,noun,root,,Jambatan · Feelings and opinions,loan,1,,
+sedap-sedap,,"as one pleases, enjoy",ゆっくり楽しんで,adv,lex,sedap,Jambatan · Feelings and opinions,spoken,1,,spoken
+senyuman,,smile,笑顔,noun,-an,senyum,Jambatan · Feelings and opinions,narration,1,,not spoken by a character or offered as a choice (narration)
+tahan,,"last, endure",我慢する、持ちこたえる,verb,root,,Jambatan · Feelings and opinions,«tidak boleh tahan» (L-1267) is the standard chunk,1,,
+babak,,scene (of a play),場面、シーン,noun,root,,Jambatan · Health,the app's own word for a scene (tutorial),2,,coach text
+bayangkan,,imagine,想像する,verb,-kan,bayang,Jambatan · Health,"-kan (Ch12+), but the root «bayang» has no ledger row",2,,
+ejaan,ejaannya,spelling,つづり,noun,-an,eja,Jambatan · Health,scene form «ejaannya»; root «eja» is a Jambatan row,2,,
+versi,,version,バージョン,noun,root,,Jambatan · Health,loan; «versi akhir» is a Jambatan row,2,,
+ahli,,member; specialist,会員、専門家,noun,root,,Jambatan · Health,clinic and gym scenes,1,,not spoken by a character or offered as a choice (narration)
+bekukan,,freeze (an account),凍結する（口座を）,verb,-kan,beku,Jambatan · Health,«beku» has no row,1,,
+ejakan,,spell (out),つづりを言う,verb,-kan,eja,Jambatan · Health,root «eja» is a Jambatan row,1,,
+fisioterapi,,physiotherapy,理学療法,noun,root,,Jambatan · Health,health,1,,not spoken by a character or offered as a choice (narration)
+glukosa,,glucose,ブドウ糖,noun,root,,Jambatan · Health,blood test,1,,
+keahlian,,membership,会員資格,noun,ke-an,ahli,Jambatan · Health,gym membership; root «ahli» goes to Jambatan,1,,
+ketegangan,,tension,緊張、こわばり,noun,ke-an,tegang,Jambatan · Health,health,1,,
+ngantuk,,"sleepy (spoken, for ""mengantuk"")",眠い（「mengantuk」の話し言葉）,adj,root,,Jambatan · Health,"spoken form of «mengantuk» (L-0768, a Jambatan row)",1,,spoken
+regangan,,stretch (exercise),ストレッチ,noun,-an,regang,Jambatan · Health,physio exercise,1,,
+saringan,,screening,検診、スクリーニング,noun,-an,saring,Jambatan · Health,health screening,1,,not spoken by a character or offered as a choice (narration)
+skala,,scale,尺度,noun,root,,Jambatan · Health,pain scale,1,,
+dingin,,"cold (""penghawa dingin"" = air-conditioner)",冷たい、そっけない,adj,root,,Jambatan · Home and condo,tone of voice in the tutorial; «penghawa dingin» is its own row,2,,
+jambatan,,"bridge (here: the ""bridge"" phrases technique)",橋（ここでは「つなぎの言葉」の技）,noun,root,,Jambatan · Home and condo,"pattern-card name for the ""bridge phrase"" technique",2,,coach text; not spoken by a character or offered as a choice (pattern)
+permohonan,,"application, request (""permohonan maaf"" = an apology)",申請、（おわびの）申し出,noun,pe-an,mohon,Jambatan · Home and condo,«permohonan maaf» (formal); root «mohon» has no row,2,,
+putus asa,asa,"to give up, lose hope",あきらめる,phrase,chunk,putus + asa,Jambatan · Home and condo,only in «putus asa» (give up); putus is a Jambatan row,2,,not spoken by a character or offered as a choice (narration)
+relaks,,relax,リラックスする,verb,root,,Jambatan · Home and condo,spoken loan; standard «bertenang» is a Jambatan row,2,,spoken loan
+alihkan,,"move, shift (something)",動かす、移す,verb,-kan,alih,Jambatan · Home and condo,root «alih» is a Jambatan row,1,,
+anjing,,dog,犬,noun,root,,Jambatan · Home and condo,a neighbour's dog; Sam kept it (14 Nov),1,,cultural note: keep out of early chapters (Sam: «anjing» kept in lines)
+asyik,,"keep on, engrossed",〜ばかりしている,adv,root,,Jambatan · Home and condo,narration,1,,not spoken by a character or offered as a choice (narration)
+kebaikan,kebaikannya,"kindness, goodness",親切、よさ,noun,ke-an,baik,Jambatan · Home and condo,scene form «kebaikannya»; one pattern card,1,,coach text; not spoken by a character or offered as a choice (pattern)
+kelip-kelip,,blinking,点滅する,verb,lex,kelip,Jambatan · Home and condo,narration,1,,not spoken by a character or offered as a choice (narration)
+khidmat pelanggan,khidmat,customer service,カスタマーサービス,phrase,chunk,khidmat + pelanggan,Jambatan · Home and condo,only in «khidmat pelanggan»; pelanggan is a Jambatan row,1,,
+misteri,,mystery,謎,noun,root,,Jambatan · Home and condo,narration,1,,not spoken by a character or offered as a choice (narration)
+palang,,barrier (gate),遮断機,noun,root,,Jambatan · Home and condo,car park gate,1,,
+parkir,,parking,駐車,noun,root,,Jambatan · Home and condo,Sam's pair with «tempat letak kereta» (both fine),1,,looks Indonesian; Sam 14 Nov: both forms fine
+pembawa,,carrier,運ぶ人、運ぶもの,noun,pe(N)-,bawa,Jambatan · Home and condo,one scene,1,,
+perjanjian,,agreement,契約、合意,noun,pe-an,janji,Jambatan · Home and condo,tenancy agreement (minigame prompt),1,,not spoken by a character or offered as a choice (game)
+rekod,,record,記録,noun,root,,Jambatan · Home and condo,one scene,1,,
+ruang,,"space, room",空間、スペース,noun,root,,Jambatan · Home and condo,one scene,1,,not spoken by a character or offered as a choice (pattern)
+situasi,,situation,状況,noun,root,,Jambatan · Home and condo,minigame prompt,1,,not spoken by a character or offered as a choice (game)
+tertera,,"printed, stated",記載されている,verb,ter-,tera,Jambatan · Home and condo,formal; one scene,1,,
+titis,,drip,したたる,verb,root,,Jambatan · Home and condo,«menitis» (L-0790) is a Jambatan row,1,,not spoken by a character or offered as a choice (narration)
+alatan,,"tools, equipment",道具、ツール（アプリの機能）,noun,-an,alat,Jambatan · How to play,tutorial: the app's tools,1,,coach text
+baris,,"row, line",行（ぎょう）、列,noun,root,,Jambatan · How to play,tutorial: a line of text,1,,coach text
+ingatan,,memory,記憶,noun,-an,ingat,Jambatan · How to play,tutorial: memory check,1,,coach text
+kemajuan,,progress,進歩、進み具合,noun,ke-an,maju,Jambatan · How to play,tutorial,1,,coach text
+kerangka,,framework,枠組み,noun,root,,Jambatan · How to play,tutorial,1,,coach text
+kosa kata,kosa,vocabulary,語彙,phrase,chunk,kosa + kata,Jambatan · How to play,only in «kosa kata» (tutorial),1,,coach text
+laman,,"page, site (""laman utama"" = home page)",ページ（«laman utama» ホーム画面）,noun,root,,Jambatan · How to play,tutorial,1,,coach text
+melati,,jasmine,ジャスミン,noun,root,,Jambatan · How to play,tutorial: «teh melati»,1,,coach text
+nada,,tone,口調、トーン,noun,root,,Jambatan · How to play,tutorial: tone labels,1,,coach text
+penerangan,,"explanation, description",説明,noun,pe-an,terang,Jambatan · How to play,tutorial,1,,coach text; not spoken by a character or offered as a choice (narration)
+penghujung,,end,終わり,noun,pe-,hujung,Jambatan · How to play,tutorial,1,,coach text; not spoken by a character or offered as a choice (pattern)
+penilai,,evaluator,評価者,noun,pe(N)-,nilai,Jambatan · How to play,tutorial: the evaluator,1,,coach text
+rawak,,random,ランダムな,adj,root,,Jambatan · How to play,tutorial,1,,coach text
+semakan,,"check, review",チェック、確認,noun,-an,semak,Jambatan · How to play,tutorial: «Semakan Tahap» (the level check),1,,coach text
+tatabahasa,,grammar,文法,noun,root,,Jambatan · How to play,tutorial,1,,coach text
+tutorial,,tutorial,チュートリアル,noun,root,,Jambatan · How to play,tutorial,1,,"coach text; not spoken by a character or offered as a choice (narration, pattern)"
+jadikan,,"make (it), turn into",〜にする,verb,-kan,jadi,Jambatan · Talking and explaining,"-kan from 12 and jadi is Ch14, but used only in pattern cards and a minigame",2,,"coach text; not spoken by a character or offered as a choice (game, pattern)"
+rumus,,formula,まとめる（要点を）,verb,root,,Jambatan · Talking and explaining,pattern cards only,2,,coach text; not spoken by a character or offered as a choice (pattern)
+bentang,,present (a talk or slides),発表する（スライドを）,verb,root,,Jambatan · Talking and explaining,formal presentation (social),1,,
+bentangkan,,present (formal),発表する（あらたまった言い方）,verb,-kan,bentang,Jambatan · Talking and explaining,root «bentang» goes to Jambatan too,1,,
+bonus,,bonus,ボーナス,noun,root,,Jambatan · Talking and explaining,loan,1,,
+buktikan,,prove,証明する,verb,-kan,bukti,Jambatan · Talking and explaining,root «bukti» is a Jambatan row,1,,
+elok-elok,,"carefully, properly",気をつけて、ちゃんと,adv,lex,elok,Jambatan · Talking and explaining,root «elok» has no row,1,,
+forum,,forum,フォーラム,noun,root,,Jambatan · Talking and explaining,narration; loan,1,,not spoken by a character or offered as a choice (narration)
+garis,,"line, underline",線,noun,root,,Jambatan · Talking and explaining,narration,1,,not spoken by a character or offered as a choice (narration)
+hubungkan,,"connect, link",つなぐ,verb,-kan,hubung,Jambatan · Talking and explaining,root «hubung» has no row,1,,not spoken by a character or offered as a choice (pattern)
+ilmu,,knowledge,知識,noun,root,,Jambatan · Talking and explaining,narration,1,,not spoken by a character or offered as a choice (narration)
+jelaskan,,explain,説明する,verb,-kan,jelas,Jambatan · Talking and explaining,root «jelas» is a Jambatan row,1,,not spoken by a character or offered as a choice (pattern)
+kejuruteraan,,engineering,工学,noun,ke-an,jurutera,Jambatan · Talking and explaining,narration,1,,not spoken by a character or offered as a choice (narration)
+kenaikan pangkat,kenaikan,promotion (at work),昇進,phrase,chunk,ke-an naik + pangkat,Jambatan · Talking and explaining,only in «kenaikan pangkat» (promotion),1,,not spoken by a character or offered as a choice (narration)
+kepimpinan,,leadership,リーダーシップ,noun,ke-an,pimpin,Jambatan · Talking and explaining,narration,1,,not spoken by a character or offered as a choice (narration)
+ketik,,"click, tap",クリックする、タップする,verb,root,,Jambatan · Talking and explaining,narration,1,,not spoken by a character or offered as a choice (narration)
+klik,,click,クリックする,verb,root,,Jambatan · Talking and explaining,loan,1,,
+mak,,mum (spoken),お母さん（話し言葉）,noun,root,,Jambatan · Talking and explaining,spoken «emak»; no standard row («ibu» Ch9),1,,spoken
+pangkat,,rank,地位、階級,noun,root,,Jambatan · Talking and explaining,«kenaikan pangkat»,1,,not spoken by a character or offered as a choice (narration)
+pembentangan,,presentation,プレゼンテーション,noun,pe-an,bentang,Jambatan · Talking and explaining,root «bentang» goes to Jambatan,1,,
+pemula,,"starter (""syarikat pemula"" = start-up)",始める人（«syarikat pemula» スタートアップ）,noun,pe-,mula,Jambatan · Talking and explaining,one scene,1,,not spoken by a character or offered as a choice (narration)
+penemu duga,penemu,interviewer,面接官,phrase,chunk,penemu + duga,Jambatan · Talking and explaining,only in «penemu duga» (interviewer),1,,
+penulisan,,writing,書くこと、文章,noun,pe-an,tulis,Jambatan · Talking and explaining,one scene,1,,
+peperiksaan,,exam,試験,noun,pe-an,periksa,Jambatan · Talking and explaining,root «periksa» is a Jambatan row,1,,not spoken by a character or offered as a choice (narration)
+peranan,,role,役割,noun,pe-an,peran,Jambatan · Talking and explaining,narration,1,,not spoken by a character or offered as a choice (narration)
+profesional,,professional,プロの,adj,root,,Jambatan · Talking and explaining,minigame prompt,1,,not spoken by a character or offered as a choice (game)
+rata,,"flat, even (""sama rata"" = equal)",平らな（«sama rata» 平等に）,adj,root,,Jambatan · Talking and explaining,«sama rata»,1,,not spoken by a character or offered as a choice (pattern)
+sifat,,"quality; adjective (""kata sifat"")",性質；«kata sifat» 形容詞,noun,root,,Jambatan · Talking and explaining,grammar talk,1,,
+okey,,okay,,,,,Exclude · English insertion or initialism,English insertion or initialism,65,,
+stop,,stop,,,,,Exclude · English insertion or initialism,English insertion or initialism,7,,
+it,,IT (information technology),,,,,Exclude · English insertion or initialism,English insertion or initialism,4,,
+ic,,IC (identity card),,,,,Exclude · English insertion or initialism,English insertion or initialism,3,,
+boss,,boss (informal address),,,,,Exclude · English insertion or initialism,spelling of the English word; the Malay row is L-0532 «bos»,2,,
+bye,,bye,,,,,Exclude · English insertion or initialism,English insertion or initialism,2,,
+okeylah,,okay then,,,,,Exclude · English insertion or initialism,English insertion or initialism,2,,
+sori,,sorry (spoken),,,,,Exclude · English insertion or initialism,English insertion or initialism,2,,
+atm,,"ATM, cash machine",,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+bbq,,"BBQ, barbecue",,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+bro,,bro (informal),,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+bubble,,bubble (as in bubble tea),,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,not spoken by a character or offered as a choice (narration)
+call,,call (phone),,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+chute,,(rubbish) chute,,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+cool,,cool (English),,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+date,,date (romantic),,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+e-hailing,,e-hailing (ride-hailing),,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,not spoken by a character or offered as a choice (narration)
+encore,,encore,,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+fine,,fine (English; spoken),,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+game,,game (English; spoken),,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+gb,,GB (gigabyte),,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+hb,,"abbreviation of haribulan (""20hb"" = the 20th)",,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+hr,,HR (human resources),,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+medium,,medium,,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+medium-rare,,medium-rare (steak),,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+order,,order (English),,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+outstation,,"outstation, away on business",,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+steamboat,,steamboat (hotpot),,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+tea,,tea (as in bubble tea),,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,not spoken by a character or offered as a choice (narration)
+well-done,,well-done (steak),,,,,Exclude · English insertion or initialism,English insertion or initialism,1,,
+hai,,hi,,,,,Exclude · filler or interjection,filler or interjection,35,,
+hmm,,hmm,,,,,Exclude · filler or interjection,filler or interjection,34,,
+helo,,hello,,,,,Exclude · filler or interjection,filler or interjection,17,,
+eh,,"eh (interjection, spoken)",,,,,Exclude · filler or interjection,filler or interjection,11,,
+err,,err (hesitation),,,,,Exclude · filler or interjection,filler or interjection,10,,
+ah,,ah (interjection),,,,,Exclude · filler or interjection,filler or interjection,9,,
+haha,,haha,,,,,Exclude · filler or interjection,filler or interjection,8,,
+nah,,here you go,,,,,Exclude · filler or interjection,filler or interjection,5,,
+erm,,erm (hesitation),,,,,Exclude · filler or interjection,filler or interjection,4,,
+aiyo,,oh dear (colloquial interjection),,,,,Exclude · filler or interjection,filler or interjection,3,,
+ha,,"ha, right? (interjection)",,,,,Exclude · filler or interjection,filler or interjection,3,,
+hah,,hah? (interjection),,,,,Exclude · filler or interjection,filler or interjection,3,,
+hm,,hm,,,,,Exclude · filler or interjection,filler or interjection,3,,
+la,,"la (spoken particle, as in ""nanti la"": later)",,,,,Exclude · filler or interjection,filler or interjection,3,,
+aduh,,"ouch, oh dear (interjection)",,,,,Exclude · filler or interjection,filler or interjection,2,,
+ish,,ish (annoyed interjection),,,,,Exclude · filler or interjection,filler or interjection,2,,
+ooh,,ooh,,,,,Exclude · filler or interjection,filler or interjection,2,,
+yeay,,yeay,,,,,Exclude · filler or interjection,filler or interjection,2,,
+yelah,,"yes, all right (spoken)",,,,,Exclude · filler or interjection,filler or interjection,2,,
+amboi,,exclamation of mock surprise,,,,,Exclude · filler or interjection,filler or interjection,1,,
+bip,,beep,,,,,Exclude · filler or interjection,filler or interjection,1,,not spoken by a character or offered as a choice (narration)
+eee,,eee (expressive interjection),,,,,Exclude · filler or interjection,filler or interjection,1,,
+emm,,emm (hesitation),,,,,Exclude · filler or interjection,filler or interjection,1,,
+er,,er (hesitation),,,,,Exclude · filler or interjection,filler or interjection,1,,
+haa,,haa (interjection),,,,,Exclude · filler or interjection,filler or interjection,1,,
+hahaha,,hahaha,,,,,Exclude · filler or interjection,filler or interjection,1,,
+hehe,,hehe,,,,,Exclude · filler or interjection,filler or interjection,1,,
+hoi,,hey! (shout),,,,,Exclude · filler or interjection,filler or interjection,1,,
+mm,,mm,,,,,Exclude · filler or interjection,filler or interjection,1,,
+tik-tik,,tick-tick,,,,,Exclude · filler or interjection,filler or interjection,1,,not spoken by a character or offered as a choice (narration)
+yay,,yay,,,,,Exclude · filler or interjection,filler or interjection,1,,
+perkataan,,word,,,,,Exclude · minigame-instruction word (Sam's list),minigame-instruction word (Sam's list),58,,
+bina,,"build, form",,,,,Exclude · minigame-instruction word (Sam's list),minigame-instruction word (Sam's list),50,,"not spoken by a character or offered as a choice (game, narration)"
+demi,,"for the sake of (""satu demi satu"" = one by one)",,,,,Exclude · minigame-instruction word (Sam's list),minigame-instruction word (Sam's list),46,,
+susun,,"arrange, put in order",,,,,Exclude · minigame-instruction word (Sam's list),minigame-instruction word (Sam's list),22,,not spoken by a character or offered as a choice (game)
+urutan,,"order, sequence",,,,,Exclude · minigame-instruction word (Sam's list),minigame-instruction word (Sam's list),18,,not spoken by a character or offered as a choice (game)
+frasa,,phrase,,,,,Exclude · minigame-instruction word (Sam's list),minigame-instruction word (Sam's list),9,,not spoken by a character or offered as a choice (game)
+permintaan,,request,,,,,Exclude · minigame-instruction word (Sam's list),minigame-instruction word (Sam's list),3,,not spoken by a character or offered as a choice (game)
+mini,,mini,,,,,Exclude · minigame-instruction word (Sam's list),minigame-instruction word (Sam's list),1,,not spoken by a character or offered as a choice (game)
+jadiii,,"so? (stretched-out spoken ""jadi"")",,,,,Exclude · non-standard spelling (stretched),non-standard spelling (stretched),1,,
+yesss,,yes!,,,,,Exclude · non-standard spelling (stretched),non-standard spelling (stretched),1,,
+lagu-lagu,,songs,,,,,Exclude · regular form of a live ledger row,regular form of a live ledger row; regular plural of L-1022 «lagu» (Ch2),1,,

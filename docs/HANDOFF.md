@@ -32,6 +32,7 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
 
 - Nombor & Masa, Sam to answer: the day-part boundaries, «kurang suku», «haribulan» or «hari bulan», «pertiga» or «per tiga» (ledger L-0141), «minit» after the minutes, the draft hooks (en and ja); see the report section 4. Kamus Dewan and the UKM kit could not be reached from the session (network).
 
+- **Vocabulary placement and the ⚡ stage (proposal, 15 Nov 2026):** [VOCAB-PLACEMENT-proposal-report.md](VOCAB-PLACEMENT-proposal-report.md), the CSV and [STRETCH-STAGE-design.md](STRETCH-STAGE-design.md). Documents only; waits for Claude's review and Sam's answers (report section 10) before any build phase. Nothing in the ledger, packs or app changed.
 - Look at the three Social Jambatan scenes on a phone; Sam may move words between them (`SOCIAL_SPLIT`). Open questions: [STAGE-2-step6c2-report.md](STAGE-2-step6c2-report.md) (L-1308 and L-1309 In both; the rule 1 deviation).
 - Cikgu Sensai should refresh its ledger copy (118 places, 264 In both cells since e4e294d).
 - The end-of-project Kamus Dewan and native Japanese checks (the step 3e notes, the picture-scene and practice-pool drafts included).
