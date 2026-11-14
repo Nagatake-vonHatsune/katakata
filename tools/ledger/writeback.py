@@ -6,7 +6,8 @@ Usage (from the repo root):
 
 <before.json> / <after.json>: reads of Ledger!A1:T<last row> before and after the write (the Google Sheets
 get_values JSON; when one read is too large, join the parts: {"values": part1 + part2}).
-<map.json>: what tools/make_vocab_bank_vN.py --map wrote ({ledger id: {"ids": [...], "place": "..."}}).
+<map.json>: what tools/make_vocab_bank_vN.py --map wrote ({ledger id: {"ids": [...], "place": "..."}}). An entry may also carry
+"both": "Yes" (column M, "In both"; step 6c-2); a map entry without "ids" and "place" only sets M.
 
 plan prints, per changed row, the sheet row number, the cells (J = Kata-Kata (card IDs), K = Kata-Kata place),
 before and after, so the writes can be made with update_values. verify exits 1 unless the cells that differ
@@ -16,7 +17,7 @@ between the two reads are exactly the planned ones.
 import json
 import sys
 
-J, K = 9, 10  # zero-based columns J and K
+J, K, M = 9, 10, 12  # zero-based columns J, K and M
 
 
 def load(path):
@@ -29,10 +30,16 @@ def plan(before, mapping):
     for lid, m in mapping.items():
         n = rows[lid]
         r = before[n - 1]
-        after = [", ".join(m["ids"]), m["place"]]
-        cells = [(col, r[col], val) for col, val in ((J, after[0]), (K, after[1])) if r[col] != val]
+        want = []
+        if "ids" in m:
+            want.append((J, ", ".join(m["ids"])))
+        if "place" in m:
+            want.append((K, m["place"]))
+        if "both" in m:
+            want.append((M, m["both"]))
+        cells = [(col, r[col], val) for col, val in want if r[col] != val]
         if cells:
-            out.append({"lid": lid, "row": n, "cells": [{"col": "JK"[c - J], "before": b, "after": a} for c, b, a in cells]})
+            out.append({"lid": lid, "row": n, "cells": [{"col": "ABCDEFGHIJKLMNOPQRST"[c], "before": b, "after": a} for c, b, a in cells]})
     return sorted(out, key=lambda p: p["row"])
 
 

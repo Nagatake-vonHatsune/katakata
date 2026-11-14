@@ -1,0 +1,855 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "jambatan-social-events",
+  "chapter": 9,
+  "status": "live",
+  "ja_review": "pending",
+  "source": "hanashishou@4be57ac content/packs/social/targets/ms/course.json firstMet words with a ledger row (content/bridge/hanashishou-metfirst.json)",
+  "world": {
+    "id": "jambatan",
+    "ms": "Jambatan",
+    "en": "Bridge to Hanashishou",
+    "ja": "話匠への橋"
+  },
+  "title": {
+    "ms": "Acara dan keluar",
+    "en": "Events and outings",
+    "ja": "イベントとお出かけ"
+  },
+  "setting": {
+    "en": "Words you will meet in Hanashishou's social life episodes: events, music, outings and plans. They are already familiar when you arrive.",
+    "ja": "話匠の「人づきあい」のエピソードに出てくる、イベント・音楽・お出かけ・計画のことば。先に覚えておけば、話匠に進んだときに見覚えがあります。"
+  },
+  "cards": [
+    {
+      "id": "ms-j-social-35",
+      "lang": "ms",
+      "term": "bunyi",
+      "gloss_en": "sound, noise",
+      "gloss_ja": "音",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Stop bunyi itu sekarang. In 13 Hanashishou scenes: A sore throat, Card blocked, Coffee with the chairperson, Demo day with Jinx and 9 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-41",
+      "lang": "ms",
+      "term": "cadang",
+      "gloss_en": "to propose, plan to",
+      "gloss_ja": "提案する、〜するつもり",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Cakap apa yang bagus, kemudian cadang satu perubahan, dengan sebab. In 10 Hanashishou scenes: Can you cover for me?, House rules, How to play, Road trip and 6 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-42",
+      "lang": "ms",
+      "term": "idea",
+      "gloss_en": "idea",
+      "gloss_ja": "アイデア、考え",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Hmm... langsung tak ada idea? In 10 Hanashishou scenes: Calling in sick, Feedback on the slides, Fireworks on the roof, How to play and 6 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-44",
+      "lang": "ms",
+      "term": "diam",
+      "gloss_en": "quiet, silent; to keep quiet",
+      "gloss_ja": "黙る、静かな",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Diamlah, Lily. In 9 Hanashishou scenes: Card blocked, Mock interview, Movie night, Pantry banter and 5 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-51",
+      "lang": "ms",
+      "term": "pesan",
+      "gloss_en": "to order (food); to leave a message",
+      "gloss_ja": "注文する、伝言する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Sudah sedia untuk pesan? In 8 Hanashishou scenes: At the mamak, Jom lepak!, Not as ordered, The bike shop and 4 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-55",
+      "lang": "ms",
+      "term": "nyanyi",
+      "gloss_en": "to sing (short, spoken form)",
+      "gloss_ja": "歌う（短い・口語形）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Itu masa Mira nak nyanyi! Spoken form; standard: menyanyi. In 7 Hanashishou scenes: House rules, Karaoke night, Quiet, please, Team dinner and 3 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-61",
+      "lang": "ms",
+      "term": "suara",
+      "gloss_en": "voice",
+      "gloss_ja": "声",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Maaf, suara saya... boleh ulang balik pada saya? In 6 Hanashishou scenes: A sore throat, How to play, Karaoke night, Quiet, please and 2 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-65",
+      "lang": "ms",
+      "term": "dewan",
+      "gloss_en": "hall",
+      "gloss_ja": "ホール、会堂",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: ...Baiklah. Berhenti sekejap. Aku cuba. Esok pukul 10 pagi, di dewan utama. Kau mesti datang. In 5 Hanashishou scenes: Demo day with Jinx, The chairperson's speech, The encore, The town hall and 1 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-67",
+      "lang": "ms",
+      "term": "giliran",
+      "gloss_en": "turn (my turn, your turn)",
+      "gloss_ja": "順番",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Giliran awak! Nah, mikrofon. Nyanyilah! In 5 Hanashishou scenes: Jom lepak!, Karaoke night, Movie night, The drinks run and 1 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-68",
+      "lang": "ms",
+      "term": "konsert",
+      "gloss_en": "concert",
+      "gloss_ja": "コンサート",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Konsert yang hebat! In 5 Hanashishou scenes: A sore throat, Leeks for the hotpot, The drinks run, The encore and 1 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-70",
+      "lang": "ms",
+      "term": "senarai",
+      "gloss_en": "list",
+      "gloss_ja": "リスト、一覧",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Bilik 7! Saya dah buat senarai lima puluh lagu. Lima puluh! In 5 Hanashishou scenes: Karaoke night, Leeks for the hotpot, The chatty colleague, The encore and 1 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-73",
+      "lang": "ms",
+      "term": "acara",
+      "gloss_en": "event, programme",
+      "gloss_ja": "行事、イベント",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Hari Rabu. Mei Ling dari bahagian Pemasaran datang ke meja anda. Dia nak jemput anda ke satu acara. Teka: apa jawapan yang baik? In 4 Hanashishou scenes: Karaoke night, Road trip, Team dinner, The farewell dinner.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-74",
+      "lang": "ms",
+      "term": "barisan",
+      "gloss_en": "row, line (of seats)",
+      "gloss_ja": "列、並び",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Barisan K, tolong. Kami nak duduk sama-sama. In 4 Hanashishou scenes: Monday catch-up, Movie night, The drinks run, The missed bus.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-77",
+      "lang": "ms",
+      "term": "kuat",
+      "gloss_en": "strong; loud",
+      "gloss_ja": "強い、（音が）大きい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Hanashishou: Bunyi itu sangat kuat. Tolong mula lebih lewat. In 4 Hanashishou scenes: How to play, Quiet, please, The bike shop, The renovation next door.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-78",
+      "lang": "ms",
+      "term": "lembut",
+      "gloss_en": "soft, gentle",
+      "gloss_ja": "柔らかい、優しい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Hanashishou: Regangan yang lembut itu bagus. Kalau sakit tajam, berhenti dan telefon saya. Dan bangun setiap jam di tempat kerja! In 4 Hanashishou scenes: Leeks for the hotpot, Not as ordered, The money she owes, The physio session.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-79",
+      "lang": "ms",
+      "term": "letupan",
+      "gloss_en": "explosion, blast",
+      "gloss_ja": "爆発",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Letupan. Cakap letupan. In 4 Hanashishou scenes: Fireworks on the roof, House rules, Movie night, The surprise party.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-80",
+      "lang": "ms",
+      "term": "meletup",
+      "gloss_en": "to explode",
+      "gloss_ja": "爆発する",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "Hanashishou: Filem aksi itu. Satu bandar meletup. Dalam lima minit pertama! In 4 Hanashishou scenes: Monday catch-up, Movie night, The bike shop, The surprise party.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-81",
+      "lang": "ms",
+      "term": "menyanyi",
+      "gloss_en": "to sing",
+      "gloss_ja": "歌う",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "Hanashishou: Muzikal! Semua orang menyanyi di akhir cerita! Spoken form: nyanyi. In 4 Hanashishou scenes: Karaoke night, Movie night, Team dinner, The encore.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-82",
+      "lang": "ms",
+      "term": "pelan",
+      "gloss_en": "plan (a phone plan, a floor plan)",
+      "gloss_ja": "プラン、計画（料金プラン、図面）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Pelan awak rosak. In 4 Hanashishou scenes: Road trip, Team dinner, The group project, The phone plan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-83",
+      "lang": "ms",
+      "term": "rancang",
+      "gloss_en": "to plan",
+      "gloss_ja": "計画する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Sekejap, tutup pukul berapa? Saya kena rancang snek. In 4 Hanashishou scenes: Quiet, please, Road trip, Team dinner, The surprise party.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-85",
+      "lang": "ms",
+      "term": "video",
+      "gloss_en": "video",
+      "gloss_ja": "ビデオ、動画",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Tonton video. In 4 Hanashishou scenes: How to play, Quiet, please, The phone plan, Weekend plans.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-86",
+      "lang": "ms",
+      "term": "angkat",
+      "gloss_en": "to lift, raise",
+      "gloss_ja": "持ち上げる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Lily nyanyi kecil. Kuat. Lelaki di meja sebelah angkat muka. In 3 Hanashishou scenes: Quiet, please, The blocked car, The late parts.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-87",
+      "lang": "ms",
+      "term": "baling",
+      "gloss_en": "to throw, hurl",
+      "gloss_ja": "投げる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: K! Tepi. Sesuai untuk baling bertih jagung. Gurau! In 3 Hanashishou scenes: House rules, Movie night, Quiet, please.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-88",
+      "lang": "ms",
+      "term": "bersama",
+      "gloss_en": "together; with",
+      "gloss_ja": "一緒に、〜と共に",
+      "pos": "adv",
+      "affix_tag": "ber-",
+      "note": "Hanashishou: Dan saya nak kita semua nyanyi bersama lepas makan! Tapi semua nak benda lain... Boleh tolong kami? In 3 Hanashishou scenes: Not as ordered, Team dinner, The encore.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-08",
+      "lang": "ms",
+      "term": "bunga api",
+      "gloss_en": "Fireworks",
+      "gloss_ja": "花火",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Saya suka bunga api. In 3 Hanashishou scenes: Fireworks on the roof, Team dinner, The surprise party.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-92",
+      "lang": "ms",
+      "term": "kahwin",
+      "gloss_en": "to marry, get married",
+      "gloss_ja": "結婚する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya tak suka kenduri kahwin. In 3 Hanashishou scenes: Monday catch-up, The leave request, The wedding invitation.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-95",
+      "lang": "ms",
+      "term": "pegang",
+      "gloss_en": "to hold, grip",
+      "gloss_ja": "持つ、握る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Minggu depan, letupan. Saya pegang janji itu. In 3 Hanashishou scenes: Mock interview, Movie night, The chairperson's speech.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-97",
+      "lang": "ms",
+      "term": "penyanyi",
+      "gloss_en": "singer",
+      "gloss_ja": "歌手",
+      "pos": "noun",
+      "affix_tag": "pe(N)-",
+      "note": "Hanashishou: Anda pembantu dalam jelajah konsert seorang penyanyi. Sabtu pagi, telefon anda bunyi. Itu penyanyinya, Miku, dia cakap perlahan sangat. In 3 Hanashishou scenes: A sore throat, Leeks for the hotpot, The encore.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-98",
+      "lang": "ms",
+      "term": "projek",
+      "gloss_en": "project",
+      "gloss_ja": "プロジェクト",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Ooh, projek baru! Apa masalahnya? In 3 Hanashishou scenes: Jom lepak!, The bike shop, The stand-up update.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-104",
+      "lang": "ms",
+      "term": "tepuk",
+      "gloss_en": "to clap, pat",
+      "gloss_ja": "叩く、拍手する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Oh, dan peraturan empat: setiap kali orang sebut \"jalan\", semua tepuk tangan. Faham? In 3 Hanashishou scenes: House rules, Monday catch-up, The chairperson's speech.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-17",
+      "lang": "ms",
+      "term": "balkoni",
+      "gloss_en": "Balcony",
+      "gloss_ja": "ベランダ、バルコニー",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Ia hantar ke balkoni. In 2 Hanashishou scenes: Demo day with Jinx, Fireworks on the roof.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-03",
+      "lang": "ms",
+      "term": "jalan sesak",
+      "gloss_en": "Traffic jam; heavy traffic",
+      "gloss_ja": "渋滞",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Jalan sesak. In 2 Hanashishou scenes: The missed bus, Weekend plans.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-106",
+      "lang": "ms",
+      "term": "ketuai",
+      "gloss_en": "To lead (root form of \"mengetuai\")",
+      "gloss_ja": "率いる（「mengetuai」の語根）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Sekarang saya kerja dalam jualan. Sebelum itu, saya kerja di kedai selama tiga tahun. Lepas ini, saya nak ketuai satu pasukan. In 2 Hanashishou scenes: Mock interview, The group project.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-07",
+      "lang": "ms",
+      "term": "krew / kru",
+      "gloss_en": "Crew",
+      "gloss_ja": "スタッフ、クルー",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Krew sudah sedia. In 2 Hanashishou scenes: Leeks for the hotpot, The encore.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-107",
+      "lang": "ms",
+      "term": "nyalakan",
+      "gloss_en": "To light; to set off (fireworks)",
+      "gloss_ja": "（花火などに）火をつける",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Aku nyalakan. Aku pakar bunga api! In 2 Hanashishou scenes: Fireworks on the roof, Team dinner.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-109",
+      "lang": "ms",
+      "term": "akad nikah",
+      "gloss_en": "The Muslim marriage ceremony (the solemnisation)",
+      "gloss_ja": "アカド・ニカ（イスラム教の結婚の儀式）",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Akad nikah pukul 11 pagi. In 1 Hanashishou scene: The wedding invitation.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-04",
+      "lang": "ms",
+      "term": "belakang pentas",
+      "gloss_en": "Backstage",
+      "gloss_ja": "舞台裏",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Saya tolong di belakang pentas. In 1 Hanashishou scene: The encore.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-111",
+      "lang": "ms",
+      "term": "bilik perbincangan",
+      "gloss_en": "Discussion room (often bookable in a library)",
+      "gloss_ja": "グループ学習室、ディスカッションルーム",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Boleh tempah bilik perbincangan di atas. In 1 Hanashishou scene: Quiet, please.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-12",
+      "lang": "ms",
+      "term": "bunga api tangan",
+      "gloss_en": "Sparklers (hand-held fireworks)",
+      "gloss_ja": "手持ち花火",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Kita main bunga api tangan. In 1 Hanashishou scene: Team dinner.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-112",
+      "lang": "ms",
+      "term": "gabungkan",
+      "gloss_en": "To combine",
+      "gloss_ja": "組み合わせる、合わせる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Apa kata kita gabungkan semuanya? Makan malam yang teratur pukul 6, pencuci mulut atas bumbung dengan sedikit bunga api tangan, kemudian semua menyanyi. Setuju? In 1 Hanashishou scene: Team dinner.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-15",
+      "lang": "ms",
+      "term": "gear",
+      "gloss_en": "Gear (of a bicycle)",
+      "gloss_ja": "ギア",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Ada bunyi bila saya tukar gear. In 1 Hanashishou scene: The bike shop.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-19",
+      "lang": "ms",
+      "term": "gula perang",
+      "gloss_en": "Brown sugar",
+      "gloss_ja": "黒糖、ブラウンシュガー",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Teh susu gula perang. In 1 Hanashishou scene: The drinks run.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-118",
+      "lang": "ms",
+      "term": "pengantin",
+      "gloss_en": "Bride or groom (pengantin perempuan / lelaki)",
+      "gloss_ja": "新郎新婦（perempuan＝新婦、lelaki＝新郎）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya kawan pengantin. In 1 Hanashishou scene: The wedding invitation.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-120",
+      "lang": "ms",
+      "term": "raptai",
+      "gloss_en": "Rehearsal",
+      "gloss_ja": "リハーサル",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Raptai itu panjang. In 1 Hanashishou scene: The drinks run.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-05",
+      "lang": "ms",
+      "term": "senarai lagu",
+      "gloss_en": "Setlist; song list",
+      "gloss_ja": "セットリスト、曲順",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Senarai lagu saya hilang! In 1 Hanashishou scene: The encore.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-18",
+      "lang": "ms",
+      "term": "tanpa ais",
+      "gloss_en": "Without ice",
+      "gloss_ja": "氷なし",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Tanpa ais, ya. In 1 Hanashishou scene: The drinks run.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-events"
+        }
+      ],
+      "scene": "dunia-jambatan-social-events",
+      "chapter": 9
+    }
+  ]
+}

@@ -284,4 +284,13 @@ describe('Hanashishou bridge', () => {
     expect(bridge.length).toBeGreaterThanOrEqual(4);
     expect(bridge.every((s) => s.chapter === 9)).toBe(true);
   });
+  it('splits the Social Jambatan scene by topic and keeps every card ID (step 6c-2, Sam 15 Nov 2026)', () => {
+    const ids = content.scenes.filter((s) => s.world.id === 'jambatan').map((s) => s.id).sort();
+    expect(ids).toEqual(['jambatan-daily-life', 'jambatan-health', 'jambatan-home-condo', 'jambatan-office', 'jambatan-social-events', 'jambatan-social-feelings', 'jambatan-social-talk', 'jambatan-tutorial']);
+    const social = content.scenes.filter((s) => s.id.startsWith('jambatan-social-'));
+    expect(social.reduce((n, s) => n + s.cards.length, 0)).toBe(118);
+    expect(social.every((s) => s.cards.every((c) => /^ms-j-social-\d+$/.test(c.id)))).toBe(true);
+    expect(content.cards.get('ms-j-social-20')!.scene).toBe('dunia-jambatan-social-talk');
+    expect(content.cards.get('ms-j-social-81')!.scene).toBe('dunia-jambatan-social-events');
+  });
 });

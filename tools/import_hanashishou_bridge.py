@@ -41,7 +41,31 @@ SCENES = {
     "health": ("Kesihatan", "Health", "健康"),
     "social": ("Bersosial", "Social life", "人づきあい"),
     "tutorial": ("Cara bermain", "How to play", "遊び方"),
+    # Social (118 cards) is split by topic into three scenes (Sam, 15 Nov 2026). The words keep their ID (ms-j-social-NN);
+    # only the scene, the card's link and the ledger place change. The Japanese titles are drafts.
+    "social-talk": ("Berbual dan menerangkan", "Talking and explaining", "話す・説明する"),
+    "social-events": ("Acara dan keluar", "Events and outings", "イベントとお出かけ"),
+    "social-feelings": ("Perasaan dan pendapat", "Feelings and opinions", "気持ちと意見"),
 }
+SPLIT_TOPIC = {
+    "social-talk": ("the words for saying, explaining and telling", "言う・説明する・伝えることば"),
+    "social-events": ("events, music, outings and plans", "イベント・音楽・お出かけ・計画のことば"),
+    "social-feelings": ("feelings, qualities and opinions", "気持ち・人柄・意見のことば"),
+}
+# The words of the Hanashishou pack «social», by topic (an underscore stands for a space) (Sam, 15 Nov 2026: "choose what the words suggest"). Every social word must be listed.
+SOCIAL_SPLIT = {
+    "social-talk": """nota ayat beri sebut dapat ia butiran sesuatu tentang cuma cara seorang cerita sendiri ulang begitu terima kena sahkan biar hampir
+        maksudnya selama pasal sedia benda sepanjang terakhir terangkan akhir dua-dua uruskan berita gurau dapatkan sediakan sekurang-kurangnya tawarkan
+        teruskan mengesan menyusul pembekal peruncitan sedangkan termasuk""",
+    "social-events": """bunyi cadang idea diam pesan nyanyi suara dewan giliran konsert senarai acara barisan kuat lembut letupan meletup pelan rancang
+        video angkat baling bersama bunga_api kahwin pegang penyanyi projek tepuk balkoni jalan_sesak ketuai krew nyalakan akad_nikah belakang_pentas
+        bilik_perbincangan bunga_api_tangan gabungkan gear gula_perang pengantin raptai senarai_lagu tanpa_ais menyanyi""",
+    "social-feelings": """mungkin salah tepat betul-betul sebenarnya pasti adil hebat sempurna menarik tentu tetap bijak gementar kisah laju pendapat puji
+        ringkas dengan_teliti jujur berbaloi kebetulan melegakan terbawa-bawa jujurnya lenguh""",
+}
+SPLIT_OF = {w.replace("_", " "): scene for scene, words in SOCIAL_SPLIT.items() for w in words.split()}
+
+
 # Spoken form and its standard partner (Sam, 14 Nov 2026): both cards say so.
 SPOKEN = {"pasal": "tentang", "nyanyi": "menyanyi", "benda": "perkara"}
 STANDARD = {std: spoken for spoken, std in SPOKEN.items()}
@@ -63,6 +87,16 @@ def affixed(sentence):
     return out
 # IDs of Jambatan cards dropped since they were first published (step 3c: jiran, pindah, sepupu became class cards): never reused.
 RETIRED_IDS = ["ms-j-health-22"]
+
+
+def split_scene(pack, term):
+    """The scene of a card: its Hanashishou pack, except that «social» is split by topic."""
+    if pack != "social":
+        return pack
+    key = re.sub(r"\(.*?\)", "", term).split("/")[0].strip().lower()
+    if key not in SPLIT_OF:
+        raise SystemExit(f"social word {term!r} is not assigned to a Jambatan scene (SOCIAL_SPLIT)")
+    return SPLIT_OF[key]
 
 
 def read_ledger():
@@ -135,10 +169,10 @@ def main(hana, map_out=None):
         row = ledger.get(lid)
         if row is None or row["Review status"] == "Retired":
             raise SystemExit(f"{lid} is met first but is not a live ledger row: remake hanashishou-metfirst.json")
-        wanted[lid] = (home_pack(lid, r["eps"]), r)
+        wanted[lid] = (split_scene(home_pack(lid, r["eps"]), row["Malay"]), r)
     for lid, row in ledger.items():  # cards that already exist keep their place even if no scene meets the word now
         if lid not in wanted and jambatan_ids(row):
-            pack = old[jambatan_ids(row)[0]][0]
+            pack = split_scene(old[jambatan_ids(row)[0]][0], row["Malay"])
             wanted[lid] = (pack, {"eps": [], "example": None, "forms": []})
 
     def scene_titles(eps):
@@ -180,11 +214,12 @@ def main(hana, map_out=None):
         ids = jambatan_ids(row)
         if ids:
             cid, old_card = ids[0], old[ids[0]][1]
-            if old[cid][0] != pack:
+            if split_scene(old[cid][0], row["Malay"]) != pack:
                 raise SystemExit(f"{lid}: card {cid} is in {old[cid][0]} but the ledger says {pack}")
         else:
-            next_n[pack] = next_n.get(pack, 0) + 1
-            cid, old_card = f"ms-j-{pack}-{next_n[pack]:02d}", None
+            idp = "social" if pack.startswith("social-") else pack  # IDs stay ms-j-social-NN after the split
+            next_n[idp] = next_n.get(idp, 0) + 1
+            cid, old_card = f"ms-j-{idp}-{next_n[idp]:02d}", None
         term = row["Malay"]
         card_of[lid] = cid
         packs.setdefault(pack, []).append({
@@ -202,10 +237,15 @@ def main(hana, map_out=None):
         })
 
     plan = {}
+    written = set()
     for pack in sorted(packs):
         ms, en, ja = SCENES[pack]
         setting_en = f"Words you will meet in Hanashishou's {en.lower()} episodes, so they are already familiar when you arrive."
         setting_ja = f"話匠の「{ja}」のエピソードに出てくる言葉。先に覚えておけば、話匠に進んだときに見覚えがあります。"
+        if pack in SPLIT_TOPIC:
+            topic_en, topic_ja = SPLIT_TOPIC[pack]
+            setting_en = f"Words you will meet in Hanashishou's social life episodes: {topic_en}. They are already familiar when you arrive."
+            setting_ja = f"話匠の「人づきあい」のエピソードに出てくる、{topic_ja}。先に覚えておけば、話匠に進んだときに見覚えがあります。"
         if pack == "tutorial":
             setting_en = "Words you will meet in Hanashishou's how-to-play tutorial, so they are already familiar when you arrive."
             setting_ja = "話匠の「遊び方」チュートリアルに出てくる言葉。先に覚えておけば、話匠に進んだときに見覚えがあります。"
@@ -217,7 +257,7 @@ def main(hana, map_out=None):
             "chapter": 9,
             "status": "live",
             "ja_review": "pending",
-            "source": f"hanashishou@{commit} content/packs/{pack}/targets/ms/course.json firstMet words with a ledger row (content/bridge/hanashishou-metfirst.json)",
+            "source": f"hanashishou@{commit} content/packs/{pack.split('-')[0] if pack.startswith('social-') else pack}/targets/ms/course.json firstMet words with a ledger row (content/bridge/hanashishou-metfirst.json)",
             "world": {"id": "jambatan", "ms": "Jambatan", "en": "Bridge to Hanashishou", "ja": "話匠への橋"},
             "title": {"ms": ms, "en": en, "ja": ja},
             "setting": {"en": setting_en, "ja": setting_ja},
@@ -225,23 +265,30 @@ def main(hana, map_out=None):
         }
         path = ROOT / f"content/ms/jambatan/jambatan-{pack}.json"
         path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        written.add(path.name)
         print(f"jambatan-{pack}: {len(packs[pack])} cards")
     print(f"jambatan cards: {sum(len(c) for c in packs.values())}")
+
+    for f in sorted((ROOT / "content/ms/jambatan").glob("jambatan-*.json")):  # a scene that no longer exists (jambatan-social before the split)
+        if f.name not in written:
+            f.unlink()
+            print(f"removed {f.name}")
 
     (ROOT / "content/bridge/hanashishou-ms.json").write_text(
         json.dumps({"source": f"hanashishou@{commit}", "words": index}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
     )
     print(f"hanashishou-ms.json: {len(index)} words")
 
-    if map_out:  # the J and K cells the sheet should show for every row whose Jambatan card is new
+    if map_out:  # the J and K cells the sheet should show for every row with a Jambatan card (writeback.py plan keeps the ones that differ)
         mapping = {}
         for lid, (pack, _) in wanted.items():
             row = ledger[lid]
-            if jambatan_ids(row):
-                continue
-            ids = [i.strip() for i in row["Kata-Kata (card IDs)"].split(",") if i.strip()] + [card_of[lid]]
-            place = [p for p in [row["Kata-Kata place"].strip()] if p] + [f"Jambatan · {SCENES[pack][1]}"]
-            mapping[lid] = {"ids": ids, "place": "; ".join(place)}
+            ids = [i.strip() for i in row["Kata-Kata (card IDs)"].split(",") if i.strip()]
+            if card_of[lid] not in ids:
+                ids.append(card_of[lid])
+            # the place keeps its other parts; the «Jambatan · <scene>» part names the scene the card is in now
+            others = [p.strip() for p in row["Kata-Kata place"].split(";") if p.strip() and not p.strip().startswith("Jambatan · ")]
+            mapping[lid] = {"ids": ids, "place": "; ".join(others + [f"Jambatan · {SCENES[pack][1]}"])}
         Path(map_out).write_text(json.dumps(mapping, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"map: {len(mapping)} rows")
 
