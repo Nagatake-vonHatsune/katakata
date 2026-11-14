@@ -13,7 +13,7 @@ import { isKnown, migrateSrs, newSrs, Rating, review } from '../../src/core/srs'
 import { defaultState } from '../../src/core/state';
 import { streak } from '../../src/core/progress';
 import { addReports, groupQuestions } from '../../src/teacher/merge';
-import { buildWordLibrary, isInHanashishou } from '../../src/core/bridge';
+import { buildWordLibrary, hanashishouForms, isInHanashishou, suggestedBand } from '../../src/core/bridge';
 
 function allPacks() {
   const walk = (d: string): string[] => readdirSync(d).flatMap((n) => (statSync(join(d, n)).isDirectory() ? walk(join(d, n)) : n.endsWith('.json') ? [join(d, n)] : []));
@@ -249,6 +249,35 @@ describe('Hanashishou bridge', () => {
   it('knows which words Hanashishou teaches', () => {
     expect(isInHanashishou('pejabat pos')).toBe(true);
     expect(isInHanashishou('Selamat pagi')).toBe(false);
+  });
+  it('matches each slash alternative of a card term as a whole word (step 6b)', () => {
+    // Hanashishou has «pintu masuk» but not «pintu keluar» (card ms-c07-036, ledger L-0330).
+    expect(hanashishouForms('pintu masuk / pintu keluar')).toEqual(['pintu masuk']);
+    expect(isInHanashishou('pintu masuk / pintu keluar')).toBe(true);
+    expect(hanashishouForms('krew / kru')).toEqual(['krew']);
+    expect(hanashishouForms('Pintu masuk')).toEqual(['pintu masuk']);
+    // a bracketed note is dropped; a part of a word never matches
+    expect(hanashishouForms('pejabat pos (kecil) / xyz')).toEqual(['pejabat pos']);
+    expect(isInHanashishou('pintu')).toBe(false);
+    expect(isInHanashishou('pintu keluar / pintu belakang')).toBe(false);
+    expect(isInHanashishou('masuk / keluar')).toBe(false);
+  });
+  it('exports a slash card under the Hanashishou word it joins, so planImport matches it', () => {
+    const card = content.cards.get('ms-c07-036')!;
+    expect(card.term).toBe('pintu masuk / pintu keluar');
+    const st = defaultState();
+    st.srs[srsKey(card.id)] = review(undefined, Rating.Good, new Date('2026-11-06T00:00:00Z'));
+    const lib = buildWordLibrary(st, new Date('2026-11-06T00:00:00Z'));
+    expect(lib.words.map((w) => [w.word, w.inHanashishou])).toEqual([['pintu masuk', true]]);
+  });
+  it('suggests Hanashishou band 1 whatever the learner has finished; band 2 is Hanashishou\'s own rule (Sam, 14 Nov 2026)', () => {
+    // It used to be 2 once all nine Stage 1 chapters were "ready"; now the state is not looked at.
+    expect(suggestedBand(defaultState())).toBe(1);
+    expect(buildWordLibrary(defaultState()).suggestedBand).toBe(1);
+  });
+  it('gives the baru card both spellings (L-0195, Sam 14 Nov 2026)', () => {
+    expect(content.cards.get('ms-c04-041')!.term).toBe('baru / baharu');
+    expect(content.cards.get('ms-c06-021')!.term).toBe('baru / baharu');
   });
   it('ships Jambatan scenes after the class track', () => {
     const bridge = content.scenes.filter((s) => s.world.id === 'jambatan');

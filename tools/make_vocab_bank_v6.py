@@ -15,13 +15,16 @@ now show (used for the ledger write-back).
 
 Then run:
     python3 -I tools/import_vocab_bank.py <out-v6.xlsx>
-    python3 -I tools/import_hanashishou_bridge.py ../hanashishou   (Hanashishou at e5e167c, the commit the
+    python3 -I tools/import_hanashishou_bridge.py ../hanashishou   (Hanashishou at 4be57ac, the commit the
                                                                     Jambatan packs come from)
-so the Jambatan packs drop the words that became class cards.
+so the Jambatan packs follow the ledger (step 6b: a card for every word the scenes meet first).
 """
 
 import argparse
+import csv
+import io
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -1026,6 +1029,20 @@ def dunia_3e(b):
         b.images_3e[did] = emoji
 
 
+# Step 6b (Sam, 14 Nov 2026): L-0195 is now «baru / baharu» (Journal row 207; baharu is the Dewan Bahasa spelling, baru the everyday one).
+# The two class cards were built from v5 before the alias existed, so their terms are set here from the sheet as it was after Journal row 207.
+LEDGER_6B = "7dabdb3"  # "Ledger snapshot after Journal rows 206 and 207"
+ALIAS_CARDS = {"L-0195": ("ms-c04-041", "ms-c06-021")}
+
+
+def alias_terms(b):
+    text = subprocess.run(["git", "-C", str(ROOT), "show", f"{LEDGER_6B}:content/ledger/malay-ledger.csv"], capture_output=True, text=True, check=True).stdout
+    rows = {r["ID"]: r for r in csv.DictReader(io.StringIO(text, newline=""))}
+    for lid, cards in ALIAS_CARDS.items():
+        for cid in cards:
+            b.kv.cell(b.row_of(b.kv, cid), 3).value = rows[lid]["Malay"]
+
+
 CHAPTERS = {10: ch10, 11: ch11, 12: ch12, 13: ch13, 14: ch14, 15: ch15, 16: ch16, 17: ch17, 18: ch18}
 
 
@@ -1043,6 +1060,7 @@ def main():
             CHAPTERS[n](b)
     if a.through >= max(CHAPTERS):
         dunia_3e(b)
+        alias_terms(b)
     marked = b.mark_seen_twins()
     built = min(a.through, max(CHAPTERS))
     b.wb["README"]["A1"] = (

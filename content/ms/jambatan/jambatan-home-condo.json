@@ -6,7 +6,7 @@
   "chapter": 9,
   "status": "live",
   "ja_review": "pending",
-  "source": "hanashishou@e5e167c content/packs/home-condo/targets/ms (bands 1-2)",
+  "source": "hanashishou@4be57ac content/packs/home-condo/targets/ms/course.json firstMet words with a ledger row (content/bridge/hanashishou-metfirst.json)",
   "world": {
     "id": "jambatan",
     "ms": "Jambatan",
@@ -24,6 +24,456 @@
   },
   "cards": [
     {
+      "id": "ms-j-home-condo-29",
+      "lang": "ms",
+      "term": "semula",
+      "gloss_en": "again, anew; back to the start",
+      "gloss_ja": "再び、元に戻して",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Hanashishou: Ya, buat semula. In 19 Hanashishou scenes: A parcel at the guardhouse, Another size, please, At the clinic, Booking the BBQ pit and 15 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-30",
+      "lang": "ms",
+      "term": "biasa",
+      "gloss_en": "usual, ordinary; used to",
+      "gloss_ja": "普通の、いつもの、慣れている",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Hanashishou: Dompet biasa. In 9 Hanashishou scenes: Coffee with the chairperson, Jom lepak!, Lift chat, Monday catch-up and 5 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-31",
+      "lang": "ms",
+      "term": "bangunan",
+      "gloss_en": "building",
+      "gloss_ja": "建物",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Bangunan yang tinggi. In 8 Hanashishou scenes: A parcel at the guardhouse, Demo day with Jinx, Lift chat, Quiet, please and 4 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-32",
+      "lang": "ms",
+      "term": "hati",
+      "gloss_en": "heart, feelings; liver",
+      "gloss_ja": "心、気持ち",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Suka hatilah. In 7 Hanashishou scenes: Another size, please, The barking dog, The blocked car, The encore and 3 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-33",
+      "lang": "ms",
+      "term": "cadangkan",
+      "gloss_en": "to suggest, recommend",
+      "gloss_ja": "提案する、勧める",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Keputusan awak kebanyakannya okey. Kolesterol awak agak tinggi sedikit. Doktor cadangkan kurangkan makanan goreng, lebih bersenam, dan ujian semula dalam enam bulan. In 6 Hanashishou scenes: Airport check-in, Feedback on the slides, The aircon repair, The barking dog and 2 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-34",
+      "lang": "ms",
+      "term": "langkah",
+      "gloss_en": "step; to step",
+      "gloss_ja": "歩み、ステップ、手順",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Selepas setiap babak, penilai tunjuk tahap awak dan langkah seterusnya. Di laman utama, awak juga boleh latih kosa kata, pilih babak rawak, kumpul kerangka ayat, dan tengok kemajuan. In 6 Hanashishou scenes: Demo day with Jinx, How to play, Posting a parcel, The aircon repair and 2 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-35",
+      "lang": "ms",
+      "term": "panggilan",
+      "gloss_en": "call, summons (phone call)",
+      "gloss_ja": "電話、呼び出し",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Murah... untuk panggilan atau data? In 6 Hanashishou scenes: Can you cover for me?, Someone's in my room, The internet is down, The phone plan and 2 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-36",
+      "lang": "ms",
+      "term": "lalu",
+      "gloss_en": "to pass by; past; then",
+      "gloss_ja": "通る、過ぎた、それから",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Jumaat, 11 pagi. Mei Ling lalu di meja anda. In 5 Hanashishou scenes: Lift chat, Pantry banter, The missed bus, The money she owes and 1 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-37",
+      "lang": "ms",
+      "term": "membantu",
+      "gloss_en": "to help; helpful",
+      "gloss_ja": "助ける、役に立つ",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "Hanashishou: Oh. Itu tak banyak membantu. In 5 Hanashishou scenes: The barking dog, The handover, The internet is down, The lost wallet and 1 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-28",
+      "lang": "ms",
+      "term": "parti",
+      "gloss_en": "A party",
+      "gloss_ja": "パーティー",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya nak buat parti BBQ. In 5 Hanashishou scenes: Booking the BBQ pit, Fireworks on the roof, Karaoke night, Lift chat and 1 more. In 5 Hanashishou scenes: Booking the BBQ pit, Fireworks on the roof, Karaoke night, Lift chat and 1 more. In 5 Hanashishou scenes: Booking the BBQ pit, Fireworks on the roof, Karaoke night, Lift chat and 1 more.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-38",
+      "lang": "ms",
+      "term": "ingatkan",
+      "gloss_en": "To remind",
+      "gloss_ja": "思い出させる、念を押す",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Bagus! Cuma nak ingatkan, pakej ini hanya sebelum 5 petang. Okey untuk anda? In 4 Hanashishou scenes: The food allergy, The gym, The money she owes, The renovation next door.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-39",
+      "lang": "ms",
+      "term": "maklumat",
+      "gloss_en": "information",
+      "gloss_ja": "情報",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya cuba, tapi saya perlu beberapa maklumat dulu. In 4 Hanashishou scenes: A parcel at the guardhouse, Booking the BBQ pit, First visit at the clinic, The internet is down.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-40",
+      "lang": "ms",
+      "term": "maksimum",
+      "gloss_en": "maximum",
+      "gloss_ja": "最大、最高",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Hanashishou: \"Tak ramai\" itu berapa orang? Had maksimum 20. In 4 Hanashishou scenes: Airport check-in, At the clinic, Booking the BBQ pit, Visitor parking.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-25",
+      "lang": "ms",
+      "term": "oh ya",
+      "gloss_en": "\"Oh, by the way\" (to change the topic)",
+      "gloss_ja": "「あ、そうだ」「ところで」",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Oh ya, ada bungkusan saya sampai ke rumah encik? In 4 Hanashishou scenes: Lift chat, The farewell dinner, The money she owes, The wrong order. In 4 Hanashishou scenes: Lift chat, The farewell dinner, The money she owes, The wrong order. In 4 Hanashishou scenes: Lift chat, The farewell dinner, The money she owes, The wrong order.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-41",
+      "lang": "ms",
+      "term": "periksa",
+      "gloss_en": "to check, examine",
+      "gloss_ja": "調べる、検査する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Lepas dua hari, saya datang periksa lagi. In 4 Hanashishou scenes: At the clinic, Moving out, The bike shop, Water from the ceiling.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-42",
+      "lang": "ms",
+      "term": "pihak",
+      "gloss_en": "side, party",
+      "gloss_ja": "側、当事者",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Pihak pengantin lelaki! Saya sepupu dia. Majlis ini cantik, kan? In 4 Hanashishou scenes: The barking dog, The figures by Thursday, The wedding invitation, Water from the ceiling.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-43",
+      "lang": "ms",
+      "term": "angguk",
+      "gloss_en": "to nod",
+      "gloss_ja": "うなずく",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Angguk saja dan tunggu lif. In 3 Hanashishou scenes: Not as ordered, The new joiner, The new neighbour.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-26",
+      "lang": "ms",
+      "term": "kesan",
+      "gloss_en": "A mark (on a wall); also an effect",
+      "gloss_ja": "跡、汚れ；効果",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Kesan itu sudah ada. In 3 Hanashishou scenes: Moving out, The barking dog, The renovation next door. In 3 Hanashishou scenes: Moving out, The barking dog, The renovation next door. In 3 Hanashishou scenes: Moving out, The barking dog, The renovation next door.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-44",
+      "lang": "ms",
+      "term": "ketawa",
+      "gloss_en": "to laugh",
+      "gloss_ja": "笑う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Arif ketawa dan tolak tangan anda. In 3 Hanashishou scenes: Jom lepak!, Lift chat, Pantry banter.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-45",
+      "lang": "ms",
+      "term": "majlis",
+      "gloss_en": "A function, event or gathering",
+      "gloss_ja": "集まり、式、会",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Pihak pengantin lelaki! Saya sepupu dia. Majlis ini cantik, kan? In 3 Hanashishou scenes: The leave request, The town hall, The wedding invitation.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-46",
+      "lang": "ms",
+      "term": "putus",
+      "gloss_en": "to break off, be cut off; to decide",
+      "gloss_ja": "切れる、途切れる、決める",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Encik Raju sudah ada di sini. Tanya apa yang termasuk sebelum putus asa. In 3 Hanashishou scenes: Monday catch-up, The aircon repair, The leave request.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-47",
+      "lang": "ms",
+      "term": "rumuskan",
+      "gloss_en": "to sum up",
+      "gloss_ja": "まとめる、要約する",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Sebelum rumuskan, semak: bila rintis itu mula? In 3 Hanashishou scenes: Moving out, The aircon repair, The town hall.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-48",
+      "lang": "ms",
+      "term": "salam",
+      "gloss_en": "greeting; to greet",
+      "gloss_ja": "あいさつ（beri salam＝挨拶する）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Beri salam, kemudian sebut nama dan nombor unit. In 3 Hanashishou scenes: How to play, The new neighbour, The renovation next door.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-49",
+      "lang": "ms",
+      "term": "sebagai",
+      "gloss_en": "as (in the role of)",
+      "gloss_ja": "〜として",
+      "pos": "prep",
+      "affix_tag": "se-",
+      "note": "Hanashishou: Lebih baik. Ia bermula pada 1 Januari, sebagai rintis dalam dua pasukan: Kewangan dan IT. Jika berjaya, yang lain menyusul pada bulan Jun. In 3 Hanashishou scenes: How to play, Lift chat, The town hall.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-50",
+      "lang": "ms",
+      "term": "sebenar",
+      "gloss_en": "real, actual",
+      "gloss_ja": "本当の、実際の",
+      "pos": "adj",
+      "affix_tag": "se-",
+      "note": "Hanashishou: Soalan terakhir: temu duga sebenar pukul berapa? In 3 Hanashishou scenes: How to play, Lift chat, Mock interview.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-home-condo-09",
       "lang": "ms",
       "term": "tempat kerja",
@@ -31,7 +481,43 @@
       "gloss_ja": "職場",
       "pos": "noun",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Saya di tempat kerja.",
+      "note": "Hanashishou: Saya di tempat kerja. In 3 Hanashishou scenes: The blocked car, The physio session, Water from the ceiling. In 3 Hanashishou scenes: The blocked car, The physio session, Water from the ceiling. In 3 Hanashishou scenes: The blocked car, The physio session, Water from the ceiling.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-51",
+      "lang": "ms",
+      "term": "bertenang",
+      "gloss_en": "To calm down",
+      "gloss_ja": "落ち着く",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Jangan suruh saya bertenang. In 2 Hanashishou scenes: Not as ordered, Water from the ceiling.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-52",
+      "lang": "ms",
+      "term": "deposit",
+      "gloss_en": "Deposit (for renting)",
+      "gloss_ja": "敷金、保証金",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: berapa deposit anda? In 2 Hanashishou scenes: Booking the BBQ pit, Moving out.",
       "links": [
         {
           "type": "babak",
@@ -49,25 +535,7 @@
       "gloss_ja": "上の階",
       "pos": "noun",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Dia tinggal di tingkat atas.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-15",
-      "lang": "ms",
-      "term": "gerudi",
-      "gloss_en": "A drill",
-      "gloss_ja": "ドリル",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Bunyi gerudi sangat kuat.",
+      "note": "Hanashishou: Dia tinggal di tingkat atas. In 2 Hanashishou scenes: Quiet, please, Water from the ceiling. In 2 Hanashishou scenes: Quiet, please, Water from the ceiling. In 2 Hanashishou scenes: Quiet, please, Water from the ceiling.",
       "links": [
         {
           "type": "babak",
@@ -85,7 +553,97 @@
       "gloss_ja": "リフォームする、改装する",
       "pos": "verb",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Mereka ubah suai dapur.",
+      "note": "Hanashishou: Mereka ubah suai dapur. In 2 Hanashishou scenes: Feedback on the slides, The renovation next door. In 2 Hanashishou scenes: Feedback on the slides, The renovation next door. In 2 Hanashishou scenes: Feedback on the slides, The renovation next door.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-27",
+      "lang": "ms",
+      "term": "alih",
+      "gloss_en": "To move (something) to another place",
+      "gloss_ja": "動かす、移す",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya alih kereta sekarang. In 1 Hanashishou scene: The blocked car. In 1 Hanashishou scene: The blocked car. In 1 Hanashishou scene: The blocked car.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-53",
+      "lang": "ms",
+      "term": "berkesan",
+      "gloss_en": "Effective; works well",
+      "gloss_ja": "効果がある",
+      "pos": "adjective",
+      "affix_tag": "root",
+      "note": "Hanashishou: Gula-gula ubat ini berkesan. Oh, sekejap: dia alah pada apa-apa? In 1 Hanashishou scene: A sore throat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-15",
+      "lang": "ms",
+      "term": "gerudi",
+      "gloss_en": "A drill",
+      "gloss_ja": "ドリル",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Bunyi gerudi sangat kuat. In 1 Hanashishou scene: The renovation next door. In 1 Hanashishou scene: The renovation next door. In 1 Hanashishou scene: The renovation next door.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-54",
+      "lang": "ms",
+      "term": "hidup",
+      "gloss_en": "to live; alive; life",
+      "gloss_ja": "生きる、生活",
+      "pos": "verb / noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Semak beberapa perkataan tentang hidup dengan jiran. In 1 Hanashishou scene: The renovation next door.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-22",
+      "lang": "ms",
+      "term": "kitar semula",
+      "gloss_en": "Recycling; to recycle",
+      "gloss_ja": "リサイクル、資源ごみ",
+      "pos": "noun / verb",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Botol masuk tong kitar semula. In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour.",
       "links": [
         {
           "type": "babak",
@@ -103,7 +661,97 @@
       "gloss_ja": "エレベーターホール",
       "pos": "noun",
       "affix_tag": "chunk",
-      "note": "Hanashishou: Saya jumpa jiran di lobi lif.",
+      "note": "Hanashishou: Saya jumpa jiran di lobi lif. In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-55",
+      "lang": "ms",
+      "term": "menitis",
+      "gloss_en": "To drip",
+      "gloss_ja": "ぽたぽた落ちる、したたる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Air menitis dari siling bilik air anda. Anda telefon pejabat pengurusan. Mula-mula, cuba teka. In 1 Hanashishou scene: Water from the ceiling.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-56",
+      "lang": "ms",
+      "term": "parkir berganda",
+      "gloss_en": "Double parking",
+      "gloss_ja": "二重駐車",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Anda parkir berganda di belakang kereta jiran untuk angkat kotak berat ke atas. Dua puluh minit kemudian, ada orang tekan hon berkali-kali. Itu Encik Hassan dari rumah sebelah. Dia sudah lewat ke tempat kerja. In 1 Hanashishou scene: The blocked car.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-57",
+      "lang": "ms",
+      "term": "penghala",
+      "gloss_en": "Router",
+      "gloss_ja": "ルーター",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Maaf atas kesulitan. Sudah cuba hidupkan semula penghala itu? In 1 Hanashishou scene: The internet is down.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-21",
+      "lang": "ms",
+      "term": "sampah",
+      "gloss_en": "Rubbish",
+      "gloss_ja": "ごみ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya buang sampah di mana? In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-home-condo"
+        }
+      ],
+      "scene": "dunia-jambatan-home-condo",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-home-condo-23",
+      "lang": "ms",
+      "term": "tong",
+      "gloss_en": "Bin; container",
+      "gloss_ja": "（ごみなどの）箱、容器",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Tong itu biru. In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour. In 1 Hanashishou scene: The new neighbour.",
       "links": [
         {
           "type": "babak",
@@ -122,132 +770,6 @@
       "pos": "expression",
       "affix_tag": "chunk",
       "note": "Hanashishou: Saya dari Jepun. Encik pula?",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-21",
-      "lang": "ms",
-      "term": "sampah",
-      "gloss_en": "Rubbish",
-      "gloss_ja": "ごみ",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Saya buang sampah di mana?",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-22",
-      "lang": "ms",
-      "term": "kitar semula",
-      "gloss_en": "Recycling; to recycle",
-      "gloss_ja": "リサイクル、資源ごみ",
-      "pos": "noun / verb",
-      "affix_tag": "chunk",
-      "note": "Hanashishou: Botol masuk tong kitar semula.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-23",
-      "lang": "ms",
-      "term": "tong",
-      "gloss_en": "Bin; container",
-      "gloss_ja": "（ごみなどの）箱、容器",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Tong itu biru.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-25",
-      "lang": "ms",
-      "term": "oh ya",
-      "gloss_en": "\"Oh, by the way\" (to change the topic)",
-      "gloss_ja": "「あ、そうだ」「ところで」",
-      "pos": "expression",
-      "affix_tag": "chunk",
-      "note": "Hanashishou: Oh ya, ada bungkusan saya sampai ke rumah encik?",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-26",
-      "lang": "ms",
-      "term": "kesan",
-      "gloss_en": "A mark (on a wall); also an effect",
-      "gloss_ja": "跡、汚れ；効果",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Kesan itu sudah ada.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-27",
-      "lang": "ms",
-      "term": "alih",
-      "gloss_en": "To move (something) to another place",
-      "gloss_ja": "動かす、移す",
-      "pos": "verb",
-      "affix_tag": "root",
-      "note": "Hanashishou: Saya alih kereta sekarang.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-28",
-      "lang": "ms",
-      "term": "parti",
-      "gloss_en": "A party",
-      "gloss_ja": "パーティー",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Saya nak buat parti BBQ.",
       "links": [
         {
           "type": "babak",

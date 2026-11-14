@@ -80,3 +80,19 @@ describe('stage-aware affix guard', () => {
     expect(runAffixGuard([pack(9, 'blok')]).flags).toHaveLength(0);
   });
 });
+
+describe('Hanashishou bridge-batch rows (Kata-Kata addition, step 6b, 14 Nov 2026)', () => {
+  const seg = (chapter: number, text: string) => [{ unit: `fixture-c${chapter}`, chapter, source: 'fixture', text, kind: 'model' }];
+  const row = (id: string, malay: string, origin: string, place = '') => ({ ID: id, Malay: malay, 'Kata-Kata place': place, 'Affix tag': 'root', Origin: origin, 'Review status': 'Draft', POS: '' });
+  const keys = (c: any, text: string) => Object.values(c.inspect(seg(10, text)).violations).map((e: any) => `${e.check}:${e.term}`);
+  it('an unplaced bridge row is not a ledger entry (it must not turn «biasanya» into biasa + -nya)', () => {
+    const base = [row('L-0001', 'biasanya', 'Vocab Bank v2', 'Ch10')];
+    const withBridge = [...base, row('L-1351', 'biasa', 'Hanashishou bridge batch 1 (Sam approved 14 Nov)')];
+    expect(keys(new Checker({ ledger: base }), 'Biasanya saya pergi.')).toEqual([]);
+    expect(keys(new Checker({ ledger: withBridge }), 'Biasanya saya pergi.')).toEqual([]);
+  });
+  it('an unplaced row of any other origin still blocks (as before)', () => {
+    const other = [row('L-0001', 'biasanya', 'Vocab Bank v2', 'Ch10'), row('L-0002', 'biasa', 'Vocab Bank v2')];
+    expect(keys(new Checker({ ledger: other }), 'Biasanya saya pergi.')).toEqual(['ledger:biasa']);
+  });
+});

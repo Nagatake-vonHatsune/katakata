@@ -1,0 +1,63 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "jambatan-tutorial",
+  "chapter": 9,
+  "status": "live",
+  "ja_review": "pending",
+  "source": "hanashishou@4be57ac content/packs/tutorial/targets/ms/course.json firstMet words with a ledger row (content/bridge/hanashishou-metfirst.json)",
+  "world": {
+    "id": "jambatan",
+    "ms": "Jambatan",
+    "en": "Bridge to Hanashishou",
+    "ja": "話匠への橋"
+  },
+  "title": {
+    "ms": "Cara bermain",
+    "en": "How to play",
+    "ja": "遊び方"
+  },
+  "setting": {
+    "en": "Words you will meet in Hanashishou's how-to-play tutorial, so they are already familiar when you arrive.",
+    "ja": "話匠の「遊び方」チュートリアルに出てくる言葉。先に覚えておけば、話匠に進んだときに見覚えがあります。"
+  },
+  "cards": [
+    {
+      "id": "ms-j-tutorial-01",
+      "lang": "ms",
+      "term": "kegemaran",
+      "gloss_en": "Favourite (what you like best)",
+      "gloss_ja": "いちばん好きなもの、お気に入り",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Apa teh kegemaran saya? In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-tutorial-02",
+      "lang": "ms",
+      "term": "sifu",
+      "gloss_en": "Master or teacher (from Cantonese); used in Malaysia for an expert or a teacher you respect",
+      "gloss_ja": "師匠、先生（広東語から）。マレーシアでは、尊敬する専門家や先生のことを言います",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Sudah berapa lama Sifu jadi guru? In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    }
+  ]
+}

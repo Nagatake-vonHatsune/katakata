@@ -105,6 +105,11 @@ export class Checker {
     const push = (m, k, v) => (m.has(k) ? m.get(k).push(v) : m.set(k, [v]));
     for (const r of ledger) {
       const row = { ...r, _chapter: placedChapter(r['Kata-Kata place']) };
+      // Kata-Kata addition (Stage 2 step 6b, 14 Nov 2026): the 184 Hanashishou bridge-batch rows (Origin "Hanashishou bridge batch 1")
+      // are words the scenes meet first, outside the class sequence, like the Jambatan packs. While they have no chapter they are not
+      // ledger entries for this checker: otherwise biasa, akhir and lalu make «biasanya», «akhirnya» and «terlalu» (words the classes teach
+      // whole) read as derived forms of an unplaced base. Not in Cikgu Sensai's Python checker: see the step 6b report.
+      if (row._chapter === null && /^Hanashishou bridge batch/i.test(r.Origin ?? '')) continue;
       for (const form of row.Malay.replace(/\([^)]*\)/g, '').split('/')) if (norm(form)) push(this.entries, norm(form), row);
     }
     for (const { chapter, cards } of kelas) {
