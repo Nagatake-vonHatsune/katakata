@@ -20,7 +20,7 @@ and Japanese glosses). Katakana hints only appear in the Japanese interface.
 | Spec item | Where |
 |---|---|
 | Onboarding: name, voice check, iOS "Add to Home Screen" step | `src/views/onboarding.ts` |
-| Kelas chapters 1 to 18 (Stage 1 and Stage 2; chapter 18 is a review pack), 22 Dunia scenes (20 Stage 1, the chapter 10 picture scene, the practice pool) and 5 Jambatan scenes (1177 cards) | `content/ms/` (packs with `"status": "live"`) |
+| Kelas chapters 1 to 18 (Stage 1 and Stage 2; chapter 18 is a review pack), 22 Dunia scenes (20 Stage 1, the chapter 10 picture scene, the practice pool) and 6 Jambatan scenes (1441 cards) | `content/ms/` (packs with `"status": "live"`) |
 | 今日の練習: due reviews, then 5–8 new words, one frame drill, one Cari Benda round | `src/core/session.ts` |
 | Kad Kata, Cari Benda, Susun Ayat | `src/games/<id>/` (common `Game` interface) |
 | 授業の準備 (Sedia Kelas) with "Ready" stamp | `src/views/modes.ts` |
@@ -107,14 +107,16 @@ Kata-Kata is the step before [Hanashishou 話匠](https://hanashishou.vonhatsune
 
 - **Same scheduler:** SM-2 with Hanashishou's exact card state (`ease, interval, reps, due, lapses`), see
   `src/core/srs.ts`. A word's progress carries over unchanged. Saves from before 0.9.0 (FSRS) migrate on load.
-- **Jambatan scenes** (`content/ms/jambatan/`): Hanashishou's band 1-2 Malay words that Kata-Kata does not
-  teach yet, with Hanashishou's own English and Japanese meanings. Example sentences that break the
-  root-word rule are left out. Regenerate after Hanashishou's vocabulary changes:
-  `npm run bridge:import` (expects a Hanashishou checkout at `../hanashishou`). The packs now come from Hanashishou
-  `e5e167c`; words that became class cards (12 Nov 2026) are not repeated there.
+- **Jambatan scenes** (`content/ms/jambatan/`, six: one per Hanashishou pack that has such words): a card for every word a tagged
+  Hanashishou scene meets first (`firstMet` in Hanashishou's `targets/ms/course.json`) that has a live ledger row, 346 cards in all,
+  ordered by how many scenes use the word. Card text comes from the ledger row; the note gives a real line, the standard partner of a
+  spoken form and the scenes. Which scene meets which row is Hanashishou's own audit, kept in `content/bridge/hanashishou-metfirst.json`
+  (`tools/bridge-metfirst.sh ../hanashishou` remakes it); `npm run bridge:import` then rebuilds the packs (Hanashishou checkout at
+  `../hanashishou`, now `4be57ac`) and gives the same files on a second run, before or after the ledger write-back.
 - **Hand-off:** 話匠へ exports `katakata-words_<name>_<date>.json` (format: `src/core/bridge.ts`, version 1)
   and opens Hanashishou's `#/katakata?ui=<lang>` import screen. Hanashishou adds matching words to its Malay
-  deck, sets Malay as the learnt language and suggests a starting band (2 once all nine chapters are
-  "ready", else 1).
+  deck, sets Malay as the learnt language and suggests a starting band (always 1, after Stage 1 and
+  after Stage 2; band 2 is left to Hanashishou's adaptive rule, Sam, 14 Nov 2026). A card with slash alternatives
+  («pintu masuk / pintu keluar») is exported under each alternative Hanashishou has, so Hanashishou's whole-word match joins it.
 - Cross-app test: build and preview both apps (Kata-Kata on 4173, Hanashishou on 4179), then
   `node tests/e2e/bridge.cjs`.

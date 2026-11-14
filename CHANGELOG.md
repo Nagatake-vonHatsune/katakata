@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+- **Stage 2 step 6b: the Hanashishou bridge batch, Jambatan rebuilt, band 1 suggestion (14 Nov 2026), 1177 to 1441 cards, 45 to 46 packs.** Report: [docs/STAGE-2-step6b-report.md](docs/STAGE-2-step6b-report.md).
+  - Ledger: 184 bridge rows written (L-1310 to L-1493, rows 1311 to 1494; all 3,680 cells read back); card IDs and places written for 264 rows (528 cells, verified); L-0592's Hanashishou cells moved to L-0330; Journal rows 209 to 217, row 208 Done.
+  - Jambatan rebuilt from Hanashishou `4be57ac`: 346 cards (social 118, daily-life 89, office 64, home-condo 42, health 31, and a new «Cara bermain» scene with 2). A card for every ledger row a tagged scene meets first: 184 new rows, 80 group (a) rows, 77 rows that already had a card (IDs kept); five older cards kept. Spoken forms name their standard partner; notes name the scenes.
+  - Class cards `ms-c04-041` and `ms-c06-021` show «baru / baharu» (L-0195).
+  - A card with slash alternatives matches Hanashishou one alternative at a time, as a whole word (`hanashishouForms`); the export sends each matching alternative. «pintu masuk / pintu keluar» now joins «pintu masuk»; no other card changes.
+  - Hanashishou suggestion: band 1 after Stage 1 and after Stage 2 (was band 2 once chapters 1 to 9 were ready); text changed in en, ja and ms.
+  - The checker skips unplaced bridge-batch rows (otherwise «biasanya», «akhirnya» and «terlalu» fail); not in Cikgu Sensai's checker, see the report.
+
 - **Stage 2 step 3f: rules sync and one card removed (14 Nov 2026), 1178 to 1177 cards.** Report: [docs/STAGE-2-step3f-report.md](docs/STAGE-2-step3f-report.md).
   - Ledger sync: exactly L-1303 «minggu depan» Retired and L-0530 Action «KD4 check». Card `ms-c17-026` dropped (last card of c17, no ID moved, in no Sedia Kelas list); L-1303's J and K cleared (2 cells, verified); Journal rows 202 to 205.
   - Rules re-pinned to Cikgu Sensai `4f2391b` (81 fixtures); «tanda tangan» is a disallowed form. `tools/stage-rules.mjs` matches two-word disallowed forms as Cikgu Sensai's checker does. All 81 fixtures agree; the step 3e known-divergence exemption is removed.

@@ -1,16 +1,20 @@
 # Kata-Kata hand-off
 
-Last updated 14 Nov 2026 (Stage 2 build step 3f done: rules sync and one card removed, [report](STAGE-2-step3f-report.md); step 3e: new ledger rows, «tandatangan», the chapter 10 picture game, [report](STAGE-2-step3e-report.md); step 3d [report](STAGE-2-step3d-report.md); step 3c [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
+Last updated 14 Nov 2026 (Stage 2 build step 6b done: bridge batch in the ledger, Jambatan rebuilt, [report](STAGE-2-step6b-report.md); step 3f: rules sync and one card removed, [report](STAGE-2-step3f-report.md); step 3e: new ledger rows, «tandatangan», the chapter 10 picture game, [report](STAGE-2-step3e-report.md); step 3d [report](STAGE-2-step3d-report.md); step 3c [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
 Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-1.0.md).
 
 ## State
 
-- 45 live packs, 1177 cards: Kelas chapters 1 to 18 (chapter 18 is a review pack with no cards of its own), 22 Dunia scenes (20 Stage 1,
-  `hari-kerja-jiran` the chapter 10 picture scene, `kata-biasa` the practice pool), 5 Jambatan scenes.
+- 46 live packs, 1441 cards: Kelas chapters 1 to 18 (chapter 18 is a review pack with no cards of its own), 22 Dunia scenes (20 Stage 1,
+  `hari-kerja-jiran` the chapter 10 picture scene, `kata-biasa` the practice pool), 6 Jambatan scenes (346 cards; `jambatan-tutorial` has 2).
 - Workbook: `content/source/2026-11-13_KataKata_VocabBank_v6.xlsx`, built by `tools/make_vocab_bank_v6.py` (v5 + chapters 10 to 18).
-- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the step 3f write-back (L-0001 to L-1309; chapter 18 has no ledger cells).
+- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the step 6b write-back (L-0001 to L-1493; chapter 18 has no ledger cells).
 - Affix guard: stage-aware, rules from Cikgu Sensai `4f2391b` (`content/rules/`, 81 fixtures, all agree; no known divergences). The checker matches two-word
   disallowed forms («tanda tangan») as Cikgu Sensai's does.
+- Jambatan (step 6b): `python3 -I tools/import_hanashishou_bridge.py ../hanashishou` (Hanashishou at `4be57ac`) builds the six packs from the ledger
+  and `content/bridge/hanashishou-metfirst.json` (Hanashishou's audit, remade with `tools/bridge-metfirst.sh ../hanashishou` when the ledger or its scenes
+  change). The ledger's card column is the ID registry; a second run is identical, before or after a write-back. `RETIRED_IDS` in the importer lists dropped IDs never to reuse.
+  Run it after `import_vocab_bank.py`; no ledger row of origin "Hanashishou bridge batch" is read by the checker until Sam places it in a chapter.
 - Kata-Kata's half of Stage 2 (build step 3) is finished. Next: Cikgu Sensai step 4 (suites c10 to c17, step 5 chapter 18) and
   Hanashishou step 6; Cikgu Sensai should refresh `curriculum/reference/katakata/` with `c10.json` to `c18.json` and the ledger
   copy (this repo does not edit it). Open questions for Sam: [STAGE-2-step3e-report.md](STAGE-2-step3e-report.md) section 11.
@@ -91,7 +95,7 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
 ```bash
 python3 -I tools/make_vocab_bank_v6.py content/source/2026-11-12_KataKata_VocabBank_v5.xlsx content/source/2026-11-13_KataKata_VocabBank_v6.xlsx --map <scratch>/map.json
 python3 -I tools/import_vocab_bank.py content/source/2026-11-13_KataKata_VocabBank_v6.xlsx
-python3 -I tools/import_hanashishou_bridge.py ../hanashishou   # Hanashishou checked out at the full commit e5e167cb32d554f1da926b875d4a0e7516de6cd9 (a short SHA cannot be fetched)
+python3 -I tools/import_hanashishou_bridge.py ../hanashishou   # Hanashishou checked out at 4be57ac8422377aba2142a7b3e2ea19fcd244f60 (a short SHA cannot be fetched); needs content/bridge/hanashishou-metfirst.json from the same commit
 node tools/stage-check.mjs N "<every note example you wrote>"
 npm run check
 npx vite build && npx vite preview --port 4173 &
