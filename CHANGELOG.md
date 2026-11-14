@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+- **Stage 2 step 6c-2: the new shared rules, the bridge exemption removed, the step 6b follow-ups (15 Nov 2026), 46 to 48 packs, 1441 cards.** Report: [docs/STAGE-2-step6c2-report.md](docs/STAGE-2-step6c2-report.md).
+  - Rules re-pinned to Cikgu Sensai `909596e` (95 fixtures; the guard runs `expect_gaps` and `expect_no_gaps`; all 95 agree, 0 guard flags). `tools/stage-rules.mjs` follows the shared rule: a placed row is checked whole from its own chapter, a row with no chapter is never a root and counts as no row in a chaptered unit, practice-pool rows keep «primes Ch18». The step 6b bridge-batch exemption is removed.
+  - Ledger: L-0195 and L-1303 Action cells synced; «In both» = Yes for the 264 Jambatan rows (264 cells); 118 places for the split Social cards (382 cells in all, verified); Journal rows 219 to 224.
+  - Jambatan: the «Cara bermain» scene and the five older cards kept. The Social scene (118 cards) is three scenes by topic: Berbual dan menerangkan 45, Acara dan keluar 46, Perasaan dan pendapat 27; no card ID changed.
+  - `tests/e2e/bridge.cjs` run against Hanashishou main (`4be57ac`, built from a scratch copy): passes.
+
 - **Stage 2 step 6b: the Hanashishou bridge batch, Jambatan rebuilt, band 1 suggestion (14 Nov 2026), 1177 to 1441 cards, 45 to 46 packs.** Report: [docs/STAGE-2-step6b-report.md](docs/STAGE-2-step6b-report.md).
   - Ledger: 184 bridge rows written (L-1310 to L-1493, rows 1311 to 1494; all 3,680 cells read back); card IDs and places written for 264 rows (528 cells, verified); L-0592's Hanashishou cells moved to L-0330; Journal rows 209 to 217, row 208 Done.
   - Jambatan rebuilt from Hanashishou `4be57ac`: 346 cards (social 118, daily-life 89, office 64, home-condo 42, health 31, and a new «Cara bermain» scene with 2). A card for every ledger row a tagged scene meets first: 184 new rows, 80 group (a) rows, 77 rows that already had a card (IDs kept); five older cards kept. Spoken forms name their standard partner; notes name the scenes.

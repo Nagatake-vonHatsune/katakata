@@ -1,20 +1,19 @@
 # Kata-Kata hand-off
 
-Last updated 14 Nov 2026 (Stage 2 build step 6b done: bridge batch in the ledger, Jambatan rebuilt, [report](STAGE-2-step6b-report.md); step 3f: rules sync and one card removed, [report](STAGE-2-step3f-report.md); step 3e: new ledger rows, «tandatangan», the chapter 10 picture game, [report](STAGE-2-step3e-report.md); step 3d [report](STAGE-2-step3d-report.md); step 3c [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
+Last updated 15 Nov 2026 (Stage 2 build step 6c-2 done: rules 909596e, bridge exemption removed, Social Jambatan split, In both, [report](STAGE-2-step6c2-report.md); step 6b: bridge batch in the ledger, Jambatan rebuilt, [report](STAGE-2-step6b-report.md); step 3f: rules sync and one card removed, [report](STAGE-2-step3f-report.md); step 3e: new ledger rows, «tandatangan», the chapter 10 picture game, [report](STAGE-2-step3e-report.md); step 3d [report](STAGE-2-step3d-report.md); step 3c [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
 Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-1.0.md).
 
 ## State
 
-- 46 live packs, 1441 cards: Kelas chapters 1 to 18 (chapter 18 is a review pack with no cards of its own), 22 Dunia scenes (20 Stage 1,
-  `hari-kerja-jiran` the chapter 10 picture scene, `kata-biasa` the practice pool), 6 Jambatan scenes (346 cards; `jambatan-tutorial` has 2).
+- 48 live packs, 1441 cards: Kelas chapters 1 to 18 (chapter 18 is a review pack with no cards of its own), 22 Dunia scenes (20 Stage 1,
+  `hari-kerja-jiran` the chapter 10 picture scene, `kata-biasa` the practice pool), 8 Jambatan scenes (346 cards; Social is three scenes by topic, `jambatan-social-talk` 45, `-events` 46, `-feelings` 27; `jambatan-tutorial` has 2). 48 packs in all.
 - Workbook: `content/source/2026-11-13_KataKata_VocabBank_v6.xlsx`, built by `tools/make_vocab_bank_v6.py` (v5 + chapters 10 to 18).
-- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the step 6b write-back (L-0001 to L-1493; chapter 18 has no ledger cells).
-- Affix guard: stage-aware, rules from Cikgu Sensai `4f2391b` (`content/rules/`, 81 fixtures, all agree; no known divergences). The checker matches two-word
-  disallowed forms («tanda tangan») as Cikgu Sensai's does.
-- Jambatan (step 6b): `python3 -I tools/import_hanashishou_bridge.py ../hanashishou` (Hanashishou at `4be57ac`) builds the six packs from the ledger
+- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the step 6c-2 write-back (L-0001 to L-1493; chapter 18 has no ledger cells).
+- Affix guard: stage-aware, rules from Cikgu Sensai `909596e` (`content/rules/`, 95 fixtures incl. `expect_gaps` / `expect_no_gaps`, all agree; no known divergences; 0 flags). The checker follows Cikgu Sensai's `language_checks.py` at `a235a35`: a placed row is checked whole from its own chapter, a row with no chapter is never a root and counts as no row in a chaptered unit; the step 6b bridge-batch exemption is gone. It matches two-word disallowed forms («tanda tangan») as Cikgu Sensai's does.
+- Jambatan (step 6b): `python3 -I tools/import_hanashishou_bridge.py ../hanashishou` (Hanashishou at `4be57ac`) builds the eight packs from the ledger
   and `content/bridge/hanashishou-metfirst.json` (Hanashishou's audit, remade with `tools/bridge-metfirst.sh ../hanashishou` when the ledger or its scenes
   change). The ledger's card column is the ID registry; a second run is identical, before or after a write-back. `RETIRED_IDS` in the importer lists dropped IDs never to reuse.
-  Run it after `import_vocab_bank.py`; no ledger row of origin "Hanashishou bridge batch" is read by the checker until Sam places it in a chapter.
+  Run it after `import_vocab_bank.py`. Social is split by `SOCIAL_SPLIT` in the importer (every social word must be listed; IDs stay `ms-j-social-NN`); `--map` now lists every Jambatan row, so `writeback.py plan` also shows place changes, and `"both": "Yes"` in a map entry plans column M (`tools/ledger/wbcalls_cols.py` writes K or M runs). Jambatan rows with no chapter are no roots for the checker (the shared rule).
 - Kata-Kata's half of Stage 2 (build step 3) is finished. Next: Cikgu Sensai step 4 (suites c10 to c17, step 5 chapter 18) and
   Hanashishou step 6; Cikgu Sensai should refresh `curriculum/reference/katakata/` with `c10.json` to `c18.json` and the ledger
   copy (this repo does not edit it). Open questions for Sam: [STAGE-2-step3e-report.md](STAGE-2-step3e-report.md) section 11.
@@ -23,6 +22,8 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
 
 ## Backlog
 
+- Look at the three Social Jambatan scenes on a phone; Sam may move words between them (`SOCIAL_SPLIT`). Open questions: [STAGE-2-step6c2-report.md](STAGE-2-step6c2-report.md) (L-1308 and L-1309 In both; the rule 1 deviation).
+- Cikgu Sensai should refresh its ledger copy (118 places, 264 In both cells since e4e294d).
 - The end-of-project Kamus Dewan and native Japanese checks (the step 3e notes, the picture-scene and practice-pool drafts included).
 - Look at the chapter 10 picture scene on a phone (20 objects; the emoji are Claude's choices; never seen on screen, see the step 3e report section 10).
 - Chapters 11 to 18 get a picture scene only if the plan names one (it names none).
@@ -38,7 +39,7 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
 1. Cikgu Sensai (read only; never edit it): `docs/stage-2-plan.md` for the chapter's unit tables (section 2), its row in the
    section 3 affix table, its section 5 scene, and its revision anchors ("Revision, recognition and deferred candidates");
    `docs/stage-2-decisions.md`; the newest `docs/STAGE-2-*` report and `HANDOFF.md`. Check whether `curriculum/stage-rules.json`
-   changed since `a24a993` (see "Rules" below; last copied from `4f2391b`, 81 fixtures).
+   changed since `909596e` (see "Rules" below; last copied from `909596e`, 95 fixtures).
 2. This repo: this file, the newest chapter function in `tools/make_vocab_bank_v6.py` (`ch17`; `ch18` for a review chapter),
    `content/ms/kelas/c17.json`.
 
@@ -146,7 +147,7 @@ node tests/e2e/smoke.cjs && node tests/e2e/fun.cjs
 
 ## Rules (`content/rules/`)
 
-- The three JSON files are copies of Cikgu Sensai files at the commit in `SOURCE.json`. Never edit them to make content pass.
+- The three JSON files are copies of Cikgu Sensai files at the commit in `SOURCE.json` (`909596e`). Never edit them to make content pass.
   If Cikgu Sensai changes `curriculum/stage-rules.json` (or its fixtures), copy the new files, update the commit and the
   SHA-256 values in `SOURCE.json`, and run `npm run check` (the fixtures test runs every case).
 - To compare with the Python checker after a change: run Cikgu Sensai's `language_checks.Checker` with a temporary root whose
