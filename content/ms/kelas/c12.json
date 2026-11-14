@@ -822,6 +822,78 @@
       ],
       "scene": "kelas-c12",
       "chapter": 12
+    },
+    {
+      "id": "ms-c12-046",
+      "lang": "ms",
+      "term": "melaporkan",
+      "gloss_en": "to report",
+      "gloss_ja": "報告する、届け出る",
+      "pos": "verb",
+      "affix_tag": "meN- -kan",
+      "note": "meN- + lapor + -kan: to report something to someone. Saya melaporkan kebocoran itu kepada pengurus.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-047",
+      "lang": "ms",
+      "term": "salinan",
+      "gloss_en": "a copy",
+      "gloss_ja": "コピー、控え",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "A copy. Learn it as a whole word: -an words like this one come in Stage 3. Root in the ledger: salin. Sila simpan salinan borang itu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-048",
+      "lang": "ms",
+      "term": "dihubungi",
+      "gloss_en": "to be contacted",
+      "gloss_ja": "連絡される",
+      "pos": "verb",
+      "affix_tag": "di- -i",
+      "note": "di- + hubung + -i: the di- partner of menghubungi (above). Encik akan dihubungi pada hari Isnin.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
+    },
+    {
+      "id": "ms-c12-049",
+      "lang": "ms",
+      "term": "dibaiki",
+      "gloss_en": "to be repaired",
+      "gloss_ja": "修理される",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "di- + baiki: the di- partner of membaiki (above). Lif itu sedang dibaiki.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c12"
+        }
+      ],
+      "scene": "kelas-c12",
+      "chapter": 12
     }
   ],
   "frames": [

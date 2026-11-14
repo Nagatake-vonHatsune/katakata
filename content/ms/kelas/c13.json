@@ -461,6 +461,78 @@
       ],
       "scene": "kelas-c13",
       "chapter": 13
+    },
+    {
+      "id": "ms-c13-026",
+      "lang": "ms",
+      "term": "sihat",
+      "gloss_en": "healthy; well",
+      "gloss_ja": "元気な、健康な",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Healthy, well. Saya sihat. Saya tidak sihat hari ini. sihat is the root of kesihatan (above).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-027",
+      "lang": "ms",
+      "term": "beritahu",
+      "gloss_en": "to tell; to let someone know",
+      "gloss_ja": "知らせる、伝える",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To tell, to let someone know. Written joined, as one word: beritahu. Sila beritahu doktor.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-028",
+      "lang": "ms",
+      "term": "ahli farmasi",
+      "gloss_en": "pharmacist",
+      "gloss_ja": "薬剤師",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "A pharmacist: the person who works at a farmasi (above). Learn it as a phrase. Tanya ahli farmasi.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
+    },
+    {
+      "id": "ms-c13-029",
+      "lang": "ms",
+      "term": "tinggalkan",
+      "gloss_en": "to leave (something) behind or with someone",
+      "gloss_ja": "置いていく、預ける",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "tinggal (Ch2) + -kan: to leave something behind, or with someone. Saya tinggalkan beg di kaunter. tinggal on its own is to live or to stay.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c13"
+        }
+      ],
+      "scene": "kelas-c13",
+      "chapter": 13
     }
   ],
   "frames": [

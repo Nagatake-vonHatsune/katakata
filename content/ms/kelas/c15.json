@@ -389,6 +389,42 @@
       ],
       "scene": "kelas-c15",
       "chapter": 15
+    },
+    {
+      "id": "ms-c15-022",
+      "lang": "ms",
+      "term": "kakitangan",
+      "gloss_en": "staff; employee",
+      "gloss_ja": "職員、スタッフ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Staff, an employee. Written joined, as one word: kakitangan. Kakitangan stesen ada di kaunter.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
+    },
+    {
+      "id": "ms-c15-023",
+      "lang": "ms",
+      "term": "bola",
+      "gloss_en": "ball",
+      "gloss_ja": "ボール",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A ball. Bulat, seperti bola. Bola itu bulat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c15"
+        }
+      ],
+      "scene": "kelas-c15",
+      "chapter": 15
     }
   ],
   "frames": [

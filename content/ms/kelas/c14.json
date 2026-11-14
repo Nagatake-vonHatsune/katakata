@@ -407,6 +407,132 @@
       ],
       "scene": "kelas-c14",
       "chapter": 14
+    },
+    {
+      "id": "ms-c14-023",
+      "lang": "ms",
+      "term": "baiklah",
+      "gloss_en": "all right then; OK (to agree or start)",
+      "gloss_ja": "じゃあ、それでは、わかりました",
+      "pos": "expression",
+      "affix_tag": "lex",
+      "note": "A word in its own right, written joined: all right then, OK (to agree or to start). Baiklah, kita buat begini. Root: baik (Ch1).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-024",
+      "lang": "ms",
+      "term": "begini",
+      "gloss_en": "like this; this way",
+      "gloss_ja": "このように、こうして",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Like this, this way: Kita buat begini. The standard partner of the spoken «macam ni» (Ch17).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-025",
+      "lang": "ms",
+      "term": "ikut",
+      "gloss_en": "to come along; to follow",
+      "gloss_ja": "一緒に行く、ついて行く",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To come along, to follow. Puan Aini mahu ikut?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-026",
+      "lang": "ms",
+      "term": "kata",
+      "gloss_en": "to say; a word",
+      "gloss_ja": "言う；言葉",
+      "pos": "verb / noun",
+      "affix_tag": "root",
+      "note": "To say: Encik Rahman kata mesyuarat bermula pukul sembilan. Also a noun: a word.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-027",
+      "lang": "ms",
+      "term": "pengumuman",
+      "gloss_en": "announcement",
+      "gloss_ja": "お知らせ、告知",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "A notice, an announcement. Learn it as a whole word: pe- … -an words come in Stage 3. Root in the ledger: umum. Baca pengumuman itu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-028",
+      "lang": "ms",
+      "term": "menangguhkan",
+      "gloss_en": "to postpone (standard, with a doer)",
+      "gloss_ja": "延期する（標準形）",
+      "pos": "verb",
+      "affix_tag": "meN- -kan",
+      "note": "meN- + tangguh + -kan (tangguh is above): the standard form with a doer. Cik Mei Ling menangguhkan mesyuarat itu. The t drops: menangguhkan. The bare tangguhkan is what a request or an offer uses: Kita tangguhkan ke hari Ahad.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
+    },
+    {
+      "id": "ms-c14-029",
+      "lang": "ms",
+      "term": "membatalkan",
+      "gloss_en": "to cancel (standard, with a doer)",
+      "gloss_ja": "取り消す、キャンセルする（標準形）",
+      "pos": "verb",
+      "affix_tag": "meN- -kan",
+      "note": "meN- + batal + -kan (batal is above): the standard form with a doer. Puan Aini membatalkan mesyuarat itu. The bare batalkan is what a request or an offer uses: Kita batalkan rancangan itu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c14"
+        }
+      ],
+      "scene": "kelas-c14",
+      "chapter": 14
     }
   ],
   "frames": [

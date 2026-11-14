@@ -787,6 +787,78 @@
       "scene": "kelas-c11",
       "chapter": 11,
       "recognise_only": true
+    },
+    {
+      "id": "ms-c11-044",
+      "lang": "ms",
+      "term": "kepada",
+      "gloss_en": "to (a person): menghantar emel kepada pengurus",
+      "gloss_ja": "（人）に：menghantar emel kepada pengurus",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": "kepada is for a person, ke (Ch7) is for a place. Saya menghantar emel kepada pengurus. Saya pergi ke pejabat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-045",
+      "lang": "ms",
+      "term": "sehari",
+      "gloss_en": "a day; per day (RM100 sehari)",
+      "gloss_ja": "1日、1日あたり（RM100 sehari）",
+      "pos": "noun / adverb",
+      "affix_tag": "se-",
+      "note": "se- + hari (Ch4): a day, or «per day». Kereta itu RM100 sehari. sehari = per day; setiap hari (Ch4) = every day.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-046",
+      "lang": "ms",
+      "term": "menempah",
+      "gloss_en": "to book (standard form of tempah)",
+      "gloss_ja": "予約する（tempah の標準形）",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + tempah (Ch4): to book. The t drops: menempah. The standard form of tempah: Saya menempah kereta untuk hujung minggu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
+    },
+    {
+      "id": "ms-c11-047",
+      "lang": "ms",
+      "term": "bukit",
+      "gloss_en": "hill",
+      "gloss_ja": "丘、小山",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A hill. Kami mendaki bukit pada hari Ahad.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c11"
+        }
+      ],
+      "scene": "kelas-c11",
+      "chapter": 11
     }
   ],
   "frames": [

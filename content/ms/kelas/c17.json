@@ -446,6 +446,42 @@
       ],
       "scene": "kelas-c17",
       "chapter": 17
+    },
+    {
+      "id": "ms-c17-025",
+      "lang": "ms",
+      "term": "balas",
+      "gloss_en": "to reply",
+      "gloss_ja": "返事をする、返信する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To reply. Sila balas sebelum hari Rabu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
+    },
+    {
+      "id": "ms-c17-026",
+      "lang": "ms",
+      "term": "minggu depan",
+      "gloss_en": "next week",
+      "gloss_ja": "来週",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "minggu (Ch4) + depan (Ch4): next week. Learn it as a phrase. Saya belanja minggu depan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c17"
+        }
+      ],
+      "scene": "kelas-c17",
+      "chapter": 17
     }
   ],
   "frames": [

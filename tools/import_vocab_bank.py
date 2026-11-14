@@ -11,6 +11,7 @@ Re-running overwrites the packs, so edit the workbook or the overrides file,
 not the generated JSON, if you want changes to survive a re-import.
 
 Optional workbook column: "Note" on the Dunia scenes tab (a card note, e.g. one line per festival).
+Optional overrides key: "practice_scenes": ["kata-biasa"] marks Dunia scenes that are a practice pool, not a chapter's primer.
 Optional overrides key: "sedia_kelas_review": {"4": ["ms-c04-008", ...]} adds cards that live in other
 chapters (moved or merged cards) to a chapter's Sedia Kelas list, so the chapter still reviews them.
 """
@@ -85,8 +86,11 @@ def main(xlsx):
 
     # Which Dunia scene primes each chapter (first in index order).
     primes = {}
+    # A practice-pool scene (overrides "practice_scenes") sits after the chapters: it never becomes a chapter's Sedia Kelas scene.
+    practice = set(OVR.get("practice_scenes", []))
     for r in index:
-        primes.setdefault(int(r["Primes chapter"]), r["Scene ID"])
+        if r["Scene ID"] not in practice:
+            primes.setdefault(int(r["Primes chapter"]), r["Scene ID"])
 
     # A review chapter (Stage 2, chapter 18) has frames and a scenario but no vocabulary rows: its Sedia Kelas cards are
     # the review cards listed in the overrides.

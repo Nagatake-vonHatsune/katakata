@@ -58,9 +58,31 @@ describe('katakana hints', () => {
 });
 
 describe('content', () => {
-  it('ships the nine Stage 1 chapters, chapters 10 to 18 and twenty Dunia scenes', () => {
+  it('ships the nine Stage 1 chapters, chapters 10 to 18 and 22 Dunia scenes (20 Stage 1, the chapter 10 picture scene, the practice pool)', () => {
     expect(content.chapters.map((c) => c.chapter)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]);
-    expect(content.scenes.filter((s) => s.world.id !== 'jambatan')).toHaveLength(20);
+    expect(content.scenes.filter((s) => s.world.id !== 'jambatan')).toHaveLength(22);
+  });
+  it('chapter 10 has its Cari Benda picture scene as its Sedia Kelas scene, with kolam renang, taman and penuh', () => {
+    const c10 = content.chapters.find((c) => c.chapter === 10)!;
+    expect(c10.sedia_kelas.scene).toBe('hari-kerja-jiran');
+    const scene = content.scenes.find((s) => s.id === 'hari-kerja-jiran')!;
+    expect(scene.chapter).toBe(10);
+    expect(scene.cards.filter((c) => c.image).length).toBeGreaterThanOrEqual(10);
+    for (const w of ['kolam renang', 'taman', 'penuh']) expect(scene.cards.map((c) => c.term), w).toContain(w);
+    // each card is the twin of a chapter 10 class card, so it shares that card's schedule
+    for (const c of scene.cards) expect(content.alias.get(c.id), c.term).toMatch(/^ms-c\d\d-/);
+  });
+  it('the practice pool is a Dunia scene after every chapter and is nobody\'s Sedia Kelas scene', () => {
+    const pool = content.scenes.find((s) => s.id === 'kata-biasa')!;
+    expect(pool.cards.map((c) => c.term).sort()).toEqual(['bersukan', 'disemak', 'disimpan', 'giliran', 'hidup', 'menyapu']);
+    expect(content.chapters.some((c) => c.sedia_kelas.scene === 'kata-biasa')).toBe(false);
+    const last = content.path.slice(-pool.cards.length).sort();
+    expect(last).toEqual(pool.cards.map((c) => c.id).sort());
+  });
+  it('the Malaysian spelling tandatangan is used, never the spaced Indonesian «tanda tangan»', () => {
+    const all = [...content.cards.values()].map((c) => `${c.term} ${c.note ?? ''}`).join('\n');
+    expect(all).toContain('tandatangan');
+    expect(all).not.toMatch(/tanda tangan/i);
   });
   it('every Dunia scene has enough pictures for Cari Benda', () => {
     for (const s of content.scenes.filter((x) => x.world.id !== 'jambatan')) expect(s.cards.filter((c) => c.image).length, s.id).toBeGreaterThanOrEqual(4);

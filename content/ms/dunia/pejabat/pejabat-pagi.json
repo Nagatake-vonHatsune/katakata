@@ -171,12 +171,12 @@
     {
       "id": "ms-d-pejabat-pagi-08",
       "lang": "ms",
-      "term": "tanda tangan",
+      "term": "tandatangan",
       "gloss_en": "signature",
       "gloss_ja": "署名",
       "pos": "noun",
       "affix_tag": "chunk",
-      "note": null,
+      "note": "Written as one word in Malaysian Malay. The verb is menandatangani.",
       "links": [
         {
           "type": "babak",

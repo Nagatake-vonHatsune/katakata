@@ -750,6 +750,78 @@
       "scene": "kelas-c10",
       "chapter": 10,
       "recognise_only": true
+    },
+    {
+      "id": "ms-c10-042",
+      "lang": "ms",
+      "term": "kolam renang",
+      "gloss_en": "swimming pool",
+      "gloss_ja": "プール",
+      "pos": "noun",
+      "affix_tag": "chunk",
+      "note": "Learn it as a phrase. renang is the root of berenang (this chapter). Saya berenang di kolam renang pada hari Sabtu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-043",
+      "lang": "ms",
+      "term": "taman",
+      "gloss_en": "park",
+      "gloss_ja": "公園",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A park, where people run or cycle. Saya berlari di taman.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-044",
+      "lang": "ms",
+      "term": "seminggu",
+      "gloss_en": "a week; per week (tiga kali seminggu = three times a week)",
+      "gloss_ja": "1週間、週に（tiga kali seminggu＝週3回）",
+      "pos": "noun / adverb",
+      "affix_tag": "se-",
+      "note": "se- + minggu (Ch4): one week, or «per week». tiga kali seminggu = three times a week. Saya berenang dua kali seminggu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
+    },
+    {
+      "id": "ms-c10-045",
+      "lang": "ms",
+      "term": "penuh",
+      "gloss_en": "full (a full train, a full form)",
+      "gloss_ja": "いっぱいの、満員の",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Full: a full bus, a full train. Bas itu penuh pada waktu pagi.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c10"
+        }
+      ],
+      "scene": "kelas-c10",
+      "chapter": 10
     }
   ],
   "frames": [
@@ -956,6 +1028,6 @@
       "ms-c10-f01",
       "ms-c10-f02"
     ],
-    "scene": null
+    "scene": "hari-kerja-jiran"
   }
 }

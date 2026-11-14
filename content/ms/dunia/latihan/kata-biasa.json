@@ -1,0 +1,140 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "dunia",
+  "id": "kata-biasa",
+  "chapter": 18,
+  "status": "live",
+  "ja_review": "pending",
+  "world": {
+    "id": "latihan",
+    "ms": "Latihan",
+    "en": "Practice",
+    "ja": "練習"
+  },
+  "title": {
+    "ms": "Kata biasa",
+    "en": "Everyday words",
+    "ja": "よく使うことば"
+  },
+  "setting": {
+    "en": "Common words that are not in any chapter's core list. They are here for practice, after the chapters.",
+    "ja": "どの章の必修語にも入っていませんが、よく使う言葉です。章のあとの練習で出会います。"
+  },
+  "cards": [
+    {
+      "id": "ms-d-kata-biasa-01",
+      "lang": "ms",
+      "term": "menyapu",
+      "gloss_en": "to sweep",
+      "gloss_ja": "掃く",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + sapu: to sweep. The s becomes ny, as in menyimpan and menyemak (Ch11). Saya menyapu lantai setiap pagi.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-kata-biasa"
+        }
+      ],
+      "scene": "dunia-kata-biasa",
+      "chapter": 18,
+      "image": "🧹"
+    },
+    {
+      "id": "ms-d-kata-biasa-02",
+      "lang": "ms",
+      "term": "disemak",
+      "gloss_en": "to be checked",
+      "gloss_ja": "チェックされる、確認される",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "di- + semak (Ch11): the di- partner of menyemak (Ch11): to be checked. Borang itu disemak oleh pengurus.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-kata-biasa"
+        }
+      ],
+      "scene": "dunia-kata-biasa",
+      "chapter": 18,
+      "image": "🔍"
+    },
+    {
+      "id": "ms-d-kata-biasa-03",
+      "lang": "ms",
+      "term": "disimpan",
+      "gloss_en": "to be kept; to be stored",
+      "gloss_ja": "保管される",
+      "pos": "verb",
+      "affix_tag": "di-",
+      "note": "di- + simpan (Dunia, Ch2): the di- partner of menyimpan (Ch11): to be kept, to be stored. Fail itu disimpan di pejabat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-kata-biasa"
+        }
+      ],
+      "scene": "dunia-kata-biasa",
+      "chapter": 18,
+      "image": "🗄️"
+    },
+    {
+      "id": "ms-d-kata-biasa-04",
+      "lang": "ms",
+      "term": "bersukan",
+      "gloss_en": "to do sport",
+      "gloss_ja": "スポーツをする",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + sukan (Ch2): to do sport. Kami bersukan pada hari Sabtu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-kata-biasa"
+        }
+      ],
+      "scene": "dunia-kata-biasa",
+      "chapter": 18,
+      "image": "⚽"
+    },
+    {
+      "id": "ms-d-kata-biasa-05",
+      "lang": "ms",
+      "term": "hidup",
+      "gloss_en": "to live; alive; life",
+      "gloss_ja": "生きる、生活",
+      "pos": "verb / noun",
+      "affix_tag": "root",
+      "note": "To live; alive; life. The root of hidupkan (Ch12). Mereka hidup berjiran dengan baik.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-kata-biasa"
+        }
+      ],
+      "scene": "dunia-kata-biasa",
+      "chapter": 18,
+      "image": "🌱"
+    },
+    {
+      "id": "ms-d-kata-biasa-06",
+      "lang": "ms",
+      "term": "giliran",
+      "gloss_en": "turn (my turn, your turn)",
+      "gloss_ja": "順番",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "gilir + -an: a turn. Learn it as a whole word. Root in the ledger: gilir; see nombor giliran (Dunia, Ch3). Sekarang giliran saya.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-kata-biasa"
+        }
+      ],
+      "scene": "dunia-kata-biasa",
+      "chapter": 18,
+      "image": "🔢"
+    }
+  ]
+}

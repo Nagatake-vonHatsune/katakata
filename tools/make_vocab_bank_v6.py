@@ -30,12 +30,13 @@ sys.path.insert(0, str(ROOT / "tools"))  # -I leaves the script's folder off sys
 
 import make_vocab_bank_v5 as v5  # noqa: E402
 
-# "Ledger snapshot after Sam's five new rows L-1268 to L-1272 (Journal row 184)": c3e4a5a plus those rows (mendaftar,
+# Step 3e (Sam, 14 Nov 2026): the sheet after Journal rows 191 and 192 (L-0530 «tandatangan», 37 new rows L-1273 to L-1309).
+# Before it: "Ledger snapshot after Sam's five new rows L-1268 to L-1272 (Journal row 184)": c3e4a5a plus those rows (mendaftar,
 # tangguhkan, batalkan, memakai, berwarna). Before it: "Ledger snapshot after Sam's Affix-tag fixes and new row L-1267 (Journal rows 177, 178)": the sheet after the
 # chapter 17 write-back plus Sam's 16 Affix tags (13 blank rows, three root ter- rows) and the new row L-1267
 # «tidak boleh tahan». It replaced 323b5fc (the same rows without those changes; 323b5fc replaced acff0ca, which
 # lacked Claude's four ber- tags, Journal row 152).
-LEDGER_BASELINE = "484ad8d"
+LEDGER_BASELINE = "00164ef"
 v5.LEDGER_BASELINE = LEDGER_BASELINE
 
 
@@ -49,6 +50,64 @@ def kc(b, ch, lid, note, **opt):
     drop = [i.strip() for i in row["Kata-Kata (card IDs)"].split(",") if i.strip().startswith("ms-j-")]
     place = re.sub(r";\s*Jambatan · [^;]+", "", row["Kata-Kata place"]) if drop else None
     b.add_kelas(ch, lid, note=note, drop=drop, place=place, **opt)
+
+
+# Step 3e (Sam, 14 Nov 2026; ledger L-1273 to L-1303): 31 new class cards, each appended at the end of the pack its place names
+# so no earlier card ID moves. Notes show the root and its chapter; every example passes tools/stage-check.mjs at its chapter.
+STEP3E = {
+    10: [
+        ("L-1273", "Learn it as a phrase. renang is the root of berenang (this chapter). Saya berenang di kolam renang pada hari Sabtu."),
+        ("L-1274", "A park, where people run or cycle. Saya berlari di taman."),
+        ("L-1275", "se- + minggu (Ch4): one week, or «per week». tiga kali seminggu = three times a week. Saya berenang dua kali seminggu."),
+        ("L-1276", "Full: a full bus, a full train. Bas itu penuh pada waktu pagi."),
+    ],
+    11: [
+        ("L-1277", "kepada is for a person, ke (Ch7) is for a place. Saya menghantar emel kepada pengurus. Saya pergi ke pejabat."),
+        ("L-1278", "se- + hari (Ch4): a day, or «per day». Kereta itu RM100 sehari. sehari = per day; setiap hari (Ch4) = every day."),
+        ("L-1279", "meN- + tempah (Ch4): to book. The t drops: menempah. The standard form of tempah: Saya menempah kereta untuk hujung minggu."),
+        ("L-1280", "A hill. Kami mendaki bukit pada hari Ahad."),
+    ],
+    12: [
+        ("L-1281", "meN- + lapor + -kan: to report something to someone. Saya melaporkan kebocoran itu kepada pengurus."),
+        ("L-1282", "A copy. Learn it as a whole word: -an words like this one come in Stage 3. Root in the ledger: salin. Sila simpan salinan borang itu."),
+        ("L-1283", "di- + hubung + -i: the di- partner of menghubungi (above). Encik akan dihubungi pada hari Isnin."),
+        ("L-1284", "di- + baiki: the di- partner of membaiki (above). Lif itu sedang dibaiki."),
+    ],
+    13: [
+        ("L-1285", "Healthy, well. Saya sihat. Saya tidak sihat hari ini. sihat is the root of kesihatan (above)."),
+        ("L-1286", "To tell, to let someone know. Written joined, as one word: beritahu. Sila beritahu doktor."),
+        ("L-1287", "A pharmacist: the person who works at a farmasi (above). Learn it as a phrase. Tanya ahli farmasi."),
+        ("L-1288", "tinggal (Ch2) + -kan: to leave something behind, or with someone. Saya tinggalkan beg di kaunter. tinggal on its own is to live or to stay."),
+    ],
+    14: [
+        ("L-1289", "A word in its own right, written joined: all right then, OK (to agree or to start). Baiklah, kita buat begini. Root: baik (Ch1)."),
+        ("L-1290", "Like this, this way: Kita buat begini. The standard partner of the spoken «macam ni» (Ch17)."),
+        ("L-1291", "To come along, to follow. Puan Aini mahu ikut?"),
+        ("L-1292", "To say: Encik Rahman kata mesyuarat bermula pukul sembilan. Also a noun: a word."),
+        ("L-1293", "A notice, an announcement. Learn it as a whole word: pe- … -an words come in Stage 3. Root in the ledger: umum. Baca pengumuman itu."),
+        ("L-1294", "meN- + tangguh + -kan (tangguh is above): the standard form with a doer. Cik Mei Ling menangguhkan mesyuarat itu. The t drops: menangguhkan. The bare tangguhkan is what a request or an offer uses: Kita tangguhkan ke hari Ahad."),
+        ("L-1295", "meN- + batal + -kan (batal is above): the standard form with a doer. Puan Aini membatalkan mesyuarat itu. The bare batalkan is what a request or an offer uses: Kita batalkan rancangan itu."),
+    ],
+    15: [
+        ("L-1296", "Staff, an employee. Written joined, as one word: kakitangan. Kakitangan stesen ada di kaunter."),
+        ("L-1297", "A ball. Bulat, seperti bola. Bola itu bulat."),
+    ],
+    16: [
+        ("L-1298", "The everyday answer after an accident: Encik tidak apa-apa? Saya tidak apa-apa, terima kasih. = I'm fine, it's nothing."),
+        ("L-1299", "A problem. Ada masalah?"),
+        ("L-1300", "ber- + laku: to happen. Apa yang berlaku?"),
+        ("L-1301", "The everyday root of meminjam (Ch11): Boleh saya pinjam telefon encik? pinjamkan = to lend."),
+    ],
+    17: [
+        ("L-1302", "To reply. Sila balas sebelum hari Rabu."),
+        ("L-1303", "minggu (Ch4) + depan (Ch4): next week. Learn it as a phrase. Saya belanja minggu depan."),
+    ],
+}
+
+
+def step3e(b, ch):
+    for lid, note in STEP3E[ch]:
+        kc(b, ch, lid, note)
 
 
 def ch10(b):
@@ -109,6 +168,7 @@ def ch10(b):
     for lid, note, opt in cards:
         over = {k: v for k, v in opt.items() if k not in ("drop", "place")}
         b.add_kelas(10, lid, note=note, drop=opt.get("drop", ()), place=opt.get("place"), **over)
+    step3e(b, 10)
 
     # Frames: the plan's section 3 examples (bekerja di Kuala Lumpur; bercakap … dengan jiran saya) and Sam's
     # «Pukul berapa kita bertolak?» (W9). Only words placed in chapters 1 to 10 (checked by the affix guard).
@@ -225,6 +285,7 @@ def ch11(b):
     for lid, note, opt in cards:
         over = {k: v for k, v in opt.items() if k not in ("drop", "place")}
         b.add_kelas(11, lid, note=note, drop=opt.get("drop", ()), place=opt.get("place"), **over)
+    step3e(b, 11)
 
     # Frames: the plan's section 3 pair (Aini membaca buku itu. / Buku itu dibaca oleh Aini.), the 11A and 11B
     # block goals (who did it, ask what a colleague is doing, check a draft) and the hobby extension.
@@ -336,6 +397,7 @@ def ch12(b):
     ]
     for lid, note, opt in cards:
         kc(b, 12, lid, note, **opt)
+    step3e(b, 12)
 
     # Frames: the plan's section 3 examples (Tolong simpankan bungkusan ini; Boleh hubungi juruteknik; Juruteknik sedang
     # membaiki paip) and the lines of its parcel scene (Saya mahu ambil bungkusan. Sudah sampai?; Boleh tunjukkan mesej?).
@@ -427,6 +489,7 @@ def ch13(b):
     ]
     for lid, note, opt in cards:
         kc(b, 13, lid, note, **opt)
+    step3e(b, 13)
 
     # Frames: the plan's section 3 examples (Saya belum makan. / Bolehkah saya masuk? / Saya perlu berjumpa doktor.), the
     # advice and prohibition contrast, and a notice. Belum, boleh and jangan return from Chapters 4, 2 and 7.
@@ -507,6 +570,7 @@ def ch14(b):
     ]
     for lid, note, opt in cards:
         kc(b, 14, lid, note, **opt)
+    step3e(b, 14)
 
     # Frames: the plan's section 3 examples (Kalau hujan, kita makan di kafe. / Saya tidak datang kerana saya bekerja.),
     # then the purpose, contrast, simultaneous and sequence patterns of the plan's five functions.
@@ -593,6 +657,7 @@ def ch15(b):
     ]
     for lid, note, opt in cards:
         kc(b, 15, lid, note, **opt)
+    step3e(b, 15)
 
     # Frames: the plan's section 3 example (Saya mencari beg yang ada zip.) and the block goals: say what is lost,
     # describe it with a yang clause, ask a question that separates two items, give shape and likeness.
@@ -676,6 +741,7 @@ def ch16(b):
     ]
     for lid, note, opt in cards:
         kc(b, 16, lid, note, **opt)
+    step3e(b, 16)
 
     # Frames: the plan's section 3 examples (Saya tertinggal telefon di pejabat. / Maaf, saya terlupa.), the other
     # accidents of the scenes, "tidak sengaja", the contrast with the Chapter 6 superlative and a practical request.
@@ -774,6 +840,7 @@ def ch17(b):
     ]
     for lid, note, opt in cards:
         kc(b, 17, lid, note, **opt)
+    step3e(b, 17)
 
     # Frames: the plan's functions (invite, accept, decline with a reason or an alternative, suggest, agree), standard form
     # first; the spoken partners are in the card notes and in the scenario's casual lines.
@@ -891,6 +958,71 @@ def ch18(b):
         b.ks.append([f"ms-c18-s{i:02d}", 18, title, speaker, ms, en])
 
 
+# Step 3e Dunia work (Sam, 14 Nov 2026).
+CH10_SCENE = "hari-kerja-jiran"
+POOL_SCENE = "kata-biasa"
+
+# The chapter 10 picture scene (the HANDOFF backlog item): the ber- verbs of the working-day and new-neighbour scenes, plus
+# kolam renang, taman and penuh. Each card is the Dunia twin of a class card (same Malay), as in the Stage 1 scenes, so only
+# words placed up to chapter 10 appear. (ledger id, emoji or None for a card without a picture)
+CH10_CARDS = [
+    ("L-1106", "🧳"),  # bertolak
+    ("L-1103", "🛑"),  # berhenti
+    ("L-1101", "🍳"),  # bersarapan
+    ("L-1089", None),  # bekerja
+    ("L-1090", None),  # berjalan
+    ("L-1099", None),  # berbual
+    ("L-1095", "🏊"),  # berenang
+    ("L-1097", "🚴"),  # berbasikal
+    ("L-1096", "🏃"),  # berlari
+    ("L-1094", "🤸"),  # bersenam
+    ("L-1093", "🛋️"),  # berehat
+    ("L-1273", None),  # kolam renang
+    ("L-1274", "🌳"),  # taman
+    ("L-1276", "🈵"),  # penuh (満, as Japanese learners know it)
+    ("L-1114", "📦"),  # berpindah
+    ("L-0660", "🏘️"),  # jiran
+    ("L-1108", "💍"),  # berkahwin
+    ("L-1112", "🎒"),  # bersekolah
+    ("L-1116", "🏪"),  # berniaga
+    ("L-1118", None),  # berkumpul
+]
+
+# The practice pool (L-1304 to L-1309): common words that are not Stage 2 core. Each shows its root and the chapter where the
+# root or its partner is taught. (ledger id, note, emoji)
+POOL_CARDS = [
+    ("L-1304", "meN- + sapu: to sweep. The s becomes ny, as in menyimpan and menyemak (Ch11). Saya menyapu lantai setiap pagi.", "🧹"),
+    ("L-1305", "di- + semak (Ch11): the di- partner of menyemak (Ch11): to be checked. Borang itu disemak oleh pengurus.", "🔍"),
+    ("L-1306", "di- + simpan (Dunia, Ch2): the di- partner of menyimpan (Ch11): to be kept, to be stored. Fail itu disimpan di pejabat.", "🗄️"),
+    ("L-1307", "ber- + sukan (Ch2): to do sport. Kami bersukan pada hari Sabtu.", "⚽"),
+    ("L-1308", "To live; alive; life. The root of hidupkan (Ch12). Mereka hidup berjiran dengan baik.", "🌱"),
+    ("L-1309", "gilir + -an: a turn. Learn it as a whole word. Root in the ledger: gilir; see nombor giliran (Dunia, Ch3). Sekarang giliran saya.", "🔢"),
+]
+
+
+def dunia_3e(b):
+    # «tandatangan»: the Malaysian spelling is joined (L-0530, Journal row 191); the spaced form is Indonesian.
+    b.edit_dunia("ms-d-pejabat-pagi-08", term="tandatangan",
+                 note="Written as one word in Malaysian Malay. The verb is menandatangani.")
+
+    b.add_scene(CH10_SCENE, "Kata Kerja Harian (Daily verbs)", "Hari bekerja dan jiran baru", "A working day and a new neighbour", 10,
+                "Tanaka's working day and his weekend sport, then Sunday with a new neighbour: the ber- verbs you meet in class this week.")
+    ids = {}
+    for lid, emoji in CH10_CARDS:
+        did = b.add_dunia(CH10_SCENE, lid)
+        if emoji:
+            ids[did] = emoji
+    b.images_3e = ids
+
+    # The practice pool sits outside the chapter packs. Primes chapter 18 = after every chapter (the guard then allows its ber-, di- and
+    # meN- forms); tools/import-overrides.json "practice_scenes" keeps it from becoming chapter 18's Sedia Kelas scene.
+    b.add_scene(POOL_SCENE, "Latihan (Practice)", "Kata biasa", "Everyday words", 18,
+                "Common words that are not in any chapter's core list. They are here for practice, after the chapters.")
+    for lid, note, emoji in POOL_CARDS:
+        did = b.add_dunia(POOL_SCENE, lid, note=note, place=f"Kata-Kata practice pool (not core); Dunia · {b.scene_label(POOL_SCENE)} (primes Ch18)")
+        b.images_3e[did] = emoji
+
+
 CHAPTERS = {10: ch10, 11: ch11, 12: ch12, 13: ch13, 14: ch14, 15: ch15, 16: ch16, 17: ch17, 18: ch18}
 
 
@@ -900,11 +1032,14 @@ def main():
     ap.add_argument("out")
     ap.add_argument("--through", type=int, default=max(CHAPTERS))
     ap.add_argument("--map")
+    ap.add_argument("--images", help="write the emoji of the new Dunia cards (for tools/import-overrides.json)")
     a = ap.parse_args()
     b = v5.Bank(a.src, None)
     for n in sorted(CHAPTERS):
         if n <= a.through:
             CHAPTERS[n](b)
+    if a.through >= max(CHAPTERS):
+        dunia_3e(b)
     marked = b.mark_seen_twins()
     built = min(a.through, max(CHAPTERS))
     b.wb["README"]["A1"] = (
@@ -914,6 +1049,8 @@ def main():
     )
     b.wb.save(a.out)
     print(f"wrote {a.out}; 'seen in class' set on {len(marked)} Dunia cards: {marked}")
+    if a.images and getattr(b, "images_3e", None):
+        Path(a.images).write_text(json.dumps(b.images_3e, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     if a.map:
         Path(a.map).write_text(json.dumps(b.map, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
         print(f"wrote {a.map}: {len(b.map)} ledger rows")

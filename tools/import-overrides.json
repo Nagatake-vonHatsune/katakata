@@ -40,7 +40,9 @@
     "badan-bayi",
     "sukan-badminton",
     "simpulan-harian",
-    "pejabat-salam"
+    "pejabat-salam",
+    "hari-kerja-jiran",
+    "kata-biasa"
   ],
   "chapter_titles": {
     "1": {
@@ -170,7 +172,8 @@
     "Perayaan (Festivals)": "perayaan",
     "Makan Luar (Eating out)": "makan-luar",
     "Sukan (Sport)": "sukan",
-    "Simpulan Bahasa (Idioms)": "simpulan"
+    "Simpulan Bahasa (Idioms)": "simpulan",
+    "Latihan (Practice)": "latihan"
   },
   "world_ja": {
     "rumah": "家",
@@ -188,7 +191,8 @@
     "perayaan": "お祭り",
     "makan-luar": "外食",
     "sukan": "スポーツ",
-    "simpulan": "慣用句"
+    "simpulan": "慣用句",
+    "latihan": "練習"
   },
   "scene_ja": {
     "rumah-bangun-pagi": {
@@ -270,6 +274,14 @@
     "pejabat-salam": {
       "title": "オフィスのあいさつ",
       "setting": "田中さんの最初の週。朝はチームにあいさつし、エレベーターで同僚に会い、夕方に別れのあいさつをします。"
+    },
+    "hari-kerja-jiran": {
+      "title": "いつもの一日と新しいお隣さん",
+      "setting": "田中さんの平日と週末のスポーツ、そして新しいお隣さんとの出会い。今週の授業で出会う ber- の動詞です。"
+    },
+    "kata-biasa": {
+      "title": "よく使うことば",
+      "setting": "どの章の必修語にも入っていませんが、よく使う言葉です。章のあとの練習で出会います。"
     }
   },
   "frame_meaning_ja": {
@@ -551,7 +563,28 @@
     "ms-d-pejabat-salam-09": "🌇",
     "ms-d-pejabat-salam-11": "👋",
     "ms-d-perayaan-raya-16": "🎄",
-    "ms-d-perayaan-raya-19": "🧧"
+    "ms-d-perayaan-raya-19": "🧧",
+    "ms-d-hari-kerja-jiran-01": "🧳",
+    "ms-d-hari-kerja-jiran-02": "🛑",
+    "ms-d-hari-kerja-jiran-03": "🍳",
+    "ms-d-hari-kerja-jiran-07": "🏊",
+    "ms-d-hari-kerja-jiran-08": "🚴",
+    "ms-d-hari-kerja-jiran-09": "🏃",
+    "ms-d-hari-kerja-jiran-10": "🤸",
+    "ms-d-hari-kerja-jiran-11": "🛋️",
+    "ms-d-hari-kerja-jiran-13": "🌳",
+    "ms-d-hari-kerja-jiran-14": "🈵",
+    "ms-d-hari-kerja-jiran-15": "📦",
+    "ms-d-hari-kerja-jiran-16": "🏘️",
+    "ms-d-hari-kerja-jiran-17": "💍",
+    "ms-d-hari-kerja-jiran-18": "🎒",
+    "ms-d-hari-kerja-jiran-19": "🏪",
+    "ms-d-kata-biasa-01": "🧹",
+    "ms-d-kata-biasa-02": "🔍",
+    "ms-d-kata-biasa-03": "🗄️",
+    "ms-d-kata-biasa-04": "⚽",
+    "ms-d-kata-biasa-05": "🌱",
+    "ms-d-kata-biasa-06": "🔢"
   },
   "sedia_kelas_review": {
     "2": [
@@ -727,5 +760,8 @@
       "ms-c17-011",
       "ms-c17-014"
     ]
-  }
+  },
+  "practice_scenes": [
+    "kata-biasa"
+  ]
 }

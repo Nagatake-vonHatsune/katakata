@@ -425,6 +425,78 @@
       ],
       "scene": "kelas-c16",
       "chapter": 16
+    },
+    {
+      "id": "ms-c16-024",
+      "lang": "ms",
+      "term": "tidak apa-apa",
+      "gloss_en": "I'm fine; it's nothing",
+      "gloss_ja": "大丈夫です、なんでもないです",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "The everyday answer after an accident: Encik tidak apa-apa? Saya tidak apa-apa, terima kasih. = I'm fine, it's nothing.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-025",
+      "lang": "ms",
+      "term": "masalah",
+      "gloss_en": "problem",
+      "gloss_ja": "問題",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A problem. Ada masalah?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-026",
+      "lang": "ms",
+      "term": "berlaku",
+      "gloss_en": "to happen",
+      "gloss_ja": "起こる",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + laku: to happen. Apa yang berlaku?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
+    },
+    {
+      "id": "ms-c16-027",
+      "lang": "ms",
+      "term": "pinjam",
+      "gloss_en": "to borrow (everyday; standard meminjam)",
+      "gloss_ja": "借りる（日常語；標準は meminjam）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "The everyday root of meminjam (Ch11): Boleh saya pinjam telefon encik? pinjamkan = to lend.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "kelas-c16"
+        }
+      ],
+      "scene": "kelas-c16",
+      "chapter": 16
     }
   ],
   "frames": [
