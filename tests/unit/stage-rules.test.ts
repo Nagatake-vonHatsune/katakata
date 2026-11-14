@@ -15,24 +15,17 @@ describe('stage rules (shared with Cikgu Sensai)', () => {
     for (const [name, f] of Object.entries<{ sha256: string }>(source.files))
       expect(createHash('sha256').update(readFileSync(join(rulesDir, name))).digest('hex'), name).toBe(f.sha256);
   });
-  // Since 14 Nov 2026 the ledger has L-1289 «baiklah» (Sam: a word in its own right, placed Ch14), so «Baiklah» is no longer read
-  // as baik + -lah and the fixture below, which uses it as its -lah example, no longer fails. The fixture is a Cikgu Sensai file
-  // and is not edited here; the rule itself (R4) still holds for any other -lah word (next test). Remove this entry when Cikgu
-  // Sensai's fixture uses another word (the test after it says when).
-  const KNOWN_DIVERGENT = new Set(['lah-in-answer-key-fails']);
-  it('runs all 77 shared fixtures with the expected result (one known divergence, see KNOWN_DIVERGENT)', () => {
-    expect(cases).toHaveLength(77);
+  it('runs all 81 shared fixtures with the expected result', () => {
+    expect(cases).toHaveLength(81);
     const wrong = cases.filter((c: any) => !fixtureAgrees(c, runFixtureCase(checker, c))).map((c: any) => c.id);
-    expect(wrong.filter((id: string) => !KNOWN_DIVERGENT.has(id))).toEqual([]);
+    expect(wrong).toEqual([]);
   });
-  it('the known divergence is only the word «baiklah»; R4 still stops a test that requires -lah on another word', () => {
-    const base = cases.find((c: any) => c.id === 'lah-in-answer-key-fails');
-    const withText = (text: string) => ({ ...base, segments: [{ ...base.segments[0], text }] });
-    expect(fixtureAgrees(base, runFixtureCase(checker, base))).toBe(false); // when this turns true, delete KNOWN_DIVERGENT
-    for (const text of ['Takpelah, saya tunggu.', 'Tidak mengapalah, saya tunggu.']) {
-      const c = withText(text);
-      expect(fixtureAgrees(c, runFixtureCase(checker, c)), text).toBe(true);
-    }
+  it('matches a two-word disallowed form as the two words in order', () => {
+    const seg = (text: string, kind = 'model') => [{ unit: 'fixture-c01', chapter: 1, source: 'fixture', text, kind }];
+    const bad = (text: string) => Object.values(checker.inspect(seg(text)).violations).filter((e: any) => e.check === 'malaysian-form').map((e: any) => e.term);
+    expect(bad('Sila tanda tangan di sini.')).toEqual(['tanda tangan']);
+    expect(bad('Sila tandatangan di sini.')).toEqual([]);
+    expect(bad('tangan tanda')).toEqual([]);
   });
   it('reads placement strictly from the place column', () => {
     expect(placedChapter('Ch1 (moved from Ch2; reviewed in Ch2)')).toBe(1);

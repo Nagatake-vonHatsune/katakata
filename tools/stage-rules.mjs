@@ -246,7 +246,9 @@ export class Checker {
       const parts = new Set([...ts, ...ts.flatMap((t) => t.split('-'))]);
       const note = kind === 'mention' && (this.mentions[text] ?? '').toLowerCase().includes('do not use');
       for (const [bad, good] of Object.entries(this.disallowed))
-        if (parts.has(bad) && !note) add(violations, s, 'malaysian-form', bad, `Disallowed (Indonesian) form; use ${good}`);
+        // A form of two words («tanda tangan») is matched as the two words in that order, as in Cikgu Sensai's checker.
+        if ((parts.has(bad) || (bad.includes(' ') && new RegExp(`(?<![\\w-])${esc(bad)}(?![\\w-])`).test(text))) && !note)
+          add(violations, s, 'malaysian-form', bad, `Disallowed (Indonesian) form; use ${good}`);
       if (kind === 'mention') continue;
       for (const [spoken, standard, first] of this.pairs) {
         if (ch !== null && ch < first) continue;

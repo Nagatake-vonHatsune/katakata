@@ -932,11 +932,11 @@
   },
   {
    "id": "lah-in-answer-key-fails",
-   "why": "R4: a test must not require «lah»",
+   "why": "R4: a test must not require «lah» (Takpe + lah, joined from chapter 17; «Baiklah» is a word in its own right since L-1289, so it no longer tests R4)",
    "expect": "fail",
    "segments": [
     {
-     "text": "Baiklah, saya tunggu.",
+     "text": "Takpelah, saya tunggu.",
      "chapter": 17,
      "kind": "test",
      "field": "answer_key"
@@ -983,6 +983,56 @@
      "field": "answer_key"
     }
    ]
+  },
+  {
+   "id": "indonesian-tanda-tangan-fails",
+   "why": "disallowed teaching form: «tanda tangan» (two words) is the Indonesian spelling; use tandatangan (Sam, 13 Nov 2026; ledger L-0530)",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Tolong tanda tangan di sini.",
+     "chapter": 11
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "tandatangan-joined-passes",
+   "why": "the Malaysian spelling is one word and is the ledger form (L-0530, placed in Chapter 2)",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Tolong tandatangan di sini.",
+     "chapter": 11
+    }
+   ]
+  },
+  {
+   "id": "tanda-tangan-in-do-not-use-note-passes",
+   "why": "‹tanda tangan› quoted only in a do-not-use note",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "tanda tangan",
+     "chapter": 11,
+     "kind": "mention",
+     "mention_source": "Ledger L-0530 note: Indonesian spelling; do not use (use tandatangan)"
+    }
+   ]
+  },
+  {
+   "id": "tanda-tangan-mention-without-do-not-use-fails",
+   "why": "a ‹tanda tangan› mention whose source does not say do not use is still a disallowed form",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "tanda tangan",
+     "chapter": 11,
+     "kind": "mention",
+     "mention_source": "Ledger L-0530 note: spelling"
+    }
+   ],
+   "check": "malaysian-form"
   }
  ]
 }

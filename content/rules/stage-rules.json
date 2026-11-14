@@ -13,7 +13,7 @@
     "lookalike_roots": "Roots that only look affixed (beri, merah, mesti ...). Classification only: they do not create ledger rows or chapter placements. Sam's local additions also stay in curriculum/malay-roots.json, which must remain a subset of this list.",
     "register_pairs": "List of {spoken, standard, from_chapter, decision}. In any unit whose chapter is from_chapter or later (and in unplaced units), the spoken form fails unless the standard form has been taught earlier in vocabulary or a model and the spoken form has been taught with an explicit 'spoken' label. Multi-word forms match as whole phrases. register_notes records Sam's decisions on how a pair is presented.",
     "particles": "List of {form, decision, rule, not_particle}. Recognition particles: allowed in prompts and listening once placed, never required in a test answer key («lah» as a word or as an ending on a known form with no ledger row of its own, except the not_particle words; «kan» as a word). A key that must name the particle quotes it as a ‹…› mention.",
-    "disallowed_forms": "Map form -> Malaysian form to use. Matched as whole words, also inside hyphenated words. Fails everywhere, including mentions, except inside a ‹…› mention whose source in curriculum/malay-mentions.json says 'do not use'."
+    "disallowed_forms": "Map form -> Malaysian form to use. Matched as whole words, also inside hyphenated words; a form of two words («tanda tangan») is matched as the two words in that order. Fails everywhere, including mentions, except inside a ‹…› mention whose source in curriculum/malay-mentions.json says 'do not use'."
   },
   "affix_gates": [
     {"family": "-nya", "chapter": 2, "ledger_tags": ["-nya"], "detect": "shape", "enforced_by": "stage1", "note": "Possessive or definite -nya on a known word."},
@@ -102,11 +102,13 @@
     "bersepeda": "berbasikal",
     "antre": "beratur",
     "berwisata": "melancong",
-    "kecelakaan": "kemalangan"
+    "kecelakaan": "kemalangan",
+    "tanda tangan": "tandatangan"
   },
   "disallowed_forms_sources": {
     "charter_step3": "nomor, bis, apel, setelah, beda, mobil, toilet, wc, karcis, toko, uang (the Stage 1 list).",
     "sam_step2": "berbicara, perbaiki, musik, film, olahraga, apotek, kantor, mobil, uang (Sam, build step 2 instruction, 13 Nov 2026; the first five are docs/stage-2-plan.md section 3 item 6).",
-    "plan_section_2": "bersepeda, antre, berwisata, kecelakaan: named in docs/stage-2-plan.md section 2 as the Indonesian forms the chosen Malaysian words replace. Not added: saku, darurat, berdagang, berteman and menikah, which the plan also names but which are also used in Malaysian Malay; Sam to confirm."
+    "plan_section_2": "bersepeda, antre, berwisata, kecelakaan: named in docs/stage-2-plan.md section 2 as the Indonesian forms the chosen Malaysian words replace. Not added: saku, darurat, berdagang, berteman and menikah, which the plan also names but which are also used in Malaysian Malay; Sam to confirm.",
+    "sam_cleanup": "tanda tangan (two words, the Indonesian spelling; Malaysian: tandatangan, one word): Sam, 13 Nov 2026, ledger L-0530 and Journal row 191; added in the Stage 2 clean-up of 14 Nov 2026."
   }
 }

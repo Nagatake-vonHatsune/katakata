@@ -100,7 +100,6 @@ STEP3E = {
     ],
     17: [
         ("L-1302", "To reply. Sila balas sebelum hari Rabu."),
-        ("L-1303", "minggu (Ch4) + depan (Ch4): next week. Learn it as a phrase. Saya belanja minggu depan."),
     ],
 }
 
@@ -108,6 +107,10 @@ STEP3E = {
 def step3e(b, ch):
     for lid, note in STEP3E[ch]:
         kc(b, ch, lid, note)
+    if ch == 17:
+        # Step 3f (Sam, 14 Nov 2026): L-1303 «minggu depan» is Retired (chapter 4 teaches it through the depan card ms-c04-019).
+        # Its card ms-c17-026 was the last card in c17, so no other ID moves; the ledger cells are cleared at the write-back.
+        b.led("L-1303", ids=[], place="")
 
 
 def ch10(b):
