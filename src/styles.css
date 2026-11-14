@@ -1709,3 +1709,115 @@ a {
   gap: 8px;
   padding: 6px 0 10px;
 }
+
+/* ---- Nombor & Masa (src/views/nombor.ts). No ⚡ or 🔥 in this mode: they belong to the chapter stretch stage. ---- */
+.nm .btn-small { min-height: 40px; }
+.nm-explore { display: flex; flex-direction: column; gap: 10px; }
+.nm-explore h3 { margin-top: 0; }
+.nm-stage, .nm-q-stage { display: flex; justify-content: center; align-items: center; min-height: 96px; }
+.nm-reels { display: flex; gap: 4px; justify-content: center; flex-wrap: wrap; }
+.nm-reel {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2.1rem; height: 3rem; border-radius: 10px;
+  background: var(--text); color: var(--bg);
+  font-size: 1.7rem; font-weight: 800; font-variant-numeric: tabular-nums;
+  box-shadow: inset 0 -6px 0 rgba(0, 0, 0, 0.25);
+}
+.nm-reel-sep { align-self: flex-end; font-size: 1.6rem; font-weight: 800; padding: 0 1px; }
+.nm-reading { display: flex; flex-direction: column; gap: 6px; padding: 10px 12px; border-radius: 12px; background: var(--surface-2); }
+.nm-reading-main { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 1.15rem; }
+.nm-reading-alt { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.nm-tag { font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: var(--neutral-soft); color: var(--neutral); }
+.nm-tag-spoken { background: var(--brand-soft); color: var(--brand); }
+.nm-listen { min-height: 36px; padding: 2px 10px; }
+.nm-chips { justify-content: center; }
+.nm-chip { flex: 0 0 auto !important; min-width: 3rem; font-size: 1.1rem; }
+.nm-big { font-size: 2.6rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+.nm-opt-num { font-size: 1.2rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.nm-frac { display: inline-flex; align-items: center; gap: 10px; }
+.nm-frac-sym { font-size: 2rem; font-weight: 800; }
+.nm-opt .nm-frac-sym { font-size: 1.4rem; }
+.nm-pie-bg { fill: var(--surface); stroke: var(--line); stroke-width: 2; }
+.nm-pie-fill { fill: var(--accent); }
+.nm-pie-line { stroke: var(--text); stroke-width: 1.5; }
+.nm-price {
+  position: relative; display: inline-block; padding: 14px 22px 14px 34px;
+  background: #fbe7a6; color: #3a2a06; font-size: 2rem; font-weight: 800; font-variant-numeric: tabular-nums;
+  border-radius: 6px 18px 18px 6px; box-shadow: var(--shadow); transform: rotate(-3deg);
+}
+.nm-price-hole { position: absolute; left: 12px; top: 50%; width: 10px; height: 10px; margin-top: -5px; border-radius: 50%; background: var(--bg); }
+.nm-phone { font-size: 1.5rem; font-weight: 800; letter-spacing: 0.04em; padding: 12px 18px; border-radius: 16px; background: var(--surface-2); font-variant-numeric: tabular-nums; }
+.nm-daycard { font-size: 1.6rem; font-weight: 800; padding: 16px 24px; border-radius: 14px; border: 2px solid var(--line); background: var(--surface); }
+.nm-ms-prompt { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; font-size: 1.25rem; }
+.nm-options-grid { grid-template-columns: 1fr 1fr; }
+.nm-opt { display: flex; align-items: center; gap: 10px; }
+.nm-options-grid .nm-opt { justify-content: center; }
+.nm-mini-clock { display: inline-flex; flex-direction: column; align-items: center; gap: 2px; }
+.nm-mini-time { font-size: 0.85rem; font-weight: 700; }
+.nm-clock-face { fill: var(--surface); stroke: var(--text); stroke-width: 3; }
+.nm-tick { stroke: var(--muted); stroke-width: 1; }
+.nm-tick-5 { stroke: var(--text); stroke-width: 2.5; }
+.nm-clock-num { fill: var(--text); font-size: 18px; font-weight: 700; }
+.nm-hand { stroke: var(--text); stroke-linecap: round; }
+.nm-hand-h { stroke-width: 7; }
+.nm-hand-m { stroke-width: 4; stroke: var(--accent); }
+.nm-hub { fill: var(--text); }
+.nm-clock-wrap { touch-action: none; cursor: grab; }
+.nm-time-label { font-weight: 700; font-size: 1.1rem; }
+.nm-sky-wrap { width: 100%; max-width: 320px; margin: 0 auto; }
+.nm-sky { width: 100%; height: auto; display: block; border-radius: 8px; }
+.nm-sky-now { stroke: var(--text); stroke-width: 3; }
+.nm-sky-label { font-size: 8px; fill: #fff; font-weight: 700; }
+.nm-cal { border: 1.5px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--surface); width: 100%; max-width: 340px; margin: 0 auto; }
+.nm-cal-head { background: var(--brand); color: var(--brand-ink); text-align: center; padding: 8px; font-size: 1.05rem; }
+.nm-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; padding: 6px; }
+.nm-cal-dow { font-size: 0.6rem; overflow-wrap: anywhere; text-align: center; color: var(--muted); font-weight: 700; }
+.nm-cal-day { min-height: 34px; display: flex; align-items: center; justify-content: center; border-radius: 8px; border: 0; background: none; font: inherit; color: var(--text); cursor: default; }
+button.nm-cal-day { cursor: pointer; }
+.nm-cal-day.on { background: var(--accent); color: #fff; font-weight: 800; }
+.nm-cal-nav { justify-content: center; }
+.nm-cal-nav .btn { flex: 0 0 auto; }
+.nm-flip { animation: nm-flip 0.45s ease-out; transform-origin: top center; }
+@keyframes nm-flip { from { transform: rotateX(70deg); opacity: 0.2; } to { transform: none; opacity: 1; } }
+.nm-pop { animation: nm-pop 0.35s ease-out; }
+@keyframes nm-pop { from { transform: scale(0.7) rotate(-3deg); } to { transform: rotate(-3deg); } }
+.nm-week { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.nm-week-day {
+  display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 6px 2px; min-height: 52px;
+  border-radius: 10px; border: 1.5px solid var(--line); background: var(--surface); font: inherit; font-size: 0.78rem; color: var(--text);
+}
+button.nm-week-day { cursor: pointer; }
+.nm-week-day.today { border-color: var(--brand); background: var(--brand-soft); }
+.nm-week-day.target { border-color: var(--accent); border-width: 2.5px; }
+.nm-week-mark { min-height: 1.1em; }
+.nm-rel { display: grid; grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); gap: 6px; }
+.nm-rel-cell { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 4px; border-radius: 10px; border: 1.5px solid var(--line); background: var(--surface); font: inherit; color: var(--text); text-align: center; }
+button.nm-rel-cell { cursor: pointer; }
+.nm-rel-cell.today { border-color: var(--brand); background: var(--brand-soft); }
+.nm-months { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.nm-month { display: flex; gap: 6px; align-items: baseline; padding: 6px 8px; border-radius: 8px; background: var(--surface-2); }
+.nm-chart { display: flex; flex-direction: column; gap: 16px; }
+.nm-chart-sec { display: flex; flex-direction: column; gap: 6px; }
+.nm-chart-sec h4 { margin: 4px 0; font-size: 1rem; }
+.nm-row { display: flex; gap: 8px; align-items: flex-start; }
+.nm-row-label { flex: 0 0 4.6rem; font-weight: 700; font-size: 0.85rem; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums; }
+.nm-blocks { display: flex; flex-wrap: wrap; gap: 4px; }
+.nm-block { padding: 3px 8px; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--line); font-size: 0.88rem; }
+.nm-build-example { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.nm-block-0 { background: #f6d6a8; color: #3a2a06; }
+.nm-block-1 { background: #cfe3f7; color: #0d2a45; }
+.nm-block-2 { background: #d6efd8; color: #0f3a17; }
+.nm-block-3 { background: #f3d0de; color: #45122a; }
+.nm-ring { max-width: 100%; height: auto; }
+.nm-ring-label { font-size: 10px; font-weight: 700; fill: #fff; }
+.nm-ring-hour { font-size: 10px; fill: var(--muted); }
+.nm-ring-mid { font-size: 13px; fill: var(--text); font-weight: 700; }
+.nm-parts { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; text-align: left; }
+.nm-built-ok { border-color: var(--ok); background: var(--ok-soft); }
+.nm-built-no { border-color: var(--neutral); }
+.nm-feedback { display: flex; flex-direction: column; gap: 10px; }
+.nm-feedback:empty { display: none; }
+.nm-score { font-size: 1.4rem; font-weight: 800; }
+.nm-voice-note:empty { display: none; }
+@media (prefers-reduced-motion: reduce) { .nm-flip, .nm-pop { animation: none; } }
+.nm-rel-cell b { font-size: 0.92rem; overflow-wrap: anywhere; }

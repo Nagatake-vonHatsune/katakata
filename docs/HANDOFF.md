@@ -1,6 +1,6 @@
 # Kata-Kata hand-off
 
-Last updated 15 Nov 2026 (Stage 2 build step 6c-2 done: rules 909596e, bridge exemption removed, Social Jambatan split, In both, [report](STAGE-2-step6c2-report.md); step 6b: bridge batch in the ledger, Jambatan rebuilt, [report](STAGE-2-step6b-report.md); step 3f: rules sync and one card removed, [report](STAGE-2-step3f-report.md); step 3e: new ledger rows, «tandatangan», the chapter 10 picture game, [report](STAGE-2-step3e-report.md); step 3d [report](STAGE-2-step3d-report.md); step 3c [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
+Last updated 15 Nov 2026 (Nombor & Masa, a standalone mode for numbers, days, dates, money and time, [report](NOMBOR-MASA-report.md); Stage 2 build step 6c-2 done: rules 909596e, bridge exemption removed, Social Jambatan split, In both, [report](STAGE-2-step6c2-report.md); step 6b: bridge batch in the ledger, Jambatan rebuilt, [report](STAGE-2-step6b-report.md); step 3f: rules sync and one card removed, [report](STAGE-2-step3f-report.md); step 3e: new ledger rows, «tandatangan», the chapter 10 picture game, [report](STAGE-2-step3e-report.md); step 3d [report](STAGE-2-step3d-report.md); step 3c [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
 Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-1.0.md).
 
 ## State
@@ -20,7 +20,17 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
 - Practice words (ledger place «Kata-Kata practice pool (not core)») live in a Dunia scene that primes Ch18 (`kata-biasa`, world Latihan,
   override key `practice_scenes`): the guard reads placement from the place column, so such rows need a ChN in their place to be used in a pack.
 
+- **Nombor & Masa** (standalone mode, 🔢 on Home, route `#/nombor`; open from day one, practice only): generators in `src/core/nombor.ts`
+  (numbers 0 to 1,000,000, phone digits, days, dates, fractions, decimals, percent, money, clock times, questions and distractors), screens in
+  `src/views/nombor.ts` and `nombor-charts.ts`, tests `tests/unit/nombor.test.ts` and `tests/e2e/nombor.cjs` (screenshots to `docs/nombor-masa/`).
+  The day-part boundaries in `DAY_PARTS` are a proposal; `QUIZ_HOURS` keeps questions away from the edges. The mode uses no ⚡ or 🔥 (reserved
+  for the chapter stretch stage). It adds no cards and no ledger cells. Every generated string passes the shared `malaysian-form` check and the
+  mode's own `INDONESIAN_NUMBER_FORMS` list. Open questions: [NOMBOR-MASA-report.md](NOMBOR-MASA-report.md) section 4.
+- Checks: `npm run check && node tests/e2e/smoke.cjs && node tests/e2e/fun.cjs && node tests/e2e/nombor.cjs` (against `vite preview --port 4173`).
+
 ## Backlog
+
+- Nombor & Masa, Sam to answer: the day-part boundaries, «kurang suku», «haribulan» or «hari bulan», «pertiga» or «per tiga» (ledger L-0141), «minit» after the minutes, the draft hooks (en and ja); see the report section 4. Kamus Dewan and the UKM kit could not be reached from the session (network).
 
 - Look at the three Social Jambatan scenes on a phone; Sam may move words between them (`SOCIAL_SPLIT`). Open questions: [STAGE-2-step6c2-report.md](STAGE-2-step6c2-report.md) (L-1308 and L-1309 In both; the rule 1 deviation).
 - Cikgu Sensai should refresh its ledger copy (118 places, 264 In both cells since e4e294d).

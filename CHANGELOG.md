@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+- **Nombor & Masa: a standalone mode for numbers, days, months and dates, fractions, decimals and percent, money and time (15 Nov 2026).** Report: [docs/NOMBOR-MASA-report.md](docs/NOMBOR-MASA-report.md).
+  - On the home screen (🔢), open from day one, practice only (the review schedule never changes). Six parts, each with an explorer (roll the numbers, tap the week, turn the calendar, fraction pies, price tags, a clock with draggable hands and a spin), a chart, two draft memory hooks (en and ja) and an 8-question round: read (pick the Malay), pick (read the Malay, pick the number, clock, date, day or price) and build (from word blocks, in numbers and money).
+  - Standard first, spoken marked (Sam, 15 Nov 2026): RM4.50 «empat ringgit lima puluh sen», spoken «empat ringgit setengah»; 3:30 pm «pukul tiga setengah petang» or «pukul tiga tiga puluh petang». 0 is «kosong» (everyday) and «sifar» (formal); phone numbers digit by digit; «haribulan» shown as a date variant. No 24-hour reading, no «jam» for the clock time; «kurang suku» left out (no source checked yet).
+  - Distractors target belas / puluh, se- / satu, suku / setengah, petang / malam (and RM4.50 / RM4.05, 2.5 / 25, digit order, place value).
+  - Three charts: number blocks, the clock with the (proposed) parts of the day, a calendar strip; each opens from its part and from every question's feedback.
+  - Tests: 80 unit tests (every number 0 to 1,000,000 by rule and read back, every 5 minutes of the day, money, fractions, dates, 5,280 generated questions, the shared Indonesian-form check plus the mode's own list) and `tests/e2e/nombor.cjs` (plays all six parts; screenshots in `docs/nombor-masa/`).
+
 - **Stage 2 step 6c-2: the new shared rules, the bridge exemption removed, the step 6b follow-ups (15 Nov 2026), 46 to 48 packs, 1441 cards.** Report: [docs/STAGE-2-step6c2-report.md](docs/STAGE-2-step6c2-report.md).
   - Rules re-pinned to Cikgu Sensai `909596e` (95 fixtures; the guard runs `expect_gaps` and `expect_no_gaps`; all 95 agree, 0 guard flags). `tools/stage-rules.mjs` follows the shared rule: a placed row is checked whole from its own chapter, a row with no chapter is never a root and counts as no row in a chaptered unit, practice-pool rows keep «primes Ch18». The step 6b bridge-batch exemption is removed.
   - Ledger: L-0195 and L-1303 Action cells synced; «In both» = Yes for the 264 Jambatan rows (264 cells); 118 places for the split Social cards (382 cells in all, verified); Journal rows 219 to 224.

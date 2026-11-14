@@ -13,6 +13,7 @@ import { renderTanya } from './views/tanya';
 import { renderJambatan } from './views/jambatan';
 import { renderSettings } from './views/settings';
 import { renderLaju } from './views/laju';
+import { renderNombor } from './views/nombor';
 import { LANG_EVENT } from './views/langswitch';
 
 const root = document.getElementById('app')!;
@@ -59,6 +60,8 @@ function render(): void {
       return renderSettings(root, go);
     case 'laju':
       return renderLaju(root, go);
+    case 'nombor':
+      return renderNombor(root, go, arg);
     default:
       return renderHome(root, nav);
   }
