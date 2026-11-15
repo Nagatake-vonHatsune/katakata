@@ -200,6 +200,10 @@ def main(hana, map_out=None):
         if ex is None and r["example"]:
             ex = r["example"]["text"].strip()
         ex = ex.strip() if ex else None
+        if ex and term.strip().lower() == "hari bulan":
+            # Sam, 15 Nov 2026 (L-1410): two words. Hanashishou's scenes still write «haribulan» until its next sync;
+            # the card note quotes the corrected spelling.
+            ex = ex.replace("haribulan", "hari bulan")
         if ex:
             parts.append(f"Hanashishou: {ex}" if ex[-1] in ".!?…»\"" else f"Hanashishou: {ex}.")
         for a in alts:

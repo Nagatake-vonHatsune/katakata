@@ -1043,6 +1043,14 @@ def alias_terms(b):
             b.kv.cell(b.row_of(b.kv, cid), 3).value = rows[lid]["Malay"]
 
 
+def nombor_followups(b):
+    """Sam's Nombor & Masa answers of 15 Nov 2026 (ledger L-0141, L-1032): the cards follow the ledger's new spelling.
+    The Jambatan card ms-j-daily-life-52 («hari bulan», L-1410) is rebuilt by the bridge importer from the ledger."""
+    b.edit_kelas("ms-c03-043", term="satu pertiga / sepertiga", note="Read it as «1 per 3», i.e. 1/3. «dua pertiga» = 2/3, «tiga perempat» = 3/4.")
+    b.edit_kelas("ms-c04-061", note="Apa tarikh hari ini? asks the full date. Hari ini berapa hari bulan? asks the day of the month "
+                                     "(answer: sebelas hari bulan). Spoken order also heard: Hari ini hari bulan berapa? / hari bulan sebelas.")
+
+
 CHAPTERS = {10: ch10, 11: ch11, 12: ch12, 13: ch13, 14: ch14, 15: ch15, 16: ch16, 17: ch17, 18: ch18}
 
 
@@ -1061,6 +1069,7 @@ def main():
     if a.through >= max(CHAPTERS):
         dunia_3e(b)
         alias_terms(b)
+        nombor_followups(b)
     marked = b.mark_seen_twins()
     built = min(a.through, max(CHAPTERS))
     b.wb["README"]["A1"] = (

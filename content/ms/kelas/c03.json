@@ -771,12 +771,12 @@
     {
       "id": "ms-c03-043",
       "lang": "ms",
-      "term": "satu per tiga / sepertiga",
+      "term": "satu pertiga / sepertiga",
       "gloss_en": "one third",
       "gloss_ja": "3分の1",
       "pos": "number",
       "affix_tag": "se-",
-      "note": null,
+      "note": "Read it as «1 per 3», i.e. 1/3. «dua pertiga» = 2/3, «tiga perempat» = 3/4.",
       "links": [
         {
           "type": "babak",
