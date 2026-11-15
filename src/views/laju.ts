@@ -38,7 +38,7 @@ export function renderLaju(root: HTMLElement, go: (r: string) => void): void {
     h(
       'div',
       { class: 'screen laju-start' },
-      topBar('⚡ ' + t('mode.laju'), () => go('')),
+      topBar('⏱️ ' + t('mode.laju'), () => go('')),
       h('h1', { class: 'laju-title' }, t('laju.title')),
       h('p', { class: 'lead' }, t('laju.body')),
       pool.length < LAJU_MIN_WORDS
@@ -53,7 +53,7 @@ export function renderLaju(root: HTMLElement, go: (r: string) => void): void {
             { class: 'card-box stack center' },
             h('p', { class: 'muted small' }, t('laju.pool', { n: pool.length })),
             best ? h('p', null, t('laju.best', { n: best })) : null,
-            button(t('laju.start') + ' ⚡', () => play(root, pool, go), 'btn btn-primary btn-wide btn-big'),
+            button(t('laju.start') + ' ⏱️', () => play(root, pool, go), 'btn btn-primary btn-wide btn-big'),
           ),
     ),
   );
@@ -99,7 +99,7 @@ function play(root: HTMLElement, pool: Card[], go: (r: string) => void): void {
         h(
           'div',
           { class: 'stack' },
-          button(t('laju.again') + ' ⚡', () => play(root, lajuPool(), go), 'btn btn-primary btn-wide'),
+          button(t('laju.again') + ' ⏱️', () => play(root, lajuPool(), go), 'btn btn-primary btn-wide'),
           button(t('sum.home'), () => go(''), 'btn btn-ghost btn-wide'),
         ),
       ),

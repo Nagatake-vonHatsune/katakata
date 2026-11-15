@@ -1,4 +1,4 @@
-// Points UI shared by practice sessions and Laju!: the live score pill, the "+12 ⚡ 🔥3" badge and the
+// Points UI shared by practice sessions and Laju!: the live score pill, the "+12 ⏱️ 🔥3" badge and the
 // summary block with personal bests.
 import { t } from '../core/i18n';
 import { seconds, type Hit, type Scorer } from '../core/score';
@@ -10,7 +10,7 @@ export function pointsBadge(hit: Hit): HTMLElement | null {
     'span',
     { class: 'points-pop' + (hit.speed === 2 ? ' fast' : '') },
     `+${hit.points}`,
-    hit.speed ? h('span', { class: 'pp-speed', 'aria-hidden': 'true' }, ' ' + '⚡'.repeat(hit.speed)) : null,
+    hit.speed ? h('span', { class: 'pp-speed', 'aria-hidden': 'true' }, ' ' + '⏱️'.repeat(hit.speed)) : null,
     hit.combo >= 3 ? h('span', { class: 'pp-combo' }, ` 🔥${hit.combo}`) : null,
   );
 }
@@ -44,7 +44,7 @@ export function scoreStats(s: Scorer, beat: { score: boolean; combo: boolean; fa
     h(
       'div',
       { class: 'stat' },
-      h('b', null, s.fastestMs === null ? '–' : `⚡ ${t('score.sec', { n: seconds(s.fastestMs) })}`),
+      h('b', null, s.fastestMs === null ? '–' : `⏱️ ${t('score.sec', { n: seconds(s.fastestMs) })}`),
       h('span', null, t('score.fastest')),
       best(beat.fastest),
     ),

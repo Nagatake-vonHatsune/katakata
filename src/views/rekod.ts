@@ -71,7 +71,7 @@ function scoreRecords(): HTMLElement {
           'div',
           null,
           row(t('score.best_session'), `★ ${r.bestSession}`),
-          row(t('score.laju_best'), `⚡ ${r.lajuBest}`),
+          row(t('score.laju_best'), `⏱️ ${r.lajuBest}`),
           row(t('score.combo'), `🔥 ${r.bestCombo}`),
           row(t('score.fastest'), r.fastestMs === null ? '–' : t('score.sec', { n: seconds(r.fastestMs) })),
           row(t('score.total'), `★ ${r.total}`),
