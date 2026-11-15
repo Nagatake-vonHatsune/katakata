@@ -1,5 +1,5 @@
 {
- "note": "Shared fixtures for the stage rules in curriculum/stage-rules.json. Cikgu Sensai runs them in tests/test_stage_rules.py; Kata-Kata's affix guard should run the same cases (build step 3). Each case is a list of segments checked in order as one unit sequence. expect \"pass\": no violation of any kind. expect \"fail\": at least one violation of the named check (affix, ledger, register or malaysian-form). Segment fields: text (the Malay), chapter, unit (optional; default \"fixture-cNN\"), kind (default \"model\"; \"vocabulary\" teaches a form, \"mention\" is a ‹…› quote, \"test\" is a test item), source_text (default text; \"[spoken]\" labels a spoken form), field (\"prompt\" or \"answer_key\" for kind \"test\"), mention_source (for kind \"mention\": the source text a mentions file would hold). Optional keys (Stage 2 step 6c-1): expect_gaps (terms that must be reported as ledger gaps) and expect_no_gaps (terms that must not be); a gap is not a violation, so these are checked on top of expect.",
+ "note": "Shared fixtures for the stage rules in curriculum/stage-rules.json. Cikgu Sensai runs them in tests/test_stage_rules.py; Kata-Kata's affix guard should run the same cases (build step 3). Each case is a list of segments checked in order as one unit sequence. expect \"pass\": no violation of any kind. expect \"fail\": at least one violation of the named check (affix, ledger, register or malaysian-form). Segment fields: text (the Malay), chapter, unit (optional; default \"fixture-cNN\"), kind (default \"model\"; \"vocabulary\" teaches a form, \"mention\" is a ‹…› quote, \"test\" is a test item), source_text (default text; \"[spoken]\" labels a spoken form), field (\"prompt\" or \"answer_key\" for kind \"test\"), mention_source (for kind \"mention\": the source text a mentions file would hold). Optional keys (Stage 2 step 6c-1): expect_gaps (terms that must be reported as ledger gaps) and expect_no_gaps (terms that must not be); a gap is not a violation, so these are checked on top of expect. Optional keys (extension rows, 15 Nov 2026): ledger_rows on a case (a list of ledger-shaped rows, at least ID, Malay, 'Kata-Kata place' and POS; other columns blank, Affix tag 'root', Review status 'Draft') are added to the ledger for that case only; a segment key extension (true) marks the segment as extension content (Kata-Kata stretch stage, a future Cikgu Sensai add-on), default false = core content. See stage-rules.json, format.extension_rows.",
  "cases": [
   {
    "id": "bercakap-9-fails",
@@ -1266,6 +1266,271 @@
     {
      "text": "disemak",
      "chapter": 11
+    }
+   ]
+  },
+  {
+   "id": "extension-word-passes-in-extension-content-at-n",
+   "why": "an extension row «ChN (extension)» is placed at N for extension content: «pertandingan» (Ch6 (extension)) passes at chapter 6",
+   "expect": "pass",
+   "ledger_rows": [
+    {
+     "ID": "X-EXT-1",
+     "Malay": "pertandingan",
+     "Kata-Kata place": "Ch6 (extension)",
+     "POS": "n"
+    },
+    {
+     "ID": "X-EXT-2",
+     "Malay": "tanding",
+     "Kata-Kata place": "Ch4 (extension)",
+     "POS": "v"
+    }
+   ],
+   "expect_no_gaps": [
+    "pertandingan"
+   ],
+   "segments": [
+    {
+     "text": "pertandingan",
+     "chapter": 6,
+     "extension": true
+    }
+   ]
+  },
+  {
+   "id": "extension-word-passes-in-extension-content-after-n",
+   "why": "and at every later chapter (9 and 18)",
+   "expect": "pass",
+   "ledger_rows": [
+    {
+     "ID": "X-EXT-1",
+     "Malay": "pertandingan",
+     "Kata-Kata place": "Ch6 (extension)",
+     "POS": "n"
+    },
+    {
+     "ID": "X-EXT-2",
+     "Malay": "tanding",
+     "Kata-Kata place": "Ch4 (extension)",
+     "POS": "v"
+    }
+   ],
+   "expect_no_gaps": [
+    "pertandingan"
+   ],
+   "segments": [
+    {
+     "text": "pertandingan",
+     "chapter": 9,
+     "extension": true
+    },
+    {
+     "text": "pertandingan",
+     "chapter": 18,
+     "extension": true
+    }
+   ]
+  },
+  {
+   "id": "extension-word-fails-in-extension-content-before-n",
+   "why": "before N the extension row is not yet placed: «pertandingan» at chapter 5 fails the ledger check, as a placed core row would",
+   "expect": "fail",
+   "check": "ledger",
+   "ledger_rows": [
+    {
+     "ID": "X-EXT-1",
+     "Malay": "pertandingan",
+     "Kata-Kata place": "Ch6 (extension)",
+     "POS": "n"
+    },
+    {
+     "ID": "X-EXT-2",
+     "Malay": "tanding",
+     "Kata-Kata place": "Ch4 (extension)",
+     "POS": "v"
+    }
+   ],
+   "segments": [
+    {
+     "text": "pertandingan",
+     "chapter": 5,
+     "extension": true
+    }
+   ]
+  },
+  {
+   "id": "extension-word-is-a-gap-in-core-content",
+   "why": "in core content an extension row counts as no row: «pertandingan» is a ledger gap at chapters 6, 12 and 18, never a violation and never placed",
+   "expect": "pass",
+   "ledger_rows": [
+    {
+     "ID": "X-EXT-1",
+     "Malay": "pertandingan",
+     "Kata-Kata place": "Ch6 (extension)",
+     "POS": "n"
+    },
+    {
+     "ID": "X-EXT-2",
+     "Malay": "tanding",
+     "Kata-Kata place": "Ch4 (extension)",
+     "POS": "v"
+    }
+   ],
+   "expect_gaps": [
+    "pertandingan"
+   ],
+   "segments": [
+    {
+     "text": "pertandingan",
+     "chapter": 6
+    },
+    {
+     "text": "pertandingan",
+     "chapter": 12
+    },
+    {
+     "text": "pertandingan",
+     "chapter": 18
+    }
+   ]
+  },
+  {
+   "id": "extension-word-core-before-n-is-still-only-a-gap",
+   "why": "core content before N: the same gap, not a ledger violation (it is no row, like a bridge-only row)",
+   "expect": "pass",
+   "ledger_rows": [
+    {
+     "ID": "X-EXT-1",
+     "Malay": "pertandingan",
+     "Kata-Kata place": "Ch6 (extension)",
+     "POS": "n"
+    },
+    {
+     "ID": "X-EXT-2",
+     "Malay": "tanding",
+     "Kata-Kata place": "Ch4 (extension)",
+     "POS": "v"
+    }
+   ],
+   "expect_gaps": [
+    "pertandingan"
+   ],
+   "segments": [
+    {
+     "text": "pertandingan",
+     "chapter": 3
+    }
+   ]
+  },
+  {
+   "id": "extension-root-makes-no-derived-form-legal-in-core",
+   "why": "«tanding» is a Ch4 (extension) row; in core content it is no root, so «tandingnya» (-nya, open from chapter 2) is a ledger gap at chapter 5 and the base is not placed",
+   "expect": "pass",
+   "ledger_rows": [
+    {
+     "ID": "X-EXT-1",
+     "Malay": "pertandingan",
+     "Kata-Kata place": "Ch6 (extension)",
+     "POS": "n"
+    },
+    {
+     "ID": "X-EXT-2",
+     "Malay": "tanding",
+     "Kata-Kata place": "Ch4 (extension)",
+     "POS": "v"
+    }
+   ],
+   "expect_gaps": [
+    "tandingnya"
+   ],
+   "segments": [
+    {
+     "text": "tandingnya",
+     "chapter": 5
+    }
+   ]
+  },
+  {
+   "id": "extension-root-makes-no-derived-form-legal-in-core-ber",
+   "why": "«bertanding» (ber-, open from chapter 10) has no ledger row placed at or before 12 and the extension root «tanding» does not open it in core content",
+   "expect": "fail",
+   "check": "affix",
+   "ledger_rows": [
+    {
+     "ID": "X-EXT-1",
+     "Malay": "pertandingan",
+     "Kata-Kata place": "Ch6 (extension)",
+     "POS": "n"
+    },
+    {
+     "ID": "X-EXT-2",
+     "Malay": "tanding",
+     "Kata-Kata place": "Ch4 (extension)",
+     "POS": "v"
+    }
+   ],
+   "segments": [
+    {
+     "text": "bertanding",
+     "chapter": 12
+    }
+   ]
+  },
+  {
+   "id": "extension-root-opens-regular-derivation-in-extension-content",
+   "why": "in extension content the same root is placed at 4, so «tandingnya» at chapter 5 is -nya + «tanding» and is no gap",
+   "expect": "pass",
+   "ledger_rows": [
+    {
+     "ID": "X-EXT-1",
+     "Malay": "pertandingan",
+     "Kata-Kata place": "Ch6 (extension)",
+     "POS": "n"
+    },
+    {
+     "ID": "X-EXT-2",
+     "Malay": "tanding",
+     "Kata-Kata place": "Ch4 (extension)",
+     "POS": "v"
+    }
+   ],
+   "expect_no_gaps": [
+    "tandingnya",
+    "tanding"
+   ],
+   "segments": [
+    {
+     "text": "tandingnya",
+     "chapter": 5,
+     "extension": true
+    }
+   ]
+  },
+  {
+   "id": "extension-root-before-n-fails-in-extension-content",
+   "why": "extension content before the root's chapter: «tandingnya» at chapter 3 is -nya + «tanding» (Ch4 (extension)), which is not yet placed",
+   "expect": "fail",
+   "check": "ledger",
+   "ledger_rows": [
+    {
+     "ID": "X-EXT-1",
+     "Malay": "pertandingan",
+     "Kata-Kata place": "Ch6 (extension)",
+     "POS": "n"
+    },
+    {
+     "ID": "X-EXT-2",
+     "Malay": "tanding",
+     "Kata-Kata place": "Ch4 (extension)",
+     "POS": "v"
+    }
+   ],
+   "segments": [
+    {
+     "text": "tandingnya",
+     "chapter": 3,
+     "extension": true
     }
    ]
   }

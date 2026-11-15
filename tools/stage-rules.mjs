@@ -44,6 +44,18 @@ export function placedChapter(place) {
   return found.length ? Math.min(...found) : null;
 }
 
+/**
+ * True when the chapter that places the row is written «ChN (extension)» (a core «ChN» at the same chapter wins).
+ * Rules commit fc7dec4 (stage-rules.json, format.extension_rows); the Python is_extension_place.
+ */
+export function isExtensionPlace(place) {
+  if (place.trim().toLowerCase().startsWith('retired')) return false;
+  const found = [...place.replace(PLACE_NOTE, '').matchAll(/Ch\s*(\d+)(\s*\(extension\))?/gi)].map((m) => [Number(m[1]), Boolean(m[2])]);
+  if (!found.length) return false;
+  found.sort((a, b) => a[0] - b[0] || Number(a[1]) - Number(b[1]));
+  return found[0][1];
+}
+
 /** Minimal RFC 4180 CSV reader (quoted fields, doubled quotes, CRLF). Returns objects keyed by the header. */
 export function parseCsv(text) {
   const rows = [];
@@ -89,13 +101,25 @@ export function loadKelas(dir = join(ROOT, 'content', 'ms', 'kelas')) {
 
 export class Checker {
   /**
-   * @param {{rules?: any, names?: string[], ledger?: any[], kelas?: {chapter:number,cards:any[]}[], mentions?: Record<string,string>}} [opts]
+   * extension (rules commit fc7dec4, format.extension_rows): false (default) is the core view, where a «ChN (extension)» row counts as
+   * no row; true is the shared extension view (every extension row placed at its chapter), as Cikgu Sensai's Checker(extension=True);
+   * a number N is Kata-Kata's own view for the ⚡ stage of chapter N: only «ChN (extension)» rows are placed, every other chapter's
+   * extension rows count as no row (design note section 5: a ⚡ pack uses its own extension words only).
+   * extraRows: ledger-shaped rows added for one fixture case only (the fixtures' ledger_rows key).
+   * @param {{rules?: any, names?: string[], ledger?: any[], kelas?: {chapter:number,cards:any[]}[], mentions?: Record<string,string>, extension?: boolean|number, extraRows?: any[]}} [opts]
    */
   constructor(opts = {}) {
     const loaded = opts.rules ? { rules: opts.rules, names: opts.names ?? [] } : loadRules();
     const rules = loaded.rules;
-    const ledger = opts.ledger ?? loadLedger();
+    const baseLedger = opts.ledger ?? loadLedger();
     const kelas = opts.kelas ?? loadKelas();
+    this.extension = opts.extension ?? false;
+    this._extra = opts.extraRows ?? [];
+    this._opts = { rules, names: loaded.names, ledger: baseLedger, kelas };
+    /** @type {Map<string, Checker>} */
+    this._views = new Map();
+    const blank = Object.fromEntries(Object.keys(baseLedger[0] ?? {}).map((k) => [k, '']));
+    const ledger = [...baseLedger, ...this._extra.map((r) => ({ ...blank, 'Review status': 'Draft', 'Affix tag': 'root', ...r }))];
     /** @type {Map<string, any[]>} */
     this.entries = new Map();
     /** @type {Map<string, any[]>} */
@@ -104,7 +128,10 @@ export class Checker {
     this.chunks = [];
     const push = (m, k, v) => (m.has(k) ? m.get(k).push(v) : m.set(k, [v]));
     for (const r of ledger) {
-      const row = { ...r, _chapter: placedChapter(r['Kata-Kata place']) };
+      const row = { ...r, _chapter: placedChapter(r['Kata-Kata place']), _extension: isExtensionPlace(r['Kata-Kata place']) };
+      // Core view: an extension row gets no chapter (so the rows-with-no-chapter rule applies unchanged). Kata-Kata's ⚡ view for
+      // chapter N keeps only that chapter's extension rows.
+      if (row._extension && (this.extension === false || (typeof this.extension === 'number' && row._chapter !== this.extension))) row._chapter = null;
       for (const form of row.Malay.replace(/\([^)]*\)/g, '').split('/')) if (norm(form)) push(this.entries, norm(form), row);
     }
     for (const { chapter, cards } of kelas) {
@@ -139,6 +166,20 @@ export class Checker {
     // whole word, a root or a base. A live row with no chapter (a Jambatan row) is no root; in a unit with a chapter it counts as no row.
     this.placed = new Set([...this.entries].filter(([, rows]) => rows.some((r) => r._chapter !== null)).map(([t]) => t));
     this.known = new Set([...this.placed, ...this.cards.keys(), ...this.roots]);
+  }
+
+  /**
+   * The checker view for one segment: the extension view for extension content (segment key `extension`: true, or a chapter number
+   * for Kata-Kata's own-chapter view), the core view otherwise. Views share the caller's mentions.
+   */
+  view(segment, fallback = false) {
+    const ext = segment.extension ?? fallback;
+    if (!ext || ext === this.extension) return this;
+    const k = String(ext);
+    if (!this._views.has(k)) this._views.set(k, new Checker({ ...this._opts, extension: ext, extraRows: this._extra }));
+    const v = this._views.get(k);
+    v.mentions = this.mentions;
+    return v;
   }
 
   /** A live row with no chapter (Jambatan or bridge-batch row). Retired rows are not live. */
@@ -233,10 +274,11 @@ export class Checker {
 
   /**
    * Check segments in order, as one unit sequence.
-   * Segment: {unit, chapter (number or null), source, text, source_text?, kind ('vocabulary'|'model'|'mention'|'test'), field? ('prompt'|'answer_key')}
+   * Segment: {unit, chapter (number or null), source, text, source_text?, kind ('vocabulary'|'model'|'mention'|'test'), field? ('prompt'|'answer_key'), extension? (true or a chapter: extension content)}
+   * extension: the default for segments with no `extension` key (core content when false).
    * @returns {{violations: Record<string, any>, ledger_gaps: Record<string, any>, derivations: any[]}}
    */
-  inspect(segments) {
+  inspect(segments, extension = false) {
     const violations = {};
     const gaps = {};
     const derived = new Map();
@@ -248,8 +290,9 @@ export class Checker {
       if (!e.reasons.includes(reason)) e.reasons.push(reason);
       if (!e.evidence.some((x) => x.source === s.source && x.text === s.text)) e.evidence.push({ source: s.source, text: s.text });
     };
-    const g = this.gates;
     for (const s of segments) {
+      const ck = this.view(s, extension);
+      const g = ck.gates;
       const text = norm(s.text);
       const ts = tokens(s.text);
       const ch = s.chapter ?? null;
@@ -258,13 +301,13 @@ export class Checker {
       const sourceText = s.source_text ?? s.text;
       // Disallowed (Indonesian) forms, as whole words and inside hyphenated words.
       const parts = new Set([...ts, ...ts.flatMap((t) => t.split('-'))]);
-      const note = kind === 'mention' && (this.mentions[text] ?? '').toLowerCase().includes('do not use');
-      for (const [bad, good] of Object.entries(this.disallowed))
+      const note = kind === 'mention' && (ck.mentions[text] ?? '').toLowerCase().includes('do not use');
+      for (const [bad, good] of Object.entries(ck.disallowed))
         // A form of two words («tanda tangan») is matched as the two words in that order, as in Cikgu Sensai's checker.
         if ((parts.has(bad) || (bad.includes(' ') && new RegExp(`(?<![\\w-])${esc(bad)}(?![\\w-])`).test(text))) && !note)
           add(violations, s, 'malaysian-form', bad, `Disallowed (Indonesian) form; use ${good}`);
       if (kind === 'mention') continue;
-      for (const [spoken, standard, first] of this.pairs) {
+      for (const [spoken, standard, first] of ck.pairs) {
         if (ch !== null && ch < first) continue;
         if (wordRe(spoken).test(text)) {
           if (!seenStandard.has(`${seq}|${standard}`)) add(violations, s, 'register', spoken, `Standard ${standard} has no earlier target-language teaching occurrence.`);
@@ -274,28 +317,28 @@ export class Checker {
       // R4: «lah» and «kan» are recognition and optional production; no answer key may require them.
       if (kind === 'test' && s.field === 'answer_key') {
         for (const w of ts)
-          for (const particle of this.particles)
-            if (w === particle || (particle === 'lah' && w.endsWith('lah') && !this.placed.has(w) && !this.notParticle.has(w) && this.known.has(w.slice(0, -3))))
+          for (const particle of ck.particles)
+            if (w === particle || (particle === 'lah' && w.endsWith('lah') && !ck.placed.has(w) && !ck.notParticle.has(w) && ck.known.has(w.slice(0, -3))))
               add(violations, s, 'register', particle, `Particle «${particle}» is optional production (R4); a test answer key must not require it.`);
       }
       // A phrase exemption is scoped to its chapter and to this segment: it never exempts its words elsewhere.
       const exempt = new Set();
-      for (const [phrase, first] of [...this.chunks, ...this.wholeWords])
+      for (const [phrase, first] of [...ck.chunks, ...ck.wholeWords])
         if (ch !== null && first <= ch && wordRe(phrase).test(text)) for (const t of tokens(phrase)) exempt.add(t);
       for (const w of new Set(ts)) {
-        if (this.proper.has(w)) continue;
+        if (ck.proper.has(w)) continue;
         if (ch !== null && !exempt.has(w)) {
           const early = [];
           if (ch < g['ke- ordinal'] && w.startsWith('ke') && NUMBERS.has(w.slice(2))) early.push(`ke- ordinal before chapter ${g['ke- ordinal']}`);
-          if (ch < g['-nya'] && w.endsWith('nya') && (this.placed.has(w.slice(0, -3)) || (w === 'ceritanya' && !this.entries.has('cerita')))) early.push(`-nya before chapter ${g['-nya']}`);
-          if (ch < g['-kah'] && w.endsWith('kah') && this.placed.has(w.slice(0, -3))) early.push(`-kah before chapter ${g['-kah']}`);
-          if (ch < g['di-'] && w.startsWith('di') && this.placed.has(w.slice(2)) && this.isVerb(w.slice(2))) early.push(`di- passive before chapter ${g['di-']}`);
-          if (ch < g['ter- superlative'] && w.startsWith('ter') && this.isAdj(w.slice(3))) early.push(`ter- superlative before chapter ${g['ter- superlative']}`);
+          if (ch < g['-nya'] && w.endsWith('nya') && (ck.placed.has(w.slice(0, -3)) || (w === 'ceritanya' && !ck.entries.has('cerita')))) early.push(`-nya before chapter ${g['-nya']}`);
+          if (ch < g['-kah'] && w.endsWith('kah') && ck.placed.has(w.slice(0, -3))) early.push(`-kah before chapter ${g['-kah']}`);
+          if (ch < g['di-'] && w.startsWith('di') && ck.placed.has(w.slice(2)) && ck.isVerb(w.slice(2))) early.push(`di- passive before chapter ${g['di-']}`);
+          if (ch < g['ter- superlative'] && w.startsWith('ter') && ck.isAdj(w.slice(3))) early.push(`ter- superlative before chapter ${g['ter- superlative']}`);
           for (const reason of early) add(violations, s, 'affix', w, reason);
         }
-        const derivedForm = this.derivation(w, ch);
+        const derivedForm = ck.derivation(w, ch);
         const affixBase = derivedForm ? derivedForm[0] : w;
-        if (!this.roots.has(affixBase) && !exempt.has(affixBase)) {
+        if (!ck.roots.has(affixBase) && !exempt.has(affixBase)) {
           if (ch !== null && ch < g['ber-'] && (affixBase.startsWith('ber') || /^be[kl]/.test(affixBase)))
             add(violations, s, 'affix', w, `ber-/be- shaped form before chapter ${g['ber-']}; no taught chunk or root exemption.`);
           if (ch !== null && ch < g['meN-'] && /^me[^aeiou\W]/.test(affixBase))
@@ -304,32 +347,32 @@ export class Checker {
         // Stage-aware rule: every gate of the word's families is open, and the form's own ledger row
         // (or, for a Stage 1 derivation, its base's row) is placed at or before this chapter.
         if (ch !== null && !exempt.has(w) && !exempt.has(affixBase)) {
-          const fam = [...this.families(affixBase, ch)].sort();
+          const fam = [...ck.families(affixBase, ch)].sort();
           for (const f of fam) if (ch < g[f]) add(violations, s, 'affix', w, `${f} form before chapter ${g[f]}.`);
-          if (fam.length && fam.every((f) => ch >= g[f]) && !(this.placedBy(w, ch) || (derivedForm && this.placedBy(affixBase, ch))))
+          if (fam.length && fam.every((f) => ch >= g[f]) && !(ck.placedBy(w, ch) || (derivedForm && ck.placedBy(affixBase, ch))))
             add(violations, s, 'affix', w, `${fam.join('/')} form has no ledger row placed at or before chapter ${ch}.`);
         }
       }
       // Ledger coverage and placement, longest ledger phrase first.
       let i = 0;
       while (i < ts.length) {
-        if (this.proper.has(ts[i])) { i++; continue; }
+        if (ck.proper.has(ts[i])) { i++; continue; }
         let matched = null;
-        for (let size = Math.min(this.maxlen, ts.length - i); size > 0; size--) {
+        for (let size = Math.min(ck.maxlen, ts.length - i); size > 0; size--) {
           const term = ts.slice(i, i + size).join(' ');
           // An unplaced multi-word row (a Hanashishou phrase such as «encik pula») is no entry in a unit with a chapter (rule 2): its words are checked one by one.
-          if (this.entries.has(term) && size > 1 && (this.compositional(term, ts.slice(i, i + size)) || !this.rowsFor(term, ch).length)) continue;
-          if (this.entries.has(term)) { matched = [term, size]; break; }
+          if (ck.entries.has(term) && size > 1 && (ck.compositional(term, ts.slice(i, i + size)) || !ck.rowsFor(term, ch).length)) continue;
+          if (ck.entries.has(term)) { matched = [term, size]; break; }
         }
         let [term, size] = matched ?? [ts[i], 1];
-        const deriv = size === 1 ? this.derivation(term, ch) : null;
+        const deriv = size === 1 ? ck.derivation(term, ch) : null;
         if (deriv) {
           const [base, rule] = deriv;
           const d = { unit: s.unit, term, base, rule };
           derived.set(JSON.stringify(d), d);
           term = base;
         }
-        const rows = this.rowsFor(term, ch);
+        const rows = ck.rowsFor(term, ch);
         if (!rows.length) add(gaps, s, 'ledger gap', term, 'No exact ledger entry for this term/base; not a lesson violation.');
         else if (ch !== null) {
           const taught = rows.map((r) => r._chapter).filter((c) => c !== null);
@@ -340,7 +383,7 @@ export class Checker {
       }
       // Only vocabulary and model teaching counts as teaching, never a rubric or a task.
       if (kind === 'vocabulary' || kind === 'model') {
-        for (const [spoken, standard] of this.pairs) {
+        for (const [spoken, standard] of ck.pairs) {
           if (wordRe(standard).test(text)) seenStandard.add(`${seq}|${standard}`);
           if (text.includes(spoken) && /\bspoken\b/i.test(sourceText)) labelled.add(`${seq}|${spoken}`);
         }
@@ -355,6 +398,8 @@ export class Checker {
  * tests/test_stage_rules.py does. Returns the whole result ({violations, ledger_gaps, derivations}).
  */
 export function runFixtureCase(checker, c) {
+  // Optional (extension rows, rules fc7dec4): ledger_rows are added to the ledger for this case only.
+  if (c.ledger_rows?.length) checker = new Checker({ ...checker._opts, extension: checker.extension, extraRows: c.ledger_rows });
   const saved = checker.mentions;
   const mentions = { ...saved };
   const segments = c.segments.map((s, i) => {
@@ -369,6 +414,7 @@ export function runFixtureCase(checker, c) {
       text: s.text,
       source_text: s.source_text ?? s.text,
       kind,
+      extension: s.extension ?? false,
     };
   });
   checker.mentions = mentions;

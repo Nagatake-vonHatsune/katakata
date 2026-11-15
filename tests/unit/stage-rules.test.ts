@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { runAffixGuard } from '../../tools/affix-guard.mjs';
-import { Checker, fixtureAgrees, placedChapter, runFixtureCase } from '../../tools/stage-rules.mjs';
+import { Checker, fixtureAgrees, isExtensionPlace, placedChapter, runFixtureCase } from '../../tools/stage-rules.mjs';
 
 const rulesDir = join(__dirname, '../../content/rules');
 const source = JSON.parse(readFileSync(join(rulesDir, 'SOURCE.json'), 'utf8'));
@@ -15,8 +15,8 @@ describe('stage rules (shared with Cikgu Sensai)', () => {
     for (const [name, f] of Object.entries<{ sha256: string }>(source.files))
       expect(createHash('sha256').update(readFileSync(join(rulesDir, name))).digest('hex'), name).toBe(f.sha256);
   });
-  it('runs all 95 shared fixtures (including expect_gaps / expect_no_gaps) with the expected result', () => {
-    expect(cases).toHaveLength(95);
+  it('runs all 104 shared fixtures (including expect_gaps / expect_no_gaps, ledger_rows and extension) with the expected result', () => {
+    expect(cases).toHaveLength(104);
     const wrong = cases.filter((c: any) => !fixtureAgrees(c, runFixtureCase(checker, c))).map((c: any) => c.id);
     expect(wrong).toEqual([]);
   });
@@ -103,5 +103,38 @@ describe('rows with no chapter (shared rule, Cikgu Sensai step 6c-1, rules commi
     expect(keys(new Checker({ ledger: l }), 'seminggu', 4)).toEqual([]);
     expect(new Checker({ ledger: l }).derivation('seminggu', 4)).toEqual(['minggu', 'se- noun; base chapter checked separately']);
     expect(new Checker({ ledger: l }).derivation('seminggu', 10)).toBeNull();
+  });
+});
+
+describe('extension rows (shared rule, rules commit fc7dec4)', () => {
+  const rows = [
+    { ID: 'X-1', Malay: 'pertandingan', 'Kata-Kata place': 'Ch6 (extension)', POS: 'n' },
+    { ID: 'X-2', Malay: 'tanding', 'Kata-Kata place': 'Ch4 (extension)', POS: 'v' },
+  ];
+  const seg = (chapter: number, text: string, extension?: boolean | number) => ({ unit: `fixture-c${chapter}`, chapter, source: 'fixture', text, kind: 'model', extension });
+  const found = (c: any, segs: any[]) => {
+    const r = c.inspect(segs);
+    return [...Object.values(r.violations), ...Object.values(r.ledger_gaps)].map((e: any) => `${e.check}:${e.term}`);
+  };
+  it('reads the extension mark from the place column (a core ChN at the same chapter wins)', () => {
+    expect(placedChapter('Ch4 (extension)')).toBe(4);
+    expect(isExtensionPlace('Ch4 (extension)')).toBe(true);
+    expect(isExtensionPlace('Ch4')).toBe(false);
+    expect(isExtensionPlace('Ch12 (unit 12A); Jambatan · Daily life')).toBe(false);
+    expect(isExtensionPlace('Retired: was Ch4 (extension)')).toBe(false);
+    expect(isExtensionPlace('Ch4; Ch4 (extension)')).toBe(false);
+    expect(isExtensionPlace('Ch4 (extension); Ch9')).toBe(true);
+  });
+  it('one call can mix core and extension segments', () => {
+    const c = new Checker({ extraRows: rows });
+    expect(found(c, [seg(8, 'pertandingan', true)])).toEqual([]);
+    expect(found(c, [seg(9, 'pertandingan')])).toEqual(['ledger gap:pertandingan']);
+  });
+  it("Kata-Kata's own-chapter view (a ⚡ pack of chapter N) places only ChN (extension) rows", () => {
+    const c = new Checker({ extraRows: rows });
+    expect(found(c, [seg(6, 'pertandingan', 6)])).toEqual([]);
+    // ⚡ 9 may not use chapter 6's extension word: it counts as no row there.
+    expect(found(c, [seg(9, 'pertandingan', 9)])).toEqual(['ledger gap:pertandingan']);
+    expect(found(c, [seg(4, 'tanding', 4)])).toEqual([]);
   });
 });
