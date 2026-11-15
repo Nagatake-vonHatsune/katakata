@@ -86,7 +86,15 @@ def affixed(sentence):
             out.append(w)
     return out
 # IDs of Jambatan cards dropped since they were first published (step 3c: jiran, pindah, sepupu became class cards): never reused.
-RETIRED_IDS = ["ms-j-health-22"]
+# 15 Nov 2026: the 7 rows promoted to the chapter 4 ⚡ stage (beri, semula, bantu, ulang, biasa, hampir, sejam); their schedule moves
+# to the new ⚡ card IDs (src/core/state.ts MOVED_CARDS).
+RETIRED_IDS = ["ms-j-health-22", "ms-j-social-22", "ms-j-home-condo-29", "ms-j-daily-life-42", "ms-j-social-39", "ms-j-home-condo-30",
+               "ms-j-social-49", "ms-j-office-44"]
+
+
+def is_extension(row):
+    """A «ChN (extension)» row is taught in a chapter's ⚡ stage: it gets no Jambatan card (the rules' format.extension_rows)."""
+    return bool(re.match(r"\s*Ch\s*\d+\s*\(extension\)", row["Kata-Kata place"], re.I))
 
 
 def split_scene(pack, term):
@@ -169,6 +177,8 @@ def main(hana, map_out=None):
         row = ledger.get(lid)
         if row is None or row["Review status"] == "Retired":
             raise SystemExit(f"{lid} is met first but is not a live ledger row: remake hanashishou-metfirst.json")
+        if is_extension(row):
+            continue
         wanted[lid] = (split_scene(home_pack(lid, r["eps"]), row["Malay"]), r)
     for lid, row in ledger.items():  # cards that already exist keep their place even if no scene meets the word now
         if lid not in wanted and jambatan_ids(row):

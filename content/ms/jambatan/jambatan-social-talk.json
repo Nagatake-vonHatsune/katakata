@@ -60,24 +60,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-22",
-      "lang": "ms",
-      "term": "beri",
-      "gloss_en": "to give",
-      "gloss_ja": "与える、くれる",
-      "pos": "verb",
-      "affix_tag": "root",
-      "note": "Hanashishou: Encik, sabar. Beri kod itu saja. In 31 Hanashishou scenes: Airport check-in, At the clinic, Booking the dentist, Can you cover for me? and 27 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-talk"
-        }
-      ],
-      "scene": "dunia-jambatan-social-talk",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-24",
       "lang": "ms",
       "term": "sebut",
@@ -276,24 +258,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-39",
-      "lang": "ms",
-      "term": "ulang",
-      "gloss_en": "to repeat",
-      "gloss_ja": "繰り返す",
-      "pos": "verb",
-      "affix_tag": "root",
-      "note": "Hanashishou: Maaf, W... B? Ulang lagi? In 12 Hanashishou scenes: A sore throat, Asking the way, At the clinic, At the pharmacy and 8 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-talk"
-        }
-      ],
-      "scene": "dunia-jambatan-social-talk",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-40",
       "lang": "ms",
       "term": "begitu",
@@ -374,24 +338,6 @@
       "pos": "verb",
       "affix_tag": "root",
       "note": "Hanashishou: Lain kali, biar saya uruskan. In 8 Hanashishou scenes: House rules, Jom lepak!, Mock interview, Moving out and 4 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-talk"
-        }
-      ],
-      "scene": "dunia-jambatan-social-talk",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-social-49",
-      "lang": "ms",
-      "term": "hampir",
-      "gloss_en": "nearly, almost; near",
-      "gloss_ja": "ほとんど、もう少しで、近い",
-      "pos": "adv",
-      "affix_tag": "root",
-      "note": "Hanashishou: Lima minit pun tak boleh? Kami betul-betul hampir habis... In 8 Hanashishou scenes: House rules, How to play, Mock interview, Not as ordered and 4 more.",
       "links": [
         {
           "type": "babak",

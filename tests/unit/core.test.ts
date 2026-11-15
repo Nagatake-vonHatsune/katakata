@@ -288,7 +288,7 @@ describe('Hanashishou bridge', () => {
     const ids = content.scenes.filter((s) => s.world.id === 'jambatan').map((s) => s.id).sort();
     expect(ids).toEqual(['jambatan-daily-life', 'jambatan-health', 'jambatan-home-condo', 'jambatan-office', 'jambatan-social-events', 'jambatan-social-feelings', 'jambatan-social-talk', 'jambatan-tutorial']);
     const social = content.scenes.filter((s) => s.id.startsWith('jambatan-social-'));
-    expect(social.reduce((n, s) => n + s.cards.length, 0)).toBe(118);
+    expect(social.reduce((n, s) => n + s.cards.length, 0)).toBe(115); // 118 until beri, ulang and hampir moved to the chapter 4 ⚡ stage (15 Nov 2026)
     expect(social.every((s) => s.cards.every((c) => /^ms-j-social-\d+$/.test(c.id)))).toBe(true);
     expect(content.cards.get('ms-j-social-20')!.scene).toBe('dunia-jambatan-social-talk');
     expect(content.cards.get('ms-j-social-81')!.scene).toBe('dunia-jambatan-social-events');

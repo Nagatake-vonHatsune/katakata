@@ -24,42 +24,6 @@
   },
   "cards": [
     {
-      "id": "ms-j-home-condo-29",
-      "lang": "ms",
-      "term": "semula",
-      "gloss_en": "again, anew; back to the start",
-      "gloss_ja": "再び、元に戻して",
-      "pos": "adv",
-      "affix_tag": "root",
-      "note": "Hanashishou: Ya, buat semula. In 19 Hanashishou scenes: A parcel at the guardhouse, Another size, please, At the clinic, Booking the BBQ pit and 15 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-home-condo-30",
-      "lang": "ms",
-      "term": "biasa",
-      "gloss_en": "usual, ordinary; used to",
-      "gloss_ja": "普通の、いつもの、慣れている",
-      "pos": "adj",
-      "affix_tag": "root",
-      "note": "Hanashishou: Dompet biasa. In 9 Hanashishou scenes: Coffee with the chairperson, Jom lepak!, Lift chat, Monday catch-up and 5 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-home-condo-31",
       "lang": "ms",
       "term": "bangunan",

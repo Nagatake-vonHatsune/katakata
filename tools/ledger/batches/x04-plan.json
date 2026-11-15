@@ -1,0 +1,505 @@
+{
+ "chapter": 4,
+ "place": "Ch4 (extension)",
+ "changes": [
+  {
+   "lid": "L-1312",
+   "row": 1313,
+   "word": "beri",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-22",
+     "after": "ms-x04-001"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Talking and explaining",
+     "after": "Ch4 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1321",
+   "row": 1322,
+   "word": "semula",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-home-condo-29",
+     "after": "ms-x04-002"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Home and condo",
+     "after": "Ch4 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1331",
+   "row": 1332,
+   "word": "bantu",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-daily-life-42",
+     "after": "ms-x04-003"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Daily life",
+     "after": "Ch4 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1342",
+   "row": 1343,
+   "word": "ulang",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-39",
+     "after": "ms-x04-004"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Talking and explaining",
+     "after": "Ch4 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1351",
+   "row": 1352,
+   "word": "biasa",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-home-condo-30",
+     "after": "ms-x04-005"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Home and condo",
+     "after": "Ch4 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1359",
+   "row": 1360,
+   "word": "hampir",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-49",
+     "after": "ms-x04-006"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Talking and explaining",
+     "after": "Ch4 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1399",
+   "row": 1400,
+   "word": "sejam",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-office-44",
+     "after": "ms-x04-007"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · At work",
+     "after": "Ch4 (extension)"
+    }
+   ]
+  }
+ ],
+ "new": [
+  {
+   "lid": "L-1494",
+   "row": 1495,
+   "values": [
+    "L-1494",
+    "buang",
+    "throw away",
+    "捨てる",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x04-008",
+    "Ch4 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: daily routine (Ch4): «buang sampah»; root of «membuang» (Ch11). Hanashishou: 2 scenes; e.g. «Saya buang.» (wrong_order).",
+    "2026-11-15",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1495",
+   "row": 1496,
+   "values": [
+    "L-1495",
+    "setahun",
+    "a year",
+    "一年",
+    "noun",
+    "se-",
+    "tahun",
+    "Not yet checked",
+    "",
+    "ms-x04-009",
+    "Ch4 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: time (Ch4): se- with a time noun follows its base. Hanashishou: 2 scenes; e.g. «Saya dari Jepun, tapi dah setahun tinggal di KL.» (grab_ride_chat).",
+    "2026-11-15",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1496",
+   "row": 1497,
+   "values": [
+    "L-1496",
+    "tahunan",
+    "annual",
+    "年に一度の、年次の",
+    "adj",
+    "-an",
+    "tahun",
+    "Not yet checked",
+    "",
+    "ms-x04-010",
+    "Ch4 (extension)",
+    "health · band 1",
+    "Yes",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: time and frequency (Ch4): «cuti tahunan», «pemeriksaan tahunan». Hanashishou: 2 scenes; e.g. «Syarikat anda bayar untuk saringan kesihatan tahunan.» (blood_test). not spoken by a character or offered as a choice (narration).",
+    "2026-11-15",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1497",
+   "row": 1498,
+   "values": [
+    "L-1497",
+    "jadual",
+    "schedule",
+    "予定表、時間割",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x04-011",
+    "Ch4 (extension)",
+    "social · band 1",
+    "Yes",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: time and routine (Ch4). Hanashishou: 1 scene; e.g. «Jadual sebelum Khamis.» (trio_surprise_party).",
+    "2026-11-15",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1498",
+   "row": 1499,
+   "values": [
+    "L-1498",
+    "kerap",
+    "often",
+    "よく、頻繁に",
+    "adv",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x04-012",
+    "Ch4 (extension)",
+    "health · band 1",
+    "Yes",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: frequency (Ch4); formal partner of «selalu». Hanashishou: 1 scene; e.g. «Berapa kerap anda perlu buat regangan itu?» (physio_session). not spoken by a character or offered as a choice (narration).",
+    "2026-11-15",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1499",
+   "row": 1500,
+   "values": [
+    "L-1499",
+    "malam-malam",
+    "late at night",
+    "夜遅く",
+    "adv",
+    "lex",
+    "malam",
+    "Not yet checked",
+    "",
+    "ms-x04-013",
+    "Ch4 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: time (Ch4): reduplicated time word; malam Ch1. Hanashishou: 1 scene; e.g. «Maaf sangat ganggu malam-malam!» (new_neighbour).",
+    "2026-11-15",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1500",
+   "row": 1501,
+   "values": [
+    "L-1500",
+    "musim",
+    "season",
+    "季節",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x04-014",
+    "Ch4 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: time (Ch4): «musim hujan». Hanashishou: 1 scene; e.g. «Musim sejuk sana sejuk sangat ke?» (grab_ride_chat).",
+    "2026-11-15",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1501",
+   "row": 1502,
+   "values": [
+    "L-1501",
+    "pagi-pagi",
+    "early in the morning",
+    "朝早く",
+    "adv",
+    "lex",
+    "pagi",
+    "Not yet checked",
+    "",
+    "ms-x04-015",
+    "Ch4 (extension)",
+    "office · band 1",
+    "Yes",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: time (Ch4); pagi Ch1. Hanashishou: 1 scene; e.g. «Pagi-pagi pun dah mulut murai.» (pantry_banter).",
+    "2026-11-15",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1502",
+   "row": 1503,
+   "values": [
+    "L-1502",
+    "percutian",
+    "holiday",
+    "休暇、旅行",
+    "noun",
+    "pe-an",
+    "cuti",
+    "Not yet checked",
+    "",
+    "ms-x04-016",
+    "Ch4 (extension)",
+    "office · band 1",
+    "Yes",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: time off (Ch4, with the Dunia scene «Cuti ke pantai»); cuti Ch2. Hanashishou: 1 scene; e.g. «Kemudian, Mei Ling hantar mesej: \"Maaf pasal cerita percutian tadi 😅\".» (chatty_colleague). not spoken by a character or offered as a choice (game).",
+    "2026-11-15",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1503",
+   "row": 1504,
+   "values": [
+    "L-1503",
+    "seminit",
+    "a minute",
+    "一分",
+    "noun",
+    "se-",
+    "minit",
+    "Not yet checked",
+    "",
+    "ms-x04-017",
+    "Ch4 (extension)",
+    "home-condo · band 2",
+    "Yes",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: time (Ch4): se- with a time noun; minit Ch4. Hanashishou: 1 scene; e.g. «Ya, saya sudah cabut plag selama seminit dan hidupkan semula dua kali, tapi lampu masih merah.» (wifi_down).",
+    "2026-11-15",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1504",
+   "row": 1505,
+   "values": [
+    "L-1504",
+    "serentak",
+    "at the same time",
+    "同時に",
+    "adv",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x04-018",
+    "Ch4 (extension)",
+    "social · band 1",
+    "Yes",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: time (Ch4). Hanashishou: 1 scene; e.g. «Semua cakap serentak.» (trio_road_trip). not spoken by a character or offered as a choice (narration).",
+    "2026-11-15",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1505",
+   "row": 1506,
+   "values": [
+    "L-1505",
+    "siang",
+    "daytime",
+    "昼間",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x04-019",
+    "Ch4 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: time (Ch4): «siang hari». Hanashishou: 1 scene; e.g. «Anjing puan selalu bising waktu siang.» (barking_dog).",
+    "2026-11-15",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x04-001": {
+   "lid": "L-1312",
+   "moved_from": "ms-j-social-22"
+  },
+  "ms-x04-002": {
+   "lid": "L-1321",
+   "moved_from": "ms-j-home-condo-29"
+  },
+  "ms-x04-003": {
+   "lid": "L-1331",
+   "moved_from": "ms-j-daily-life-42"
+  },
+  "ms-x04-004": {
+   "lid": "L-1342",
+   "moved_from": "ms-j-social-39"
+  },
+  "ms-x04-005": {
+   "lid": "L-1351",
+   "moved_from": "ms-j-home-condo-30"
+  },
+  "ms-x04-006": {
+   "lid": "L-1359",
+   "moved_from": "ms-j-social-49"
+  },
+  "ms-x04-007": {
+   "lid": "L-1399",
+   "moved_from": "ms-j-office-44"
+  },
+  "ms-x04-008": {
+   "lid": "L-1494"
+  },
+  "ms-x04-009": {
+   "lid": "L-1495"
+  },
+  "ms-x04-010": {
+   "lid": "L-1496"
+  },
+  "ms-x04-011": {
+   "lid": "L-1497"
+  },
+  "ms-x04-012": {
+   "lid": "L-1498"
+  },
+  "ms-x04-013": {
+   "lid": "L-1499"
+  },
+  "ms-x04-014": {
+   "lid": "L-1500"
+  },
+  "ms-x04-015": {
+   "lid": "L-1501"
+  },
+  "ms-x04-016": {
+   "lid": "L-1502"
+  },
+  "ms-x04-017": {
+   "lid": "L-1503"
+  },
+  "ms-x04-018": {
+   "lid": "L-1504"
+  },
+  "ms-x04-019": {
+   "lid": "L-1505"
+  }
+ }
+}

@@ -366,24 +366,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-office-44",
-      "lang": "ms",
-      "term": "sejam",
-      "gloss_en": "one hour",
-      "gloss_ja": "1時間",
-      "pos": "noun",
-      "affix_tag": "se-",
-      "note": "Hanashishou: Salah. Awak lewat sejam. Tak boleh dimaafkan. In 5 Hanashishou scenes: Feedback on the slides, Fireworks on the roof, Mock interview, The new joiner and 1 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-office"
-        }
-      ],
-      "scene": "dunia-jambatan-office",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-office-45",
       "lang": "ms",
       "term": "utama",
