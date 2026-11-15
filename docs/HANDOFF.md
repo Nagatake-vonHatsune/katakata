@@ -1,15 +1,20 @@
 # Kata-Kata hand-off
 
-Last updated 15 Nov 2026 (Nombor & Masa, a standalone mode for numbers, days, dates, money and time, [report](NOMBOR-MASA-report.md); Stage 2 build step 6c-2 done: rules 909596e, bridge exemption removed, Social Jambatan split, In both, [report](STAGE-2-step6c2-report.md); step 6b: bridge batch in the ledger, Jambatan rebuilt, [report](STAGE-2-step6b-report.md); step 3f: rules sync and one card removed, [report](STAGE-2-step3f-report.md); step 3e: new ledger rows, «tandatangan», the chapter 10 picture game, [report](STAGE-2-step3e-report.md); step 3d [report](STAGE-2-step3d-report.md); step 3c [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
+Last updated 15 Nov 2026 (Build A: 🔥 checkpoints and the ⚡ stage, pilot ⚡ 4, [report](BUILD-A-report.md); Nombor & Masa, a standalone mode for numbers, days, dates, money and time, [report](NOMBOR-MASA-report.md); Stage 2 build step 6c-2 done: rules 909596e, bridge exemption removed, Social Jambatan split, In both, [report](STAGE-2-step6c2-report.md); step 6b: bridge batch in the ledger, Jambatan rebuilt, [report](STAGE-2-step6b-report.md); step 3f: rules sync and one card removed, [report](STAGE-2-step3f-report.md); step 3e: new ledger rows, «tandatangan», the chapter 10 picture game, [report](STAGE-2-step3e-report.md); step 3d [report](STAGE-2-step3d-report.md); step 3c [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
 Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-1.0.md).
 
 ## State
 
-- 48 live packs, 1441 cards: Kelas chapters 1 to 18 (chapter 18 is a review pack with no cards of its own), 22 Dunia scenes (20 Stage 1,
-  `hari-kerja-jiran` the chapter 10 picture scene, `kata-biasa` the practice pool), 8 Jambatan scenes (346 cards; Social is three scenes by topic, `jambatan-social-talk` 45, `-events` 46, `-feelings` 27; `jambatan-tutorial` has 2). 48 packs in all.
+- 49 live packs, 1453 cards: Kelas chapters 1 to 18 (chapter 18 is a review pack with no cards of its own), 22 Dunia scenes (20 Stage 1,
+  `hari-kerja-jiran` the chapter 10 picture scene, `kata-biasa` the practice pool), 8 Jambatan scenes (339 cards; Social is three scenes by topic, `jambatan-social-talk` 42, `-events` 46, `-feelings` 27; `jambatan-tutorial` has 2), and one ⚡ stage, `x04` (19 cards). 49 packs in all.
+- **🔥 and ⚡ (Build A, [report](BUILD-A-report.md)):** three checkpoints per chapter (`checkpoints()` in `src/core/progress.ts`: 'ready', 'dialogue', 'chapter';
+  chapter 18 has two), the chip and ⚡ screen in `src/views/stretch.ts` (route `#/sedia/N/x`), the reply step in `src/games/reply/`, decoys in Susun Ayat.
+  A ⚡ stage is `content/ms/stretch/xNN.json`, built by `tools/build_stretch.py N` from the ledger's «ChN (extension)» rows and `content/source/stretch/xNN.json`;
+  add `xNN` to `live_stretch`. New ⚡ rows: `tools/ledger/stretch_batch.py plan N` (from the proposal CSV), `apply`, then the sheet write
+  (insert_dimension, update_values, read back, `verify`). Promoted Jambatan rows: add their old IDs to `RETIRED_IDS` and `MOVED_CARDS` (`src/core/state.ts`).
 - Workbook: `content/source/2026-11-13_KataKata_VocabBank_v6.xlsx`, built by `tools/make_vocab_bank_v6.py` (v5 + chapters 10 to 18).
-- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the step 6c-2 write-back (L-0001 to L-1493; chapter 18 has no ledger cells).
-- Affix guard: stage-aware, rules from Cikgu Sensai `909596e` (`content/rules/`, 95 fixtures incl. `expect_gaps` / `expect_no_gaps`, all agree; no known divergences; 0 flags). The checker follows Cikgu Sensai's `language_checks.py` at `a235a35`: a placed row is checked whole from its own chapter, a row with no chapter is never a root and counts as no row in a chaptered unit; the step 6b bridge-batch exemption is gone. It matches two-word disallowed forms («tanda tangan») as Cikgu Sensai's does.
+- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the ⚡ 4 write-back (L-0001 to L-1505; chapter 18 has no ledger cells). It includes the Nombor & Masa ledger edits of 15 Nov (L-0141 «satu pertiga», L-1410 «hari bulan»), whose card follow-ups (ms-c03-043, ms-j-daily-life-52) are not done: the Jambatan importer would now rename ms-j-daily-life-52.
+- Affix guard: stage-aware, rules from Cikgu Sensai `fc7dec4` (`content/rules/`, 104 fixtures incl. `expect_gaps` / `expect_no_gaps`, `ledger_rows` and `extension`, all agree; no known divergences; 0 flags). ⚡ packs use Kata-Kata's own-chapter extension view (`Checker` option `extension: N`). The checker follows Cikgu Sensai's `language_checks.py` at `a235a35`: a placed row is checked whole from its own chapter, a row with no chapter is never a root and counts as no row in a chaptered unit; the step 6b bridge-batch exemption is gone. It matches two-word disallowed forms («tanda tangan») as Cikgu Sensai's does.
 - Jambatan (step 6b): `python3 -I tools/import_hanashishou_bridge.py ../hanashishou` (Hanashishou at `4be57ac`) builds the eight packs from the ledger
   and `content/bridge/hanashishou-metfirst.json` (Hanashishou's audit, remade with `tools/bridge-metfirst.sh ../hanashishou` when the ledger or its scenes
   change). The ledger's card column is the ID registry; a second run is identical, before or after a write-back. `RETIRED_IDS` in the importer lists dropped IDs never to reuse.
@@ -26,13 +31,13 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
   The day-part boundaries in `DAY_PARTS` are a proposal; `QUIZ_HOURS` keeps questions away from the edges. The mode uses no ⚡ or 🔥 (reserved
   for the chapter stretch stage). It adds no cards and no ledger cells. Every generated string passes the shared `malaysian-form` check and the
   mode's own `INDONESIAN_NUMBER_FORMS` list. Open questions: [NOMBOR-MASA-report.md](NOMBOR-MASA-report.md) section 4.
-- Checks: `npm run check && node tests/e2e/smoke.cjs && node tests/e2e/fun.cjs && node tests/e2e/nombor.cjs` (against `vite preview --port 4173`).
+- Checks: `npm run check && node tests/e2e/smoke.cjs && node tests/e2e/fun.cjs && node tests/e2e/nombor.cjs && node tests/e2e/stretch.cjs` (against `vite preview --port 4173`).
 
 ## Backlog
 
 - Nombor & Masa, Sam to answer: the day-part boundaries, «kurang suku», «haribulan» or «hari bulan», «pertiga» or «per tiga» (ledger L-0141), «minit» after the minutes, the draft hooks (en and ja); see the report section 4. Kamus Dewan and the UKM kit could not be reached from the session (network).
 
-- **Vocabulary placement and the ⚡ stage (proposal, 15 Nov 2026):** [VOCAB-PLACEMENT-proposal-report.md](VOCAB-PLACEMENT-proposal-report.md), the CSV and [STRETCH-STAGE-design.md](STRETCH-STAGE-design.md). Documents only; waits for Claude's review and Sam's answers (report section 10) before any build phase. Nothing in the ledger, packs or app changed.
+- **⚡ stage, Build B** (the other 16 chapters' ⚡ content, 354 more rows): see [BUILD-A-report.md](BUILD-A-report.md) section 9 and the proposal ([report](VOCAB-PLACEMENT-proposal-report.md), CSV, [design](STRETCH-STAGE-design.md)). Build A built the engine and ⚡ 4 only.
 - Look at the three Social Jambatan scenes on a phone; Sam may move words between them (`SOCIAL_SPLIT`). Open questions: [STAGE-2-step6c2-report.md](STAGE-2-step6c2-report.md) (L-1308 and L-1309 In both; the rule 1 deviation).
 - Cikgu Sensai should refresh its ledger copy (118 places, 264 In both cells since e4e294d).
 - The end-of-project Kamus Dewan and native Japanese checks (the step 3e notes, the picture-scene and practice-pool drafts included).

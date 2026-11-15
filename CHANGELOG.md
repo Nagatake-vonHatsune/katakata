@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+- **Build A: 🔥 checkpoints and the ⚡ stage, pilot ⚡ 4 (15 Nov 2026), 48 to 49 packs, 1441 to 1453 cards.** Report: [docs/BUILD-A-report.md](docs/BUILD-A-report.md).
+  - Rules re-pinned to Cikgu Sensai `fc7dec4` (104 fixtures; `ledger_rows` and `extension` supported; all agree).
+  - Three 🔥 per chapter (class prep, the chapter dialogue played once with the new reply step, every word known; chapter 18 has two), lit by stamp or condition and never put out; a segmented bar on the Sedia list, the chapter screen and Home; flames in Rekod; new stamps 'dialogue' and 'stretch'.
+  - When every 🔥 is lit, a blue «{n} ⚡» chip opens the chapter's ⚡ stage (no other name in the UI): extension words, harder frames with decoy tiles, a dialogue with reply steps. Blue tokens in all 8 themes (contrast tested); Rebel never fills ⚡.
+  - ⚡ 4: 19 cards (12 new ledger rows L-1494 to L-1505, 7 promoted from Jambatan with their schedule moved to the new IDs), 6 frames, 14 lines with 5 reply steps. Jambatan 346 to 339 cards.
+  - Laju! is ⏱️ (was ⚡). `state.lines` added (schemaVersion stays 1); savefile merge keeps one chapter stamp per kind and chapter.
+  - Tests: 32 new unit tests; `tests/e2e/stretch.cjs` (screenshots in `docs/stretch-stage/`).
+
 - **Nombor & Masa: a standalone mode for numbers, days, months and dates, fractions, decimals and percent, money and time (15 Nov 2026).** Report: [docs/NOMBOR-MASA-report.md](docs/NOMBOR-MASA-report.md).
   - On the home screen (🔢), open from day one, practice only (the review schedule never changes). Six parts, each with an explorer (roll the numbers, tap the week, turn the calendar, fraction pies, price tags, a clock with draggable hands and a spin), a chart, two draft memory hooks (en and ja) and an 8-question round: read (pick the Malay), pick (read the Malay, pick the number, clock, date, day or price) and build (from word blocks, in numbers and money).
   - Standard first, spoken marked (Sam, 15 Nov 2026): RM4.50 «empat ringgit lima puluh sen», spoken «empat ringgit setengah»; 3:30 pm «pukul tiga setengah petang» or «pukul tiga tiga puluh petang». 0 is «kosong» (everyday) and «sifar» (formal); phone numbers digit by digit; «haribulan» shown as a date variant. No 24-hour reading, no «jam» for the clock time; «kurang suku» left out (no source checked yet).

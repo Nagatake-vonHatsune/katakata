@@ -30,7 +30,8 @@ and Japanese glosses). Katakana hints only appear in the Japanese interface.
 | Teacher Desk: merge, duplicate counts, prep table, weakest words, A4 agenda | `teacher/`, `src/teacher/` |
 | Offline after first visit | service worker generated at build (`src/sw-template.js`) |
 | 話匠へ: hand words on to Hanashishou (stage 3, Jambatan) | `src/core/bridge.ts`, `src/views/jambatan.ts` |
-| Points (speed bonus, combo, personal bests; never subtracted) and the 60-second Laju! round | `src/core/score.ts`, `src/views/points.ts`, `src/views/laju.ts` |
+| 🔥 checkpoints per chapter (class prep, the chapter dialogue played once, every word known) and the optional ⚡ stage («4 ⚡»: extension words, harder frames with decoy tiles, a dialogue with reply steps) | `src/core/progress.ts`, `src/core/session.ts`, `src/views/stretch.ts`, `src/games/reply/` |
+| Points (speed bonus, combo, personal bests; never subtracted) and the 60-second Laju! ⏱️ round | `src/core/score.ts`, `src/views/points.ts`, `src/views/laju.ts` |
 | Colour palettes (Kancil Green, First Sound Cyan, Royal Red Gold, Rebel Blue) and text size S–XL | `src/views/settings.ts`, `src/styles.css` |
 
 Also in: Japanese-first UI with an English toggle, やり方 cards and a `?` button on every activity,
@@ -68,9 +69,13 @@ affix_tag, note, links[], scene, chapter, image`.
   - stage-aware affix guard: the rules (affix gates, whole words, look-alike roots, register pairs, Indonesian forms) are an
     unedited copy of Cikgu Sensai's `curriculum/stage-rules.json` in `content/rules/` (source commit in `SOURCE.json`), read by
     `tools/stage-rules.mjs`. Every text is checked at its own chapter; chunk exemptions count only from their own chapter.
-    Stage 2 packs (chapter 10 on) must also use only ledger words placed by their chapter. The 72 shared fixtures run in the
-    unit tests. Check a line before writing it: `node tools/stage-check.mjs 10 "Pukul berapa kita bertolak?"`
+    Stage 2 packs (chapter 10 on) and ⚡ packs must also use only ledger words placed by their chapter. The 104 shared fixtures run
+    in the unit tests. Check a line before writing it: `node tools/stage-check.mjs 10 "Pukul berapa kita bertolak?"`
   - link check (targets exist; pair links only to same or earlier chapter)
+- ⚡ stages: `content/ms/stretch/xNN.json` (kind `stretch`), built by `python3 -I tools/build_stretch.py N` from the ledger
+  rows placed «ChN (extension)» and the hand-written `content/source/stretch/xNN.json`; shipped through `live_stretch` in
+  `tools/import-overrides.json`. Only ⚡ 4 exists (pilot, 15 Nov 2026). The guard checks a ⚡ pack at its chapter with only its own
+  extension rows placed, every check blocking; core packs read extension rows as no row. See [docs/BUILD-A-report.md](docs/BUILD-A-report.md).
 - Recorded audio (plan B for phones without a Malay voice): `public/audio/ms/<card-id>.mp3`
 
 **All Japanese text (glosses, frame meanings, scene titles, interface) is a Claude draft and needs a native check before students see it. The Malay interface (`i18n/ms.json`) and the v3/v4 scenes are Claude drafts too.**
@@ -89,6 +94,8 @@ End-to-end smoke test (onboarding → session → ask teacher → send → Teach
 npx vite build && npx vite preview --port 4173 &
 node tests/e2e/smoke.cjs
 node tests/e2e/fun.cjs     # points, Laju!, palettes, text size
+node tests/e2e/nombor.cjs  # Nombor & Masa (screenshots to docs/nombor-masa/)
+node tests/e2e/stretch.cjs # 🔥 checkpoints and ⚡ 4 (screenshots to docs/stretch-stage/)
 ```
 
 ## Deploy (Cloudflare Workers static assets, free plan)
