@@ -1533,6 +1533,167 @@
      "extension": true
     }
    ]
+  },
+  {
+   "id": "indonesian-nol-fails",
+   "why": "disallowed teaching form; use kosong / sifar (Sam, 15 Nov 2026)",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Nombor itu nol.",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "malaysian-nol-passes",
+   "why": "the Malaysian form (kosong / sifar) is not caught (Sam, 15 Nov 2026)",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Nombor itu kosong.",
+     "chapter": 12
+    }
+   ]
+  },
+  {
+   "id": "indonesian-maret-fails",
+   "why": "disallowed teaching form; use Mac (Sam, 15 Nov 2026)",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Saya lahir pada bulan Maret.",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "malaysian-maret-passes",
+   "why": "the Malaysian form (Mac) is not caught (Sam, 15 Nov 2026)",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Saya lahir pada bulan Mac.",
+     "chapter": 12
+    }
+   ]
+  },
+  {
+   "id": "indonesian-juni-fails",
+   "why": "disallowed teaching form; use Jun (Sam, 15 Nov 2026)",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Kami bercuti pada bulan Juni.",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "malaysian-juni-passes",
+   "why": "the Malaysian form (Jun) is not caught (Sam, 15 Nov 2026)",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Kami bercuti pada bulan Jun.",
+     "chapter": 12
+    }
+   ]
+  },
+  {
+   "id": "indonesian-juli-fails",
+   "why": "disallowed teaching form; use Julai (Sam, 15 Nov 2026)",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Dia datang pada bulan Juli.",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "malaysian-juli-passes",
+   "why": "the Malaysian form (Julai) is not caught (Sam, 15 Nov 2026)",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Dia datang pada bulan Julai.",
+     "chapter": 12
+    }
+   ]
+  },
+  {
+   "id": "indonesian-agustus-fails",
+   "why": "disallowed teaching form; use Ogos (Sam, 15 Nov 2026)",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Hari itu bulan Agustus.",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "malaysian-agustus-passes",
+   "why": "the Malaysian form (Ogos) is not caught (Sam, 15 Nov 2026)",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Hari itu bulan Ogos.",
+     "chapter": 12
+    }
+   ]
+  },
+  {
+   "id": "indonesian-desember-fails",
+   "why": "disallowed teaching form; use Disember (Sam, 15 Nov 2026)",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Kami pulang pada bulan Desember.",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "malaysian-desember-passes",
+   "why": "the Malaysian form (Disember) is not caught (Sam, 15 Nov 2026)",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Kami pulang pada bulan Disember.",
+     "chapter": 12
+    }
+   ]
+  },
+  {
+   "id": "indonesian-persen-fails",
+   "why": "disallowed teaching form; use peratus (Sam, 15 Nov 2026)",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Harga turun lima persen.",
+     "chapter": 12
+    }
+   ],
+   "check": "malaysian-form"
+  },
+  {
+   "id": "malaysian-persen-passes",
+   "why": "the Malaysian form (peratus) is not caught (Sam, 15 Nov 2026)",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Harga turun lima peratus.",
+     "chapter": 12
+    }
+   ]
   }
  ]
 }
