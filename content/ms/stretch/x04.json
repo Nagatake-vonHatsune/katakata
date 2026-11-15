@@ -1,0 +1,550 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x04",
+  "chapter": 4,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Masa dan Kala",
+    "en": "Time and tense",
+    "ja": "時間と時制"
+  },
+  "cards": [
+    {
+      "id": "ms-x04-001",
+      "lang": "ms",
+      "term": "beri",
+      "gloss_en": "to give",
+      "gloss_ja": "与える、くれる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Also in Hanashishou. «Saya beri buku ini.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-002",
+      "lang": "ms",
+      "term": "semula",
+      "gloss_en": "again, anew; back to the start",
+      "gloss_ja": "再び、元に戻して",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "After the verb: «baca semula» = read again.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-003",
+      "lang": "ms",
+      "term": "bantu",
+      "gloss_en": "to help, assist",
+      "gloss_ja": "手伝う、助ける",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "«Boleh saya bantu?» = Can I help?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-004",
+      "lang": "ms",
+      "term": "ulang",
+      "gloss_en": "to repeat",
+      "gloss_ja": "繰り返す",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "«Boleh ulang sekali lagi?» = Could you say it once more?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-005",
+      "lang": "ms",
+      "term": "biasa",
+      "gloss_en": "usual, ordinary; used to",
+      "gloss_ja": "普通の、いつもの、慣れている",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Compare «biasanya» (Ch4) = usually.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-006",
+      "lang": "ms",
+      "term": "hampir",
+      "gloss_en": "nearly, almost; near",
+      "gloss_ja": "ほとんど、もう少しで、近い",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "«hampir pukul lima» = nearly five o'clock.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-007",
+      "lang": "ms",
+      "term": "sejam",
+      "gloss_en": "one hour",
+      "gloss_ja": "1時間",
+      "pos": "noun",
+      "affix_tag": "se-",
+      "note": "se- + jam (Ch4) = one hour.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-008",
+      "lang": "ms",
+      "term": "buang",
+      "gloss_en": "throw away",
+      "gloss_ja": "捨てる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "«Saya buang.» = I will throw it away.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-009",
+      "lang": "ms",
+      "term": "setahun",
+      "gloss_en": "a year",
+      "gloss_ja": "一年",
+      "pos": "noun",
+      "affix_tag": "se-",
+      "note": "se- + tahun (Ch3) = one year. «setahun sekali» = once a year.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-010",
+      "lang": "ms",
+      "term": "tahunan",
+      "gloss_en": "annual",
+      "gloss_ja": "年に一度の、年次の",
+      "pos": "adj",
+      "affix_tag": "-an",
+      "note": "tahun (Ch3) + -an. «cuti tahunan» = annual leave.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-011",
+      "lang": "ms",
+      "term": "jadual",
+      "gloss_en": "schedule",
+      "gloss_ja": "予定表、時間割",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "«jadual mesyuarat» = the meeting schedule.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-012",
+      "lang": "ms",
+      "term": "kerap",
+      "gloss_en": "often",
+      "gloss_ja": "よく、頻繁に",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Formal partner of «selalu» (Ch4).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-013",
+      "lang": "ms",
+      "term": "malam-malam",
+      "gloss_en": "late at night",
+      "gloss_ja": "夜遅く",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "malam (Ch1), said twice: late at night.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-014",
+      "lang": "ms",
+      "term": "musim",
+      "gloss_en": "season",
+      "gloss_ja": "季節",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "«musim hujan» = the rainy season.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-015",
+      "lang": "ms",
+      "term": "pagi-pagi",
+      "gloss_en": "early in the morning",
+      "gloss_ja": "朝早く",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "pagi (Ch1), said twice: early in the morning.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-016",
+      "lang": "ms",
+      "term": "percutian",
+      "gloss_en": "holiday",
+      "gloss_ja": "休暇、旅行",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "pe-an + cuti (Ch2): a holiday, a trip.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-017",
+      "lang": "ms",
+      "term": "seminit",
+      "gloss_en": "a minute",
+      "gloss_ja": "一分",
+      "pos": "noun",
+      "affix_tag": "se-",
+      "note": "se- + minit (Ch4) = one minute.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-018",
+      "lang": "ms",
+      "term": "serentak",
+      "gloss_en": "at the same time",
+      "gloss_ja": "同時に",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Two things at the same time.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    },
+    {
+      "id": "ms-x04-019",
+      "lang": "ms",
+      "term": "siang",
+      "gloss_en": "daytime",
+      "gloss_ja": "昼間",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "«siang hari» = in the daytime.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x04"
+        }
+      ],
+      "scene": "stretch-x04",
+      "chapter": 4
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-x04-f01",
+      "frame": "Saya ___ ___ semula selepas ___.",
+      "example": "Saya baca buku itu semula selepas makan malam.",
+      "meaning_en": "I read that book again after dinner.",
+      "meaning_ja": "夕食の後、その本をもう一度読みます。",
+      "decoys": [
+        "sebelum"
+      ]
+    },
+    {
+      "id": "ms-x04-f02",
+      "frame": "___ sekali, ___ datang dari ___.",
+      "example": "Setahun sekali, keluarga saya datang dari Jepun.",
+      "meaning_en": "Once a year, my family comes from Japan.",
+      "meaning_ja": "年に一度、家族が日本から来ます。",
+      "decoys": [
+        "sejam"
+      ]
+    },
+    {
+      "id": "ms-x04-f03",
+      "frame": "Sekarang sudah hampir pukul ___ dan saya masih ___.",
+      "example": "Sekarang sudah hampir pukul sebelas malam dan saya masih di pejabat.",
+      "meaning_en": "It's nearly 11 p.m. and I'm still at the office.",
+      "meaning_ja": "もうすぐ夜11時ですが、まだ会社にいます。",
+      "decoys": [
+        "belum"
+      ]
+    },
+    {
+      "id": "ms-x04-f04",
+      "frame": "___ ___ kerap ___ malam-malam.",
+      "example": "Minggu ini dia kerap balik dari pejabat malam-malam.",
+      "meaning_en": "This week he often comes home from the office late at night.",
+      "meaning_ja": "今週、彼はよく夜遅くに会社から帰ります。",
+      "decoys": [
+        "jarang"
+      ]
+    },
+    {
+      "id": "ms-x04-f05",
+      "frame": "Boleh ___ ulang sekali lagi? Saya belum ___.",
+      "example": "Boleh Encik ulang sekali lagi? Saya belum faham.",
+      "meaning_en": "Could you say it once more? I don't understand yet.",
+      "meaning_ja": "もう一度言っていただけますか。まだわかりません。",
+      "decoys": [
+        "sudah"
+      ]
+    },
+    {
+      "id": "ms-x04-f06",
+      "frame": "___ ___ saya akan beri ___ ___.",
+      "example": "Esok pagi saya akan beri Encik jadual baru.",
+      "meaning_en": "Tomorrow morning I'll give you the new schedule.",
+      "meaning_ja": "明日の朝、新しい予定表をお渡しします。",
+      "decoys": [
+        "semalam"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "An early start",
+    "title_ja": "朝早い一日",
+    "lines": [
+      {
+        "id": "ms-x04-d01",
+        "speaker": "Puan Aini",
+        "ms": "Selamat pagi, Encik Tanaka. Encik datang awal hari ini!",
+        "en": "Good morning, Mr Tanaka. You're early today!"
+      },
+      {
+        "id": "ms-x04-d02",
+        "speaker": "Tanaka",
+        "ms": "Selamat pagi, Puan. Ya, saya bangun pagi-pagi. Mesyuarat mula pukul berapa?",
+        "en": "Good morning. Yes, I got up early. What time does the meeting start?",
+        "choices": [
+          "Selamat malam, Puan. Saya baru bangun.",
+          "Selamat pagi, Puan. Saya datang lambat hari ini."
+        ],
+        "choices_en": [
+          "Good evening. I've only just got up.",
+          "Good morning. I came late today."
+        ]
+      },
+      {
+        "id": "ms-x04-d03",
+        "speaker": "Puan Aini",
+        "ms": "Pukul sembilan. Sekarang sudah hampir pukul lapan setengah.",
+        "en": "At nine. It's nearly half past eight now."
+      },
+      {
+        "id": "ms-x04-d04",
+        "speaker": "Tanaka",
+        "ms": "Baik. Boleh saya bantu Puan?",
+        "en": "Okay. Can I help you?",
+        "choices": [
+          "Baik. Saya tidur dulu.",
+          "Baik. Mesyuarat sudah habis semalam."
+        ],
+        "choices_en": [
+          "Okay. I'll sleep first.",
+          "Okay. The meeting finished yesterday."
+        ]
+      },
+      {
+        "id": "ms-x04-d05",
+        "speaker": "Puan Aini",
+        "ms": "Terima kasih. Boleh Encik cetak jadual ini?",
+        "en": "Thank you. Could you print this schedule?"
+      },
+      {
+        "id": "ms-x04-d06",
+        "speaker": "Tanaka",
+        "ms": "Boleh. Saya cetak sekarang.",
+        "en": "Sure. I'll print it now.",
+        "choices": [
+          "Boleh. Saya cetak tahun depan.",
+          "Belum. Saya sudah cetak semalam."
+        ],
+        "choices_en": [
+          "Sure. I'll print it next year.",
+          "Not yet. I printed it yesterday."
+        ]
+      },
+      {
+        "id": "ms-x04-d07",
+        "speaker": "Puan Aini",
+        "ms": "Encik Rahman datang lambat hari ini. Dia akan sampai pukul sembilan suku.",
+        "en": "Mr Rahman is coming late today. He'll arrive at a quarter past nine."
+      },
+      {
+        "id": "ms-x04-d08",
+        "speaker": "Tanaka",
+        "ms": "Baik, kita tunggu dia sekejap.",
+        "en": "Okay, we'll wait for him a moment."
+      },
+      {
+        "id": "ms-x04-d09",
+        "speaker": "Puan Aini",
+        "ms": "Ya. Selepas mesyuarat, saya mula cuti tahunan.",
+        "en": "Yes. After the meeting, my annual leave starts."
+      },
+      {
+        "id": "ms-x04-d10",
+        "speaker": "Tanaka",
+        "ms": "Wah, seronok! Percutian di mana?",
+        "en": "Wow, nice! Where's the holiday?",
+        "choices": [
+          "Wah, seronok! Mesyuarat di mana?",
+          "Wah, seronok! Puan selalu datang lambat."
+        ],
+        "choices_en": [
+          "Wow, nice! Where's the meeting?",
+          "Wow, nice! You always come late."
+        ]
+      },
+      {
+        "id": "ms-x04-d11",
+        "speaker": "Puan Aini",
+        "ms": "Di pantai, dengan keluarga saya. Kami pergi setahun sekali.",
+        "en": "At the beach, with my family. We go once a year."
+      },
+      {
+        "id": "ms-x04-d12",
+        "speaker": "Tanaka",
+        "ms": "Sekarang musim hujan. Bawa payung, Puan!",
+        "en": "It's the rainy season now. Take an umbrella!"
+      },
+      {
+        "id": "ms-x04-d13",
+        "speaker": "Encik Rahman",
+        "ms": "Maaf, saya lambat! Jom, kita mula sekarang.",
+        "en": "Sorry I'm late! Come on, let's start now."
+      },
+      {
+        "id": "ms-x04-d14",
+        "speaker": "Tanaka",
+        "ms": "Baik, Encik. Saya sudah cetak jadual mesyuarat.",
+        "en": "Okay. I've printed the meeting schedule.",
+        "choices": [
+          "Baik, Encik. Saya akan cetak jadual semalam.",
+          "Baik, Encik. Saya belum bangun."
+        ],
+        "choices_en": [
+          "Okay. I will print the schedule yesterday.",
+          "Okay. I haven't got up yet."
+        ]
+      }
+    ]
+  }
+}

@@ -1,5 +1,8 @@
 {
   "_note": "Hand-written additions merged by import_vocab_bank.py. All Japanese here is a Claude draft: it needs a native check before students see it (spec section 13).",
+  "live_stretch": [
+    "x04"
+  ],
   "live_kelas": [
     "c01",
     "c02",
