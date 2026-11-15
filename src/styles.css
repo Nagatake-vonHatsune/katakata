@@ -12,6 +12,10 @@
   --ok: #2f6b4f;
   --ok-soft: #dcebe2;
   --neutral: #3f5a8a;
+  /* ⚡ stage accent (design note section 3): text and fills, text on a fill, the chip and band background */
+  --stretch: #1a5bc8;
+  --stretch-ink: #ffffff;
+  --stretch-soft: #e3ecfb;
   --neutral-soft: #e3e9f4;
   --hanko: #c0392b;
   --danger: #a23b2a;
@@ -36,6 +40,10 @@
     --ok: #7fd3a4;
     --ok-soft: #1f3a2d;
     --neutral: #9db7ea;
+    /* ⚡ stage accent (design note section 3): text and fills, text on a fill, the chip and band background */
+    --stretch: #7cb4ff;
+    --stretch-ink: #08142b;
+    --stretch-soft: #1b2b45;
     --neutral-soft: #223047;
     --hanko: #ff7a6b;
     --danger: #ff8a78;
@@ -58,6 +66,10 @@
   --ok: #7fd3a4;
   --ok-soft: #1f3a2d;
   --neutral: #9db7ea;
+  /* ⚡ stage accent (design note section 3): text and fills, text on a fill, the chip and band background */
+  --stretch: #7cb4ff;
+  --stretch-ink: #08142b;
+  --stretch-soft: #1b2b45;
   --neutral-soft: #223047;
   --hanko: #ff7a6b;
   --danger: #ff8a78;
@@ -83,6 +95,10 @@
   --ok: #0e716b;
   --ok-soft: #d3eeeb;
   --neutral: #3f5a8a;
+  /* ⚡ stage accent (design note section 3): text and fills, text on a fill, the chip and band background */
+  --stretch: #1d55c4;
+  --stretch-ink: #ffffff;
+  --stretch-soft: #e2eafb;
   --neutral-soft: #e3e9f4;
   color-scheme: light;
 }
@@ -101,6 +117,10 @@
     --ok: #5fdacf;
     --ok-soft: #133b38;
     --neutral: #a9b8f0;
+    /* ⚡ stage accent (design note section 3): text and fills, text on a fill, the chip and band background */
+    --stretch: #86b8ff;
+    --stretch-ink: #071a33;
+    --stretch-soft: #1a2a47;
     --neutral-soft: #232c48;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     color-scheme: dark;
@@ -120,6 +140,10 @@
   --ok: #5fdacf;
   --ok-soft: #133b38;
   --neutral: #a9b8f0;
+  /* ⚡ stage accent (design note section 3): text and fills, text on a fill, the chip and band background */
+  --stretch: #86b8ff;
+  --stretch-ink: #071a33;
+  --stretch-soft: #1a2a47;
   --neutral-soft: #232c48;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   color-scheme: dark;
@@ -140,6 +164,10 @@
   --ok: #7a5a0c;
   --ok-soft: #f6ebd2;
   --neutral: #3f5a8a;
+  /* ⚡ stage accent (design note section 3): text and fills, text on a fill, the chip and band background */
+  --stretch: #1f4fbf;
+  --stretch-ink: #ffffff;
+  --stretch-soft: #e3e9fa;
   --neutral-soft: #e3e9f4;
   color-scheme: light;
 }
@@ -158,6 +186,10 @@
     --ok: #f2c14e;
     --ok-soft: #3a2f12;
     --neutral: #9db7ea;
+    /* ⚡ stage accent (design note section 3): text and fills, text on a fill, the chip and band background */
+    --stretch: #8ab4ff;
+    --stretch-ink: #0a1530;
+    --stretch-soft: #1f2a4a;
     --neutral-soft: #223047;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     color-scheme: dark;
@@ -177,6 +209,10 @@
   --ok: #f2c14e;
   --ok-soft: #3a2f12;
   --neutral: #9db7ea;
+  /* ⚡ stage accent (design note section 3): text and fills, text on a fill, the chip and band background */
+  --stretch: #8ab4ff;
+  --stretch-ink: #0a1530;
+  --stretch-soft: #1f2a4a;
   --neutral-soft: #223047;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   color-scheme: dark;
@@ -197,6 +233,10 @@
   --ok: #b0136f;
   --ok-soft: #fbe0ef;
   --neutral: #4a5170;
+  /* ⚡ stage accent (design note section 3): text and fills, text on a fill, the chip and band background */
+  --stretch: #0064a8;
+  --stretch-ink: #ffffff;
+  --stretch-soft: #dcedf8;
   --neutral-soft: #e6e8f0;
   color-scheme: light;
 }
@@ -215,6 +255,10 @@
     --ok: #ff6fc1;
     --ok-soft: #3a1530;
     --neutral: #b9c0dc;
+    /* ⚡ stage accent (design note section 3): text and fills, text on a fill, the chip and band background */
+    --stretch: #5fd0ff;
+    --stretch-ink: #03192a;
+    --stretch-soft: #0f3047;
     --neutral-soft: #262c45;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     color-scheme: dark;
@@ -234,6 +278,10 @@
   --ok: #ff6fc1;
   --ok-soft: #3a1530;
   --neutral: #b9c0dc;
+  /* ⚡ stage accent (design note section 3): text and fills, text on a fill, the chip and band background */
+  --stretch: #5fd0ff;
+  --stretch-ink: #03192a;
+  --stretch-soft: #0f3047;
   --neutral-soft: #262c45;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   color-scheme: dark;
@@ -1821,3 +1869,216 @@ button.nm-rel-cell { cursor: pointer; }
 .nm-voice-note:empty { display: none; }
 @media (prefers-reduced-motion: reduce) { .nm-flip, .nm-pop { animation: none; } }
 .nm-rel-cell b { font-size: 0.92rem; overflow-wrap: anywhere; }
+
+/* 🔥 checkpoint bar (docs/STRETCH-STAGE-design.md section 2): one track, one segment per checkpoint, a mark at each end */
+.cp {
+  position: relative;
+  padding: 4px 0;
+  margin-right: 14px;
+}
+
+.cp-bar {
+  display: flex;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+.cp-seg {
+  height: 100%;
+  border-right: 2px solid var(--surface);
+  box-sizing: border-box;
+}
+
+.cp-seg:last-child {
+  border-right: 0;
+}
+
+.cp-fill {
+  height: 100%;
+  background: var(--brand);
+  transition: width 0.3s ease;
+}
+
+.cp-marks {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.cp-mark {
+  position: absolute;
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  margin-left: -11px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 2px solid var(--muted);
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.cp-mark.lit {
+  border-color: transparent;
+  background: transparent;
+  font-size: 1.1rem;
+}
+
+.cp-status {
+  color: var(--text);
+}
+
+/* Sedia Kelas list: the chapter button and, once every 🔥 is lit, the ⚡ chip beside it */
+.sedia-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.sedia-row > .list-item {
+  flex: 1;
+  min-width: 0;
+}
+
+.stretch-chip {
+  flex: 0 0 auto;
+  min-width: var(--tap);
+  min-height: var(--tap);
+  padding: 6px 8px;
+  border-radius: var(--radius);
+  border: 2px solid var(--stretch);
+  background: var(--stretch-soft);
+  color: var(--stretch);
+  font: inherit;
+  font-weight: 800;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.stretch-chip:focus-visible,
+.btn-stretch:focus-visible {
+  outline: 3px solid var(--stretch);
+  outline-offset: 2px;
+}
+
+.stretch-entry {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* The ⚡ screen */
+.stretch-band {
+  background: var(--stretch-soft);
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  border: 1.5px solid var(--stretch);
+}
+
+.stretch-band h2 {
+  margin: 0 0 4px;
+  color: var(--stretch);
+}
+
+.stretch-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.stretch-bar {
+  flex: 1;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+.stretch-bar-fill {
+  height: 100%;
+  background: var(--stretch);
+  border-radius: 999px;
+}
+
+.stretch-count {
+  color: var(--stretch);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.btn-stretch {
+  background: var(--stretch);
+  border-color: var(--stretch);
+  color: var(--stretch-ink);
+}
+
+.stretch-outline {
+  border-color: var(--stretch);
+  color: var(--stretch);
+}
+
+/* Rebel's brand is already blue: ⚡ never takes the filled brand-button look there (design note section 3) */
+:root[data-palette='rebel'] .btn-stretch {
+  background: var(--stretch-soft);
+  color: var(--stretch);
+  border-width: 2px;
+}
+
+.stretch-note,
+.stretch-mark,
+.stretch-open {
+  color: var(--stretch);
+  font-weight: 700;
+}
+
+.stretch-open {
+  background: var(--stretch-soft);
+  border: 1.5px solid var(--stretch);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.stamp-dialogue {
+  border-style: dashed;
+}
+
+.stamp-stretch {
+  border-color: var(--stretch);
+  color: var(--stretch);
+  border-style: double;
+  border-width: 5px;
+}
+
+/* Reply step */
+.reply-prompt {
+  background: var(--surface-2);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+}
+
+.reply-line {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+}
+
+.reply-who {
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.reply-who::after {
+  content: ':';
+}
+
+.opt-reply {
+  text-align: left;
+}

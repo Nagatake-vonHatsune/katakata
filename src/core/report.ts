@@ -10,6 +10,11 @@ export interface ChapterProgressRow {
   coreKnown: number;
   coreTotal: number;
   ready: boolean;
+  /** 🔥 checkpoints lit and their number (added with the ⚡ stage; older files have neither). */
+  flames?: number;
+  checkpoints?: number;
+  /** ⚡ stage: open (every 🔥 lit) or done (the 'stretch' stamp). */
+  stretch?: 'open' | 'done';
 }
 
 export interface WeakWord {

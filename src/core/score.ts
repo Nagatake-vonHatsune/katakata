@@ -2,11 +2,11 @@
 // A right answer earns base points, a speed bonus and a combo multiplier; a miss just resets the combo.
 // Scores never touch the review schedule: SM-2 only sees right / wrong / self-rating.
 
-export type ScoreGame = 'kad' | 'cari' | 'susun' | 'laju';
+export type ScoreGame = 'kad' | 'cari' | 'susun' | 'reply' | 'laju';
 
-const BASE: Record<ScoreGame, number> = { kad: 10, cari: 10, susun: 20, laju: 10 };
-/** [fast, quick] answer times in ms: under fast earns +5 (⚡⚡), under quick +2 (⚡). */
-const SPEED: Record<ScoreGame, [number, number]> = { kad: [3000, 6000], cari: [4000, 8000], susun: [10000, 20000], laju: [2000, 4000] };
+const BASE: Record<ScoreGame, number> = { kad: 10, cari: 10, susun: 20, reply: 15, laju: 10 };
+/** [fast, quick] answer times in ms: under fast earns +5 (⏱️⏱️), under quick +2 (⏱️). */
+const SPEED: Record<ScoreGame, [number, number]> = { kad: [3000, 6000], cari: [4000, 8000], susun: [10000, 20000], reply: [6000, 12000], laju: [2000, 4000] };
 const MAX_COMBO_STEPS = 10; // ×1.0 for the first answer in a row, up to ×2.0 from the eleventh
 
 export interface Hit {

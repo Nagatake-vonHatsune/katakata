@@ -1,27 +1,29 @@
 // Session runner: one step at a time, progress bar, safe mistakes, summary at the end.
 import { content, gloss, srsKey } from '../core/content';
 import { getLang, t } from '../core/i18n';
-import { addStudySeconds, awardStamps, isReady, nextChapter } from '../core/progress';
+import { addStudySeconds, awardStamps, isReady, nextChapter, unseenStretchOpen } from '../core/progress';
 import { estimateMinutes, gameOf, requeue, type Session, type Step } from '../core/session';
 import { foldRecords, Scorer } from '../core/score';
 import { newSrs, Rating, review, weakness } from '../core/srs';
 import { saveNow, state, update } from '../core/state';
 import { stopSpeech } from '../core/tts';
 import type { ItemContext } from '../core/types';
-import { button, confirmDialog, h, mount, progressBar } from '../core/ui';
+import { button, confirmDialog, h, mount, progressBar, toast } from '../core/ui';
 import { cariBenda } from '../games/cari-benda';
 import type { Game, GameContext, StepResult } from '../games/game';
 import { kadKata } from '../games/kad-kata';
 import { susunAyat } from '../games/susun-ayat';
+import { reply } from '../games/reply';
 import { askTeacher, howTo, reportContent } from './widgets';
 import { stampEl } from './stamps';
 import { langButton } from './langswitch';
 import { pointsBadge, scorePill, scoreStats } from './points';
 
-const games: Record<'kad' | 'cari' | 'susun', Game> = {
+const games: Record<'kad' | 'cari' | 'susun' | 'reply', Game> = {
   kad: kadKata as Game,
   cari: cariBenda as Game,
   susun: susunAyat as Game,
+  reply: reply as Game,
 };
 
 export function sessionMeta(steps: Step[]): string {
@@ -35,6 +37,14 @@ function applyResult(step: Step, res: StepResult, learned: Set<string>, missed: 
       const key = srsKey(step.cardId);
       if (!s.srs[key]) s.srs[key] = newSrs();
       learned.add(key);
+      return;
+    }
+    if (step.kind === 'reply') {
+      const l = (s.lines[step.lineId] ??= { tries: 0, correct: 0 });
+      l.tries++;
+      if (res.outcome === 'correct') l.correct++;
+      l.last = new Date().toISOString();
+      wrong = res.outcome !== 'correct';
       return;
     }
     if (step.kind === 'susun') {
@@ -146,17 +156,21 @@ export async function runSession(root: HTMLElement, session: Session, onExit: ()
   }
   if (quit) return;
   const stamps = awardStamps(true);
+  // One-time "⚡ is open" notice for a chapter whose last 🔥 is now lit (design note section 2; seen-state in howToSeen).
+  const opened = unseenStretchOpen();
+  if (opened.length) update((s) => opened.forEach((n) => (s.howToSeen[`stretch-${n}`] = true)));
   let beat = { score: false, combo: false, fastest: false };
   update((s) => (beat = foldRecords(s.scores, scorer, 'session')));
   void saveNow();
   const points = showPoints && scorer.right > 0 ? scoreStats(scorer, beat) : null;
-  showSummary(root, session, { learned, missed, reviewed, seconds: Math.round((Date.now() - started) / 1000), stamps, points }, onExit);
+  showSummary(root, session, { learned, missed, reviewed, seconds: Math.round((Date.now() - started) / 1000), stamps, points, opened }, onExit);
+  if (opened.length) toast(t('stretch.open', { n: opened[0] }));
 }
 
 function showSummary(
   root: HTMLElement,
   session: Session,
-  r: { learned: Set<string>; missed: Set<string>; reviewed: Set<string>; seconds: number; stamps: ReturnType<typeof awardStamps>; points: HTMLElement | null },
+  r: { learned: Set<string>; missed: Set<string>; reviewed: Set<string>; seconds: number; stamps: ReturnType<typeof awardStamps>; points: HTMLElement | null; opened: number[] },
   onExit: () => void,
 ): void {
   const lang = getLang();
@@ -195,6 +209,7 @@ function showSummary(
       r.stamps.length
         ? h('section', { class: 'card-box stamps-new' }, h('h2', null, t('sum.stamp')), h('div', { class: 'stamp-row' }, r.stamps.map((s) => stampEl(s))))
         : null,
+      r.opened.map((n) => h('p', { class: 'stretch-open', role: 'status' }, t('stretch.open', { n }))),
       button(t('sum.home'), onExit, 'btn btn-primary btn-wide'),
     ),
   );

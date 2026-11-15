@@ -1,13 +1,14 @@
 // Sedia Kelas, Main (mini-games) and Jaring Kata screens.
 import { content, gloss, srsKey } from '../core/content';
 import { getLang, t } from '../core/i18n';
-import { chapterProgress, isReady, sceneProgress } from '../core/progress';
-import { buildCari, buildKad, buildSedia, buildSusun, cariCards, type Session } from '../core/session';
+import { checkpoints, chapterProgress, dialogueReplyIds, isReady, sceneProgress, stretchOpen, stretchPack } from '../core/progress';
+import { buildCari, buildDialogue, buildKad, buildSedia, buildSusun, cariCards, type Session } from '../core/session';
 import { isKnown } from '../core/srs';
 import { state } from '../core/state';
 import { button, h, mount, progressBar } from '../core/ui';
 import { sessionMeta } from './session';
 import { chips, editHook, topBar } from './widgets';
+import { checkpointBar, flamesLine, stretchChip } from './stretch';
 
 export interface ModeNav {
   go(route: string): void;
@@ -27,15 +28,21 @@ export function renderSediaList(root: HTMLElement, nav: ModeNav): void {
         'div',
         { class: 'list' },
         content.chapters.map((ch) => {
-          const p = chapterProgress(ch.chapter);
-          const ready = isReady(ch.chapter);
+          // One row per chapter: the chapter button (title, the 🔥 checkpoint bar, the status line) and, once every 🔥 is lit,
+          // the "N ⚡" chip as a second button beside it (one button cannot contain another).
+          const chip = stretchChip(ch.chapter, nav);
           return h(
-            'button',
-            { class: 'list-item', type: 'button', onclick: () => nav.go(`sedia/${ch.chapter}`) },
-            h('span', { class: 'li-title' }, `${t('common.chapter', { n: ch.chapter })}  `, h('span', { lang: 'ms' }, ch.title.ms)),
-            h('span', { class: 'muted small' }, lang === 'ja' ? ch.title.ja ?? ch.title.en : ch.title.en),
-            progressBar(p.coreKnown, p.coreTotal),
-            h('span', { class: 'small' }, ready ? '✅ ' + t('sedia.ready') : t('sedia.progress', { a: p.coreKnown, b: p.coreTotal })),
+            'div',
+            { class: 'sedia-row' + (chip ? ' has-chip' : '') },
+            h(
+              'button',
+              { class: 'list-item', type: 'button', onclick: () => nav.go(`sedia/${ch.chapter}`) },
+              h('span', { class: 'li-title' }, `${t('common.chapter', { n: ch.chapter })}  `, h('span', { lang: 'ms' }, ch.title.ms)),
+              h('span', { class: 'muted small' }, lang === 'ja' ? ch.title.ja ?? ch.title.en : ch.title.en),
+              checkpointBar(ch.chapter),
+              h('span', { class: 'small cp-status' }, flamesLine(ch.chapter)),
+            ),
+            chip,
           );
         }),
       ),
@@ -60,9 +67,15 @@ export function renderSediaChapter(root: HTMLElement, chapter: number, nav: Mode
       h('h2', { lang: 'ms' }, ch.title.ms),
       h('p', { class: 'muted' }, lang === 'ja' ? ch.title.ja ?? '' : ch.title.en),
       isReady(chapter) ? h('p', { class: 'ready-badge' }, '✅ ' + t('sedia.ready')) : null,
-      progressBar(p.coreKnown, p.coreTotal),
-      h('p', { class: 'small' }, t('sedia.progress', { a: p.coreKnown, b: p.coreTotal })),
+      checkpointBar(chapter),
+      h('p', { class: 'small cp-status' }, flamesLine(chapter), ' · ', t('sedia.progress', { a: p.coreKnown, b: p.coreTotal })),
       button(`${p.coreKnown ? t('sedia.continue') : t('sedia.start')} · ${sessionMeta(session.steps)}`, () => nav.run(session), 'btn btn-primary btn-wide'),
+      stretchPack(chapter)
+        ? stretchOpen(chapter)
+          ? h('div', { class: 'stretch-entry' }, stretchChip(chapter, nav), h('span', { class: 'small' }, t('stretch.tip')))
+          : h('p', { class: 'muted small' }, t('stretch.locked'))
+        : null,
+      dialogueSection(chapter, nav),
       h('section', { class: 'card-box' }, h('h3', null, t('sedia.frames')), h('ul', { class: 'word-list' }, frames.map((f) => h('li', null, h('b', { lang: 'ms' }, f.frame), h('br'), h('span', { class: 'muted small' }, lang === 'ja' && f.meaning_ja ? f.meaning_ja : f.meaning_en))))),
       scene
         ? h(
@@ -87,6 +100,24 @@ export function renderSediaChapter(root: HTMLElement, chapter: number, nav: Mode
         ),
       ),
     ),
+  );
+}
+
+/** The chapter dialogue (the 🔥 dialogue checkpoint): hear each line and choose the reply, once through. */
+function dialogueSection(chapter: number, nav: ModeNav): HTMLElement | null {
+  const ids = dialogueReplyIds(chapter);
+  if (!ids.length) return null;
+  const cp = checkpoints(chapter).find((c) => c.kind === 'dialogue')!;
+  const ch = content.chapters.find((c) => c.chapter === chapter)!;
+  const lang = getLang();
+  const title = lang === 'ja' ? ch.scenario.title_ja ?? ch.scenario.title_en : ch.scenario.title_en;
+  return h(
+    'section',
+    { class: 'card-box dialogue-box' },
+    h('h3', null, cp.lit ? '🔥 ' : '', t('dialogue.title'), title ? ` · ${title}` : ''),
+    h('p', { class: 'small' }, t('dialogue.body')),
+    h('p', { class: 'small' }, cp.lit ? '✅ ' + t('dialogue.done') : t('dialogue.progress', { a: cp.done, b: cp.total })),
+    button(t('dialogue.play'), () => nav.run(buildDialogue(chapter)), 'btn btn-wide'),
   );
 }
 

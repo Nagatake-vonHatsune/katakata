@@ -1,12 +1,26 @@
 import { packs as livePacks } from 'virtual:katakata-content';
 import type { Lang } from './i18n';
-import type { Card, DuniaPack, Frame, KelasPack, Pack } from './types';
+import type { Card, DuniaPack, Frame, KelasPack, Pack, ScenarioLine, StretchPack } from './types';
+
+/** A dialogue line with where it sits: its chapter, whether it is ⚡ content, and its position in its pack's dialogue. */
+export interface LineRef {
+  line: ScenarioLine;
+  chapter: number;
+  stretch: boolean;
+  index: number;
+  lines: ScenarioLine[];
+}
 
 export interface Content {
   chapters: KelasPack[];
   scenes: DuniaPack[];
+  /** ⚡ stages, one per chapter that has one. Kept out of chapters, scenes and the learning path. */
+  stretch: StretchPack[];
   cards: Map<string, Card>;
-  frames: Map<string, Frame & { chapter: number }>;
+  /** IDs of ⚡ cards: never introduced by Today's practice or Sedia Kelas, and no distractors until met. */
+  stretchCards: Set<string>;
+  frames: Map<string, Frame & { chapter: number; stretch?: boolean }>;
+  lines: Map<string, LineRef>;
   /** Dunia cards that recycle a live Kelas word share that word's schedule. */
   alias: Map<string, string>;
   /** The order new words are introduced in. */
@@ -21,10 +35,17 @@ export function norm(term: string): string {
 export function buildContent(packs: Pack[]): Content {
   const chapters = packs.filter((p): p is KelasPack => p.kind === 'kelas').sort((a, b) => a.chapter - b.chapter);
   const scenes = packs.filter((p): p is DuniaPack => p.kind === 'dunia').sort((a, b) => a.chapter - b.chapter || a.id.localeCompare(b.id));
+  const stretch = packs.filter((p): p is StretchPack => p.kind === 'stretch').sort((a, b) => a.chapter - b.chapter);
   const cards = new Map<string, Card>();
-  const frames = new Map<string, Frame & { chapter: number }>();
+  const stretchCards = new Set<string>();
+  const frames = new Map<string, Frame & { chapter: number; stretch?: boolean }>();
+  const lines = new Map<string, LineRef>();
   for (const p of packs) for (const c of p.cards) cards.set(c.id, c);
+  for (const x of stretch) for (const c of x.cards) stretchCards.add(c.id);
   for (const ch of chapters) for (const f of ch.frames) frames.set(f.id, { ...f, chapter: ch.chapter });
+  for (const x of stretch) for (const f of x.frames) frames.set(f.id, { ...f, chapter: x.chapter, stretch: true });
+  for (const p of [...chapters, ...stretch])
+    p.scenario.lines.forEach((line, index) => lines.set(line.id, { line, chapter: p.chapter, stretch: p.kind === 'stretch', index, lines: p.scenario.lines }));
 
   const kelasByTerm = new Map<string, string>();
   for (const ch of chapters) for (const c of ch.cards) kelasByTerm.set(norm(c.term), c.id);
@@ -65,8 +86,11 @@ export function buildContent(packs: Pack[]): Content {
   return {
     chapters,
     scenes,
+    stretch,
     cards,
+    stretchCards,
     frames,
+    lines,
     alias,
     path,
     sceneName(sceneId, lang) {
@@ -74,6 +98,8 @@ export function buildContent(packs: Pack[]): Content {
         const ch = chapters.find((c) => `kelas-${c.id}` === sceneId);
         return ch ? (lang === 'ja' ? ch.scenario.title_ja ?? ch.title.ms : ch.scenario.title_en ?? ch.title.en) : sceneId;
       }
+      const x = stretch.find((p) => `stretch-${p.id}` === sceneId);
+      if (x) return `${x.chapter} ⚡`;
       const s = scenes.find((x) => `dunia-${x.id}` === sceneId);
       return s ? `${s.title.ms}` : sceneId;
     },

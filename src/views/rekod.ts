@@ -1,7 +1,7 @@
 // Rekod (記録): stamp card, progress by chapter and scene, savefile tools. Settings live in views/settings.ts.
 import { content } from '../core/content';
 import { getLang, t } from '../core/i18n';
-import { chapterProgress, knownCount, minutesThisWeek, sceneProgress, streak } from '../core/progress';
+import { chapterProgress, knownCount, minutesThisWeek, sceneProgress, streak, stretchProgress } from '../core/progress';
 import { buildSavefile, mergeStates, parseSavefile, summarise } from '../core/savefile';
 import { pickFile, safeName, shareOrDownload } from '../core/share';
 import { seconds } from '../core/score';
@@ -9,6 +9,7 @@ import { replaceState, state, update } from '../core/state';
 import { button, confirmDialog, h, mount, progressBar, sheet, toast } from '../core/ui';
 import { stampEl } from './stamps';
 import { topBar } from './widgets';
+import { flamesLine, flamesText } from './stretch';
 
 export function applyTheme(): void {
   const root = document.documentElement;
@@ -106,7 +107,20 @@ export function renderRekod(root: HTMLElement, go: (r: string) => void): void {
           h('h2', null, t('rekod.chapters')),
           content.chapters.map((ch) => {
             const p = chapterProgress(ch.chapter);
-            return h('div', { class: 'prog-row' }, h('span', null, `${t('common.chapter', { n: ch.chapter })} `, h('span', { lang: 'ms' }, ch.title.ms)), progressBar(p.known, p.total), h('span', { class: 'small' }, t('rekod.words', { a: p.known, b: p.total })));
+            const done = stretchProgress(ch.chapter).done || state.stamps.some((s) => s.kind === 'stretch' && s.chapter === ch.chapter);
+            return h(
+              'div',
+              { class: 'prog-row' },
+              h('span', null, `${t('common.chapter', { n: ch.chapter })} `, h('span', { lang: 'ms' }, ch.title.ms)),
+              progressBar(p.known, p.total),
+              h(
+                'span',
+                { class: 'small' },
+                t('rekod.words', { a: p.known, b: p.total }),
+                h('span', { class: 'rekod-flames', 'aria-label': flamesLine(ch.chapter) }, ' ', flamesText(ch.chapter)),
+                done ? h('span', { class: 'stretch-mark', 'aria-label': t('stretch.done') }, ' ⚡') : null,
+              ),
+            );
           }),
           h('h2', null, t('rekod.worlds')),
           content.scenes.map((s) => {

@@ -2,13 +2,14 @@ import { content } from '../core/content';
 import { daysBetween, dayKey } from '../core/dates';
 import { getLang, t } from '../core/i18n';
 import { inIOSBrowserTab } from '../core/platform';
-import { chapterProgress, knownCount, minutesThisWeek, nextChapter, streak } from '../core/progress';
+import { knownCount, minutesThisWeek, nextChapter, streak } from '../core/progress';
 import { buildToday } from '../core/session';
 import { state } from '../core/state';
-import { button, h, mount, progressBar, sheet } from '../core/ui';
+import { button, h, mount, sheet } from '../core/ui';
 import { langButton } from './langswitch';
 import { iosSteps } from './onboarding';
 import { sessionMeta } from './session';
+import { checkpointBar, flamesLine } from './stretch';
 
 export interface Nav {
   go(route: string): void;
@@ -38,7 +39,6 @@ export function renderHome(root: HTMLElement, nav: Nav): void {
   const today = buildToday();
   const ch = nextChapter();
   const chPack = content.chapters.find((c) => c.chapter === ch);
-  const p = chapterProgress(ch);
   const st = streak();
   const tile = (key: string, route: string | null, icon: string) =>
     h(
@@ -85,8 +85,8 @@ export function renderHome(root: HTMLElement, nav: Nav): void {
             { class: 'next-class', type: 'button', onclick: () => nav.go(`sedia/${ch}`) },
             h('span', null, t('home.next_class', { title: `${t('common.chapter', { n: ch })} ${chPack.title.ms}` })),
             h('span', { class: 'muted small' }, lang === 'ja' ? chPack.title.ja ?? '' : chPack.title.en),
-            progressBar(p.coreKnown, p.coreTotal),
-            h('span', { class: 'small' }, t('sedia.progress', { a: p.coreKnown, b: p.coreTotal })),
+            checkpointBar(ch),
+            h('span', { class: 'small cp-status' }, flamesLine(ch)),
           )
         : null,
       h(

@@ -1,8 +1,8 @@
 // Tanya Cikgu list and 先生に送る (send to teacher).
 import { content } from '../core/content';
 import { t } from '../core/i18n';
-import { chapterProgress, isReady, minutesThisWeek, weakestWords } from '../core/progress';
-import { buildReport, reportFilename, type Section } from '../core/report';
+import { chapterProgress, checkpoints, isReady, minutesThisWeek, stretchOpen, stretchProgress, weakestWords } from '../core/progress';
+import { type ChapterProgressRow, buildReport, reportFilename, type Section } from '../core/report';
 import { safeName, shareOrDownload } from '../core/share';
 import { state, update } from '../core/state';
 import type { Question } from '../core/types';
@@ -70,8 +70,13 @@ export function renderTanya(root: HTMLElement, go: (r: string) => void): void {
   draw();
 }
 
-export function progressRows() {
-  return content.chapters.map((ch) => ({ chapter: ch.chapter, ...chapterProgress(ch.chapter), ready: isReady(ch.chapter) }));
+/** Per chapter: prep counts (Sedia Kelas words only, never ⚡ cards), 🔥 checkpoints and the ⚡ stage. */
+export function progressRows(): ChapterProgressRow[] {
+  return content.chapters.map((ch) => {
+    const cps = checkpoints(ch.chapter);
+    const stretch = stretchProgress(ch.chapter).done ? 'done' : stretchOpen(ch.chapter) ? 'open' : undefined;
+    return { chapter: ch.chapter, ...chapterProgress(ch.chapter), ready: isReady(ch.chapter), flames: cps.filter((c) => c.lit).length, checkpoints: cps.length, ...(stretch ? { stretch } : {}) };
+  });
 }
 
 /** Preview with per-section opt-out; nothing leaves the device until the learner taps Send. */

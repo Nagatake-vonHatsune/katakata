@@ -127,14 +127,16 @@ function render(): void {
                       h('td', null, r.minutesThisWeek ?? '—'),
                       chapters.map((c) => {
                         const p = r.progress?.find((x) => x.chapter === c);
-                        return h('td', { class: p?.ready ? 'ready' : '' }, p ? (p.ready ? '✅ ready' : `${p.coreKnown}/${p.coreTotal}`) : '—');
+                        const flames = p?.checkpoints ? ` · 🔥${p.flames ?? 0}/${p.checkpoints}` : '';
+                        const stretch = p?.stretch === 'done' ? ' · ⚡ done' : p?.stretch === 'open' ? ' · ⚡' : '';
+                        return h('td', { class: p?.ready ? 'ready' : '' }, p ? (p.ready ? '✅ ready' : `${p.coreKnown}/${p.coreTotal}`) + flames + stretch : '—');
                       }),
                     ),
                   ),
                 ),
               ),
             ),
-            h('p', { class: 'muted small' }, 'Prep = core words known for that chapter\'s Sedia Kelas; "ready" also means both frames were built. "—" = not shared.'),
+            h('p', { class: 'muted small' }, 'Prep = core words known for that chapter\'s Sedia Kelas (⚡ words are never counted); "ready" also means both frames were built. 🔥 = checkpoints lit (prep, the dialogue played once, every word known); ⚡ = the optional harder stage is open or done. "—" = not shared.'),
           )
         : null,
       reports.length

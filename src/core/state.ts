@@ -1,7 +1,28 @@
 import * as db from './db';
 import { emptyRecords } from './score';
 import { migrateSrs } from './srs';
-import type { AppState } from './types';
+import type { AppState, SrsState } from './types';
+
+/**
+ * Cards whose ID changed (old ID -> new ID). The 7 Jambatan words promoted to the chapter 4 ⚡ stage (15 Nov 2026) got new
+ * ⚡ card IDs; migrate() copies the old schedule to the new ID once, if the new ID has none, so a learner who knew «beri»
+ * from Jambatan starts ⚡ 4 with «beri» known. The old IDs are in RETIRED_IDS (tools/import_hanashishou_bridge.py).
+ */
+export const MOVED_CARDS: Record<string, string> = {
+  'ms-j-social-22': 'ms-x04-001', // beri (L-1312)
+  'ms-j-home-condo-29': 'ms-x04-002', // semula (L-1321)
+  'ms-j-daily-life-42': 'ms-x04-003', // bantu (L-1331)
+  'ms-j-social-39': 'ms-x04-004', // ulang (L-1342)
+  'ms-j-home-condo-30': 'ms-x04-005', // biasa (L-1351)
+  'ms-j-social-49': 'ms-x04-006', // hampir (L-1359)
+  'ms-j-office-44': 'ms-x04-007', // sejam (L-1399)
+};
+
+export function moveCards(srs: Record<string, SrsState>, moved: Record<string, string> = MOVED_CARDS): Record<string, SrsState> {
+  const out = { ...srs };
+  for (const [from, to] of Object.entries(moved)) if (out[from] && !out[to]) out[to] = { ...out[from] };
+  return out;
+}
 
 const KEY = 'state';
 
@@ -14,6 +35,7 @@ export function defaultState(): AppState {
     srs: {},
     kanaSeen: {},
     frames: {},
+    lines: {},
     myHooks: {},
     questions: [],
     reports: [],
@@ -34,7 +56,8 @@ export function migrate(raw: Partial<AppState> & Record<string, unknown>): AppSt
     profile: { ...base.profile, ...(raw.profile ?? {}) },
     settings: { ...base.settings, ...(raw.settings ?? {}) },
     scores: { ...base.scores, ...((raw.scores as object) ?? {}) },
-    srs: Object.fromEntries(Object.entries(raw.srs ?? {}).map(([k, v]) => [k, migrateSrs(v as unknown as Record<string, unknown>)])),
+    lines: { ...((raw.lines as AppState['lines']) ?? {}) },
+    srs: moveCards(Object.fromEntries(Object.entries(raw.srs ?? {}).map(([k, v]) => [k, migrateSrs(v as unknown as Record<string, unknown>)]))),
   } as AppState;
 }
 

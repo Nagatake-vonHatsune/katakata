@@ -38,6 +38,8 @@ export interface Frame {
   example: string;
   meaning_en: string;
   meaning_ja?: string | null;
+  /** ⚡ frames: near-miss tiles that must be left out (design note section 4). */
+  decoys?: string[];
 }
 
 export interface ScenarioLine {
@@ -45,6 +47,10 @@ export interface ScenarioLine {
   speaker: string;
   ms: string;
   en: string;
+  /** ⚡ dialogue: the line is a reply step; these are the wrong replies (Malay), shown with the line itself. */
+  choices?: string[];
+  /** English for each wrong reply, in the same order (shown after answering). */
+  choices_en?: string[];
 }
 
 export interface KelasPack {
@@ -74,7 +80,24 @@ export interface DuniaPack {
   cards: Card[];
 }
 
-export type Pack = KelasPack | DuniaPack;
+/**
+ * A chapter's ⚡ stage (content/ms/stretch/xNN.json). Its cards are the chapter's extension rows («ChN (extension)»);
+ * they are never added to the chapter pack, so chapter progress, stamps, Sedia Kelas and the learning path do not change.
+ */
+export interface StretchPack {
+  schema: string;
+  lang: 'ms';
+  kind: 'stretch';
+  id: string;
+  chapter: number;
+  status: 'live' | 'draft';
+  title: Text3;
+  cards: Card[];
+  frames: Frame[];
+  scenario: { title_en: string | null; title_ja?: string | null; lines: ScenarioLine[] };
+}
+
+export type Pack = KelasPack | DuniaPack | StretchPack;
 
 /** SM-2 card state, the same shape as Hanashishou's SrsState (plus `last`, the last review time). */
 export interface SrsState {
@@ -115,7 +138,8 @@ export interface ContentReport {
 
 export interface Stamp {
   id: string;
-  kind: 'day' | 'ready' | 'chapter';
+  /** ready = class prep, dialogue = the chapter dialogue played once, chapter = every card known, stretch = ⚡ done. */
+  kind: 'day' | 'ready' | 'dialogue' | 'chapter' | 'stretch';
   date: string; // YYYY-MM-DD
   chapter?: number;
 }
@@ -143,6 +167,8 @@ export interface AppState {
   /** Times a card's term has been shown, for fading katakana hints. */
   kanaSeen: Record<string, number>;
   frames: Record<string, { tries: number; correct: number; last?: string }>;
+  /** Reply steps per dialogue line ID (the line chosen as the reply). Added for the ⚡ stage; migrate() fills it. */
+  lines: Record<string, { tries: number; correct: number; last?: string }>;
   myHooks: Record<string, string>;
   questions: Question[];
   reports: ContentReport[];

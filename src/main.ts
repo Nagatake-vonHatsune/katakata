@@ -14,6 +14,7 @@ import { renderJambatan } from './views/jambatan';
 import { renderSettings } from './views/settings';
 import { renderLaju } from './views/laju';
 import { renderNombor } from './views/nombor';
+import { renderStretch } from './views/stretch';
 import { LANG_EVENT } from './views/langswitch';
 
 const root = document.getElementById('app')!;
@@ -39,9 +40,10 @@ const nav = { go, run, startToday: () => run(buildToday()) };
 function render(): void {
   if (inSession) return;
   if (!state.profile.onboarded) return renderOnboarding(root, () => go(''));
-  const [route, arg] = location.hash.replace(/^#\/?/, '').split('/');
+  const [route, arg, sub] = location.hash.replace(/^#\/?/, '').split('/');
   switch (route) {
     case 'sedia':
+      if (arg && sub === 'x') return renderStretch(root, Number(arg), nav);
       return arg ? renderSediaChapter(root, Number(arg), nav) : renderSediaList(root, nav);
     case 'ulang':
       history.replaceState(null, '', '#/');

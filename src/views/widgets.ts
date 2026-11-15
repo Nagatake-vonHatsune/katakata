@@ -211,7 +211,7 @@ export async function reportContent(ctx: ItemContext): Promise<void> {
 }
 
 /** やり方 card: one sentence plus a worked example. */
-export async function howTo(game: 'kad' | 'cari' | 'susun', force = false): Promise<void> {
+export async function howTo(game: 'kad' | 'cari' | 'susun' | 'reply', force = false): Promise<void> {
   if (!force && state.howToSeen[game]) return;
   await sheet(
     (close) => [

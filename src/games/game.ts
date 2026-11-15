@@ -24,6 +24,6 @@ export interface GameContext {
 }
 
 export interface Game<S extends Step = Step> {
-  id: 'kad' | 'cari' | 'susun';
+  id: 'kad' | 'cari' | 'susun' | 'reply';
   run(step: S, ctx: GameContext): Promise<StepResult>;
 }

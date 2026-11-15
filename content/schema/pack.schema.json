@@ -2,13 +2,13 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://katakata/schema/pack.schema.json",
   "title": "Kata-Kata content pack",
-  "description": "One file per Kelas chapter or Dunia scene. Card fields follow the shared Hanashishou word-library format (spec 5.5).",
+  "description": "One file per Kelas chapter, Dunia scene or ⚡ stage (kind stretch, content/ms/stretch/xNN.json: the chapter's extension rows, harder frames with decoy tiles, a dialogue with reply choices). Card fields follow the shared Hanashishou word-library format (spec 5.5).",
   "type": "object",
   "required": ["schema", "lang", "kind", "id", "chapter", "status", "title", "cards"],
   "properties": {
     "schema": { "const": "katakata.pack/1" },
     "lang": { "const": "ms" },
-    "kind": { "enum": ["kelas", "dunia"] },
+    "kind": { "enum": ["kelas", "dunia", "stretch"] },
     "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
     "chapter": { "type": "integer", "minimum": 0, "maximum": 99 },
     "status": { "enum": ["live", "draft"], "description": "Only live packs ship in the app." },
@@ -31,7 +31,8 @@
           "frame": { "type": "string" },
           "example": { "type": "string" },
           "meaning_en": { "type": "string" },
-          "meaning_ja": { "type": ["string", "null"] }
+          "meaning_ja": { "type": ["string", "null"] },
+          "decoys": { "type": "array", "items": { "type": "string", "minLength": 1 }, "description": "⚡ frames: near-miss tiles that must be left out." }
         }
       }
     },
@@ -45,7 +46,14 @@
           "items": {
             "type": "object",
             "required": ["id", "speaker", "ms", "en"],
-            "properties": { "id": { "type": "string" }, "speaker": { "type": "string" }, "ms": { "type": "string" }, "en": { "type": "string" } }
+            "properties": {
+              "id": { "type": "string" },
+              "speaker": { "type": "string" },
+              "ms": { "type": "string" },
+              "en": { "type": "string" },
+              "choices": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 2, "maxItems": 2, "description": "⚡ dialogue: the two wrong replies (this line is a reply step)." },
+              "choices_en": { "type": "array", "items": { "type": "string" }, "minItems": 2, "maxItems": 2 }
+            }
           }
         }
       }

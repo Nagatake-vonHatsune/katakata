@@ -6,6 +6,7 @@ import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Ajv from 'ajv';
 import { runAffixGuard } from './affix-guard.mjs';
+import { isExtensionPlace, loadLedger, placedChapter } from './stage-rules.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const contentDir = join(root, 'content', 'ms');
@@ -84,6 +85,26 @@ for (const p of packs) {
     if (p.sedia_kelas.scene && !sceneIds.has(`dunia-${p.sedia_kelas.scene}`))
       errors.push(`${p._file}: sedia_kelas scene ${p.sedia_kelas.scene} missing`);
   }
+}
+
+// ⚡ packs (kind stretch): one per chapter, holding a card for every «ChN (extension)» ledger row and nothing else; decoys are
+// never tiles of their sentence; a reply line has a line before it.
+const ledger = loadLedger();
+for (const x of packs.filter((p) => p.kind === 'stretch')) {
+  if (x.id !== `x${String(x.chapter).padStart(2, '0')}`) errors.push(`${x._file}: a ⚡ pack of chapter ${x.chapter} must be x${String(x.chapter).padStart(2, '0')}`);
+  if (!packs.some((p) => p.kind === 'kelas' && p.chapter === x.chapter)) errors.push(`${x._file}: no Kelas chapter ${x.chapter}`);
+  const rows = ledger.filter((r) => isExtensionPlace(r['Kata-Kata place']) && placedChapter(r['Kata-Kata place']) === x.chapter && r['Review status'] !== 'Retired');
+  const terms = new Set(x.cards.map((c) => c.term));
+  for (const r of rows) if (!terms.has(r.Malay.trim())) errors.push(`${x._file}: ledger ${r.ID} «${r.Malay}» is Ch${x.chapter} (extension) but has no ⚡ card`);
+  const want = new Set(rows.map((r) => r.Malay.trim()));
+  for (const c of x.cards) {
+    if (!want.has(c.term)) errors.push(`${x._file}: ${c.id} «${c.term}» has no Ch${x.chapter} (extension) ledger row`);
+    if (c.scene !== `stretch-${x.id}`) errors.push(`${x._file}: ${c.id} scene must be stretch-${x.id}`);
+  }
+  for (const f of x.frames ?? []) for (const d of f.decoys ?? []) if (f.example.split(/\s+/).includes(d)) errors.push(`${x._file}: ${f.id} decoy «${d}» is a tile of the sentence`);
+  (x.scenario?.lines ?? []).forEach((l, i) => {
+    if (l.choices && (i === 0 || l.choices.length !== 2 || (l.choices_en ?? []).length !== 2)) errors.push(`${x._file}: ${l.id} needs a line before it, two choices and two choices_en`);
+  });
 }
 
 // Affix guard (stage-aware: content/rules/stage-rules.json, each text checked at its own chapter)

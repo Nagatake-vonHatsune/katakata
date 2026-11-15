@@ -90,25 +90,36 @@ export function mergeStates(local: AppState, incoming: AppState): AppState {
     for (const [k, v] of Object.entries(b)) out[k] = Math.max(out[k] ?? 0, v);
     return out;
   };
-  const frames = { ...local.frames };
-  for (const [k, v] of Object.entries(incoming.frames)) {
-    const m = frames[k];
-    frames[k] = m ? { tries: Math.max(m.tries, v.tries), correct: Math.max(m.correct, v.correct), last: later(v.last, m.last) ? v.last : m.last } : v;
-  }
+  const tally = (a: AppState['frames'] = {}, b: AppState['frames'] = {}) => {
+    const out = { ...a };
+    for (const [k, v] of Object.entries(b)) {
+      const m = out[k];
+      out[k] = m ? { tries: Math.max(m.tries, v.tries), correct: Math.max(m.correct, v.correct), last: later(v.last, m.last) ? v.last : m.last } : v;
+    }
+    return out;
+  };
+  const frames = tally(local.frames, incoming.frames);
+  const lines = tally(local.lines, incoming.lines);
   // Questions: if either copy marks one answered, it is answered.
   const questions = byId(local.questions, incoming.questions).map((q) => {
     const other = incoming.questions.find((x) => x.id === q.id);
     return other ? { ...q, answered: q.answered || other.answered } : q;
   });
-  const stamps = byId(local.stamps, incoming.stamps).filter(
-    (s, i, all) => all.findIndex((x) => x.kind === s.kind && x.date === s.date && x.chapter === s.chapter) === i,
-  );
+  // A day stamp is one per date. A chapter stamp (ready, dialogue, chapter, ⚡ stretch) is one per kind and chapter: the
+  // earliest date wins, so two copies that reached the same checkpoint on different days merge into one stamp.
+  const stamps = byId(local.stamps, incoming.stamps)
+    .slice()
+    .sort((a, b) => a.date.localeCompare(b.date))
+    .filter((s, i, all) =>
+      all.findIndex((x) => x.kind === s.kind && (s.kind === 'day' ? x.date === s.date : x.chapter === s.chapter)) === i,
+    );
   return {
     ...local,
     profile: { ...local.profile, name: local.profile.name || incoming.profile.name },
     srs,
     kanaSeen: maxRec(local.kanaSeen, incoming.kanaSeen),
     frames,
+    lines,
     myHooks: { ...incoming.myHooks, ...local.myHooks },
     questions,
     reports: byId(local.reports, incoming.reports),
