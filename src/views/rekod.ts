@@ -117,8 +117,8 @@ export function renderRekod(root: HTMLElement, go: (r: string) => void): void {
                 'span',
                 { class: 'small' },
                 t('rekod.words', { a: p.known, b: p.total }),
-                h('span', { class: 'rekod-flames', 'aria-label': flamesLine(ch.chapter) }, ' ', flamesText(ch.chapter)),
-                done ? h('span', { class: 'stretch-mark', 'aria-label': t('stretch.done') }, ' ⚡') : null,
+                flamesText(ch.chapter) ? h('span', { class: 'rekod-flames', role: 'img', 'aria-label': flamesLine(ch.chapter) }, ' ', flamesText(ch.chapter)) : null,
+                done ? h('span', { class: 'stretch-mark', role: 'img', 'aria-label': t('stretch.done') }, ' ⚡') : null,
               ),
             );
           }),
