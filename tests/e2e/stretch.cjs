@@ -430,6 +430,101 @@ async function play(page, hooks = {}) {
     await p.close();
   }
 
+  // 10. Build B3: the new ⚡ 17 dialogue (Sam, 17 Nov 2026), played whole: Tanaka's standard form comes first and Cik Mei Ling answers
+  // in the casual form (mengantuk → ngantuk, emak → mak, kasihan → kesian, semakin → makin).
+  {
+    const x17 = stretch.find((x) => x.chapter === 17);
+    const p = await ctx.newPage();
+    p.on('pageerror', (e) => errors.push(e.message));
+    const st = seededState();
+    st.stamps.push(stamp('ready', 17), stamp('dialogue', 17), stamp('chapter', 17));
+    await seed(p, st);
+    await p.goto(BASE + '#/sedia/17/x');
+    await p.reload();
+    await p.waitForSelector('.stretch-screen');
+    await p.locator('.stretch-outline').first().click();
+    const seen = [];
+    const d = await play(p, {
+      beforeReply: async (i) => {
+        seen.push((await p.locator('.step-body .reply-prompt').innerText()).replace(/\s+/g, ' '));
+        if (i === 1) await shot(p, 'x17-dialogue-1-kancil-light');
+      },
+      replied: async (i) => {
+        seen.push((await p.locator('.step-body .answer').innerText()).replace(/\s+/g, ' '));
+        if (i === 3) await shot(p, 'x17-dialogue-3-kancil-light');
+        if (i === 4) await shot(p, 'x17-dialogue-4-kancil-light');
+      },
+    });
+    const text = seen.join(' | ');
+    const replies = x17.scenario.lines.filter((l) => l.choices).length;
+    assert(d.firstTries === replies, `⚡ 17: the new dialogue played whole (${d.firstTries}/${replies} reply steps)`);
+    assert(/sangat mengantuk/.test(seen[0]), `⚡ 17: the first prompt is Tanaka's standard «mengantuk» (${seen[0].slice(0, 70)})`);
+    for (const [std, casual] of [['mengantuk', 'Ngantuk'], ['Emak', 'mak Encik'], ['kasihan', 'Kesian'], ['semakin', 'makin baik']]) {
+      const a = text.indexOf(std);
+      const b = text.indexOf(casual);
+      assert(a >= 0 && b > a, `⚡ 17: «${std}» is on screen before «${casual}»`);
+    }
+    const s = await readState(p);
+    assert(s.dialogues.x17?.best === replies, `⚡ 17: dialogue score ${s.dialogues.x17?.best}/${replies}`);
+    await p.close();
+  }
+
+  // 11. Build B3: the Jambatan scene «Events and outings» is now «Parties and food» and «Music and shows»; batch 2 words are in them.
+  {
+    const p = await ctx.newPage();
+    p.on('pageerror', (e) => errors.push(e.message));
+    const scenes = ['social-parties', 'social-music'].map((id) => pack(`jambatan/jambatan-${id}.json`));
+    const st = seededState();
+    for (const sc of scenes) for (const c of sc.cards) st.srs[c.id] = known();
+    await seed(p, st);
+    await p.goto(BASE + '#/jaring');
+    await p.reload();
+    await p.waitForSelector('.jaring-list');
+    const progress = (await p.locator('.scene-progress').innerText()).replace(/\s+/g, ' ');
+    assert(/Parti dan makanan/.test(progress) && /Muzik dan persembahan/.test(progress) && !/Acara dan keluar/.test(progress),
+      'Jaring lists «Parti dan makanan» and «Muzik dan persembahan», not «Acara dan keluar»');
+    for (const sc of scenes) {
+      const box = p.locator('.jaring-list section.card-box', { has: p.locator('h3', { hasText: sc.title.ms }) });
+      const n = await box.locator('.jaring-word').count();
+      assert(n === sc.cards.length, `Jambatan · ${sc.title.en}: all ${sc.cards.length} words listed (${n})`);
+      const fresh = sc.cards.find((c) => Number(c.id.split('-').pop()) > 120);
+      assert(fresh && (await box.innerText()).includes(fresh.term), `Jambatan · ${sc.title.en}: a placement batch 2 word is in it («${fresh && fresh.term}»)`);
+      await box.locator('h3').scrollIntoViewIfNeeded();
+      await box.screenshot({ path: path.join(OUT, `jambatan-${sc.id.replace('jambatan-', '')}-kancil-light.png`) });
+    }
+    await p.close();
+  }
+
+  // 12. Build B3: the ⚡ 3 card after the merge: ms-x03-022 is «satu per satu», and its note says «satu-satu» is also heard.
+  {
+    const x03 = stretch.find((x) => x.chapter === 3);
+    const p = await ctx.newPage();
+    p.on('pageerror', (e) => errors.push(e.message));
+    const st = seededState();
+    st.stamps.push(stamp('ready', 3), stamp('dialogue', 3), stamp('chapter', 3));
+    for (const c of x03.cards) if (c.id !== 'ms-x03-022') st.srs[c.id] = known();
+    await seed(p, st);
+    await p.goto(BASE + '#/sedia/3/x');
+    await p.reload();
+    await p.waitForSelector('.stretch-screen');
+    await p.locator('.btn-stretch').click();
+    let card = '';
+    for (let i = 0; i < 6 && !card; i++) {
+      const howto = p.getByRole('button', { name: 'わかった' });
+      if (await howto.count()) await howto.click();
+      const body = p.locator('.step-body');
+      await body.waitFor();
+      if (/satu per satu/.test(await body.innerText()) && (await body.locator('.chip-note').count())) {
+        await body.locator('.chip-note').click();
+        card = (await body.innerText()).replace(/\s+/g, ' ');
+        await shot(p, 'x03-card-satu-per-satu-kancil-light');
+      } else await p.locator('.btn-next').click();
+    }
+    assert(/satu per satu/.test(card) && /satu-satu/.test(card), `⚡ 3: the «satu per satu» card shows, with «satu-satu» in its note (${card.slice(0, 90)}…)`);
+    assert(!x03.cards.some((c) => c.id === 'ms-x03-023'), '⚡ 3: the retired card ms-x03-023 is gone');
+    await p.close();
+  }
+
   assert(errors.length === 0, 'no page errors' + (errors.length ? ': ' + errors.join(' | ') : ''));
   await browser.close();
 })().catch((e) => {

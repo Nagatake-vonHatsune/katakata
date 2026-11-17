@@ -24,6 +24,60 @@
   },
   "cards": [
     {
+      "id": "ms-j-tutorial-03",
+      "lang": "ms",
+      "term": "alatan",
+      "gloss_en": "tools, equipment",
+      "gloss_ja": "道具、ツール（アプリの機能）",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Sekarang, mari cuba alatan. Mula-mula, semak ingatan. In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-tutorial-04",
+      "lang": "ms",
+      "term": "baris",
+      "gloss_en": "row, line",
+      "gloss_ja": "行（ぎょう）、列",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Bagus. Awak pilih satu baris, sebut dengan kuat, dan nilai diri sendiri. Kad di atas tunjuk idea yang sama pada tahap lain. In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-tutorial-05",
+      "lang": "ms",
+      "term": "ingatan",
+      "gloss_en": "memory",
+      "gloss_ja": "記憶",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Sekarang, mari cuba alatan. Mula-mula, semak ingatan. In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-tutorial-01",
       "lang": "ms",
       "term": "kegemaran",
@@ -42,6 +96,204 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-tutorial-06",
+      "lang": "ms",
+      "term": "kemajuan",
+      "gloss_en": "progress",
+      "gloss_ja": "進歩、進み具合",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "Hanashishou: Selepas setiap babak, penilai tunjuk tahap awak dan langkah seterusnya. Di laman utama, awak juga boleh latih kosa kata, pilih babak rawak, kumpul kerangka ayat, dan tengok kemajuan. In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-tutorial-07",
+      "lang": "ms",
+      "term": "kerangka",
+      "gloss_en": "framework",
+      "gloss_ja": "枠組み",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Selepas setiap babak, penilai tunjuk tahap awak dan langkah seterusnya. Di laman utama, awak juga boleh latih kosa kata, pilih babak rawak, kumpul kerangka ayat, dan tengok kemajuan. In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-tutorial-08",
+      "lang": "ms",
+      "term": "kosa kata",
+      "gloss_en": "vocabulary",
+      "gloss_ja": "語彙",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Selepas setiap babak, penilai tunjuk tahap awak dan langkah seterusnya. Di laman utama, awak juga boleh latih kosa kata, pilih babak rawak, kumpul kerangka ayat, dan tengok kemajuan. In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-tutorial-09",
+      "lang": "ms",
+      "term": "laman",
+      "gloss_en": "page, site (\"laman utama\" = home page)",
+      "gloss_ja": "ページ（«laman utama» ホーム画面）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Selepas setiap babak, penilai tunjuk tahap awak dan langkah seterusnya. Di laman utama, awak juga boleh latih kosa kata, pilih babak rawak, kumpul kerangka ayat, dan tengok kemajuan. In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-tutorial-10",
+      "lang": "ms",
+      "term": "melati",
+      "gloss_en": "jasmine",
+      "gloss_ja": "ジャスミン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Sekarang, ingat ini: teh kegemaran saya ialah teh melati. In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-tutorial-11",
+      "lang": "ms",
+      "term": "nada",
+      "gloss_en": "tone",
+      "gloss_ja": "口調、トーン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Hmm. Pendek, dan agak dingin. Tengok label nada! In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-tutorial-12",
+      "lang": "ms",
+      "term": "penerangan",
+      "gloss_en": "explanation, description",
+      "gloss_ja": "説明",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "Hanashishou: Selamat datang ke Hanashishou! Latihan pendek ini tunjuk cara guna aplikasi ini. Tekan 🦁 di bawah satu baris bila-bila masa untuk baca penerangan dalam bahasa anda. In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-tutorial-13",
+      "lang": "ms",
+      "term": "penghujung",
+      "gloss_en": "end",
+      "gloss_ja": "終わり",
+      "pos": "noun",
+      "affix_tag": "pe-",
+      "note": "Hanashishou: Anda ucap terima kasih untuk sesuatu yang khusus. Itulah penghujung tutorial! In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-tutorial-14",
+      "lang": "ms",
+      "term": "penilai",
+      "gloss_en": "evaluator",
+      "gloss_ja": "評価者",
+      "pos": "noun",
+      "affix_tag": "pe(N)-",
+      "note": "Hanashishou: Selepas setiap babak, penilai tunjuk tahap awak dan langkah seterusnya. Di laman utama, awak juga boleh latih kosa kata, pilih babak rawak, kumpul kerangka ayat, dan tengok kemajuan. In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-tutorial-15",
+      "lang": "ms",
+      "term": "rawak",
+      "gloss_en": "random",
+      "gloss_ja": "ランダムな",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Hanashishou: Selepas setiap babak, penilai tunjuk tahap awak dan langkah seterusnya. Di laman utama, awak juga boleh latih kosa kata, pilih babak rawak, kumpul kerangka ayat, dan tengok kemajuan. In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-tutorial-16",
+      "lang": "ms",
+      "term": "semakan",
+      "gloss_en": "check, review",
+      "gloss_ja": "チェック、確認",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Satu lagi: di skrin seterusnya, cuba Semakan Tahap. Lebih kurang sepuluh minit, dan saya akan cadang tahap yang sesuai untuk awak mula. In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-tutorial-02",
       "lang": "ms",
       "term": "sifu",
@@ -50,6 +302,42 @@
       "pos": "noun",
       "affix_tag": "root",
       "note": "Hanashishou: Saya Sifu. In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-tutorial-17",
+      "lang": "ms",
+      "term": "tatabahasa",
+      "gloss_en": "grammar",
+      "gloss_ja": "文法",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Ambil ujian tatabahasa. In 1 Hanashishou scene: How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-tutorial"
+        }
+      ],
+      "scene": "dunia-jambatan-tutorial",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-tutorial-18",
+      "lang": "ms",
+      "term": "tutorial",
+      "gloss_en": "tutorial",
+      "gloss_ja": "チュートリアル",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Anda ucap terima kasih untuk sesuatu yang khusus. Itulah penghujung tutorial! In 1 Hanashishou scene: How to play.",
       "links": [
         {
           "type": "babak",

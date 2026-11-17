@@ -1,5 +1,5 @@
 {
-  "note": "Hand-written source of the chapter 3 ⚡ stage (Build B1, 17 Nov 2026). tools/build_stretch.py turns it into content/ms/stretch/x03.json. Malay: Malaysian standard, standard form first, no spoken forms, chapter 3 affix gates (no ber-, meN-, -kan or -i), chapter 1 to 3 words only (no «ke», «mahu», «hari» or «tetapi»: they are placed later). All Japanese is a draft for the native check.",
+  "note": "Hand-written source of the chapter 3 ⚡ stage (Build B1, 17 Nov 2026; Build B3: L-1638 merged into L-1532 «satu per satu»). tools/build_stretch.py turns it into content/ms/stretch/x03.json. Malay: Malaysian standard, standard form first, no spoken forms, chapter 3 affix gates (no ber-, meN-, -kan or -i), chapter 1 to 3 words only (no «ke», «mahu», «hari» or «tetapi»: they are placed later). All Japanese is a draft for the native check.",
   "chapter": 3,
   "scenario_title_en": "At the post office",
   "scenario_title_ja": "郵便局で",
@@ -25,8 +25,7 @@
     "L-1529": {"en": "Officer, official: «pegawai bank» = a bank officer.", "ja": "職員、係官：«pegawai bank»＝銀行員。"},
     "L-1530": {"en": "pe(N)- + timbang (Ch3): a weighing scale.", "ja": "pe(N)- + timbang（第3課）：はかり。"},
     "L-1531": {"en": "Post, mail: «pejabat pos» (Ch3) = post office, «pos udara» = airmail.", "ja": "郵便：«pejabat pos»（第3課）＝郵便局、«pos udara»＝航空便。"},
-    "L-1532": {"en": "One by one, one at a time. The standard phrase is «satu per satu».", "ja": "一つずつ、一人ずつ。標準的な言い方は «satu per satu»。"},
-    "L-1638": {"en": "One by one, one at a time: «jawab soalan satu per satu» = answer the questions one by one.", "ja": "一つずつ、一人ずつ：«jawab soalan satu per satu»＝質問に一つずつ答える。"}
+    "L-1532": {"en": "One by one, one at a time: «jawab soalan satu per satu» = answer the questions one by one. «satu-satu» is also heard.", "ja": "一つずつ、一人ずつ：«jawab soalan satu per satu»＝質問に一つずつ答える。«satu-satu» とも言います。"}
   },
   "frames": [
     {"frame": "Kedua-dua ___ ini ___ kilogram.", "example": "Kedua-dua bungkusan ini tiga kilogram.", "decoys": ["kedua"], "meaning_en": "Both of these parcels weigh three kilograms.", "meaning_ja": "この小包は両方とも3キロです。"},

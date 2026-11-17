@@ -240,6 +240,60 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-health-42",
+      "lang": "ms",
+      "term": "babak",
+      "gloss_en": "scene (of a play)",
+      "gloss_ja": "場面、シーン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Awak sudah sedia. Sekarang cuba babak sebenar, dan ingat: jangan takut buat salah. In 2 Hanashishou scenes: Booking the dentist, How to play.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-health"
+        }
+      ],
+      "scene": "dunia-jambatan-health",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-health-43",
+      "lang": "ms",
+      "term": "bayangkan",
+      "gloss_en": "imagine",
+      "gloss_ja": "想像する",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Awak dengar tak? Pengurusan nak cat semula seluruh bangunan. Warna merah jambu! Bayangkan! In 2 Hanashishou scenes: Lift chat, The physio session.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-health"
+        }
+      ],
+      "scene": "dunia-jambatan-health",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-health-44",
+      "lang": "ms",
+      "term": "ejaan",
+      "gloss_en": "spelling",
+      "gloss_ja": "つづり",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Maaf, saya masih tak dapat ejaannya. In 2 Hanashishou scenes: Booking the dentist, The surprise party.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-health"
+        }
+      ],
+      "scene": "dunia-jambatan-health",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-health-21",
       "lang": "ms",
       "term": "isi borang",
@@ -266,6 +320,42 @@
       "pos": "adjective",
       "affix_tag": "root",
       "note": "Hanashishou: Jalan buat ia lega. In 2 Hanashishou scenes: The handover, The physio session.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-health"
+        }
+      ],
+      "scene": "dunia-jambatan-health",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-health-45",
+      "lang": "ms",
+      "term": "versi",
+      "gloss_en": "version",
+      "gloss_ja": "バージョン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Jadiii? Cerita semua. Versi pendek! In 2 Hanashishou scenes: At the pharmacy, The late parts.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-health"
+        }
+      ],
+      "scene": "dunia-jambatan-health",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-health-46",
+      "lang": "ms",
+      "term": "ahli",
+      "gloss_en": "member; specialist",
+      "gloss_ja": "会員、専門家",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Sudah tiga minggu, belakang bawah anda sakit selepas lama duduk di meja. Paling teruk waktu petang. Doktor hantar anda jumpa ahli fisioterapi. In 1 Hanashishou scene: The physio session.",
       "links": [
         {
           "type": "babak",
@@ -312,6 +402,24 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-health-47",
+      "lang": "ms",
+      "term": "bekukan",
+      "gloss_en": "freeze (an account)",
+      "gloss_ja": "凍結する（口座を）",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Tiada masalah. Kami boleh bekukan sehingga dua bulan. Cajnya RM20. In 1 Hanashishou scene: The gym.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-health"
+        }
+      ],
+      "scene": "dunia-jambatan-health",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-health-19",
       "lang": "ms",
       "term": "belakang bawah",
@@ -338,6 +446,60 @@
       "pos": "verb",
       "affix_tag": "root",
       "note": "Hanashishou: Anda tidak berpura-pura faham. Anda tanya, dan semak tekaan anda. In 1 Hanashishou scene: At the clinic.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-health"
+        }
+      ],
+      "scene": "dunia-jambatan-health",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-health-48",
+      "lang": "ms",
+      "term": "ejakan",
+      "gloss_en": "spell (out)",
+      "gloss_ja": "つづりを言う",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Maaf, Tanaka dengan... T-A? Boleh ejakan? In 1 Hanashishou scene: Booking the dentist.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-health"
+        }
+      ],
+      "scene": "dunia-jambatan-health",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-health-49",
+      "lang": "ms",
+      "term": "fisioterapi",
+      "gloss_en": "physiotherapy",
+      "gloss_ja": "理学療法",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Sudah tiga minggu, belakang bawah anda sakit selepas lama duduk di meja. Paling teruk waktu petang. Doktor hantar anda jumpa ahli fisioterapi. In 1 Hanashishou scene: The physio session.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-health"
+        }
+      ],
+      "scene": "dunia-jambatan-health",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-health-50",
+      "lang": "ms",
+      "term": "glukosa",
+      "gloss_en": "glucose",
+      "gloss_ja": "ブドウ糖",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Terima kasih sebab beritahu. Gula itu akan ubah bacaan glukosa awak. In 1 Hanashishou scene: The blood test.",
       "links": [
         {
           "type": "babak",
@@ -402,14 +564,14 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-health-03",
+      "id": "ms-j-health-51",
       "lang": "ms",
-      "term": "kurang dengar",
-      "gloss_en": "Didn't hear clearly; didn't quite catch it",
-      "gloss_ja": "よく聞こえなかった、聞き取れなかった",
-      "pos": "expression",
-      "affix_tag": "chunk",
-      "note": "Hanashishou: Maaf, saya kurang dengar. In 1 Hanashishou scene: At the clinic.",
+      "term": "keahlian",
+      "gloss_en": "membership",
+      "gloss_ja": "会員資格",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "Hanashishou: Hai, selamat datang! Berminat dengan keahlian? In 1 Hanashishou scene: The gym.",
       "links": [
         {
           "type": "babak",
@@ -420,14 +582,32 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-health-37",
+      "id": "ms-j-health-52",
       "lang": "ms",
-      "term": "mengantuk",
-      "gloss_en": "Sleepy; drowsy",
-      "gloss_ja": "眠い",
-      "pos": "adjective",
-      "affix_tag": "root",
-      "note": "Hanashishou: Oh, dan ubat ini mungkin buat anda mengantuk sikit. Okey? In 1 Hanashishou scene: At the pharmacy.",
+      "term": "ketegangan",
+      "gloss_en": "tension",
+      "gloss_ja": "緊張、こわばり",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "Hanashishou: Terima kasih, itu sangat membantu. Ini ketegangan otot sebab duduk. Buat regangan ini: 10 kali, dua kali sehari. In 1 Hanashishou scene: The physio session.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-health"
+        }
+      ],
+      "scene": "dunia-jambatan-health",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-health-03",
+      "lang": "ms",
+      "term": "kurang dengar",
+      "gloss_en": "Didn't hear clearly; didn't quite catch it",
+      "gloss_ja": "よく聞こえなかった、聞き取れなかった",
+      "pos": "expression",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Maaf, saya kurang dengar. In 1 Hanashishou scene: At the clinic.",
       "links": [
         {
           "type": "babak",
@@ -492,6 +672,42 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-health-53",
+      "lang": "ms",
+      "term": "regangan",
+      "gloss_en": "stretch (exercise)",
+      "gloss_ja": "ストレッチ",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Terima kasih, itu sangat membantu. Ini ketegangan otot sebab duduk. Buat regangan ini: 10 kali, dua kali sehari. In 1 Hanashishou scene: The physio session.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-health"
+        }
+      ],
+      "scene": "dunia-jambatan-health",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-health-54",
+      "lang": "ms",
+      "term": "saringan",
+      "gloss_en": "screening",
+      "gloss_ja": "検診、スクリーニング",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Syarikat anda bayar untuk saringan kesihatan tahunan. Surat itu kata: jangan makan atau minum kecuali air selama 10 jam sebelum ujian darah. Pagi ini, tanpa fikir, anda minum kopi manis. In 1 Hanashishou scene: The blood test.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-health"
+        }
+      ],
+      "scene": "dunia-jambatan-health",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-health-40",
       "lang": "ms",
       "term": "setahu saya",
@@ -500,6 +716,24 @@
       "pos": "expression",
       "affix_tag": "chunk",
       "note": "Hanashishou: Tidak batuk. Dan tiada alahan, setahu saya. In 1 Hanashishou scene: At the clinic.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-health"
+        }
+      ],
+      "scene": "dunia-jambatan-health",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-health-55",
+      "lang": "ms",
+      "term": "skala",
+      "gloss_en": "scale",
+      "gloss_ja": "尺度",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Pada skala 0 hingga 10, teruk mana? 0 tiada sakit, 10 sakit paling teruk yang awak boleh bayangkan. In 1 Hanashishou scene: The physio session.",
       "links": [
         {
           "type": "babak",

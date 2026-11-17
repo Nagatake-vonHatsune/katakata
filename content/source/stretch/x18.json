@@ -27,7 +27,7 @@
     {"speaker": "Tanaka", "ms": "Saya juga ingat Puan Siti. Dia yang jemput saya ke rumahnya pada hari Ahad pertama.", "en": "I also remember Mrs Siti. She was the one who invited me to her home on my first Sunday.",
      "choices": ["Saya juga ingat Puan Siti. Dia dijemput saya ke rumahnya.", "Saya juga ingat Puan Siti. Saya yang jemput dia ke Osaka semalam."],
      "choices_en": ["I also remember Mrs Siti. She was invited me to her home.", "I also remember Mrs Siti. I was the one who invited her to Osaka yesterday."]},
-    {"speaker": "Encik Rahman", "ms": "Bagaimana hidup Encik di sini sekarang?", "en": "How's life here for you now?"},
+    {"speaker": "Encik Rahman", "ms": "Encik seronok tinggal di sini sekarang?", "en": "Are you enjoying life here now?"},
     {"speaker": "Tanaka", "ms": "Seronok! Saya bersukan setiap minggu, dan saya sedang belajar memasak.", "en": "Great! I do sport every week, and I'm learning to cook.",
      "choices": ["Seronok! Tetapi saya sudah sedang akan belajar memasak.", "Seronok! Saya bersukan setiap minggu, tetapi saya tidak suka bersenam."],
      "choices_en": ["Great! But I already am will learn to cook.", "Great! I do sport every week, but I don't like exercising."]},

@@ -438,6 +438,42 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-social-129",
+      "lang": "ms",
+      "term": "jadikan",
+      "gloss_en": "make (it), turn into",
+      "gloss_ja": "〜にする",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Jadikan ia janji. Bina ayat perkataan demi perkataan. In 2 Hanashishou scenes: House rules, Monday catch-up.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-134",
+      "lang": "ms",
+      "term": "rumus",
+      "gloss_en": "formula",
+      "gloss_ja": "まとめる（要点を）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Anda rumus apa yang setiap orang mahu, cadang satu pelan, dan semak semua setuju. In 2 Hanashishou scenes: Road trip, Team dinner.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-social-108",
       "lang": "ms",
       "term": "teruskan",
@@ -446,6 +482,276 @@
       "pos": "verb",
       "affix_tag": "root",
       "note": "Hanashishou: Anda puji apa yang sudah baik, jadi dia tahu apa yang perlu dia teruskan. In 2 Hanashishou scenes: Feedback on the slides, Monday catch-up.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-140",
+      "lang": "ms",
+      "term": "bentang",
+      "gloss_en": "present (a talk or slides)",
+      "gloss_ja": "発表する（スライドを）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya nak tolong. Puan buat kajian. Saya buat slaid, dan kita bentang sama-sama. Boleh? In 1 Hanashishou scene: The group project.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-141",
+      "lang": "ms",
+      "term": "bentangkan",
+      "gloss_en": "present (formal)",
+      "gloss_ja": "発表する（あらたまった言い方）",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Saya tahu puan mahu ia sempurna, saya pun sama. Bagaimana kalau puan ketuai kajian, saya sediakan slaid, dan kita bentangkan separuh setiap seorang? In 1 Hanashishou scene: The group project.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-147",
+      "lang": "ms",
+      "term": "bonus",
+      "gloss_en": "bonus",
+      "gloss_ja": "ボーナス",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Alah, biarlah aku. Duit bonus ni! In 1 Hanashishou scene: Jom lepak!.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-148",
+      "lang": "ms",
+      "term": "buktikan",
+      "gloss_en": "prove",
+      "gloss_ja": "証明する",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Betul ke? Buktikan! In 1 Hanashishou scene: House rules.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-153",
+      "lang": "ms",
+      "term": "elok-elok",
+      "gloss_en": "carefully, properly",
+      "gloss_ja": "気をつけて、ちゃんと",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "Hanashishou: Nombor pesanan JX-42! Cakap elok-elok, tapi dapatkan tarikh. Tarikh yang betul! In 1 Hanashishou scene: The late parts.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-155",
+      "lang": "ms",
+      "term": "forum",
+      "gloss_en": "forum",
+      "gloss_ja": "フォーラム",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Pengerusi syarikat, Azula, akan beri ucapan di sebuah forum kepimpinan esok, dan dia minta anda tengok latihannya. Ucapan itu hebat, tapi dia cakap sangat laju dan tak pernah diam sekejap. Teka: apa maklum balas yang terbaik? In 1 Hanashishou scene: The chairperson's speech.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-156",
+      "lang": "ms",
+      "term": "garis",
+      "gloss_en": "line, underline",
+      "gloss_ja": "線",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Ahad. Anda dalam krew katering untuk konsert malam ini. Penyanyinya, Miku, minta steamboat untuk semua krew, dan anda ke pasar dengan senarai. Paling atas, garis tiga kali: BAWANG PERAI. In 1 Hanashishou scene: Leeks for the hotpot.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-160",
+      "lang": "ms",
+      "term": "hubungkan",
+      "gloss_en": "connect, link",
+      "gloss_ja": "つなぐ",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Anda ucap terima kasih, beri langkah seterusnya, dan hubungkan dia dengan orang yang betul. In 1 Hanashishou scene: Demo day with Jinx.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-162",
+      "lang": "ms",
+      "term": "ilmu",
+      "gloss_en": "knowledge",
+      "gloss_ja": "知識",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Anda tak akan dapat ilmu baru, dan anda pun mahu pelanggan nampak kerja anda. In 1 Hanashishou scene: The group project.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-165",
+      "lang": "ms",
+      "term": "jelaskan",
+      "gloss_en": "explain",
+      "gloss_ja": "説明する",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Anda setuju dan jelaskan satu syarat anda. In 1 Hanashishou scene: The bike shop.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-170",
+      "lang": "ms",
+      "term": "kejuruteraan",
+      "gloss_en": "engineering",
+      "gloss_ja": "工学",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "Hanashishou: Sabtu petang di perpustakaan bandar. Anda ulang kaji untuk peperiksaan dengan kumpulan belajar anda. Salah seorang ialah Lily, pelajar kejuruteraan yang boleh baiki apa saja kecuali tumpuannya sendiri. Lima minit kemudian, dia sudah bosan. In 1 Hanashishou scene: Quiet, please.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-172",
+      "lang": "ms",
+      "term": "kenaikan pangkat",
+      "gloss_en": "promotion (at work)",
+      "gloss_ja": "昇進",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Anda ada temu duga kenaikan pangkat hari Isnin. Pengurus anda, Puan Tan, tawarkan diri untuk \"sediakan\" anda. Dia pegang papan klip dan pemasa. In 1 Hanashishou scene: Mock interview.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-174",
+      "lang": "ms",
+      "term": "kepimpinan",
+      "gloss_en": "leadership",
+      "gloss_ja": "リーダーシップ",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "Hanashishou: Pengerusi syarikat, Azula, akan beri ucapan di sebuah forum kepimpinan esok, dan dia minta anda tengok latihannya. Ucapan itu hebat, tapi dia cakap sangat laju dan tak pernah diam sekejap. Teka: apa maklum balas yang terbaik? In 1 Hanashishou scene: The chairperson's speech.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-176",
+      "lang": "ms",
+      "term": "ketik",
+      "gloss_en": "click, tap",
+      "gloss_ja": "クリックする、タップする",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Puan Tan ketik pennya. In 1 Hanashishou scene: Mock interview.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-179",
+      "lang": "ms",
+      "term": "klik",
+      "gloss_en": "click",
+      "gloss_ja": "クリックする",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Ada bunyi klik bila saya tukar gear. Cuba dengar. Boleh tolong baiki? In 1 Hanashishou scene: The bike shop.",
       "links": [
         {
           "type": "babak",
@@ -510,6 +816,114 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-social-202",
+      "lang": "ms",
+      "term": "pembentangan",
+      "gloss_en": "presentation",
+      "gloss_ja": "プレゼンテーション",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "Hanashishou: Ini rancangannya. Saya buat kajian, penulisan, reka bentuk dan pembentangan. Awak boleh... pilih fon. In 1 Hanashishou scene: The group project.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-204",
+      "lang": "ms",
+      "term": "pemula",
+      "gloss_en": "starter (\"syarikat pemula\" = start-up)",
+      "gloss_ja": "始める人（«syarikat pemula» スタートアップ）",
+      "pos": "noun",
+      "affix_tag": "pe-",
+      "note": "Hanashishou: Sabtu petang, sejam sebelum parti atas bumbung untuk penduduk kondo yang anda uruskan. Jinx sendiri sampai, pengasas syarikat pemula yang membuat bunga api itu, dengan senyuman lebar dan sebuah kotak besar yang bunyi tik-tik sikit. Teka: apa dalam kotak itu? In 1 Hanashishou scene: Fireworks on the roof.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-207",
+      "lang": "ms",
+      "term": "penemu duga",
+      "gloss_en": "interviewer",
+      "gloss_ja": "面接官",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Semua orang cakap begitu. Penemu duga sudah bosan dengar. In 1 Hanashishou scene: Mock interview.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-210",
+      "lang": "ms",
+      "term": "penulisan",
+      "gloss_en": "writing",
+      "gloss_ja": "書くこと、文章",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "Hanashishou: Ini rancangannya. Saya buat kajian, penulisan, reka bentuk dan pembentangan. Awak boleh... pilih fon. In 1 Hanashishou scene: The group project.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-211",
+      "lang": "ms",
+      "term": "peperiksaan",
+      "gloss_en": "exam",
+      "gloss_ja": "試験",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "Hanashishou: Sabtu petang di perpustakaan bandar. Anda ulang kaji untuk peperiksaan dengan kumpulan belajar anda. Salah seorang ialah Lily, pelajar kejuruteraan yang boleh baiki apa saja kecuali tumpuannya sendiri. Lima minit kemudian, dia sudah bosan. In 1 Hanashishou scene: Quiet, please.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-212",
+      "lang": "ms",
+      "term": "peranan",
+      "gloss_en": "role",
+      "gloss_ja": "役割",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "Hanashishou: Mira, yang uruskan acara pasukan anda, minta anda tolong rancang makan malam pasukan pada hari Ahad, bersama Jess dari IT dan pengurus anda, Puan Tan. Mereka rapat, tapi jarang setuju. Teka: apa peranan terbaik anda? In 1 Hanashishou scene: Team dinner.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-social-119",
       "lang": "ms",
       "term": "peruncitan",
@@ -528,6 +942,42 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-social-215",
+      "lang": "ms",
+      "term": "profesional",
+      "gloss_en": "professional",
+      "gloss_ja": "プロの",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Hanashishou: Tutup latihan ini dengan profesional. Bina ayat perkataan demi perkataan. In 1 Hanashishou scene: Mock interview.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-218",
+      "lang": "ms",
+      "term": "rata",
+      "gloss_en": "flat, even (\"sama rata\" = equal)",
+      "gloss_ja": "平らな（«sama rata» 平等に）",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Hanashishou: Anda terima belanja itu dengan terima kasih, dan janji lain kali giliran anda. Semua sama rata. In 1 Hanashishou scene: Jom lepak!.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-social-121",
       "lang": "ms",
       "term": "sedangkan",
@@ -536,6 +986,24 @@
       "pos": "conjunction",
       "affix_tag": "root",
       "note": "Hanashishou: Maaf mengganggu. Rasanya ada salah faham: yang ini well-done, sedangkan dia pesan medium-rare. Boleh tukar? In 1 Hanashishou scene: Not as ordered.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-talk"
+        }
+      ],
+      "scene": "dunia-jambatan-social-talk",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-226",
+      "lang": "ms",
+      "term": "sifat",
+      "gloss_en": "quality; adjective (\"kata sifat\")",
+      "gloss_ja": "性質；«kata sifat» 形容詞",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Slaid 3 dan 5: terlalu banyak teks, tiada angka. Satu idea satu slaid. Bukti, bukan kata sifat. In 1 Hanashishou scene: The group project.",
       "links": [
         {
           "type": "babak",

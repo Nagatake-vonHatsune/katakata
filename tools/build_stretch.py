@@ -46,7 +46,7 @@ def main(chapter):
             "gloss_en": r["Meaning (EN)"].strip(),
             "gloss_ja": r["Meaning (JA)"].strip(),
             "pos": r["POS"].strip(),
-            "affix_tag": r["Affix tag"].strip() or "root",
+            "affix_tag": r["Affix tag"].strip() or note.get("tag") or "root",  # "tag" in the source note: only when the ledger cell is blank
             "note": note["en"],
             "links": [{"type": "babak", "target": f"stretch-{xid}"}],
             "scene": f"stretch-{xid}",

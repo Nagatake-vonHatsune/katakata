@@ -66,7 +66,7 @@
     {"speaker": "Tanaka", "ms": "Mustahil! Saya selalu bersenam di gim.", "en": "Impossible! I always exercise at the gym.",
      "choices": ["Bagus! Saya mahu tahap kolesterol yang paling tinggi.", "Tidak perlu. Darah saya biru."],
      "choices_en": ["Great! I want the highest cholesterol level.", "No need. My blood is blue."]},
-    {"speaker": "Doktor", "ms": "Mungkin sebab makanan. Sepatutnya Encik makan kurang nasi lemak dan roti canai.", "en": "Maybe it's the food. You really should eat less nasi lemak and roti canai."},
+    {"speaker": "Doktor", "ms": "Mungkin sebab makanan. Encik patut kurangkan makan nasi lemak dan roti canai.", "en": "Maybe it's the food. You should cut down on nasi lemak and roti canai."},
     {"speaker": "Tanaka", "ms": "Baik, doktor. Saya tidak akan makan roti canai langsung!", "en": "All right, doctor. I won't eat roti canai at all!",
      "choices": ["Baik, doktor. Saya makan roti canai setiap hari.", "Mustahil. Roti canai itu ubat saya."],
      "choices_en": ["All right, doctor. I eat roti canai every day.", "Impossible. Roti canai is my medicine."]}

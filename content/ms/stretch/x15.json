@@ -413,8 +413,8 @@
       {
         "id": "ms-x15-d11",
         "speaker": "Cik Mei Ling",
-        "ms": "Ya. Dia satu-satunya orang di pejabat yang tidak minum kopi.",
-        "en": "Yes. She's the only person in the office who doesn't drink coffee.",
+        "ms": "Ya. Sebelum minum kopi, dia tidak mahu bercakap dengan sesiapa. Pagi ini dia belum minum kopi.",
+        "en": "Yes. Before her coffee, she doesn't want to talk to anyone. And this morning she hasn't had her coffee yet.",
         "choices": [
           "Ya. Dia satu-satunya orang di pejabat yang memakai kasut.",
           "Tidak. Saya tidak jumpa sesiapa di pejabat."
@@ -427,20 +427,20 @@
       {
         "id": "ms-x15-d12",
         "speaker": "Tanaka",
-        "ms": "Pelik! Seseorang patut bagi dia kopi.",
-        "en": "How odd! Someone should give her a coffee."
+        "ms": "Pelik! Cepat, bagi dia kopi.",
+        "en": "How odd! Quick, give her a coffee."
       },
       {
         "id": "ms-x15-d13",
         "speaker": "Cik Mei Ling",
-        "ms": "Jangan! Jangan beritahu sesiapa saya cakap begini.",
-        "en": "Don't! Don't tell anyone I said this.",
+        "ms": "Baik, saya buat kopi untuk dia sekarang. Tetapi jangan beritahu sesiapa saya cakap begini.",
+        "en": "All right, I'll make her a coffee now. But don't tell anyone I said this.",
         "choices": [
-          "Baik. Saya beritahu semua orang sekarang.",
+          "Baik, saya minum kopi dia sekarang.",
           "Jangan! Dia satu-satunya gergasi di pejabat."
         ],
         "choices_en": [
-          "Fine. I'll tell everyone now.",
+          "All right, I'll drink her coffee now.",
           "Don't! She's the only giant in the office."
         ]
       },

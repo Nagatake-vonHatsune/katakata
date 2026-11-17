@@ -285,15 +285,20 @@ describe('Hanashishou bridge', () => {
     expect(bridge.length).toBeGreaterThanOrEqual(4);
     expect(bridge.every((s) => s.chapter === 9)).toBe(true);
   });
-  it('splits the Social Jambatan scene by topic and keeps every card ID (step 6c-2, Sam 15 Nov 2026)', () => {
+  it('splits the Social Jambatan scene by topic and keeps every card ID (step 6c-2, Sam 15 Nov 2026; Events and outings split in two, Build B3)', () => {
     const ids = content.scenes.filter((s) => s.world.id === 'jambatan').map((s) => s.id).sort();
-    expect(ids).toEqual(['jambatan-daily-life', 'jambatan-health', 'jambatan-home-condo', 'jambatan-office', 'jambatan-social-events', 'jambatan-social-feelings', 'jambatan-social-talk', 'jambatan-tutorial']);
+    expect(ids).toEqual(['jambatan-daily-life', 'jambatan-health', 'jambatan-home-condo', 'jambatan-office', 'jambatan-social-feelings', 'jambatan-social-music', 'jambatan-social-parties', 'jambatan-social-talk', 'jambatan-tutorial']);
     const social = content.scenes.filter((s) => s.id.startsWith('jambatan-social-'));
-    // 118 before the ⚡ stages; every Social word promoted to a ⚡ stage (beri, ulang, hampir on 15 Nov 2026, more in Build B1) leaves it.
+    // 118 before the ⚡ stages; every Social word promoted to a ⚡ stage (beri, ulang, hampir on 15 Nov 2026, more in Build B1) leaves it;
+    // placement batch 2 (Build B3) adds its Social words (ledger rows from L-1817 whose Hanashishou pack is «social»).
     const promoted = Object.keys(MOVED_CARDS).filter((id) => id.startsWith('ms-j-social-')).length;
-    expect(social.reduce((n, s) => n + s.cards.length, 0)).toBe(118 - promoted);
+    const ledger = readFileSync(join(__dirname, '../../content/ledger/malay-ledger.csv'), 'utf8');
+    const added = ledger.split('\n').filter((l) => /^L-(18[2-9]\d|181[7-9]|19\d\d|20\d\d),/.test(l) && /,Jambatan · [^,]*,social · band/.test(l)).length;
+    expect(added).toBeGreaterThan(100);
+    expect(social.reduce((n, s) => n + s.cards.length, 0)).toBe(118 - promoted + added);
     expect(social.every((s) => s.cards.every((c) => /^ms-j-social-\d+$/.test(c.id)))).toBe(true);
     expect(content.cards.get('ms-j-social-20')!.scene).toBe('dunia-jambatan-social-talk');
-    expect(content.cards.get('ms-j-social-81')!.scene).toBe('dunia-jambatan-social-events');
+    expect(content.cards.get('ms-j-social-81')!.scene).toBe('dunia-jambatan-social-music');
+    expect(content.cards.get('ms-j-social-41')!.scene).toBe('dunia-jambatan-social-parties');
   });
 });

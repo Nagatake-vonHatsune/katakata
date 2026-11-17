@@ -566,7 +566,56 @@ describe('the ⚡ accent (design note section 3, WCAG 2.x; gold in Rebel)', () =
   });
 });
 
-describe("Build B3: line notes (Sam's answer 7 of 17 Nov 2026)", () => {
+describe("Build B3 (Sam's answers of 17 Nov 2026)", () => {
+  const pack = (n: number) => content.stretch.find((x) => x.chapter === n)!;
+  const ledger = readFileSync(join(root, 'content/ledger/malay-ledger.csv'), 'utf8');
+  const allMs = (n: number) => [...pack(n).frames.map((f) => f.example), ...pack(n).scenario.lines.flatMap((l) => [l.ms, ...(l.choices ?? [])])];
+  /** The ledger rows as cell arrays (quoted cells with commas and doubled quotes). */
+  const rows = ledger.split(/\r?\n/).filter(Boolean).map((line) => [...line.matchAll(/("(?:[^"]|"")*"|[^,]*)(,|$)/g)].slice(0, 20).map((m) => m[1].replace(/^"|"$/g, '').replace(/""/g, '"')));
+
+  it('merges «satu per satu»: L-1532 is «satu per satu», L-1638 is retired, and its card ms-x03-023 moves to ms-x03-022 with its schedule', () => {
+    expect(MOVED_CARDS['ms-x03-023']).toBe('ms-x03-022');
+    expect(content.cards.has('ms-x03-023')).toBe(false);
+    const c = content.cards.get('ms-x03-022')!;
+    expect([c.term, c.scene]).toEqual(['satu per satu', 'stretch-x03']);
+    expect(c.note).toMatch(/«satu-satu» is also heard/);
+    expect(c.note_ja).toMatch(/satu-satu/);
+    expect(ledger).toMatch(/^L-1532,satu per satu,.*,ms-x03-022,Ch3 \(extension\),/m);
+    expect(ledger).toMatch(/^L-1638,satu per satu,.*,,Retired: merged into L-1532,.*,Retired,/m);
+    expect(readFileSync(join(root, 'tools/import_hanashishou_bridge.py'), 'utf8')).toContain('"ms-x03-023"');
+    // no ⚡ 3 line or frame needs the retired card: «satu-satu» is gone, the frame says «satu per satu»
+    expect(allMs(3).join(' ')).not.toMatch(/satu-satu/);
+    expect(allMs(3)).toContain('Pelajar itu jawab soalan satu per satu.');
+    // the moved card keeps its schedule, and never overwrites one the learner already has on ms-x03-022
+    const old = { ...review(undefined, Rating.Good), last: 1 };
+    const m = migrate({ srs: { 'ms-x03-023': old } } as never);
+    expect(m.srs['ms-x03-022']).toEqual(old);
+    const mine = { ...newSrs(), reps: 3, interval: 9, last: 2 };
+    expect(moveCards({ 'ms-x03-023': old, 'ms-x03-022': mine })['ms-x03-022']).toEqual(mine);
+  });
+
+  it('splits «Events and outings» into «Parties and food» and «Music and shows»: every old card keeps its ID; only its scene and ledger place change', () => {
+    // the 45 cards of jambatan-social-events at b63ce9d
+    const old = [41, 42, 44, 51, 55, 61, 65, 67, 68, 70, 73, 74, 77, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 8, 92, 95, 97, 98, 104, 17, 3, 106, 7, 107, 109, 4, 111, 12, 112, 15, 19, 118, 120, 5, 18]
+      .map((n) => `ms-j-social-${String(n).padStart(2, '0')}`);
+    expect(new Set(old).size).toBe(45);
+    const scenes = new Map(content.scenes.map((s) => [s.id, s]));
+    expect(scenes.has('jambatan-social-events')).toBe(false);
+    const parties = scenes.get('jambatan-social-parties')!;
+    const music = scenes.get('jambatan-social-music')!;
+    expect([parties.title.en, music.title.en]).toEqual(['Parties and food', 'Music and shows']);
+    expect(parties.title.ja && music.title.ja).toBeTruthy();
+    for (const id of old) {
+      const c = content.cards.get(id);
+      expect(c, id).toBeTruthy();
+      expect(['dunia-jambatan-social-parties', 'dunia-jambatan-social-music'], id).toContain(c!.scene);
+      const place = c!.scene.endsWith('parties') ? 'Parties and food' : 'Music and shows';
+      const row = rows.find((r) => r[9].split(', ').includes(id))!;
+      expect(row[10], id).toMatch(new RegExp(`(^|; )Jambatan · ${place}$`));
+    }
+    expect(rows.filter((r) => /Events and outings/.test(r[10]))).toEqual([]);
+  });
+
   it('shows a line note with its own line: lines between reply steps follow the previous answer; the first step leads with the lines before its prompt', () => {
     const id = (n: number) => `ms-x08-d${String(n).padStart(2, '0')}`;
     // «Tolong bungkus» (line 11, with the «balut» note) follows the answer to line 9, not the line 13 step
@@ -587,5 +636,75 @@ describe("Build B3: line notes (Sam's answer 7 of 17 Nov 2026)", () => {
     }
     // a chapter dialogue (every line after the first is a reply step) shows no extra lines
     for (const r of dialogueReplyIds(17)) expect(lineContext(r)).toEqual({ lead: [], after: [] });
+  });
+
+  it('⚡ 17: the standard card always comes before its casual partner, in the cards and in the new dialogue; casual cards say «Spoken:» and name the partner', () => {
+    const x = pack(17);
+    const ids = x.cards.map((c) => c.term);
+    const pairs = [['kasihan', 'kesian'], ['semakin', 'makin'], ['emak', 'mak'], ['mengantuk', 'ngantuk']];
+    const lines = x.scenario.lines.map((l) => l.ms.toLowerCase());
+    const first = (w: string) => lines.findIndex((l) => new RegExp(`(?<![\\w-])${w}(?![\\w-])`).test(l));
+    for (const [std, casual] of pairs) {
+      expect(ids.indexOf(std), std).toBeGreaterThanOrEqual(0);
+      expect(ids.indexOf(std), `${std} before ${casual}`).toBeLessThan(ids.indexOf(casual));
+      const c = x.cards.find((k) => k.term === casual)!;
+      expect(c.note).toMatch(new RegExp(`^Spoken: «${casual}» for «${std}»`));
+      expect(c.note_ja).toBeTruthy();
+      expect(ledger).toMatch(new RegExp(`^L-\\d{4},${casual},.*,${c.id},Ch17 \\(extension\\),.*,Sam approved 17 Nov,`, 'm'));
+      // used in the dialogue, standard first
+      expect(first(std), std).toBeGreaterThanOrEqual(0);
+      expect(first(casual), casual).toBeGreaterThan(first(std));
+    }
+    // «mengantuk» is the promoted Jambatan row L-0768 (no duplicate row), and its old card moves with its schedule
+    expect(MOVED_CARDS['ms-j-health-37']).toBe(x.cards.find((c) => c.term === 'mengantuk')!.id);
+    expect(ledger.match(/^L-\d{4},mengantuk,/gm)).toHaveLength(1);
+    // 8 to 14 lines, 3 to 5 reply steps, each with two wrong replies; no «tapi»; «tetapi» never in a line with casual words
+    expect(x.scenario.lines.length).toBeGreaterThanOrEqual(8);
+    expect(x.scenario.lines.length).toBeLessThanOrEqual(14);
+    const replies = x.scenario.lines.filter((l) => l.choices?.length);
+    expect(replies.length).toBeGreaterThanOrEqual(3);
+    expect(replies.length).toBeLessThanOrEqual(5);
+    for (const l of replies) expect(l.choices).toHaveLength(2);
+    const casualWords = /(?<![\w-])(tak|nak|dah|ni|tu|kat|je|tau|kejap|takpe\w*|kesian|makin|mak|ngantuk|set)(?![\w-])/i;
+    for (const t of allMs(17)) {
+      expect(t, t).not.toMatch(/\btapi\b/i);
+      if (/\btetapi\b/i.test(t)) expect(t, t).not.toMatch(casualWords);
+    }
+    expect(x.scenario.lines.some((l) => /\w+lah\b/.test(l.ms) && !/sudahlah|adalah/.test(l.ms))).toBe(true);
+  });
+
+  it("applies Sam's line fixes to ⚡ 11, 13, 15 and 18", () => {
+    expect(allMs(11)).toContain('Pukul sepuluh. Encik Tanaka, tolong hantar slaid produk kita kepada mereka.');
+    expect(allMs(11).join(' ')).not.toMatch(/tolong memberi/);
+    expect(allMs(13)).toContain('Mungkin sebab makanan. Encik patut kurangkan makan nasi lemak dan roti canai.');
+    expect(allMs(15)).toContain('Pelik! Cepat, bagi dia kopi.');
+    expect(allMs(15).join(' ')).not.toMatch(/Seseorang patut/);
+    // the line before says who and why: the manager has not had her coffee yet
+    const l15 = pack(15).scenario.lines;
+    const i = l15.findIndex((l) => l.ms === 'Pelik! Cepat, bagi dia kopi.');
+    expect(l15[i - 1].ms).toMatch(/belum minum kopi/);
+    // ⚡ 18 stays a review with no new words: the line is rewritten instead of adding «kehidupan»
+    expect(allMs(18).join(' ')).not.toMatch(/hidup Encik|kehidupan/);
+    expect(pack(18).cards).toHaveLength(0);
+  });
+
+  it('adds placement batch 2 to Jambatan: every new Jambatan row has one card in the scene its place names; «bisnes» is paired with «perniagaan»', () => {
+    const rows = ledger.split('\n').filter((l) => /^L-(18[2-9]\d|181[7-9]|19\d\d|20\d\d),/.test(l) && /,Jambatan · /.test(l));
+    expect(rows.length).toBe(211);
+    for (const r of rows) {
+      const id = r.match(/,(ms-j-[a-z-]+-\d+),Jambatan · ([^,]+),/)!;
+      expect(id, r.slice(0, 40)).toBeTruthy();
+      const c = content.cards.get(id[1])!;
+      const scene = content.scenes.find((s) => `dunia-${s.id}` === c.scene)!;
+      expect(scene.title.en, r.slice(0, 40)).toBe(id[2]);
+    }
+    const bisnes = [...content.cards.values()].find((c) => c.term === 'bisnes')!;
+    expect(bisnes.scene).toMatch(/^dunia-jambatan-/);
+    expect(bisnes.note).toMatch(/standard: perniagaan/);
+    expect(ledger).toMatch(/^L-\d{4},bisnes,.*,Jambatan · Daily life,.*,Sam approved 17 Nov,/m);
+    // no word appears twice among live rows
+    const live = ledger.split('\n').slice(1).filter((l) => l && !/,Retired,/.test(l)).map((l) => l.split(',')[1].toLowerCase());
+    const dup = live.filter((w, k) => live.indexOf(w) !== k && !w.startsWith('"'));
+    expect(dup).toEqual([]);
   });
 });

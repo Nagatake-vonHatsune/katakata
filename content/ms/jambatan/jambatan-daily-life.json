@@ -240,24 +240,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-daily-life-52",
-      "lang": "ms",
-      "term": "hari bulan",
-      "gloss_en": "date (day of the month)",
-      "gloss_ja": "日付（何日）",
-      "pos": "noun",
-      "affix_tag": "lex",
-      "note": "Hanashishou: 10 hari bulan. In 4 Hanashishou scenes: Booking the dentist, The late parts, The leave request, The phone plan.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-daily-life"
-        }
-      ],
-      "scene": "dunia-jambatan-daily-life",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-daily-life-08",
       "lang": "ms",
       "term": "ketuk",
@@ -870,6 +852,24 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-daily-life-101",
+      "lang": "ms",
+      "term": "akui",
+      "gloss_en": "admit, acknowledge",
+      "gloss_ja": "認める",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Anda minta maaf, akui dia betul, dan terus buat sesuatu. In 2 Hanashishou scenes: Grab pickup, The blocked car.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-daily-life-83",
       "lang": "ms",
       "term": "bayaran balik",
@@ -878,6 +878,24 @@
       "pos": "noun",
       "affix_tag": "chunk",
       "note": "Hanashishou: Macam saya cakap, tiada bayaran balik. In 2 Hanashishou scenes: Returning a shirt, The missed bus.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-102",
+      "lang": "ms",
+      "term": "fon",
+      "gloss_en": "phone; headphones (here \"fon\" = font on the screen)",
+      "gloss_ja": "フォント（画面の文字）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Okey, saya pilih fon. In 2 Hanashishou scenes: The group project, The phone plan.",
       "links": [
         {
           "type": "babak",
@@ -942,6 +960,60 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-daily-life-103",
+      "lang": "ms",
+      "term": "pengasas",
+      "gloss_en": "founder",
+      "gloss_ja": "創業者",
+      "pos": "noun",
+      "affix_tag": "pe(N)-",
+      "note": "Hanashishou: Anda bayar RM10. Lelaki di sebelah anda dalam barisan sedang baca majalah bisnes. Di kulit depan ada pengasas syarikat permulaan, Jinx, dengan lengan robot. In 2 Hanashishou scenes: Fireworks on the roof, The missed bus.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-104",
+      "lang": "ms",
+      "term": "platform",
+      "gloss_en": "platform",
+      "gloss_ja": "ホーム、プラットフォーム",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Platform 7. Terima kasih banyak! In 2 Hanashishou scenes: Asking the way, The missed bus.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-105",
+      "lang": "ms",
+      "term": "ramen",
+      "gloss_en": "ramen",
+      "gloss_ja": "ラーメン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Makanannya pula! Setiap malam dia hantar gambar ramen. Saya lapar dah ni. In 2 Hanashishou scenes: The chatty colleague, The chatty driver.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-daily-life-87",
       "lang": "ms",
       "term": "salah faham",
@@ -978,6 +1050,24 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-daily-life-106",
+      "lang": "ms",
+      "term": "asingkan",
+      "gloss_en": "set aside, separate",
+      "gloss_ja": "分ける、別にする",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Okey, saya asingkan. In 1 Hanashishou scene: The food allergy.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-daily-life-24",
       "lang": "ms",
       "term": "atas nama",
@@ -996,6 +1086,60 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-daily-life-107",
+      "lang": "ms",
+      "term": "berakhir",
+      "gloss_en": "end (with)",
+      "gloss_ja": "終わる",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "Hanashishou: Untuk keselamatan, boleh berikan empat digit terakhir kad anda? Terima kasih, kad yang berakhir dengan 4821. In 1 Hanashishou scene: Card blocked.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-108",
+      "lang": "ms",
+      "term": "bisnes",
+      "gloss_en": "business (spoken, for \"perniagaan\")",
+      "gloss_ja": "ビジネス（「perniagaan」の話し言葉）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Anda bayar RM10. Lelaki di sebelah anda dalam barisan sedang baca majalah bisnes. Di kulit depan ada pengasas syarikat permulaan, Jinx, dengan lengan robot. Spoken form; standard: perniagaan. In 1 Hanashishou scene: The missed bus.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-109",
+      "lang": "ms",
+      "term": "bucu",
+      "gloss_en": "corner",
+      "gloss_ja": "角（かど）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Pukul 10 malam. Anda dan seorang kawan duduk di sebuah kedai mamak yang sibuk, di meja 12 (nombornya ada di bucu meja). In 1 Hanashishou scene: At the mamak.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-daily-life-22",
       "lang": "ms",
       "term": "buka sekatan",
@@ -1004,6 +1148,24 @@
       "pos": "expression",
       "affix_tag": "chunk",
       "note": "Hanashishou: Boleh buka sekatan kad saya? In 1 Hanashishou scene: Card blocked.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-110",
+      "lang": "ms",
+      "term": "bunyikan",
+      "gloss_en": "sound, make ring (the horn)",
+      "gloss_ja": "鳴らす",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Pemandu tekan brek kuat-kuat. Kereta di belakang bunyikan hon. In 1 Hanashishou scene: The chatty driver.",
       "links": [
         {
           "type": "babak",
@@ -1050,6 +1212,60 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-daily-life-111",
+      "lang": "ms",
+      "term": "geleng",
+      "gloss_en": "shake (one's head)",
+      "gloss_ja": "（首を）横に振る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Anda ketuk tingkap. Lelaki di dalam geleng kepala. Itu bukan kereta anda. In 1 Hanashishou scene: Grab pickup.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-112",
+      "lang": "ms",
+      "term": "halau",
+      "gloss_en": "chase away, drive off",
+      "gloss_ja": "追い払う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Sori bos, Pintu A jalan sehala. Saya tak boleh berhenti situ, nanti pengawal halau. In 1 Hanashishou scene: Grab pickup.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-113",
+      "lang": "ms",
+      "term": "kacang tanah",
+      "gloss_en": "peanut",
+      "gloss_ja": "ピーナッツ",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Ya, tapi saya alah kacang tanah. Hidangan mana yang tiada kacang? In 1 Hanashishou scene: The food allergy.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-daily-life-90",
       "lang": "ms",
       "term": "kacang tumbuk",
@@ -1058,6 +1274,24 @@
       "pos": "noun",
       "affix_tag": "chunk",
       "note": "Hanashishou: Ada kacang tumbuk di atas. In 1 Hanashishou scene: The food allergy.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-114",
+      "lang": "ms",
+      "term": "kanvas",
+      "gloss_en": "canvas",
+      "gloss_ja": "キャンバス",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Pasar malam. Anda suka sebuah beg kanvas di satu gerai. Tiada tanda harga. Bajet anda lebih kurang RM60. In 1 Hanashishou scene: Haggling at the market.",
       "links": [
         {
           "type": "babak",
@@ -1176,6 +1410,60 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-daily-life-115",
+      "lang": "ms",
+      "term": "mall",
+      "gloss_en": "shopping mall",
+      "gloss_ja": "ショッピングモール",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Mana-mana? Mall ni besar sangat, bos. Both are fine: pusat beli-belah. In 1 Hanashishou scene: Grab pickup.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-116",
+      "lang": "ms",
+      "term": "melalui",
+      "gloss_en": "through, via",
+      "gloss_ja": "〜を通して",
+      "pos": "prep",
+      "affix_tag": "meN- -i",
+      "note": "Hanashishou: Saya tidak selesa memberi PIN melalui telefon. Saya akan telefon nombor pada kad saya. In 1 Hanashishou scene: Card blocked.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-117",
+      "lang": "ms",
+      "term": "menangis",
+      "gloss_en": "cry",
+      "gloss_ja": "泣く",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "Hanashishou: RM20?! Alamak, awak nak saya menangis? In 1 Hanashishou scene: Haggling at the market.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-daily-life-94",
       "lang": "ms",
       "term": "mencelah",
@@ -1220,6 +1508,132 @@
       "pos": "expression",
       "affix_tag": "chunk",
       "note": "Hanashishou: anda mudah terjaga, dan lif bising sepanjang malam. Lebih baik tanya sekarang. In 1 Hanashishou scene: Checking in.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-118",
+      "lang": "ms",
+      "term": "pemanggil",
+      "gloss_en": "caller",
+      "gloss_ja": "電話をかけた人",
+      "pos": "noun",
+      "affix_tag": "pe(N)-",
+      "note": "Hanashishou: Pemanggil itu letak telefon. Anda telefon nombor pada kad, dan bank kata: mereka tak pernah telefon anda. In 1 Hanashishou scene: Card blocked.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-119",
+      "lang": "ms",
+      "term": "pembaharuan",
+      "gloss_en": "renewal",
+      "gloss_ja": "更新",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "Hanashishou: Bila tarikh pembaharuan pelan anda? In 1 Hanashishou scene: The phone plan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-120",
+      "lang": "ms",
+      "term": "pembesar suara",
+      "gloss_en": "loudspeaker",
+      "gloss_ja": "スピーカー",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Sebuah kedai telefon di pusat beli-belah. Pembesar suara sedang main lagu baharu Miku, kali ketiga dalam sepuluh minit. Anda mahu pelan prabayar. Anda selalu tonton video dalam tren, dan bajet anda RM50 sebulan. In 1 Hanashishou scene: The phone plan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-121",
+      "lang": "ms",
+      "term": "penipu",
+      "gloss_en": "cheat, fraudster",
+      "gloss_ja": "詐欺師",
+      "pos": "noun",
+      "affix_tag": "pe(N)-",
+      "note": "Hanashishou: Penipu! In 1 Hanashishou scene: Card blocked.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-122",
+      "lang": "ms",
+      "term": "perbaharui",
+      "gloss_en": "to renew",
+      "gloss_ja": "更新する",
+      "pos": "verb",
+      "affix_tag": "lex",
+      "note": "Hanashishou: Kalau begitu, pelan RM45: 60GB sebulan. Pelan ini diperbaharui setiap 1 haribulan. In 1 Hanashishou scene: The phone plan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-123",
+      "lang": "ms",
+      "term": "pertukaran",
+      "gloss_en": "change, exchange",
+      "gloss_ja": "両替、交換",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "Hanashishou: Empat puluh minit kemudian, di Pintu 12, skrin tunjuk: PERTUKARAN PINTU. Ada pengumuman, tapi susah dengar. In 1 Hanashishou scene: Airport check-in.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-124",
+      "lang": "ms",
+      "term": "pesawat",
+      "gloss_en": "aircraft",
+      "gloss_ja": "航空機",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Tepat 20. Bagus. Ini pas masuk awak. Pintu 12, naik pesawat pukul 9.40. Both are fine: kapal terbang. In 1 Hanashishou scene: Airport check-in.",
       "links": [
         {
           "type": "babak",
@@ -1310,6 +1724,24 @@
       "pos": "noun",
       "affix_tag": "root",
       "note": "Hanashishou: Ini resitnya. In 1 Hanashishou scene: Returning a shirt.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-125",
+      "lang": "ms",
+      "term": "robot",
+      "gloss_en": "robot",
+      "gloss_ja": "ロボット",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Anda bayar RM10. Lelaki di sebelah anda dalam barisan sedang baca majalah bisnes. Di kulit depan ada pengasas syarikat permulaan, Jinx, dengan lengan robot. In 1 Hanashishou scene: The missed bus.",
       "links": [
         {
           "type": "babak",
@@ -1464,6 +1896,24 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-daily-life-126",
+      "lang": "ms",
+      "term": "tetapkan",
+      "gloss_en": "to set, fix",
+      "gloss_ja": "定められる",
+      "pos": "verb",
+      "affix_tag": "di- -kan",
+      "note": "Hanashishou: Itu harga yang ditetapkan, maaf. In 1 Hanashishou scene: Airport check-in.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-daily-life-35",
       "lang": "ms",
       "term": "tunjuk jalan",
@@ -1472,6 +1922,42 @@
       "pos": "verb",
       "affix_tag": "chunk",
       "note": "Hanashishou: Boleh tunjuk jalan? In 1 Hanashishou scene: Asking the way.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-127",
+      "lang": "ms",
+      "term": "wujud",
+      "gloss_en": "exist",
+      "gloss_ja": "存在する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Hmm, nombor tu tak wujud. In 1 Hanashishou scene: Posting a parcel.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-daily-life"
+        }
+      ],
+      "scene": "dunia-jambatan-daily-life",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-daily-life-52",
+      "lang": "ms",
+      "term": "hari bulan",
+      "gloss_en": "date (day of the month)",
+      "gloss_ja": "日付（何日）",
+      "pos": "noun",
+      "affix_tag": "lex",
+      "note": "Hanashishou: 10 hari bulan. In 4 Hanashishou scenes: Booking the dentist, The late parts, The leave request, The phone plan.",
       "links": [
         {
           "type": "babak",

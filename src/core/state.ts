@@ -57,6 +57,10 @@ export const MOVED_CARDS: Record<string, string> = {
   'ms-j-office-26': 'ms-x15-002', // apa-apa (L-1324)
   'ms-j-daily-life-46': 'ms-x16-001', // teruk (L-1365)
   'ms-j-home-condo-26': 'ms-x16-010', // kesan (L-0674; it already had a row, so promoted, not added)
+  // Build B3 (17 Nov 2026): L-1638 «satu per satu» merged into L-1532 (now «satu per satu», Sam); its ⚡ 3 card is retired.
+  'ms-x03-023': 'ms-x03-022', // satu per satu (L-1638 → L-1532)
+  // Build B3: «mengantuk» (L-0768, a Jambatan row) promoted to ⚡ 17, before its spoken partner «ngantuk».
+  'ms-j-health-37': 'ms-x17-022', // mengantuk (L-0768)
 };
 
 export function moveCards(srs: Record<string, SrsState>, moved: Record<string, string> = MOVED_CARDS): Record<string, SrsState> {

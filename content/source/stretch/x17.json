@@ -1,8 +1,8 @@
 {
-  "note": "Hand-written source of the chapter 17 ⚡ stage (Build B2, 17 Nov 2026). tools/build_stretch.py turns it into content/ms/stretch/x17.json. Malay: Malaysian standard first; the spoken forms (je, tau, kejap, motor, komplen, tak ada hal …) come after their standard partners and are marked (card notes begin «Spoken:»; the register pairs of 17 Nov check them). Chapter 17 affix gates (all, joined -lah too). «sudi» for the polite invitation, «Lain kali, ya?» as the soft no. Chapter 1 to 17 core words plus the chapter 17 extension words only. «takkan» and «bisnes» are left out: the register rule needs «tidak akan» and «perniagaan» taught before the card, and no core text has «tidak akan» while «perniagaan» is a ⚡ 10 word. No picture scene for chapter 17, so no Cari Benda ⚡. All Japanese is a draft for the native check.",
+  "note": "Hand-written source of the chapter 17 ⚡ stage (Build B2, 17 Nov 2026; dialogue rewritten in Build B3, Sam 17 Nov 2026: a clear everyday scene between colleagues). tools/build_stretch.py turns it into content/ms/stretch/x17.json. Malay: Malaysian standard first; the spoken forms (je, tau, kejap, motor, komplen, tak ada hal …, and Build B3's kesian, makin, mak, ngantuk) come after their standard partners and are marked (card notes begin «Spoken:»). In the dialogue Tanaka speaks standard Malay and Cik Mei Ling answers in casual Malay, so each casual form follows its standard partner in the scene too (mengantuk → ngantuk, emak → mak, kasihan → kesian, semakin → makin). No line mixes «tetapi» with casual words, and «tapi» is not used (it has no spoken label anywhere). Joined -lah (Takpelah, rehatlah, Jomlah). Chapter 17 affix gates (all). «sudi» for the polite invitation and «Lain kali, ya?» as the soft no stay in the frames. Chapter 1 to 17 core words plus the chapter 17 extension words only. «takkan» is left out (no «tidak akan» line before it in core content); «bisnes» is a Jambatan card (Sam, 17 Nov). No picture scene for chapter 17, so no Cari Benda ⚡. All Japanese is a draft for the native check.",
   "chapter": 17,
-  "scenario_title_en": "A trip to the beach",
-  "scenario_title_ja": "ビーチへのお誘い",
+  "scenario_title_en": "A sleepy morning",
+  "scenario_title_ja": "眠い朝",
   "notes": {
     "L-1802": {
       "en": "Spoken: «je» for «sahaja / saja» (Ch3), only: «Santai je.» = Just relax.",
@@ -63,7 +63,15 @@
     "L-1816": {
       "en": "Spoken: «Tak ada hal.» = No problem. «tak» for «tidak».",
       "ja": "話し言葉：«Tak ada hal.»＝問題ないよ。«tak» は «tidak»。"
-    }
+    },
+    "L-0768": {"en": "meN- + kantuk: sleepy, drowsy. The standard form; in speech «ngantuk» (below). «Hari ini saya sangat mengantuk.»", "ja": "meN- + kantuk：眠い。標準の形。話し言葉では «ngantuk»（下）。«Hari ini saya sangat mengantuk.»＝今日はとても眠いです。", "tag": "meN-"},
+    "L-2028": {"en": "Pity; poor thing. The standard form; in speech «kesian» (below). «Kasihan emak saya.» = My poor mum.", "ja": "かわいそうに、気の毒な。標準の形。話し言葉では «kesian»（下）。«Kasihan emak saya.»＝母がかわいそうです。"},
+    "L-2029": {"en": "Spoken: «kesian» for «kasihan» (above). «Kesian dia!» = Poor thing!", "ja": "話し言葉：«kasihan»（上）の話し言葉の形。«Kesian dia!»＝かわいそうに！"},
+    "L-2030": {"en": "More and more, increasingly: «semakin baik» = better and better. The standard form; in speech «makin» (below).", "ja": "ますます：«semakin baik»＝ますます良く。標準の形。話し言葉では «makin»（下）。"},
+    "L-2031": {"en": "Spoken: «makin» for «semakin» (above). «Makin baik!» = Getting better and better!", "ja": "話し言葉：«semakin»（上）の話し言葉の形。«Makin baik!»＝どんどん良くなってる！"},
+    "L-2032": {"en": "Mother, mum. The standard form; in speech «mak» (below). «Emak saya datang dari Jepun.»", "ja": "母、お母さん。標準の形。話し言葉では «mak»（下）。«Emak saya datang dari Jepun.»＝母が日本から来ました。"},
+    "L-2033": {"en": "Spoken: «mak» for «emak» (above). «mak Encik» = your mum.", "ja": "話し言葉：«emak»（上）の話し言葉の形。«mak Encik»＝あなたのお母さん。"},
+    "L-2034": {"en": "Spoken: «ngantuk» for «mengantuk» (above). «Ngantuk?» = Sleepy?", "ja": "話し言葉：«mengantuk»（上）の話し言葉の形。«Ngantuk?»＝眠いの？"}
   },
   "frames": [
     {
@@ -122,115 +130,27 @@
     }
   ],
   "lines": [
-    {
-      "speaker": "Cik Mei Ling",
-      "ms": "Encik Tanaka, hari Sabtu ini kami mahu pergi ke pantai. Sudikah Encik ikut?",
-      "en": "Mr Tanaka, this Saturday we're going to the beach. Would you like to come along?"
-    },
-    {
-      "speaker": "Tanaka",
-      "ms": "Terima kasih, Cik. Kita naik apa?",
-      "en": "Thank you. How are we getting there?",
-      "choices": [
-        "Merepek! Saya tidak suka pantai.",
-        "Terima kasih. Pantai itu motor saya."
-      ],
-      "choices_en": [
-        "Nonsense! I don't like the beach.",
-        "Thank you. The beach is my motorbike."
-      ]
-    },
-    {
-      "speaker": "Cik Mei Ling",
-      "ms": "Kita naik kereta saya. Encik Rahman naik motor dia.",
-      "en": "We'll go in my car. Mr Rahman is going on his motorbike."
-    },
-    {
-      "speaker": "Tanaka",
-      "ms": "Motor? Jauh tu!",
-      "en": "A motorbike? That's far!"
-    },
-    {
-      "speaker": "Cik Mei Ling",
-      "ms": "Tak ada hal. Dia suka. Santai je.",
-      "en": "No problem. He likes it. It's all relaxed."
-    },
-    {
-      "speaker": "Tanaka",
-      "ms": "Sayangnya hari Sabtu saya tidak lapang. Lain kali, ya?",
-      "en": "Unfortunately I'm not free on Saturday. Another time?",
-      "choices": [
-        "Set! Saya tidak lapang, jadi saya pergi.",
-        "Merepek! Pantai tidak ada air."
-      ],
-      "choices_en": [
-        "Deal! I'm not free, so I'll go.",
-        "Nonsense! The beach has no water."
-      ]
-    },
-    {
-      "speaker": "Cik Mei Ling",
-      "ms": "Alamak! Kenapa?",
-      "en": "Oh no! Why?"
-    },
-    {
-      "speaker": "Tanaka",
-      "ms": "Ada makan malam formal dengan bos dari Jepun. Saya mesti pergi.",
-      "en": "There's a formal dinner with my boss from Japan. I have to go."
-    },
-    {
-      "speaker": "Cik Mei Ling",
-      "ms": "Oh, kerja! Tak apa. Kalau macam tu, hari Ahad?",
-      "en": "Oh, work! That's fine. In that case, Sunday?",
-      "choices": [
-        "Oh, kerja! Saya komplen kepada bos Encik sekarang.",
-        "Oh, formal! Encik mesti pakai seluar pendek."
-      ],
-      "choices_en": [
-        "Oh, work! I'll complain to your boss right now.",
-        "Oh, formal! You must wear shorts."
-      ]
-    },
-    {
-      "speaker": "Tanaka",
-      "ms": "Hari Ahad boleh! Tetapi kejap, ya. Saya tanya isteri saya dulu.",
-      "en": "Sunday works! But just a moment. I'll ask my wife first."
-    },
-    {
-      "speaker": "(Narrator)",
-      "ms": "Lima minit kemudian.",
-      "en": "Five minutes later."
-    },
-    {
-      "speaker": "Tanaka",
-      "ms": "Isteri saya bersetuju! Kami datang hari Ahad.",
-      "en": "My wife agrees! We'll come on Sunday.",
-      "choices": [
-        "Isteri saya tak tau saya ada isteri.",
-        "Isteri saya bersetuju, tetapi dia tidak akan datang."
-      ],
-      "choices_en": [
-        "My wife doesn't know I have a wife.",
-        "My wife agrees, but she won't come."
-      ]
-    },
-    {
-      "speaker": "Cik Mei Ling",
-      "ms": "Bagus! Seronok-seronok, ya! Tetapi balasannya, Encik belanja kopi.",
-      "en": "Great! Have fun! But in return, you buy the coffee."
-    },
-    {
-      "speaker": "Tanaka",
-      "ms": "Tak ada hal. Saya tidak akan lupa!",
-      "en": "No problem. I won't forget!",
-      "choices": [
-        "Tak ada hal. Saya tau saya lupa.",
-        "Merepek! Kopi itu orang lain punya."
-      ],
-      "choices_en": [
-        "No problem. I know I forgot.",
-        "Nonsense! That coffee is someone else's."
-      ]
-    }
+    {"speaker": "Tanaka", "ms": "Selamat pagi, Cik Mei Ling. Maaf, hari ini saya sangat mengantuk.", "en": "Good morning, Ms Mei Ling. Sorry, I'm very sleepy today."},
+    {"speaker": "Cik Mei Ling", "ms": "Pagi! Ngantuk? Kenapa? Semalam tak tidur?", "en": "Morning! Sleepy? Why? Didn't you sleep last night?",
+     "choices": ["Pagi! Ngantuk? Bagus, mesyuarat kita sepanjang hari!", "Pagi! Mak saya ngantuk kat Jepun."],
+     "choices_en": ["Morning! Sleepy? Great, our meeting goes on all day!", "Morning! My mum is sleepy in Japan."]},
+    {"speaker": "Tanaka", "ms": "Emak saya datang dari Jepun semalam. Kami bercakap sampai pukul dua pagi.", "en": "My mother arrived from Japan yesterday. We talked until two in the morning."},
+    {"speaker": "Cik Mei Ling", "ms": "Wah, mak Encik datang? Seronoknya! Dia tinggal berapa lama?", "en": "Wow, your mum's here? How lovely! How long is she staying?",
+     "choices": ["Wah, mak Encik datang? Saya tak tau Encik ada mak!", "Wah, mak Encik datang? Bagus, dia boleh kerja kat pejabat kita!"],
+     "choices_en": ["Wow, your mum's here? I didn't know you had a mum!", "Wow, your mum's here? Great, she can work in our office!"]},
+    {"speaker": "Tanaka", "ms": "Dua minggu. Tetapi kasihan emak saya. Dia tidak boleh tahan makanan pedas.", "en": "Two weeks. But my poor mother: she can't handle spicy food."},
+    {"speaker": "Cik Mei Ling", "ms": "Kesian dia! Takpelah, saya tau kedai yang tak pedas. Jom bawa mak Encik makan kat sana.", "en": "Poor thing! Never mind, I know a place that isn't spicy. Let's take your mum to eat there.",
+     "choices": ["Kesian dia! Bagi dia cili yang paling pedas.", "Kesian dia! Jom kita makan semua makanan dia."],
+     "choices_en": ["Poor thing! Give her the hottest chilli.", "Poor thing! Let's eat all her food."]},
+    {"speaker": "Tanaka", "ms": "Terima kasih! Emak saya mesti suka. Dia kata bahasa Melayu saya semakin baik.", "en": "Thank you! My mother is sure to like it. She says my Malay is getting better and better."},
+    {"speaker": "Cik Mei Ling", "ms": "Betul, makin baik! Nanti Encik cakap dengan pekerja kedai dalam bahasa Melayu, ya.", "en": "It's true, it's getting better! You can talk to the staff at the shop in Malay, okay?"},
+    {"speaker": "Tanaka", "ms": "Boleh. Hari Sabtu, pukul satu?", "en": "Sure. Saturday, at one?",
+     "choices": ["Boleh. Saya cakap bahasa Jepun sahaja.", "Merepek! Emak saya tidak makan."],
+     "choices_en": ["Sure. I'll speak only Japanese.", "Nonsense! My mother doesn't eat."]},
+    {"speaker": "Cik Mei Ling", "ms": "Set! Jumpa hari Sabtu. Sekarang Encik rehatlah dulu.", "en": "Deal! See you on Saturday. Now get some rest first."},
+    {"speaker": "Tanaka", "ms": "Terima kasih, Cik. Saya minum kopi dulu.", "en": "Thank you. I'll have a coffee first.",
+     "choices": ["Terima kasih, Cik. Saya tidur di meja Cik dulu.", "Tak apa. Saya tidur dalam mesyuarat."],
+     "choices_en": ["Thank you. I'll sleep at your desk first.", "It's fine. I'll sleep in the meeting."]},
+    {"speaker": "Cik Mei Ling", "ms": "Tak ada hal. Jomlah, saya belanja kopi!", "en": "No problem. Come on, the coffee's on me!"}
   ]
 }

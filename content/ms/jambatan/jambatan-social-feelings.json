@@ -294,6 +294,42 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-social-132",
+      "lang": "ms",
+      "term": "pujian",
+      "gloss_en": "compliment",
+      "gloss_ja": "ほめ言葉",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Jadi? Cakap dengan tepat. Aku tak ada masa untuk pujian yang kabur. In 2 Hanashishou scenes: Not as ordered, The chairperson's speech.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-136",
+      "lang": "ms",
+      "term": "aman",
+      "gloss_en": "peaceful, calm",
+      "gloss_ja": "平和な、穏やかな",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Hanashishou: Semua sudah dalam kereta. Kita tengok berapa lama aman ini bertahan. In 1 Hanashishou scene: Road trip.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-social-110",
       "lang": "ms",
       "term": "berbaloi",
@@ -302,6 +338,150 @@
       "pos": "adjective",
       "affix_tag": "root",
       "note": "Hanashishou: Luar Waktu Puncak paling berbaloi! Saya daftarkan sekarang? In 1 Hanashishou scene: The gym.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-143",
+      "lang": "ms",
+      "term": "berkilau",
+      "gloss_en": "sparkle, shiny",
+      "gloss_ja": "きらきら光る",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "Hanashishou: Hai! Saya Jinx, dari syarikat bunga api! Saya buat lebih untuk parti awak! Buatan tangan, lebih berkilau. Saya cuba satu dalam dapur awak, okey? In 1 Hanashishou scene: Fireworks on the roof.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-144",
+      "lang": "ms",
+      "term": "berseri-seri",
+      "gloss_en": "radiant, beaming",
+      "gloss_ja": "輝くような（笑顔）",
+      "pos": "adj",
+      "affix_tag": "ber-",
+      "note": "Hanashishou: Lepas konsert, Miku lari ke arah anda, masih berseri-seri. In 1 Hanashishou scene: The encore.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-146",
+      "lang": "ms",
+      "term": "bertahan",
+      "gloss_en": "last, hold out",
+      "gloss_ja": "持ちこたえる",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "Hanashishou: Semua sudah dalam kereta. Kita tengok berapa lama aman ini bertahan. In 1 Hanashishou scene: Road trip.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-154",
+      "lang": "ms",
+      "term": "fikiran",
+      "gloss_en": "mind, thoughts",
+      "gloss_ja": "考え、心",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Fikiran anda kosong. Puan Tan tunggu, renung anda. In 1 Hanashishou scene: Mock interview.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-157",
+      "lang": "ms",
+      "term": "gila",
+      "gloss_en": "crazy; very (spoken \"lapar gila\" = starving)",
+      "gloss_ja": "狂った；（話し言葉）すごく",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Hanashishou: Boleh, saya ikut! Saya lapar gila. In 1 Hanashishou scene: Jom lepak!.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-161",
+      "lang": "ms",
+      "term": "ikhlas",
+      "gloss_en": "sincere",
+      "gloss_ja": "誠実な",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Hanashishou: Anda puji satu perkara yang khusus, jadi dia tahu pujian itu ikhlas. In 1 Hanashishou scene: The chairperson's speech.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-167",
+      "lang": "ms",
+      "term": "kagum",
+      "gloss_en": "impressed, amazed",
+      "gloss_ja": "感心する",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Hanashishou: Sekarang, dulu, akan datang. Jelas. Ringkas. Saya hampir kagum. In 1 Hanashishou scene: Mock interview.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-169",
+      "lang": "ms",
+      "term": "keadilan",
+      "gloss_en": "fairness, justice",
+      "gloss_ja": "公平さ",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "Hanashishou: Keadilan bukan ukuran prestasi. Yang penting keputusan. In 1 Hanashishou scene: The group project.",
       "links": [
         {
           "type": "babak",
@@ -330,6 +510,78 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-social-173",
+      "lang": "ms",
+      "term": "kepastian",
+      "gloss_en": "certainty",
+      "gloss_ja": "確実さ、確証",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "Hanashishou: Untuk kepastian kali ini: dia nak stik itu macam mana tadi? In 1 Hanashishou scene: Not as ordered.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-175",
+      "lang": "ms",
+      "term": "kerisauan",
+      "gloss_en": "worry, concern",
+      "gloss_ja": "心配",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "Hanashishou: Kerisauan yang wajar. Ia cuma terbang ikut laluan tetap atas bangunan, dan ia berhenti di udara jika mengesan orang di bawah. In 1 Hanashishou scene: Demo day with Jinx.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-177",
+      "lang": "ms",
+      "term": "keyakinan",
+      "gloss_en": "confidence",
+      "gloss_ja": "自信",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "Hanashishou: Perlahan? Laju menunjukkan keyakinan. Kenapa aku perlu perlahan? In 1 Hanashishou scene: The chairperson's speech.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-187",
+      "lang": "ms",
+      "term": "melampau",
+      "gloss_en": "excessive, over the top",
+      "gloss_ja": "行き過ぎた",
+      "pos": "adj",
+      "affix_tag": "meN-",
+      "note": "Hanashishou: Jadi... melampau sangat ke? Cakap jujur. In 1 Hanashishou scene: Fireworks on the roof.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-social-114",
       "lang": "ms",
       "term": "melegakan",
@@ -338,6 +590,132 @@
       "pos": "verb",
       "affix_tag": "root",
       "note": "Hanashishou: Sekitar 5 waktu petang, mungkin 2 waktu pagi. Berjalan nampaknya melegakannya. In 1 Hanashishou scene: The physio session.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-188",
+      "lang": "ms",
+      "term": "melenting",
+      "gloss_en": "flare up, snap",
+      "gloss_ja": "かっとなる",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "Hanashishou: Cepat melenting. Menarik. In 1 Hanashishou scene: The group project.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-189",
+      "lang": "ms",
+      "term": "mengampu",
+      "gloss_en": "flatter, suck up to",
+      "gloss_ja": "ごまをする",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "Hanashishou: Tiada apa yang sempurna. Kau cuma mengampu. Cuba lagi, betul-betul. In 1 Hanashishou scene: The chairperson's speech.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-191",
+      "lang": "ms",
+      "term": "menunjuk-nunjuk",
+      "gloss_en": "show off",
+      "gloss_ja": "見せびらかす",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "Hanashishou: Menunjuk-nunjuk! In 1 Hanashishou scene: Team dinner.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-213",
+      "lang": "ms",
+      "term": "perfeksionis",
+      "gloss_en": "perfectionist",
+      "gloss_ja": "完璧主義者",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya seorang yang perfeksionis. In 1 Hanashishou scene: Mock interview.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-222",
+      "lang": "ms",
+      "term": "sedap-sedap",
+      "gloss_en": "as one pleases, enjoy",
+      "gloss_ja": "ゆっくり楽しんで",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "Hanashishou: Buat sedap-sedap. In 1 Hanashishou scene: The drinks run.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-224",
+      "lang": "ms",
+      "term": "senyuman",
+      "gloss_en": "smile",
+      "gloss_ja": "笑顔",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Sabtu petang, sejam sebelum parti atas bumbung untuk penduduk kondo yang anda uruskan. Jinx sendiri sampai, pengasas syarikat pemula yang membuat bunga api itu, dengan senyuman lebar dan sebuah kotak besar yang bunyi tik-tik sikit. Teka: apa dalam kotak itu? In 1 Hanashishou scene: Fireworks on the roof.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-social-feelings"
+        }
+      ],
+      "scene": "dunia-jambatan-social-feelings",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-social-228",
+      "lang": "ms",
+      "term": "tahan",
+      "gloss_en": "last, endure",
+      "gloss_ja": "我慢する、持ちこたえる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Bateri tahan berapa lama? In 1 Hanashishou scene: Demo day with Jinx.",
       "links": [
         {
           "type": "babak",

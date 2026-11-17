@@ -49,7 +49,7 @@
       "gloss_ja": "客、顧客",
       "pos": "noun",
       "affix_tag": "pe-",
-      "note": "Hanashishou: pelanggan akan tunggu. Semak nota anda. In 11 Hanashishou scenes: Calling in sick, Feedback on the slides, Mock interview, Not as ordered and 7 more.",
+      "note": "Hanashishou: pelanggan akan tunggu. Semak nota anda. In 10 Hanashishou scenes: Calling in sick, Feedback on the slides, Mock interview, Not as ordered and 6 more.",
       "links": [
         {
           "type": "babak",
@@ -528,6 +528,42 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-office-73",
+      "lang": "ms",
+      "term": "lembaga pengarah",
+      "gloss_en": "board of directors",
+      "gloss_ja": "取締役会",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Encik Lim mahu laporan penuh untuk lembaga pengarah. Bila tarikh akhir, ya? In 2 Hanashishou scenes: The new joiner, The stand-up update.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-74",
+      "lang": "ms",
+      "term": "maklum balas",
+      "gloss_en": "feedback",
+      "gloss_ja": "フィードバック",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Bagus. Kadar maklum balas berapa? In 2 Hanashishou scenes: The chairperson's speech, The stand-up update.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-office-57",
       "lang": "ms",
       "term": "maklumkan",
@@ -564,6 +600,24 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-office-75",
+      "lang": "ms",
+      "term": "pandang",
+      "gloss_en": "look at",
+      "gloss_ja": "見る、目を向ける",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Mira pandang anda dan senyum. In 2 Hanashishou scenes: Team dinner, The new joiner.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-office-19",
       "lang": "ms",
       "term": "pantri",
@@ -572,6 +626,24 @@
       "pos": "noun",
       "affix_tag": "root",
       "note": "Hanashishou: Pantri di sebelah kiri. In 2 Hanashishou scenes: Coffee with the chairperson, Pantry banter.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-76",
+      "lang": "ms",
+      "term": "serahan",
+      "gloss_en": "handover",
+      "gloss_ja": "引き継ぎ",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Okey, lepas pelancaran boleh. Masukkan dalam sistem, dan salinkan saya dalam e-mel serahan tugas. In 2 Hanashishou scenes: Calling in sick, The leave request.",
       "links": [
         {
           "type": "babak",
@@ -600,6 +672,24 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-office-77",
+      "lang": "ms",
+      "term": "alu-aluan",
+      "gloss_en": "welcome (as in \"ucapan alu-aluan\", welcome speech)",
+      "gloss_ja": "歓迎",
+      "pos": "noun",
+      "affix_tag": "lex",
+      "note": "Hanashishou: Terima kasih. Pengerusi syarikat, Puan Azula, beri ucapan alu-aluan masa orientasi. Dia... sangat tegas. In 1 Hanashishou scene: The new joiner.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-office-59",
       "lang": "ms",
       "term": "awalkan",
@@ -608,6 +698,60 @@
       "pos": "verb",
       "affix_tag": "root",
       "note": "Hanashishou: Jadi, saya nak awalkan pelancaran ke 1 Mac. Ada apa-apa kebimbangan? In 1 Hanashishou scene: Too early to launch.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-78",
+      "lang": "ms",
+      "term": "berbesar hati",
+      "gloss_en": "honoured, delighted (formal)",
+      "gloss_ja": "光栄に思う",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Hanashishou: Saya amat berbesar hati atas kerjasama dan budi baik saudari. In 1 Hanashishou scene: The figures by Thursday.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-79",
+      "lang": "ms",
+      "term": "bergaya",
+      "gloss_en": "stylish",
+      "gloss_ja": "おしゃれな",
+      "pos": "adj",
+      "affix_tag": "ber-",
+      "note": "Hanashishou: Wah, bergaya hari ni! Baju baru ke? In 1 Hanashishou scene: Pantry banter.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-80",
+      "lang": "ms",
+      "term": "bertuah",
+      "gloss_en": "lucky",
+      "gloss_ja": "運がいい",
+      "pos": "adj",
+      "affix_tag": "ber-",
+      "note": "Hanashishou: Alah, cakaplah. Siapa orang yang bertuah tu? In 1 Hanashishou scene: Pantry banter.",
       "links": [
         {
           "type": "babak",
@@ -636,6 +780,24 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-office-81",
+      "lang": "ms",
+      "term": "budi",
+      "gloss_en": "kindness (\"budi baik\")",
+      "gloss_ja": "親切、恩",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya amat berbesar hati atas kerjasama dan budi baik saudari. In 1 Hanashishou scene: The figures by Thursday.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-office-21",
       "lang": "ms",
       "term": "cuti tahunan",
@@ -644,6 +806,24 @@
       "pos": "noun",
       "affix_tag": "chunk",
       "note": "Hanashishou: Saya nak ambil cuti tahunan. In 1 Hanashishou scene: The leave request.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-82",
+      "lang": "ms",
+      "term": "desak",
+      "gloss_en": "press, push (someone)",
+      "gloss_ja": "せかす、強く求める",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Maaf desak, saya cuma perlu tahu hari ni. In 1 Hanashishou scene: Can you cover for me?.",
       "links": [
         {
           "type": "babak",
@@ -672,6 +852,78 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-office-83",
+      "lang": "ms",
+      "term": "galakkan",
+      "gloss_en": "encourage",
+      "gloss_ja": "励ます、勧める",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Galakkan dia tunjuk kepada Encik Lim. Bina ayat satu demi satu perkataan. In 1 Hanashishou scene: Feedback on the slides.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-84",
+      "lang": "ms",
+      "term": "gurauan",
+      "gloss_en": "a joke, jokes",
+      "gloss_ja": "冗談",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Sebelum pergi, susun gurauan Daniel dari belakang. In 1 Hanashishou scene: Pantry banter.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-85",
+      "lang": "ms",
+      "term": "hubungan",
+      "gloss_en": "relationship",
+      "gloss_ja": "関係",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Anda terima ucapan terima kasih dengan mesra dan jaga hubungan baik dengan rakan sekerja. In 1 Hanashishou scene: Someone's in my room.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-86",
+      "lang": "ms",
+      "term": "isyarat",
+      "gloss_en": "signal",
+      "gloss_ja": "合図、信号",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Hanashishou: Saya mendaki di Sabah, tiada isyarat! Siapa lagi awak boleh tanya? In 1 Hanashishou scene: The handover.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-office-61",
       "lang": "ms",
       "term": "kebimbangan",
@@ -690,6 +942,24 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-office-87",
+      "lang": "ms",
+      "term": "kecilkan",
+      "gloss_en": "narrow down, make smaller",
+      "gloss_ja": "小さくする、絞り込む",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Anda ada soalan yang penting. Jangan lepaskan: kecilkan soalan itu. In 1 Hanashishou scene: The town hall.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-office-07",
       "lang": "ms",
       "term": "kelewatan",
@@ -698,6 +968,24 @@
       "pos": "noun",
       "affix_tag": "root",
       "note": "Hanashishou: Maaf atas kelewatan. In 1 Hanashishou scene: The figures by Thursday.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-88",
+      "lang": "ms",
+      "term": "kembali",
+      "gloss_en": "return, go back",
+      "gloss_ja": "戻る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Anda kembali ke topiknya kemudian, jadi tukar topik tadi tidak rasa macam awak tak peduli. In 1 Hanashishou scene: The chatty colleague.",
       "links": [
         {
           "type": "babak",
@@ -744,6 +1032,24 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-office-89",
+      "lang": "ms",
+      "term": "korek",
+      "gloss_en": "dig out, pry (information)",
+      "gloss_ja": "ほじる、聞き出す",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Hanashishou: Okey, okey, nanti masa makan tengah hari saya korek. In 1 Hanashishou scene: Pantry banter.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-office-15",
       "lang": "ms",
       "term": "lauk",
@@ -770,6 +1076,42 @@
       "pos": "noun",
       "affix_tag": "chunk",
       "note": "Hanashishou: Hai! Jumaat malam ni kita ada makan malam pasukan, majlis perpisahan Arif. Datang tak? In 1 Hanashishou scene: The farewell dinner.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-90",
+      "lang": "ms",
+      "term": "mencurigakan",
+      "gloss_en": "suspicious",
+      "gloss_ja": "怪しい",
+      "pos": "adj",
+      "affix_tag": "meN- -kan",
+      "note": "Hanashishou: Hmm, diam je... mencurigakan ni. 😏. In 1 Hanashishou scene: Pantry banter.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-91",
+      "lang": "ms",
+      "term": "menyertai",
+      "gloss_en": "join",
+      "gloss_ja": "参加する",
+      "pos": "verb",
+      "affix_tag": "meN- -i",
+      "note": "Hanashishou: Dia memang buat semua orang berjaga-jaga! Jadi, awak buat kerja apa sebelum menyertai kami? In 1 Hanashishou scene: The new joiner.",
       "links": [
         {
           "type": "babak",
@@ -834,6 +1176,24 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-office-92",
+      "lang": "ms",
+      "term": "ringkasan",
+      "gloss_en": "summary",
+      "gloss_ja": "要約",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Hanashishou: Anda beri ringkasan yang pendek dan jelas, dengan tarikh dan siapa buat apa. In 1 Hanashishou scene: Too early to launch.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-office-66",
       "lang": "ms",
       "term": "rintis",
@@ -842,6 +1202,24 @@
       "pos": "noun",
       "affix_tag": "root",
       "note": "Hanashishou: Lebih baik. Ia bermula pada 1 Januari, sebagai rintis dalam dua pasukan: Kewangan dan IT. Jika berjaya, yang lain menyusul pada bulan Jun. In 1 Hanashishou scene: The town hall.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-93",
+      "lang": "ms",
+      "term": "salinkan",
+      "gloss_en": "copy (someone in)",
+      "gloss_ja": "（CCに）入れる",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Okey, lepas pelancaran boleh. Masukkan dalam sistem, dan salinkan saya dalam e-mel serahan tugas. In 1 Hanashishou scene: The leave request.",
       "links": [
         {
           "type": "babak",
@@ -924,6 +1302,24 @@
       "chapter": 9
     },
     {
+      "id": "ms-j-office-94",
+      "lang": "ms",
+      "term": "tenangkan",
+      "gloss_en": "calm (someone) down",
+      "gloss_ja": "落ち着かせる",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Farah nampak risau. Tak perlu buat semula. Tenangkan dia. In 1 Hanashishou scene: Feedback on the slides.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
       "id": "ms-j-office-70",
       "lang": "ms",
       "term": "timbul",
@@ -968,6 +1364,24 @@
       "pos": "noun",
       "affix_tag": "chunk",
       "note": "Hanashishou: Majlis town hall hari Jumaat. In 1 Hanashishou scene: The town hall.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "dunia-jambatan-office"
+        }
+      ],
+      "scene": "dunia-jambatan-office",
+      "chapter": 9
+    },
+    {
+      "id": "ms-j-office-95",
+      "lang": "ms",
+      "term": "umumkan",
+      "gloss_en": "announce",
+      "gloss_ja": "発表する",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "Hanashishou: Mesyuarat pasukan hari Isnin. Encik Lim nak lancar aplikasi baharu dua minggu lebih awal, pada 1 Mac, sebab pengerusi syarikat, Azula, nak umumkan pada hari ulang tahun syarikat. Anda tahu ujian baru separuh siap. Teka: apa cara terbaik untuk tak setuju? In 1 Hanashishou scene: Too early to launch.",
       "links": [
         {
           "type": "babak",

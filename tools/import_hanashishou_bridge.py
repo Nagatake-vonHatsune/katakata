@@ -44,30 +44,45 @@ SCENES = {
     # Social (118 cards) is split by topic into three scenes (Sam, 15 Nov 2026). The words keep their ID (ms-j-social-NN);
     # only the scene, the card's link and the ledger place change. The Japanese titles are drafts.
     "social-talk": ("Berbual dan menerangkan", "Talking and explaining", "話す・説明する"),
-    "social-events": ("Acara dan keluar", "Events and outings", "イベントとお出かけ"),
+    # Build B3 (Sam, 17 Nov 2026): «Events and outings» (110 cards with placement batch 2) is split in two; the cards keep their IDs.
+    "social-parties": ("Parti dan makanan", "Parties and food", "パーティーと食べ物"),
+    "social-music": ("Muzik dan persembahan", "Music and shows", "音楽とショー"),
     "social-feelings": ("Perasaan dan pendapat", "Feelings and opinions", "気持ちと意見"),
 }
 SPLIT_TOPIC = {
     "social-talk": ("the words for saying, explaining and telling", "言う・説明する・伝えることば"),
-    "social-events": ("events, music, outings and plans", "イベント・音楽・お出かけ・計画のことば"),
+    "social-parties": ("parties, food, outings and plans", "パーティー・食べ物・お出かけ・計画のことば"),
+    "social-music": ("music, films, shows, fireworks and demo days", "音楽・映画・ショー・花火・発表会のことば"),
     "social-feelings": ("feelings, qualities and opinions", "気持ち・人柄・意見のことば"),
 }
 # The words of the Hanashishou pack «social», by topic (an underscore stands for a space) (Sam, 15 Nov 2026: "choose what the words suggest"). Every social word must be listed.
 SOCIAL_SPLIT = {
     "social-talk": """nota ayat beri sebut dapat ia butiran sesuatu tentang cuma cara seorang cerita sendiri ulang begitu terima kena sahkan biar hampir
         maksudnya selama pasal sedia benda sepanjang terakhir terangkan akhir dua-dua uruskan berita gurau dapatkan sediakan sekurang-kurangnya tawarkan
-        teruskan mengesan menyusul pembekal peruncitan sedangkan termasuk""",
-    "social-events": """bunyi cadang idea diam pesan nyanyi suara dewan giliran konsert senarai acara barisan kuat lembut letupan meletup pelan rancang
-        video angkat baling bersama bunga_api kahwin pegang penyanyi projek tepuk balkoni jalan_sesak ketuai krew nyalakan akad_nikah belakang_pentas
-        bilik_perbincangan bunga_api_tangan gabungkan gear gula_perang pengantin raptai senarai_lagu tanpa_ais menyanyi""",
+        teruskan mengesan menyusul pembekal peruncitan sedangkan termasuk
+        jadikan rumus bentang bentangkan bonus buktikan elok-elok forum garis hubungkan ilmu jelaskan kejuruteraan kenaikan_pangkat kepimpinan
+        ketik klik pembentangan pemula penemu_duga penulisan peperiksaan peranan profesional rata sifat""",
+    # Build B3: the old «social-events» words, split (Claude's draft for Sam), and placement batch 2's Events and outings words.
+    "social-parties": """cadang idea pesan senarai acara kuat lembut pelan rancang angkat baling bersama kahwin pegang projek balkoni jalan_sesak
+        ketuai akad_nikah bilik_perbincangan gabungkan gear gula_perang pengantin tanpa_ais
+        bertih_jagung bumbung kelingking barbeku bawang_perai capai daun_bawang kacau katering kejutan lapis lipat mengetuai
+        merata mewah onde-onde patung pemasa pencuci_mulut penggera petik pustakawan rancak reka renung sengih setimbun tangki teratur
+        tumpuan ukuran klip hero""",
+    "social-music": """nyanyi suara dewan giliran konsert senarai_lagu menyanyi penyanyi krew raptai belakang_pentas tepuk barisan video diam
+        bunga_api bunga_api_tangan nyalakan letupan meletup
+        radio aksi berduet dokumentari duet koir korus mikrofon muzikal solo jelajah demo dron pelabur pengunjung laluan pemutar_skru
+        bengkel kimpal gogal topeng jelaga roket letupkan api nyala pemetik_api meriam konfeti bersorak""",
     "social-feelings": """mungkin salah tepat betul-betul sebenarnya pasti adil hebat sempurna menarik tentu tetap bijak gementar kisah laju pendapat puji
-        ringkas dengan_teliti jujur berbaloi kebetulan melegakan terbawa-bawa jujurnya lenguh""",
+        ringkas dengan_teliti jujur berbaloi kebetulan melegakan terbawa-bawa jujurnya lenguh
+        pujian aman berkilau berseri-seri bertahan fikiran gila ikhlas kagum keadilan kepastian kerisauan keyakinan melampau melenting mengampu
+        menunjuk-nunjuk perfeksionis sedap-sedap senyuman tahan""",
 }
 SPLIT_OF = {w.replace("_", " "): scene for scene, words in SOCIAL_SPLIT.items() for w in words.split()}
 
 
 # Spoken form and its standard partner (Sam, 14 Nov 2026): both cards say so.
-SPOKEN = {"pasal": "tentang", "nyanyi": "menyanyi", "benda": "perkara"}
+SPOKEN = {"pasal": "tentang", "nyanyi": "menyanyi", "benda": "perkara",
+          "bisnes": "perniagaan"}  # Build B3 (Sam, 17 Nov 2026): «bisnes» is a Jambatan card paired with the standard «perniagaan»
 STANDARD = {std: spoken for spoken, std in SPOKEN.items()}
 # Sam's pairs: both forms are fine; the card for the one in the ledger names the other.
 BOTH_FINE = {"pusat beli-belah": "mall", "mall": "pusat beli-belah", "parkir": "tempat letak kereta", "tempat letak kereta": "parkir",
@@ -98,7 +113,10 @@ RETIRED_IDS = ["ms-j-health-22", "ms-j-social-22", "ms-j-home-condo-29", "ms-j-d
                # Build B2 (17 Nov 2026): «hebat» promoted to ⚡ 5 (Sam)
                "ms-j-social-54",
                # Build B2: promoted to ⚡ 10 to 17
-               "ms-j-social-36", "ms-j-office-34", "ms-j-daily-life-38", "ms-j-social-23", "ms-j-social-25", "ms-j-health-23", "ms-j-office-35", "ms-j-social-45", "ms-j-office-27", "ms-j-office-31", "ms-j-social-38", "ms-j-social-40", "ms-j-social-46", "ms-j-home-condo-50", "ms-j-social-29", "ms-j-office-26", "ms-j-daily-life-46", "ms-j-home-condo-26"]
+               "ms-j-social-36", "ms-j-office-34", "ms-j-daily-life-38", "ms-j-social-23", "ms-j-social-25", "ms-j-health-23", "ms-j-office-35", "ms-j-social-45", "ms-j-office-27", "ms-j-office-31", "ms-j-social-38", "ms-j-social-40", "ms-j-social-46", "ms-j-home-condo-50", "ms-j-social-29", "ms-j-office-26", "ms-j-daily-life-46", "ms-j-home-condo-26",
+               # Build B3 (17 Nov 2026): «mengantuk» (L-0768) promoted to ⚡ 17 (it already had a row); and the ⚡ 3 card of the retired
+               # row L-1638 «satu per satu», merged into L-1532 (ms-x03-022). ⚡ IDs are listed here so no tool reuses them.
+               "ms-j-health-37", "ms-x03-023"]
 
 
 def is_extension(row):
@@ -106,9 +124,13 @@ def is_extension(row):
     return bool(re.match(r"\s*Ch\s*\d+\s*\(extension\)", row["Kata-Kata place"], re.I))
 
 
+# Scenes that were split again (Build B3): a card found in one is placed by SOCIAL_SPLIT, like a «social» card.
+SPLIT_AGAIN = {"social-events"}
+
+
 def split_scene(pack, term):
-    """The scene of a card: its Hanashishou pack, except that «social» is split by topic."""
-    if pack != "social":
+    """The scene of a card: its Hanashishou pack, except that «social» (and a scene in SPLIT_AGAIN) is split by topic."""
+    if pack != "social" and pack not in SPLIT_AGAIN:
         return pack
     key = re.sub(r"\(.*?\)", "", term).split("/")[0].strip().lower()
     if key not in SPLIT_OF:
@@ -168,6 +190,8 @@ def main(hana, map_out=None):
         raise SystemExit(f"ledger lists Jambatan cards that no pack has: {sorted(missing)}")
     next_n = {}
     for cid in list(old) + RETIRED_IDS:
+        if not cid.startswith("ms-j-"):
+            continue
         pack = cid[len("ms-j-"):].rsplit("-", 1)[0]
         next_n[pack] = max(next_n.get(pack, 0), int(cid.rsplit("-", 1)[1]))
 
@@ -225,6 +249,10 @@ def main(hana, map_out=None):
         sc = scene_titles(r["eps"])
         if sc:
             parts.append(sc)
+        if not r["eps"] and old_card and old_card.get("note"):
+            # A card no scene meets any more (L-1410 «hari bulan»: Hanashishou still writes «haribulan» until its next sync)
+            # keeps the note it had.
+            return old_card["note"]
         return " ".join(parts) or None
 
     # Build the packs. Existing cards keep their IDs; new cards are numbered in scene-count order.

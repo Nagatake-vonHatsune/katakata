@@ -43,13 +43,13 @@
      "choices_en": ["Every Monday I get lost at the station.", "Yes. She's odd: she never sleeps."]},
     {"speaker": "Cik Mei Ling", "ms": "Faham. Kalau Encik ada apa-apa soalan, tanya dia. Dia tidak kasar.", "en": "I see. If you have any questions, ask her. She isn't rude."},
     {"speaker": "Tanaka", "ms": "Baik. Ada sesuatu yang saya perlu tahu?", "en": "All right. Is there anything I need to know?"},
-    {"speaker": "Cik Mei Ling", "ms": "Ya. Dia satu-satunya orang di pejabat yang tidak minum kopi.", "en": "Yes. She's the only person in the office who doesn't drink coffee.",
+    {"speaker": "Cik Mei Ling", "ms": "Ya. Sebelum minum kopi, dia tidak mahu bercakap dengan sesiapa. Pagi ini dia belum minum kopi.", "en": "Yes. Before her coffee, she doesn't want to talk to anyone. And this morning she hasn't had her coffee yet.",
      "choices": ["Ya. Dia satu-satunya orang di pejabat yang memakai kasut.", "Tidak. Saya tidak jumpa sesiapa di pejabat."],
      "choices_en": ["Yes. She's the only person in the office who wears shoes.", "No. I didn't meet anyone in the office."]},
-    {"speaker": "Tanaka", "ms": "Pelik! Seseorang patut bagi dia kopi.", "en": "How odd! Someone should give her a coffee."},
-    {"speaker": "Cik Mei Ling", "ms": "Jangan! Jangan beritahu sesiapa saya cakap begini.", "en": "Don't! Don't tell anyone I said this.",
-     "choices": ["Baik. Saya beritahu semua orang sekarang.", "Jangan! Dia satu-satunya gergasi di pejabat."],
-     "choices_en": ["Fine. I'll tell everyone now.", "Don't! She's the only giant in the office."]},
+    {"speaker": "Tanaka", "ms": "Pelik! Cepat, bagi dia kopi.", "en": "How odd! Quick, give her a coffee."},
+    {"speaker": "Cik Mei Ling", "ms": "Baik, saya buat kopi untuk dia sekarang. Tetapi jangan beritahu sesiapa saya cakap begini.", "en": "All right, I'll make her a coffee now. But don't tell anyone I said this.",
+     "choices": ["Baik, saya minum kopi dia sekarang.", "Jangan! Dia satu-satunya gergasi di pejabat."],
+     "choices_en": ["All right, I'll drink her coffee now.", "Don't! She's the only giant in the office."]},
     {"speaker": "Tanaka", "ms": "Baik, saya tidak akan cakap apa-apa.", "en": "All right, I won't say a thing."}
   ]
 }

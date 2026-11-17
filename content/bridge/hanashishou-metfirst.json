@@ -1133,31 +1133,6 @@
     "text": "Wah, cantik! Oh ya, duit tiket konsert itu..."
    }
   },
-  "L-0674": {
-   "forms": [
-    "kesan",
-    "kesannya"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "home-condo",
-     "barking_dog"
-    ],
-    [
-     "home-condo",
-     "moving_out"
-    ],
-    [
-     "home-condo",
-     "noisy_renovation"
-    ]
-   ],
-   "example": {
-    "ep": "moving_out",
-    "text": "Betul ke? Saya tak ingat ada kesan."
-   }
-  },
   "L-0675": {
    "forms": [
     "alih"
@@ -2281,22 +2256,6 @@
    "example": {
     "ep": "physio_session",
     "text": "Lebih kurang 5. Jalan buat ia lega."
-   }
-  },
-  "L-0768": {
-   "forms": [
-    "mengantuk"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "health",
-     "pharmacy_advice"
-    ]
-   ],
-   "example": {
-    "ep": "pharmacy_advice",
-    "text": "Oh, dan ubat ini mungkin buat anda mengantuk sikit. Okey?"
    }
   },
   "L-0769": {
@@ -3719,262 +3678,6 @@
     "text": "Okey, saya nak betulkan. Bahagian mana yang lemah? Ayat atau gambar?"
    }
   },
-  "L-1312": {
-   "forms": [
-    "beri"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "airport_checkin"
-    ],
-    [
-     "daily-life",
-     "card_blocked"
-    ],
-    [
-     "daily-life",
-     "grab_pickup"
-    ],
-    [
-     "daily-life",
-     "grab_ride_chat"
-    ],
-    [
-     "daily-life",
-     "hotel_checkin"
-    ],
-    [
-     "daily-life",
-     "post_parcel"
-    ],
-    [
-     "daily-life",
-     "price_haggle"
-    ],
-    [
-     "health",
-     "clinic_visit"
-    ],
-    [
-     "health",
-     "dentist_booking"
-    ],
-    [
-     "health",
-     "gym_membership"
-    ],
-    [
-     "health",
-     "physio_session"
-    ],
-    [
-     "home-condo",
-     "barking_dog"
-    ],
-    [
-     "home-condo",
-     "ceiling_leak"
-    ],
-    [
-     "home-condo",
-     "new_neighbour"
-    ],
-    [
-     "home-condo",
-     "noisy_renovation"
-    ],
-    [
-     "office",
-     "annual_leave"
-    ],
-    [
-     "office",
-     "extra_task"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "office",
-     "meeting_disagree"
-    ],
-    [
-     "office",
-     "meeting_room"
-    ],
-    [
-     "office",
-     "new_joiner"
-    ],
-    [
-     "social",
-     "azula_speech"
-    ],
-    [
-     "social",
-     "jinx_board_game"
-    ],
-    [
-     "social",
-     "jinx_demo_day"
-    ],
-    [
-     "social",
-     "jinx_late_parts"
-    ],
-    [
-     "social",
-     "miku_encore"
-    ],
-    [
-     "social",
-     "miku_karaoke"
-    ],
-    [
-     "social",
-     "trio_movie_night"
-    ],
-    [
-     "social",
-     "trio_road_trip"
-    ],
-    [
-     "social",
-     "wedding_invite"
-    ],
-    [
-     "tutorial",
-     "how_to_play"
-    ]
-   ],
-   "example": {
-    "ep": "card_blocked",
-    "text": "Encik, sabar. Beri kod itu saja."
-   }
-  },
-  "L-1313": {
-   "forms": [
-    "tiada"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "food_allergy"
-    ],
-    [
-     "daily-life",
-     "grab_pickup"
-    ],
-    [
-     "daily-life",
-     "grab_ride_chat"
-    ],
-    [
-     "daily-life",
-     "hotel_checkin"
-    ],
-    [
-     "daily-life",
-     "lost_wallet"
-    ],
-    [
-     "daily-life",
-     "missed_bus"
-    ],
-    [
-     "daily-life",
-     "price_haggle"
-    ],
-    [
-     "daily-life",
-     "return_item"
-    ],
-    [
-     "daily-life",
-     "wrong_order"
-    ],
-    [
-     "health",
-     "blood_test"
-    ],
-    [
-     "health",
-     "clinic_visit"
-    ],
-    [
-     "health",
-     "dentist_booking"
-    ],
-    [
-     "health",
-     "gym_membership"
-    ],
-    [
-     "health",
-     "pharmacy_advice"
-    ],
-    [
-     "health",
-     "physio_session"
-    ],
-    [
-     "home-condo",
-     "moving_out"
-    ],
-    [
-     "office",
-     "azula_coffee"
-    ],
-    [
-     "office",
-     "handover_notes"
-    ],
-    [
-     "office",
-     "report_deadline"
-    ],
-    [
-     "office",
-     "sick_day"
-    ],
-    [
-     "social",
-     "azula_group_project"
-    ],
-    [
-     "social",
-     "azula_speech"
-    ],
-    [
-     "social",
-     "family_dinner"
-    ],
-    [
-     "social",
-     "miku_sore_throat"
-    ],
-    [
-     "social",
-     "trio_movie_night"
-    ],
-    [
-     "social",
-     "trio_road_trip"
-    ],
-    [
-     "social",
-     "trio_surprise_party"
-    ]
-   ],
-   "example": {
-    "ep": "trio_road_trip",
-    "text": "Tiada soalan."
-   }
-  },
   "L-1314": {
    "forms": [
     "ucap"
@@ -4095,110 +3798,6 @@
     "text": "Ucap terima kasih, setuju, dan tanya satu butiran."
    }
   },
-  "L-1315": {
-   "forms": [
-    "mungkin"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "food_allergy"
-    ],
-    [
-     "daily-life",
-     "phone_plan"
-    ],
-    [
-     "daily-life",
-     "post_parcel"
-    ],
-    [
-     "daily-life",
-     "shoe_size"
-    ],
-    [
-     "health",
-     "blood_test"
-    ],
-    [
-     "health",
-     "pharmacy_advice"
-    ],
-    [
-     "health",
-     "physio_session"
-    ],
-    [
-     "home-condo",
-     "aircon_repair"
-    ],
-    [
-     "home-condo",
-     "barking_dog"
-    ],
-    [
-     "home-condo",
-     "blocked_car"
-    ],
-    [
-     "home-condo",
-     "ceiling_leak"
-    ],
-    [
-     "home-condo",
-     "wifi_down"
-    ],
-    [
-     "office",
-     "extra_task"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "office",
-     "report_deadline"
-    ],
-    [
-     "office",
-     "standup_update"
-    ],
-    [
-     "office",
-     "team_dinner"
-    ],
-    [
-     "social",
-     "jinx_demo_day"
-    ],
-    [
-     "social",
-     "jinx_late_parts"
-    ],
-    [
-     "social",
-     "mamak_lepak"
-    ],
-    [
-     "social",
-     "miku_karaoke"
-    ],
-    [
-     "social",
-     "monday_catchup"
-    ],
-    [
-     "social",
-     "wedding_invite"
-    ]
-   ],
-   "example": {
-    "ep": "shoe_size",
-    "text": "Hmm, mungkin."
-   }
-  },
   "L-1316": {
    "forms": [
     "sebut"
@@ -4299,98 +3898,6 @@
     "text": "Sebut semua masalah."
    }
   },
-  "L-1317": {
-   "forms": [
-    "dapat"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "hotel_checkin"
-    ],
-    [
-     "daily-life",
-     "lost_wallet"
-    ],
-    [
-     "daily-life",
-     "phone_plan"
-    ],
-    [
-     "daily-life",
-     "price_haggle"
-    ],
-    [
-     "health",
-     "clinic_visit"
-    ],
-    [
-     "health",
-     "dentist_booking"
-    ],
-    [
-     "home-condo",
-     "bbq_booking"
-    ],
-    [
-     "home-condo",
-     "moving_out"
-    ],
-    [
-     "office",
-     "extra_task"
-    ],
-    [
-     "office",
-     "report_deadline"
-    ],
-    [
-     "office",
-     "sick_day"
-    ],
-    [
-     "office",
-     "standup_update"
-    ],
-    [
-     "social",
-     "azula_group_project"
-    ],
-    [
-     "social",
-     "borrowed_money"
-    ],
-    [
-     "social",
-     "jinx_bike_shop"
-    ],
-    [
-     "social",
-     "jinx_board_game"
-    ],
-    [
-     "social",
-     "jinx_late_parts"
-    ],
-    [
-     "social",
-     "mamak_lepak"
-    ],
-    [
-     "social",
-     "miku_encore"
-    ],
-    [
-     "social",
-     "miku_sore_throat"
-    ]
-   ],
-   "example": {
-    "ep": "miku_sore_throat",
-    "text": "...awak dapat semua itu?"
-   }
-  },
   "L-1318": {
    "forms": [
     "ia"
@@ -4483,98 +3990,6 @@
     "text": "Saya tahu ia belum cukup bagus."
    }
   },
-  "L-1319": {
-   "forms": [
-    "salah"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "card_blocked"
-    ],
-    [
-     "daily-life",
-     "grab_pickup"
-    ],
-    [
-     "daily-life",
-     "hotel_checkin"
-    ],
-    [
-     "daily-life",
-     "mamak_order"
-    ],
-    [
-     "daily-life",
-     "phone_plan"
-    ],
-    [
-     "daily-life",
-     "wrong_order"
-    ],
-    [
-     "health",
-     "blood_test"
-    ],
-    [
-     "home-condo",
-     "visitor_parking"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "office",
-     "meeting_disagree"
-    ],
-    [
-     "office",
-     "pantry_banter"
-    ],
-    [
-     "office",
-     "standup_update"
-    ],
-    [
-     "social",
-     "azula_group_project"
-    ],
-    [
-     "social",
-     "azula_interview"
-    ],
-    [
-     "social",
-     "azula_restaurant"
-    ],
-    [
-     "social",
-     "jinx_library"
-    ],
-    [
-     "social",
-     "miku_karaoke"
-    ],
-    [
-     "social",
-     "miku_market"
-    ],
-    [
-     "social",
-     "miku_sore_throat"
-    ],
-    [
-     "tutorial",
-     "how_to_play"
-    ]
-   ],
-   "example": {
-    "ep": "azula_restaurant",
-    "text": "Hoi! Ini salah!"
-   }
-  },
   "L-1320": {
    "forms": [
     "butiran"
@@ -4661,603 +4076,6 @@
    "example": {
     "ep": "dentist_booking",
     "text": "Butiran bank anda."
-   }
-  },
-  "L-1321": {
-   "forms": [
-    "semula"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "phone_plan"
-    ],
-    [
-     "daily-life",
-     "shoe_size"
-    ],
-    [
-     "health",
-     "blood_test"
-    ],
-    [
-     "health",
-     "clinic_visit"
-    ],
-    [
-     "health",
-     "dentist_booking"
-    ],
-    [
-     "home-condo",
-     "bbq_booking"
-    ],
-    [
-     "home-condo",
-     "ceiling_leak"
-    ],
-    [
-     "home-condo",
-     "guardhouse_parcel"
-    ],
-    [
-     "home-condo",
-     "lift_chat"
-    ],
-    [
-     "home-condo",
-     "moving_out"
-    ],
-    [
-     "home-condo",
-     "wifi_down"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "office",
-     "meeting_room"
-    ],
-    [
-     "office",
-     "pantry_banter"
-    ],
-    [
-     "office",
-     "team_dinner"
-    ],
-    [
-     "social",
-     "azula_interview"
-    ],
-    [
-     "social",
-     "azula_restaurant"
-    ],
-    [
-     "social",
-     "azula_speech"
-    ],
-    [
-     "social",
-     "jinx_board_game"
-    ]
-   ],
-   "example": {
-    "ep": "feedback_junior",
-    "text": "Ya, buat semula."
-   }
-  },
-  "L-1322": {
-   "forms": [
-    "sesuatu"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "grab_ride_chat"
-    ],
-    [
-     "daily-life",
-     "missed_bus"
-    ],
-    [
-     "home-condo",
-     "barking_dog"
-    ],
-    [
-     "home-condo",
-     "blocked_car"
-    ],
-    [
-     "home-condo",
-     "lift_chat"
-    ],
-    [
-     "home-condo",
-     "moving_out"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "office",
-     "handover_notes"
-    ],
-    [
-     "office",
-     "meeting_disagree"
-    ],
-    [
-     "office",
-     "new_joiner"
-    ],
-    [
-     "social",
-     "azula_speech"
-    ],
-    [
-     "social",
-     "family_dinner"
-    ],
-    [
-     "social",
-     "jinx_late_parts"
-    ],
-    [
-     "social",
-     "miku_encore"
-    ],
-    [
-     "social",
-     "miku_karaoke"
-    ],
-    [
-     "social",
-     "monday_catchup"
-    ],
-    [
-     "social",
-     "trio_surprise_party"
-    ],
-    [
-     "social",
-     "wedding_invite"
-    ],
-    [
-     "tutorial",
-     "how_to_play"
-    ]
-   ],
-   "example": {
-    "ep": "trio_surprise_party",
-    "text": "Semua orang buat sesuatu."
-   }
-  },
-  "L-1323": {
-   "forms": [
-    "tentang"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "card_blocked"
-    ],
-    [
-     "health",
-     "clinic_visit"
-    ],
-    [
-     "health",
-     "physio_session"
-    ],
-    [
-     "home-condo",
-     "blocked_car"
-    ],
-    [
-     "home-condo",
-     "new_neighbour"
-    ],
-    [
-     "home-condo",
-     "noisy_renovation"
-    ],
-    [
-     "office",
-     "annual_leave"
-    ],
-    [
-     "office",
-     "azula_town_hall"
-    ],
-    [
-     "office",
-     "handover_notes"
-    ],
-    [
-     "office",
-     "sick_day"
-    ],
-    [
-     "social",
-     "azula_interview"
-    ],
-    [
-     "social",
-     "jinx_demo_day"
-    ],
-    [
-     "social",
-     "jinx_fireworks"
-    ],
-    [
-     "social",
-     "jinx_late_parts"
-    ],
-    [
-     "social",
-     "mamak_lepak"
-    ],
-    [
-     "social",
-     "monday_catchup"
-    ],
-    [
-     "social",
-     "trio_movie_night"
-    ],
-    [
-     "social",
-     "wedding_invite"
-    ],
-    [
-     "tutorial",
-     "how_to_play"
-    ]
-   ],
-   "example": {
-    "ep": "azula_interview",
-    "text": "Ceritakan tentang diri anda. Mula."
-   }
-  },
-  "L-1324": {
-   "forms": [
-    "apa-apa",
-    "apa-apalah"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "food_allergy"
-    ],
-    [
-     "daily-life",
-     "lost_wallet"
-    ],
-    [
-     "daily-life",
-     "post_parcel"
-    ],
-    [
-     "daily-life",
-     "return_item"
-    ],
-    [
-     "health",
-     "clinic_visit"
-    ],
-    [
-     "health",
-     "physio_session"
-    ],
-    [
-     "home-condo",
-     "barking_dog"
-    ],
-    [
-     "home-condo",
-     "new_neighbour"
-    ],
-    [
-     "home-condo",
-     "wifi_down"
-    ],
-    [
-     "office",
-     "azula_coffee"
-    ],
-    [
-     "office",
-     "handover_notes"
-    ],
-    [
-     "office",
-     "meeting_disagree"
-    ],
-    [
-     "office",
-     "new_joiner"
-    ],
-    [
-     "office",
-     "report_deadline"
-    ],
-    [
-     "office",
-     "sick_day"
-    ],
-    [
-     "social",
-     "azula_group_project"
-    ],
-    [
-     "social",
-     "miku_drinks_run"
-    ],
-    [
-     "social",
-     "miku_sore_throat"
-    ],
-    [
-     "social",
-     "trio_surprise_party"
-    ]
-   ],
-   "example": {
-    "ep": "miku_drinks_run",
-    "text": "Apa-apa saja."
-   }
-  },
-  "L-1325": {
-   "forms": [
-    "cuma"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "card_blocked"
-    ],
-    [
-     "daily-life",
-     "price_haggle"
-    ],
-    [
-     "daily-life",
-     "wrong_order"
-    ],
-    [
-     "health",
-     "clinic_registration"
-    ],
-    [
-     "health",
-     "gym_membership"
-    ],
-    [
-     "health",
-     "pharmacy_advice"
-    ],
-    [
-     "home-condo",
-     "aircon_repair"
-    ],
-    [
-     "home-condo",
-     "barking_dog"
-    ],
-    [
-     "home-condo",
-     "ceiling_leak"
-    ],
-    [
-     "office",
-     "extra_task"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "office",
-     "pantry_banter"
-    ],
-    [
-     "social",
-     "azula_speech"
-    ],
-    [
-     "social",
-     "borrowed_money"
-    ],
-    [
-     "social",
-     "jinx_board_game"
-    ],
-    [
-     "social",
-     "jinx_demo_day"
-    ],
-    [
-     "social",
-     "mamak_lepak"
-    ],
-    [
-     "social",
-     "wedding_invite"
-    ]
-   ],
-   "example": {
-    "ep": "barking_dog",
-    "text": "Dia cuma sunyi, tahu?"
-   }
-  },
-  "L-1326": {
-   "forms": [
-    "memang"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "food_allergy"
-    ],
-    [
-     "daily-life",
-     "lost_wallet"
-    ],
-    [
-     "daily-life",
-     "phone_plan"
-    ],
-    [
-     "home-condo",
-     "blocked_car"
-    ],
-    [
-     "home-condo",
-     "lift_chat"
-    ],
-    [
-     "home-condo",
-     "noisy_renovation"
-    ],
-    [
-     "office",
-     "azula_coffee"
-    ],
-    [
-     "office",
-     "chatty_colleague"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "office",
-     "new_joiner"
-    ],
-    [
-     "office",
-     "pantry_banter"
-    ],
-    [
-     "social",
-     "azula_speech"
-    ],
-    [
-     "social",
-     "jinx_late_parts"
-    ],
-    [
-     "social",
-     "mamak_lepak"
-    ],
-    [
-     "social",
-     "monday_catchup"
-    ],
-    [
-     "social",
-     "weekend_plans"
-    ],
-    [
-     "tutorial",
-     "how_to_play"
-    ]
-   ],
-   "example": {
-    "ep": "azula_coffee",
-    "text": "...Memang betul."
-   }
-  },
-  "L-1327": {
-   "forms": [
-    "nampak"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "ask_directions"
-    ],
-    [
-     "daily-life",
-     "grab_pickup"
-    ],
-    [
-     "health",
-     "blood_test"
-    ],
-    [
-     "home-condo",
-     "barking_dog"
-    ],
-    [
-     "home-condo",
-     "lift_chat"
-    ],
-    [
-     "home-condo",
-     "moving_out"
-    ],
-    [
-     "home-condo",
-     "visitor_parking"
-    ],
-    [
-     "office",
-     "azula_coffee"
-    ],
-    [
-     "office",
-     "chatty_colleague"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "office",
-     "new_joiner"
-    ],
-    [
-     "office",
-     "pantry_banter"
-    ],
-    [
-     "social",
-     "azula_group_project"
-    ],
-    [
-     "social",
-     "azula_speech"
-    ],
-    [
-     "social",
-     "jinx_demo_day"
-    ],
-    [
-     "social",
-     "miku_encore"
-    ],
-    [
-     "social",
-     "wedding_invite"
-    ]
-   ],
-   "example": {
-    "ep": "chatty_colleague",
-    "text": "Hai! Seminggu tak nampak awak. Apa khabar?"
    }
   },
   "L-1328": {
@@ -5408,990 +4226,12 @@
     "text": "Latih satu perbualan pendek."
    }
   },
-  "L-1330": {
-   "forms": [
-    "mana"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "ask_directions"
-    ],
-    [
-     "daily-life",
-     "food_allergy"
-    ],
-    [
-     "daily-life",
-     "grab_pickup"
-    ],
-    [
-     "daily-life",
-     "grab_ride_chat"
-    ],
-    [
-     "daily-life",
-     "missed_bus"
-    ],
-    [
-     "health",
-     "physio_session"
-    ],
-    [
-     "home-condo",
-     "ceiling_leak"
-    ],
-    [
-     "home-condo",
-     "guardhouse_parcel"
-    ],
-    [
-     "home-condo",
-     "lift_chat"
-    ],
-    [
-     "home-condo",
-     "new_neighbour"
-    ],
-    [
-     "office",
-     "standup_update"
-    ],
-    [
-     "social",
-     "azula_group_project"
-    ],
-    [
-     "social",
-     "jinx_late_parts"
-    ],
-    [
-     "social",
-     "miku_karaoke"
-    ],
-    [
-     "social",
-     "trio_movie_night"
-    ]
-   ],
-   "example": {
-    "ep": "new_neighbour",
-    "text": "Sampah. Mana?"
-   }
-  },
-  "L-1331": {
-   "forms": [
-    "bantu"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "card_blocked"
-    ],
-    [
-     "daily-life",
-     "lost_wallet"
-    ],
-    [
-     "daily-life",
-     "post_parcel"
-    ],
-    [
-     "daily-life",
-     "return_item"
-    ],
-    [
-     "health",
-     "dentist_booking"
-    ],
-    [
-     "health",
-     "gym_membership"
-    ],
-    [
-     "health",
-     "pharmacy_advice"
-    ],
-    [
-     "home-condo",
-     "barking_dog"
-    ],
-    [
-     "home-condo",
-     "bbq_booking"
-    ],
-    [
-     "home-condo",
-     "ceiling_leak"
-    ],
-    [
-     "home-condo",
-     "wifi_down"
-    ],
-    [
-     "social",
-     "azula_restaurant"
-    ],
-    [
-     "social",
-     "miku_sore_throat"
-    ],
-    [
-     "social",
-     "trio_surprise_party"
-    ]
-   ],
-   "example": {
-    "ep": "return_item",
-    "text": "Hai, boleh saya bantu?"
-   }
-  },
-  "L-1332": {
-   "forms": [
-    "cara"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "card_blocked"
-    ],
-    [
-     "daily-life",
-     "grab_pickup"
-    ],
-    [
-     "daily-life",
-     "wrong_order"
-    ],
-    [
-     "health",
-     "clinic_visit"
-    ],
-    [
-     "home-condo",
-     "ceiling_leak"
-    ],
-    [
-     "home-condo",
-     "new_neighbour"
-    ],
-    [
-     "office",
-     "chatty_colleague"
-    ],
-    [
-     "office",
-     "extra_task"
-    ],
-    [
-     "office",
-     "meeting_disagree"
-    ],
-    [
-     "social",
-     "azula_speech"
-    ],
-    [
-     "social",
-     "borrowed_money"
-    ],
-    [
-     "social",
-     "family_dinner"
-    ],
-    [
-     "social",
-     "miku_encore"
-    ],
-    [
-     "tutorial",
-     "how_to_play"
-    ]
-   ],
-   "example": {
-    "ep": "grab_pickup",
-    "text": "Cara anda bayar."
-   }
-  },
-  "L-1333": {
-   "forms": [
-    "pasukan"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "office",
-     "annual_leave"
-    ],
-    [
-     "office",
-     "azula_coffee"
-    ],
-    [
-     "office",
-     "azula_town_hall"
-    ],
-    [
-     "office",
-     "chatty_colleague"
-    ],
-    [
-     "office",
-     "meeting_disagree"
-    ],
-    [
-     "office",
-     "meeting_room"
-    ],
-    [
-     "office",
-     "new_joiner"
-    ],
-    [
-     "office",
-     "pantry_banter"
-    ],
-    [
-     "office",
-     "team_dinner"
-    ],
-    [
-     "social",
-     "azula_interview"
-    ],
-    [
-     "social",
-     "family_dinner"
-    ],
-    [
-     "social",
-     "mamak_lepak"
-    ],
-    [
-     "social",
-     "miku_karaoke"
-    ],
-    [
-     "social",
-     "trio_road_trip"
-    ]
-   ],
-   "example": {
-    "ep": "azula_town_hall",
-    "text": "Bila ia mula, dan untuk semua pasukan ke?"
-   }
-  },
-  "L-1334": {
-   "forms": [
-    "perkara"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "hotel_checkin"
-    ],
-    [
-     "daily-life",
-     "lost_wallet"
-    ],
-    [
-     "home-condo",
-     "bbq_booking"
-    ],
-    [
-     "home-condo",
-     "guardhouse_parcel"
-    ],
-    [
-     "home-condo",
-     "noisy_renovation"
-    ],
-    [
-     "office",
-     "azula_coffee"
-    ],
-    [
-     "office",
-     "chatty_colleague"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "office",
-     "handover_notes"
-    ],
-    [
-     "office",
-     "report_deadline"
-    ],
-    [
-     "social",
-     "azula_group_project"
-    ],
-    [
-     "social",
-     "azula_speech"
-    ],
-    [
-     "social",
-     "jinx_late_parts"
-    ],
-    [
-     "social",
-     "miku_sore_throat"
-    ]
-   ],
-   "example": {
-    "ep": "noisy_renovation",
-    "text": "Saya faham, perkara begini memang berlaku. Boleh tolong ingatkan kontraktor supaya mula pukul 10 pagi?"
-   }
-  },
-  "L-1335": {
-   "forms": [
-    "seorang"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "airport_checkin"
-    ],
-    [
-     "daily-life",
-     "ask_directions"
-    ],
-    [
-     "daily-life",
-     "card_blocked"
-    ],
-    [
-     "daily-life",
-     "mamak_order"
-    ],
-    [
-     "health",
-     "clinic_registration"
-    ],
-    [
-     "home-condo",
-     "barking_dog"
-    ],
-    [
-     "social",
-     "azula_group_project"
-    ],
-    [
-     "social",
-     "azula_interview"
-    ],
-    [
-     "social",
-     "family_dinner"
-    ],
-    [
-     "social",
-     "jinx_board_game"
-    ],
-    [
-     "social",
-     "jinx_library"
-    ],
-    [
-     "social",
-     "miku_karaoke"
-    ],
-    [
-     "social",
-     "miku_sore_throat"
-    ],
-    [
-     "social",
-     "trio_road_trip"
-    ]
-   ],
-   "example": {
-    "ep": "family_dinner",
-    "text": "Pilih rancangan seorang saja."
-   }
-  },
-  "L-1336": {
-   "forms": [
-    "tunjuk"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "airport_checkin"
-    ],
-    [
-     "daily-life",
-     "phone_plan"
-    ],
-    [
-     "daily-life",
-     "price_haggle"
-    ],
-    [
-     "daily-life",
-     "return_item"
-    ],
-    [
-     "health",
-     "gym_membership"
-    ],
-    [
-     "home-condo",
-     "barking_dog"
-    ],
-    [
-     "office",
-     "annual_leave"
-    ],
-    [
-     "office",
-     "chatty_colleague"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "office",
-     "pantry_banter"
-    ],
-    [
-     "social",
-     "azula_interview"
-    ],
-    [
-     "social",
-     "jinx_bike_shop"
-    ],
-    [
-     "social",
-     "monday_catchup"
-    ],
-    [
-     "tutorial",
-     "how_to_play"
-    ]
-   ],
-   "example": {
-    "ep": "phone_plan",
-    "text": "Rosak macam mana? Boleh tunjuk?"
-   }
-  },
-  "L-1337": {
-   "forms": [
-    "betul-betul"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "grab_pickup"
-    ],
-    [
-     "daily-life",
-     "grab_ride_chat"
-    ],
-    [
-     "daily-life",
-     "hotel_checkin"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "office",
-     "meeting_room"
-    ],
-    [
-     "office",
-     "pantry_banter"
-    ],
-    [
-     "office",
-     "sick_day"
-    ],
-    [
-     "social",
-     "azula_interview"
-    ],
-    [
-     "social",
-     "azula_speech"
-    ],
-    [
-     "social",
-     "borrowed_money"
-    ],
-    [
-     "social",
-     "jinx_board_game"
-    ],
-    [
-     "social",
-     "miku_encore"
-    ],
-    [
-     "social",
-     "wedding_invite"
-    ]
-   ],
-   "example": {
-    "ep": "grab_ride_chat",
-    "text": "Betul-betul selepas stesen minyak"
-   }
-  },
-  "L-1338": {
-   "forms": [
-    "cerita",
-    "ceritalah"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "grab_ride_chat"
-    ],
-    [
-     "health",
-     "physio_session"
-    ],
-    [
-     "home-condo",
-     "lift_chat"
-    ],
-    [
-     "home-condo",
-     "new_neighbour"
-    ],
-    [
-     "home-condo",
-     "noisy_renovation"
-    ],
-    [
-     "office",
-     "chatty_colleague"
-    ],
-    [
-     "office",
-     "sick_day"
-    ],
-    [
-     "social",
-     "jinx_late_parts"
-    ],
-    [
-     "social",
-     "mamak_lepak"
-    ],
-    [
-     "social",
-     "miku_drinks_run"
-    ],
-    [
-     "social",
-     "miku_sore_throat"
-    ],
-    [
-     "social",
-     "monday_catchup"
-    ],
-    [
-     "social",
-     "trio_movie_night"
-    ]
-   ],
-   "example": {
-    "ep": "monday_catchup",
-    "text": "\"Biasa\" saja? Cerita la sikit!"
-   }
-  },
-  "L-1339": {
-   "forms": [
-    "sendiri"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "card_blocked"
-    ],
-    [
-     "daily-life",
-     "food_allergy"
-    ],
-    [
-     "daily-life",
-     "wrong_order"
-    ],
-    [
-     "health",
-     "pharmacy_advice"
-    ],
-    [
-     "home-condo",
-     "lift_chat"
-    ],
-    [
-     "social",
-     "azula_group_project"
-    ],
-    [
-     "social",
-     "azula_interview"
-    ],
-    [
-     "social",
-     "azula_restaurant"
-    ],
-    [
-     "social",
-     "jinx_bike_shop"
-    ],
-    [
-     "social",
-     "jinx_board_game"
-    ],
-    [
-     "social",
-     "jinx_fireworks"
-    ],
-    [
-     "social",
-     "jinx_library"
-    ],
-    [
-     "tutorial",
-     "how_to_play"
-    ]
-   ],
-   "example": {
-    "ep": "card_blocked",
-    "text": "Tak. Saya telefon bank sendiri."
-   }
-  },
-  "L-1340": {
-   "forms": [
-    "penting"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "post_parcel"
-    ],
-    [
-     "health",
-     "blood_test"
-    ],
-    [
-     "health",
-     "dentist_booking"
-    ],
-    [
-     "health",
-     "pharmacy_advice"
-    ],
-    [
-     "health",
-     "physio_session"
-    ],
-    [
-     "office",
-     "azula_town_hall"
-    ],
-    [
-     "office",
-     "handover_notes"
-    ],
-    [
-     "office",
-     "report_deadline"
-    ],
-    [
-     "office",
-     "sick_day"
-    ],
-    [
-     "social",
-     "azula_group_project"
-    ],
-    [
-     "social",
-     "miku_sore_throat"
-    ],
-    [
-     "tutorial",
-     "how_to_play"
-    ]
-   ],
-   "example": {
-    "ep": "azula_group_project",
-    "text": "Keadilan bukan ukuran prestasi. Yang penting keputusan."
-   }
-  },
-  "L-1341": {
-   "forms": [
-    "sebenarnya"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "health",
-     "blood_test"
-    ],
-    [
-     "health",
-     "pharmacy_advice"
-    ],
-    [
-     "home-condo",
-     "aircon_repair"
-    ],
-    [
-     "home-condo",
-     "noisy_renovation"
-    ],
-    [
-     "office",
-     "azula_town_hall"
-    ],
-    [
-     "office",
-     "extra_task"
-    ],
-    [
-     "social",
-     "azula_group_project"
-    ],
-    [
-     "social",
-     "borrowed_money"
-    ],
-    [
-     "social",
-     "jinx_bike_shop"
-    ],
-    [
-     "social",
-     "jinx_demo_day"
-    ],
-    [
-     "social",
-     "jinx_library"
-    ],
-    [
-     "social",
-     "trio_road_trip"
-    ]
-   ],
-   "example": {
-    "ep": "jinx_library",
-    "text": "Okey, sebenarnya boleh tahan juga."
-   }
-  },
-  "L-1342": {
-   "forms": [
-    "ulang"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "ask_directions"
-    ],
-    [
-     "health",
-     "clinic_visit"
-    ],
-    [
-     "health",
-     "pharmacy_advice"
-    ],
-    [
-     "health",
-     "physio_session"
-    ],
-    [
-     "home-condo",
-     "ceiling_leak"
-    ],
-    [
-     "home-condo",
-     "visitor_parking"
-    ],
-    [
-     "office",
-     "handover_notes"
-    ],
-    [
-     "office",
-     "meeting_disagree"
-    ],
-    [
-     "social",
-     "jinx_board_game"
-    ],
-    [
-     "social",
-     "jinx_library"
-    ],
-    [
-     "social",
-     "miku_drinks_run"
-    ],
-    [
-     "social",
-     "miku_sore_throat"
-    ]
-   ],
-   "example": {
-    "ep": "visitor_parking",
-    "text": "Maaf, W... B? Ulang lagi?"
-   }
-  },
-  "L-1343": {
-   "forms": [
-    "beberapa"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "health",
-     "clinic_registration"
-    ],
-    [
-     "home-condo",
-     "ceiling_leak"
-    ],
-    [
-     "home-condo",
-     "noisy_renovation"
-    ],
-    [
-     "home-condo",
-     "wifi_down"
-    ],
-    [
-     "office",
-     "extra_task"
-    ],
-    [
-     "office",
-     "meeting_disagree"
-    ],
-    [
-     "office",
-     "meeting_room"
-    ],
-    [
-     "office",
-     "report_deadline"
-    ],
-    [
-     "office",
-     "team_dinner"
-    ],
-    [
-     "social",
-     "miku_drinks_run"
-    ],
-    [
-     "social",
-     "weekend_plans"
-    ]
-   ],
-   "example": {
-    "ep": "wifi_down",
-    "text": "Saya cuba, tapi saya perlu beberapa maklumat dulu."
-   }
-  },
-  "L-1344": {
-   "forms": [
-    "bunyi",
-    "bunyinya"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "card_blocked"
-    ],
-    [
-     "daily-life",
-     "grab_pickup"
-    ],
-    [
-     "daily-life",
-     "lost_wallet"
-    ],
-    [
-     "home-condo",
-     "noisy_renovation"
-    ],
-    [
-     "office",
-     "azula_coffee"
-    ],
-    [
-     "office",
-     "chatty_colleague"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "office",
-     "handover_notes"
-    ],
-    [
-     "social",
-     "jinx_bike_shop"
-    ],
-    [
-     "social",
-     "jinx_demo_day"
-    ],
-    [
-     "social",
-     "jinx_fireworks"
-    ],
-    [
-     "social",
-     "jinx_library"
-    ],
-    [
-     "social",
-     "miku_sore_throat"
-    ]
-   ],
-   "example": {
-    "ep": "noisy_renovation",
-    "text": "Stop bunyi itu sekarang."
-   }
-  },
   "L-1345": {
    "forms": [
     "pelanggan"
    ],
    "band": 1,
    "eps": [
-    [
-     "home-condo",
-     "wifi_down"
-    ],
     [
      "office",
      "feedback_junior"
@@ -6436,58 +4276,6 @@
    "example": {
     "ep": "sick_day",
     "text": "pelanggan akan tunggu. Semak nota anda."
-   }
-  },
-  "L-1346": {
-   "forms": [
-    "bahagian"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "home-condo",
-     "aircon_repair"
-    ],
-    [
-     "home-condo",
-     "ceiling_leak"
-    ],
-    [
-     "office",
-     "extra_task"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "office",
-     "meeting_disagree"
-    ],
-    [
-     "office",
-     "pantry_banter"
-    ],
-    [
-     "office",
-     "report_deadline"
-    ],
-    [
-     "office",
-     "team_dinner"
-    ],
-    [
-     "social",
-     "azula_group_project"
-    ],
-    [
-     "social",
-     "miku_encore"
-    ]
-   ],
-   "example": {
-    "ep": "ceiling_leak",
-    "text": "Air dari siling? Bahagian mana dalam unit?"
    }
   },
   "L-1347": {
@@ -6540,212 +4328,6 @@
    "example": {
     "ep": "azula_speech",
     "text": "Cakap apa yang bagus, kemudian cadang satu perubahan, dengan sebab."
-   }
-  },
-  "L-1348": {
-   "forms": [
-    "langsung"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "food_allergy"
-    ],
-    [
-     "health",
-     "clinic_registration"
-    ],
-    [
-     "office",
-     "chatty_colleague"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "office",
-     "pantry_banter"
-    ],
-    [
-     "office",
-     "team_dinner"
-    ],
-    [
-     "social",
-     "azula_restaurant"
-    ],
-    [
-     "social",
-     "azula_speech"
-    ],
-    [
-     "social",
-     "miku_encore"
-    ],
-    [
-     "social",
-     "trio_road_trip"
-    ]
-   ],
-   "example": {
-    "ep": "azula_restaurant",
-    "text": "Langsung tidak."
-   }
-  },
-  "L-1349": {
-   "forms": [
-    "diterima",
-    "terima"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "lost_wallet"
-    ],
-    [
-     "health",
-     "blood_test"
-    ],
-    [
-     "office",
-     "chatty_colleague"
-    ],
-    [
-     "office",
-     "meeting_room"
-    ],
-    [
-     "office",
-     "pantry_banter"
-    ],
-    [
-     "social",
-     "azula_interview"
-    ],
-    [
-     "social",
-     "azula_restaurant"
-    ],
-    [
-     "social",
-     "family_dinner"
-    ],
-    [
-     "social",
-     "mamak_lepak"
-    ],
-    [
-     "social",
-     "trio_road_trip"
-    ]
-   ],
-   "example": {
-    "ep": "family_dinner",
-    "text": "...Boleh diterima."
-   }
-  },
-  "L-1350": {
-   "forms": [
-    "begitu",
-    "begitulah"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "airport_checkin"
-    ],
-    [
-     "daily-life",
-     "missed_bus"
-    ],
-    [
-     "daily-life",
-     "phone_plan"
-    ],
-    [
-     "home-condo",
-     "moving_out"
-    ],
-    [
-     "office",
-     "chatty_colleague"
-    ],
-    [
-     "social",
-     "azula_interview"
-    ],
-    [
-     "social",
-     "azula_speech"
-    ],
-    [
-     "social",
-     "miku_sore_throat"
-    ],
-    [
-     "social",
-     "monday_catchup"
-    ],
-    [
-     "social",
-     "trio_movie_night"
-    ]
-   ],
-   "example": {
-    "ep": "azula_speech",
-    "text": "Sebab saya kata begitu."
-   }
-  },
-  "L-1351": {
-   "forms": [
-    "biasa"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "lost_wallet"
-    ],
-    [
-     "home-condo",
-     "aircon_repair"
-    ],
-    [
-     "home-condo",
-     "lift_chat"
-    ],
-    [
-     "home-condo",
-     "new_neighbour"
-    ],
-    [
-     "office",
-     "azula_coffee"
-    ],
-    [
-     "office",
-     "pantry_banter"
-    ],
-    [
-     "social",
-     "mamak_lepak"
-    ],
-    [
-     "social",
-     "miku_drinks_run"
-    ],
-    [
-     "social",
-     "monday_catchup"
-    ]
-   ],
-   "example": {
-    "ep": "lost_wallet",
-    "text": "Dompet biasa."
    }
   },
   "L-1352": {
@@ -6801,54 +4383,6 @@
     "text": "Hmm... langsung tak ada idea?"
    }
   },
-  "L-1353": {
-   "forms": [
-    "kena"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "card_blocked"
-    ],
-    [
-     "home-condo",
-     "visitor_parking"
-    ],
-    [
-     "office",
-     "extra_task"
-    ],
-    [
-     "office",
-     "pantry_banter"
-    ],
-    [
-     "social",
-     "borrowed_money"
-    ],
-    [
-     "social",
-     "jinx_board_game"
-    ],
-    [
-     "social",
-     "jinx_fireworks"
-    ],
-    [
-     "social",
-     "jinx_library"
-    ],
-    [
-     "social",
-     "trio_road_trip"
-    ]
-   ],
-   "example": {
-    "ep": "jinx_board_game",
-    "text": "yang kalah kena buat apa?"
-   }
-  },
   "L-1354": {
    "forms": [
     "mesra"
@@ -6895,54 +4429,6 @@
    "example": {
     "ep": "price_haggle",
     "text": "Anda ambil jalan tengah, sahkan harga, dan kekal mesra."
-   }
-  },
-  "L-1355": {
-   "forms": [
-    "pasti"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "health",
-     "clinic_visit"
-    ],
-    [
-     "health",
-     "gym_membership"
-    ],
-    [
-     "home-condo",
-     "ceiling_leak"
-    ],
-    [
-     "office",
-     "handover_notes"
-    ],
-    [
-     "office",
-     "standup_update"
-    ],
-    [
-     "social",
-     "jinx_demo_day"
-    ],
-    [
-     "social",
-     "miku_sore_throat"
-    ],
-    [
-     "social",
-     "trio_road_trip"
-    ],
-    [
-     "social",
-     "wedding_invite"
-    ]
-   ],
-   "example": {
-    "ep": "miku_sore_throat",
-    "text": "Pasti? Cuba ulang, tolong."
    }
   },
   "L-1356": {
@@ -7083,50 +4569,6 @@
     "text": "Diamlah, Lily."
    }
   },
-  "L-1359": {
-   "forms": [
-    "hampir"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "grab_ride_chat"
-    ],
-    [
-     "office",
-     "meeting_room"
-    ],
-    [
-     "office",
-     "pantry_banter"
-    ],
-    [
-     "social",
-     "azula_interview"
-    ],
-    [
-     "social",
-     "azula_restaurant"
-    ],
-    [
-     "social",
-     "jinx_bike_shop"
-    ],
-    [
-     "social",
-     "jinx_board_game"
-    ],
-    [
-     "tutorial",
-     "how_to_play"
-    ]
-   ],
-   "example": {
-    "ep": "meeting_room",
-    "text": "Lima minit pun tak boleh? Kami betul-betul hampir habis..."
-   }
-  },
   "L-1360": {
    "forms": [
     "maksudnya"
@@ -7264,138 +4706,6 @@
     "text": "Mungkin? Saya perlu sahkan slot dengan juruteknik."
    }
   },
-  "L-1363": {
-   "forms": [
-    "selama"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "card_blocked"
-    ],
-    [
-     "health",
-     "blood_test"
-    ],
-    [
-     "health",
-     "gym_membership"
-    ],
-    [
-     "home-condo",
-     "ceiling_leak"
-    ],
-    [
-     "home-condo",
-     "wifi_down"
-    ],
-    [
-     "social",
-     "azula_interview"
-    ],
-    [
-     "social",
-     "jinx_board_game"
-    ],
-    [
-     "social",
-     "trio_movie_night"
-    ]
-   ],
-   "example": {
-    "ep": "ceiling_leak",
-    "text": "Jadi saya tidak boleh guna bilik air ini selama dua hari, betul?"
-   }
-  },
-  "L-1364": {
-   "forms": [
-    "tanpa"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "food_allergy"
-    ],
-    [
-     "daily-life",
-     "mamak_order"
-    ],
-    [
-     "daily-life",
-     "wrong_order"
-    ],
-    [
-     "health",
-     "blood_test"
-    ],
-    [
-     "office",
-     "standup_update"
-    ],
-    [
-     "social",
-     "azula_restaurant"
-    ],
-    [
-     "social",
-     "miku_market"
-    ],
-    [
-     "social",
-     "trio_surprise_party"
-    ]
-   ],
-   "example": {
-    "ep": "trio_surprise_party",
-    "text": "Konfeti tanpa had. Setuju."
-   }
-  },
-  "L-1365": {
-   "forms": [
-    "teruk"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "food_allergy"
-    ],
-    [
-     "daily-life",
-     "hotel_checkin"
-    ],
-    [
-     "daily-life",
-     "return_item"
-    ],
-    [
-     "health",
-     "blood_test"
-    ],
-    [
-     "health",
-     "physio_session"
-    ],
-    [
-     "home-condo",
-     "blocked_car"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "social",
-     "weekend_plans"
-    ]
-   ],
-   "example": {
-    "ep": "physio_session",
-    "text": "Teruk sangat."
-   }
-  },
   "L-1366": {
    "forms": [
     "adil"
@@ -7520,46 +4830,6 @@
    "example": {
     "ep": "gym_membership",
     "text": "Batal? Ada caj RM100 untuk itu. Anda pasti?"
-   }
-  },
-  "L-1369": {
-   "forms": [
-    "hebat"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "phone_plan"
-    ],
-    [
-     "social",
-     "azula_speech"
-    ],
-    [
-     "social",
-     "borrowed_money"
-    ],
-    [
-     "social",
-     "jinx_fireworks"
-    ],
-    [
-     "social",
-     "mamak_lepak"
-    ],
-    [
-     "social",
-     "miku_encore"
-    ],
-    [
-     "social",
-     "trio_road_trip"
-    ]
-   ],
-   "example": {
-    "ep": "miku_encore",
-    "text": "Konsert yang hebat!"
    }
   },
   "L-1370": {
@@ -7909,10 +5179,6 @@
      "blocked_car"
     ],
     [
-     "office",
-     "report_deadline"
-    ],
-    [
      "social",
      "azula_group_project"
     ],
@@ -8113,10 +5379,6 @@
    ],
    "band": 1,
    "eps": [
-    [
-     "daily-life",
-     "phone_plan"
-    ],
     [
      "social",
      "jinx_library"
@@ -8379,38 +5641,6 @@
     "text": "Anda ambil jalan tengah, sahkan harga, dan kekal mesra."
    }
   },
-  "L-1392": {
-   "forms": [
-    "kenal"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "lost_wallet"
-    ],
-    [
-     "office",
-     "handover_notes"
-    ],
-    [
-     "office",
-     "sick_day"
-    ],
-    [
-     "social",
-     "miku_karaoke"
-    ],
-    [
-     "social",
-     "wedding_invite"
-    ]
-   ],
-   "example": {
-    "ep": "sick_day",
-    "text": "Saya perlukan satu nama. Siapa kenal pelanggan ini?"
-   }
-  },
   "L-1393": {
    "forms": [
     "konsert"
@@ -8601,38 +5831,6 @@
    "example": {
     "ep": "new_joiner",
     "text": "Terima kasih. Pengerusi syarikat, Puan Azula, beri ucapan alu-aluan masa orientasi. Dia... sangat tegas."
-   }
-  },
-  "L-1399": {
-   "forms": [
-    "sejam"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "home-condo",
-     "ceiling_leak"
-    ],
-    [
-     "office",
-     "feedback_junior"
-    ],
-    [
-     "office",
-     "new_joiner"
-    ],
-    [
-     "social",
-     "azula_interview"
-    ],
-    [
-     "social",
-     "jinx_fireworks"
-    ]
-   ],
-   "example": {
-    "ep": "azula_interview",
-    "text": "Salah. Awak lewat sejam. Tak boleh dimaafkan."
    }
   },
   "L-1400": {
@@ -8940,34 +6138,6 @@
    "example": {
     "ep": "pantry_banter",
     "text": "Oh... maaf, maaf. Gurau je."
-   }
-  },
-  "L-1410": {
-   "forms": [
-    "haribulan"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "phone_plan"
-    ],
-    [
-     "health",
-     "dentist_booking"
-    ],
-    [
-     "office",
-     "annual_leave"
-    ],
-    [
-     "social",
-     "jinx_late_parts"
-    ]
-   ],
-   "example": {
-    "ep": "annual_leave",
-    "text": "10 haribulan"
    }
   },
   "L-1411": {
@@ -10376,30 +7546,6 @@
     "text": "Banyak sangat peraturan."
    }
   },
-  "L-1465": {
-   "forms": [
-    "percuma"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "daily-life",
-     "phone_plan"
-    ],
-    [
-     "daily-life",
-     "wrong_order"
-    ],
-    [
-     "social",
-     "miku_karaoke"
-    ]
-   ],
-   "example": {
-    "ep": "phone_plan",
-    "text": "Wah, fon telinga percuma!"
-   }
-  },
   "L-1466": {
    "forms": [
     "pindahkan"
@@ -10503,21 +7649,13 @@
    "band": 1,
    "eps": [
     [
-     "home-condo",
-     "aircon_repair"
-    ],
-    [
-     "office",
-     "annual_leave"
-    ],
-    [
      "social",
      "monday_catchup"
     ]
    ],
    "example": {
-    "ep": "aircon_repair",
-    "text": "Encik Raju sudah ada di sini. Tanya apa yang termasuk sebelum putus asa."
+    "ep": "monday_catchup",
+    "text": "Anda jawab dengan satu butiran, tanya balik, kemudian tanya lagi tentang jawapannya. Begitulah sembang tidak putus."
    }
   },
   "L-1471": {
@@ -10662,30 +7800,6 @@
    "example": {
     "ep": "azula_town_hall",
     "text": "Lebih baik. Ia bermula pada 1 Januari, sebagai rintis dalam dua pasukan: Kewangan dan IT. Jika berjaya, yang lain menyusul pada bulan Jun."
-   }
-  },
-  "L-1477": {
-   "forms": [
-    "sebenar"
-   ],
-   "band": 1,
-   "eps": [
-    [
-     "home-condo",
-     "lift_chat"
-    ],
-    [
-     "social",
-     "azula_interview"
-    ],
-    [
-     "tutorial",
-     "how_to_play"
-    ]
-   ],
-   "example": {
-    "ep": "azula_interview",
-    "text": "Soalan terakhir: temu duga sebenar pukul berapa?"
    }
   },
   "L-1478": {
@@ -11070,6 +8184,3494 @@
    "example": {
     "ep": "wrong_order",
     "text": "Okey, tak pedas, saya sendiri cakap dengan tukang masak. Maaf ya!"
+   }
+  },
+  "L-1817": {
+   "forms": [
+    "lembaga pengarah"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "new_joiner"
+    ],
+    [
+     "office",
+     "standup_update"
+    ]
+   ],
+   "example": {
+    "ep": "standup_update",
+    "text": "Encik Lim mahu laporan penuh untuk lembaga pengarah. Bila tarikh akhir, ya?"
+   }
+  },
+  "L-1818": {
+   "forms": [
+    "maklum balas"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "standup_update"
+    ],
+    [
+     "social",
+     "azula_speech"
+    ]
+   ],
+   "example": {
+    "ep": "standup_update",
+    "text": "Bagus. Kadar maklum balas berapa?"
+   }
+  },
+  "L-1819": {
+   "forms": [
+    "pandang"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "new_joiner"
+    ],
+    [
+     "social",
+     "family_dinner"
+    ]
+   ],
+   "example": {
+    "ep": "family_dinner",
+    "text": "Mira pandang anda dan senyum."
+   }
+  },
+  "L-1820": {
+   "forms": [
+    "serahan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "annual_leave"
+    ],
+    [
+     "office",
+     "sick_day"
+    ]
+   ],
+   "example": {
+    "ep": "annual_leave",
+    "text": "Okey, lepas pelancaran boleh. Masukkan dalam sistem, dan salinkan saya dalam e-mel serahan tugas."
+   }
+  },
+  "L-1821": {
+   "forms": [
+    "alu-aluan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "new_joiner"
+    ]
+   ],
+   "example": {
+    "ep": "new_joiner",
+    "text": "Terima kasih. Pengerusi syarikat, Puan Azula, beri ucapan alu-aluan masa orientasi. Dia... sangat tegas."
+   }
+  },
+  "L-1822": {
+   "forms": [
+    "berbesar hati"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "report_deadline"
+    ]
+   ],
+   "example": {
+    "ep": "report_deadline",
+    "text": "Saya amat berbesar hati atas kerjasama dan budi baik saudari."
+   }
+  },
+  "L-1823": {
+   "forms": [
+    "bergaya"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "pantry_banter"
+    ]
+   ],
+   "example": {
+    "ep": "pantry_banter",
+    "text": "Wah, bergaya hari ni! Baju baru ke?"
+   }
+  },
+  "L-1824": {
+   "forms": [
+    "bertuah"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "pantry_banter"
+    ]
+   ],
+   "example": {
+    "ep": "pantry_banter",
+    "text": "Alah, cakaplah. Siapa orang yang bertuah tu?"
+   }
+  },
+  "L-1825": {
+   "forms": [
+    "budi"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "report_deadline"
+    ]
+   ],
+   "example": {
+    "ep": "report_deadline",
+    "text": "Saya amat berbesar hati atas kerjasama dan budi baik saudari."
+   }
+  },
+  "L-1826": {
+   "forms": [
+    "desak"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "extra_task"
+    ]
+   ],
+   "example": {
+    "ep": "extra_task",
+    "text": "Maaf desak, saya cuma perlu tahu hari ni."
+   }
+  },
+  "L-1827": {
+   "forms": [
+    "galakkan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "feedback_junior"
+    ]
+   ],
+   "example": {
+    "ep": "feedback_junior",
+    "text": "Galakkan dia tunjuk kepada Encik Lim. Bina ayat satu demi satu perkataan."
+   }
+  },
+  "L-1828": {
+   "forms": [
+    "gurauan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "pantry_banter"
+    ]
+   ],
+   "example": {
+    "ep": "pantry_banter",
+    "text": "Sebelum pergi, susun gurauan Daniel dari belakang."
+   }
+  },
+  "L-1829": {
+   "forms": [
+    "hubungan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "meeting_room"
+    ]
+   ],
+   "example": {
+    "ep": "meeting_room",
+    "text": "Anda terima ucapan terima kasih dengan mesra dan jaga hubungan baik dengan rakan sekerja."
+   }
+  },
+  "L-1830": {
+   "forms": [
+    "isyarat"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "handover_notes"
+    ]
+   ],
+   "example": {
+    "ep": "handover_notes",
+    "text": "Saya mendaki di Sabah, tiada isyarat! Siapa lagi awak boleh tanya?"
+   }
+  },
+  "L-1831": {
+   "forms": [
+    "kecilkan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "azula_town_hall"
+    ]
+   ],
+   "example": {
+    "ep": "azula_town_hall",
+    "text": "Anda ada soalan yang penting. Jangan lepaskan: kecilkan soalan itu."
+   }
+  },
+  "L-1832": {
+   "forms": [
+    "kembali"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "chatty_colleague"
+    ]
+   ],
+   "example": {
+    "ep": "chatty_colleague",
+    "text": "Anda kembali ke topiknya kemudian, jadi tukar topik tadi tidak rasa macam awak tak peduli."
+   }
+  },
+  "L-1833": {
+   "forms": [
+    "korek"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "pantry_banter"
+    ]
+   ],
+   "example": {
+    "ep": "pantry_banter",
+    "text": "Okey, okey, nanti masa makan tengah hari saya korek."
+   }
+  },
+  "L-1834": {
+   "forms": [
+    "mencurigakan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "pantry_banter"
+    ]
+   ],
+   "example": {
+    "ep": "pantry_banter",
+    "text": "Hmm, diam je... mencurigakan ni. 😏"
+   }
+  },
+  "L-1835": {
+   "forms": [
+    "menyertai"
+   ],
+   "band": 2,
+   "eps": [
+    [
+     "office",
+     "new_joiner"
+    ]
+   ],
+   "example": {
+    "ep": "new_joiner",
+    "text": "Dia memang buat semua orang berjaga-jaga! Jadi, awak buat kerja apa sebelum menyertai kami?"
+   }
+  },
+  "L-1836": {
+   "forms": [
+    "ringkasan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "meeting_disagree"
+    ]
+   ],
+   "example": {
+    "ep": "meeting_disagree",
+    "text": "Anda beri ringkasan yang pendek dan jelas, dengan tarikh dan siapa buat apa."
+   }
+  },
+  "L-1837": {
+   "forms": [
+    "salinkan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "annual_leave"
+    ]
+   ],
+   "example": {
+    "ep": "annual_leave",
+    "text": "Okey, lepas pelancaran boleh. Masukkan dalam sistem, dan salinkan saya dalam e-mel serahan tugas."
+   }
+  },
+  "L-1838": {
+   "forms": [
+    "tenangkan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "feedback_junior"
+    ]
+   ],
+   "example": {
+    "ep": "feedback_junior",
+    "text": "Farah nampak risau. Tak perlu buat semula. Tenangkan dia."
+   }
+  },
+  "L-1839": {
+   "forms": [
+    "umumkan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "office",
+     "meeting_disagree"
+    ]
+   ],
+   "example": {
+    "ep": "meeting_disagree",
+    "text": "Mesyuarat pasukan hari Isnin. Encik Lim nak lancar aplikasi baharu dua minggu lebih awal, pada 1 Mac, sebab pengerusi syarikat, Azula, nak umumkan pada hari ulang tahun syarikat. Anda tahu ujian baru separuh siap. Teka: apa cara terbaik untuk tak setuju?"
+   }
+  },
+  "L-1840": {
+   "forms": [
+    "akui"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "grab_pickup"
+    ],
+    [
+     "home-condo",
+     "blocked_car"
+    ]
+   ],
+   "example": {
+    "ep": "blocked_car",
+    "text": "Anda minta maaf, akui dia betul, dan terus buat sesuatu."
+   }
+  },
+  "L-1841": {
+   "forms": [
+    "fon"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "phone_plan"
+    ],
+    [
+     "social",
+     "azula_group_project"
+    ]
+   ],
+   "example": {
+    "ep": "azula_group_project",
+    "text": "Okey, saya pilih fon."
+   }
+  },
+  "L-1842": {
+   "forms": [
+    "pengasas"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "missed_bus"
+    ],
+    [
+     "social",
+     "jinx_fireworks"
+    ]
+   ],
+   "example": {
+    "ep": "missed_bus",
+    "text": "Anda bayar RM10. Lelaki di sebelah anda dalam barisan sedang baca majalah bisnes. Di kulit depan ada pengasas syarikat permulaan, Jinx, dengan lengan robot."
+   }
+  },
+  "L-1843": {
+   "forms": [
+    "platform"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "ask_directions"
+    ],
+    [
+     "daily-life",
+     "missed_bus"
+    ]
+   ],
+   "example": {
+    "ep": "missed_bus",
+    "text": "Platform 7. Terima kasih banyak!"
+   }
+  },
+  "L-1844": {
+   "forms": [
+    "ramen"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "grab_ride_chat"
+    ],
+    [
+     "office",
+     "chatty_colleague"
+    ]
+   ],
+   "example": {
+    "ep": "grab_ride_chat",
+    "text": "Makanannya pula! Setiap malam dia hantar gambar ramen. Saya lapar dah ni."
+   }
+  },
+  "L-1845": {
+   "forms": [
+    "asingkan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "food_allergy"
+    ]
+   ],
+   "example": {
+    "ep": "food_allergy",
+    "text": "Okey, saya asingkan."
+   }
+  },
+  "L-1846": {
+   "forms": [
+    "berakhir"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "card_blocked"
+    ]
+   ],
+   "example": {
+    "ep": "card_blocked",
+    "text": "Untuk keselamatan, boleh berikan empat digit terakhir kad anda? Terima kasih, kad yang berakhir dengan 4821."
+   }
+  },
+  "L-1847": {
+   "forms": [
+    "bucu"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "mamak_order"
+    ]
+   ],
+   "example": {
+    "ep": "mamak_order",
+    "text": "Pukul 10 malam. Anda dan seorang kawan duduk di sebuah kedai mamak yang sibuk, di meja 12 (nombornya ada di bucu meja)."
+   }
+  },
+  "L-1848": {
+   "forms": [
+    "bunyikan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "grab_ride_chat"
+    ]
+   ],
+   "example": {
+    "ep": "grab_ride_chat",
+    "text": "Pemandu tekan brek kuat-kuat. Kereta di belakang bunyikan hon."
+   }
+  },
+  "L-1849": {
+   "forms": [
+    "geleng"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "grab_pickup"
+    ]
+   ],
+   "example": {
+    "ep": "grab_pickup",
+    "text": "Anda ketuk tingkap. Lelaki di dalam geleng kepala. Itu bukan kereta anda."
+   }
+  },
+  "L-1850": {
+   "forms": [
+    "halau"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "grab_pickup"
+    ]
+   ],
+   "example": {
+    "ep": "grab_pickup",
+    "text": "Sori bos, Pintu A jalan sehala. Saya tak boleh berhenti situ, nanti pengawal halau."
+   }
+  },
+  "L-1851": {
+   "forms": [
+    "kacang tanah"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "food_allergy"
+    ]
+   ],
+   "example": {
+    "ep": "food_allergy",
+    "text": "Ya, tapi saya alah kacang tanah. Hidangan mana yang tiada kacang?"
+   }
+  },
+  "L-1852": {
+   "forms": [
+    "kanvas"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "price_haggle"
+    ]
+   ],
+   "example": {
+    "ep": "price_haggle",
+    "text": "Pasar malam. Anda suka sebuah beg kanvas di satu gerai. Tiada tanda harga. Bajet anda lebih kurang RM60."
+   }
+  },
+  "L-1853": {
+   "forms": [
+    "mall"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "grab_pickup"
+    ]
+   ],
+   "example": {
+    "ep": "grab_pickup",
+    "text": "Mana-mana? Mall ni besar sangat, bos."
+   }
+  },
+  "L-1854": {
+   "forms": [
+    "melalui"
+   ],
+   "band": 2,
+   "eps": [
+    [
+     "daily-life",
+     "card_blocked"
+    ]
+   ],
+   "example": {
+    "ep": "card_blocked",
+    "text": "Saya tidak selesa memberi PIN melalui telefon. Saya akan telefon nombor pada kad saya."
+   }
+  },
+  "L-1855": {
+   "forms": [
+    "menangis"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "price_haggle"
+    ]
+   ],
+   "example": {
+    "ep": "price_haggle",
+    "text": "RM20?! Alamak, awak nak saya menangis?"
+   }
+  },
+  "L-1856": {
+   "forms": [
+    "pemanggil"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "card_blocked"
+    ]
+   ],
+   "example": {
+    "ep": "card_blocked",
+    "text": "Pemanggil itu letak telefon. Anda telefon nombor pada kad, dan bank kata: mereka tak pernah telefon anda."
+   }
+  },
+  "L-1857": {
+   "forms": [
+    "pembaharuan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "phone_plan"
+    ]
+   ],
+   "example": {
+    "ep": "phone_plan",
+    "text": "Bila tarikh pembaharuan pelan anda?"
+   }
+  },
+  "L-1858": {
+   "forms": [
+    "pembesar suara"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "phone_plan"
+    ]
+   ],
+   "example": {
+    "ep": "phone_plan",
+    "text": "Sebuah kedai telefon di pusat beli-belah. Pembesar suara sedang main lagu baharu Miku, kali ketiga dalam sepuluh minit. Anda mahu pelan prabayar. Anda selalu tonton video dalam tren, dan bajet anda RM50 sebulan."
+   }
+  },
+  "L-1859": {
+   "forms": [
+    "penipu"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "card_blocked"
+    ]
+   ],
+   "example": {
+    "ep": "card_blocked",
+    "text": "Penipu!"
+   }
+  },
+  "L-1860": {
+   "forms": [
+    "diperbaharui"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "phone_plan"
+    ]
+   ],
+   "example": {
+    "ep": "phone_plan",
+    "text": "Kalau begitu, pelan RM45: 60GB sebulan. Pelan ini diperbaharui setiap 1 haribulan."
+   }
+  },
+  "L-1861": {
+   "forms": [
+    "pertukaran"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "airport_checkin"
+    ]
+   ],
+   "example": {
+    "ep": "airport_checkin",
+    "text": "Empat puluh minit kemudian, di Pintu 12, skrin tunjuk: PERTUKARAN PINTU. Ada pengumuman, tapi susah dengar."
+   }
+  },
+  "L-1862": {
+   "forms": [
+    "pesawat"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "airport_checkin"
+    ]
+   ],
+   "example": {
+    "ep": "airport_checkin",
+    "text": "Tepat 20. Bagus. Ini pas masuk awak. Pintu 12, naik pesawat pukul 9.40."
+   }
+  },
+  "L-1863": {
+   "forms": [
+    "robot"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "missed_bus"
+    ]
+   ],
+   "example": {
+    "ep": "missed_bus",
+    "text": "Anda bayar RM10. Lelaki di sebelah anda dalam barisan sedang baca majalah bisnes. Di kulit depan ada pengasas syarikat permulaan, Jinx, dengan lengan robot."
+   }
+  },
+  "L-1864": {
+   "forms": [
+    "ditetapkan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "airport_checkin"
+    ]
+   ],
+   "example": {
+    "ep": "airport_checkin",
+    "text": "Itu harga yang ditetapkan, maaf."
+   }
+  },
+  "L-1865": {
+   "forms": [
+    "wujud"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "post_parcel"
+    ]
+   ],
+   "example": {
+    "ep": "post_parcel",
+    "text": "Hmm, nombor tu tak wujud."
+   }
+  },
+  "L-1866": {
+   "forms": [
+    "api"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "family_dinner"
+    ],
+    [
+     "social",
+     "jinx_fireworks"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_fireworks",
+    "text": "siling dapur boleh kena api. Lebih baik cakap sekarang."
+   }
+  },
+  "L-1867": {
+   "forms": [
+    "bertih jagung"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_board_game"
+    ],
+    [
+     "social",
+     "trio_movie_night"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_board_game",
+    "text": "Buat bertih jagung"
+   }
+  },
+  "L-1868": {
+   "forms": [
+    "bumbung"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "family_dinner"
+    ],
+    [
+     "social",
+     "jinx_fireworks"
+    ]
+   ],
+   "example": {
+    "ep": "family_dinner",
+    "text": "Bila kita naik bumbung? Aku dah tunggu sepanjang hari!"
+   }
+  },
+  "L-1869": {
+   "forms": [
+    "demo"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_demo_day"
+    ],
+    [
+     "social",
+     "jinx_late_parts"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_late_parts",
+    "text": "Boleh encik bagi satu hari? Kami perlu motor itu untuk demo."
+   }
+  },
+  "L-1870": {
+   "forms": [
+    "dron"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_demo_day"
+    ],
+    [
+     "social",
+     "jinx_late_parts"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_demo_day",
+    "text": "Hai! Ini dron. Ia hantar barang kecil ke rumah."
+   }
+  },
+  "L-1871": {
+   "forms": [
+    "kelingking"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_bike_shop"
+    ],
+    [
+     "social",
+     "jinx_fireworks"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_bike_shop",
+    "text": "Sabtu sebelum pukul 3. Janji. Janji jari kelingking pun boleh."
+   }
+  },
+  "L-1872": {
+   "forms": [
+    "konfeti"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_board_game"
+    ],
+    [
+     "social",
+     "trio_surprise_party"
+    ]
+   ],
+   "example": {
+    "ep": "trio_surprise_party",
+    "text": "Konfeti tanpa had. Setuju."
+   }
+  },
+  "L-1873": {
+   "forms": [
+    "radio"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "miku_encore"
+    ],
+    [
+     "social",
+     "trio_road_trip"
+    ]
+   ],
+   "example": {
+    "ep": "trio_road_trip",
+    "text": "Kita bertolak pukul 7 pagi tepat, paling banyak dua kali berhenti, dan tiada siapa sentuh radio."
+   }
+  },
+  "L-1874": {
+   "forms": [
+    "aksi"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "trio_movie_night"
+    ]
+   ],
+   "example": {
+    "ep": "trio_movie_night",
+    "text": "Malam ini muzikal. Minggu depan, filem aksi. Okey?"
+   }
+  },
+  "L-1875": {
+   "forms": [
+    "barbeku"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "family_dinner"
+    ]
+   ],
+   "example": {
+    "ep": "family_dinner",
+    "text": "Bosan! Barbeku atas bumbung. Dengan bunga api. Sudah tentu."
+   }
+  },
+  "L-1876": {
+   "forms": [
+    "bawang perai"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "miku_market"
+    ]
+   ],
+   "example": {
+    "ep": "miku_market",
+    "text": "Bawang perai."
+   }
+  },
+  "L-1877": {
+   "forms": [
+    "bengkel"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_late_parts"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_late_parts",
+    "text": "Bengkel Jinx. Dua ratus motor kecil untuk dron dia sepatutnya sampai hari Isnin. Sekarang hari Rabu. Jinx sibuk kimpal sesuatu, jadi dia bagi telefon kepada anda untuk call pembekal."
+   }
+  },
+  "L-1878": {
+   "forms": [
+    "berduet"
+   ],
+   "band": 2,
+   "eps": [
+    [
+     "social",
+     "miku_karaoke"
+    ]
+   ],
+   "example": {
+    "ep": "miku_karaoke",
+    "text": "Saya gementar kalau menyanyi seorang, tapi saya suka kalau kita berduet."
+   }
+  },
+  "L-1879": {
+   "forms": [
+    "bersorak"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_fireworks"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_fireworks",
+    "text": "biru, merah jambu, dan satu yang tulis nama anda. Semua orang bersorak. Lepas itu, Jinx datang, tiba-tiba senyap."
+   }
+  },
+  "L-1880": {
+   "forms": [
+    "capai"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "family_dinner"
+    ]
+   ],
+   "example": {
+    "ep": "family_dinner",
+    "text": "Atas bumbung, Jess dan Puan Tan capai kotak bunga api tangan pada masa yang sama."
+   }
+  },
+  "L-1881": {
+   "forms": [
+    "daun bawang"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "miku_market"
+    ]
+   ],
+   "example": {
+    "ep": "miku_market",
+    "text": "Maaf, ini daun bawang. Saya nak bawang perai. Boleh tukar?"
+   }
+  },
+  "L-1882": {
+   "forms": [
+    "dokumentari"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "trio_movie_night"
+    ]
+   ],
+   "example": {
+    "ep": "trio_movie_night",
+    "text": "Dokumentari tentang juara catur. Itu satu-satunya pilihan yang bijak."
+   }
+  },
+  "L-1883": {
+   "forms": [
+    "duet"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "miku_karaoke"
+    ]
+   ],
+   "example": {
+    "ep": "miku_karaoke",
+    "text": "Saya agak malu. Boleh kita nyanyi duet?"
+   }
+  },
+  "L-1884": {
+   "forms": [
+    "gogal"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_late_parts"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_late_parts",
+    "text": "Jinx angkat topeng dia. Gogal di atas kepala, dan ada jelaga di hidung."
+   }
+  },
+  "L-1885": {
+   "forms": [
+    "hero"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "miku_drinks_run"
+    ]
+   ],
+   "example": {
+    "ep": "miku_drinks_run",
+    "text": "Hero saya! Yang mana satu saya punya?"
+   }
+  },
+  "L-1886": {
+   "forms": [
+    "jelaga"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_late_parts"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_late_parts",
+    "text": "Jinx angkat topeng dia. Gogal di atas kepala, dan ada jelaga di hidung."
+   }
+  },
+  "L-1887": {
+   "forms": [
+    "jelajah"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "miku_sore_throat"
+    ]
+   ],
+   "example": {
+    "ep": "miku_sore_throat",
+    "text": "Anda pembantu dalam jelajah konsert seorang penyanyi. Sabtu pagi, telefon anda bunyi. Itu penyanyinya, Miku, dia cakap perlahan sangat."
+   }
+  },
+  "L-1888": {
+   "forms": [
+    "kacau"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "mamak_lepak"
+    ]
+   ],
+   "example": {
+    "ep": "mamak_lepak",
+    "text": "Arif tunggu. Wei Jie kacau teh tarik dia. Satu perkataan saja, jadi tak ada apa nak sembang."
+   }
+  },
+  "L-1889": {
+   "forms": [
+    "katering"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "miku_market"
+    ]
+   ],
+   "example": {
+    "ep": "miku_market",
+    "text": "Ahad. Anda dalam krew katering untuk konsert malam ini. Penyanyinya, Miku, minta steamboat untuk semua krew, dan anda ke pasar dengan senarai. Paling atas, garis tiga kali: BAWANG PERAI."
+   }
+  },
+  "L-1890": {
+   "forms": [
+    "kejutan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "trio_surprise_party"
+    ]
+   ],
+   "example": {
+    "ep": "trio_surprise_party",
+    "text": "Hari Sabtu ialah hari jadi rakan sekerja anda, Mira. Anda, Jess dari IT dan pengurus anda, Puan Tan, sedang rancang parti kejutan di kafe pejabat, semasa Mira pergi latihan koir."
+   }
+  },
+  "L-1891": {
+   "forms": [
+    "kimpal"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_late_parts"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_late_parts",
+    "text": "Bengkel Jinx. Dua ratus motor kecil untuk dron dia sepatutnya sampai hari Isnin. Sekarang hari Rabu. Jinx sibuk kimpal sesuatu, jadi dia bagi telefon kepada anda untuk call pembekal."
+   }
+  },
+  "L-1892": {
+   "forms": [
+    "klip"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_interview"
+    ]
+   ],
+   "example": {
+    "ep": "azula_interview",
+    "text": "Anda ada temu duga kenaikan pangkat hari Isnin. Pengurus anda, Puan Tan, tawarkan diri untuk \"sediakan\" anda. Dia pegang papan klip dan pemasa."
+   }
+  },
+  "L-1893": {
+   "forms": [
+    "koir"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "trio_surprise_party"
+    ]
+   ],
+   "example": {
+    "ep": "trio_surprise_party",
+    "text": "Hari Sabtu ialah hari jadi rakan sekerja anda, Mira. Anda, Jess dari IT dan pengurus anda, Puan Tan, sedang rancang parti kejutan di kafe pejabat, semasa Mira pergi latihan koir."
+   }
+  },
+  "L-1894": {
+   "forms": [
+    "korusnya"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "miku_karaoke"
+    ]
+   ],
+   "example": {
+    "ep": "miku_karaoke",
+    "text": "Bilik 7. Mira sudah separuh jalan lagu ketiganya: lagu terbaru Miku, tentunya. Semua orang tahu korusnya."
+   }
+  },
+  "L-1895": {
+   "forms": [
+    "laluan"
+   ],
+   "band": 2,
+   "eps": [
+    [
+     "social",
+     "jinx_demo_day"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_demo_day",
+    "text": "Kerisauan yang wajar. Ia cuma terbang ikut laluan tetap atas bangunan, dan ia berhenti di udara jika mengesan orang di bawah."
+   }
+  },
+  "L-1896": {
+   "forms": [
+    "lapis"
+   ],
+   "band": 2,
+   "eps": [
+    [
+     "social",
+     "monday_catchup"
+    ]
+   ],
+   "example": {
+    "ep": "monday_catchup",
+    "text": "Seronoknya! Kuih apa yang paling sedap? Saya baru pernah cuba kuih lapis."
+   }
+  },
+  "L-1897": {
+   "forms": [
+    "diletupkan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_library"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_library",
+    "text": "Lily tengok video bangunan diletupkan, dengan bunyi kuat."
+   }
+  },
+  "L-1898": {
+   "forms": [
+    "lipat"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_library"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_library",
+    "text": "Lily lipat kapal terbang kertas dan baling ke seberang bilik. Satu jatuh dalam kopi orang."
+   }
+  },
+  "L-1899": {
+   "forms": [
+    "mengetuai"
+   ],
+   "band": 2,
+   "eps": [
+    [
+     "social",
+     "azula_interview"
+    ]
+   ],
+   "example": {
+    "ep": "azula_interview",
+    "text": "Buat masa ini saya dalam bidang jualan, kebanyakannya dengan pelanggan perniagaan kecil. Sebelum itu, tiga tahun dalam peruncitan mengajar saya memahami pelanggan. Kini saya bersedia untuk mengetuai pasukan."
+   }
+  },
+  "L-1900": {
+   "forms": [
+    "merata"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_board_game"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_board_game",
+    "text": "Dua jam kemudian. Tak sangka, anda menang. Konfeti di merata tempat."
+   }
+  },
+  "L-1901": {
+   "forms": [
+    "meriam"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "trio_surprise_party"
+    ]
+   ],
+   "example": {
+    "ep": "trio_surprise_party",
+    "text": "Saya buat hiasan! Meriam konfeti. Bunga api dalam bilik. Letupan kecil bila dia masuk."
+   }
+  },
+  "L-1902": {
+   "forms": [
+    "mewah"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_restaurant"
+    ]
+   ],
+   "example": {
+    "ep": "azula_restaurant",
+    "text": "Makan malam dengan pelanggan di restoran mewah, bersama pengurus anda, Puan Tan. Dia pesan stik medium-rare. Yang sampai, well-done."
+   }
+  },
+  "L-1903": {
+   "forms": [
+    "mikrofon"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "miku_karaoke"
+    ]
+   ],
+   "example": {
+    "ep": "miku_karaoke",
+    "text": "Giliran awak! Nah, mikrofon. Nyanyilah!"
+   }
+  },
+  "L-1904": {
+   "forms": [
+    "muzikal"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "trio_movie_night"
+    ]
+   ],
+   "example": {
+    "ep": "trio_movie_night",
+    "text": "Empat. Muzikal."
+   }
+  },
+  "L-1905": {
+   "forms": [
+    "nyala"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "family_dinner"
+    ]
+   ],
+   "example": {
+    "ep": "family_dinner",
+    "text": "Jess pasang yang pertama sambil sengih. Di akhir, Puan Tan tak ambil pemetik api. Dia petik jari, api biru kecil keluar, dan bunga api terakhir terus nyala terang."
+   }
+  },
+  "L-1906": {
+   "forms": [
+    "onde-onde"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "monday_catchup"
+    ]
+   ],
+   "example": {
+    "ep": "monday_catchup",
+    "text": "Onde-onde, mestilah! Yang meletup dalam mulut bila gigit. Eh, kopi saya dah siap. Jalan sama-sama?"
+   }
+  },
+  "L-1907": {
+   "forms": [
+    "patung"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "trio_road_trip"
+    ]
+   ],
+   "example": {
+    "ep": "trio_road_trip",
+    "text": "Patung durian dikira satu!"
+   }
+  },
+  "L-1908": {
+   "forms": [
+    "pelabur"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_demo_day"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_demo_day",
+    "text": "Oh, bijak. Sebenarnya saya pelabur. Boleh saya tanya lagi?"
+   }
+  },
+  "L-1909": {
+   "forms": [
+    "pemasa"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_interview"
+    ]
+   ],
+   "example": {
+    "ep": "azula_interview",
+    "text": "Anda ada temu duga kenaikan pangkat hari Isnin. Pengurus anda, Puan Tan, tawarkan diri untuk \"sediakan\" anda. Dia pegang papan klip dan pemasa."
+   }
+  },
+  "L-1910": {
+   "forms": [
+    "pemetik api"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "family_dinner"
+    ]
+   ],
+   "example": {
+    "ep": "family_dinner",
+    "text": "Jess pasang yang pertama sambil sengih. Di akhir, Puan Tan tak ambil pemetik api. Dia petik jari, api biru kecil keluar, dan bunga api terakhir terus nyala terang."
+   }
+  },
+  "L-1911": {
+   "forms": [
+    "pemutar skru"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_demo_day"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_demo_day",
+    "text": "Hari demo syarikat permulaan di sebuah dewan besar. Kawan anda Jinx bina dron penghantaran, SkyBox. Anda tolong di gerai dia. Ada bunyi bip. Jinx di bawah meja dengan pemutar skru."
+   }
+  },
+  "L-1912": {
+   "forms": [
+    "pencuci mulut"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "family_dinner"
+    ]
+   ],
+   "example": {
+    "ep": "family_dinner",
+    "text": "Makan malam pukul 6. Lepas itu pencuci mulut atas bumbung. Lepas itu nyanyi."
+   }
+  },
+  "L-1913": {
+   "forms": [
+    "penggera"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "trio_surprise_party"
+    ]
+   ],
+   "example": {
+    "ep": "trio_surprise_party",
+    "text": "Mulai pukul 1. Kita ambil pukul 1.15. Saya pasang penggera."
+   }
+  },
+  "L-1914": {
+   "forms": [
+    "pengunjung"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_demo_day"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_demo_day",
+    "text": "Pengunjung datang! Cakap dengan dia! Saya perlu dua minit. Mungkin lima. Bateri empat puluh minit, beritahu dia!"
+   }
+  },
+  "L-1915": {
+   "forms": [
+    "petik"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "family_dinner"
+    ]
+   ],
+   "example": {
+    "ep": "family_dinner",
+    "text": "Jess pasang yang pertama sambil sengih. Di akhir, Puan Tan tak ambil pemetik api. Dia petik jari, api biru kecil keluar, dan bunga api terakhir terus nyala terang."
+   }
+  },
+  "L-1916": {
+   "forms": [
+    "pustakawan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_library"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_library",
+    "text": "Dah lambat. Pustakawan sedang jalan ke arah anda."
+   }
+  },
+  "L-1917": {
+   "forms": [
+    "rancak"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "mamak_lepak"
+    ]
+   ],
+   "example": {
+    "ep": "mamak_lepak",
+    "text": "Anda jawab dengan satu butiran, kemudian tanya tentang dia. Sembang pun jadi rancak."
+   }
+  },
+  "L-1918": {
+   "forms": [
+    "reka"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_group_project"
+    ]
+   ],
+   "example": {
+    "ep": "azula_group_project",
+    "text": "Ini rancangannya. Saya buat kajian, penulisan, reka bentuk dan pembentangan. Awak boleh... pilih fon."
+   }
+  },
+  "L-1919": {
+   "forms": [
+    "renung"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_interview"
+    ]
+   ],
+   "example": {
+    "ep": "azula_interview",
+    "text": "Fikiran anda kosong. Puan Tan tunggu, renung anda."
+   }
+  },
+  "L-1920": {
+   "forms": [
+    "roket"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_bike_shop"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_bike_shop",
+    "text": "...roket? Tak boleh? Okey. Saya simpan idea itu dulu."
+   }
+  },
+  "L-1921": {
+   "forms": [
+    "sengih"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "family_dinner"
+    ]
+   ],
+   "example": {
+    "ep": "family_dinner",
+    "text": "Jess pasang yang pertama sambil sengih. Di akhir, Puan Tan tak ambil pemetik api. Dia petik jari, api biru kecil keluar, dan bunga api terakhir terus nyala terang."
+   }
+  },
+  "L-1922": {
+   "forms": [
+    "setimbun"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_fireworks"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_fireworks",
+    "text": "Setimbun buku."
+   }
+  },
+  "L-1923": {
+   "forms": [
+    "solo"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "miku_karaoke"
+    ]
+   ],
+   "example": {
+    "ep": "miku_karaoke",
+    "text": "Seronok! Lain kali, solo, okey?"
+   }
+  },
+  "L-1924": {
+   "forms": [
+    "tangki"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "trio_road_trip"
+    ]
+   ],
+   "example": {
+    "ep": "trio_road_trip",
+    "text": "Maaf, apa itu \"penuh ke penuh\"? Kami pulang dengan tangki penuh?"
+   }
+  },
+  "L-1925": {
+   "forms": [
+    "teratur"
+   ],
+   "band": 2,
+   "eps": [
+    [
+     "social",
+     "family_dinner"
+    ]
+   ],
+   "example": {
+    "ep": "family_dinner",
+    "text": "Apa kata kita gabungkan semuanya? Makan malam yang teratur pukul 6, pencuci mulut atas bumbung dengan sedikit bunga api tangan, kemudian semua menyanyi. Setuju?"
+   }
+  },
+  "L-1926": {
+   "forms": [
+    "topeng"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_late_parts"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_late_parts",
+    "text": "(dari balik topeng) \"Minggu depan\" bukan tarikh! Isnin? Jumaat? Tanya!"
+   }
+  },
+  "L-1927": {
+   "forms": [
+    "tumpuannya"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_library"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_library",
+    "text": "Sabtu petang di perpustakaan bandar. Anda ulang kaji untuk peperiksaan dengan kumpulan belajar anda. Salah seorang ialah Lily, pelajar kejuruteraan yang boleh baiki apa saja kecuali tumpuannya sendiri. Lima minit kemudian, dia sudah bosan."
+   }
+  },
+  "L-1928": {
+   "forms": [
+    "ukuran"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_group_project"
+    ]
+   ],
+   "example": {
+    "ep": "azula_group_project",
+    "text": "Keadilan bukan ukuran prestasi. Yang penting keputusan."
+   }
+  },
+  "L-1929": {
+   "forms": [
+    "pujian"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_restaurant"
+    ],
+    [
+     "social",
+     "azula_speech"
+    ]
+   ],
+   "example": {
+    "ep": "azula_speech",
+    "text": "Jadi? Cakap dengan tepat. Aku tak ada masa untuk pujian yang kabur."
+   }
+  },
+  "L-1930": {
+   "forms": [
+    "aman"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "trio_road_trip"
+    ]
+   ],
+   "example": {
+    "ep": "trio_road_trip",
+    "text": "Semua sudah dalam kereta. Kita tengok berapa lama aman ini bertahan."
+   }
+  },
+  "L-1931": {
+   "forms": [
+    "berkilau"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_fireworks"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_fireworks",
+    "text": "Hai! Saya Jinx, dari syarikat bunga api! Saya buat lebih untuk parti awak! Buatan tangan, lebih berkilau. Saya cuba satu dalam dapur awak, okey?"
+   }
+  },
+  "L-1932": {
+   "forms": [
+    "berseri-seri"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "miku_encore"
+    ]
+   ],
+   "example": {
+    "ep": "miku_encore",
+    "text": "Lepas konsert, Miku lari ke arah anda, masih berseri-seri."
+   }
+  },
+  "L-1933": {
+   "forms": [
+    "bertahan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "trio_road_trip"
+    ]
+   ],
+   "example": {
+    "ep": "trio_road_trip",
+    "text": "Semua sudah dalam kereta. Kita tengok berapa lama aman ini bertahan."
+   }
+  },
+  "L-1934": {
+   "forms": [
+    "fikiran"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_interview"
+    ]
+   ],
+   "example": {
+    "ep": "azula_interview",
+    "text": "Fikiran anda kosong. Puan Tan tunggu, renung anda."
+   }
+  },
+  "L-1935": {
+   "forms": [
+    "gila"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "mamak_lepak"
+    ]
+   ],
+   "example": {
+    "ep": "mamak_lepak",
+    "text": "Boleh, saya ikut! Saya lapar gila."
+   }
+  },
+  "L-1936": {
+   "forms": [
+    "ikhlas"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_speech"
+    ]
+   ],
+   "example": {
+    "ep": "azula_speech",
+    "text": "Anda puji satu perkara yang khusus, jadi dia tahu pujian itu ikhlas."
+   }
+  },
+  "L-1937": {
+   "forms": [
+    "kagum"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_interview"
+    ]
+   ],
+   "example": {
+    "ep": "azula_interview",
+    "text": "Sekarang, dulu, akan datang. Jelas. Ringkas. Saya hampir kagum."
+   }
+  },
+  "L-1938": {
+   "forms": [
+    "keadilan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_group_project"
+    ]
+   ],
+   "example": {
+    "ep": "azula_group_project",
+    "text": "Keadilan bukan ukuran prestasi. Yang penting keputusan."
+   }
+  },
+  "L-1939": {
+   "forms": [
+    "kepastian"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_restaurant"
+    ]
+   ],
+   "example": {
+    "ep": "azula_restaurant",
+    "text": "Untuk kepastian kali ini: dia nak stik itu macam mana tadi?"
+   }
+  },
+  "L-1940": {
+   "forms": [
+    "kerisauan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_demo_day"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_demo_day",
+    "text": "Kerisauan yang wajar. Ia cuma terbang ikut laluan tetap atas bangunan, dan ia berhenti di udara jika mengesan orang di bawah."
+   }
+  },
+  "L-1941": {
+   "forms": [
+    "keyakinan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_speech"
+    ]
+   ],
+   "example": {
+    "ep": "azula_speech",
+    "text": "Perlahan? Laju menunjukkan keyakinan. Kenapa aku perlu perlahan?"
+   }
+  },
+  "L-1942": {
+   "forms": [
+    "melampau"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_fireworks"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_fireworks",
+    "text": "Jadi... melampau sangat ke? Cakap jujur."
+   }
+  },
+  "L-1943": {
+   "forms": [
+    "melenting"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_group_project"
+    ]
+   ],
+   "example": {
+    "ep": "azula_group_project",
+    "text": "Cepat melenting. Menarik."
+   }
+  },
+  "L-1944": {
+   "forms": [
+    "mengampu"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_speech"
+    ]
+   ],
+   "example": {
+    "ep": "azula_speech",
+    "text": "Tiada apa yang sempurna. Kau cuma mengampu. Cuba lagi, betul-betul."
+   }
+  },
+  "L-1945": {
+   "forms": [
+    "menunjuk-nunjuk"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "family_dinner"
+    ]
+   ],
+   "example": {
+    "ep": "family_dinner",
+    "text": "Menunjuk-nunjuk!"
+   }
+  },
+  "L-1946": {
+   "forms": [
+    "perfeksionis"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_interview"
+    ]
+   ],
+   "example": {
+    "ep": "azula_interview",
+    "text": "Saya seorang yang perfeksionis."
+   }
+  },
+  "L-1947": {
+   "forms": [
+    "sedap-sedap"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "miku_drinks_run"
+    ]
+   ],
+   "example": {
+    "ep": "miku_drinks_run",
+    "text": "Buat sedap-sedap."
+   }
+  },
+  "L-1948": {
+   "forms": [
+    "senyuman"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_fireworks"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_fireworks",
+    "text": "Sabtu petang, sejam sebelum parti atas bumbung untuk penduduk kondo yang anda uruskan. Jinx sendiri sampai, pengasas syarikat pemula yang membuat bunga api itu, dengan senyuman lebar dan sebuah kotak besar yang bunyi tik-tik sikit. Teka: apa dalam kotak itu?"
+   }
+  },
+  "L-1949": {
+   "forms": [
+    "tahan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_demo_day"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_demo_day",
+    "text": "Bateri tahan berapa lama?"
+   }
+  },
+  "L-1950": {
+   "forms": [
+    "babak"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "health",
+     "dentist_booking"
+    ],
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Awak sudah sedia. Sekarang cuba babak sebenar, dan ingat: jangan takut buat salah."
+   }
+  },
+  "L-1951": {
+   "forms": [
+    "bayangkan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "health",
+     "physio_session"
+    ],
+    [
+     "home-condo",
+     "lift_chat"
+    ]
+   ],
+   "example": {
+    "ep": "lift_chat",
+    "text": "Awak dengar tak? Pengurusan nak cat semula seluruh bangunan. Warna merah jambu! Bayangkan!"
+   }
+  },
+  "L-1952": {
+   "forms": [
+    "ejaannya"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "health",
+     "dentist_booking"
+    ],
+    [
+     "social",
+     "trio_surprise_party"
+    ]
+   ],
+   "example": {
+    "ep": "dentist_booking",
+    "text": "Maaf, saya masih tak dapat ejaannya."
+   }
+  },
+  "L-1953": {
+   "forms": [
+    "versi"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "health",
+     "pharmacy_advice"
+    ],
+    [
+     "social",
+     "jinx_late_parts"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_late_parts",
+    "text": "Jadiii? Cerita semua. Versi pendek!"
+   }
+  },
+  "L-1954": {
+   "forms": [
+    "ahli"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "health",
+     "physio_session"
+    ]
+   ],
+   "example": {
+    "ep": "physio_session",
+    "text": "Sudah tiga minggu, belakang bawah anda sakit selepas lama duduk di meja. Paling teruk waktu petang. Doktor hantar anda jumpa ahli fisioterapi."
+   }
+  },
+  "L-1955": {
+   "forms": [
+    "bekukan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "health",
+     "gym_membership"
+    ]
+   ],
+   "example": {
+    "ep": "gym_membership",
+    "text": "Tiada masalah. Kami boleh bekukan sehingga dua bulan. Cajnya RM20."
+   }
+  },
+  "L-1956": {
+   "forms": [
+    "ejakan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "health",
+     "dentist_booking"
+    ]
+   ],
+   "example": {
+    "ep": "dentist_booking",
+    "text": "Maaf, Tanaka dengan... T-A? Boleh ejakan?"
+   }
+  },
+  "L-1957": {
+   "forms": [
+    "fisioterapi"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "health",
+     "physio_session"
+    ]
+   ],
+   "example": {
+    "ep": "physio_session",
+    "text": "Sudah tiga minggu, belakang bawah anda sakit selepas lama duduk di meja. Paling teruk waktu petang. Doktor hantar anda jumpa ahli fisioterapi."
+   }
+  },
+  "L-1958": {
+   "forms": [
+    "glukosa"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "health",
+     "blood_test"
+    ]
+   ],
+   "example": {
+    "ep": "blood_test",
+    "text": "Terima kasih sebab beritahu. Gula itu akan ubah bacaan glukosa awak."
+   }
+  },
+  "L-1959": {
+   "forms": [
+    "keahlian"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "health",
+     "gym_membership"
+    ]
+   ],
+   "example": {
+    "ep": "gym_membership",
+    "text": "Hai, selamat datang! Berminat dengan keahlian?"
+   }
+  },
+  "L-1960": {
+   "forms": [
+    "ketegangan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "health",
+     "physio_session"
+    ]
+   ],
+   "example": {
+    "ep": "physio_session",
+    "text": "Terima kasih, itu sangat membantu. Ini ketegangan otot sebab duduk. Buat regangan ini: 10 kali, dua kali sehari."
+   }
+  },
+  "L-1961": {
+   "forms": [
+    "regangan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "health",
+     "physio_session"
+    ]
+   ],
+   "example": {
+    "ep": "physio_session",
+    "text": "Terima kasih, itu sangat membantu. Ini ketegangan otot sebab duduk. Buat regangan ini: 10 kali, dua kali sehari."
+   }
+  },
+  "L-1962": {
+   "forms": [
+    "saringan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "health",
+     "blood_test"
+    ]
+   ],
+   "example": {
+    "ep": "blood_test",
+    "text": "Syarikat anda bayar untuk saringan kesihatan tahunan. Surat itu kata: jangan makan atau minum kecuali air selama 10 jam sebelum ujian darah. Pagi ini, tanpa fikir, anda minum kopi manis."
+   }
+  },
+  "L-1963": {
+   "forms": [
+    "skala"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "health",
+     "physio_session"
+    ]
+   ],
+   "example": {
+    "ep": "physio_session",
+    "text": "Pada skala 0 hingga 10, teruk mana? 0 tiada sakit, 10 sakit paling teruk yang awak boleh bayangkan."
+   }
+  },
+  "L-1964": {
+   "forms": [
+    "dingin"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Hmm. Pendek, dan agak dingin. Tengok label nada!"
+   }
+  },
+  "L-1965": {
+   "forms": [
+    "jambatan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "lift_chat"
+    ],
+    [
+     "office",
+     "chatty_colleague"
+    ]
+   ],
+   "example": {
+    "ep": "lift_chat",
+    "text": "Anda ketawa sama, guna jambatan (\"oh ya\") dan tanya soalan sebenar anda."
+   }
+  },
+  "L-1966": {
+   "forms": [
+    "permohonan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "blocked_car"
+    ],
+    [
+     "social",
+     "azula_restaurant"
+    ]
+   ],
+   "example": {
+    "ep": "azula_restaurant",
+    "text": "Ini tidak boleh diterima. Saya mahu pengurus, tukang masak, dan permohonan maaf bertulis."
+   }
+  },
+  "L-1967": {
+   "forms": [
+    "putus asa"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "aircon_repair"
+    ],
+    [
+     "office",
+     "annual_leave"
+    ]
+   ],
+   "example": {
+    "ep": "aircon_repair",
+    "text": "Encik Raju sudah ada di sini. Tanya apa yang termasuk sebelum putus asa."
+   }
+  },
+  "L-1968": {
+   "forms": [
+    "relaks"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "blocked_car"
+    ],
+    [
+     "office",
+     "pantry_banter"
+    ]
+   ],
+   "example": {
+    "ep": "blocked_car",
+    "text": "Relaks, lima minit saja."
+   }
+  },
+  "L-1969": {
+   "forms": [
+    "alihkan"
+   ],
+   "band": 2,
+   "eps": [
+    [
+     "home-condo",
+     "blocked_car"
+    ]
+   ],
+   "example": {
+    "ep": "blocked_car",
+    "text": "Encik memang betul, dan saya minta maaf kerana buat encik lewat. Ia takkan berulang. Saya alihkan sekarang."
+   }
+  },
+  "L-1970": {
+   "forms": [
+    "anjing"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "barking_dog"
+    ]
+   ],
+   "example": {
+    "ep": "barking_dog",
+    "text": "Anjing puan bising sangat."
+   }
+  },
+  "L-1971": {
+   "forms": [
+    "asyik"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "barking_dog"
+    ]
+   ],
+   "example": {
+    "ep": "barking_dog",
+    "text": "Anda kerja dari rumah. Setiap hari, dari pukul 9 hingga 6, anjing jiran sebelah asyik bising. Anda ketuk pintu Puan Lee pada pagi Sabtu."
+   }
+  },
+  "L-1972": {
+   "forms": [
+    "kebaikannya"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "blocked_car"
+    ]
+   ],
+   "example": {
+    "ep": "blocked_car",
+    "text": "Anda minta maaf lagi, tanya tentang harinya, dan ucap terima kasih atas kebaikannya."
+   }
+  },
+  "L-1973": {
+   "forms": [
+    "kelip-kelip"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "wifi_down"
+    ]
+   ],
+   "example": {
+    "ep": "wifi_down",
+    "text": "Anda kerja dari rumah, dan sejak pukul 8 pagi tadi internet tak ada. Lampu pada penghala itu kelip-kelip merah. Anda telefon khidmat pelanggan MyNet."
+   }
+  },
+  "L-1974": {
+   "forms": [
+    "khidmat pelanggan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "wifi_down"
+    ]
+   ],
+   "example": {
+    "ep": "wifi_down",
+    "text": "Selamat petang, khidmat pelanggan MyNet. Boleh saya bantu?"
+   }
+  },
+  "L-1975": {
+   "forms": [
+    "misteri"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "lift_chat"
+    ]
+   ],
+   "example": {
+    "ep": "lift_chat",
+    "text": "12-3C: pintu Encik Hassan. Misteri selesai."
+   }
+  },
+  "L-1976": {
+   "forms": [
+    "palang"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "visitor_parking"
+    ]
+   ],
+   "example": {
+    "ep": "visitor_parking",
+    "text": "Pelawat parkir di petak V1 hingga V10. Maksimum 4 jam. Lepas itu, palang akan caj RM20."
+   }
+  },
+  "L-1977": {
+   "forms": [
+    "parkir"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "visitor_parking"
+    ]
+   ],
+   "example": {
+    "ep": "visitor_parking",
+    "text": "Parkir. Sabtu."
+   }
+  },
+  "L-1978": {
+   "forms": [
+    "pembawa"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "barking_dog"
+    ]
+   ],
+   "example": {
+    "ep": "barking_dog",
+    "text": "Awak sanggup? Baiknya awak. Saya akan tempah pembawa anjing untuk hari lain."
+   }
+  },
+  "L-1979": {
+   "forms": [
+    "perjanjian"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "moving_out"
+    ]
+   ],
+   "example": {
+    "ep": "moving_out",
+    "text": "Rumuskan perjanjian ini supaya tiada salah faham nanti. Susun ikut urutan."
+   }
+  },
+  "L-1980": {
+   "forms": [
+    "rekod"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "moving_out"
+    ]
+   ],
+   "example": {
+    "ep": "moving_out",
+    "text": "Terima kasih, Puan Ong. Boleh hantar itu dalam mesej, supaya kita berdua ada rekod?"
+   }
+  },
+  "L-1981": {
+   "forms": [
+    "ruang"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "barking_dog"
+    ]
+   ],
+   "example": {
+    "ep": "barking_dog",
+    "text": "Anda beri laporan, ucap terima kasih kerana dia cepat buat sesuatu, dan buka ruang untuk lain kali."
+   }
+  },
+  "L-1982": {
+   "forms": [
+    "situasi"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "ceiling_leak"
+    ]
+   ],
+   "example": {
+    "ep": "ceiling_leak",
+    "text": "Sebelum dia pergi, semak beberapa perkataan untuk situasi ini."
+   }
+  },
+  "L-1983": {
+   "forms": [
+    "tertera"
+   ],
+   "band": 2,
+   "eps": [
+    [
+     "home-condo",
+     "moving_out"
+    ]
+   ],
+   "example": {
+    "ep": "moving_out",
+    "text": "Saya ambil gambar pada hari masuk. Ini, kesan yang sama, dan tarikhnya tertera pada gambar."
+   }
+  },
+  "L-1984": {
+   "forms": [
+    "titis"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "home-condo",
+     "aircon_repair"
+    ]
+   ],
+   "example": {
+    "ep": "aircon_repair",
+    "text": "Penghawa dingin bilik tidur anda bocor: air titis ke lantai. Encik Raju, juruteknik, datang tengok."
+   }
+  },
+  "L-1985": {
+   "forms": [
+    "alatan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Sekarang, mari cuba alatan. Mula-mula, semak ingatan."
+   }
+  },
+  "L-1986": {
+   "forms": [
+    "baris"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Bagus. Awak pilih satu baris, sebut dengan kuat, dan nilai diri sendiri. Kad di atas tunjuk idea yang sama pada tahap lain."
+   }
+  },
+  "L-1987": {
+   "forms": [
+    "ingatan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Sekarang, mari cuba alatan. Mula-mula, semak ingatan."
+   }
+  },
+  "L-1988": {
+   "forms": [
+    "kemajuan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Selepas setiap babak, penilai tunjuk tahap awak dan langkah seterusnya. Di laman utama, awak juga boleh latih kosa kata, pilih babak rawak, kumpul kerangka ayat, dan tengok kemajuan."
+   }
+  },
+  "L-1989": {
+   "forms": [
+    "kerangka"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Selepas setiap babak, penilai tunjuk tahap awak dan langkah seterusnya. Di laman utama, awak juga boleh latih kosa kata, pilih babak rawak, kumpul kerangka ayat, dan tengok kemajuan."
+   }
+  },
+  "L-1990": {
+   "forms": [
+    "kosa kata"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Selepas setiap babak, penilai tunjuk tahap awak dan langkah seterusnya. Di laman utama, awak juga boleh latih kosa kata, pilih babak rawak, kumpul kerangka ayat, dan tengok kemajuan."
+   }
+  },
+  "L-1991": {
+   "forms": [
+    "laman"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Selepas setiap babak, penilai tunjuk tahap awak dan langkah seterusnya. Di laman utama, awak juga boleh latih kosa kata, pilih babak rawak, kumpul kerangka ayat, dan tengok kemajuan."
+   }
+  },
+  "L-1992": {
+   "forms": [
+    "melati"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Sekarang, ingat ini: teh kegemaran saya ialah teh melati."
+   }
+  },
+  "L-1993": {
+   "forms": [
+    "nada"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Hmm. Pendek, dan agak dingin. Tengok label nada!"
+   }
+  },
+  "L-1994": {
+   "forms": [
+    "penerangan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Selamat datang ke Hanashishou! Latihan pendek ini tunjuk cara guna aplikasi ini. Tekan 🦁 di bawah satu baris bila-bila masa untuk baca penerangan dalam bahasa anda."
+   }
+  },
+  "L-1995": {
+   "forms": [
+    "penghujung"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Anda ucap terima kasih untuk sesuatu yang khusus. Itulah penghujung tutorial!"
+   }
+  },
+  "L-1996": {
+   "forms": [
+    "penilai"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Selepas setiap babak, penilai tunjuk tahap awak dan langkah seterusnya. Di laman utama, awak juga boleh latih kosa kata, pilih babak rawak, kumpul kerangka ayat, dan tengok kemajuan."
+   }
+  },
+  "L-1997": {
+   "forms": [
+    "rawak"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Selepas setiap babak, penilai tunjuk tahap awak dan langkah seterusnya. Di laman utama, awak juga boleh latih kosa kata, pilih babak rawak, kumpul kerangka ayat, dan tengok kemajuan."
+   }
+  },
+  "L-1998": {
+   "forms": [
+    "semakan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Satu lagi: di skrin seterusnya, cuba Semakan Tahap. Lebih kurang sepuluh minit, dan saya akan cadang tahap yang sesuai untuk awak mula."
+   }
+  },
+  "L-1999": {
+   "forms": [
+    "tatabahasa"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Ambil ujian tatabahasa."
+   }
+  },
+  "L-2000": {
+   "forms": [
+    "tutorial"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "tutorial",
+     "how_to_play"
+    ]
+   ],
+   "example": {
+    "ep": "how_to_play",
+    "text": "Anda ucap terima kasih untuk sesuatu yang khusus. Itulah penghujung tutorial!"
+   }
+  },
+  "L-2001": {
+   "forms": [
+    "jadikan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_board_game"
+    ],
+    [
+     "social",
+     "monday_catchup"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_board_game",
+    "text": "Jadikan ia janji. Bina ayat perkataan demi perkataan."
+   }
+  },
+  "L-2002": {
+   "forms": [
+    "rumus"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "family_dinner"
+    ],
+    [
+     "social",
+     "trio_road_trip"
+    ]
+   ],
+   "example": {
+    "ep": "trio_road_trip",
+    "text": "Anda rumus apa yang setiap orang mahu, cadang satu pelan, dan semak semua setuju."
+   }
+  },
+  "L-2003": {
+   "forms": [
+    "bentang"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_group_project"
+    ]
+   ],
+   "example": {
+    "ep": "azula_group_project",
+    "text": "Saya nak tolong. Puan buat kajian. Saya buat slaid, dan kita bentang sama-sama. Boleh?"
+   }
+  },
+  "L-2004": {
+   "forms": [
+    "bentangkan"
+   ],
+   "band": 2,
+   "eps": [
+    [
+     "social",
+     "azula_group_project"
+    ]
+   ],
+   "example": {
+    "ep": "azula_group_project",
+    "text": "Saya tahu puan mahu ia sempurna, saya pun sama. Bagaimana kalau puan ketuai kajian, saya sediakan slaid, dan kita bentangkan separuh setiap seorang?"
+   }
+  },
+  "L-2005": {
+   "forms": [
+    "bonus"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "mamak_lepak"
+    ]
+   ],
+   "example": {
+    "ep": "mamak_lepak",
+    "text": "Alah, biarlah aku. Duit bonus ni!"
+   }
+  },
+  "L-2006": {
+   "forms": [
+    "buktikan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_board_game"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_board_game",
+    "text": "Betul ke? Buktikan!"
+   }
+  },
+  "L-2007": {
+   "forms": [
+    "elok-elok"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_late_parts"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_late_parts",
+    "text": "Nombor pesanan JX-42! Cakap elok-elok, tapi dapatkan tarikh. Tarikh yang betul!"
+   }
+  },
+  "L-2008": {
+   "forms": [
+    "forum"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_speech"
+    ]
+   ],
+   "example": {
+    "ep": "azula_speech",
+    "text": "Pengerusi syarikat, Azula, akan beri ucapan di sebuah forum kepimpinan esok, dan dia minta anda tengok latihannya. Ucapan itu hebat, tapi dia cakap sangat laju dan tak pernah diam sekejap. Teka: apa maklum balas yang terbaik?"
+   }
+  },
+  "L-2009": {
+   "forms": [
+    "garis"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "miku_market"
+    ]
+   ],
+   "example": {
+    "ep": "miku_market",
+    "text": "Ahad. Anda dalam krew katering untuk konsert malam ini. Penyanyinya, Miku, minta steamboat untuk semua krew, dan anda ke pasar dengan senarai. Paling atas, garis tiga kali: BAWANG PERAI."
+   }
+  },
+  "L-2010": {
+   "forms": [
+    "hubungkan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_demo_day"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_demo_day",
+    "text": "Anda ucap terima kasih, beri langkah seterusnya, dan hubungkan dia dengan orang yang betul."
+   }
+  },
+  "L-2011": {
+   "forms": [
+    "ilmu"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_group_project"
+    ]
+   ],
+   "example": {
+    "ep": "azula_group_project",
+    "text": "Anda tak akan dapat ilmu baru, dan anda pun mahu pelanggan nampak kerja anda."
+   }
+  },
+  "L-2012": {
+   "forms": [
+    "jelaskan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_bike_shop"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_bike_shop",
+    "text": "Anda setuju dan jelaskan satu syarat anda."
+   }
+  },
+  "L-2013": {
+   "forms": [
+    "kejuruteraan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_library"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_library",
+    "text": "Sabtu petang di perpustakaan bandar. Anda ulang kaji untuk peperiksaan dengan kumpulan belajar anda. Salah seorang ialah Lily, pelajar kejuruteraan yang boleh baiki apa saja kecuali tumpuannya sendiri. Lima minit kemudian, dia sudah bosan."
+   }
+  },
+  "L-2014": {
+   "forms": [
+    "kenaikan pangkat"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_interview"
+    ]
+   ],
+   "example": {
+    "ep": "azula_interview",
+    "text": "Anda ada temu duga kenaikan pangkat hari Isnin. Pengurus anda, Puan Tan, tawarkan diri untuk \"sediakan\" anda. Dia pegang papan klip dan pemasa."
+   }
+  },
+  "L-2015": {
+   "forms": [
+    "kepimpinan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_speech"
+    ]
+   ],
+   "example": {
+    "ep": "azula_speech",
+    "text": "Pengerusi syarikat, Azula, akan beri ucapan di sebuah forum kepimpinan esok, dan dia minta anda tengok latihannya. Ucapan itu hebat, tapi dia cakap sangat laju dan tak pernah diam sekejap. Teka: apa maklum balas yang terbaik?"
+   }
+  },
+  "L-2016": {
+   "forms": [
+    "ketik"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_interview"
+    ]
+   ],
+   "example": {
+    "ep": "azula_interview",
+    "text": "Puan Tan ketik pennya."
+   }
+  },
+  "L-2017": {
+   "forms": [
+    "klik"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_bike_shop"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_bike_shop",
+    "text": "Ada bunyi klik bila saya tukar gear. Cuba dengar. Boleh tolong baiki?"
+   }
+  },
+  "L-2018": {
+   "forms": [
+    "pembentangan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_group_project"
+    ]
+   ],
+   "example": {
+    "ep": "azula_group_project",
+    "text": "Ini rancangannya. Saya buat kajian, penulisan, reka bentuk dan pembentangan. Awak boleh... pilih fon."
+   }
+  },
+  "L-2019": {
+   "forms": [
+    "pemula"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_fireworks"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_fireworks",
+    "text": "Sabtu petang, sejam sebelum parti atas bumbung untuk penduduk kondo yang anda uruskan. Jinx sendiri sampai, pengasas syarikat pemula yang membuat bunga api itu, dengan senyuman lebar dan sebuah kotak besar yang bunyi tik-tik sikit. Teka: apa dalam kotak itu?"
+   }
+  },
+  "L-2020": {
+   "forms": [
+    "penemu duga"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_interview"
+    ]
+   ],
+   "example": {
+    "ep": "azula_interview",
+    "text": "Semua orang cakap begitu. Penemu duga sudah bosan dengar."
+   }
+  },
+  "L-2021": {
+   "forms": [
+    "penulisan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_group_project"
+    ]
+   ],
+   "example": {
+    "ep": "azula_group_project",
+    "text": "Ini rancangannya. Saya buat kajian, penulisan, reka bentuk dan pembentangan. Awak boleh... pilih fon."
+   }
+  },
+  "L-2022": {
+   "forms": [
+    "peperiksaan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "jinx_library"
+    ]
+   ],
+   "example": {
+    "ep": "jinx_library",
+    "text": "Sabtu petang di perpustakaan bandar. Anda ulang kaji untuk peperiksaan dengan kumpulan belajar anda. Salah seorang ialah Lily, pelajar kejuruteraan yang boleh baiki apa saja kecuali tumpuannya sendiri. Lima minit kemudian, dia sudah bosan."
+   }
+  },
+  "L-2023": {
+   "forms": [
+    "peranan"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "family_dinner"
+    ]
+   ],
+   "example": {
+    "ep": "family_dinner",
+    "text": "Mira, yang uruskan acara pasukan anda, minta anda tolong rancang makan malam pasukan pada hari Ahad, bersama Jess dari IT dan pengurus anda, Puan Tan. Mereka rapat, tapi jarang setuju. Teka: apa peranan terbaik anda?"
+   }
+  },
+  "L-2024": {
+   "forms": [
+    "profesional"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_interview"
+    ]
+   ],
+   "example": {
+    "ep": "azula_interview",
+    "text": "Tutup latihan ini dengan profesional. Bina ayat perkataan demi perkataan."
+   }
+  },
+  "L-2025": {
+   "forms": [
+    "rata"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "mamak_lepak"
+    ]
+   ],
+   "example": {
+    "ep": "mamak_lepak",
+    "text": "Anda terima belanja itu dengan terima kasih, dan janji lain kali giliran anda. Semua sama rata."
+   }
+  },
+  "L-2026": {
+   "forms": [
+    "sifat"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "social",
+     "azula_group_project"
+    ]
+   ],
+   "example": {
+    "ep": "azula_group_project",
+    "text": "Slaid 3 dan 5: terlalu banyak teks, tiada angka. Satu idea satu slaid. Bukti, bukan kata sifat."
+   }
+  },
+  "L-2027": {
+   "forms": [
+    "bisnes"
+   ],
+   "band": 1,
+   "eps": [
+    [
+     "daily-life",
+     "missed_bus"
+    ]
+   ],
+   "example": {
+    "ep": "missed_bus",
+    "text": "Anda bayar RM10. Lelaki di sebelah anda dalam barisan sedang baca majalah bisnes. Di kulit depan ada pengasas syarikat permulaan, Jinx, dengan lengan robot."
    }
   }
  }

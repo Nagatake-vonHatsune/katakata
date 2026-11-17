@@ -45,7 +45,7 @@
     {"speaker": "Tanaka", "ms": "Selamat pagi, Encik. Pukul berapa orientasi itu bermula?", "en": "Good morning. What time does the orientation start?",
      "choices": ["Selamat pagi, Encik. Saya staf mesin.", "Selamat malam, Encik. Saya sudah selesai tidur."],
      "choices_en": ["Good morning. I'm machine staff.", "Good night. I've finished sleeping."]},
-    {"speaker": "Encik Rahman", "ms": "Pukul sepuluh. Encik Tanaka, tolong memberi slaid produk kita kepada mereka.", "en": "At ten. Mr Tanaka, please give them the slides on our products."},
+    {"speaker": "Encik Rahman", "ms": "Pukul sepuluh. Encik Tanaka, tolong hantar slaid produk kita kepada mereka.", "en": "At ten. Mr Tanaka, please send them the slides on our products."},
     {"speaker": "Tanaka", "ms": "Baik. Saya sudah menyimpan slaid itu dalam folder bahagian kita.", "en": "Sure. I've saved the slides in our department's folder.",
      "choices": ["Baik. Saya sudah membuang slaid itu semalam.", "Baik. Saya memandu slaid itu."],
      "choices_en": ["Sure. I deleted those slides yesterday.", "Sure. I'm driving the slides."]},
