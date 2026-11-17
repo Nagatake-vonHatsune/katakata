@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- **Nombor & Masa: Sam's answers of 15 Nov 2026 applied; rules to Cikgu Sensai `d8612e5` (17 Nov 2026).** Report: [docs/NOMBOR-MASA-answers-report.md](docs/NOMBOR-MASA-answers-report.md).
+  - Day parts: tengah malam 00:00; malam 00:01 to 00:59 and awal pagi 01:00 to 04:59 (pagi also accepted); pagi 05:00 to 11:59; tengah hari 12:00 to 12:59; petang 13:00 to 18:59; malam 19:00 to 23:59. «kurang suku» not used.
+  - «hari bulan» (two words, number first; Sam's spoken order shown as Spoken); fractions written joined, «per tiga» no longer accepted, with the learner note "read it as 1 per 3, i.e. 1/3"; «minit» optional ("Also fine"); «seringgit» / «satu ringgit» and «sejuta» / «satu juta» both standard; «sifar» the formal 0 in phone numbers.
+  - Cards ms-c03-043, ms-c04-061 (note) and ms-j-daily-life-52 follow the ledger. Shared rules: 118 fixtures, seven more Indonesian forms disallowed. Ledger snapshot refreshed (read-only). Stage 1 ledger gaps 7 to 5. Tests 177 to 185.
+
 - **Build A: 🔥 checkpoints and the ⚡ stage, pilot ⚡ 4 (15 Nov 2026), 48 to 49 packs, 1441 to 1453 cards.** Report: [docs/BUILD-A-report.md](docs/BUILD-A-report.md).
   - Rules re-pinned to Cikgu Sensai `fc7dec4` (104 fixtures; `ledger_rows` and `extension` supported; all agree).
   - Three 🔥 per chapter (class prep, the chapter dialogue played once with the new reply step, every word known; chapter 18 has two), lit by stamp or condition and never put out; a segmented bar on the Sedia list, the chapter screen and Home; flames in Rekod; new stamps 'dialogue' and 'stretch'.

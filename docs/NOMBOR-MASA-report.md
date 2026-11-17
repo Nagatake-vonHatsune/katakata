@@ -1,5 +1,7 @@
 # Nombor & Masa: report (15 Nov 2026)
 
+> **Update 17 Nov 2026:** Sam answered section 4 and the answers are built in: see [NOMBOR-MASA-answers-report.md](NOMBOR-MASA-answers-report.md). Sections 2 and 3 below describe the first build (day parts, «haribulan», «per tiga» and «minit» are superseded there).
+
 Nombor & Masa is a standalone mode for numbers, days, months and dates, fractions, decimals and percent, money and clock times. It is on the home screen (🔢 tile) and open from day one: a learner who has not started chapter 1 can use it. It is practice only, and nothing in it changes the review schedule.
 
 Sam's decisions of 15 Nov 2026 are built in:

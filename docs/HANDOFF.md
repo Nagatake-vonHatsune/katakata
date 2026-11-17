@@ -1,6 +1,6 @@
 # Kata-Kata hand-off
 
-Last updated 15 Nov 2026 (Build A: 🔥 checkpoints and the ⚡ stage, pilot ⚡ 4, [report](BUILD-A-report.md); Nombor & Masa, a standalone mode for numbers, days, dates, money and time, [report](NOMBOR-MASA-report.md); Stage 2 build step 6c-2 done: rules 909596e, bridge exemption removed, Social Jambatan split, In both, [report](STAGE-2-step6c2-report.md); step 6b: bridge batch in the ledger, Jambatan rebuilt, [report](STAGE-2-step6b-report.md); step 3f: rules sync and one card removed, [report](STAGE-2-step3f-report.md); step 3e: new ledger rows, «tandatangan», the chapter 10 picture game, [report](STAGE-2-step3e-report.md); step 3d [report](STAGE-2-step3d-report.md); step 3c [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
+Last updated 17 Nov 2026 (Nombor & Masa: Sam's answers applied, [report](NOMBOR-MASA-answers-report.md); rules d8612e5; Build A: 🔥 checkpoints and the ⚡ stage, pilot ⚡ 4, [report](BUILD-A-report.md); Nombor & Masa, a standalone mode for numbers, days, dates, money and time, [report](NOMBOR-MASA-report.md); Stage 2 build step 6c-2 done: rules 909596e, bridge exemption removed, Social Jambatan split, In both, [report](STAGE-2-step6c2-report.md); step 6b: bridge batch in the ledger, Jambatan rebuilt, [report](STAGE-2-step6b-report.md); step 3f: rules sync and one card removed, [report](STAGE-2-step3f-report.md); step 3e: new ledger rows, «tandatangan», the chapter 10 picture game, [report](STAGE-2-step3e-report.md); step 3d [report](STAGE-2-step3d-report.md); step 3c [report](STAGE-2-step3c-report.md); step 3b [report](STAGE-2-c11-c18-report.md); step 3a [report](STAGE-2-c10-report.md)).
 Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-1.0.md).
 
 ## State
@@ -13,8 +13,8 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
   add `xNN` to `live_stretch`. New ⚡ rows: `tools/ledger/stretch_batch.py plan N` (from the proposal CSV), `apply`, then the sheet write
   (insert_dimension, update_values, read back, `verify`). Promoted Jambatan rows: add their old IDs to `RETIRED_IDS` and `MOVED_CARDS` (`src/core/state.ts`).
 - Workbook: `content/source/2026-11-13_KataKata_VocabBank_v6.xlsx`, built by `tools/make_vocab_bank_v6.py` (v5 + chapters 10 to 18).
-- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the ⚡ 4 write-back (L-0001 to L-1505; chapter 18 has no ledger cells). It includes the Nombor & Masa ledger edits of 15 Nov (L-0141 «satu pertiga», L-1410 «hari bulan»), whose card follow-ups (ms-c03-043, ms-j-daily-life-52) are not done: the Jambatan importer would now rename ms-j-daily-life-52.
-- Affix guard: stage-aware, rules from Cikgu Sensai `fc7dec4` (`content/rules/`, 104 fixtures incl. `expect_gaps` / `expect_no_gaps`, `ledger_rows` and `extension`, all agree; no known divergences; 0 flags). ⚡ packs use Kata-Kata's own-chapter extension view (`Checker` option `extension: N`). The checker follows Cikgu Sensai's `language_checks.py` at `a235a35`: a placed row is checked whole from its own chapter, a row with no chapter is never a root and counts as no row in a chaptered unit; the step 6b bridge-batch exemption is gone. It matches two-word disallowed forms («tanda tangan») as Cikgu Sensai's does.
+- Ledger snapshot: `content/ledger/malay-ledger.csv` = the sheet after the ⚡ 4 write-back (L-0001 to L-1505; chapter 18 has no ledger cells). It includes the Nombor & Masa ledger edits of 15 Nov (L-0141 «satu pertiga», L-1410 «hari bulan»); their cards (ms-c03-043, ms-c04-061 note, ms-j-daily-life-52) follow them (`nombor_followups()` in `tools/make_vocab_bank_v6.py`; the Jambatan importer rewrites «haribulan» in that card's quoted example).
+- Affix guard: stage-aware, rules from Cikgu Sensai `d8612e5` (`content/rules/`, 118 fixtures incl. `expect_gaps` / `expect_no_gaps`, `ledger_rows` and `extension`, all agree; no known divergences; 0 flags; Stage 1 findings that do not block: 7 register, 5 ledger gap). ⚡ packs use Kata-Kata's own-chapter extension view (`Checker` option `extension: N`). The checker follows Cikgu Sensai's `language_checks.py` at `a235a35`: a placed row is checked whole from its own chapter, a row with no chapter is never a root and counts as no row in a chaptered unit; the step 6b bridge-batch exemption is gone. It matches two-word disallowed forms («tanda tangan») as Cikgu Sensai's does.
 - Jambatan (step 6b): `python3 -I tools/import_hanashishou_bridge.py ../hanashishou` (Hanashishou at `4be57ac`) builds the eight packs from the ledger
   and `content/bridge/hanashishou-metfirst.json` (Hanashishou's audit, remade with `tools/bridge-metfirst.sh ../hanashishou` when the ledger or its scenes
   change). The ledger's card column is the ID registry; a second run is identical, before or after a write-back. `RETIRED_IDS` in the importer lists dropped IDs never to reuse.
@@ -28,14 +28,14 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
 - **Nombor & Masa** (standalone mode, 🔢 on Home, route `#/nombor`; open from day one, practice only): generators in `src/core/nombor.ts`
   (numbers 0 to 1,000,000, phone digits, days, dates, fractions, decimals, percent, money, clock times, questions and distractors), screens in
   `src/views/nombor.ts` and `nombor-charts.ts`, tests `tests/unit/nombor.test.ts` and `tests/e2e/nombor.cjs` (screenshots to `docs/nombor-masa/`).
-  The day-part boundaries in `DAY_PARTS` are a proposal; `QUIZ_HOURS` keeps questions away from the edges. The mode uses no ⚡ or 🔥 (reserved
+  `DAY_PARTS` follows Sam's table of 15 Nov (six parts incl. awal pagi); `QUIZ_HOURS` keeps questions away from the edges. The mode uses no ⚡ or 🔥 (reserved
   for the chapter stretch stage). It adds no cards and no ledger cells. Every generated string passes the shared `malaysian-form` check and the
-  mode's own `INDONESIAN_NUMBER_FORMS` list. Open questions: [NOMBOR-MASA-report.md](NOMBOR-MASA-report.md) section 4.
+  mode's own `INDONESIAN_NUMBER_FORMS` list. Sam's answers to the open questions are applied: [NOMBOR-MASA-answers-report.md](NOMBOR-MASA-answers-report.md) (none remain).
 - Checks: `npm run check && node tests/e2e/smoke.cjs && node tests/e2e/fun.cjs && node tests/e2e/nombor.cjs && node tests/e2e/stretch.cjs` (against `vite preview --port 4173`).
 
 ## Backlog
 
-- Nombor & Masa, Sam to answer: the day-part boundaries, «kurang suku», «haribulan» or «hari bulan», «pertiga» or «per tiga» (ledger L-0141), «minit» after the minutes, the draft hooks (en and ja); see the report section 4. Kamus Dewan and the UKM kit could not be reached from the session (network).
+- Nombor & Masa: all section 4 questions answered and applied. Journal rows 226 and 227 are for Sam to close; Hanashishou's scenes still write «haribulan» (its next sync). Kamus Dewan and the UKM kit still not read from a session.
 
 - **⚡ stage, Build B** (the other 16 chapters' ⚡ content, 354 more rows): see [BUILD-A-report.md](BUILD-A-report.md) section 9 and the proposal ([report](VOCAB-PLACEMENT-proposal-report.md), CSV, [design](STRETCH-STAGE-design.md)). Build A built the engine and ⚡ 4 only.
 - Look at the three Social Jambatan scenes on a phone; Sam may move words between them (`SOCIAL_SPLIT`). Open questions: [STAGE-2-step6c2-report.md](STAGE-2-step6c2-report.md) (L-1308 and L-1309 In both; the rule 1 deviation).
@@ -55,7 +55,7 @@ Earlier: [clean-up after Stage 1](CLEANUP-2026-11-12.md), [road to 1.0](RELEASE-
 1. Cikgu Sensai (read only; never edit it): `docs/stage-2-plan.md` for the chapter's unit tables (section 2), its row in the
    section 3 affix table, its section 5 scene, and its revision anchors ("Revision, recognition and deferred candidates");
    `docs/stage-2-decisions.md`; the newest `docs/STAGE-2-*` report and `HANDOFF.md`. Check whether `curriculum/stage-rules.json`
-   changed since `909596e` (see "Rules" below; last copied from `909596e`, 95 fixtures).
+   changed since `909596e` (see "Rules" below; last copied from `d8612e5`, 118 fixtures).
 2. This repo: this file, the newest chapter function in `tools/make_vocab_bank_v6.py` (`ch17`; `ch18` for a review chapter),
    `content/ms/kelas/c17.json`.
 
@@ -163,7 +163,7 @@ node tests/e2e/smoke.cjs && node tests/e2e/fun.cjs
 
 ## Rules (`content/rules/`)
 
-- The three JSON files are copies of Cikgu Sensai files at the commit in `SOURCE.json` (`909596e`). Never edit them to make content pass.
+- The three JSON files are copies of Cikgu Sensai files at the commit in `SOURCE.json` (`d8612e5`). Never edit them to make content pass.
   If Cikgu Sensai changes `curriculum/stage-rules.json` (or its fixtures), copy the new files, update the commit and the
   SHA-256 values in `SOURCE.json`, and run `npm run check` (the fixtures test runs every case).
 - To compare with the Python checker after a change: run Cikgu Sensai's `language_checks.Checker` with a temporary root whose
