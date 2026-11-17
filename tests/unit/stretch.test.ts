@@ -228,14 +228,16 @@ describe('⚡ unlock', () => {
   });
 });
 
-describe('moved cards (Jambatan → ⚡ 4)', () => {
-  it('maps the 7 promoted Jambatan IDs to live ⚡ cards with the same word; the old IDs are retired', () => {
-    expect(Object.keys(MOVED_CARDS)).toHaveLength(7);
+describe('moved cards (Jambatan → ⚡)', () => {
+  it('maps every promoted Jambatan ID to a live ⚡ card with the same word in its ledger row; the old IDs are retired', () => {
+    expect(Object.keys(MOVED_CARDS).length).toBeGreaterThanOrEqual(7);
     const importer = readFileSync(join(root, 'tools/import_hanashishou_bridge.py'), 'utf8');
+    const ledger = readFileSync(join(root, 'content/ledger/malay-ledger.csv'), 'utf8');
     for (const [from, to] of Object.entries(MOVED_CARDS)) {
       expect(content.cards.has(from), from).toBe(false);
-      expect(content.cards.get(to)?.scene, to).toBe('stretch-x04');
+      expect(content.cards.get(to)?.scene, to).toBe(`stretch-${to.slice(3, 6)}`);
       expect(importer).toContain(`"${from}"`);
+      expect(ledger, to).toMatch(new RegExp(`,${to},Ch${Number(to.slice(4, 6))} \\(extension\\),`));
     }
     expect(content.cards.get(MOVED_CARDS['ms-j-social-22'])!.term).toBe('beri');
   });
