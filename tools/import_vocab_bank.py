@@ -12,6 +12,7 @@ not the generated JSON, if you want changes to survive a re-import.
 
 Optional workbook column: "Note" on the Dunia scenes tab (a card note, e.g. one line per festival).
 Optional overrides key: "practice_scenes": ["kata-biasa"] marks Dunia scenes that are a practice pool, not a chapter's primer.
+Optional overrides key: "kelas_note_ja": {"ms-c05-007": "…"} gives a class card a Japanese note (shown when the UI is Japanese).
 Optional overrides key: "sedia_kelas_review": {"4": ["ms-c04-008", ...]} adds cards that live in other
 chapters (moved or merged cards) to a chapter's Sedia Kelas list, so the chapter still reviews them.
 """
@@ -119,6 +120,8 @@ def main(xlsx):
             }
             if tag == "pe(N)-" or (note and "recognise only" in note.lower()):
                 card["recognise_only"] = True
+            if OVR.get("kelas_note_ja", {}).get(v["ID"]):
+                card["note_ja"] = OVR["kelas_note_ja"][v["ID"]]
             cards.append(card)
 
         # Sedia Kelas core words: cards whose words appear in the chapter's

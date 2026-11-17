@@ -708,3 +708,42 @@ describe("Build B3 (Sam's answers of 17 Nov 2026)", () => {
     expect(dup).toEqual([]);
   });
 });
+
+describe("Sam's content notes of 17 Nov 2026 (teacher-mode brief, Part 1)", () => {
+  const card = (id: string) => content.cards.get(id)!;
+  it('«kasihan» / «kesian»: both ⚡ 17 cards and the «Kesian dia! …» line say which is formal and which colloquial (en and ja)', () => {
+    const x = content.stretch.find((p) => p.chapter === 17)!;
+    for (const term of ['kasihan', 'kesian']) {
+      const c = x.cards.find((k) => k.term === term)!;
+      expect(c.note).toContain('«kasihan» is the formal, correct form; «kesian» is the common colloquial one.');
+      expect(c.note_ja).toContain('«kasihan» が正式で正しい形');
+    }
+    const line = x.scenario.lines.find((l) => l.ms.startsWith('Kesian dia! Takpelah'))!;
+    expect(line.note).toBe('«kasihan» is the formal, correct form; «kesian» is the common colloquial one.');
+    expect(line.note_ja).toMatch(/kasihan.*kesian/);
+  });
+  it('the chapter 5 «tetapi / tapi» card is labelled «Spoken: tapi» (en and ja)', () => {
+    const c = card('ms-c05-007');
+    expect(c.note).toMatch(/^Spoken: «tapi» for «tetapi»/);
+    expect(c.note_ja).toMatch(/^話し言葉：«tapi»/);
+  });
+  it('«tetapkan» and «letupkan» have active Japanese glosses (they are active -kan verbs)', () => {
+    const tetapkan = [...content.cards.values()].find((c) => c.term === 'tetapkan')!;
+    const letupkan = [...content.cards.values()].find((c) => c.term === 'letupkan')!;
+    expect(tetapkan.gloss_ja).toBe('定める、決める');
+    expect(letupkan.gloss_ja).toBe('爆破する');
+    for (const c of [tetapkan, letupkan]) expect(c.gloss_ja).not.toMatch(/られる|される/);
+  });
+  it('docs/review/stretch-lines.csv has one row per ⚡ Malay string, with a BOM and the right columns', () => {
+    const raw = readFileSync(join(__dirname, '../../docs/review/stretch-lines.csv'));
+    expect([...raw.subarray(0, 3)]).toEqual([0xef, 0xbb, 0xbf]);
+    const lines = raw.toString('utf8').slice(1).trim().split('\r\n');
+    expect(lines[0]).toBe('chapter,type,id,speaker,Malay,English,OK,Fix');
+    let n = 0;
+    for (const x of content.stretch) {
+      for (const l of x.scenario.lines) n += 1 + (l.choices?.length ?? 0);
+      for (const f of x.frames) n += 1 + (f.decoys?.length ?? 0);
+    }
+    expect(lines.length - 1).toBe(n);
+  });
+});

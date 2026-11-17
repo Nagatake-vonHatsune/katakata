@@ -128,7 +128,7 @@
       "gloss_ja": "でも",
       "pos": "conj",
       "affix_tag": "root",
-      "note": null,
+      "note": "Spoken: «tapi» for «tetapi». «tetapi» is the standard form for writing and formal speech; «tapi» is what you will hear in everyday conversation.",
       "links": [
         {
           "type": "babak",
@@ -136,7 +136,8 @@
         }
       ],
       "scene": "kelas-c05",
-      "chapter": 5
+      "chapter": 5,
+      "note_ja": "話し言葉：«tapi» は «tetapi» の話し言葉の形です。書くときや改まった場では «tetapi»、普段の会話では «tapi» をよく聞きます。"
     },
     {
       "id": "ms-c05-009",

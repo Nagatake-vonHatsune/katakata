@@ -1051,6 +1051,13 @@ def nombor_followups(b):
                                      "(answer: sebelas hari bulan). Spoken order also heard: Hari ini hari bulan berapa? / hari bulan sebelas.")
 
 
+def sam_notes_1117(b):
+    """Sam's content notes of 17 Nov 2026 (teacher-mode brief, Part 1): «tapi» is labelled as the spoken form of «tetapi» on the
+    chapter 5 card, so later content may use «tapi». The Japanese note is `kelas_note_ja` in tools/import-overrides.json."""
+    b.edit_kelas("ms-c05-007", note="Spoken: «tapi» for «tetapi». «tetapi» is the standard form for writing and formal speech; "
+                                     "«tapi» is what you will hear in everyday conversation.")
+
+
 CHAPTERS = {10: ch10, 11: ch11, 12: ch12, 13: ch13, 14: ch14, 15: ch15, 16: ch16, 17: ch17, 18: ch18}
 
 
@@ -1070,6 +1077,7 @@ def main():
         dunia_3e(b)
         alias_terms(b)
         nombor_followups(b)
+        sam_notes_1117(b)
     marked = b.mark_seen_twins()
     built = min(a.through, max(CHAPTERS))
     b.wb["README"]["A1"] = (

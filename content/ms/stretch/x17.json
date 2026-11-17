@@ -305,7 +305,7 @@
       "gloss_ja": "かわいそうに、気の毒な",
       "pos": "adj",
       "affix_tag": "root",
-      "note": "Pity; poor thing. The standard form; in speech «kesian» (below). «Kasihan emak saya.» = My poor mum.",
+      "note": "Pity; poor thing. The standard form; in speech «kesian» (below). «Kasihan emak saya.» = My poor mum. «kasihan» is the formal, correct form; «kesian» is the common colloquial one.",
       "links": [
         {
           "type": "babak",
@@ -314,7 +314,7 @@
       ],
       "scene": "stretch-x17",
       "chapter": 17,
-      "note_ja": "かわいそうに、気の毒な。標準の形。話し言葉では «kesian»（下）。«Kasihan emak saya.»＝母がかわいそうです。"
+      "note_ja": "かわいそうに、気の毒な。標準の形。話し言葉では «kesian»（下）。«Kasihan emak saya.»＝母がかわいそうです。«kasihan» が正式で正しい形、«kesian» はよく使われるくだけた形です。"
     },
     {
       "id": "ms-x17-017",
@@ -324,7 +324,7 @@
       "gloss_ja": "かわいそうに（「kasihan」の話し言葉）",
       "pos": "adj",
       "affix_tag": "root",
-      "note": "Spoken: «kesian» for «kasihan» (above). «Kesian dia!» = Poor thing!",
+      "note": "Spoken: «kesian» for «kasihan» (above). «Kesian dia!» = Poor thing! «kasihan» is the formal, correct form; «kesian» is the common colloquial one.",
       "links": [
         {
           "type": "babak",
@@ -333,7 +333,7 @@
       ],
       "scene": "stretch-x17",
       "chapter": 17,
-      "note_ja": "話し言葉：«kasihan»（上）の話し言葉の形。«Kesian dia!»＝かわいそうに！"
+      "note_ja": "話し言葉：«kasihan»（上）の話し言葉の形。«Kesian dia!»＝かわいそうに！«kasihan» が正式で正しい形、«kesian» はよく使われるくだけた形です。"
     },
     {
       "id": "ms-x17-018",
@@ -574,7 +574,9 @@
         "choices_en": [
           "Poor thing! Give her the hottest chilli.",
           "Poor thing! Let's eat all her food."
-        ]
+        ],
+        "note": "«kasihan» is the formal, correct form; «kesian» is the common colloquial one.",
+        "note_ja": "«kasihan» が正式で正しい形、«kesian» はよく使われるくだけた形です。"
       },
       {
         "id": "ms-x17-d07",
