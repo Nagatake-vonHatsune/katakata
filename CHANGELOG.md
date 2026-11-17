@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+- **Build B3: Sam's answers to the B2 questions, his ⚡ fixes, and placement batch 2's Jambatan words (17 Nov 2026), 66 to 67 packs, 1764 to 1981 cards.** Report: [docs/BUILD-B3-report.md](docs/BUILD-B3-report.md).
+  - «satu per satu»: L-1532 is now «satu per satu» (card ms-x03-022, note: «satu-satu» is also heard); L-1638 retired, ms-x03-023 moves to ms-x03-022 with its schedule.
+  - Line notes show under their own line: lines that are not reply steps follow the previous answer (or lead the first step), each with its note.
+  - ⚡ 11 «Tolong hantar slaid produk kita kepada mereka.»; ⚡ 13 «Encik patut kurangkan makan nasi lemak dan roti canai.»; ⚡ 15 «Pelik! Cepat, bagi dia kopi.» with the reason made clear; ⚡ 18 «Encik seronok tinggal di sini sekarang?» (no new word in the review stage).
+  - ⚡ 17: a new everyday dialogue (12 lines, 5 replies) and four casual pairs, standard first: kasihan/kesian, semakin/makin, emak/mak, mengantuk/ngantuk («mengantuk» promoted from Jambatan).
+  - Jambatan: 211 new rows (batch 2 and «bisnes», paired with «perniagaan»); «Events and outings» split into «Parties and food» and «Music and shows» (IDs unchanged). 302 to 512 cards.
+  - Ledger: 218 new rows (L-1817 to L-2034) and 56 cells, verified; Journal rows 257 to 261. Guard 0 flags.
+  - Tests: unit 204 to 210; `tests/e2e/stretch.cjs` 101 to 116 checks (⚡ 17, both new scenes, the ⚡ 3 card).
+
 - **Build B2: rules of 17 Nov, Sam's fixes to the B1 packs, ⚡ for chapters 10 to 18 (17 Nov 2026), 57 to 66 packs, 1584 to 1764 cards.** Report: [docs/BUILD-B2-report.md](docs/BUILD-B2-report.md).
   - Rules to Cikgu Sensai `7e436f3` (174 fixtures, all agree) and its `.mjs` patch: lower-case «pasar» is a word, X-X reduplication read at its root, chapter 17 register pairs, «terbaru» / «tertinggi» ter- superlatives, «belon» / «mekanik» / «meriah» look-alike roots. Guard findings unchanged (0 flags; 7 register, 5 ledger gap in Stage 1).
   - Sam's fixes: ⚡ 1 addresses people as Cik / Puan («saudari» stays a formal/written card); ⚡ 3 «satu per satu»; ⚡ 5 «Encik boleh makan durian! Wah, hebat!» («hebat» promoted) and «Saya nak teh tarik, kurang manis.»; ⚡ 7 «pasar raya»; ⚡ 8 the «bungkus» line carries a note on «balut» (dialogue lines can carry notes now, shown in the reply step).

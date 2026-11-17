@@ -20,7 +20,7 @@ and Japanese glosses). Katakana hints only appear in the Japanese interface.
 | Spec item | Where |
 |---|---|
 | Onboarding: name, voice check, iOS "Add to Home Screen" step | `src/views/onboarding.ts` |
-| Kelas chapters 1 to 18 (Stage 1 and Stage 2; chapter 18 is a review pack), 22 Dunia scenes (20 Stage 1, the chapter 10 picture scene, the practice pool) and 6 Jambatan scenes (1441 cards) | `content/ms/` (packs with `"status": "live"`) |
+| Kelas chapters 1 to 18 (Stage 1 and Stage 2; chapter 18 is a review pack), 22 Dunia scenes (20 Stage 1, the chapter 10 picture scene, the practice pool), 9 Jambatan scenes and 18 ⚡ stages (67 packs, 1981 cards) | `content/ms/` (packs with `"status": "live"`) |
 | 今日の練習: due reviews, then 5–8 new words, one frame drill, one Cari Benda round | `src/core/session.ts` |
 | Kad Kata, Cari Benda, Susun Ayat | `src/games/<id>/` (common `Game` interface) |
 | 授業の準備 (Sedia Kelas) with "Ready" stamp | `src/views/modes.ts` |
@@ -74,8 +74,8 @@ affix_tag, note, links[], scene, chapter, image`.
   - link check (targets exist; pair links only to same or earlier chapter)
 - ⚡ stages: `content/ms/stretch/xNN.json` (kind `stretch`), built by `python3 -I tools/build_stretch.py N` from the ledger
   rows placed «ChN (extension)» and the hand-written `content/source/stretch/xNN.json`; shipped through `live_stretch` in
-  `tools/import-overrides.json`. ⚡ 1 to 18 exist (⚡ 4 pilot, 15 Nov 2026; 1 to 3 and 5 to 9 Build B1, 10 to 18 Build B2, 17 Nov 2026; ⚡ 18 is a harder review with no cards, done when every frame is built and its dialogue passed). A ⚡ dialogue line may carry a usage note (`note`, `note_ja`), shown in the reply step. The guard checks a ⚡ pack at its chapter with only its own
-  extension rows placed, every check blocking; core packs read extension rows as no row. See [docs/BUILD-A-report.md](docs/BUILD-A-report.md), [docs/BUILD-B1-report.md](docs/BUILD-B1-report.md) and [docs/BUILD-B2-report.md](docs/BUILD-B2-report.md).
+  `tools/import-overrides.json`. ⚡ 1 to 18 exist (⚡ 4 pilot, 15 Nov 2026; 1 to 3 and 5 to 9 Build B1, 10 to 18 Build B2, 17 Nov 2026; Sam's fixes and a new ⚡ 17 dialogue in Build B3; ⚡ 18 is a harder review with no cards, done when every frame is built and its dialogue passed). A ⚡ dialogue line may carry a usage note (`note`, `note_ja`), shown directly under its own line. The guard checks a ⚡ pack at its chapter with only its own
+  extension rows placed, every check blocking; core packs read extension rows as no row. See [docs/BUILD-A-report.md](docs/BUILD-A-report.md), [docs/BUILD-B1-report.md](docs/BUILD-B1-report.md), [docs/BUILD-B2-report.md](docs/BUILD-B2-report.md) and [docs/BUILD-B3-report.md](docs/BUILD-B3-report.md).
 - Recorded audio (plan B for phones without a Malay voice): `public/audio/ms/<card-id>.mp3`
 
 **All Japanese text (glosses, frame meanings, scene titles, interface) is a Claude draft and needs a native check before students see it. The Malay interface (`i18n/ms.json`) and the v3/v4 scenes are Claude drafts too.**
@@ -114,8 +114,8 @@ Kata-Kata is the step before [Hanashishou 話匠](https://hanashishou.vonhatsune
 
 - **Same scheduler:** SM-2 with Hanashishou's exact card state (`ease, interval, reps, due, lapses`), see
   `src/core/srs.ts`. A word's progress carries over unchanged. Saves from before 0.9.0 (FSRS) migrate on load.
-- **Jambatan scenes** (`content/ms/jambatan/`, six: one per Hanashishou pack that has such words): a card for every word a tagged
-  Hanashishou scene meets first (`firstMet` in Hanashishou's `targets/ms/course.json`) that has a live ledger row, 346 cards in all,
+- **Jambatan scenes** (`content/ms/jambatan/`, nine: one per Hanashishou pack that has such words, Social split by topic into four): a card for every word a tagged
+  Hanashishou scene meets first (`firstMet` in Hanashishou's `targets/ms/course.json`) that has a live ledger row, 512 cards in all (Build B3),
   ordered by how many scenes use the word. Card text comes from the ledger row; the note gives a real line, the standard partner of a
   spoken form and the scenes. Which scene meets which row is Hanashishou's own audit, kept in `content/bridge/hanashishou-metfirst.json`
   (`tools/bridge-metfirst.sh ../hanashishou` remakes it); `npm run bridge:import` then rebuilds the packs (Hanashishou checkout at
