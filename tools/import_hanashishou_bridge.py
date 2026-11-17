@@ -98,7 +98,7 @@ RETIRED_IDS = ["ms-j-health-22", "ms-j-social-22", "ms-j-home-condo-29", "ms-j-d
                # Build B2 (17 Nov 2026): «hebat» promoted to ⚡ 5 (Sam)
                "ms-j-social-54",
                # Build B2: promoted to ⚡ 10 to 17
-               "ms-j-social-36", "ms-j-office-34", "ms-j-daily-life-38", "ms-j-social-23", "ms-j-social-25", "ms-j-health-23", "ms-j-office-35", "ms-j-social-45", "ms-j-office-27", "ms-j-office-31", "ms-j-social-38", "ms-j-social-40", "ms-j-social-46", "ms-j-home-condo-50", "ms-j-social-29", "ms-j-office-26"]
+               "ms-j-social-36", "ms-j-office-34", "ms-j-daily-life-38", "ms-j-social-23", "ms-j-social-25", "ms-j-health-23", "ms-j-office-35", "ms-j-social-45", "ms-j-office-27", "ms-j-office-31", "ms-j-social-38", "ms-j-social-40", "ms-j-social-46", "ms-j-home-condo-50", "ms-j-social-29", "ms-j-office-26", "ms-j-daily-life-46"]
 
 
 def is_extension(row):

@@ -1,0 +1,644 @@
+{
+ "chapter": 16,
+ "place": "Ch16 (extension)",
+ "changes": [
+  {
+   "lid": "L-1365",
+   "row": 1366,
+   "word": "teruk",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-daily-life-46",
+     "after": "ms-x16-001"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Daily life",
+     "after": "Ch16 (extension)"
+    }
+   ]
+  }
+ ],
+ "new": [
+  {
+   "lid": "L-1782",
+   "row": 1783,
+   "values": [
+    "L-1782",
+    "gigit",
+    "bite",
+    "かむ",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x16-002",
+    "Ch16 (extension)",
+    "office · band 1",
+    "Yes",
+    "bite",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: mishaps (Ch16): a dog bite. Hanashishou: 2 scenes; e.g. «Saya tak gigit.» (azula_town_hall).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1783",
+   "row": 1784,
+   "values": [
+    "L-1783",
+    "nasib baik",
+    "luckily, fortunately",
+    "運よく、よかった",
+    "phrase",
+    "chunk",
+    "nasib + baik",
+    "Not yet checked",
+    "",
+    "ms-x16-003",
+    "Ch16 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "luckily, fortunately",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: mishaps (Ch16): «Nasib baik …» after a near miss; baik Ch1. Hanashishou: 2 scenes; e.g. «Nasib baik awak cakap.» (grab_ride_chat).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1784",
+   "row": 1785,
+   "values": [
+    "L-1784",
+    "salahkan",
+    "blame",
+    "〜のせいにする",
+    "verb",
+    "-kan",
+    "salah",
+    "Not yet checked",
+    "",
+    "ms-x16-004",
+    "Ch16 (extension)",
+    "social · band 1",
+    "Yes",
+    "blame",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: mishaps and complaints (Ch16): «Jangan salahkan saya»; salah Ch5 (extension). Hanashishou: 2 scenes; e.g. «Anda mula dengan lembut, cakap apa yang salah tanpa salahkan dia, dan cakap apa yang anda minta.» (miku_market). not spoken by a character or offered as a choice (pattern).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1785",
+   "row": 1786,
+   "values": [
+    "L-1785",
+    "terasa",
+    "feel; \"terasa hati\" = feel hurt",
+    "感じる；«terasa hati» = 傷つく",
+    "verb",
+    "ter-",
+    "rasa",
+    "Not yet checked",
+    "",
+    "ms-x16-005",
+    "Ch16 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "feel; \"terasa hati\" = feel hurt",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: unplanned states (Ch16): «terasa hati» when apologising; rasa Ch5. Hanashishou: 2 scenes; e.g. «Puan Lee nampak terasa hati.» (barking_dog). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1786",
+   "row": 1787,
+   "values": [
+    "L-1786",
+    "habuk",
+    "dust",
+    "ほこり",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x16-006",
+    "Ch16 (extension)",
+    "social · band 1",
+    "Yes",
+    "dust",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: complaints (Ch16): dust from a renovation. Hanashishou: 1 scene; e.g. «Jinx keluar dari bawah meja, rambut penuh habuk.» (jinx_demo_day). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1787",
+   "row": 1788,
+   "values": [
+    "L-1787",
+    "jatuh",
+    "fall",
+    "落ちる",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x16-007",
+    "Ch16 (extension)",
+    "social · band 1",
+    "Yes",
+    "fall",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: accidents (Ch16): root of «terjatuh». Hanashishou: 1 scene; e.g. «Satu jatuh dalam kopi orang.» (jinx_library). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1788",
+   "row": 1789,
+   "values": [
+    "L-1788",
+    "jerit",
+    "shout",
+    "叫ぶ",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x16-008",
+    "Ch16 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "shout",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: complaints about noise (Ch16). Hanashishou: 1 scene; e.g. «Aiyo, tak payah jerit, boss...» (wrong_order).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1789",
+   "row": 1790,
+   "values": [
+    "L-1789",
+    "keadaan",
+    "situation, condition",
+    "状況、状態",
+    "noun",
+    "ke-an",
+    "ada",
+    "Not yet checked",
+    "",
+    "ms-x16-009",
+    "Ch16 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "situation, condition",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: mishaps (Ch16): the state of the flat; ada Ch2. Hanashishou: 1 scene; e.g. «Gaduh pasal minit buat keadaan lebih teruk.» (blocked_car). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1790",
+   "row": 1791,
+   "values": [
+    "L-1790",
+    "kesan",
+    "mark, trace; effect",
+    "跡、しみ",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x16-010",
+    "Ch16 (extension)",
+    " · band 1",
+    "Yes",
+    "mark, trace; effect",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: complaints (Ch16): marks on the wall at the end of a tenancy; scene form «kesan-kesan». Hanashishou: 1 scene; e.g. «» (). checker reads «kesan-kesan» as a ledger gap (reduplication is not resolved): use «kesan» in ⚡ lines.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1791",
+   "row": 1792,
+   "values": [
+    "L-1791",
+    "kesilapan",
+    "mistake",
+    "間違い、ミス",
+    "noun",
+    "ke-an",
+    "silap",
+    "Not yet checked",
+    "",
+    "ms-x16-011",
+    "Ch16 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "mistake",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: apologising for a mistake (Ch16); silap Ch16 (extension). Hanashishou: 1 scene; e.g. «Anda betulkan kesilapan dengan sopan, dan suasana kekal mesra.» (mamak_order). not spoken by a character or offered as a choice (pattern).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1792",
+   "row": 1793,
+   "values": [
+    "L-1792",
+    "sengaja",
+    "on purpose",
+    "わざと",
+    "adv",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x16-012",
+    "Ch16 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "on purpose",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: accidents (Ch16): «tidak sengaja» (by accident) vs «sengaja». Hanashishou: 1 scene; e.g. «pagi tadi anda tekan PIN lama secara tak sengaja.» (card_blocked).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1793",
+   "row": 1794,
+   "values": [
+    "L-1793",
+    "silap",
+    "mistake",
+    "間違った",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x16-013",
+    "Ch16 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "mistake",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: mistakes (Ch16); root of «kesilapan» (Ch16) and «tersilap». Hanashishou: 1 scene; e.g. «Silap hantar.» (lift_chat).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1794",
+   "row": 1795,
+   "values": [
+    "L-1794",
+    "tercampur",
+    "mixed up",
+    "混ざってしまう",
+    "verb",
+    "ter-",
+    "campur",
+    "Not yet checked",
+    "",
+    "ms-x16-014",
+    "Ch16 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "mixed up",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: ter- accidents (Ch16); campur goes to Jambatan, so taught as a whole word. Hanashishou: 1 scene; e.g. «Nombornya tercampur.» (moving_out). root «campur» not placed; not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1795",
+   "row": 1796,
+   "values": [
+    "L-1795",
+    "terhenti",
+    "stopped, broke off",
+    "止まってしまう",
+    "verb",
+    "ter-",
+    "henti",
+    "Not yet checked",
+    "",
+    "ms-x16-015",
+    "Ch16 (extension)",
+    "office · band 1",
+    "Yes",
+    "stopped, broke off",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: ter- unplanned states (Ch16). Hanashishou: 1 scene; e.g. «Sembang terhenti.» (new_joiner). root «henti» not in ledger: taught as a whole word; not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1796",
+   "row": 1797,
+   "values": [
+    "L-1796",
+    "terkejut",
+    "surprised, shocked",
+    "驚く",
+    "adj",
+    "ter-",
+    "kejut",
+    "Not yet checked",
+    "",
+    "ms-x16-016",
+    "Ch16 (extension)",
+    "social · band 1",
+    "Yes",
+    "surprised, shocked",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: ter- unplanned states (Ch16). Hanashishou: 1 scene; e.g. «Mira sangat terkejut.» (trio_surprise_party). root «kejut» not in ledger: taught as a whole word; not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1797",
+   "row": 1798,
+   "values": [
+    "L-1797",
+    "terpaksa",
+    "forced to, have to",
+    "〜せざるを得ない",
+    "adv",
+    "ter-",
+    "paksa",
+    "Not yet checked",
+    "",
+    "ms-x16-017",
+    "Ch16 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "forced to, have to",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: unplanned states and complaints (Ch16). Hanashishou: 1 scene; e.g. «Saya terpaksa tolak RM800 untuk cat semula.» (moving_out). root «paksa» not in ledger: taught as a whole word.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1798",
+   "row": 1799,
+   "values": [
+    "L-1798",
+    "terpulang",
+    "up to you",
+    "〜次第だ",
+    "phrase",
+    "ter-",
+    "pulang",
+    "Not yet checked",
+    "",
+    "ms-x16-018",
+    "Ch16 (extension)",
+    "health · band 1",
+    "Yes",
+    "up to you",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: «terpulang kepada awak»; ter- shape, so not before 16. Hanashishou: 1 scene; e.g. «Terpulang.» (blood_test).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1799",
+   "row": 1800,
+   "values": [
+    "L-1799",
+    "tersalah",
+    "wrongly, by mistake",
+    "間違って〜してしまう",
+    "verb",
+    "ter-",
+    "salah",
+    "Not yet checked",
+    "",
+    "ms-x16-019",
+    "Ch16 (extension)",
+    "home-condo · band 2",
+    "Yes",
+    "wrongly, by mistake",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: ter- accidents (Ch16); salah Ch5 (extension). Hanashishou: 1 scene; e.g. «Bercakap pasal penghantaran, saya rasa bungkusan saya tersalah hantar ke pintu encik.» (lift_chat).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1800",
+   "row": 1801,
+   "values": [
+    "L-1800",
+    "tertulis",
+    "written",
+    "書いてある",
+    "adj",
+    "ter-",
+    "tulis",
+    "Not yet checked",
+    "",
+    "ms-x16-020",
+    "Ch16 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "written",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: ter- state (Ch16); tulis Ch4. Hanashishou: 1 scene; e.g. «Pintu berapa yang tertulis pada pas masuk anda?» (airport_checkin). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1801",
+   "row": 1802,
+   "values": [
+    "L-1801",
+    "tiba-tiba",
+    "suddenly",
+    "突然",
+    "adv",
+    "lex",
+    "tiba",
+    "Not yet checked",
+    "",
+    "ms-x16-021",
+    "Ch16 (extension)",
+    "social · band 1",
+    "Yes",
+    "suddenly",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: mishaps (Ch16): «Tiba-tiba …»; tiba Ch7 (extension). Hanashishou: 1 scene; e.g. «Lepas itu, Jinx datang, tiba-tiba senyap.» (jinx_fireworks).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1802",
+   "row": 1803,
+   "values": [
+    "L-1802",
+    "tuduh",
+    "accuse",
+    "非難する、責める",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x16-022",
+    "Ch16 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "accuse",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: complaints (Ch16). Hanashishou: 1 scene; e.g. «Anda sebut apa yang salah tanpa tuduh orang, sebut apa yang anda pesan, dan pilih satu cara yang jelas.» (wrong_order). not spoken by a character or offered as a choice (pattern).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x16-001": {
+   "lid": "L-1365",
+   "moved_from": "ms-j-daily-life-46"
+  },
+  "ms-x16-002": {
+   "lid": "L-1782"
+  },
+  "ms-x16-003": {
+   "lid": "L-1783"
+  },
+  "ms-x16-004": {
+   "lid": "L-1784"
+  },
+  "ms-x16-005": {
+   "lid": "L-1785"
+  },
+  "ms-x16-006": {
+   "lid": "L-1786"
+  },
+  "ms-x16-007": {
+   "lid": "L-1787"
+  },
+  "ms-x16-008": {
+   "lid": "L-1788"
+  },
+  "ms-x16-009": {
+   "lid": "L-1789"
+  },
+  "ms-x16-010": {
+   "lid": "L-1790"
+  },
+  "ms-x16-011": {
+   "lid": "L-1791"
+  },
+  "ms-x16-012": {
+   "lid": "L-1792"
+  },
+  "ms-x16-013": {
+   "lid": "L-1793"
+  },
+  "ms-x16-014": {
+   "lid": "L-1794"
+  },
+  "ms-x16-015": {
+   "lid": "L-1795"
+  },
+  "ms-x16-016": {
+   "lid": "L-1796"
+  },
+  "ms-x16-017": {
+   "lid": "L-1797"
+  },
+  "ms-x16-018": {
+   "lid": "L-1798"
+  },
+  "ms-x16-019": {
+   "lid": "L-1799"
+  },
+  "ms-x16-020": {
+   "lid": "L-1800"
+  },
+  "ms-x16-021": {
+   "lid": "L-1801"
+  },
+  "ms-x16-022": {
+   "lid": "L-1802"
+  }
+ },
+ "skipped": [
+  "terbaru",
+  "tertinggi"
+ ]
+}

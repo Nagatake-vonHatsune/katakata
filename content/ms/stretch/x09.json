@@ -355,6 +355,25 @@
       "scene": "stretch-x09",
       "chapter": 9,
       "note_ja": "しるし、記号。«papan tanda»（第9課）＝看板。"
+    },
+    {
+      "id": "ms-x09-019",
+      "lang": "ms",
+      "term": "belon",
+      "gloss_en": "balloon",
+      "gloss_ja": "風船",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Balloon: «belon di pentas». A plain word, not a ber- form (the rules read it as a look-alike root).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "風船：«belon di pentas»。ber- の形ではなく、そのままの語。"
     }
   ],
   "frames": [
@@ -510,8 +529,8 @@
       {
         "id": "ms-x09-d11",
         "speaker": "Puan Siti",
-        "ms": "Encik Tanaka! Hiasan di pentas itu buatan tangan penduduk.",
-        "en": "Mr Tanaka! The decorations on that stage were made by hand by the residents."
+        "ms": "Encik Tanaka! Tengok belon di pentas itu. Hiasan itu buatan tangan penduduk.",
+        "en": "Mr Tanaka! Look at the balloons on that stage. The decorations were made by hand by the residents."
       },
       {
         "id": "ms-x09-d12",

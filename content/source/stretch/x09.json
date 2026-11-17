@@ -21,7 +21,8 @@
     "L-1633": {"en": "To block. «disekat» = blocked.", "ja": "ふさぐ、止める。«disekat»＝通行止めの。"},
     "L-1634": {"en": "sekat + -an: a block, restriction. «sekatan jalan» = roadblock.", "ja": "sekat + -an：規制、通行止め。«sekatan jalan»＝道路の通行止め。"},
     "L-1635": {"en": "Congratulations!", "ja": "おめでとう！"},
-    "L-1636": {"en": "Sign, mark. «papan tanda» (Ch9) = signboard.", "ja": "しるし、記号。«papan tanda»（第9課）＝看板。"}
+    "L-1636": {"en": "Sign, mark. «papan tanda» (Ch9) = signboard.", "ja": "しるし、記号。«papan tanda»（第9課）＝看板。"},
+    "L-1781": {"en": "Balloon: «belon di pentas». A plain word, not a ber- form (the rules read it as a look-alike root).", "ja": "風船：«belon di pentas»。ber- の形ではなく、そのままの語。"}
   },
   "frames": [
     {"frame": "Jalan ini ditutup mulai ___ sehingga ___.", "example": "Jalan ini ditutup mulai pukul enam petang sehingga pukul sebelas malam.", "decoys": ["dibuka"], "meaning_en": "This road is closed from 6 p.m. until 11 p.m.", "meaning_ja": "この道は午後6時から午後11時まで通行止めです。"},
@@ -48,7 +49,7 @@
      "choices": ["Baik, saya letak kereta di jalan itu.", "Tahniah, Puan!"],
      "choices_en": ["All right, I'll park on that road.", "Congratulations!"]},
     {"speaker": "(Narrator)", "ms": "Sabtu, pukul tujuh malam.", "en": "Saturday, seven in the evening."},
-    {"speaker": "Puan Siti", "ms": "Encik Tanaka! Hiasan di pentas itu buatan tangan penduduk.", "en": "Mr Tanaka! The decorations on that stage were made by hand by the residents."},
+    {"speaker": "Puan Siti", "ms": "Encik Tanaka! Tengok belon di pentas itu. Hiasan itu buatan tangan penduduk.", "en": "Mr Tanaka! Look at the balloons on that stage. The decorations were made by hand by the residents."},
     {"speaker": "Tanaka", "ms": "Cantik sekali! Persembahan mula pukul berapa?", "en": "They're beautiful! What time does the show start?",
      "choices": ["Kotor sekali! Siapa buat hiasan itu?", "Denda berapa ringgit?"],
      "choices_en": ["How dirty! Who made those decorations?", "How many ringgit is the fine?"]},

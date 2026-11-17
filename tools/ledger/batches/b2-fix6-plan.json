@@ -1,0 +1,67 @@
+{
+ "chapter": 6,
+ "place": "Ch6 (extension)",
+ "changes": [],
+ "new": [
+  {
+   "lid": "L-1779",
+   "row": 1780,
+   "values": [
+    "L-1779",
+    "terbaru",
+    "latest",
+    "最新の",
+    "adj",
+    "ter-",
+    "baru",
+    "Not yet checked",
+    "",
+    "ms-x06-021",
+    "Ch6 (extension)",
+    "social · band 1",
+    "Yes",
+    "latest",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: ter- superlative (Ch6) since the rules of 17 Nov (Cikgu Sensai 7e436f3, ter_superlatives); the proposal's Ch16 place moved to Ch6 as its section 8 said; baru placed earlier. Hanashishou: 1 scene; e.g. «Mira sudah separuh jalan lagu ketiganya: lagu terbaru Miku, tentunya.» (miku_karaoke).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1780",
+   "row": 1781,
+   "values": [
+    "L-1780",
+    "tertinggi",
+    "highest",
+    "最も高い",
+    "adj",
+    "ter-",
+    "tinggi",
+    "Not yet checked",
+    "",
+    "ms-x06-022",
+    "Ch6 (extension)",
+    "social · band 1",
+    "Yes",
+    "highest",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: ter- superlative (Ch6) since the rules of 17 Nov (Cikgu Sensai 7e436f3, ter_superlatives); the proposal's Ch16 place moved to Ch6 as its section 8 said; tinggi placed earlier. Hanashishou: 1 scene; e.g. «Dia angguk sekali: pujian tertinggi.» (azula_restaurant).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x06-021": {
+   "lid": "L-1779"
+  },
+  "ms-x06-022": {
+   "lid": "L-1780"
+  }
+ }
+}

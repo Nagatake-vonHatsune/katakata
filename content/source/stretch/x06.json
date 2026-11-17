@@ -23,7 +23,9 @@
     "L-1571": {"en": "Competition, match; taught as a whole word.", "ja": "試合、大会（ひとまとまりの単語として）。"},
     "L-1572": {"en": "se- + banyak (Ch5): as much as, a total of (things and money; formal, in reports and notices). For people, Malay uses «seramai».", "ja": "se- + banyak（第5課）：〜もの、合計〜（物やお金；報告やお知らせの改まった言い方）。人数には «seramai» を使います。"},
     "L-1573": {"en": "Truly, really, after an adjective: «lemah sungguh» = really weak.", "ja": "本当に（形容詞の後）：«lemah sungguh»＝本当に弱い。"},
-    "L-1574": {"en": "Well done! Congratulations!", "ja": "よくやった！おめでとう！"}
+    "L-1574": {"en": "Well done! Congratulations!", "ja": "よくやった！おめでとう！"},
+    "L-1779": {"en": "ter- + baru (Ch4): the newest, latest: «gelanggang yang terbaru». Since the rules of 17 Nov a ter- superlative, like «termurah» (Ch6).", "ja": "ter- + baru（第4課）：最新の：«gelanggang yang terbaru»。«termurah»（第6課）と同じ ter- の最上級。"},
+    "L-1780": {"en": "ter- + tinggi (Ch3): the highest, the tallest = «paling tinggi»: «Saya yang tertinggi!»", "ja": "ter- + tinggi（第3課）：いちばん高い＝«paling tinggi»：«Saya yang tertinggi!»＝ぼくがいちばん背が高い！"}
   },
   "cari": {
     "scene": "sukan-badminton",
@@ -51,9 +53,9 @@
     {"speaker": "Tanaka", "ms": "Lima kosong? Pasukan kita lemah sungguh!", "en": "Five nil? Our team is really weak!",
      "choices": ["Lima kosong? Pasukan kita juara!", "Lima kosong? Syabas, Cik Mei Ling!"],
      "choices_en": ["Five nil? Our team is the champion!", "Five nil? Well done, Ms Mei Ling!"]},
-    {"speaker": "Encik Rahman", "ms": "Ya, tetapi tahun ini kita ada latihan setiap minggu.", "en": "Yes, but this year we practise every week."},
+    {"speaker": "Encik Rahman", "ms": "Ya, tetapi tahun ini kita ada latihan setiap minggu, di gelanggang yang terbaru.", "en": "Yes, but this year we practise every week, on the newest court."},
     {"speaker": "Cik Mei Ling", "ms": "Encik Tanaka pun boleh main. Encik lari lebih cepat daripada Encik Rahman!", "en": "You can play too, Mr Tanaka. You run faster than Mr Rahman!"},
-    {"speaker": "Encik Rahman", "ms": "Betul! Saya paling lambat.", "en": "True! I'm the slowest."},
+    {"speaker": "Encik Rahman", "ms": "Betul! Saya paling lambat, tetapi saya yang tertinggi!", "en": "True! I'm the slowest, but I'm the tallest!"},
     {"speaker": "(Narrator)", "ms": "Selepas pertandingan.", "en": "After the match."},
     {"speaker": "Cik Mei Ling", "ms": "Syabas! Kita menang, tiga dua!", "en": "Well done! We won, three two!"},
     {"speaker": "Tanaka", "ms": "Terima kasih! Pasukan kita betul-betul bagus.", "en": "Thank you! Our team is really good.",

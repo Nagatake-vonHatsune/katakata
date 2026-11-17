@@ -396,6 +396,44 @@
       "scene": "stretch-x06",
       "chapter": 6,
       "note_ja": "よくやった！おめでとう！"
+    },
+    {
+      "id": "ms-x06-021",
+      "lang": "ms",
+      "term": "terbaru",
+      "gloss_en": "latest",
+      "gloss_ja": "最新の",
+      "pos": "adj",
+      "affix_tag": "ter-",
+      "note": "ter- + baru (Ch4): the newest, latest: «gelanggang yang terbaru». Since the rules of 17 Nov a ter- superlative, like «termurah» (Ch6).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "ter- + baru（第4課）：最新の：«gelanggang yang terbaru»。«termurah»（第6課）と同じ ter- の最上級。"
+    },
+    {
+      "id": "ms-x06-022",
+      "lang": "ms",
+      "term": "tertinggi",
+      "gloss_en": "highest",
+      "gloss_ja": "最も高い",
+      "pos": "adj",
+      "affix_tag": "ter-",
+      "note": "ter- + tinggi (Ch3): the highest, the tallest = «paling tinggi»: «Saya yang tertinggi!»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "ter- + tinggi（第3課）：いちばん高い＝«paling tinggi»：«Saya yang tertinggi!»＝ぼくがいちばん背が高い！"
     }
   ],
   "frames": [
@@ -527,8 +565,8 @@
       {
         "id": "ms-x06-d07",
         "speaker": "Encik Rahman",
-        "ms": "Ya, tetapi tahun ini kita ada latihan setiap minggu.",
-        "en": "Yes, but this year we practise every week."
+        "ms": "Ya, tetapi tahun ini kita ada latihan setiap minggu, di gelanggang yang terbaru.",
+        "en": "Yes, but this year we practise every week, on the newest court."
       },
       {
         "id": "ms-x06-d08",
@@ -539,8 +577,8 @@
       {
         "id": "ms-x06-d09",
         "speaker": "Encik Rahman",
-        "ms": "Betul! Saya paling lambat.",
-        "en": "True! I'm the slowest."
+        "ms": "Betul! Saya paling lambat, tetapi saya yang tertinggi!",
+        "en": "True! I'm the slowest, but I'm the tallest!"
       },
       {
         "id": "ms-x06-d10",

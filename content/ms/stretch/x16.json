@@ -1,0 +1,618 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x16",
+  "chapter": 16,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Kata Kerja ter-",
+    "en": "Accidents with ter-",
+    "ja": "ter- で「うっかり」を言う"
+  },
+  "cards": [
+    {
+      "id": "ms-x16-001",
+      "lang": "ms",
+      "term": "teruk",
+      "gloss_en": "bad, severe, terrible",
+      "gloss_ja": "ひどい、重い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Bad, severe, terrible: «Keadaan teruk hari ini.» = Things are bad today.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "ひどい、深刻な：«Keadaan teruk hari ini.»＝今日はひどい一日だ。"
+    },
+    {
+      "id": "ms-x16-002",
+      "lang": "ms",
+      "term": "gigit",
+      "gloss_en": "bite",
+      "gloss_ja": "かむ",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To bite: «Kucing itu gigit kaki saya.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "かむ：«Kucing itu gigit kaki saya.»＝その猫が私の足をかんだ。"
+    },
+    {
+      "id": "ms-x16-003",
+      "lang": "ms",
+      "term": "nasib baik",
+      "gloss_en": "luckily, fortunately",
+      "gloss_ja": "運よく、よかった",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Luckily, fortunately: «Nasib baik …» = Luckily …",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "運よく、幸いにも：«Nasib baik …»＝よかった、〜で。"
+    },
+    {
+      "id": "ms-x16-004",
+      "lang": "ms",
+      "term": "salahkan",
+      "gloss_en": "blame",
+      "gloss_ja": "〜のせいにする",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "salah + -kan: to blame (someone): «Jangan salahkan dia.» = Don't blame him.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "salah + -kan：（人を）責める：«Jangan salahkan dia.»＝彼を責めないで。"
+    },
+    {
+      "id": "ms-x16-005",
+      "lang": "ms",
+      "term": "terasa",
+      "gloss_en": "feel; \"terasa hati\" = feel hurt",
+      "gloss_ja": "感じる；«terasa hati» = 傷つく",
+      "pos": "verb",
+      "affix_tag": "ter-",
+      "note": "ter- + rasa (Ch5): to feel (suddenly, without meaning to): «Saya terasa sejuk.» «terasa hati» = to feel hurt.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "ter- + rasa（第5課）：（ふと）感じる：«Saya terasa sejuk.»。«terasa hati»＝傷つく。"
+    },
+    {
+      "id": "ms-x16-006",
+      "lang": "ms",
+      "term": "habuk",
+      "gloss_en": "dust",
+      "gloss_ja": "ほこり",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Dust.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "ほこり。"
+    },
+    {
+      "id": "ms-x16-007",
+      "lang": "ms",
+      "term": "jatuh",
+      "gloss_en": "fall",
+      "gloss_ja": "落ちる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To fall: «Telefon saya jatuh.» Compare «terjatuh» (Ch16) = to fall by accident, drop.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "落ちる：«Telefon saya jatuh.»。«terjatuh»（第16課）＝うっかり落ちる。"
+    },
+    {
+      "id": "ms-x16-008",
+      "lang": "ms",
+      "term": "jerit",
+      "gloss_en": "shout",
+      "gloss_ja": "叫ぶ",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To shout, scream: «jerit kepada mereka» = shout at them.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "叫ぶ、どなる：«jerit kepada mereka»＝彼らにどなる。"
+    },
+    {
+      "id": "ms-x16-009",
+      "lang": "ms",
+      "term": "keadaan",
+      "gloss_en": "situation, condition",
+      "gloss_ja": "状況、状態",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "ke- + ada (Ch2) + -an: situation, condition: «Keadaan di pejabat teruk.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "ke- + ada（第2課）+ -an：状況、状態：«Keadaan di pejabat teruk.»"
+    },
+    {
+      "id": "ms-x16-010",
+      "lang": "ms",
+      "term": "kesan",
+      "gloss_en": "mark, trace; effect",
+      "gloss_ja": "跡、しみ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Mark, trace; effect: «kesan kopi» = a coffee stain.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "跡；効果：«kesan kopi»＝コーヒーのしみ。"
+    },
+    {
+      "id": "ms-x16-011",
+      "lang": "ms",
+      "term": "kesilapan",
+      "gloss_en": "mistake",
+      "gloss_ja": "間違い、ミス",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "ke- + silap (Ch16 ⚡) + -an: a mistake: «Ini kesilapan saya.» = This is my mistake.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "ke- + silap（第16課⚡）+ -an：まちがい：«Ini kesilapan saya.»＝私のミスです。"
+    },
+    {
+      "id": "ms-x16-012",
+      "lang": "ms",
+      "term": "sengaja",
+      "gloss_en": "on purpose",
+      "gloss_ja": "わざと",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "On purpose: «tidak sengaja» (Ch16) = not on purpose, by accident.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "わざと：«tidak sengaja»（第16課）＝わざとではない。"
+    },
+    {
+      "id": "ms-x16-013",
+      "lang": "ms",
+      "term": "silap",
+      "gloss_en": "mistake",
+      "gloss_ja": "間違った",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Wrong, mistaken: «buat silap» = make a mistake. Compare «tersilap» (Ch16).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "まちがった：«buat silap»＝まちがえる。«tersilap»（第16課）と比べて。"
+    },
+    {
+      "id": "ms-x16-014",
+      "lang": "ms",
+      "term": "tercampur",
+      "gloss_en": "mixed up",
+      "gloss_ja": "混ざってしまう",
+      "pos": "verb",
+      "affix_tag": "ter-",
+      "note": "ter- + campur: mixed up (by accident): «Dua fail tercampur.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "ter- + campur：（うっかり）混ざった：«Dua fail tercampur.»＝二つのファイルが混ざった。"
+    },
+    {
+      "id": "ms-x16-015",
+      "lang": "ms",
+      "term": "terhenti",
+      "gloss_en": "stopped, broke off",
+      "gloss_ja": "止まってしまう",
+      "pos": "verb",
+      "affix_tag": "ter-",
+      "note": "Stopped, broke off (suddenly), taught as a whole word: «Komputer saya terhenti.» Compare «berhenti» (Ch10).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "（急に）止まった（一語として学ぶ）：«Komputer saya terhenti.»。«berhenti»（第10課）と比べて。"
+    },
+    {
+      "id": "ms-x16-016",
+      "lang": "ms",
+      "term": "terkejut",
+      "gloss_en": "surprised, shocked",
+      "gloss_ja": "驚く",
+      "pos": "adj",
+      "affix_tag": "ter-",
+      "note": "Surprised, shocked (a whole word): «Saya terkejut.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "驚いた、びっくりした（一語）：«Saya terkejut.»"
+    },
+    {
+      "id": "ms-x16-017",
+      "lang": "ms",
+      "term": "terpaksa",
+      "gloss_en": "forced to, have to",
+      "gloss_ja": "〜せざるを得ない",
+      "pos": "adv",
+      "affix_tag": "ter-",
+      "note": "Forced to, have no choice but to (a whole word): «Saya terpaksa balik awal.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "〜せざるをえない（一語）：«Saya terpaksa balik awal.»＝早く帰らざるをえない。"
+    },
+    {
+      "id": "ms-x16-018",
+      "lang": "ms",
+      "term": "terpulang",
+      "gloss_en": "up to you",
+      "gloss_ja": "〜次第だ",
+      "pos": "phrase",
+      "affix_tag": "ter-",
+      "note": "It's up to (you): «Terpulang kepada Encik.» = It's up to you.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "〜次第だ：«Terpulang kepada Encik.»＝あなた次第です。"
+    },
+    {
+      "id": "ms-x16-019",
+      "lang": "ms",
+      "term": "tersalah",
+      "gloss_en": "wrongly, by mistake",
+      "gloss_ja": "間違って〜してしまう",
+      "pos": "verb",
+      "affix_tag": "ter-",
+      "note": "ter- + salah: (do something) wrongly, by mistake: «tersalah hantar» = send to the wrong place.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "ter- + salah：うっかりまちがえて〜する：«tersalah hantar»＝まちがえて送る。"
+    },
+    {
+      "id": "ms-x16-020",
+      "lang": "ms",
+      "term": "tertulis",
+      "gloss_en": "written",
+      "gloss_ja": "書いてある",
+      "pos": "adj",
+      "affix_tag": "ter-",
+      "note": "ter- + tulis (Ch4): written (somewhere): «Nama saya tertulis di situ.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "ter- + tulis（第4課）：書かれている：«Nama saya tertulis di situ.»＝私の名前がそこに書いてある。"
+    },
+    {
+      "id": "ms-x16-021",
+      "lang": "ms",
+      "term": "tiba-tiba",
+      "gloss_en": "suddenly",
+      "gloss_ja": "突然",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "Suddenly (a whole word): «Tiba-tiba komputer saya terhenti.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "突然（一語）：«Tiba-tiba komputer saya terhenti.»"
+    },
+    {
+      "id": "ms-x16-022",
+      "lang": "ms",
+      "term": "tuduh",
+      "gloss_en": "accuse",
+      "gloss_ja": "非難する、責める",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To accuse: «Saya tidak tuduh Encik.» = I'm not accusing you.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x16"
+        }
+      ],
+      "scene": "stretch-x16",
+      "chapter": 16,
+      "note_ja": "責める、非難する：«Saya tidak tuduh Encik.»＝あなたを責めているのではありません。"
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-x16-f01",
+      "frame": "Saya ___ naik bas ___.",
+      "example": "Saya tersalah naik bas tadi.",
+      "meaning_en": "I got on the wrong bus earlier.",
+      "meaning_ja": "さっき、まちがえて違うバスに乗ってしまいました。",
+      "decoys": [
+        "tertinggal"
+      ]
+    },
+    {
+      "id": "ms-x16-f02",
+      "frame": "___ telefon saya jatuh ke ___.",
+      "example": "Tiba-tiba telefon saya jatuh ke lantai.",
+      "meaning_en": "Suddenly my phone fell on the floor.",
+      "meaning_ja": "突然、電話が床に落ちました。",
+      "decoys": [
+        "sengaja"
+      ]
+    },
+    {
+      "id": "ms-x16-f03",
+      "frame": "Saya ___, sebab kucing itu ___ kaki saya.",
+      "example": "Saya terkejut, sebab kucing itu gigit kaki saya.",
+      "meaning_en": "I got a shock, because the cat bit my foot.",
+      "meaning_ja": "猫に足をかまれて、びっくりしました。",
+      "decoys": [
+        "terkunci"
+      ]
+    },
+    {
+      "id": "ms-x16-f04",
+      "frame": "Saya ___ balik awal, sebab anak saya ___.",
+      "example": "Saya terpaksa balik awal, sebab anak saya demam.",
+      "meaning_en": "I had to go home early, because my child has a fever.",
+      "meaning_ja": "子どもが熱を出したので、早く帰らざるをえませんでした。",
+      "decoys": [
+        "tersalah"
+      ]
+    },
+    {
+      "id": "ms-x16-f05",
+      "frame": "Ada ___ kopi di ___ saya.",
+      "example": "Ada kesan kopi di baju saya.",
+      "meaning_en": "There's a coffee stain on my shirt.",
+      "meaning_ja": "シャツにコーヒーのしみがあります。",
+      "decoys": [
+        "habuk"
+      ]
+    },
+    {
+      "id": "ms-x16-f06",
+      "frame": "Jangan ___ dia. Dia tidak ___.",
+      "example": "Jangan salahkan dia. Dia tidak sengaja.",
+      "meaning_en": "Don't blame him. He didn't mean it.",
+      "meaning_ja": "彼を責めないで。わざとじゃないから。",
+      "decoys": [
+        "silap"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "The wrong email",
+    "title_ja": "送り先をまちがえたメール",
+    "lines": [
+      {
+        "id": "ms-x16-d01",
+        "speaker": "Encik Rahman",
+        "ms": "Encik Tanaka, kenapa emel itu sampai ke syarikat lain?",
+        "en": "Mr Tanaka, why did that email go to another company?"
+      },
+      {
+        "id": "ms-x16-d02",
+        "speaker": "Tanaka",
+        "ms": "Maaf, Encik. Saya tersalah hantar emel itu.",
+        "en": "I'm sorry. I sent that email to the wrong place by mistake.",
+        "choices": [
+          "Maaf, Encik. Saya sengaja hantar emel itu.",
+          "Maaf, Encik. Emel itu gigit saya."
+        ],
+        "choices_en": [
+          "I'm sorry. I sent that email on purpose.",
+          "I'm sorry. The email bit me."
+        ]
+      },
+      {
+        "id": "ms-x16-d03",
+        "speaker": "Encik Rahman",
+        "ms": "Syarikat itu terkejut. Mereka menelefon saya pagi tadi.",
+        "en": "That company got a shock. They phoned me this morning."
+      },
+      {
+        "id": "ms-x16-d04",
+        "speaker": "Tanaka",
+        "ms": "Ini kesilapan saya. Saya tidak sengaja.",
+        "en": "It's my mistake. I didn't mean to.",
+        "choices": [
+          "Ini bukan kesilapan saya. Komputer saya jatuh.",
+          "Nasib baik! Saya suka kesilapan."
+        ],
+        "choices_en": [
+          "It's not my mistake. My computer fell.",
+          "Lucky! I like mistakes."
+        ]
+      },
+      {
+        "id": "ms-x16-d05",
+        "speaker": "Encik Rahman",
+        "ms": "Saya tidak tuduh Encik. Tetapi apa yang berlaku?",
+        "en": "I'm not accusing you. But what happened?"
+      },
+      {
+        "id": "ms-x16-d06",
+        "speaker": "Tanaka",
+        "ms": "Tiba-tiba komputer saya terhenti. Dua fail tercampur, jadi saya tersalah pilih alamat.",
+        "en": "Suddenly my computer froze. Two files got mixed up, so I picked the wrong address."
+      },
+      {
+        "id": "ms-x16-d07",
+        "speaker": "Encik Rahman",
+        "ms": "Nasib baik emel itu pendek sahaja.",
+        "en": "Luckily that email was only a short one."
+      },
+      {
+        "id": "ms-x16-d08",
+        "speaker": "Tanaka",
+        "ms": "Saya akan menelefon syarikat itu dan minta maaf.",
+        "en": "I'll phone that company and apologise."
+      },
+      {
+        "id": "ms-x16-d09",
+        "speaker": "Encik Rahman",
+        "ms": "Terpulang kepada Encik. Tetapi jangan buat kesilapan ini lagi, ya.",
+        "en": "That's up to you. But don't make this mistake again, all right?",
+        "choices": [
+          "Terpulang kepada Encik. Tolong hantar emel itu ke semua syarikat.",
+          "Tidak perlu. Saya sudah jerit kepada mereka."
+        ],
+        "choices_en": [
+          "That's up to you. Please send that email to every company.",
+          "No need. I've already shouted at them."
+        ]
+      },
+      {
+        "id": "ms-x16-d10",
+        "speaker": "(Narrator)",
+        "ms": "Petang itu.",
+        "en": "That afternoon."
+      },
+      {
+        "id": "ms-x16-d11",
+        "speaker": "Cik Mei Ling",
+        "ms": "Encik Tanaka, Encik penat? Keadaan di pejabat teruk hari ini?",
+        "en": "Mr Tanaka, are you tired? Was it a bad day at the office?"
+      },
+      {
+        "id": "ms-x16-d12",
+        "speaker": "Tanaka",
+        "ms": "Teruk sekali. Saya tersalah hantar emel, dan kemudian kopi saya tertumpah!",
+        "en": "Terrible. I sent an email to the wrong place, and then I spilt my coffee!",
+        "choices": [
+          "Bagus sekali. Hari ini saya tidak ada kesilapan.",
+          "Teruk sekali. Saya gigit komputer saya."
+        ],
+        "choices_en": [
+          "Very good. I made no mistakes today.",
+          "Terrible. I bit my computer."
+        ]
+      },
+      {
+        "id": "ms-x16-d13",
+        "speaker": "Cik Mei Ling",
+        "ms": "Jangan risau. Semua orang buat silap.",
+        "en": "Don't worry. Everyone makes mistakes."
+      },
+      {
+        "id": "ms-x16-d14",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih. Esok saya akan semak alamat dua kali.",
+        "en": "Thank you. Tomorrow I'll check the address twice."
+      }
+    ]
+  }
+}

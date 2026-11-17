@@ -1,0 +1,38 @@
+{
+ "chapter": 9,
+ "place": "Ch9 (extension)",
+ "changes": [],
+ "new": [
+  {
+   "lid": "L-1781",
+   "row": 1782,
+   "values": [
+    "L-1781",
+    "belon",
+    "balloon",
+    "風船",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x09-019",
+    "Ch9 (extension)",
+    "social · band 1",
+    "Yes",
+    "balloon",
+    "Kata-Kata placement batch 2 (Sam approved 17 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: festival decorations (Ch9); a look-alike root since the rules of 17 Nov (Cikgu Sensai 7e436f3), so no longer a ber- shape; the proposal had it in Jambatan · Events and outings. Hanashishou: 1 scene; e.g. «Jess, tolong buat belon dan konfeti.» (trio_surprise_party).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x09-019": {
+   "lid": "L-1781"
+  }
+ }
+}
