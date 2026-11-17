@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+- **Teacher mode, memory cards, progress reports and student slots (17 Nov 2026).** Report: [docs/TEACHER-MODE-report.md](docs/TEACHER-MODE-report.md); guide: [docs/teacher-guide.md](docs/teacher-guide.md).
+  - Part 1: «kasihan» / «kesian» register note (⚡ 17 cards and line), «Spoken: tapi» on c05 «tetapi / tapi», active Japanese on «tetapkan» / «letupkan», `docs/review/stretch-lines.csv` (635 rows) for the native read.
+  - Part 2: 🎓 Teacher mode (Settings, off by default): projector layout from 844×390 to 1920×1080, class launcher on Home, teacher-paced slides (Next, Back, Reveal, numbered choices, translations toggle; → Space PageDown / ← PageUp / 1-4 / R / H / P and clickers), dialogues as a class scene, everything open, class runs that never change learner data, wake lock, full screen, iPhone Home Screen hint. Manifest orientation `any`.
+  - Part 3: 💾 memory cards (the savefile as `katakata-card_<name>_<date>.json`, auto-save before any load, never merged into a different student), a mistake log in every game (newest 300, counts per item), 📄 progress reports (self-contained HTML with the report JSON inside), 👥 student slots in teacher mode, and a Teacher Desk that reads cards and reports, with a per-student view and mistakes across the class.
+  - Tests: unit 210 to 240; new e2e `teacher.cjs` (61) and `cards.cjs` (26).
+
 - **Build B3: Sam's answers to the B2 questions, his ⚡ fixes, and placement batch 2's Jambatan words (17 Nov 2026), 66 to 67 packs, 1764 to 1981 cards.** Report: [docs/BUILD-B3-report.md](docs/BUILD-B3-report.md).
   - «satu per satu»: L-1532 is now «satu per satu» (card ms-x03-022, note: «satu-satu» is also heard); L-1638 retired, ms-x03-023 moves to ms-x03-022 with its schedule.
   - Line notes show under their own line: lines that are not reply steps follow the previous answer (or lead the first step), each with its note.

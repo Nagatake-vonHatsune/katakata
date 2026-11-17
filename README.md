@@ -9,7 +9,7 @@ device only when the learner exports it.
 - Student app: `/` (Japanese, English or Malay interface; the first screen asks, and the 🌐 button on every screen changes it)
 - Settings: `/#/settings` (language, display, sound). Records (`/#/rekod`) holds stamps, progress and the savefile.
 - Language links for sharing: `/?lang=ja`, `/?lang=en`, `/?lang=ms`
-- Teacher Desk: `/teacher/` (drop in student files, merge questions, print the class agenda)
+- Teacher Desk: `/teacher/` (drop in student files, memory cards or progress reports; merge questions, mistakes across the class, a per-student view, print the class agenda)
 - Version **0.10.0**, a 1.0 release candidate: see [docs/RELEASE-1.0.md](docs/RELEASE-1.0.md) and [CHANGELOG.md](CHANGELOG.md).
 
 With the English or Malay interface, word meanings are shown in English (the Vocab Bank has English
@@ -33,6 +33,8 @@ and Japanese glosses). Katakana hints only appear in the Japanese interface.
 | 🔥 checkpoints per chapter (class prep, the chapter dialogue passed at 60 % first time, every word known) and the optional ⚡ stage («4 ⚡»: extension words, harder frames with decoy tiles, a dialogue with reply steps, Cari Benda ⚡ where there are pictures; «⚡ soon» where no stage exists yet) | `src/core/progress.ts`, `src/core/session.ts`, `src/views/stretch.ts`, `src/games/reply/` |
 | Points (speed bonus, combo, personal bests; never subtracted) and the 60-second Laju! ⏱️ round | `src/core/score.ts`, `src/views/points.ts`, `src/views/laju.ts` |
 | Colour palettes (Kancil Green, First Sound Cyan, Royal Red Gold, Rebel Blue) and text size S–XL | `src/views/settings.ts`, `src/styles.css` |
+| 🎓 Teacher mode (Settings): projector layout, class launcher, teacher-paced slides with keys and clicker, class runs that never change learner data ([guide](docs/teacher-guide.md), [keys](docs/teacher-mode-keys.md)) | `src/core/teacher.ts`, `src/core/classroom.ts`, `src/views/classroom.ts`, `src/views/teacher.ts` |
+| 💾 Memory cards (savefile), 📄 progress reports (HTML), the mistake log, 👥 student slots (teacher mode) | `src/core/savefile.ts`, `src/core/progressreport.ts`, `src/core/mistakes.ts`, `src/core/slots.ts`, `src/views/memorycard.ts`, `src/views/students.ts` |
 
 Also in: Japanese-first UI with an English toggle, やり方 cards and a `?` button on every activity,
 わからない on every question, no red crosses (misses come back later in the session),
@@ -95,6 +97,8 @@ npx vite build && npx vite preview --port 4173 &
 node tests/e2e/smoke.cjs
 node tests/e2e/fun.cjs     # points, Laju!, palettes, text size
 node tests/e2e/nombor.cjs  # Nombor & Masa (screenshots to docs/nombor-masa/)
+node tests/e2e/teacher.cjs # teacher mode (screenshots to docs/teacher-mode/)
+node tests/e2e/cards.cjs   # memory cards, slots, reports, Teacher Desk (screenshots to docs/teacher-mode/cards/)
 node tests/e2e/stretch.cjs # 🔥 checkpoints, the 60 % dialogue rule, ⚡ soon, every ⚡ stage (screenshots to docs/stretch-stage/)
 ```
 
