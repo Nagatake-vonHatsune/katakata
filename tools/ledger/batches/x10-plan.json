@@ -1,0 +1,611 @@
+{
+ "chapter": 10,
+ "place": "Ch10 (extension)",
+ "changes": [
+  {
+   "lid": "L-1338",
+   "row": 1339,
+   "word": "cerita",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-36",
+     "after": "ms-x10-001"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Talking and explaining",
+     "after": "Ch10 (extension)"
+    }
+   ]
+  }
+ ],
+ "new": [
+  {
+   "lid": "L-1639",
+   "row": 1640,
+   "values": [
+    "L-1639",
+    "minat",
+    "interest",
+    "興味",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x10-002",
+    "Ch10 (extension)",
+    "office · band 1",
+    "Yes",
+    "interest",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: background and hobbies (Ch10): root of «berminat» (Ch10). Hanashishou: 2 scenes; e.g. «Anda tunjuk minat, guna jambatan (\"sebelum saya terlupa\"), dan kembali kepada perkara anda.» (chatty_colleague).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1640",
+   "row": 1641,
+   "values": [
+    "L-1640",
+    "tonton",
+    "watch",
+    "見る（番組・映画を）",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x10-003",
+    "Ch10 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "watch",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: leisure in retelling your day (Ch10). Hanashishou: 2 scenes; e.g. «Saya selalu tonton video dalam tren, jadi saya perlu banyak data.» (phone_plan).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1641",
+   "row": 1642,
+   "values": [
+    "L-1641",
+    "ubah",
+    "change",
+    "変える",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x10-004",
+    "Ch10 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "change",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: root of «berubah» (Ch10). Hanashishou: 2 scenes; e.g. «Anda sopan, tapi anda tak biar \"sikit saja\" ubah faktanya.» (food_allergy).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1642",
+   "row": 1643,
+   "values": [
+    "L-1642",
+    "berada",
+    "be located, be present",
+    "いる、ある（あらたまった言い方）",
+    "verb",
+    "ber-",
+    "ada",
+    "Not yet checked",
+    "",
+    "ms-x10-005",
+    "Ch10 (extension)",
+    "home-condo · band 2",
+    "Yes",
+    "be located, be present",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: ber- (Ch10): where you are in a retelling; ada Ch2. Hanashishou: 1 scene; e.g. «Maaf, saya berada di tempat kerja masa itu.» (ceiling_leak).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1643",
+   "row": 1644,
+   "values": [
+    "L-1643",
+    "berbincang",
+    "discuss",
+    "話し合う",
+    "verb",
+    "ber-",
+    "bincang",
+    "Not yet checked",
+    "",
+    "ms-x10-006",
+    "Ch10 (extension)",
+    "social · band 1",
+    "Yes",
+    "discuss",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: ber- (Ch10): what you did today; bincang Ch10 (extension). Hanashishou: 1 scene; e.g. «Kalau nak berbincang, boleh tempah bilik perbincangan di tingkat atas.» (jinx_library).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1644",
+   "row": 1645,
+   "values": [
+    "L-1644",
+    "berkali-kali",
+    "many times over",
+    "何度も",
+    "adv",
+    "ber-",
+    "kali",
+    "Not yet checked",
+    "",
+    "ms-x10-007",
+    "Ch10 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "many times over",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: ber- (Ch10), frequency in a retelling; kali is placed earlier. Hanashishou: 1 scene; e.g. «Dua puluh minit kemudian, ada orang tekan hon berkali-kali.» (blocked_car). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1645",
+   "row": 1646,
+   "values": [
+    "L-1645",
+    "bersebelahan",
+    "next to each other",
+    "隣り合った",
+    "adj",
+    "ber-",
+    "sebelah",
+    "Not yet checked",
+    "",
+    "ms-x10-008",
+    "Ch10 (extension)",
+    "social · band 1",
+    "Yes",
+    "next to each other",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: ber- (Ch10): «rumah kami bersebelahan»; sebelah Ch7. Hanashishou: 1 scene; e.g. «Maaf, tiada barisan tengah dengan empat tempat bersebelahan.» (trio_movie_night).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1646",
+   "row": 1647,
+   "values": [
+    "L-1646",
+    "bertulis",
+    "written",
+    "書かれた、書面の",
+    "adj",
+    "ber-",
+    "tulis",
+    "Not yet checked",
+    "",
+    "ms-x10-009",
+    "Ch10 (extension)",
+    "social · band 1",
+    "Yes",
+    "written",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: ber- (Ch10): «notis bertulis»; tulis Ch4. Hanashishou: 1 scene; e.g. «Saya mahu pengurus, tukang masak, dan permohonan maaf bertulis.» (azula_restaurant).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1647",
+   "row": 1648,
+   "values": [
+    "L-1647",
+    "berubah",
+    "change (intransitive)",
+    "変わる",
+    "verb",
+    "ber-",
+    "ubah",
+    "Not yet checked",
+    "",
+    "ms-x10-010",
+    "Ch10 (extension)",
+    "office · band 1",
+    "Yes",
+    "change (intransitive)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: ber- (Ch10); ubah Ch10 (extension). Hanashishou: 1 scene; e.g. «Saya boleh hantar draf dulu, tapi angka mungkin berubah.» (report_deadline).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1648",
+   "row": 1649,
+   "values": [
+    "L-1648",
+    "berulang",
+    "repeat, recur",
+    "繰り返す、再発する",
+    "verb",
+    "ber-",
+    "ulang",
+    "Not yet checked",
+    "",
+    "ms-x10-011",
+    "Ch10 (extension)",
+    "home-condo · band 2",
+    "Yes",
+    "repeat, recur",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: ber- (Ch10); ulang Ch4 (extension). Hanashishou: 1 scene; e.g. «Ia takkan berulang.» (blocked_car).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1649",
+   "row": 1650,
+   "values": [
+    "L-1649",
+    "bidang",
+    "field (of work)",
+    "分野",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x10-012",
+    "Ch10 (extension)",
+    "social · band 2",
+    "Yes",
+    "field (of work)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: your background (Ch10): «bidang kerja saya». Hanashishou: 1 scene; e.g. «Buat masa ini saya dalam bidang jualan, kebanyakannya dengan pelanggan perniagaan kecil.» (azula_interview).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1650",
+   "row": 1651,
+   "values": [
+    "L-1650",
+    "bincang",
+    "discuss",
+    "話し合う",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x10-013",
+    "Ch10 (extension)",
+    "social · band 1",
+    "Yes",
+    "discuss",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: root of «berbincang» (Ch10). Hanashishou: 1 scene; e.g. «Saya nak bincang lagi.» (jinx_demo_day).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1651",
+   "row": 1652,
+   "values": [
+    "L-1651",
+    "kaji",
+    "study (\"ulang kaji\" = revise)",
+    "研究する（«ulang kaji» 復習する）",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x10-014",
+    "Ch10 (extension)",
+    "social · band 1",
+    "Yes",
+    "study (\"ulang kaji\" = revise)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: your background and studies (Ch10). Hanashishou: 1 scene; e.g. «Orang tengah ulang kaji.» (jinx_library).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1652",
+   "row": 1653,
+   "values": [
+    "L-1652",
+    "kajian",
+    "study, research",
+    "研究",
+    "noun",
+    "-an",
+    "kaji",
+    "Not yet checked",
+    "",
+    "ms-x10-015",
+    "Ch10 (extension)",
+    "social · band 1",
+    "Yes",
+    "study, research",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: your background and studies (Ch10); kaji Ch10 (extension). Hanashishou: 1 scene; e.g. «Puan buat kajian.» (azula_group_project).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1653",
+   "row": 1654,
+   "values": [
+    "L-1653",
+    "kelemahan",
+    "weakness",
+    "弱点",
+    "noun",
+    "ke-an",
+    "lemah",
+    "Not yet checked",
+    "",
+    "ms-x10-016",
+    "Ch10 (extension)",
+    "social · band 1",
+    "Yes",
+    "weakness",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: your background (Ch10): strengths and weaknesses; lemah Ch6 (extension). Hanashishou: 1 scene; e.g. «Apakah kelemahan terbesar anda?» (azula_interview).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1654",
+   "row": 1655,
+   "values": [
+    "L-1654",
+    "kilang",
+    "factory",
+    "工場",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x10-017",
+    "Ch10 (extension)",
+    "social · band 1",
+    "Yes",
+    "factory",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: your background (Ch10): «Saya bekerja di kilang». Hanashishou: 1 scene; e.g. «Saya pun nak cepat, tapi kilang itu kilang.» (jinx_late_parts).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1655",
+   "row": 1656,
+   "values": [
+    "L-1655",
+    "perniagaan",
+    "business",
+    "ビジネス、商売",
+    "noun",
+    "pe-an",
+    "niaga",
+    "Not yet checked",
+    "",
+    "ms-x10-018",
+    "Ch10 (extension)",
+    "social · band 2",
+    "Yes",
+    "business",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: your background (Ch10): «Saya ada perniagaan sendiri». Hanashishou: 1 scene; e.g. «Buat masa ini saya dalam bidang jualan, kebanyakannya dengan pelanggan perniagaan kecil.» (azula_interview). root «niaga» not in ledger: taught as a whole word.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1656",
+   "row": 1657,
+   "values": [
+    "L-1656",
+    "ponteng",
+    "skip (class), play truant",
+    "さぼる",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x10-019",
+    "Ch10 (extension)",
+    "social · band 1",
+    "Yes",
+    "skip (class), play truant",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: retelling school days (Ch10). Hanashishou: 1 scene; e.g. «Okey, saya ponteng latihan.» (wedding_invite).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1657",
+   "row": 1658,
+   "values": [
+    "L-1657",
+    "serumah",
+    "housemate; in the same house",
+    "同じ家に住む（人）",
+    "noun",
+    "se-",
+    "rumah",
+    "Not yet checked",
+    "",
+    "ms-x10-020",
+    "Ch10 (extension)",
+    "social · band 1",
+    "Yes",
+    "housemate; in the same house",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: your background (Ch10): «kawan serumah»; rumah Ch2. Hanashishou: 1 scene; e.g. «Ada mesej dari Ken, kawan serumah anda: \"Kalau pergi mamak, tapau roti telur satu untuk aku ya 🙏\"» (mamak_lepak). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1658",
+   "row": 1659,
+   "values": [
+    "L-1658",
+    "zaman",
+    "era, period",
+    "時代、〜のころ",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x10-021",
+    "Ch10 (extension)",
+    "social · band 1",
+    "Yes",
+    "era, period",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: your background (Ch10): «zaman sekolah». Hanashishou: 1 scene; e.g. «Mereka tak perlu tahu zaman kanak-kanak awak.» (azula_interview).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x10-001": {
+   "lid": "L-1338",
+   "moved_from": "ms-j-social-36"
+  },
+  "ms-x10-002": {
+   "lid": "L-1639"
+  },
+  "ms-x10-003": {
+   "lid": "L-1640"
+  },
+  "ms-x10-004": {
+   "lid": "L-1641"
+  },
+  "ms-x10-005": {
+   "lid": "L-1642"
+  },
+  "ms-x10-006": {
+   "lid": "L-1643"
+  },
+  "ms-x10-007": {
+   "lid": "L-1644"
+  },
+  "ms-x10-008": {
+   "lid": "L-1645"
+  },
+  "ms-x10-009": {
+   "lid": "L-1646"
+  },
+  "ms-x10-010": {
+   "lid": "L-1647"
+  },
+  "ms-x10-011": {
+   "lid": "L-1648"
+  },
+  "ms-x10-012": {
+   "lid": "L-1649"
+  },
+  "ms-x10-013": {
+   "lid": "L-1650"
+  },
+  "ms-x10-014": {
+   "lid": "L-1651"
+  },
+  "ms-x10-015": {
+   "lid": "L-1652"
+  },
+  "ms-x10-016": {
+   "lid": "L-1653"
+  },
+  "ms-x10-017": {
+   "lid": "L-1654"
+  },
+  "ms-x10-018": {
+   "lid": "L-1655"
+  },
+  "ms-x10-019": {
+   "lid": "L-1656"
+  },
+  "ms-x10-020": {
+   "lid": "L-1657"
+  },
+  "ms-x10-021": {
+   "lid": "L-1658"
+  }
+ }
+}

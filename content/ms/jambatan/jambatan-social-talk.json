@@ -150,24 +150,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-36",
-      "lang": "ms",
-      "term": "cerita",
-      "gloss_en": "story; to tell, chat",
-      "gloss_ja": "話、物語、話す",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: \"Biasa\" saja? Cerita la sikit! In 13 Hanashishou scenes: A sore throat, Calling in sick, Jom lepak!, Lift chat and 9 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-talk"
-        }
-      ],
-      "scene": "dunia-jambatan-social-talk",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-40",
       "lang": "ms",
       "term": "begitu",

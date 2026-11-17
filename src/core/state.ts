@@ -38,6 +38,8 @@ export const MOVED_CARDS: Record<string, string> = {
   'ms-j-social-43': 'ms-x09-001', // terima (L-1349)
   // Build B2 (17 Nov 2026): «hebat» promoted to ⚡ 5 (Sam), after ⚡ 5's 31 cards.
   'ms-j-social-54': 'ms-x05-032', // hebat (L-1369)
+  // Build B2 (17 Nov 2026): promoted to the ⚡ stages of chapters 10 to 17.
+  'ms-j-social-36': 'ms-x10-001', // cerita (L-1338)
 };
 
 export function moveCards(srs: Record<string, SrsState>, moved: Record<string, string> = MOVED_CARDS): Record<string, SrsState> {

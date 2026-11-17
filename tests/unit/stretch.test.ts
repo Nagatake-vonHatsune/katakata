@@ -185,11 +185,23 @@ describe('the 60 % dialogue rule (Sam, 17 Nov 2026)', () => {
   });
 });
 
+/** Run fn as if chapter n had no ⚡ pack (Build B2 gives every chapter one, so "⚡ soon" is tested with a pack taken out). */
+function withoutPack<T>(n: number, fn: () => T): T {
+  const i = content.stretch.findIndex((x) => x.chapter === n);
+  const [x] = i >= 0 ? content.stretch.splice(i, 1) : [];
+  try {
+    return fn();
+  } finally {
+    if (x) content.stretch.splice(i, 0, x);
+  }
+}
+
 describe('⚡ unlock', () => {
   it('opens when every flame is lit, only for a chapter with a ⚡ stage', () => {
     expect(stretchOpen(4, defaultState())).toBe(false);
     expect(stretchOpen(4, finished(4))).toBe(true);
-    expect(stretchOpen(10, finished(10))).toBe(false);
+    expect(stretchOpen(10, finished(10))).toBe(true);
+    withoutPack(10, () => expect(stretchOpen(10, finished(10))).toBe(false));
   });
   it('the one-time notice is pending until howToSeen stretch-4 is set', () => {
     const s = finished(4);
@@ -216,9 +228,12 @@ describe('⚡ unlock', () => {
     expect(stretchProgress(4, s)).toMatchObject({ done: true, dialogue: { best: 3, total: 5, needed: 3, passed: true } });
   });
   it('"⚡ soon": every 🔥 lit and no ⚡ pack; not before the flames, not for a chapter with a pack', () => {
-    expect(stretchSoon(10, defaultState())).toBe(false);
-    expect(stretchSoon(10, finished(10))).toBe(true);
-    expect(stretchOpen(10, finished(10))).toBe(false);
+    withoutPack(10, () => {
+      expect(stretchSoon(10, defaultState())).toBe(false);
+      expect(stretchSoon(10, finished(10))).toBe(true);
+      expect(stretchOpen(10, finished(10))).toBe(false);
+    });
+    expect(stretchSoon(10, finished(10))).toBe(false);
     expect(stretchSoon(4, finished(4))).toBe(false);
     for (const l of ['en', 'ja', 'ms']) {
       const d = JSON.parse(readFileSync(join(root, `i18n/${l}.json`), 'utf8'));
