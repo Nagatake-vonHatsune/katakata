@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+- **Build B1: Sam's answers to the Build A questions; ⚡ for chapters 1 to 3 and 5 to 9 (17 Nov 2026), 49 to 57 packs, 1453 to 1584 cards.** Report: [docs/BUILD-B1-report.md](docs/BUILD-B1-report.md).
+  - The dialogue 🔥 needs one full play-through with 60 % of its reply steps right on the first try (rounded up; わからない is wrong); the best score per dialogue is kept in `state.dialogues` (schemaVersion stays 1). ⚡ done also needs the ⚡ dialogue at 60 %. The reply step and the summary show the score («3/5 · 3 needed»). Flames already lit stay lit.
+  - Rebel's ⚡ accent is gold (`#876200` / `#f2c04a`), AA tested; the other palettes stay blue. A chapter with every 🔥 lit and no ⚡ pack shows a greyed, non-tappable «⚡ soon».
+  - ⚡ 4: «Wah, seronoknya! Cuti di mana?»; «percutian» labelled formal / written (cards can carry `note_ja` and a 'formal' register chip).
+  - ⚡ 1, 2, 3, 5, 6, 7, 8, 9: 149 extension cards, 46 frames with decoys, 110 dialogue lines with 39 reply steps; Cari Benda ⚡ (a board of six) in ⚡ 5 to 8. Guard: 0 flags.
+  - Ledger: 131 new rows (L-1506 to L-1636) and 18 promoted Jambatan rows, verified; Journal rows 231 to 240. «pasar raya» held back (checker quirk). Jambatan 339 to 321 cards.
+  - Tests: unit 185 to 196; `tests/e2e/stretch.cjs` 28 to 62 checks.
+
 - **Nombor & Masa: Sam's answers of 15 Nov 2026 applied; rules to Cikgu Sensai `d8612e5` (17 Nov 2026).** Report: [docs/NOMBOR-MASA-answers-report.md](docs/NOMBOR-MASA-answers-report.md).
   - Day parts: tengah malam 00:00; malam 00:01 to 00:59 and awal pagi 01:00 to 04:59 (pagi also accepted); pagi 05:00 to 11:59; tengah hari 12:00 to 12:59; petang 13:00 to 18:59; malam 19:00 to 23:59. «kurang suku» not used.
   - «hari bulan» (two words, number first; Sam's spoken order shown as Spoken); fractions written joined, «per tiga» no longer accepted, with the learner note "read it as 1 per 3, i.e. 1/3"; «minit» optional ("Also fine"); «seringgit» / «satu ringgit» and «sejuta» / «satu juta» both standard; «sifar» the formal 0 in phone numbers.

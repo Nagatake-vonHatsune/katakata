@@ -30,7 +30,7 @@ and Japanese glosses). Katakana hints only appear in the Japanese interface.
 | Teacher Desk: merge, duplicate counts, prep table, weakest words, A4 agenda | `teacher/`, `src/teacher/` |
 | Offline after first visit | service worker generated at build (`src/sw-template.js`) |
 | 話匠へ: hand words on to Hanashishou (stage 3, Jambatan) | `src/core/bridge.ts`, `src/views/jambatan.ts` |
-| 🔥 checkpoints per chapter (class prep, the chapter dialogue played once, every word known) and the optional ⚡ stage («4 ⚡»: extension words, harder frames with decoy tiles, a dialogue with reply steps) | `src/core/progress.ts`, `src/core/session.ts`, `src/views/stretch.ts`, `src/games/reply/` |
+| 🔥 checkpoints per chapter (class prep, the chapter dialogue passed at 60 % first time, every word known) and the optional ⚡ stage («4 ⚡»: extension words, harder frames with decoy tiles, a dialogue with reply steps, Cari Benda ⚡ where there are pictures; «⚡ soon» where no stage exists yet) | `src/core/progress.ts`, `src/core/session.ts`, `src/views/stretch.ts`, `src/games/reply/` |
 | Points (speed bonus, combo, personal bests; never subtracted) and the 60-second Laju! ⏱️ round | `src/core/score.ts`, `src/views/points.ts`, `src/views/laju.ts` |
 | Colour palettes (Kancil Green, First Sound Cyan, Royal Red Gold, Rebel Blue) and text size S–XL | `src/views/settings.ts`, `src/styles.css` |
 
@@ -74,8 +74,8 @@ affix_tag, note, links[], scene, chapter, image`.
   - link check (targets exist; pair links only to same or earlier chapter)
 - ⚡ stages: `content/ms/stretch/xNN.json` (kind `stretch`), built by `python3 -I tools/build_stretch.py N` from the ledger
   rows placed «ChN (extension)» and the hand-written `content/source/stretch/xNN.json`; shipped through `live_stretch` in
-  `tools/import-overrides.json`. Only ⚡ 4 exists (pilot, 15 Nov 2026). The guard checks a ⚡ pack at its chapter with only its own
-  extension rows placed, every check blocking; core packs read extension rows as no row. See [docs/BUILD-A-report.md](docs/BUILD-A-report.md).
+  `tools/import-overrides.json`. ⚡ 1 to 9 exist (⚡ 4 pilot, 15 Nov 2026; the rest Build B1, 17 Nov 2026). The guard checks a ⚡ pack at its chapter with only its own
+  extension rows placed, every check blocking; core packs read extension rows as no row. See [docs/BUILD-A-report.md](docs/BUILD-A-report.md) and [docs/BUILD-B1-report.md](docs/BUILD-B1-report.md).
 - Recorded audio (plan B for phones without a Malay voice): `public/audio/ms/<card-id>.mp3`
 
 **All Japanese text (glosses, frame meanings, scene titles, interface) is a Claude draft and needs a native check before students see it. The Malay interface (`i18n/ms.json`) and the v3/v4 scenes are Claude drafts too.**
@@ -95,7 +95,7 @@ npx vite build && npx vite preview --port 4173 &
 node tests/e2e/smoke.cjs
 node tests/e2e/fun.cjs     # points, Laju!, palettes, text size
 node tests/e2e/nombor.cjs  # Nombor & Masa (screenshots to docs/nombor-masa/)
-node tests/e2e/stretch.cjs # 🔥 checkpoints and ⚡ 4 (screenshots to docs/stretch-stage/)
+node tests/e2e/stretch.cjs # 🔥 checkpoints, the 60 % dialogue rule, ⚡ soon, every ⚡ stage (screenshots to docs/stretch-stage/)
 ```
 
 ## Deploy (Cloudflare Workers static assets, free plan)
