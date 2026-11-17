@@ -29,7 +29,7 @@ SNAPSHOT = ROOT / "content/ledger/malay-ledger.csv"
 COLS = "ABCDEFGHIJKLMNOPQRST"
 J, K = 9, 10
 ORIGIN = "Kata-Kata placement batch 2 (Sam approved 15 Nov)"
-DATE = "2026-11-15"
+DATE = "2026-11-17"  # Build B1 (chapters 1 to 3 and 5 to 9); the x04 plan of 15 Nov keeps its own date
 BY = "Claude (Sam approved)"
 
 
@@ -83,7 +83,8 @@ def plan(chapter, proposal, hana):
         if r["flags"]:
             note += f" {r['flags']}."
         values = [lid, r["word"], r["meaning (English)"], r["meaning (Japanese draft)"], r["POS"], r["affix tag"], r["root"],
-                  "Not yet checked", "", card(n), place, hs, "Yes" if m else "", "", ORIGIN, "Draft", "KD4 check", note, DATE, BY]
+                  "Not yet checked", "", card(n), place, hs, "Yes" if m else "", r["meaning (English)"] if m else "", ORIGIN, "Draft",
+                  "KD4 check", note, DATE, BY]  # column N (Hanashishou meaning): the English meaning (Sam, 17 Nov 2026)
         assert len(values) == len(header) == 20
         out["new"].append({"lid": lid, "row": last + 2 + i, "values": values})
         out["cards"][card(n)] = {"lid": lid}

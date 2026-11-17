@@ -1,0 +1,206 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x01",
+  "chapter": 1,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Salam dan Sapaan",
+    "en": "Greetings",
+    "ja": "あいさつ"
+  },
+  "cards": [
+    {
+      "id": "ms-x01-001",
+      "lang": "ms",
+      "term": "saudari",
+      "gloss_en": "Miss, Ms (formal, in letters)",
+      "gloss_ja": "〜さん（女性、あらたまった呼びかけ）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Formal: Miss / Ms, or a formal «you» for a woman, in letters, speeches and formal meetings. In everyday talk, say «Cik» or «Puan».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x01"
+        }
+      ],
+      "scene": "stretch-x01",
+      "chapter": 1,
+      "note_ja": "改まった言い方：女性への敬称、または改まった「あなた」。手紙、スピーチ、公式の場で使います。ふだんの会話では «Cik» や «Puan»。",
+      "register": "formal"
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-x01-f01",
+      "frame": "Selamat ___, ___. Apa khabar?",
+      "example": "Selamat petang, saudari. Apa khabar?",
+      "meaning_en": "Good afternoon, Miss. How are you?",
+      "meaning_ja": "こんにちは。お元気ですか。（改まった言い方）",
+      "decoys": [
+        "pula"
+      ]
+    },
+    {
+      "id": "ms-x01-f02",
+      "frame": "Saya ___ baik, terima kasih. ___ pula?",
+      "example": "Saya pun baik, terima kasih. Puan pula?",
+      "meaning_en": "I'm fine too, thank you. And you?",
+      "meaning_ja": "私も元気です、ありがとうございます。あなたは？",
+      "decoys": [
+        "tidak"
+      ]
+    },
+    {
+      "id": "ms-x01-f03",
+      "frame": "Selamat ___, Cik Mei Ling. Hati-hati!",
+      "example": "Selamat jalan, Cik Mei Ling. Hati-hati!",
+      "meaning_en": "Goodbye, Ms Mei Ling (you are leaving). Take care on the way!",
+      "meaning_ja": "（帰る人に）さようなら、メイリンさん。気をつけて！",
+      "decoys": [
+        "pagi"
+      ]
+    },
+    {
+      "id": "ms-x01-f04",
+      "frame": "Maaf, ___, saya minta diri dulu. Jumpa ___ ___.",
+      "example": "Maaf, Puan, saya minta diri dulu. Jumpa esok pagi.",
+      "meaning_en": "Excuse me, I'll be going now. See you tomorrow morning.",
+      "meaning_ja": "すみません、お先に失礼します。また明日の朝。",
+      "decoys": [
+        "pula"
+      ]
+    },
+    {
+      "id": "ms-x01-f05",
+      "frame": "Selamat ___, ___. Jaga diri, ya!",
+      "example": "Selamat malam, Pak cik. Jaga diri, ya!",
+      "meaning_en": "Good night, uncle. Take care of yourself!",
+      "meaning_ja": "おやすみなさい、おじさん。体に気をつけてね！",
+      "decoys": [
+        "minta"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "A day at the office",
+    "title_ja": "会社の一日",
+    "lines": [
+      {
+        "id": "ms-x01-d01",
+        "speaker": "Encik Rahman",
+        "ms": "Selamat pagi, Encik Tanaka! Selamat pagi, Cik Mei Ling!",
+        "en": "Good morning, Mr Tanaka! Good morning, Ms Mei Ling!"
+      },
+      {
+        "id": "ms-x01-d02",
+        "speaker": "Tanaka",
+        "ms": "Selamat pagi, Encik Rahman. Apa khabar?",
+        "en": "Good morning, Mr Rahman. How are you?",
+        "choices": [
+          "Selamat malam, Encik Rahman. Jumpa esok!",
+          "Sama-sama, Encik Rahman."
+        ],
+        "choices_en": [
+          "Good night, Mr Rahman. See you tomorrow!",
+          "You're welcome, Mr Rahman."
+        ]
+      },
+      {
+        "id": "ms-x01-d03",
+        "speaker": "Encik Rahman",
+        "ms": "Khabar baik, terima kasih. Encik pula?",
+        "en": "I'm fine, thank you. And you?"
+      },
+      {
+        "id": "ms-x01-d04",
+        "speaker": "Tanaka",
+        "ms": "Saya pun baik, terima kasih.",
+        "en": "I'm fine too, thank you.",
+        "choices": [
+          "Sama-sama. Saya minta diri dulu.",
+          "Maaf, tumpang tanya, Encik."
+        ],
+        "choices_en": [
+          "You're welcome. I'll be going now.",
+          "Excuse me, may I ask something?"
+        ]
+      },
+      {
+        "id": "ms-x01-d05",
+        "speaker": "Encik Rahman",
+        "ms": "Baik. Apa khabar, saudari?",
+        "en": "Good. And how are you, Ms Mei Ling? (formal)"
+      },
+      {
+        "id": "ms-x01-d06",
+        "speaker": "Cik Mei Ling",
+        "ms": "Khabar baik, Encik. Terima kasih.",
+        "en": "I'm fine. Thank you."
+      },
+      {
+        "id": "ms-x01-d07",
+        "speaker": "(Narrator)",
+        "ms": "Petang.",
+        "en": "Evening."
+      },
+      {
+        "id": "ms-x01-d08",
+        "speaker": "Cik Mei Ling",
+        "ms": "Maaf, Encik Rahman. Saya minta diri dulu.",
+        "en": "Excuse me, Mr Rahman. I'll be going now."
+      },
+      {
+        "id": "ms-x01-d09",
+        "speaker": "Encik Rahman",
+        "ms": "Baik. Terima kasih, saudari. Jaga diri.",
+        "en": "All right. Thank you, Ms Mei Ling. Take care.",
+        "choices": [
+          "Baik. Selamat datang, saudari.",
+          "Selamat pagi, saudari. Apa khabar?"
+        ],
+        "choices_en": [
+          "All right. Welcome, Ms Mei Ling.",
+          "Good morning, Ms Mei Ling. How are you?"
+        ]
+      },
+      {
+        "id": "ms-x01-d10",
+        "speaker": "Cik Mei Ling",
+        "ms": "Sama-sama, Encik. Jumpa esok!",
+        "en": "You're welcome. See you tomorrow!"
+      },
+      {
+        "id": "ms-x01-d11",
+        "speaker": "Tanaka",
+        "ms": "Selamat jalan, Cik Mei Ling. Hati-hati!",
+        "en": "Goodbye, Ms Mei Ling. Take care on the way!",
+        "choices": [
+          "Selamat tinggal, Cik Mei Ling. Hati-hati!",
+          "Selamat datang, Cik Mei Ling!"
+        ],
+        "choices_en": [
+          "Goodbye, Ms Mei Ling (said by the one who leaves). Take care!",
+          "Welcome, Ms Mei Ling!"
+        ]
+      },
+      {
+        "id": "ms-x01-d12",
+        "speaker": "Cik Mei Ling",
+        "ms": "Terima kasih, Encik Tanaka. Selamat tinggal!",
+        "en": "Thank you, Mr Tanaka. Goodbye!",
+        "choices": [
+          "Terima kasih, Encik Tanaka. Selamat jalan!",
+          "Selamat pagi, Encik Tanaka!"
+        ],
+        "choices_en": [
+          "Thank you, Mr Tanaka. Goodbye (said to the one who leaves)!",
+          "Good morning, Mr Tanaka!"
+        ]
+      }
+    ]
+  }
+}

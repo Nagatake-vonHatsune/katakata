@@ -150,7 +150,7 @@ export function renderStretch(root: HTMLElement, chapter: number, nav: StretchNa
             'section',
             { class: 'card-box' },
             h('h3', null, t('stretch.dialogue', { n: replies.length })),
-            h('p', { class: 'muted small', lang: 'ms' }, x.scenario.lines.map((l) => l.speaker).filter((v, i, a) => a.indexOf(v) === i).join(', ')),
+            h('p', { class: 'muted small', lang: 'ms' }, x.scenario.lines.map((l) => l.speaker).filter((v, i, a) => a.indexOf(v) === i && !v.startsWith('(')).join(', ')),
             h(
               'p',
               { class: 'small dialogue-score' },

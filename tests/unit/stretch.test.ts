@@ -45,17 +45,29 @@ function finished(chapter: number, s: AppState = defaultState()): AppState {
 }
 
 describe('⚡ content', () => {
-  it('ships ⚡ 4 only: 19 extension cards, 6 frames with decoys, 14 dialogue lines with 5 reply steps', () => {
-    expect(content.stretch.map((x) => x.id)).toEqual(['x04']);
+  it('ships the live ⚡ packs; ⚡ 4 has 19 extension cards, 6 frames with decoys, 14 dialogue lines with 5 reply steps', () => {
+    const live = (JSON.parse(readFileSync(join(root, 'tools/import-overrides.json'), 'utf8')).live_stretch as string[]).slice().sort();
+    expect(content.stretch.map((x) => x.id).sort()).toEqual(live);
     expect(x04.cards).toHaveLength(19);
-    expect(x04.cards.map((c) => c.id)).toEqual(Array.from({ length: 19 }, (_, i) => `ms-x04-${String(i + 1).padStart(3, '0')}`));
     expect(x04.frames).toHaveLength(6);
-    for (const f of x04.frames) {
-      expect(f.decoys!.length, f.id).toBeGreaterThan(0);
-      for (const d of f.decoys!) expect(tiles(f.example), f.id).not.toContain(d);
-    }
     expect(x04.scenario.lines).toHaveLength(14);
     expect(stretchReplyIds(4)).toHaveLength(5);
+  });
+  it('every ⚡ pack: sequential card IDs, 4 to 6 frames with decoys that are no tile, 8 to 14 lines with 3 to 5 reply steps', () => {
+    for (const x of content.stretch) {
+      const n = String(x.chapter).padStart(2, '0');
+      expect(x.cards.map((c) => c.id), x.id).toEqual(Array.from({ length: x.cards.length }, (_, i) => `ms-x${n}-${String(i + 1).padStart(3, '0')}`));
+      expect(x.frames.length, x.id).toBeGreaterThanOrEqual(4);
+      expect(x.frames.length, x.id).toBeLessThanOrEqual(6);
+      for (const f of x.frames) {
+        expect(f.decoys!.length, f.id).toBeGreaterThan(0);
+        for (const d of f.decoys!) expect(tiles(f.example).map((w) => w.replace(/[.,!?]+$/, '')), f.id).not.toContain(d);
+      }
+      expect(x.scenario.lines.length, x.id).toBeGreaterThanOrEqual(8);
+      expect(x.scenario.lines.length, x.id).toBeLessThanOrEqual(14);
+      expect(stretchReplyIds(x.chapter).length, x.id).toBeGreaterThanOrEqual(3);
+      expect(stretchReplyIds(x.chapter).length, x.id).toBeLessThanOrEqual(5);
+    }
   });
   it('keeps ⚡ cards out of chapters, the learning path, Sedia Kelas and prep counts', () => {
     const ids = new Set(x04.cards.map((c) => c.id));

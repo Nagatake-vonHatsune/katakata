@@ -1,0 +1,38 @@
+{
+ "chapter": 1,
+ "place": "Ch1 (extension)",
+ "changes": [],
+ "new": [
+  {
+   "lid": "L-1506",
+   "row": 1507,
+   "values": [
+    "L-1506",
+    "saudari",
+    "Miss, Ms (formal, in letters)",
+    "〜さん（女性、あらたまった呼びかけ）",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x01-001",
+    "Ch1 (extension)",
+    "office · band 1",
+    "Yes",
+    "Miss, Ms (formal, in letters)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: titles (Ch1): formal title for a woman in letters and speeches. Hanashishou: 1 scene; e.g. «Saya amat berbesar hati atas kerjasama dan budi baik saudari.» (report_deadline). formal.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x01-001": {
+   "lid": "L-1506"
+  }
+ }
+}
