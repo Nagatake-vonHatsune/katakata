@@ -2,7 +2,14 @@ import '../styles.css';
 import './teacher.css';
 import type { TeacherReport } from '../core/report';
 import { button, confirmDialog, h, mount, toast } from '../core/ui';
-import { addReports, allContentReports, groupQuestions, weakAcrossClass } from './merge';
+import { addReports, allContentReports, groupQuestions, mistakesAcrossClass, weakAcrossClass } from './merge';
+import { readStudentFile } from './files';
+import { isLang, setLang, t } from '../core/i18n';
+
+// New Teacher Desk text is translated (en, ja, ms): ?lang=ja or ?lang=ms; English by default, like the rest of the Desk.
+const deskLang = new URLSearchParams(location.search).get('lang');
+setLang(isLang(deskLang) ? deskLang : 'en');
+let selected: string | null = null;
 
 const KEY = 'katakata-teacher-desk';
 const root = document.getElementById('desk')!;
@@ -26,11 +33,9 @@ async function load(files: File[]): Promise<void> {
   const parsed: unknown[] = [];
   let bad = 0;
   for (const f of files) {
-    try {
-      parsed.push(JSON.parse(await f.text()));
-    } catch {
-      bad++;
-    }
+    const r = await readStudentFile(await f.text());
+    if (r.ok) parsed.push(r.report);
+    else bad++;
   }
   const res = addReports(reports, parsed);
   reports = res.reports;
@@ -50,14 +55,16 @@ function render(): void {
   const groups = groupQuestions(reports);
   const weak = weakAcrossClass(reports).slice(0, 15);
   const contentReports = allContentReports(reports);
+  const classMistakes = mistakesAcrossClass(reports).slice(0, 15);
   const chapters = [...new Set(reports.flatMap((r) => (r.progress ?? []).map((p) => p.chapter)))].sort((a, b) => a - b);
-  const input = h('input', { type: 'file', accept: '.json,application/json', multiple: true, class: 'visually-hidden', id: 'files' }) as HTMLInputElement;
+  const input = h('input', { type: 'file', accept: '.json,.html,.htm,.katakata,application/json,text/html', multiple: true, class: 'visually-hidden', id: 'files' }) as HTMLInputElement;
   input.addEventListener('change', () => void load(Array.from(input.files ?? [])));
   const drop = h(
     'label',
     { class: 'drop', for: 'files' },
     h('b', null, 'Drop student files here'),
     h('span', { class: 'muted small' }, 'or tap to choose: katakata_<name>_<date>.json (any number at once)'),
+    h('span', { class: 'muted small' }, t('desk.accepts')),
     input,
   );
   drop.addEventListener('dragover', (e) => {
@@ -122,7 +129,12 @@ function render(): void {
                     h(
                       'tr',
                       null,
-                      h('td', null, r.student),
+                      h(
+                        'td',
+                        null,
+                        h('button', { class: 'linklike desk-student' + (selected === r.student ? ' on' : ''), type: 'button', 'aria-pressed': String(selected === r.student), onclick: () => ((selected = selected === r.student ? null : r.student), render()) }, r.student),
+                        r.source && r.source !== 'report' ? h('span', { class: 'muted small' }, ` (${t(`desk.source.${r.source}`)})`) : null,
+                      ),
                       h('td', null, r.createdAt.slice(0, 10)),
                       h('td', null, r.minutesThisWeek ?? '—'),
                       chapters.map((c) => {
@@ -139,6 +151,7 @@ function render(): void {
             h('p', { class: 'muted small' }, 'Prep = core words known for that chapter\'s Sedia Kelas (⚡ words are never counted); "ready" also means both frames were built. 🔥 = checkpoints lit (prep, the dialogue passed at 60 % first time, every word known); ⚡ = the optional harder stage is open or done. "—" = not shared.'),
           )
         : null,
+      studentView(reports.find((r) => r.student === selected) ?? null),
       reports.length
         ? h(
             'section',
@@ -182,6 +195,20 @@ function render(): void {
                   h('ol', { class: 'weak' }, weak.map((w) => h('li', null, h('b', { lang: 'ms' }, w.term), ` (${w.gloss}, Ch${w.chapter}) · ${w.students.length} student${w.students.length > 1 ? 's' : ''}`))),
                 )
               : null,
+            classMistakes.length
+              ? h(
+                  'div',
+                  { class: 'agenda-ch desk-class-mistakes' },
+                  h('h3', null, t('desk.class_mistakes')),
+                  h(
+                    'ol',
+                    { class: 'weak' },
+                    classMistakes.map((m) =>
+                      h('li', null, h('b', { lang: 'ms' }, m.text), m.en ? ` (${m.en}${m.chapter ? `, Ch${m.chapter}` : ''})` : '', ` · ${t('desk.students_n', { n: m.students.length })} · ${t('desk.wrong_n', { n: m.count })}`, m.text !== m.right ? h('span', { class: 'muted small' }, ` · ${t('desk.right')}: `, h('span', { lang: 'ms' }, m.right)) : null),
+                    ),
+                  ),
+                )
+              : null,
             contentReports.length
               ? h(
                   'div',
@@ -200,6 +227,43 @@ function render(): void {
         : null,
       h('p', { class: 'muted small no-print' }, 'Answers pack (cikgu-answers.json) arrives in phase 3.'),
     ),
+  );
+}
+
+/** One student's page: next steps, mistakes to review (what they answered, the right answer, the note), weakest words, questions. */
+function studentView(r: TeacherReport | null): HTMLElement | null {
+  if (!r) return null;
+  const mistakes = r.mistakes ?? [];
+  return h(
+    'section',
+    { class: 'card-box desk-student-view' },
+    h('h2', null, t('desk.student_view', { name: r.student })),
+    h('p', { class: 'muted small' }, `${r.createdAt.slice(0, 10)}${r.source ? ` · ${t(`desk.source.${r.source}`)}` : ''}${r.knownWords !== undefined ? ` · ${t('desk.known', { n: r.knownWords })}` : ''}${r.streak !== undefined ? ` · ${t('desk.streak', { n: r.streak })}` : ''}`),
+    r.nextSteps?.length ? h('div', null, h('h3', null, t('rep.next')), h('ol', null, r.nextSteps.map((x) => h('li', null, x)))) : null,
+    h('h3', null, `${t('rep.mistakes')} (${mistakes.length})`),
+    mistakes.length
+      ? h(
+          'ol',
+          { class: 'desk-mistakes' },
+          mistakes.map((m) =>
+            h(
+              'li',
+              null,
+              h('b', { lang: 'ms' }, m.text),
+              m.en ? ` — ${m.en}` : '',
+              h('span', { class: 'muted small' }, ` (${t(`rep.game.${m.game}`)}${m.chapter ? `, Ch${m.chapter}` : ''}, ${m.count}×)`),
+              h('br'),
+              h('span', { class: 'small' }, `${t('rep.you_answered')}: `, m.answers.map((a) => (a === null ? t('rep.dont_know') : a)).join(' · ')),
+              h('br'),
+              h('span', { class: 'small' }, `${t('desk.right')}: `, h('span', { lang: 'ms' }, m.right)),
+              m.note ? h('p', { class: 'muted small' }, m.note) : null,
+            ),
+          ),
+        )
+      : h('p', { class: 'muted' }, r.source === 'report' ? t('desk.no_mistakes_old') : t('rep.mistakes_none')),
+    r.weakest?.length ? h('div', null, h('h3', null, t('rep.weakest')), h('p', { lang: 'ms' }, r.weakest.map((w) => w.term).join(', '))) : null,
+    r.questions?.filter((q) => !q.answered).length ? h('div', null, h('h3', null, t('rep.questions')), h('ul', null, r.questions.filter((q) => !q.answered).map((q) => h('li', null, q.context?.text ? h('b', { lang: 'ms' }, q.context.text + ' ') : null, q.text)))) : null,
+    button(t('common.close'), () => ((selected = null), render()), 'btn btn-ghost no-print'),
   );
 }
 

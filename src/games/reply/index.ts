@@ -8,6 +8,7 @@ import { speak } from '../../core/tts';
 import { add, h } from '../../core/ui';
 import { audioButtons } from '../../views/widgets';
 import type { Game, GameContext, StepResult } from '../game';
+import { logMistake } from '../../core/mistakes';
 
 type ReplyStep = Extract<Step, { kind: 'reply' }>;
 
@@ -48,9 +49,10 @@ function run(step: ReplyStep, ctx: GameContext): Promise<StepResult> {
     let done = false;
     const result = h('div', { class: 'answer', 'aria-live': 'polite' });
     const list = h('div', { class: 'options replies' });
-    const finish = (correct: boolean, chosen?: HTMLButtonElement) => {
+    const finish = (correct: boolean, chosen?: HTMLButtonElement, pick?: string) => {
       if (done) return;
       done = true;
+      if (!correct) logMistake({ id: answer.id, game: 'reply', answer: pick ?? null, right: answer.ms });
       list.querySelectorAll<HTMLButtonElement>('button').forEach((b) => {
         b.disabled = true;
         if (b.dataset.right === '1') b.classList.add(correct ? 'opt-correct' : 'opt-answer');
@@ -72,7 +74,7 @@ function run(step: ReplyStep, ctx: GameContext): Promise<StepResult> {
     };
     for (const o of options) {
       const b = h('button', { class: 'opt opt-reply', type: 'button', lang: 'ms', 'data-right': o.correct ? '1' : '0' }, split(answer.speaker, o.ms).text) as HTMLButtonElement;
-      b.addEventListener('click', () => finish(o.correct, b));
+      b.addEventListener('click', () => finish(o.correct, b, o.ms));
       list.appendChild(b);
     }
     const dk = ctx.dontKnow(() => finish(false));

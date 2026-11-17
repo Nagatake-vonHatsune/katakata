@@ -78,12 +78,13 @@ fs.mkdirSync(OUT, { recursive: true });
   const report = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
   console.log('report file:', download.suggestedFilename(), 'questions:', report.questions?.length, 'minutes included:', 'minutesThisWeek' in report);
 
-  // Savefile export
+  // Savefile export (the 💾 memory card since teacher mode, Sam 17 Nov 2026: same savefile format)
   await page.goto(BASE + '#/rekod');
   await page.waitForSelector('.stamp');
   await shot('09-rekod');
-  const [save] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'セーブデータを書き出す' }).click()]);
+  const [save] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'メモリーカードを保存' }).click()]);
   console.log('savefile:', save.suggestedFilename());
+  if (!/^katakata-card_.+_\d{4}-\d\d-\d\d\.json$/.test(save.suggestedFilename())) throw new Error('memory card filename: ' + save.suggestedFilename());
 
   // Teacher desk
   const tpage = await ctx.newPage();

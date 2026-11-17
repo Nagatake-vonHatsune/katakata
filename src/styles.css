@@ -2803,3 +2803,84 @@ body[data-class-run] .teacher-strip {
     display: none;
   }
 }
+
+/* ---- Part 3: memory cards, student slots (Sam, 17 Nov 2026) ---- */
+.warn-box {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 2px solid var(--accent);
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 600;
+}
+.slot-banner {
+  min-height: 2.1rem;
+  padding: 0.15rem 0.9rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  max-width: 60vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.slot-banner.student {
+  border: 2.5px solid var(--accent);
+  background: var(--surface-2);
+  font-weight: 700;
+}
+.slot-banner:focus-visible {
+  outline: 3px solid var(--neutral);
+  outline-offset: 2px;
+}
+.slot-counts {
+  font-weight: 600;
+}
+.slot-counts.student {
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 2px solid var(--accent);
+  background: var(--surface);
+}
+.slot-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.slot-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 14px;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+}
+.slot-row.active {
+  border: 2.5px solid var(--brand);
+}
+.slot-name {
+  font-size: 1.1rem;
+  margin-right: 8px;
+}
+.slot-actions > .btn {
+  flex: 0 1 auto;
+}
+.match-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.memory-card .row > .btn {
+  flex: 1 1 10rem;
+}

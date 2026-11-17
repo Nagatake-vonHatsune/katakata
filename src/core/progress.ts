@@ -38,6 +38,18 @@ export function nextChapter(s: AppState = state): number {
   return (ch ?? content.chapters[content.chapters.length - 1])?.chapter ?? 1;
 }
 
+/**
+ * The chapter a learner is working on (student slots, the progress report): the highest chapter whose class words they have
+ * met, or the next one once its class prep is done; chapter 1 for a new learner.
+ */
+export function currentChapter(s: AppState = state): number {
+  let cur = 0;
+  for (const ch of content.chapters) if (ch.cards.some((c) => s.srs[srsKey(c.id)])) cur = ch.chapter;
+  if (!cur) return content.chapters[0]?.chapter ?? 1;
+  const after = content.chapters.find((c) => c.chapter > cur);
+  return isReady(cur, s) && after ? after.chapter : cur;
+}
+
 function hasStamp(kind: Stamp['kind'], date: string, chapter?: number, s: AppState = state): boolean {
   return s.stamps.some((x) => x.kind === kind && (kind === 'day' ? x.date === date : x.chapter === chapter));
 }

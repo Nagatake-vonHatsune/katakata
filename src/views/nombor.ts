@@ -14,6 +14,8 @@ import {
   reels, skyStrip, weekStrip,
 } from './nombor-charts';
 import { topBar } from './widgets';
+import { logMistake, nomborItem, shownLabel } from '../core/mistakes';
+import { update } from '../core/state';
 
 export const PART_MS: Record<PartId, string> = { nombor: 'Nombor', hari: 'Hari', bulan: 'Bulan dan tarikh', pecahan: 'Pecahan dan peratus', wang: 'Wang', masa: 'Masa' };
 export const PART_ICON: Record<PartId, string> = { nombor: '🔢', hari: '🗓️', bulan: '📆', pecahan: '🍰', wang: '💵', masa: '🕒' };
@@ -415,8 +417,9 @@ function playRound(root: HTMLElement, go: (r: string) => void, part: PartId): vo
     const stage = h('div', { class: 'nm-q-stage' });
     const feedback = h('div', { class: 'nm-feedback', 'aria-live': 'polite' });
     const body = h('div', { class: 'stack' });
-    const finish = (ok: boolean) => {
+    const finish = (ok: boolean, answer?: string | null) => {
       if (ok) right++;
+      else logMistake({ id: nomborItem(q), game: 'nombor', answer: answer ?? null, right: q.dir === 'pick' ? shownLabel(q.options[q.answer]) : q.reading.text });
       feedback.replaceChildren(
         h('div', { class: 'feedback ' + (ok ? 'ok' : 'neutral') }, ok ? t('nm.right') : t('nm.answer')),
         readingBox(q.reading),
@@ -434,7 +437,7 @@ function playRound(root: HTMLElement, go: (r: string) => void, part: PartId): vo
           const ok = k === q.answer;
           b.classList.add(ok ? 'opt-correct' : 'opt-chosen');
           if (!ok) list.children[q.answer].classList.add('opt-answer');
-          finish(ok);
+          finish(ok, shownLabel(o));
         });
         list.append(b);
       });
@@ -454,7 +457,15 @@ function playRound(root: HTMLElement, go: (r: string) => void, part: PartId): vo
     );
     showQuestion(stage, q);
   };
-  const summary = () =>
+  const summary = () => {
+    // Rounds played per part, for the progress report (practice only: nothing else here touches the learner's schedule).
+    update((s) => {
+      const r = ((s.nombor ??= {})[part] ??= { plays: 0, best: 0, total: qs.length });
+      r.plays++;
+      r.best = Math.max(r.best, right);
+      r.total = qs.length;
+      r.last = new Date().toISOString();
+    });
     mount(
       root,
       h(
@@ -465,6 +476,7 @@ function playRound(root: HTMLElement, go: (r: string) => void, part: PartId): vo
         h('div', { class: 'stack' }, button(t('nm.again'), () => playRound(root, go, part), 'btn btn-primary btn-wide'), button('📊 ' + t('nm.chart.' + PART_CHART[part]), () => openChart(part), 'btn btn-ghost btn-wide'), button(t('nm.back'), () => go('nombor'), 'btn btn-ghost btn-wide')),
       ),
     );
+  };
   next();
 }
 
@@ -492,7 +504,7 @@ export function showQuestion(stage: HTMLElement, q: Question): void {
 }
 
 /** Build the Malay from blocks: tap a block to place it, tap a placed block to take it back. */
-function builder(q: Question, finish: (ok: boolean) => void): HTMLElement {
+function builder(q: Question, finish: (ok: boolean, answer?: string | null) => void): HTMLElement {
   const bank = q.blocks!.map((w, k) => ({ w, k }));
   const built: typeof bank = [];
   let done = false;
@@ -510,7 +522,7 @@ function builder(q: Question, finish: (ok: boolean) => void): HTMLElement {
     const words = built.map((b) => b.w);
     const ok = buildMatches(q, words);
     answer.classList.add(ok ? 'nm-built-ok' : 'nm-built-no');
-    finish(ok);
+    finish(ok, words.join(' '));
   }, 'btn btn-primary btn-wide nm-check');
   return h('div', { class: 'stack nm-builder', 'data-answer': q.reading.text }, answer, bankRow, h('div', { class: 'row' }, button(t('nm.clear'), () => !done && (bank.push(...built.splice(0)), draw()), 'btn btn-ghost'), check));
 }

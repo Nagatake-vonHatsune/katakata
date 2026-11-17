@@ -13,6 +13,7 @@ import type { Card } from '../core/types';
 import { button, h, mount, shuffle } from '../core/ui';
 import { pointsBadge, scorePill, scoreStats } from './points';
 import { topBar } from './widgets';
+import { logMistake } from '../core/mistakes';
 
 export const LAJU_SECONDS = 60;
 export const LAJU_MIN_WORDS = 8;
@@ -140,6 +141,7 @@ function play(root: HTMLElement, pool: Card[], go: (r: string) => void): void {
         if (done || over) return;
         done = true;
         const correct = o.id === card.id;
+        if (!correct) logMistake({ id: card.id, game: 'laju', answer: gloss(o, lang), right: gloss(card, lang) });
         const hit = scorer.hit('laju', correct, performance.now() - shownAt);
         pill.update(scorer);
         list.querySelectorAll('button').forEach((x) => ((x as HTMLButtonElement).disabled = true));

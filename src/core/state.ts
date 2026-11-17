@@ -89,6 +89,8 @@ export function defaultState(): AppState {
     studySeconds: {},
     howToSeen: {},
     scores: emptyRecords(),
+    mistakes: { log: [], counts: {} },
+    nombor: {},
   };
 }
 
@@ -104,6 +106,11 @@ export function migrate(raw: Partial<AppState> & Record<string, unknown>): AppSt
     scores: { ...base.scores, ...((raw.scores as object) ?? {}) },
     lines: { ...((raw.lines as AppState['lines']) ?? {}) },
     dialogues: { ...((raw.dialogues as AppState['dialogues']) ?? {}) },
+    mistakes: {
+      log: [...(((raw.mistakes as AppState['mistakes'] | undefined)?.log) ?? [])],
+      counts: { ...(((raw.mistakes as AppState['mistakes'] | undefined)?.counts) ?? {}) },
+    },
+    nombor: { ...((raw.nombor as AppState['nombor']) ?? {}) },
     srs: moveCards(Object.fromEntries(Object.entries(raw.srs ?? {}).map(([k, v]) => [k, migrateSrs(v as unknown as Record<string, unknown>)]))),
   } as AppState;
 }

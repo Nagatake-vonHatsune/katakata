@@ -2,11 +2,11 @@
 import { content } from '../core/content';
 import { getLang, t } from '../core/i18n';
 import { chapterProgress, knownCount, minutesThisWeek, sceneProgress, streak, stretchProgress } from '../core/progress';
-import { buildSavefile, mergeStates, parseSavefile, summarise } from '../core/savefile';
-import { pickFile, safeName, shareOrDownload } from '../core/share';
 import { seconds } from '../core/score';
-import { replaceState, state, update } from '../core/state';
-import { button, confirmDialog, h, mount, progressBar, sheet, toast } from '../core/ui';
+import { state } from '../core/state';
+import { autosaves, undoLastLoad, slots } from '../core/slots';
+import { currentLearner, loadCard, saveCard, saveReport } from './memorycard';
+import { button, confirmDialog, h, mount, progressBar, toast } from '../core/ui';
 import { stampEl } from './stamps';
 import { topBar } from './widgets';
 import { flamesLine, flamesText } from './stretch';
@@ -22,42 +22,6 @@ export function applyTheme(): void {
 function fmtDate(iso: string): string {
   const d = new Date(iso);
   return getLang() === 'ja' ? `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日` : d.toLocaleDateString(getLang() === 'ms' ? 'ms-MY' : 'en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
-}
-
-async function exportSave(): Promise<void> {
-  update((s) => (s.lastBackupAt = new Date().toISOString()));
-  const file = await buildSavefile(state);
-  const d = new Date();
-  const name = `katakata_${safeName(state.profile.name)}_${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}.katakata`;
-  const res = await shareOrDownload(name, JSON.stringify(file), 'application/json');
-  if (res === 'cancelled') update((s) => (s.lastBackupAt = undefined));
-}
-
-async function importSave(redraw: () => void): Promise<void> {
-  const [f] = await pickFile('.katakata,application/json,.json');
-  if (!f) return;
-  const parsed = await parseSavefile(await f.text());
-  if (!parsed.ok) return toast(t(parsed.reason === 'checksum' ? 'rekod.checksum_bad' : 'rekod.import_bad'));
-  const sum = summarise(parsed.file, (id) => content.cards.get(id)?.chapter);
-  const choice = await sheet((close) => [
-    h('h3', null, t('rekod.import')),
-    h('p', { class: 'preview-box' }, t('rekod.import_preview', { chapters: sum.maxChapter || '-', words: sum.words, date: fmtDate(sum.savedAt) })),
-    h('p', null, t('rekod.import_how')),
-    h(
-      'div',
-      { class: 'stack' },
-      button(t('rekod.merge'), () => close('merge'), 'btn btn-primary btn-wide'),
-      button(t('rekod.replace'), () => close('replace'), 'btn btn-danger-ghost btn-wide'),
-      button(t('common.cancel'), () => close(null), 'btn btn-ghost btn-wide'),
-    ),
-  ]);
-  if (choice === 'merge') await replaceState(mergeStates(state, parsed.file.state));
-  else if (choice === 'replace') {
-    if (!(await confirmDialog(t('rekod.replace_confirm'), t('rekod.replace'), t('common.cancel'), true))) return;
-    await replaceState({ ...parsed.file.state, profile: { ...parsed.file.state.profile, onboarded: true } });
-  } else return;
-  toast(t('rekod.import_ok'));
-  redraw();
 }
 
 function scoreRecords(): HTMLElement {
@@ -82,6 +46,21 @@ function scoreRecords(): HTMLElement {
 }
 
 export function renderRekod(root: HTMLElement, go: (r: string) => void): void {
+  // "Undo the last load": the learner from before the last memory card load, if one was auto-saved.
+  const undo = h('div');
+  void autosaves().then((list) => {
+    const mine = list.filter((a) => a.slot === slots().active);
+    if (!mine.length) return;
+    const a = mine[mine.length - 1];
+    undo.replaceChildren(
+      h('p', { class: 'muted small' }, t('card.autosaved', { date: fmtDate(a.at), name: a.name || t('misc.student') })),
+      button(t('card.undo'), async () => {
+        if (!(await confirmDialog(t('card.undo_confirm'), t('card.undo'), t('common.cancel'), true))) return;
+        if (await undoLastLoad()) toast(t('card.undone'));
+        renderRekod(root, go);
+      }, 'btn btn-small btn-ghost card-undo'),
+    );
+  });
   const draw = () => {
     const stamps = state.stamps.slice().sort((a, b) => b.date.localeCompare(a.date));
     mount(
@@ -130,12 +109,20 @@ export function renderRekod(root: HTMLElement, go: (r: string) => void): void {
         ),
         h(
           'section',
-          { class: 'card-box' },
-          h('h2', null, t('rekod.save')),
-          h('p', { class: 'small' }, t('rekod.save_body')),
-          h('div', { class: 'row' }, button(t('rekod.export'), () => void exportSave().then(draw), 'btn btn-primary'), button(t('rekod.import'), () => void importSave(draw), 'btn')),
+          { class: 'card-box memory-card' },
+          h('h2', null, '💾 ', t('card.title')),
+          h('p', { class: 'small' }, t('card.body')),
+          h('div', { class: 'row' }, button(t('card.save'), () => void saveCard().then(draw), 'btn btn-primary card-save'), button(t('card.load'), () => void loadCard(draw), 'btn card-load')),
           h('p', { class: 'muted small' }, t('rekod.last_backup', { date: state.lastBackupAt ? fmtDate(state.lastBackupAt) : t('rekod.never') })),
           h('p', { class: 'muted small' }, state.profile.persisted ? t('rekod.storage_ok') : t('rekod.storage_no')),
+          undo,
+        ),
+        h(
+          'section',
+          { class: 'card-box stack' },
+          h('h2', null, '📄 ', t('card.report')),
+          h('p', { class: 'small' }, t('card.report_body')),
+          button('📄 ' + t('card.report'), () => void currentLearner().then(saveReport), 'btn btn-wide card-report'),
         ),
         h(
           'section',

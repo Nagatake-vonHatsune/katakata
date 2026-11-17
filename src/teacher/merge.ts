@@ -56,3 +56,27 @@ export function weakAcrossClass(reports: TeacherReport[]): Array<{ term: string;
 export function allContentReports(reports: TeacherReport[]): Array<ContentReport & { student: string }> {
   return reports.flatMap((r) => (r.reports ?? []).map((x) => ({ ...x, student: r.student })));
 }
+
+export interface ClassMistake {
+  id: string;
+  text: string;
+  right: string;
+  en?: string;
+  chapter?: number;
+  /** Wrong answers over all students (each student's own count). */
+  count: number;
+  students: string[];
+}
+
+/** Mistakes across the class: the items most students got wrong first, then the most-missed. */
+export function mistakesAcrossClass(reports: TeacherReport[]): ClassMistake[] {
+  const m = new Map<string, ClassMistake>();
+  for (const r of reports)
+    for (const x of r.mistakes ?? []) {
+      const e = m.get(x.id) ?? { id: x.id, text: x.text, right: x.right, en: x.en, chapter: x.chapter, count: 0, students: [] };
+      e.count += x.count;
+      if (!e.students.includes(r.student)) e.students.push(r.student);
+      m.set(x.id, e);
+    }
+  return [...m.values()].sort((a, b) => b.students.length - a.students.length || b.count - a.count || (a.chapter ?? 99) - (b.chapter ?? 99));
+}

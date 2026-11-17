@@ -12,6 +12,7 @@ import { sessionMeta } from './session';
 import { checkpointBar, flamesLine } from './stretch';
 import { teacher } from '../core/teacher';
 import { launcher, teacherMenu, type TeacherNav } from './teacher';
+import { activeSlot, ME } from '../core/slots';
 
 export interface Nav extends TeacherNav {
   go(route: string): void;
@@ -59,6 +60,7 @@ export function renderHome(root: HTMLElement, nav: Nav): void {
       teacher.on ? launcher(nav) : null,
       teacher.on ? teacherMenu(nav) : null,
       teacher.on ? h('h2', { class: 'ordinary-head' }, t('teach.ordinary')) : null,
+      teacher.on ? h('p', { class: 'slot-counts' + (activeSlot().id !== ME ? ' student' : '') }, '👤 ', t('slots.counts_for', { name: activeSlot().name })) : null,
       h(
         'header',
         { class: 'home-head' },

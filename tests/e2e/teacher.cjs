@@ -44,6 +44,8 @@ function learner(settings = {}) {
     studySeconds: { '2026-11-16': 600 },
     howToSeen: { kad: true, cari: true, susun: true, reply: true },
     scores: { bestSession: 120, bestCombo: 6, fastestMs: 900, total: 480, lajuBest: 60, lajuPlays: 1 },
+    mistakes: { log: [{ id: c04.sedia_kelas.cards[0], game: 'kad-mc', answer: 'x', right: 'y', date: '2026-11-16T00:00:00Z' }], counts: { [c04.sedia_kelas.cards[0]]: 1 } },
+    nombor: { masa: { plays: 1, best: 5, total: 8, last: '2026-11-16T00:00:00Z' } },
   };
 }
 

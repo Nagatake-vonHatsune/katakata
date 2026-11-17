@@ -29,3 +29,9 @@ export function t(key: Key | string, params: Record<string, string | number> = {
   const s = dicts[lang][key] ?? dicts.en[key] ?? dicts.ja[key] ?? key;
   return s.replace(/\{(\w+)\}/g, (_, k) => String(params[k] ?? `{${k}}`));
 }
+
+/** A string in a given language (the progress report is written in en or ja whatever the screen shows). */
+export function tIn(l: Lang, key: Key | string, params: Record<string, string | number> = {}): string {
+  const s = dicts[l][key] ?? dicts.en[key] ?? key;
+  return s.replace(/\{(\w+)\}/g, (_, k) => String(params[k] ?? `{${k}}`));
+}

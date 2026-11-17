@@ -197,4 +197,32 @@ export interface AppState {
   lastBackupAt?: string;
   /** Personal bests for points (src/core/score.ts). */
   scores: ScoreRecords;
+  /**
+   * Wrong answers in every game (Sam, 17 Nov 2026): the most recent MISTAKE_CAP entries and a count per item. Added with
+   * teacher mode; migrate() gives old saves an empty log (schemaVersion unchanged). Class runs never write to it.
+   */
+  mistakes: MistakeLog;
+  /** Nombor & Masa rounds played per part (practice only; for the progress report). Added with teacher mode. */
+  nombor: Record<string, { plays: number; best: number; total: number; last?: string }>;
+}
+
+export type MistakeGame = 'kad-mc' | 'kad-recall' | 'susun' | 'reply' | 'cari' | 'laju' | 'nombor';
+
+export interface MistakeEntry {
+  /** The item: a card ID, a frame ID, a dialogue line ID, or "nombor:<part>:<right answer>". */
+  id: string;
+  game: MistakeGame;
+  /** What the learner answered; null = «わからない» or not recalled. */
+  answer: string | null;
+  right: string;
+  /** ISO time. */
+  date: string;
+  /** Susun Ayat: the decoy tiles left in the sentence. */
+  decoys?: string[];
+}
+
+export interface MistakeLog {
+  log: MistakeEntry[];
+  /** Wrong answers per item ID, over all time (kept when old log entries drop off). */
+  counts: Record<string, number>;
 }

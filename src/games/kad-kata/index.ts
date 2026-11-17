@@ -7,6 +7,7 @@ import { speak } from '../../core/tts';
 import { add, button, h, shuffle } from '../../core/ui';
 import { chips, contextFor, glossLine, pronunciationTips, wordHeader } from '../../views/widgets';
 import type { Game, GameContext, StepResult } from '../game';
+import { logMistake } from '../../core/mistakes';
 
 type KadStep = Extract<Step, { kind: 'intro' | 'mc' | 'recall' }>;
 
@@ -33,9 +34,10 @@ function mc(step: Extract<Step, { kind: 'mc' }>, ctx: GameContext): Promise<Step
     const answer = h('div', { class: 'answer', 'aria-live': 'polite' });
     const list = h('div', { class: 'options' });
     let done = false;
-    const finish = (correct: boolean, chosen?: HTMLButtonElement) => {
+    const finish = (correct: boolean, chosen?: HTMLButtonElement, pick?: (typeof options)[number]) => {
       if (done) return;
       done = true;
+      if (!correct) logMistake({ id: card.id, game: 'kad-mc', answer: pick ? (toMalay ? pick.term : gloss(pick, lang)) : null, right: toMalay ? card.term : gloss(card, lang) });
       list.querySelectorAll('button').forEach((b) => {
         (b as HTMLButtonElement).disabled = true;
         if (b.dataset.id === card.id) b.classList.add(correct ? 'opt-correct' : 'opt-answer');
@@ -58,7 +60,7 @@ function mc(step: Extract<Step, { kind: 'mc' }>, ctx: GameContext): Promise<Step
         { class: 'opt', type: 'button', 'data-id': o.id, lang: toMalay ? 'ms' : lang },
         toMalay ? o.term : gloss(o, lang),
       ) as HTMLButtonElement;
-      b.addEventListener('click', () => finish(o.id === card.id, b));
+      b.addEventListener('click', () => finish(o.id === card.id, b, o));
       list.appendChild(b);
     }
     const dk = ctx.dontKnow(() => finish(false));
@@ -82,6 +84,7 @@ function recall(step: Extract<Step, { kind: 'recall' }>, ctx: GameContext): Prom
       const rate = (g: Grade) => {
         // Speed counts up to "Show"; a Hard self-rating still keeps the combo but earns fewer points.
         ctx.answered(!gaveUp && g !== Rating.Again, { at, base: g === Rating.Hard ? 6 : undefined });
+        if (gaveUp || g === Rating.Again) logMistake({ id: card.id, game: 'kad-recall', answer: null, right: card.term });
         resolve({ outcome: 'rated', grade: g });
       };
       add(answer, 

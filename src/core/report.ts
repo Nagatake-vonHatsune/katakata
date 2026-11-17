@@ -1,4 +1,5 @@
 // "Send to teacher" file (spec 9.2): katakata_<name>_<YYYY-MM-DD>.json
+import type { MistakeItem } from './mistakes';
 import type { ContentReport, Question } from './types';
 
 export const REPORT_KIND = 'katakata-teacher-report';
@@ -36,6 +37,17 @@ export interface TeacherReport {
   progress?: ChapterProgressRow[];
   weakest?: WeakWord[];
   minutesThisWeek?: number;
+  /** Added with the progress report (Sam, 17 Nov 2026); older files have none of these. */
+  streak?: number;
+  knownWords?: number;
+  /** "Mistakes to review": wrong answers grouped by word, sentence or line. */
+  mistakes?: MistakeItem[];
+  /** Nombor & Masa rounds played per part. */
+  nombor?: Record<string, { plays: number; best: number; total: number; last?: string }>;
+  /** Next steps, in English (the report shows them in its own language). */
+  nextSteps?: string[];
+  /** Where the Teacher Desk read it from: the send-to-teacher file, a memory card or a progress report (HTML). */
+  source?: 'report' | 'card' | 'html';
 }
 
 export type Section = 'questions' | 'reports' | 'progress' | 'weakest' | 'minutes';

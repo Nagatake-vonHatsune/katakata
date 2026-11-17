@@ -20,6 +20,10 @@ import { loadTeacher } from './core/teacher';
 import { applyTeacher, ordinaryKeys, renderStrip, setTeacherMode } from './views/teacher';
 import { runClass } from './views/classroom';
 import type { ClassActivity, ClassSource } from './core/classroom';
+import { loadSlots } from './core/slots';
+import { renderStudents } from './views/students';
+import { loadCard, saveCard, slotBanner } from './views/memorycard';
+import { installSlotHooks } from './views/teacher';
 
 const root = document.getElementById('app')!;
 let inSession = false;
@@ -87,6 +91,8 @@ function render(): void {
       return renderLaju(root, go);
     case 'nombor':
       return renderNombor(root, go, arg);
+    case 'students':
+      return void renderStudents(root, go);
     default:
       return renderHome(root, nav);
   }
@@ -114,6 +120,11 @@ window.addEventListener('hashchange', () => {
 async function start(): Promise<void> {
   await loadState();
   await loadTeacher();
+  await loadSlots();
+  installSlotHooks(go, () => {
+    renderStrip();
+    render();
+  }, slotBanner, { saveCard: () => saveCard(), loadCard });
   // Shareable language links: /?lang=en or /?lang=ms (or ja).
   const fromUrl = new URLSearchParams(location.search).get('lang');
   if (isLang(fromUrl) && fromUrl !== state.settings.lang) {

@@ -12,6 +12,7 @@ import { setTeacher, teacher } from '../core/teacher';
 import { warmVoices } from '../core/tts';
 import { button, h, toast } from '../core/ui';
 import { cariCards } from '../core/session';
+import { loadSlots, ME, slots, switchSlot } from '../core/slots';
 import { PART_ICON, PART_MS, numberLevel } from './nombor';
 
 export interface TeacherNav {
@@ -34,7 +35,11 @@ export function applyTeacher(): void {
 }
 
 export async function setTeacherMode(on: boolean): Promise<void> {
+  // Turning teacher mode off puts Sam's own learner back (the student slot in use is saved first), so the phone flow is
+  // never on a student's slot.
+  if (!on && slots().active !== ME) await switchSlot(ME);
   await setTeacher({ on });
+  if (on) await loadSlots();
   applyTeacher();
   toast(t(on ? 'teach.on' : 'teach.off'));
 }
@@ -279,3 +284,13 @@ export function ordinaryKeys(e: KeyboardEvent): void {
 }
 
 export { chapterBoard };
+
+/** Part 3: the slot banner in the strip, and Students and memory cards in the teacher menu. */
+export function installSlotHooks(go: (r: string) => void, redraw: () => void, banner: (go: (r: string) => void) => HTMLElement, items: { saveCard: () => Promise<void>; loadCard: (redraw: () => void) => Promise<void> }): void {
+  teacherHooks.banner = () => banner(go);
+  teacherHooks.menu = () => [
+    button('👥 ' + t('slots.title'), () => go('students'), 'btn btn-primary teacher-students'),
+    button('💾 ' + t('card.save'), () => void items.saveCard(), 'btn teacher-card-save'),
+    button('📂 ' + t('card.load'), () => void items.loadCard(redraw), 'btn teacher-card-load'),
+  ];
+}

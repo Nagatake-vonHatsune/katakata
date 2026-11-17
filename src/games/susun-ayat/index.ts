@@ -6,6 +6,7 @@ import { speak } from '../../core/tts';
 import { add, button, h, shuffle } from '../../core/ui';
 import { audioButtons } from '../../views/widgets';
 import type { Game, GameContext, StepResult } from '../game';
+import { logMistake } from '../../core/mistakes';
 
 type SusunStep = Extract<Step, { kind: 'susun' }>;
 
@@ -88,6 +89,10 @@ function run(step: SusunStep, ctx: GameContext): Promise<StepResult> {
       if (done) return;
       done = true;
       const badge = ctx.answered(correct);
+      if (!correct) {
+        const words = built.map((b) => b.w);
+        logMistake({ id: frame.id, game: 'susun', answer: words.length ? words.join(' ') : null, right: frame.example, decoys: words.filter((w) => decoys.includes(w)) });
+      }
       controls.remove();
       void speak(frame.example);
       add(result, 

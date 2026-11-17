@@ -1,6 +1,7 @@
 // Savefile (spec 10.2): one .katakata file, JSON inside, with schema version and checksum.
 import { emptyRecords, mergeRecords } from './score';
 import { migrate } from './state';
+import { mergeMistakes } from './mistakes';
 import type { AppState, SrsState } from './types';
 
 export const SAVEFILE_KIND = 'katakata-savefile';
@@ -67,6 +68,21 @@ export function summarise(file: Savefile, chapterOf: (cardId: string) => number 
   const ids = Object.keys(file.state.srs).filter((id) => file.state.srs[id].reps > 0);
   const chapters = ids.map(chapterOf).filter((c): c is number => typeof c === 'number');
   return { words: ids.length, maxChapter: chapters.length ? Math.max(...chapters) : 0, savedAt: file.savedAt };
+}
+
+/** Memory card filename (Sam, 17 Nov 2026): katakata-card_<name>_<YYYY-MM-DD>.json. */
+export function cardFilename(safeStudent: string, now = new Date()): string {
+  const d = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+  return `katakata-card_${safeStudent}_${d}.json`;
+}
+
+function mergeNombor(a: AppState['nombor'] = {}, b: AppState['nombor'] = {}): AppState['nombor'] {
+  const out = { ...a };
+  for (const [k, v] of Object.entries(b)) {
+    const m = out[k];
+    out[k] = m ? { plays: Math.max(m.plays, v.plays), best: Math.max(m.best, v.best), total: Math.max(m.total, v.total), last: later(v.last, m.last) ? v.last : m.last } : v;
+  }
+  return out;
 }
 
 function later(a?: string, b?: string): boolean {
@@ -136,6 +152,8 @@ export function mergeStates(local: AppState, incoming: AppState): AppState {
     studySeconds: maxRec(local.studySeconds, incoming.studySeconds),
     howToSeen: { ...incoming.howToSeen, ...local.howToSeen },
     scores: mergeRecords(local.scores ?? emptyRecords(), incoming.scores ?? emptyRecords()),
+    mistakes: mergeMistakes(local.mistakes, incoming.mistakes),
+    nombor: mergeNombor(local.nombor, incoming.nombor),
     lastBackupAt: later(incoming.lastBackupAt, local.lastBackupAt) ? incoming.lastBackupAt : local.lastBackupAt,
   };
 }

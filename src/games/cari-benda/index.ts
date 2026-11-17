@@ -7,6 +7,7 @@ import { speak } from '../../core/tts';
 import { add, button, h } from '../../core/ui';
 import { contextFor, glossLine } from '../../views/widgets';
 import type { Game, GameContext, StepResult } from '../game';
+import { logMistake } from '../../core/mistakes';
 
 type CariStep = Extract<Step, { kind: 'cari' }>;
 
@@ -35,9 +36,10 @@ function run(step: CariStep, ctx: GameContext): Promise<StepResult> {
     const answer = h('div', { class: 'answer', 'aria-live': 'polite' });
     const word = h('div', { class: 'cari-word' + (noVoice ? '' : ' hidden'), lang: 'ms' }, target.term);
     const board = h('div', { class: `cari-board world-${scene.world.id}`, role: 'group', 'aria-label': scene.title.ms });
-    const finish = (correct: boolean, chosen?: HTMLElement) => {
+    const finish = (correct: boolean, chosen?: HTMLElement, pick?: string) => {
       if (done) return;
       done = true;
+      if (!correct) logMistake({ id: target.id, game: 'cari', answer: pick ? content.cards.get(pick)?.term ?? pick : null, right: target.term });
       const badge = ctx.answered(correct);
       dk.remove();
       word.classList.remove('hidden');
@@ -58,7 +60,7 @@ function run(step: CariStep, ctx: GameContext): Promise<StepResult> {
         { class: 'cari-obj', type: 'button', 'data-id': o.id, style: `left:${pos[i].x}%;top:${pos[i].y}%`, 'aria-label': `${i + 1}` },
         h('span', { class: 'cari-emoji', 'aria-hidden': 'true' }, o.image ?? '❓'),
       );
-      b.addEventListener('click', () => finish(o.id === target.id, b));
+      b.addEventListener('click', () => finish(o.id === target.id, b, o.id));
       board.appendChild(b);
     });
     const dk = ctx.dontKnow(() => finish(false));
