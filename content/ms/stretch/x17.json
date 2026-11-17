@@ -1,0 +1,493 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x17",
+  "chapter": 17,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Bahasa Lisan dan Jemputan",
+    "en": "Spoken Malay and invitations",
+    "ja": "話し言葉と誘い方"
+  },
+  "cards": [
+    {
+      "id": "ms-x17-001",
+      "lang": "ms",
+      "term": "je",
+      "gloss_en": "just (spoken, for \"saja\")",
+      "gloss_ja": "だけ（「saja」の話し言葉）",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Spoken: «je» for «sahaja / saja» (Ch3), only: «Santai je.» = Just relax.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x17"
+        }
+      ],
+      "scene": "stretch-x17",
+      "chapter": 17,
+      "note_ja": "話し言葉：«sahaja / saja»（第3課）の «je»、「〜だけ」：«Santai je.»＝気楽にね。"
+    },
+    {
+      "id": "ms-x17-002",
+      "lang": "ms",
+      "term": "punya",
+      "gloss_en": "belonging to (\"orang lain punya\" = someone else's; spoken)",
+      "gloss_ja": "〜の（もの）（話し言葉の所有）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Spoken possessive: «orang lain punya» = someone else's. (Also «punya» = to have.)",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x17"
+        }
+      ],
+      "scene": "stretch-x17",
+      "chapter": 17,
+      "note_ja": "話し言葉の所有：«orang lain punya»＝ほかの人のもの。（«punya»＝持つ、の意味も。）"
+    },
+    {
+      "id": "ms-x17-003",
+      "lang": "ms",
+      "term": "tau",
+      "gloss_en": "know (spoken, for \"tahu\")",
+      "gloss_ja": "知る（「tahu」の話し言葉）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Spoken: «tau» for «tahu» (Ch4), to know: «Saya tak tau.» = I don't know.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x17"
+        }
+      ],
+      "scene": "stretch-x17",
+      "chapter": 17,
+      "note_ja": "話し言葉：«tahu»（第4課）の «tau»、知っている：«Saya tak tau.»＝知らない。"
+    },
+    {
+      "id": "ms-x17-004",
+      "lang": "ms",
+      "term": "balasan",
+      "gloss_en": "return, in exchange (\"sebagai balasan\")",
+      "gloss_ja": "お返し、見返り",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "balas (Ch17) + -an: something in return: «sebagai balasan» = in return.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x17"
+        }
+      ],
+      "scene": "stretch-x17",
+      "chapter": 17,
+      "note_ja": "balas（第17課）+ -an：お返し：«sebagai balasan»＝お返しに。"
+    },
+    {
+      "id": "ms-x17-005",
+      "lang": "ms",
+      "term": "bersetuju",
+      "gloss_en": "agree",
+      "gloss_ja": "賛成する、同意する",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + setuju (Ch17): to agree (a little more formal than «setuju»): «Isteri saya bersetuju.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x17"
+        }
+      ],
+      "scene": "stretch-x17",
+      "chapter": 17,
+      "note_ja": "ber- + setuju（第17課）：賛成する（«setuju» より少し改まった形）：«Isteri saya bersetuju.»"
+    },
+    {
+      "id": "ms-x17-006",
+      "lang": "ms",
+      "term": "formal",
+      "gloss_en": "formal",
+      "gloss_ja": "あらたまった、フォーマルな",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Formal (dress, language, an event): «makan malam formal».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x17"
+        }
+      ],
+      "scene": "stretch-x17",
+      "chapter": 17,
+      "note_ja": "フォーマルな、改まった：«makan malam formal»＝フォーマルな夕食会。"
+    },
+    {
+      "id": "ms-x17-007",
+      "lang": "ms",
+      "term": "kejap",
+      "gloss_en": "a moment (spoken, for \"sekejap\")",
+      "gloss_ja": "ちょっと（「sekejap」の話し言葉）",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Spoken: «kejap» for «sekejap» (Ch4), a moment: «Kejap, ya.» = Just a moment.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x17"
+        }
+      ],
+      "scene": "stretch-x17",
+      "chapter": 17,
+      "note_ja": "話し言葉：«sekejap»（第4課）の «kejap»、ちょっと：«Kejap, ya.»＝ちょっと待ってね。"
+    },
+    {
+      "id": "ms-x17-008",
+      "lang": "ms",
+      "term": "komplen",
+      "gloss_en": "complain (spoken)",
+      "gloss_ja": "文句を言う（話し言葉）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Spoken: «komplen» (from English) for making an «aduan» (Ch12), to complain.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x17"
+        }
+      ],
+      "scene": "stretch-x17",
+      "chapter": 17,
+      "note_ja": "話し言葉：«aduan»（第12課）をする意味の «komplen»（英語から）、文句を言う。"
+    },
+    {
+      "id": "ms-x17-009",
+      "lang": "ms",
+      "term": "merepek",
+      "gloss_en": "talk nonsense",
+      "gloss_ja": "でたらめを言う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To talk nonsense (casual, a little rude): «Merepek!» = Nonsense!",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x17"
+        }
+      ],
+      "scene": "stretch-x17",
+      "chapter": 17,
+      "note_ja": "ばかなことを言う（くだけた、少し失礼な言い方）：«Merepek!»＝ばかなこと言わないで！"
+    },
+    {
+      "id": "ms-x17-010",
+      "lang": "ms",
+      "term": "motor",
+      "gloss_en": "motorbike",
+      "gloss_ja": "バイク（「motosikal」の口語）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Spoken: «motor» for «motosikal» (Ch7), motorbike.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x17"
+        }
+      ],
+      "scene": "stretch-x17",
+      "chapter": 17,
+      "note_ja": "話し言葉：«motosikal»（第7課）の «motor»、バイク。"
+    },
+    {
+      "id": "ms-x17-011",
+      "lang": "ms",
+      "term": "sangat-sangat",
+      "gloss_en": "very very much",
+      "gloss_ja": "とても（強調、話し言葉）",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "sangat (Ch6), said twice, in speech: very, very much.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x17"
+        }
+      ],
+      "scene": "stretch-x17",
+      "chapter": 17,
+      "note_ja": "sangat（第6課）を2回、話し言葉で：とても、とても。"
+    },
+    {
+      "id": "ms-x17-012",
+      "lang": "ms",
+      "term": "santai",
+      "gloss_en": "casual, relaxed",
+      "gloss_ja": "くつろいだ、カジュアルな",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Casual, relaxed: «pakaian santai» = casual clothes.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x17"
+        }
+      ],
+      "scene": "stretch-x17",
+      "chapter": 17,
+      "note_ja": "気楽な、カジュアルな：«pakaian santai»＝カジュアルな服装。"
+    },
+    {
+      "id": "ms-x17-013",
+      "lang": "ms",
+      "term": "sebelah-sebelah",
+      "gloss_en": "side by side",
+      "gloss_ja": "隣同士で（話し言葉）",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "sebelah (Ch7), said twice, in speech: side by side.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x17"
+        }
+      ],
+      "scene": "stretch-x17",
+      "chapter": 17,
+      "note_ja": "sebelah（第7課）を2回、話し言葉で：並んで。"
+    },
+    {
+      "id": "ms-x17-014",
+      "lang": "ms",
+      "term": "seronok-seronok",
+      "gloss_en": "enjoy yourselves",
+      "gloss_ja": "楽しんで（話し言葉）",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "seronok (Ch4), said twice, in speech: Have fun! Enjoy yourselves!",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x17"
+        }
+      ],
+      "scene": "stretch-x17",
+      "chapter": 17,
+      "note_ja": "seronok（第4課）を2回、話し言葉で：楽しんでね！"
+    },
+    {
+      "id": "ms-x17-015",
+      "lang": "ms",
+      "term": "tak ada hal",
+      "gloss_en": "no problem (spoken)",
+      "gloss_ja": "大丈夫、問題ない（話し言葉）",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Spoken: «Tak ada hal.» = No problem. «tak» for «tidak».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x17"
+        }
+      ],
+      "scene": "stretch-x17",
+      "chapter": 17,
+      "note_ja": "話し言葉：«Tak ada hal.»＝問題ないよ。«tak» は «tidak»。"
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-x17-f01",
+      "frame": "Kami semua ___ dengan cadangan ___.",
+      "example": "Kami semua bersetuju dengan cadangan itu.",
+      "meaning_en": "We all agree with that suggestion.",
+      "meaning_ja": "私たちはみんなその提案に賛成です。",
+      "decoys": [
+        "kepada"
+      ]
+    },
+    {
+      "id": "ms-x17-f02",
+      "frame": "Saya ___ ___ lupa jemputan Puan.",
+      "example": "Saya tidak akan lupa jemputan Puan.",
+      "meaning_en": "I won't forget your invitation.",
+      "meaning_ja": "お誘いのことは忘れません。",
+      "decoys": [
+        "belum"
+      ]
+    },
+    {
+      "id": "ms-x17-f03",
+      "frame": "Baju untuk makan malam itu ___, bukan ___.",
+      "example": "Baju untuk makan malam itu formal, bukan santai.",
+      "meaning_en": "The dress for that dinner is formal, not casual.",
+      "meaning_ja": "その夕食会の服装はフォーマルで、カジュアルではありません。",
+      "decoys": [
+        "seronok"
+      ]
+    },
+    {
+      "id": "ms-x17-f04",
+      "frame": "Kek ini ___ untuk ___ Puan.",
+      "example": "Kek ini balasan untuk jemputan Puan.",
+      "meaning_en": "This cake is a thank-you for your invitation.",
+      "meaning_ja": "このケーキはお招きのお返しです。",
+      "decoys": [
+        "balas"
+      ]
+    },
+    {
+      "id": "ms-x17-f05",
+      "frame": "Hari ini ___ panas!",
+      "example": "Hari ini sangat-sangat panas!",
+      "meaning_en": "It's really, really hot today!",
+      "meaning_ja": "今日はすごく、すごく暑い！",
+      "decoys": [
+        "paling"
+      ]
+    },
+    {
+      "id": "ms-x17-f06",
+      "frame": "Kami duduk ___ dalam ___.",
+      "example": "Kami duduk sebelah-sebelah dalam kelas.",
+      "meaning_en": "We sit side by side in class.",
+      "meaning_ja": "私たちは教室で並んで座っています。",
+      "decoys": [
+        "sebelah"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "A trip to the beach",
+    "title_ja": "ビーチへのお誘い",
+    "lines": [
+      {
+        "id": "ms-x17-d01",
+        "speaker": "Cik Mei Ling",
+        "ms": "Encik Tanaka, hari Sabtu ini kami mahu pergi ke pantai. Sudikah Encik ikut?",
+        "en": "Mr Tanaka, this Saturday we're going to the beach. Would you like to come along?"
+      },
+      {
+        "id": "ms-x17-d02",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih, Cik. Kita naik apa?",
+        "en": "Thank you. How are we getting there?",
+        "choices": [
+          "Merepek! Saya tidak suka pantai.",
+          "Terima kasih. Pantai itu motor saya."
+        ],
+        "choices_en": [
+          "Nonsense! I don't like the beach.",
+          "Thank you. The beach is my motorbike."
+        ]
+      },
+      {
+        "id": "ms-x17-d03",
+        "speaker": "Cik Mei Ling",
+        "ms": "Kita naik kereta saya. Encik Rahman naik motor dia.",
+        "en": "We'll go in my car. Mr Rahman is going on his motorbike."
+      },
+      {
+        "id": "ms-x17-d04",
+        "speaker": "Tanaka",
+        "ms": "Motor? Jauh tu!",
+        "en": "A motorbike? That's far!"
+      },
+      {
+        "id": "ms-x17-d05",
+        "speaker": "Cik Mei Ling",
+        "ms": "Tak ada hal. Dia suka. Santai je.",
+        "en": "No problem. He likes it. It's all relaxed."
+      },
+      {
+        "id": "ms-x17-d06",
+        "speaker": "Tanaka",
+        "ms": "Sayangnya hari Sabtu saya tidak lapang. Lain kali, ya?",
+        "en": "Unfortunately I'm not free on Saturday. Another time?",
+        "choices": [
+          "Set! Saya tidak lapang, jadi saya pergi.",
+          "Merepek! Pantai tidak ada air."
+        ],
+        "choices_en": [
+          "Deal! I'm not free, so I'll go.",
+          "Nonsense! The beach has no water."
+        ]
+      },
+      {
+        "id": "ms-x17-d07",
+        "speaker": "Cik Mei Ling",
+        "ms": "Alamak! Kenapa?",
+        "en": "Oh no! Why?"
+      },
+      {
+        "id": "ms-x17-d08",
+        "speaker": "Tanaka",
+        "ms": "Ada makan malam formal dengan bos dari Jepun. Saya mesti pergi.",
+        "en": "There's a formal dinner with my boss from Japan. I have to go."
+      },
+      {
+        "id": "ms-x17-d09",
+        "speaker": "Cik Mei Ling",
+        "ms": "Oh, kerja! Tak apa. Kalau macam tu, hari Ahad?",
+        "en": "Oh, work! That's fine. In that case, Sunday?",
+        "choices": [
+          "Oh, kerja! Saya komplen kepada bos Encik sekarang.",
+          "Oh, formal! Encik mesti pakai seluar pendek."
+        ],
+        "choices_en": [
+          "Oh, work! I'll complain to your boss right now.",
+          "Oh, formal! You must wear shorts."
+        ]
+      },
+      {
+        "id": "ms-x17-d10",
+        "speaker": "Tanaka",
+        "ms": "Hari Ahad boleh! Tetapi kejap, ya. Saya tanya isteri saya dulu.",
+        "en": "Sunday works! But just a moment. I'll ask my wife first."
+      },
+      {
+        "id": "ms-x17-d11",
+        "speaker": "(Narrator)",
+        "ms": "Lima minit kemudian.",
+        "en": "Five minutes later."
+      },
+      {
+        "id": "ms-x17-d12",
+        "speaker": "Tanaka",
+        "ms": "Isteri saya bersetuju! Kami datang hari Ahad.",
+        "en": "My wife agrees! We'll come on Sunday.",
+        "choices": [
+          "Isteri saya tak tau saya ada isteri.",
+          "Isteri saya bersetuju, tetapi dia tidak akan datang."
+        ],
+        "choices_en": [
+          "My wife doesn't know I have a wife.",
+          "My wife agrees, but she won't come."
+        ]
+      },
+      {
+        "id": "ms-x17-d13",
+        "speaker": "Cik Mei Ling",
+        "ms": "Bagus! Seronok-seronok, ya! Tetapi balasannya, Encik belanja kopi.",
+        "en": "Great! Have fun! But in return, you buy the coffee."
+      },
+      {
+        "id": "ms-x17-d14",
+        "speaker": "Tanaka",
+        "ms": "Tak ada hal. Saya tidak akan lupa!",
+        "en": "No problem. I won't forget!",
+        "choices": [
+          "Tak ada hal. Saya tau saya lupa.",
+          "Merepek! Kopi itu orang lain punya."
+        ],
+        "choices_en": [
+          "No problem. I know I forgot.",
+          "Nonsense! That coffee is someone else's."
+        ]
+      }
+    ]
+  }
+}

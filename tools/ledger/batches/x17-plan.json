@@ -1,0 +1,448 @@
+{
+ "chapter": 17,
+ "place": "Ch17 (extension)",
+ "changes": [],
+ "new": [
+  {
+   "lid": "L-1803",
+   "row": 1804,
+   "values": [
+    "L-1803",
+    "je",
+    "just (spoken, for \"saja\")",
+    "だけ（「saja」の話し言葉）",
+    "adv",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x17-001",
+    "Ch17 (extension)",
+    "office · band 1",
+    "Yes",
+    "just (spoken, for \"saja\")",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: spoken register (Ch17): spoken partner of «sahaja / saja» (Ch3). Hanashishou: 2 scenes; e.g. «Gurau je.» (pantry_banter). spoken; needs register pair je → sahaja in stage-rules.json.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1804",
+   "row": 1805,
+   "values": [
+    "L-1804",
+    "punya",
+    "belonging to (\"orang lain punya\" = someone else's; spoken)",
+    "〜の（もの）（話し言葉の所有）",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x17-002",
+    "Ch17 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "belonging to (\"orang lain punya\" = someone else's; spoken)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: spoken register (Ch17): «orang lain punya» (someone else's). Hanashishou: 2 scenes; e.g. «itu orang lain punya.» (lost_wallet). spoken possessive use; standard «milik»/«kepunyaan» has no row.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1805",
+   "row": 1806,
+   "values": [
+    "L-1805",
+    "tau",
+    "know (spoken, for \"tahu\")",
+    "知る（「tahu」の話し言葉）",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x17-003",
+    "Ch17 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "know (spoken, for \"tahu\")",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: spoken register (Ch17): spoken partner of «tahu» (Ch4). Hanashishou: 2 scenes; e.g. «Fon telinga percuma, tau!» (phone_plan). spoken; needs register pair tau → tahu in stage-rules.json.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1806",
+   "row": 1807,
+   "values": [
+    "L-1806",
+    "balasan",
+    "return, in exchange (\"sebagai balasan\")",
+    "お返し、見返り",
+    "noun",
+    "-an",
+    "balas",
+    "Not yet checked",
+    "",
+    "ms-x17-004",
+    "Ch17 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "return, in exchange (\"sebagai balasan\")",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: «sebagai balasan»; balas is Ch17. Hanashishou: 1 scene; e.g. «Anda ucap terima kasih untuk sesuatu yang khusus dan tawarkan sesuatu sebagai balasan.» (lift_chat). not spoken by a character or offered as a choice (pattern).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1807",
+   "row": 1808,
+   "values": [
+    "L-1807",
+    "bersetuju",
+    "agree",
+    "賛成する、同意する",
+    "verb",
+    "ber-",
+    "setuju",
+    "Not yet checked",
+    "",
+    "ms-x17-005",
+    "Ch17 (extension)",
+    "social · band 2",
+    "Yes",
+    "agree",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: setuju is Ch17, so its ber- form can come no earlier; standard partner of «set». Hanashishou: 1 scene; e.g. «Tapi kalau orang terlepas isi terbaik puan, mereka tak boleh bersetuju dengannya.» (azula_speech).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1808",
+   "row": 1809,
+   "values": [
+    "L-1808",
+    "formal",
+    "formal",
+    "あらたまった、フォーマルな",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x17-006",
+    "Ch17 (extension)",
+    "office · band 1",
+    "Yes",
+    "formal",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: register (Ch17): formal vs spoken; scene forms «formal», «formalnya». Hanashishou: 1 scene; e.g. «Haha, formalnya!» (report_deadline).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1809",
+   "row": 1810,
+   "values": [
+    "L-1809",
+    "kejap",
+    "a moment (spoken, for \"sekejap\")",
+    "ちょっと（「sekejap」の話し言葉）",
+    "adv",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x17-007",
+    "Ch17 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "a moment (spoken, for \"sekejap\")",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: spoken register (Ch17): spoken partner of «sekejap» (Ch4). Hanashishou: 1 scene; e.g. «Tak apa, tunggu kejap.» (grab_pickup). spoken; needs register pair kejap → sekejap in stage-rules.json.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1810",
+   "row": 1811,
+   "values": [
+    "L-1810",
+    "komplen",
+    "complain (spoken)",
+    "文句を言う（話し言葉）",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x17-008",
+    "Ch17 (extension)",
+    "office · band 1",
+    "Yes",
+    "complain (spoken)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: spoken register (Ch17): spoken loan; standard «aduan» (Ch12). Hanashishou: 1 scene; e.g. «Diam, kemudian komplen nanti.» (meeting_disagree). spoken loan; needs register pair komplen → aduan.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1811",
+   "row": 1812,
+   "values": [
+    "L-1811",
+    "merepek",
+    "talk nonsense",
+    "でたらめを言う",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x17-009",
+    "Ch17 (extension)",
+    "social · band 1",
+    "Yes",
+    "talk nonsense",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: spoken register (Ch17). Hanashishou: 1 scene; e.g. «Awak merepek.» (azula_interview). colloquial.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1812",
+   "row": 1813,
+   "values": [
+    "L-1812",
+    "motor",
+    "motorbike",
+    "バイク（「motosikal」の口語）",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x17-010",
+    "Ch17 (extension)",
+    "social · band 1",
+    "Yes",
+    "motorbike",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: spoken register (Ch17): short form of «motosikal» (Ch7 Dunia). Hanashishou: 1 scene; e.g. «Bila motor itu akan sampai?» (jinx_late_parts). spoken short form; needs register pair motor → motosikal.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1813",
+   "row": 1814,
+   "values": [
+    "L-1813",
+    "sangat-sangat",
+    "very very much",
+    "とても（強調、話し言葉）",
+    "adv",
+    "lex",
+    "sangat",
+    "Not yet checked",
+    "",
+    "ms-x17-011",
+    "Ch17 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "very very much",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: spoken register (Ch17): spoken emphasis; sangat Ch6. Hanashishou: 1 scene; e.g. «Maaf sangat-sangat.» (grab_pickup). spoken.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1814",
+   "row": 1815,
+   "values": [
+    "L-1814",
+    "santai",
+    "casual, relaxed",
+    "くつろいだ、カジュアルな",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x17-012",
+    "Ch17 (extension)",
+    "office · band 1",
+    "Yes",
+    "casual, relaxed",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: register (Ch17): casual speech. Hanashishou: 1 scene; e.g. «Anda jawab gurauan itu dengan santai, kemudian tanya dia semula.» (pantry_banter).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1815",
+   "row": 1816,
+   "values": [
+    "L-1815",
+    "sebelah-sebelah",
+    "side by side",
+    "隣同士で（話し言葉）",
+    "adv",
+    "lex",
+    "sebelah",
+    "Not yet checked",
+    "",
+    "ms-x17-013",
+    "Ch17 (extension)",
+    "social · band 1",
+    "Yes",
+    "side by side",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: spoken register (Ch17); sebelah Ch7. Hanashishou: 1 scene; e.g. «Tempat duduk sebelah-sebelah.» (trio_movie_night). spoken.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1816",
+   "row": 1817,
+   "values": [
+    "L-1816",
+    "seronok-seronok",
+    "enjoy yourselves",
+    "楽しんで（話し言葉）",
+    "adv",
+    "lex",
+    "seronok",
+    "Not yet checked",
+    "",
+    "ms-x17-014",
+    "Ch17 (extension)",
+    "office · band 1",
+    "Yes",
+    "enjoy yourselves",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: spoken register (Ch17); seronok Ch4 (Dunia). Hanashishou: 1 scene; e.g. «Seronok-seronok di Melbourne!» (annual_leave). spoken.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1817",
+   "row": 1818,
+   "values": [
+    "L-1817",
+    "tak ada hal",
+    "no problem (spoken)",
+    "大丈夫、問題ない（話し言葉）",
+    "phrase",
+    "chunk",
+    "tak + ada + hal",
+    "Not yet checked",
+    "",
+    "ms-x17-015",
+    "Ch17 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "no problem (spoken)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: spoken register (Ch17): «Tak ada hal»; tak and ada are Stage 1 words. Hanashishou: 1 scene; e.g. «Tak ada hal, bos.» (grab_pickup). spoken; the one-line check reports «tak» as unlabelled, the pack sequence check is the real test.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x17-001": {
+   "lid": "L-1803"
+  },
+  "ms-x17-002": {
+   "lid": "L-1804"
+  },
+  "ms-x17-003": {
+   "lid": "L-1805"
+  },
+  "ms-x17-004": {
+   "lid": "L-1806"
+  },
+  "ms-x17-005": {
+   "lid": "L-1807"
+  },
+  "ms-x17-006": {
+   "lid": "L-1808"
+  },
+  "ms-x17-007": {
+   "lid": "L-1809"
+  },
+  "ms-x17-008": {
+   "lid": "L-1810"
+  },
+  "ms-x17-009": {
+   "lid": "L-1811"
+  },
+  "ms-x17-010": {
+   "lid": "L-1812"
+  },
+  "ms-x17-011": {
+   "lid": "L-1813"
+  },
+  "ms-x17-012": {
+   "lid": "L-1814"
+  },
+  "ms-x17-013": {
+   "lid": "L-1815"
+  },
+  "ms-x17-014": {
+   "lid": "L-1816"
+  },
+  "ms-x17-015": {
+   "lid": "L-1817"
+  }
+ },
+ "skipped": [
+  "takkan",
+  "bisnes"
+ ]
+}

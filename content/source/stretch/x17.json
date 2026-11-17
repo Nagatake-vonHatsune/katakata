@@ -1,0 +1,236 @@
+{
+  "note": "Hand-written source of the chapter 17 ⚡ stage (Build B2, 17 Nov 2026). tools/build_stretch.py turns it into content/ms/stretch/x17.json. Malay: Malaysian standard first; the spoken forms (je, tau, kejap, motor, komplen, tak ada hal …) come after their standard partners and are marked (card notes begin «Spoken:»; the register pairs of 17 Nov check them). Chapter 17 affix gates (all, joined -lah too). «sudi» for the polite invitation, «Lain kali, ya?» as the soft no. Chapter 1 to 17 core words plus the chapter 17 extension words only. «takkan» and «bisnes» are left out: the register rule needs «tidak akan» and «perniagaan» taught before the card, and no core text has «tidak akan» while «perniagaan» is a ⚡ 10 word. No picture scene for chapter 17, so no Cari Benda ⚡. All Japanese is a draft for the native check.",
+  "chapter": 17,
+  "scenario_title_en": "A trip to the beach",
+  "scenario_title_ja": "ビーチへのお誘い",
+  "notes": {
+    "L-1803": {
+      "en": "Spoken: «je» for «sahaja / saja» (Ch3), only: «Santai je.» = Just relax.",
+      "ja": "話し言葉：«sahaja / saja»（第3課）の «je»、「〜だけ」：«Santai je.»＝気楽にね。"
+    },
+    "L-1804": {
+      "en": "Spoken possessive: «orang lain punya» = someone else's. (Also «punya» = to have.)",
+      "ja": "話し言葉の所有：«orang lain punya»＝ほかの人のもの。（«punya»＝持つ、の意味も。）"
+    },
+    "L-1805": {
+      "en": "Spoken: «tau» for «tahu» (Ch4), to know: «Saya tak tau.» = I don't know.",
+      "ja": "話し言葉：«tahu»（第4課）の «tau»、知っている：«Saya tak tau.»＝知らない。"
+    },
+    "L-1806": {
+      "en": "balas (Ch17) + -an: something in return: «sebagai balasan» = in return.",
+      "ja": "balas（第17課）+ -an：お返し：«sebagai balasan»＝お返しに。"
+    },
+    "L-1807": {
+      "en": "ber- + setuju (Ch17): to agree (a little more formal than «setuju»): «Isteri saya bersetuju.»",
+      "ja": "ber- + setuju（第17課）：賛成する（«setuju» より少し改まった形）：«Isteri saya bersetuju.»"
+    },
+    "L-1808": {
+      "en": "Formal (dress, language, an event): «makan malam formal».",
+      "ja": "フォーマルな、改まった：«makan malam formal»＝フォーマルな夕食会。"
+    },
+    "L-1809": {
+      "en": "Spoken: «kejap» for «sekejap» (Ch4), a moment: «Kejap, ya.» = Just a moment.",
+      "ja": "話し言葉：«sekejap»（第4課）の «kejap»、ちょっと：«Kejap, ya.»＝ちょっと待ってね。"
+    },
+    "L-1810": {
+      "en": "Spoken: «komplen» (from English) for making an «aduan» (Ch12), to complain.",
+      "ja": "話し言葉：«aduan»（第12課）をする意味の «komplen»（英語から）、文句を言う。"
+    },
+    "L-1811": {
+      "en": "To talk nonsense (casual, a little rude): «Merepek!» = Nonsense!",
+      "ja": "ばかなことを言う（くだけた、少し失礼な言い方）：«Merepek!»＝ばかなこと言わないで！"
+    },
+    "L-1812": {
+      "en": "Spoken: «motor» for «motosikal» (Ch7), motorbike.",
+      "ja": "話し言葉：«motosikal»（第7課）の «motor»、バイク。"
+    },
+    "L-1813": {
+      "en": "sangat (Ch6), said twice, in speech: very, very much.",
+      "ja": "sangat（第6課）を2回、話し言葉で：とても、とても。"
+    },
+    "L-1814": {
+      "en": "Casual, relaxed: «pakaian santai» = casual clothes.",
+      "ja": "気楽な、カジュアルな：«pakaian santai»＝カジュアルな服装。"
+    },
+    "L-1815": {
+      "en": "sebelah (Ch7), said twice, in speech: side by side.",
+      "ja": "sebelah（第7課）を2回、話し言葉で：並んで。"
+    },
+    "L-1816": {
+      "en": "seronok (Ch4), said twice, in speech: Have fun! Enjoy yourselves!",
+      "ja": "seronok（第4課）を2回、話し言葉で：楽しんでね！"
+    },
+    "L-1817": {
+      "en": "Spoken: «Tak ada hal.» = No problem. «tak» for «tidak».",
+      "ja": "話し言葉：«Tak ada hal.»＝問題ないよ。«tak» は «tidak»。"
+    }
+  },
+  "frames": [
+    {
+      "frame": "Kami semua ___ dengan cadangan ___.",
+      "example": "Kami semua bersetuju dengan cadangan itu.",
+      "decoys": [
+        "kepada"
+      ],
+      "meaning_en": "We all agree with that suggestion.",
+      "meaning_ja": "私たちはみんなその提案に賛成です。"
+    },
+    {
+      "frame": "Saya ___ ___ lupa jemputan Puan.",
+      "example": "Saya tidak akan lupa jemputan Puan.",
+      "decoys": [
+        "belum"
+      ],
+      "meaning_en": "I won't forget your invitation.",
+      "meaning_ja": "お誘いのことは忘れません。"
+    },
+    {
+      "frame": "Baju untuk makan malam itu ___, bukan ___.",
+      "example": "Baju untuk makan malam itu formal, bukan santai.",
+      "decoys": [
+        "seronok"
+      ],
+      "meaning_en": "The dress for that dinner is formal, not casual.",
+      "meaning_ja": "その夕食会の服装はフォーマルで、カジュアルではありません。"
+    },
+    {
+      "frame": "Kek ini ___ untuk ___ Puan.",
+      "example": "Kek ini balasan untuk jemputan Puan.",
+      "decoys": [
+        "balas"
+      ],
+      "meaning_en": "This cake is a thank-you for your invitation.",
+      "meaning_ja": "このケーキはお招きのお返しです。"
+    },
+    {
+      "frame": "Hari ini ___ panas!",
+      "example": "Hari ini sangat-sangat panas!",
+      "decoys": [
+        "paling"
+      ],
+      "meaning_en": "It's really, really hot today!",
+      "meaning_ja": "今日はすごく、すごく暑い！"
+    },
+    {
+      "frame": "Kami duduk ___ dalam ___.",
+      "example": "Kami duduk sebelah-sebelah dalam kelas.",
+      "decoys": [
+        "sebelah"
+      ],
+      "meaning_en": "We sit side by side in class.",
+      "meaning_ja": "私たちは教室で並んで座っています。"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "Cik Mei Ling",
+      "ms": "Encik Tanaka, hari Sabtu ini kami mahu pergi ke pantai. Sudikah Encik ikut?",
+      "en": "Mr Tanaka, this Saturday we're going to the beach. Would you like to come along?"
+    },
+    {
+      "speaker": "Tanaka",
+      "ms": "Terima kasih, Cik. Kita naik apa?",
+      "en": "Thank you. How are we getting there?",
+      "choices": [
+        "Merepek! Saya tidak suka pantai.",
+        "Terima kasih. Pantai itu motor saya."
+      ],
+      "choices_en": [
+        "Nonsense! I don't like the beach.",
+        "Thank you. The beach is my motorbike."
+      ]
+    },
+    {
+      "speaker": "Cik Mei Ling",
+      "ms": "Kita naik kereta saya. Encik Rahman naik motor dia.",
+      "en": "We'll go in my car. Mr Rahman is going on his motorbike."
+    },
+    {
+      "speaker": "Tanaka",
+      "ms": "Motor? Jauh tu!",
+      "en": "A motorbike? That's far!"
+    },
+    {
+      "speaker": "Cik Mei Ling",
+      "ms": "Tak ada hal. Dia suka. Santai je.",
+      "en": "No problem. He likes it. It's all relaxed."
+    },
+    {
+      "speaker": "Tanaka",
+      "ms": "Sayangnya hari Sabtu saya tidak lapang. Lain kali, ya?",
+      "en": "Unfortunately I'm not free on Saturday. Another time?",
+      "choices": [
+        "Set! Saya tidak lapang, jadi saya pergi.",
+        "Merepek! Pantai tidak ada air."
+      ],
+      "choices_en": [
+        "Deal! I'm not free, so I'll go.",
+        "Nonsense! The beach has no water."
+      ]
+    },
+    {
+      "speaker": "Cik Mei Ling",
+      "ms": "Alamak! Kenapa?",
+      "en": "Oh no! Why?"
+    },
+    {
+      "speaker": "Tanaka",
+      "ms": "Ada makan malam formal dengan bos dari Jepun. Saya mesti pergi.",
+      "en": "There's a formal dinner with my boss from Japan. I have to go."
+    },
+    {
+      "speaker": "Cik Mei Ling",
+      "ms": "Oh, kerja! Tak apa. Kalau macam tu, hari Ahad?",
+      "en": "Oh, work! That's fine. In that case, Sunday?",
+      "choices": [
+        "Oh, kerja! Saya komplen kepada bos Encik sekarang.",
+        "Oh, formal! Encik mesti pakai seluar pendek."
+      ],
+      "choices_en": [
+        "Oh, work! I'll complain to your boss right now.",
+        "Oh, formal! You must wear shorts."
+      ]
+    },
+    {
+      "speaker": "Tanaka",
+      "ms": "Hari Ahad boleh! Tetapi kejap, ya. Saya tanya isteri saya dulu.",
+      "en": "Sunday works! But just a moment. I'll ask my wife first."
+    },
+    {
+      "speaker": "(Narrator)",
+      "ms": "Lima minit kemudian.",
+      "en": "Five minutes later."
+    },
+    {
+      "speaker": "Tanaka",
+      "ms": "Isteri saya bersetuju! Kami datang hari Ahad.",
+      "en": "My wife agrees! We'll come on Sunday.",
+      "choices": [
+        "Isteri saya tak tau saya ada isteri.",
+        "Isteri saya bersetuju, tetapi dia tidak akan datang."
+      ],
+      "choices_en": [
+        "My wife doesn't know I have a wife.",
+        "My wife agrees, but she won't come."
+      ]
+    },
+    {
+      "speaker": "Cik Mei Ling",
+      "ms": "Bagus! Seronok-seronok, ya! Tetapi balasannya, Encik belanja kopi.",
+      "en": "Great! Have fun! But in return, you buy the coffee."
+    },
+    {
+      "speaker": "Tanaka",
+      "ms": "Tak ada hal. Saya tidak akan lupa!",
+      "en": "No problem. I won't forget!",
+      "choices": [
+        "Tak ada hal. Saya tau saya lupa.",
+        "Merepek! Kopi itu orang lain punya."
+      ],
+      "choices_en": [
+        "No problem. I know I forgot.",
+        "Nonsense! That coffee is someone else's."
+      ]
+    }
+  ]
+}
