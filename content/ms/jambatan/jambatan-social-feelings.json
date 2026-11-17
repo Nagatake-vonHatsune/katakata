@@ -24,24 +24,6 @@
   },
   "cards": [
     {
-      "id": "ms-j-social-23",
-      "lang": "ms",
-      "term": "mungkin",
-      "gloss_en": "maybe, possibly",
-      "gloss_ja": "たぶん、〜かもしれない",
-      "pos": "adv",
-      "affix_tag": "root",
-      "note": "Hanashishou: Hmm, mungkin. In 23 Hanashishou scenes: Another size, please, At the pharmacy, Can you cover for me?, Demo day with Jinx and 19 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-feelings"
-        }
-      ],
-      "scene": "dunia-jambatan-social-feelings",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-11",
       "lang": "ms",
       "term": "tepat",

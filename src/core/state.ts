@@ -41,6 +41,12 @@ export const MOVED_CARDS: Record<string, string> = {
   // Build B2 (17 Nov 2026): promoted to the ⚡ stages of chapters 10 to 17.
   'ms-j-social-36': 'ms-x10-001', // cerita (L-1338)
   'ms-j-office-34': 'ms-x11-001', // bahagian (L-1346)
+  'ms-j-daily-life-38': 'ms-x13-001', // tiada (L-1313)
+  'ms-j-social-23': 'ms-x13-002', // mungkin (L-1315)
+  'ms-j-social-25': 'ms-x13-003', // dapat (L-1317)
+  'ms-j-health-23': 'ms-x13-004', // penting (L-1340)
+  'ms-j-office-35': 'ms-x13-005', // langsung (L-1348)
+  'ms-j-social-45': 'ms-x13-006', // kena (L-1353)
 };
 
 export function moveCards(srs: Record<string, SrsState>, moved: Record<string, string> = MOVED_CARDS): Record<string, SrsState> {

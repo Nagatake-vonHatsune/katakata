@@ -24,24 +24,6 @@
   },
   "cards": [
     {
-      "id": "ms-j-health-23",
-      "lang": "ms",
-      "term": "penting",
-      "gloss_en": "important",
-      "gloss_ja": "大切な、重要な",
-      "pos": "adj",
-      "affix_tag": "root",
-      "note": "Hanashishou: Keadilan bukan ukuran prestasi. Yang penting keputusan. In 12 Hanashishou scenes: A sore throat, At the pharmacy, Booking the dentist, Calling in sick and 8 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-health"
-        }
-      ],
-      "scene": "dunia-jambatan-health",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-health-24",
       "lang": "ms",
       "term": "agak",

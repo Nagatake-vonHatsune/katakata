@@ -114,24 +114,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-office-35",
-      "lang": "ms",
-      "term": "langsung",
-      "gloss_en": "at all (with a negative); directly",
-      "gloss_ja": "全く（〜ない）、直接",
-      "pos": "adv",
-      "affix_tag": "root",
-      "note": "Hanashishou: Langsung tidak. In 10 Hanashishou scenes: Feedback on the slides, First visit at the clinic, Not as ordered, Pantry banter and 6 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-office"
-        }
-      ],
-      "scene": "dunia-jambatan-office",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-office-36",
       "lang": "ms",
       "term": "perlukan",

@@ -78,24 +78,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-25",
-      "lang": "ms",
-      "term": "dapat",
-      "gloss_en": "to get, receive; can, be able to",
-      "gloss_ja": "得る、もらう、〜できる",
-      "pos": "verb",
-      "affix_tag": "root",
-      "note": "Hanashishou: ...awak dapat semua itu? In 20 Hanashishou scenes: A sore throat, At the clinic, Booking the BBQ pit, Booking the dentist and 16 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-talk"
-        }
-      ],
-      "scene": "dunia-jambatan-social-talk",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-26",
       "lang": "ms",
       "term": "ia",
@@ -158,24 +140,6 @@
       "pos": "adv",
       "affix_tag": "lex",
       "note": "Hanashishou: Sebab saya kata begitu. In 10 Hanashishou scenes: A sore throat, Airport check-in, Mock interview, Monday catch-up and 6 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-talk"
-        }
-      ],
-      "scene": "dunia-jambatan-social-talk",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-social-45",
-      "lang": "ms",
-      "term": "kena",
-      "gloss_en": "to be subject to; must, have to; to hit",
-      "gloss_ja": "〜される、〜しなければならない、当たる",
-      "pos": "verb",
-      "affix_tag": "root",
-      "note": "Hanashishou: yang kalah kena buat apa? In 9 Hanashishou scenes: Can you cover for me?, Card blocked, Fireworks on the roof, House rules and 5 more.",
       "links": [
         {
           "type": "babak",
