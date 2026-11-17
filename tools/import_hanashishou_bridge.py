@@ -94,7 +94,7 @@ RETIRED_IDS = ["ms-j-health-22", "ms-j-social-22", "ms-j-home-condo-29", "ms-j-d
                "ms-j-daily-life-41", "ms-j-office-42", "ms-j-social-31", "ms-j-office-32", "ms-j-daily-life-71",
                "ms-j-social-27", "ms-j-social-30", "ms-j-office-28", "ms-j-social-32", "ms-j-social-35", "ms-j-daily-life-45",
                "ms-j-office-30", "ms-j-social-34", "ms-j-social-52",
-               "ms-j-daily-life-43"]
+               "ms-j-daily-life-43", "ms-j-social-33", "ms-j-social-37"]
 
 
 def is_extension(row):

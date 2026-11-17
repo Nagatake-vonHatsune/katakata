@@ -150,24 +150,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-33",
-      "lang": "ms",
-      "term": "seorang",
-      "gloss_en": "one person; alone",
-      "gloss_ja": "1人、1人で",
-      "pos": "det",
-      "affix_tag": "se-",
-      "note": "Hanashishou: Pilih rancangan seorang saja. In 14 Hanashishou scenes: A sore throat, Airport check-in, Asking the way, At the mamak and 10 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-talk"
-        }
-      ],
-      "scene": "dunia-jambatan-social-talk",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-36",
       "lang": "ms",
       "term": "cerita",
@@ -176,24 +158,6 @@
       "pos": "noun",
       "affix_tag": "root",
       "note": "Hanashishou: \"Biasa\" saja? Cerita la sikit! In 13 Hanashishou scenes: A sore throat, Calling in sick, Jom lepak!, Lift chat and 9 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-talk"
-        }
-      ],
-      "scene": "dunia-jambatan-social-talk",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-social-37",
-      "lang": "ms",
-      "term": "sendiri",
-      "gloss_en": "oneself; own; by oneself",
-      "gloss_ja": "自分で、自分自身の",
-      "pos": "adv",
-      "affix_tag": "se-",
-      "note": "Hanashishou: Tak. Saya telefon bank sendiri. In 13 Hanashishou scenes: At the pharmacy, Card blocked, Fireworks on the roof, House rules and 9 more.",
       "links": [
         {
           "type": "babak",

@@ -1,0 +1,487 @@
+{
+ "chapter": 8,
+ "place": "Ch8 (extension)",
+ "changes": [
+  {
+   "lid": "L-1335",
+   "row": 1336,
+   "word": "seorang",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-33",
+     "after": "ms-x08-001"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Talking and explaining",
+     "after": "Ch8 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1339",
+   "row": 1340,
+   "word": "sendiri",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-37",
+     "after": "ms-x08-002"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Talking and explaining",
+     "after": "Ch8 (extension)"
+    }
+   ]
+  }
+ ],
+ "new": [
+  {
+   "lid": "L-1605",
+   "row": 1606,
+   "values": [
+    "L-1605",
+    "kualiti",
+    "quality",
+    "品質",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x08-003",
+    "Ch8 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "quality",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: shopping (Ch8); loan, Malaysian spelling. Hanashishou: 2 scenes; e.g. «Kualiti bagus.» (price_haggle).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1606",
+   "row": 1607,
+   "values": [
+    "L-1606",
+    "sekotak",
+    "a box of",
+    "一箱の",
+    "det",
+    "se-",
+    "kotak",
+    "Not yet checked",
+    "",
+    "ms-x08-004",
+    "Ch8 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "a box of",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: se- + classifier (Ch8); kotak Ch8. Hanashishou: 2 scenes; e.g. «Anda nak hantar sekotak makanan ringan dan buku kepada keluarga di Jepun.» (post_parcel). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1607",
+   "row": 1608,
+   "values": [
+    "L-1607",
+    "seluruh",
+    "entire, whole",
+    "全部の、〜じゅう",
+    "det",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x08-005",
+    "Ch8 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "entire, whole",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: quantities (Ch8): «seluruh rumah». Hanashishou: 2 scenes; e.g. «Pengurusan nak cat semula seluruh bangunan.» (lift_chat).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1608",
+   "row": 1609,
+   "values": [
+    "L-1608",
+    "tambahan",
+    "additional",
+    "追加の",
+    "adj",
+    "-an",
+    "tambah",
+    "Not yet checked",
+    "",
+    "ms-x08-006",
+    "Ch8 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "additional",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: shopping (Ch8): «caj tambahan»; tambah Ch8. Hanashishou: 2 scenes; e.g. «Ya, pukul 1 boleh, tiada caj tambahan.» (hotel_checkin).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1609",
+   "row": 1610,
+   "values": [
+    "L-1609",
+    "gelas",
+    "glass (for drinking)",
+    "コップ、グラス",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x08-007",
+    "Ch8 (extension)",
+    "social · band 1",
+    "Yes",
+    "glass (for drinking)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: counting and ordering (Ch8): «dua gelas air». Hanashishou: 1 scene; e.g. «Tiga gelas teh tarik sampai.» (mamak_lepak). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1610",
+   "row": 1611,
+   "values": [
+    "L-1610",
+    "hadiah",
+    "gift, prize",
+    "プレゼント、賞品",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x08-008",
+    "Ch8 (extension)",
+    "social · band 1",
+    "Yes",
+    "gift, prize",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: shopping (Ch8): buying a gift. Hanashishou: 1 scene; e.g. «Mekaniknya, Siti, tengok basikal anda macam dapat hadiah hari jadi.» (jinx_bike_shop). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1611",
+   "row": 1612,
+   "values": [
+    "L-1611",
+    "ikat",
+    "bunch (of vegetables); tie",
+    "束；縛る",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x08-009",
+    "Ch8 (extension)",
+    "social · band 1",
+    "Yes",
+    "bunch (of vegetables); tie",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: counting vegetables (Ch8): «seikat». Hanashishou: 1 scene; e.g. «Tiga ikat, enam ringgit.» (miku_market).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1612",
+   "row": 1613,
+   "values": [
+    "L-1612",
+    "jaket",
+    "jacket",
+    "ジャケット",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x08-010",
+    "Ch8 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "jacket",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: clothes shopping (Ch8). Hanashishou: 1 scene; e.g. «Jangan lupa beli jaket tebal!» (grab_ride_chat).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1613",
+   "row": 1614,
+   "values": [
+    "L-1613",
+    "mainan",
+    "toy",
+    "おもちゃ",
+    "noun",
+    "-an",
+    "main",
+    "Not yet checked",
+    "",
+    "ms-x08-011",
+    "Ch8 (extension)",
+    "social · band 1",
+    "Yes",
+    "toy",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: shopping (Ch8); main Ch2. Hanashishou: 1 scene; e.g. «Saya bawa balik mainan saya, kalau macam tu.» (jinx_fireworks).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1614",
+   "row": 1615,
+   "values": [
+    "L-1614",
+    "majalah",
+    "magazine",
+    "雑誌",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x08-012",
+    "Ch8 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "magazine",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: shopping (Ch8). Hanashishou: 1 scene; e.g. «Lelaki di sebelah anda dalam barisan sedang baca majalah bisnes.» (missed_bus). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1615",
+   "row": 1616,
+   "values": [
+    "L-1615",
+    "perak",
+    "silver (colour)",
+    "銀（色）",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x08-013",
+    "Ch8 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "silver (colour)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: shopping (Ch8): the colour of an item. Hanashishou: 1 scene; e.g. «Myvi warna perak, nombor plat VBK 2391.» (grab_pickup).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1616",
+   "row": 1617,
+   "values": [
+    "L-1616",
+    "secawan",
+    "a cup of",
+    "一杯の",
+    "det",
+    "se-",
+    "cawan",
+    "Not yet checked",
+    "",
+    "ms-x08-014",
+    "Ch8 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "a cup of",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: se- + classifier (Ch8); cawan Ch8. Hanashishou: 1 scene; e.g. «Lima minit kemudian, pelayan bawa makanan anda dan secawan teh pekat tanpa susu.» (mamak_order). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1617",
+   "row": 1618,
+   "values": [
+    "L-1617",
+    "sehelai",
+    "one piece (of clothing)",
+    "一枚の",
+    "det",
+    "se-",
+    "helai",
+    "Not yet checked",
+    "",
+    "ms-x08-015",
+    "Ch8 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "one piece (of clothing)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: se- + classifier (Ch8); helai Ch8. Hanashishou: 1 scene; e.g. «Semalam anda beli sehelai baju di pusat beli-belah.» (return_item). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1618",
+   "row": 1619,
+   "values": [
+    "L-1618",
+    "sepasang",
+    "a pair of",
+    "一組の",
+    "det",
+    "se-",
+    "pasang",
+    "Not yet checked",
+    "",
+    "ms-x08-016",
+    "Ch8 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "a pair of",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: se- + classifier (Ch8); pasang Ch8. Hanashishou: 1 scene; e.g. «Anda suka sepasang kasut sukan putih.» (shoe_size). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1619",
+   "row": 1620,
+   "values": [
+    "L-1619",
+    "stik",
+    "steak",
+    "ステーキ",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x08-017",
+    "Ch8 (extension)",
+    "social · band 1",
+    "Yes",
+    "steak",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: ordering food (Ch8); Malay spelling of the loan. Hanashishou: 1 scene; e.g. «Stik ini well-done.» (azula_restaurant).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x08-001": {
+   "lid": "L-1335",
+   "moved_from": "ms-j-social-33"
+  },
+  "ms-x08-002": {
+   "lid": "L-1339",
+   "moved_from": "ms-j-social-37"
+  },
+  "ms-x08-003": {
+   "lid": "L-1605"
+  },
+  "ms-x08-004": {
+   "lid": "L-1606"
+  },
+  "ms-x08-005": {
+   "lid": "L-1607"
+  },
+  "ms-x08-006": {
+   "lid": "L-1608"
+  },
+  "ms-x08-007": {
+   "lid": "L-1609"
+  },
+  "ms-x08-008": {
+   "lid": "L-1610"
+  },
+  "ms-x08-009": {
+   "lid": "L-1611"
+  },
+  "ms-x08-010": {
+   "lid": "L-1612"
+  },
+  "ms-x08-011": {
+   "lid": "L-1613"
+  },
+  "ms-x08-012": {
+   "lid": "L-1614"
+  },
+  "ms-x08-013": {
+   "lid": "L-1615"
+  },
+  "ms-x08-014": {
+   "lid": "L-1616"
+  },
+  "ms-x08-015": {
+   "lid": "L-1617"
+  },
+  "ms-x08-016": {
+   "lid": "L-1618"
+  },
+  "ms-x08-017": {
+   "lid": "L-1619"
+  }
+ }
+}

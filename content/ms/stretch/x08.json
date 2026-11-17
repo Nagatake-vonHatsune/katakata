@@ -1,0 +1,545 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x08",
+  "chapter": 8,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Penjodoh Bilangan",
+    "en": "Counters",
+    "ja": "助数詞"
+  },
+  "cards": [
+    {
+      "id": "ms-x08-001",
+      "lang": "ms",
+      "term": "seorang",
+      "gloss_en": "one person; alone",
+      "gloss_ja": "1人、1人で",
+      "pos": "det",
+      "affix_tag": "se-",
+      "note": "se- + orang (Ch2): one person; «seorang diri» = alone, on your own.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "se- + orang（第2課）：一人。«seorang diri»＝一人で。"
+    },
+    {
+      "id": "ms-x08-002",
+      "lang": "ms",
+      "term": "sendiri",
+      "gloss_en": "oneself; own; by oneself",
+      "gloss_ja": "自分で、自分自身の",
+      "pos": "adv",
+      "affix_tag": "se-",
+      "note": "Oneself, own, by oneself: «pilih sendiri» = choose it yourself.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "自分で、自分の：«pilih sendiri»＝自分で選ぶ。"
+    },
+    {
+      "id": "ms-x08-003",
+      "lang": "ms",
+      "term": "kualiti",
+      "gloss_en": "quality",
+      "gloss_ja": "品質",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Quality (from English).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "品質（英語から）。"
+    },
+    {
+      "id": "ms-x08-004",
+      "lang": "ms",
+      "term": "sekotak",
+      "gloss_en": "a box of",
+      "gloss_ja": "一箱の",
+      "pos": "det",
+      "affix_tag": "se-",
+      "note": "se- + kotak (Ch8): a box of. «sekotak coklat» = a box of chocolates.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "se- + kotak（第8課）：1箱の。«sekotak coklat»＝チョコレート1箱。"
+    },
+    {
+      "id": "ms-x08-005",
+      "lang": "ms",
+      "term": "seluruh",
+      "gloss_en": "entire, whole",
+      "gloss_ja": "全部の、〜じゅう",
+      "pos": "det",
+      "affix_tag": "root",
+      "note": "Whole, entire: «seluruh keluarga» = the whole family.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "全体の：«seluruh keluarga»＝家族全員。"
+    },
+    {
+      "id": "ms-x08-006",
+      "lang": "ms",
+      "term": "tambahan",
+      "gloss_en": "additional",
+      "gloss_ja": "追加の",
+      "pos": "adj",
+      "affix_tag": "-an",
+      "note": "tambah (Ch8) + -an: extra, additional. «beg tambahan» = an extra bag.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "tambah（第8課）+ -an：追加の。«beg tambahan»＝追加の袋。"
+    },
+    {
+      "id": "ms-x08-007",
+      "lang": "ms",
+      "term": "gelas",
+      "gloss_en": "glass (for drinking)",
+      "gloss_ja": "コップ、グラス",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A drinking glass. «segelas air» = a glass of water.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "コップ、グラス。«segelas air»＝水1杯。",
+      "image": "🥃"
+    },
+    {
+      "id": "ms-x08-008",
+      "lang": "ms",
+      "term": "hadiah",
+      "gloss_en": "gift, prize",
+      "gloss_ja": "プレゼント、賞品",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Gift, present; prize.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "プレゼント、おみやげ；賞品。",
+      "image": "🎁"
+    },
+    {
+      "id": "ms-x08-009",
+      "lang": "ms",
+      "term": "ikat",
+      "gloss_en": "bunch (of vegetables); tie",
+      "gloss_ja": "束；縛る",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A bunch (of vegetables); to tie. «dua ringgit satu ikat» = two ringgit a bunch.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "（野菜の）束；結ぶ。«dua ringgit satu ikat»＝1束2リンギット。"
+    },
+    {
+      "id": "ms-x08-010",
+      "lang": "ms",
+      "term": "jaket",
+      "gloss_en": "jacket",
+      "gloss_ja": "ジャケット",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Jacket. «sehelai jaket» = one jacket.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "ジャケット。«sehelai jaket»＝ジャケット1着。",
+      "image": "🧥"
+    },
+    {
+      "id": "ms-x08-011",
+      "lang": "ms",
+      "term": "mainan",
+      "gloss_en": "toy",
+      "gloss_ja": "おもちゃ",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "main (Ch2) + -an: a toy. «kereta mainan» = a toy car.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "main（第2課）+ -an：おもちゃ。«kereta mainan»＝おもちゃの車。",
+      "image": "🧸"
+    },
+    {
+      "id": "ms-x08-012",
+      "lang": "ms",
+      "term": "majalah",
+      "gloss_en": "magazine",
+      "gloss_ja": "雑誌",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Magazine. «senaskhah majalah» = one copy of a magazine.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "雑誌。«senaskhah majalah»＝雑誌1冊。"
+    },
+    {
+      "id": "ms-x08-013",
+      "lang": "ms",
+      "term": "perak",
+      "gloss_en": "silver (colour)",
+      "gloss_ja": "銀（色）",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Silver (colour and metal): «warna perak».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "銀（色、金属）：«warna perak»＝銀色。"
+    },
+    {
+      "id": "ms-x08-014",
+      "lang": "ms",
+      "term": "secawan",
+      "gloss_en": "a cup of",
+      "gloss_ja": "一杯の",
+      "pos": "det",
+      "affix_tag": "se-",
+      "note": "se- + cawan (Ch8): a cup of. «secawan kopi» = a cup of coffee.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "se- + cawan（第8課）：1杯の。«secawan kopi»＝コーヒー1杯。"
+    },
+    {
+      "id": "ms-x08-015",
+      "lang": "ms",
+      "term": "sehelai",
+      "gloss_en": "one piece (of clothing)",
+      "gloss_ja": "一枚の",
+      "pos": "det",
+      "affix_tag": "se-",
+      "note": "se- + helai (Ch8): one piece (of clothing, paper). «sehelai baju» = one shirt.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "se- + helai（第8課）：（服や紙）1枚。«sehelai baju»＝シャツ1枚。"
+    },
+    {
+      "id": "ms-x08-016",
+      "lang": "ms",
+      "term": "sepasang",
+      "gloss_en": "a pair of",
+      "gloss_ja": "一組の",
+      "pos": "det",
+      "affix_tag": "se-",
+      "note": "se- + pasang (Ch8): a pair of. «sepasang kasut» = a pair of shoes.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "se- + pasang（第8課）：1組の。«sepasang kasut»＝靴1足。"
+    },
+    {
+      "id": "ms-x08-017",
+      "lang": "ms",
+      "term": "stik",
+      "gloss_en": "steak",
+      "gloss_ja": "ステーキ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Steak (from English).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x08"
+        }
+      ],
+      "scene": "stretch-x08",
+      "chapter": 8,
+      "note_ja": "ステーキ（英語から）。",
+      "image": "🥩"
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-x08-f01",
+      "frame": "Saya mahu beli ___ jaket dan ___ kasut.",
+      "example": "Saya mahu beli sehelai jaket dan sepasang kasut.",
+      "meaning_en": "I'd like to buy a jacket and a pair of shoes.",
+      "meaning_ja": "ジャケット1着と靴1足を買いたいです。",
+      "decoys": [
+        "sebiji"
+      ]
+    },
+    {
+      "id": "ms-x08-f02",
+      "frame": "Saya beli ___ coklat untuk ___ keluarga saya.",
+      "example": "Saya beli sekotak coklat untuk seluruh keluarga saya.",
+      "meaning_en": "I bought a box of chocolates for my whole family.",
+      "meaning_ja": "家族みんなのためにチョコレートを1箱買いました。",
+      "decoys": [
+        "sebuah"
+      ]
+    },
+    {
+      "id": "ms-x08-f03",
+      "frame": "___ ini dua ringgit satu ___.",
+      "example": "Sayur ini dua ringgit satu ikat.",
+      "meaning_en": "These vegetables are two ringgit a bunch.",
+      "meaning_ja": "この野菜は1束2リンギットです。",
+      "decoys": [
+        "biji"
+      ]
+    },
+    {
+      "id": "ms-x08-f04",
+      "frame": "Kualiti ___ ini lebih ___ daripada ___ itu.",
+      "example": "Kualiti jaket ini lebih bagus daripada jaket itu.",
+      "meaning_en": "This jacket's quality is better than that one's.",
+      "meaning_ja": "このジャケットの品質はあのジャケットよりいい。",
+      "decoys": [
+        "dari"
+      ]
+    },
+    {
+      "id": "ms-x08-f05",
+      "frame": "Saya datang ke ___ ini seorang ___.",
+      "example": "Saya datang ke kedai ini seorang diri.",
+      "meaning_en": "I came to this shop on my own.",
+      "meaning_ja": "この店に一人で来ました。",
+      "decoys": [
+        "sendiri"
+      ]
+    },
+    {
+      "id": "ms-x08-f06",
+      "frame": "Boleh saya ambil ___ beg ___?",
+      "example": "Boleh saya ambil sebuah beg tambahan?",
+      "meaning_en": "Could I take an extra bag?",
+      "meaning_ja": "袋をもう1つもらえますか。",
+      "decoys": [
+        "tambah"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "A gift for the family",
+    "title_ja": "家族へのおみやげ",
+    "lines": [
+      {
+        "id": "ms-x08-d01",
+        "speaker": "Tanaka",
+        "ms": "Cik Mei Ling, saya mahu beli hadiah untuk keluarga saya di Jepun.",
+        "en": "Ms Mei Ling, I'd like to buy gifts for my family in Japan."
+      },
+      {
+        "id": "ms-x08-d02",
+        "speaker": "Cik Mei Ling",
+        "ms": "Bagus! Hadiah untuk siapa?",
+        "en": "Great! Who are the gifts for?",
+        "choices": [
+          "Bagus! Hadiah itu sudah habis semalam.",
+          "Maaf, saya tidak suka hadiah."
+        ],
+        "choices_en": [
+          "Great! Those gifts sold out yesterday.",
+          "Sorry, I don't like gifts."
+        ]
+      },
+      {
+        "id": "ms-x08-d03",
+        "speaker": "Tanaka",
+        "ms": "Untuk isteri dan anak saya. Anak saya suka mainan.",
+        "en": "For my wife and my child. My child likes toys."
+      },
+      {
+        "id": "ms-x08-d04",
+        "speaker": "Cik Mei Ling",
+        "ms": "Kedai di sebelah ada mainan yang cantik. Kualitinya bagus.",
+        "en": "The shop next door has nice toys. The quality is good.",
+        "choices": [
+          "Anak Encik suka makan stik?",
+          "Saya tidak ada anak."
+        ],
+        "choices_en": [
+          "Does your child like eating steak?",
+          "I don't have children."
+        ]
+      },
+      {
+        "id": "ms-x08-d05",
+        "speaker": "Tanaka",
+        "ms": "Baik. Untuk isteri saya pula?",
+        "en": "Good. And for my wife?"
+      },
+      {
+        "id": "ms-x08-d06",
+        "speaker": "Cik Mei Ling",
+        "ms": "Sehelai jaket? Di Jepun sekarang sejuk, bukan?",
+        "en": "A jacket? It's cold in Japan now, isn't it?",
+        "choices": [
+          "Sepasang jaket? Di Jepun sekarang panas, bukan?",
+          "Secawan jaket? Di Jepun sekarang sejuk, bukan?"
+        ],
+        "choices_en": [
+          "A pair of jackets? It's hot in Japan now, isn't it?",
+          "A cup of jacket? It's cold in Japan now, isn't it?"
+        ]
+      },
+      {
+        "id": "ms-x08-d07",
+        "speaker": "Tanaka",
+        "ms": "Betul. Jaket warna perak itu cantik. Berapa harganya?",
+        "en": "Right. That silver jacket is pretty. How much is it?"
+      },
+      {
+        "id": "ms-x08-d08",
+        "speaker": "Pekerja kedai",
+        "ms": "Seratus lima puluh ringgit. Kualitinya bagus.",
+        "en": "A hundred and fifty ringgit. It's good quality."
+      },
+      {
+        "id": "ms-x08-d09",
+        "speaker": "Tanaka",
+        "ms": "Boleh kurang sedikit?",
+        "en": "Could you make it a bit cheaper?",
+        "choices": [
+          "Boleh tambah seratus ringgit?",
+          "Saya mahu saiz yang paling ketat."
+        ],
+        "choices_en": [
+          "Could you add a hundred ringgit?",
+          "I want the tightest size."
+        ]
+      },
+      {
+        "id": "ms-x08-d10",
+        "speaker": "Pekerja kedai",
+        "ms": "Boleh. Ada diskaun sepuluh peratus untuk jaket ini.",
+        "en": "Sure. There's a ten percent discount on this jacket."
+      },
+      {
+        "id": "ms-x08-d11",
+        "speaker": "Tanaka",
+        "ms": "Bagus! Saya beli sehelai. Tolong bungkus, ya. Ini hadiah.",
+        "en": "Great! I'll take one. Please wrap it. It's a gift."
+      },
+      {
+        "id": "ms-x08-d12",
+        "speaker": "Cik Mei Ling",
+        "ms": "Encik pilih hadiah sendiri. Isteri Encik akan gembira.",
+        "en": "You chose the gift yourself. Your wife will be happy."
+      },
+      {
+        "id": "ms-x08-d13",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih, Cik Mei Ling. Kita minum secawan kopi dulu?",
+        "en": "Thank you, Ms Mei Ling. Shall we have a cup of coffee first?",
+        "choices": [
+          "Terima kasih. Kita minum sepasang kopi dulu?",
+          "Maaf, saya beli jaket itu semalam."
+        ],
+        "choices_en": [
+          "Thank you. Shall we have a pair of coffee first?",
+          "Sorry, I bought that jacket yesterday."
+        ]
+      },
+      {
+        "id": "ms-x08-d14",
+        "speaker": "Cik Mei Ling",
+        "ms": "Boleh! Kali ini saya bayar.",
+        "en": "Sure! This time I'll pay."
+      }
+    ]
+  },
+  "cari": {
+    "scene": "pakaian-kedai",
+    "core": [
+      "ms-d-pakaian-kedai-01",
+      "ms-d-pakaian-kedai-02",
+      "ms-d-pakaian-kedai-04",
+      "ms-d-pakaian-kedai-05"
+    ]
+  }
+}
