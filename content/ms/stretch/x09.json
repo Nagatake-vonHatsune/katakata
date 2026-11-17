@@ -1,0 +1,552 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x09",
+  "chapter": 9,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Ayat Pasif di-",
+    "en": "The di- passive",
+    "ja": "受け身の di-"
+  },
+  "cards": [
+    {
+      "id": "ms-x09-001",
+      "lang": "ms",
+      "term": "terima",
+      "gloss_en": "to receive, accept",
+      "gloss_ja": "受け取る、受け入れる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To receive, accept: «terima tetamu» = to receive guests. Compare «terima kasih» (Ch1).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "受け取る、受け入れる：«terima tetamu»＝お客を迎える。«terima kasih»（第1課）と比べよう。"
+    },
+    {
+      "id": "ms-x09-002",
+      "lang": "ms",
+      "term": "buatan",
+      "gloss_en": "made (\"buatan tangan\" = handmade)",
+      "gloss_ja": "〜製、作られたもの",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "buat (Ch9) + -an: made. «buatan tangan» = handmade, «buatan Jepun» = made in Japan.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "buat（第9課）+ -an：〜製。«buatan tangan»＝手作り、«buatan Jepun»＝日本製。"
+    },
+    {
+      "id": "ms-x09-003",
+      "lang": "ms",
+      "term": "keselamatan",
+      "gloss_en": "safety, security",
+      "gloss_ja": "安全、警備",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "ke-an + selamat (Ch1): safety, security. «keselamatan awam» = public safety.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "ke-an + selamat（第1課）：安全。«keselamatan awam»＝公共の安全。"
+    },
+    {
+      "id": "ms-x09-004",
+      "lang": "ms",
+      "term": "kesulitan",
+      "gloss_en": "inconvenience",
+      "gloss_ja": "ご不便（おわびの言葉）",
+      "pos": "noun",
+      "affix_tag": "ke-an",
+      "note": "Inconvenience: formal, on notices («Kami minta maaf atas kesulitan ini.»). In everyday talk, «masalah». Taught as a whole word.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "ご不便：お知らせなどの改まった言い方（«Kami minta maaf atas kesulitan ini.»）。ふだんの会話では «masalah»。ひとまとまりの単語として。",
+      "register": "formal"
+    },
+    {
+      "id": "ms-x09-005",
+      "lang": "ms",
+      "term": "awam",
+      "gloss_en": "public",
+      "gloss_ja": "公共の、一般の",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Public: «tandas awam» = public toilet.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "公共の：«tandas awam»＝公衆トイレ。"
+    },
+    {
+      "id": "ms-x09-006",
+      "lang": "ms",
+      "term": "denda",
+      "gloss_en": "fine, penalty",
+      "gloss_ja": "罰金",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Fine, penalty: «denda lima ratus ringgit» = a 500-ringgit fine.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "罰金：«denda lima ratus ringgit»＝罰金500リンギット。"
+    },
+    {
+      "id": "ms-x09-007",
+      "lang": "ms",
+      "term": "hiasan",
+      "gloss_en": "decoration",
+      "gloss_ja": "飾り",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Decoration; taught as a whole word.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "飾り（ひとまとまりの単語として）。"
+    },
+    {
+      "id": "ms-x09-008",
+      "lang": "ms",
+      "term": "kenduri",
+      "gloss_en": "feast, celebratory meal",
+      "gloss_ja": "祝宴、ごちそうの集まり",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "A feast, a celebratory meal for guests (a wedding, a family celebration).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "祝宴、お祝いの食事会（結婚式、家族のお祝い）。"
+    },
+    {
+      "id": "ms-x09-009",
+      "lang": "ms",
+      "term": "mulai",
+      "gloss_en": "starting from",
+      "gloss_ja": "〜から（開始）",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": "Starting from (formal, on notices): «mulai Isnin» = from Monday.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "〜から（お知らせなどの改まった言い方）：«mulai Isnin»＝月曜日から。",
+      "register": "formal"
+    },
+    {
+      "id": "ms-x09-010",
+      "lang": "ms",
+      "term": "penduduk",
+      "gloss_en": "resident",
+      "gloss_ja": "住民",
+      "pos": "noun",
+      "affix_tag": "pe(N)-",
+      "note": "pe(N)- + duduk (Ch4): resident. «penduduk kondo» = the condo's residents.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "pe(N)- + duduk（第4課）：住民。«penduduk kondo»＝コンドミニアムの住民。"
+    },
+    {
+      "id": "ms-x09-011",
+      "lang": "ms",
+      "term": "pentas",
+      "gloss_en": "stage",
+      "gloss_ja": "舞台",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Stage (for a show).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "舞台、ステージ。"
+    },
+    {
+      "id": "ms-x09-012",
+      "lang": "ms",
+      "term": "persembahan",
+      "gloss_en": "performance",
+      "gloss_ja": "公演、パフォーマンス",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "Performance, show; taught as a whole word.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "公演、出し物（ひとまとまりの単語として）。"
+    },
+    {
+      "id": "ms-x09-013",
+      "lang": "ms",
+      "term": "sambut",
+      "gloss_en": "welcome, receive",
+      "gloss_ja": "迎える、祝う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To welcome, receive; to celebrate: «sambut tetamu» = to welcome guests.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "迎える；祝う：«sambut tetamu»＝お客を迎える。"
+    },
+    {
+      "id": "ms-x09-014",
+      "lang": "ms",
+      "term": "sehingga",
+      "gloss_en": "until, up to",
+      "gloss_ja": "〜まで",
+      "pos": "prep",
+      "affix_tag": "se-",
+      "note": "Until, up to: «sehingga pukul sebelas» = until eleven. Compare «hingga» (Ch9).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "〜まで：«sehingga pukul sebelas»＝11時まで。«hingga»（第9課）と比べよう。"
+    },
+    {
+      "id": "ms-x09-015",
+      "lang": "ms",
+      "term": "sekat",
+      "gloss_en": "block",
+      "gloss_ja": "ふさぐ、止める",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To block. «disekat» = blocked.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "ふさぐ、止める。«disekat»＝通行止めの。"
+    },
+    {
+      "id": "ms-x09-016",
+      "lang": "ms",
+      "term": "sekatan",
+      "gloss_en": "block, restriction",
+      "gloss_ja": "制限、通行止め",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "sekat + -an: a block, restriction. «sekatan jalan» = roadblock.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "sekat + -an：規制、通行止め。«sekatan jalan»＝道路の通行止め。"
+    },
+    {
+      "id": "ms-x09-017",
+      "lang": "ms",
+      "term": "tahniah",
+      "gloss_en": "congratulations",
+      "gloss_ja": "おめでとう",
+      "pos": "phrase",
+      "affix_tag": "root",
+      "note": "Congratulations!",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "おめでとう！"
+    },
+    {
+      "id": "ms-x09-018",
+      "lang": "ms",
+      "term": "tanda",
+      "gloss_en": "sign, mark",
+      "gloss_ja": "しるし、標識",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Sign, mark. «papan tanda» (Ch9) = signboard.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x09"
+        }
+      ],
+      "scene": "stretch-x09",
+      "chapter": 9,
+      "note_ja": "しるし、記号。«papan tanda»（第9課）＝看板。"
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-x09-f01",
+      "frame": "Jalan ini ditutup mulai ___ sehingga ___.",
+      "example": "Jalan ini ditutup mulai pukul enam petang sehingga pukul sebelas malam.",
+      "meaning_en": "This road is closed from 6 p.m. until 11 p.m.",
+      "meaning_ja": "この道は午後6時から午後11時まで通行止めです。",
+      "decoys": [
+        "dibuka"
+      ]
+    },
+    {
+      "id": "ms-x09-f02",
+      "frame": "Kami minta maaf atas ___ ini.",
+      "example": "Kami minta maaf atas kesulitan ini.",
+      "meaning_en": "We apologise for the inconvenience.",
+      "meaning_ja": "ご不便をおかけして申し訳ありません。",
+      "decoys": [
+        "keselamatan"
+      ]
+    },
+    {
+      "id": "ms-x09-f03",
+      "frame": "Untuk ___ awam, dilarang ___.",
+      "example": "Untuk keselamatan awam, dilarang masuk.",
+      "meaning_en": "For public safety, no entry.",
+      "meaning_ja": "公共の安全のため、立ち入り禁止。",
+      "decoys": [
+        "selamat"
+      ]
+    },
+    {
+      "id": "ms-x09-f04",
+      "frame": "Dilarang merokok di ___. Denda ___ ringgit.",
+      "example": "Dilarang merokok di sini. Denda lima ratus ringgit.",
+      "meaning_en": "No smoking here. Fine: 500 ringgit.",
+      "meaning_ja": "ここは禁煙。罰金500リンギット。",
+      "decoys": [
+        "diskaun"
+      ]
+    },
+    {
+      "id": "ms-x09-f05",
+      "frame": "Tuan rumah ___ tetamu di ___.",
+      "example": "Tuan rumah sambut tetamu di pintu.",
+      "meaning_en": "The host welcomes the guests at the door.",
+      "meaning_ja": "ホストが玄関でお客を迎えます。",
+      "decoys": [
+        "tolak"
+      ]
+    },
+    {
+      "id": "ms-x09-f06",
+      "frame": "Kek ini buatan ___ saya.",
+      "example": "Kek ini buatan ibu saya.",
+      "meaning_en": "My mother made this cake.",
+      "meaning_ja": "このケーキは母の手作りです。",
+      "decoys": [
+        "dibuat"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "The residents' festival",
+    "title_ja": "住民まつり",
+    "lines": [
+      {
+        "id": "ms-x09-d01",
+        "speaker": "Tanaka",
+        "ms": "Puan Siti, tolong baca papan tanda ini. Saya belum faham.",
+        "en": "Mrs Siti, could you read this sign for me? I don't understand it yet."
+      },
+      {
+        "id": "ms-x09-d02",
+        "speaker": "Puan Siti",
+        "ms": "Jalan ini ditutup mulai pukul enam petang, Sabtu ini.",
+        "en": "This road is closed from six in the evening, this Saturday.",
+        "choices": [
+          "Jalan ini dibuka mulai pukul enam petang, Sabtu lepas.",
+          "Dilarang makan dan minum di jalan ini."
+        ],
+        "choices_en": [
+          "This road was open from six in the evening last Saturday.",
+          "No eating or drinking on this road."
+        ]
+      },
+      {
+        "id": "ms-x09-d03",
+        "speaker": "Tanaka",
+        "ms": "Kenapa jalan ditutup?",
+        "en": "Why is the road closed?"
+      },
+      {
+        "id": "ms-x09-d04",
+        "speaker": "Puan Siti",
+        "ms": "Ada pesta penduduk. Ada pentas dan persembahan muzik.",
+        "en": "There's a residents' festival. There'll be a stage and music performances.",
+        "choices": [
+          "Saya tidak tahu. Saya tidak suka pesta.",
+          "Sebab jalan ini kotor."
+        ],
+        "choices_en": [
+          "I don't know. I don't like festivals.",
+          "Because this road is dirty."
+        ]
+      },
+      {
+        "id": "ms-x09-d05",
+        "speaker": "Tanaka",
+        "ms": "Wah, seronok! Kita boleh pergi?",
+        "en": "Wow, fun! Can we go?"
+      },
+      {
+        "id": "ms-x09-d06",
+        "speaker": "Puan Siti",
+        "ms": "Boleh! Semua penduduk dijemput.",
+        "en": "Yes! All the residents are invited."
+      },
+      {
+        "id": "ms-x09-d07",
+        "speaker": "Tanaka",
+        "ms": "Ada sekatan jalan? Kereta saya di tempat letak kereta.",
+        "en": "Is there a roadblock? My car is in the car park."
+      },
+      {
+        "id": "ms-x09-d08",
+        "speaker": "Puan Siti",
+        "ms": "Ya, sehingga pukul sebelas malam. Kalau letak kereta di jalan itu, ada denda.",
+        "en": "Yes, until eleven at night. If you park on that road, there's a fine."
+      },
+      {
+        "id": "ms-x09-d09",
+        "speaker": "Tanaka",
+        "ms": "Baik, saya tidak bawa kereta. Terima kasih, Puan.",
+        "en": "All right, I won't take the car. Thank you.",
+        "choices": [
+          "Baik, saya letak kereta di jalan itu.",
+          "Tahniah, Puan!"
+        ],
+        "choices_en": [
+          "All right, I'll park on that road.",
+          "Congratulations!"
+        ]
+      },
+      {
+        "id": "ms-x09-d10",
+        "speaker": "(Narrator)",
+        "ms": "Malam Sabtu.",
+        "en": "Saturday night."
+      },
+      {
+        "id": "ms-x09-d11",
+        "speaker": "Puan Siti",
+        "ms": "Encik Tanaka! Hiasan di pentas itu buatan tangan penduduk.",
+        "en": "Mr Tanaka! The decorations on that stage were made by hand by the residents."
+      },
+      {
+        "id": "ms-x09-d12",
+        "speaker": "Tanaka",
+        "ms": "Cantik sekali! Persembahan mula pukul berapa?",
+        "en": "They're beautiful! What time does the show start?",
+        "choices": [
+          "Kotor sekali! Siapa buat hiasan itu?",
+          "Denda berapa ringgit?"
+        ],
+        "choices_en": [
+          "How dirty! Who made those decorations?",
+          "How many ringgit is the fine?"
+        ]
+      },
+      {
+        "id": "ms-x09-d13",
+        "speaker": "Puan Siti",
+        "ms": "Pukul lapan. Anak saya ada persembahan muzik di pentas.",
+        "en": "At eight. My child is performing music on the stage."
+      },
+      {
+        "id": "ms-x09-d14",
+        "speaker": "Tanaka",
+        "ms": "Wah, tahniah! Saya mahu tengok.",
+        "en": "Wow, congratulations! I want to watch.",
+        "choices": [
+          "Kenapa? Saya tidak suka muzik.",
+          "Wah, tahniah! Saya mahu tidur."
+        ],
+        "choices_en": [
+          "Why? I don't like music.",
+          "Wow, congratulations! I want to sleep."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,524 @@
+{
+ "chapter": 9,
+ "place": "Ch9 (extension)",
+ "changes": [
+  {
+   "lid": "L-1349",
+   "row": 1350,
+   "word": "terima",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-43",
+     "after": "ms-x09-001"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Talking and explaining",
+     "after": "Ch9 (extension)"
+    }
+   ]
+  }
+ ],
+ "new": [
+  {
+   "lid": "L-1620",
+   "row": 1621,
+   "values": [
+    "L-1620",
+    "buatan",
+    "made (\"buatan tangan\" = handmade)",
+    "〜製、作られたもの",
+    "noun",
+    "-an",
+    "buat",
+    "Not yet checked",
+    "",
+    "ms-x09-002",
+    "Ch9 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "made (\"buatan tangan\" = handmade)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: labels and notices (Ch9): «buatan tangan», «buatan Malaysia»; buat Ch9. Hanashishou: 2 scenes; e.g. «Buatan tangan.» (price_haggle).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1621",
+   "row": 1622,
+   "values": [
+    "L-1621",
+    "keselamatan",
+    "safety, security",
+    "安全、警備",
+    "noun",
+    "ke-an",
+    "selamat",
+    "Not yet checked",
+    "",
+    "ms-x09-003",
+    "Ch9 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "safety, security",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: notices (Ch9): «demi keselamatan», «pengawal keselamatan»; selamat Ch1. Hanashishou: 2 scenes; e.g. «Pagi tadi ada tiga kali PIN salah di mesin ATM, jadi kad itu disekat untuk keselamatan.» (card_blocked).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1622",
+   "row": 1623,
+   "values": [
+    "L-1622",
+    "kesulitan",
+    "inconvenience",
+    "ご不便（おわびの言葉）",
+    "noun",
+    "ke-an",
+    "sulit",
+    "Not yet checked",
+    "",
+    "ms-x09-004",
+    "Ch9 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "inconvenience",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: notices (Ch9): «Harap maaf atas kesulitan» (official notices only). Hanashishou: 2 scenes; e.g. «Maaf atas kesulitan.» (card_blocked). Sam 14 Nov: fine in official lines, casual lines use «masalah»; root «sulit» not in ledger: taught as a whole word.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1623",
+   "row": 1624,
+   "values": [
+    "L-1623",
+    "awam",
+    "public",
+    "公共の、一般の",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x09-005",
+    "Ch9 (extension)",
+    "office · band 1",
+    "Yes",
+    "public",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: notices (Ch9): «tandas awam», «cuti awam». Hanashishou: 1 scene; e.g. «Awam 15 Mac.» (meeting_disagree).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1624",
+   "row": 1625,
+   "values": [
+    "L-1624",
+    "denda",
+    "fine, penalty",
+    "罰金",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x09-006",
+    "Ch9 (extension)",
+    "social · band 1",
+    "Yes",
+    "fine, penalty",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: notices and rules (Ch9): «Denda RM500». Hanashishou: 1 scene; e.g. «Saya tak akan bayar denda lewat.» (trio_road_trip).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1625",
+   "row": 1626,
+   "values": [
+    "L-1625",
+    "hiasan",
+    "decoration",
+    "飾り",
+    "noun",
+    "-an",
+    "hias",
+    "Not yet checked",
+    "",
+    "ms-x09-007",
+    "Ch9 (extension)",
+    "social · band 1",
+    "Yes",
+    "decoration",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: festivals (Ch9): decorations. Hanashishou: 1 scene; e.g. «Saya buat hiasan!» (trio_surprise_party). root «hias» not in ledger: taught as a whole word.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1626",
+   "row": 1627,
+   "values": [
+    "L-1626",
+    "kenduri",
+    "feast, celebratory meal",
+    "祝宴、ごちそうの集まり",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x09-008",
+    "Ch9 (extension)",
+    "social · band 1",
+    "Yes",
+    "feast, celebratory meal",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: open house and festivals (Ch9, with «Rumah terbuka»). Hanashishou: 1 scene; e.g. «Saya tak suka kenduri kahwin.» (monday_catchup).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1627",
+   "row": 1628,
+   "values": [
+    "L-1627",
+    "mulai",
+    "starting from",
+    "〜から（開始）",
+    "prep",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x09-009",
+    "Ch9 (extension)",
+    "social · band 1",
+    "Yes",
+    "starting from",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: notices (Ch9): «Mulai 1 Disember …». Hanashishou: 1 scene; e.g. «Mulai pukul 1» (trio_surprise_party). formal; check Malaysian use in notices.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1628",
+   "row": 1629,
+   "values": [
+    "L-1628",
+    "penduduk",
+    "resident",
+    "住民",
+    "noun",
+    "pe(N)-",
+    "duduk",
+    "Not yet checked",
+    "",
+    "ms-x09-010",
+    "Ch9 (extension)",
+    "social · band 1",
+    "Yes",
+    "resident",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: notices (Ch9): «Perhatian kepada semua penduduk»; duduk Ch4. Hanashishou: 1 scene; e.g. «Sabtu petang, sejam sebelum parti atas bumbung untuk penduduk kondo yang anda uruskan.» (jinx_fireworks). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1629",
+   "row": 1630,
+   "values": [
+    "L-1629",
+    "pentas",
+    "stage",
+    "舞台",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x09-011",
+    "Ch9 (extension)",
+    "office · band 1",
+    "Yes",
+    "stage",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: events (Ch9); «belakang pentas» is a Jambatan row. Hanashishou: 1 scene; e.g. «Di pentas, pengerusi syarikat, Puan Azula, baru habis ucapan.» (azula_town_hall). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1630",
+   "row": 1631,
+   "values": [
+    "L-1630",
+    "persembahan",
+    "performance",
+    "公演、パフォーマンス",
+    "noun",
+    "pe-an",
+    "sembah",
+    "Not yet checked",
+    "",
+    "ms-x09-012",
+    "Ch9 (extension)",
+    "social · band 1",
+    "Yes",
+    "performance",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: festivals and events (Ch9). Hanashishou: 1 scene; e.g. «esok saya ada persembahan.» (miku_sore_throat). root «sembah» not in ledger: taught as a whole word.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1631",
+   "row": 1632,
+   "values": [
+    "L-1631",
+    "sambut",
+    "welcome, receive",
+    "迎える、祝う",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x09-013",
+    "Ch9 (extension)",
+    "office · band 1",
+    "Yes",
+    "welcome, receive",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: festivals and open house (Ch9): «sambut Hari Raya». Hanashishou: 1 scene; e.g. «Anda sambut dia, kenalkan diri, dan tanya soalan supaya dia selesa sembang.» (new_joiner). not spoken by a character or offered as a choice (pattern).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1632",
+   "row": 1633,
+   "values": [
+    "L-1632",
+    "sehingga",
+    "until, up to",
+    "〜まで",
+    "prep",
+    "se-",
+    "hingga",
+    "Not yet checked",
+    "",
+    "ms-x09-014",
+    "Ch9 (extension)",
+    "health · band 1",
+    "Yes",
+    "until, up to",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: notices (Ch9): «sehingga 5 petang»; hingga Ch9. Hanashishou: 1 scene; e.g. «Kami boleh bekukan sehingga dua bulan.» (gym_membership).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1633",
+   "row": 1634,
+   "values": [
+    "L-1633",
+    "sekat",
+    "block",
+    "ふさぐ、止める",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x09-015",
+    "Ch9 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "block",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: notices (Ch9): «jalan disekat», a blocked card. Hanashishou: 1 scene; e.g. «Bank awak sekat kad saya!» (card_blocked).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1634",
+   "row": 1635,
+   "values": [
+    "L-1634",
+    "sekatan",
+    "block, restriction",
+    "制限、通行止め",
+    "noun",
+    "-an",
+    "sekat",
+    "Not yet checked",
+    "",
+    "ms-x09-016",
+    "Ch9 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "block, restriction",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: notices (Ch9): «sekatan jalan»; sekat Ch9 (extension). Hanashishou: 1 scene; e.g. «Tolong buka sekatan kad ini.» (card_blocked).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1635",
+   "row": 1636,
+   "values": [
+    "L-1635",
+    "tahniah",
+    "congratulations",
+    "おめでとう",
+    "phrase",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x09-017",
+    "Ch9 (extension)",
+    "social · band 1",
+    "Yes",
+    "congratulations",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: festivals and celebrations (Ch9). Hanashishou: 1 scene; e.g. «Tahniah dapat bonus.» (mamak_lepak).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1636",
+   "row": 1637,
+   "values": [
+    "L-1636",
+    "tanda",
+    "sign, mark",
+    "しるし、標識",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x09-018",
+    "Ch9 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "sign, mark",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: signs and notices (Ch9). Hanashishou: 1 scene; e.g. «Anda potong cakap dengan sopan, beri tanda tempat, dan cakap apa yang anda perlu.» (grab_ride_chat). not spoken by a character or offered as a choice (pattern).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x09-001": {
+   "lid": "L-1349",
+   "moved_from": "ms-j-social-43"
+  },
+  "ms-x09-002": {
+   "lid": "L-1620"
+  },
+  "ms-x09-003": {
+   "lid": "L-1621"
+  },
+  "ms-x09-004": {
+   "lid": "L-1622"
+  },
+  "ms-x09-005": {
+   "lid": "L-1623"
+  },
+  "ms-x09-006": {
+   "lid": "L-1624"
+  },
+  "ms-x09-007": {
+   "lid": "L-1625"
+  },
+  "ms-x09-008": {
+   "lid": "L-1626"
+  },
+  "ms-x09-009": {
+   "lid": "L-1627"
+  },
+  "ms-x09-010": {
+   "lid": "L-1628"
+  },
+  "ms-x09-011": {
+   "lid": "L-1629"
+  },
+  "ms-x09-012": {
+   "lid": "L-1630"
+  },
+  "ms-x09-013": {
+   "lid": "L-1631"
+  },
+  "ms-x09-014": {
+   "lid": "L-1632"
+  },
+  "ms-x09-015": {
+   "lid": "L-1633"
+  },
+  "ms-x09-016": {
+   "lid": "L-1634"
+  },
+  "ms-x09-017": {
+   "lid": "L-1635"
+  },
+  "ms-x09-018": {
+   "lid": "L-1636"
+  }
+ }
+}
