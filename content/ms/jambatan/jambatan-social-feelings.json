@@ -42,42 +42,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-38",
-      "lang": "ms",
-      "term": "sebenarnya",
-      "gloss_en": "actually, in fact",
-      "gloss_ja": "実は、実際には",
-      "pos": "adv",
-      "affix_tag": "-nya",
-      "note": "Hanashishou: Okey, sebenarnya boleh tahan juga. In 12 Hanashishou scenes: At the pharmacy, Can you cover for me?, Demo day with Jinx, Quiet, please and 8 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-feelings"
-        }
-      ],
-      "scene": "dunia-jambatan-social-feelings",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-social-46",
-      "lang": "ms",
-      "term": "pasti",
-      "gloss_en": "sure, certain",
-      "gloss_ja": "確かな、きっと",
-      "pos": "adj",
-      "affix_tag": "root",
-      "note": "Hanashishou: Pasti? Cuba ulang, tolong. In 9 Hanashishou scenes: A sore throat, At the clinic, Demo day with Jinx, Road trip and 5 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-feelings"
-        }
-      ],
-      "scene": "dunia-jambatan-social-feelings",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-53",
       "lang": "ms",
       "term": "adil",

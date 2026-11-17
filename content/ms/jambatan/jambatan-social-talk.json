@@ -132,24 +132,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-40",
-      "lang": "ms",
-      "term": "begitu",
-      "gloss_en": "like that, so, in that way",
-      "gloss_ja": "そのように、そんなに",
-      "pos": "adv",
-      "affix_tag": "lex",
-      "note": "Hanashishou: Sebab saya kata begitu. In 10 Hanashishou scenes: A sore throat, Airport check-in, Mock interview, Monday catch-up and 6 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-talk"
-        }
-      ],
-      "scene": "dunia-jambatan-social-talk",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-47",
       "lang": "ms",
       "term": "sahkan",

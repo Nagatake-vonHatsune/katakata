@@ -1,0 +1,890 @@
+{
+ "chapter": 14,
+ "place": "Ch14 (extension)",
+ "changes": [
+  {
+   "lid": "L-1326",
+   "row": 1327,
+   "word": "memang",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-office-27",
+     "after": "ms-x14-001"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · At work",
+     "after": "Ch14 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1334",
+   "row": 1335,
+   "word": "perkara",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-office-31",
+     "after": "ms-x14-002"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · At work",
+     "after": "Ch14 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1341",
+   "row": 1342,
+   "word": "sebenarnya",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-38",
+     "after": "ms-x14-003"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Feelings and opinions",
+     "after": "Ch14 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1350",
+   "row": 1351,
+   "word": "begitu",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-40",
+     "after": "ms-x14-004"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Talking and explaining",
+     "after": "Ch14 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1355",
+   "row": 1356,
+   "word": "pasti",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-46",
+     "after": "ms-x14-005"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Feelings and opinions",
+     "after": "Ch14 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1477",
+   "row": 1478,
+   "word": "sebenar",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-home-condo-50",
+     "after": "ms-x14-006"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Home and condo",
+     "after": "Ch14 (extension)"
+    }
+   ]
+  }
+ ],
+ "new": [
+  {
+   "lid": "L-1742",
+   "row": 1743,
+   "values": [
+    "L-1742",
+    "anggap",
+    "assume, regard as",
+    "〜とみなす、思う",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-007",
+    "Ch14 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "assume, regard as",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: giving opinions and reasons (Ch14). Hanashishou: 2 scenes; e.g. «saya anggap itu ya?» (shoe_size).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1743",
+   "row": 1744,
+   "values": [
+    "L-1743",
+    "gaduh",
+    "quarrel, argue",
+    "けんかする、言い争う",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-008",
+    "Ch14 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "quarrel, argue",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: social trouble and reasons (Ch14); «bergaduh» would wait for a ber- row. Hanashishou: 2 scenes; e.g. «Gaduh dengan juruwang.» (card_blocked).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1744",
+   "row": 1745,
+   "values": [
+    "L-1744",
+    "kini",
+    "now, at present",
+    "今、現在（書き言葉）",
+    "adv",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-009",
+    "Ch14 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "now, at present",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: time linking in a short account (Ch14); formal partner of «sekarang» (Ch4). Hanashishou: 2 scenes; e.g. «Rancangan yang kabur kini jadi satu tempat jumpa yang jelas.» (grab_pickup).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1745",
+   "row": 1746,
+   "values": [
+    "L-1745",
+    "kongsi",
+    "share",
+    "分け合う、共有する",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-010",
+    "Ch14 (extension)",
+    "social · band 1",
+    "Yes",
+    "share",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: social plans (Ch14): share a cost or a ride; «berkongsi» later. Hanashishou: 2 scenes; e.g. «Kita kongsi bil, ya.» (mamak_lepak).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1746",
+   "row": 1747,
+   "values": [
+    "L-1746",
+    "kumpul",
+    "collect, gather",
+    "集める、集まる",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-011",
+    "Ch14 (extension)",
+    "office · band 1",
+    "Yes",
+    "collect, gather",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: social plans (Ch14): «kumpul duit», «kumpul di …»; root of «kumpulan». Hanashishou: 2 scenes; e.g. «Anda habis kumpul jawapan hari Jumaat.» (standup_update).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1747",
+   "row": 1748,
+   "values": [
+    "L-1747",
+    "kumpulan",
+    "group",
+    "グループ、団体",
+    "noun",
+    "-an",
+    "kumpul",
+    "Not yet checked",
+    "",
+    "ms-x14-012",
+    "Ch14 (extension)",
+    "social · band 1",
+    "Yes",
+    "group",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: social (Ch14): a group of friends. Hanashishou: 2 scenes; e.g. «Kumpulan muzik sedang main lagu Miku, dan separuh dewan ikut nyanyi.» (wedding_invite). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1748",
+   "row": 1749,
+   "values": [
+    "L-1748",
+    "makna",
+    "meaning",
+    "意味",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-013",
+    "Ch14 (extension)",
+    "social · band 1",
+    "Yes",
+    "meaning",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: explaining (Ch14); scene forms «makna», «maknanya». Hanashishou: 2 scenes; e.g. «Anda ucap terima kasih dengan sesuatu yang khusus, jadi lebih ada makna.» (miku_encore). not spoken by a character or offered as a choice (pattern).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1749",
+   "row": 1750,
+   "values": [
+    "L-1749",
+    "maksud",
+    "meaning, what is meant",
+    "意味、言いたいこと",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-014",
+    "Ch14 (extension)",
+    "health · band 1",
+    "Yes",
+    "meaning, what is meant",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: explaining (Ch14): «Apa maksud awak?»; root of «bermaksud». Hanashishou: 2 scenes; e.g. «Maksud saya, syarikat yang bayar, atau awak bayar sendiri?» (clinic_visit).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1750",
+   "row": 1751,
+   "values": [
+    "L-1750",
+    "masuk akal",
+    "to make sense",
+    "筋が通る、理にかなう",
+    "phrase",
+    "chunk",
+    "masuk + akal",
+    "Not yet checked",
+    "",
+    "ms-x14-015",
+    "Ch14 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "to make sense",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: explaining why (Ch14): «masuk akal» = makes sense; masuk Ch7. Hanashishou: 2 scenes; e.g. «Masuk akal; mungkin dia cuma sunyi.» (barking_dog).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1751",
+   "row": 1752,
+   "values": [
+    "L-1751",
+    "perbualan",
+    "conversation",
+    "会話",
+    "noun",
+    "pe-an",
+    "bual",
+    "Not yet checked",
+    "",
+    "ms-x14-016",
+    "Ch14 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "conversation",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: social talk (Ch14). Hanashishou: 2 scenes; e.g. «Anda tamatkan perbualan dengan mesra dan ingat sesuatu yang dia cerita.» (grab_ride_chat). root «bual» not in ledger: taught as a whole word.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1752",
+   "row": 1753,
+   "values": [
+    "L-1752",
+    "percaya",
+    "to believe, trust",
+    "信じる",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-017",
+    "Ch14 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "to believe, trust",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: giving reasons (Ch14); scene form «percayalah» (+ lah). Hanashishou: 2 scenes; e.g. «Percaya?» (moving_out). «percayalah» reads as percaya + lah only from Ch17 (lah row).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1753",
+   "row": 1754,
+   "values": [
+    "L-1753",
+    "sanggup",
+    "willing, dare to",
+    "〜する気がある、いとわない",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-018",
+    "Ch14 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "willing, dare to",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: inviting and offering (Ch14). Hanashishou: 2 scenes; e.g. «Saya sanggup bayar caj kecil.» (missed_bus).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1754",
+   "row": 1755,
+   "values": [
+    "L-1754",
+    "bermaksud",
+    "mean",
+    "〜という意味だ",
+    "verb",
+    "ber-",
+    "maksud",
+    "Not yet checked",
+    "",
+    "ms-x14-019",
+    "Ch14 (extension)",
+    "social · band 2",
+    "Yes",
+    "mean",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: explaining (Ch14); maksud Ch14 (extension), ber- from 10. Hanashishou: 1 scene; e.g. «Biar saya semak: enam bermaksud baling sekali lagi, berhenti di petak awak bermaksud konfeti, dan yang kalah membuat bertih jagung.» (jinx_board_game).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1755",
+   "row": 1756,
+   "values": [
+    "L-1755",
+    "campur",
+    "mix (\"masuk campur\" = get involved)",
+    "混ぜる；«masuk campur» 口を出す",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-020",
+    "Ch14 (extension)",
+    "social · band 1",
+    "Yes",
+    "mix (\"masuk campur\" = get involved)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: social (Ch14): «masuk campur»; masuk Ch7. Hanashishou: 1 scene; e.g. «Tak masuk campur.» (family_dinner).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1756",
+   "row": 1757,
+   "values": [
+    "L-1756",
+    "harap",
+    "hope",
+    "望む、願う",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-021",
+    "Ch14 (extension)",
+    "social · band 2",
+    "Yes",
+    "hope",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: social (Ch14): «Saya harap …». Hanashishou: 1 scene; e.g. «Saya pun harap boleh, sungguh.» (wedding_invite).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1757",
+   "row": 1758,
+   "values": [
+    "L-1757",
+    "meriah",
+    "lively, festive",
+    "にぎやかな",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-022",
+    "Ch14 (extension)",
+    "social · band 1",
+    "Yes",
+    "lively, festive",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: social events (Ch14); the checker reads «me-riah» as a meN- shape, so not before 11. Hanashishou: 1 scene; e.g. «Parti itu meriah.» (jinx_fireworks). looks like meN- (me + riah); not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1758",
+   "row": 1759,
+   "values": [
+    "L-1758",
+    "peduli",
+    "care (\"tak peduli\" = don't care)",
+    "気にかける",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-023",
+    "Ch14 (extension)",
+    "office · band 1",
+    "Yes",
+    "care (\"tak peduli\" = don't care)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: reasons and contrast (Ch14): «tak peduli». Hanashishou: 1 scene; e.g. «Anda kembali ke topiknya kemudian, jadi tukar topik tadi tidak rasa macam awak tak peduli.» (chatty_colleague). not spoken by a character or offered as a choice (pattern).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1759",
+   "row": 1760,
+   "values": [
+    "L-1759",
+    "punca",
+    "cause",
+    "原因",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-024",
+    "Ch14 (extension)",
+    "social · band 1",
+    "Yes",
+    "cause",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: explaining why (Ch14): «punca masalah»; scene form «puncanya». Hanashishou: 1 scene; e.g. «Baik: saya jumpa puncanya.» (jinx_bike_shop).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1760",
+   "row": 1761,
+   "values": [
+    "L-1760",
+    "rahsia",
+    "secret",
+    "秘密",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-025",
+    "Ch14 (extension)",
+    "social · band 1",
+    "Yes",
+    "secret",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: social (Ch14). Hanashishou: 1 scene; e.g. «Aduh, rahsia betul!» (mamak_lepak).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1761",
+   "row": 1762,
+   "values": [
+    "L-1761",
+    "rapat",
+    "close",
+    "親しい、近い",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-026",
+    "Ch14 (extension)",
+    "social · band 1",
+    "Yes",
+    "close",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: social (Ch14): close friends. Hanashishou: 1 scene; e.g. «Mereka rapat, tapi jarang setuju.» (family_dinner). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1762",
+   "row": 1763,
+   "values": [
+    "L-1762",
+    "sangka",
+    "suppose (\"tak sangka\" = never expected)",
+    "思う、予想する",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-027",
+    "Ch14 (extension)",
+    "social · band 1",
+    "Yes",
+    "suppose (\"tak sangka\" = never expected)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: social (Ch14): «tak sangka» (didn't expect). Hanashishou: 1 scene; e.g. «Tak sangka, anda menang.» (jinx_board_game). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1763",
+   "row": 1764,
+   "values": [
+    "L-1763",
+    "serius",
+    "serious",
+    "真剣な、深刻な",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-028",
+    "Ch14 (extension)",
+    "office · band 1",
+    "Yes",
+    "serious",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: explaining and contrast (Ch14); scene forms «serius», «seriusnya». Hanashishou: 1 scene; e.g. «Pukul 11.45, Daniel pula datang dengan muka serius.» (pantry_banter).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1764",
+   "row": 1765,
+   "values": [
+    "L-1764",
+    "suasana",
+    "atmosphere, mood",
+    "雰囲気",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-029",
+    "Ch14 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "atmosphere, mood",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: social (Ch14). Hanashishou: 1 scene; e.g. «Anda betulkan kesilapan dengan sopan, dan suasana kekal mesra.» (mamak_order). not spoken by a character or offered as a choice (pattern).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1765",
+   "row": 1766,
+   "values": [
+    "L-1765",
+    "topik",
+    "topic",
+    "トピック、話題",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-030",
+    "Ch14 (extension)",
+    "office · band 1",
+    "Yes",
+    "topic",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: social talk (Ch14); scene forms «topik», «topiknya». Hanashishou: 1 scene; e.g. «Anda kembali ke topiknya kemudian, jadi tukar topik tadi tidak rasa macam awak tak peduli.» (chatty_colleague). not spoken by a character or offered as a choice (game, pattern).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1766",
+   "row": 1767,
+   "values": [
+    "L-1766",
+    "wajar",
+    "reasonable",
+    "妥当な、もっともな",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-031",
+    "Ch14 (extension)",
+    "social · band 2",
+    "Yes",
+    "reasonable",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: reasons (Ch14): «Itu wajar». Hanashishou: 1 scene; e.g. «Kerisauan yang wajar.» (jinx_demo_day).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1767",
+   "row": 1768,
+   "values": [
+    "L-1767",
+    "yakin",
+    "confident, sure",
+    "確信している",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x14-032",
+    "Ch14 (extension)",
+    "social · band 2",
+    "Yes",
+    "confident, sure",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: giving reasons (Ch14): «Saya yakin …». Hanashishou: 1 scene; e.g. «Laju memang nampak yakin.» (azula_speech).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x14-001": {
+   "lid": "L-1326",
+   "moved_from": "ms-j-office-27"
+  },
+  "ms-x14-002": {
+   "lid": "L-1334",
+   "moved_from": "ms-j-office-31"
+  },
+  "ms-x14-003": {
+   "lid": "L-1341",
+   "moved_from": "ms-j-social-38"
+  },
+  "ms-x14-004": {
+   "lid": "L-1350",
+   "moved_from": "ms-j-social-40"
+  },
+  "ms-x14-005": {
+   "lid": "L-1355",
+   "moved_from": "ms-j-social-46"
+  },
+  "ms-x14-006": {
+   "lid": "L-1477",
+   "moved_from": "ms-j-home-condo-50"
+  },
+  "ms-x14-007": {
+   "lid": "L-1742"
+  },
+  "ms-x14-008": {
+   "lid": "L-1743"
+  },
+  "ms-x14-009": {
+   "lid": "L-1744"
+  },
+  "ms-x14-010": {
+   "lid": "L-1745"
+  },
+  "ms-x14-011": {
+   "lid": "L-1746"
+  },
+  "ms-x14-012": {
+   "lid": "L-1747"
+  },
+  "ms-x14-013": {
+   "lid": "L-1748"
+  },
+  "ms-x14-014": {
+   "lid": "L-1749"
+  },
+  "ms-x14-015": {
+   "lid": "L-1750"
+  },
+  "ms-x14-016": {
+   "lid": "L-1751"
+  },
+  "ms-x14-017": {
+   "lid": "L-1752"
+  },
+  "ms-x14-018": {
+   "lid": "L-1753"
+  },
+  "ms-x14-019": {
+   "lid": "L-1754"
+  },
+  "ms-x14-020": {
+   "lid": "L-1755"
+  },
+  "ms-x14-021": {
+   "lid": "L-1756"
+  },
+  "ms-x14-022": {
+   "lid": "L-1757"
+  },
+  "ms-x14-023": {
+   "lid": "L-1758"
+  },
+  "ms-x14-024": {
+   "lid": "L-1759"
+  },
+  "ms-x14-025": {
+   "lid": "L-1760"
+  },
+  "ms-x14-026": {
+   "lid": "L-1761"
+  },
+  "ms-x14-027": {
+   "lid": "L-1762"
+  },
+  "ms-x14-028": {
+   "lid": "L-1763"
+  },
+  "ms-x14-029": {
+   "lid": "L-1764"
+  },
+  "ms-x14-030": {
+   "lid": "L-1765"
+  },
+  "ms-x14-031": {
+   "lid": "L-1766"
+  },
+  "ms-x14-032": {
+   "lid": "L-1767"
+  }
+ }
+}

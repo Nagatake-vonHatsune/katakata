@@ -1,0 +1,810 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x14",
+  "chapter": 14,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Sebab, Syarat, Tujuan",
+    "en": "Reasons, conditions, purpose",
+    "ja": "理由・条件・目的"
+  },
+  "cards": [
+    {
+      "id": "ms-x14-001",
+      "lang": "ms",
+      "term": "memang",
+      "gloss_en": "indeed, really; of course",
+      "gloss_ja": "確かに、本当に、もちろん",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Indeed, really; of course: «Memang meriah!» = It really was lively!",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "本当に、もちろん：«Memang meriah!»＝本当ににぎやかだった！"
+    },
+    {
+      "id": "ms-x14-002",
+      "lang": "ms",
+      "term": "perkara",
+      "gloss_en": "matter, thing, issue",
+      "gloss_ja": "事柄、こと",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Matter, thing, issue: «perkara serius» = a serious matter.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "事柄、問題：«perkara serius»＝深刻なこと。"
+    },
+    {
+      "id": "ms-x14-003",
+      "lang": "ms",
+      "term": "sebenarnya",
+      "gloss_en": "actually, in fact",
+      "gloss_ja": "実は、実際には",
+      "pos": "adv",
+      "affix_tag": "-nya",
+      "note": "Actually, in fact (a whole word from «sebenar»): «Sebenarnya ada perkara serius.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "実は（«sebenar» から）：«Sebenarnya ada perkara serius.»＝実は深刻なことがあるの。"
+    },
+    {
+      "id": "ms-x14-004",
+      "lang": "ms",
+      "term": "begitu",
+      "gloss_en": "like that, so, in that way",
+      "gloss_ja": "そのように、そんなに",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "Like that, so: «Oh, begitu.» = Oh, I see. Compare «begini» (Ch14) = like this.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "そのように：«Oh, begitu.»＝ああ、そうなんですね。«begini»（第14課）＝このように。"
+    },
+    {
+      "id": "ms-x14-005",
+      "lang": "ms",
+      "term": "pasti",
+      "gloss_en": "sure, certain",
+      "gloss_ja": "確かな、きっと",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Sure, certain: «Saya pasti …» = I'm sure …",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "確かな：«Saya pasti …»＝きっと〜だと思う。"
+    },
+    {
+      "id": "ms-x14-006",
+      "lang": "ms",
+      "term": "sebenar",
+      "gloss_en": "real, actual",
+      "gloss_ja": "本当の、実際の",
+      "pos": "adj",
+      "affix_tag": "se-",
+      "note": "Real, actual: «sebab yang sebenar» = the real reason. Root of «sebenarnya».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "本当の：«sebab yang sebenar»＝本当の理由。«sebenarnya» の語根。"
+    },
+    {
+      "id": "ms-x14-007",
+      "lang": "ms",
+      "term": "anggap",
+      "gloss_en": "assume, regard as",
+      "gloss_ja": "〜とみなす、思う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To regard as, assume: «Dia anggap tempat itu tempat dia.» = He thinks that space is his.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "〜とみなす、思いこむ：«Dia anggap tempat itu tempat dia.»＝彼はその場所を自分のものだと思っている。"
+    },
+    {
+      "id": "ms-x14-008",
+      "lang": "ms",
+      "term": "gaduh",
+      "gloss_en": "quarrel, argue",
+      "gloss_ja": "けんかする、言い争う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To quarrel, argue: «Dua orang jiran gaduh.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "けんかする、言い争う：«Dua orang jiran gaduh.»"
+    },
+    {
+      "id": "ms-x14-009",
+      "lang": "ms",
+      "term": "kini",
+      "gloss_en": "now, at present",
+      "gloss_ja": "今、現在（書き言葉）",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Now, these days (more formal than «sekarang»): «Kini suasana lebih meriah.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "今、近ごろ（«sekarang» より改まった語）：«Kini suasana lebih meriah.»"
+    },
+    {
+      "id": "ms-x14-010",
+      "lang": "ms",
+      "term": "kongsi",
+      "gloss_en": "share",
+      "gloss_ja": "分け合う、共有する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To share: «kongsi bilik» = share a room.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "分け合う、共有する：«kongsi bilik»＝部屋をシェアする。"
+    },
+    {
+      "id": "ms-x14-011",
+      "lang": "ms",
+      "term": "kumpul",
+      "gloss_en": "collect, gather",
+      "gloss_ja": "集める、集まる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To collect, gather. Root of «berkumpul» (Ch10) and «kumpulan».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "集める、集まる。«berkumpul»（第10課）と «kumpulan» の語根。"
+    },
+    {
+      "id": "ms-x14-012",
+      "lang": "ms",
+      "term": "kumpulan",
+      "gloss_en": "group",
+      "gloss_ja": "グループ、団体",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "kumpul (Ch14 ⚡) + -an: group: «kumpulan kami» = our group.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "kumpul（第14課⚡）+ -an：グループ：«kumpulan kami»＝私たちのグループ。"
+    },
+    {
+      "id": "ms-x14-013",
+      "lang": "ms",
+      "term": "makna",
+      "gloss_en": "meaning",
+      "gloss_ja": "意味",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Meaning (of a word).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "（言葉の）意味。"
+    },
+    {
+      "id": "ms-x14-014",
+      "lang": "ms",
+      "term": "maksud",
+      "gloss_en": "meaning, what is meant",
+      "gloss_ja": "意味、言いたいこと",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Meaning, what someone means: «Apa maksud …?» = What does … mean? «Saya faham maksud Puan.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "意味、言いたいこと：«Apa maksud …?»＝〜はどういう意味？«Saya faham maksud Puan.»"
+    },
+    {
+      "id": "ms-x14-015",
+      "lang": "ms",
+      "term": "masuk akal",
+      "gloss_en": "to make sense",
+      "gloss_ja": "筋が通る、理にかなう",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "To make sense: «tidak masuk akal» = doesn't make sense.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "筋が通る：«tidak masuk akal»＝筋が通らない。"
+    },
+    {
+      "id": "ms-x14-016",
+      "lang": "ms",
+      "term": "perbualan",
+      "gloss_en": "conversation",
+      "gloss_ja": "会話",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "Conversation (a whole word). «berbual» (Ch10) = to chat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "会話（一語として学ぶ）。«berbual»（第10課）＝おしゃべりする。"
+    },
+    {
+      "id": "ms-x14-017",
+      "lang": "ms",
+      "term": "percaya",
+      "gloss_en": "to believe, trust",
+      "gloss_ja": "信じる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To believe, trust: «Saya tidak percaya dia.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "信じる：«Saya tidak percaya dia.»＝彼のことを信じない。"
+    },
+    {
+      "id": "ms-x14-018",
+      "lang": "ms",
+      "term": "sanggup",
+      "gloss_en": "willing, dare to",
+      "gloss_ja": "〜する気がある、いとわない",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Willing, prepared to: «Encik sanggup bercakap dengan mereka?»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "〜する気がある、〜できる：«Encik sanggup bercakap dengan mereka?»＝彼らと話してもらえますか。"
+    },
+    {
+      "id": "ms-x14-019",
+      "lang": "ms",
+      "term": "bermaksud",
+      "gloss_en": "mean",
+      "gloss_ja": "〜という意味だ",
+      "pos": "verb",
+      "affix_tag": "ber-",
+      "note": "ber- + maksud (Ch14 ⚡): to mean: «Pengumuman itu bermaksud …»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "ber- + maksud（第14課⚡）：〜を意味する：«Pengumuman itu bermaksud …»"
+    },
+    {
+      "id": "ms-x14-020",
+      "lang": "ms",
+      "term": "campur",
+      "gloss_en": "mix (\"masuk campur\" = get involved)",
+      "gloss_ja": "混ぜる；«masuk campur» 口を出す",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To mix. «masuk campur» = to get involved, interfere.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "混ぜる。«masuk campur»＝口出しする、関わる。"
+    },
+    {
+      "id": "ms-x14-021",
+      "lang": "ms",
+      "term": "harap",
+      "gloss_en": "hope",
+      "gloss_ja": "望む、願う",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To hope: «Saya harap …» = I hope …",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "望む：«Saya harap …»＝〜だといいな。"
+    },
+    {
+      "id": "ms-x14-022",
+      "lang": "ms",
+      "term": "meriah",
+      "gloss_en": "lively, festive",
+      "gloss_ja": "にぎやかな",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Lively, festive: «jamuan yang meriah». Not a meN- word (the rules read it as a look-alike root).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "にぎやかな、盛り上がった：«jamuan yang meriah»。meN- の語ではありません。"
+    },
+    {
+      "id": "ms-x14-023",
+      "lang": "ms",
+      "term": "peduli",
+      "gloss_en": "care (\"tak peduli\" = don't care)",
+      "gloss_ja": "気にかける",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To care (mostly with a negative): «tidak peduli» = don't care.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "気にかける（主に否定で）：«tidak peduli»＝気にしない。"
+    },
+    {
+      "id": "ms-x14-024",
+      "lang": "ms",
+      "term": "punca",
+      "gloss_en": "cause",
+      "gloss_ja": "原因",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Cause, source: «Apa puncanya?» = What caused it?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "原因：«Apa puncanya?»＝原因は何？"
+    },
+    {
+      "id": "ms-x14-025",
+      "lang": "ms",
+      "term": "rahsia",
+      "gloss_en": "secret",
+      "gloss_ja": "秘密",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Secret: «Ini rahsia saya.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "秘密：«Ini rahsia saya.»＝これは私の秘密。"
+    },
+    {
+      "id": "ms-x14-026",
+      "lang": "ms",
+      "term": "rapat",
+      "gloss_en": "close",
+      "gloss_ja": "親しい、近い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Close (to someone): «rapat dengan mereka» = close to them.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "親しい：«rapat dengan mereka»＝彼らと親しい。"
+    },
+    {
+      "id": "ms-x14-027",
+      "lang": "ms",
+      "term": "sangka",
+      "gloss_en": "suppose (\"tak sangka\" = never expected)",
+      "gloss_ja": "思う、予想する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To suppose, expect: «tidak sangka» = never expected (that).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "思う、予想する：«tidak sangka»＝思いもしなかった。"
+    },
+    {
+      "id": "ms-x14-028",
+      "lang": "ms",
+      "term": "serius",
+      "gloss_en": "serious",
+      "gloss_ja": "真剣な、深刻な",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Serious: «perkara serius».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "深刻な、まじめな：«perkara serius»。"
+    },
+    {
+      "id": "ms-x14-029",
+      "lang": "ms",
+      "term": "suasana",
+      "gloss_en": "atmosphere, mood",
+      "gloss_ja": "雰囲気",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Atmosphere, mood: «Suasana di taman itu seronok.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "雰囲気：«Suasana di taman itu seronok.»＝公園の雰囲気は楽しかった。"
+    },
+    {
+      "id": "ms-x14-030",
+      "lang": "ms",
+      "term": "topik",
+      "gloss_en": "topic",
+      "gloss_ja": "トピック、話題",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Topic (of a talk or a conversation).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "話題、テーマ。"
+    },
+    {
+      "id": "ms-x14-031",
+      "lang": "ms",
+      "term": "wajar",
+      "gloss_en": "reasonable",
+      "gloss_ja": "妥当な、もっともな",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Reasonable, proper: «Itu tidak wajar.» = That isn't right.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "妥当な、ふさわしい：«Itu tidak wajar.»＝それはよくない。"
+    },
+    {
+      "id": "ms-x14-032",
+      "lang": "ms",
+      "term": "yakin",
+      "gloss_en": "confident, sure",
+      "gloss_ja": "確信している",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Confident, sure: «Saya yakin …» = I'm confident …",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x14"
+        }
+      ],
+      "scene": "stretch-x14",
+      "chapter": 14,
+      "note_ja": "確信している：«Saya yakin …»＝〜と確信している。"
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-x14-f01",
+      "frame": "Apa ___ pengumuman ___?",
+      "example": "Apa maksud pengumuman itu?",
+      "meaning_en": "What does that announcement mean?",
+      "meaning_ja": "そのお知らせはどういう意味ですか。",
+      "decoys": [
+        "bermaksud"
+      ]
+    },
+    {
+      "id": "ms-x14-f02",
+      "frame": "Pengumuman itu ___ mesyuarat esok ___.",
+      "example": "Pengumuman itu bermaksud mesyuarat esok dibatalkan.",
+      "meaning_en": "The announcement means tomorrow's meeting is cancelled.",
+      "meaning_ja": "そのお知らせは、明日の会議が中止になったという意味です。",
+      "decoys": [
+        "maksud"
+      ]
+    },
+    {
+      "id": "ms-x14-f03",
+      "frame": "Kami ___ sebuah bilik semasa ___.",
+      "example": "Kami kongsi sebuah bilik semasa cuti.",
+      "meaning_en": "We shared a room during the holiday.",
+      "meaning_ja": "休暇中、私たちは一部屋をシェアしました。",
+      "decoys": [
+        "campur"
+      ]
+    },
+    {
+      "id": "ms-x14-f04",
+      "frame": "___ kami berkumpul di taman setiap hari ___.",
+      "example": "Kumpulan kami berkumpul di taman setiap hari Sabtu.",
+      "meaning_en": "Our group meets in the park every Saturday.",
+      "meaning_ja": "私たちのグループは毎週土曜日に公園に集まります。",
+      "decoys": [
+        "kumpul"
+      ]
+    },
+    {
+      "id": "ms-x14-f05",
+      "frame": "Saya tidak ___ dia, kerana jawapan dia tidak ___ ___.",
+      "example": "Saya tidak percaya dia, kerana jawapan dia tidak masuk akal.",
+      "meaning_en": "I don't believe him, because his answer doesn't make sense.",
+      "meaning_ja": "彼の答えは筋が通らないので、彼を信じません。",
+      "decoys": [
+        "sangka"
+      ]
+    },
+    {
+      "id": "ms-x14-f06",
+      "frame": "Kini suasana di kampung itu lebih ___.",
+      "example": "Kini suasana di kampung itu lebih meriah.",
+      "meaning_en": "These days the atmosphere in that village is livelier.",
+      "meaning_ja": "近ごろ、その村の雰囲気はもっとにぎやかです。",
+      "decoys": [
+        "meriahnya"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "The parking quarrel",
+    "title_ja": "駐車場のけんか",
+    "lines": [
+      {
+        "id": "ms-x14-d01",
+        "speaker": "Puan Siti",
+        "ms": "Encik Tanaka, jamuan semalam sangat meriah, bukan?",
+        "en": "Mr Tanaka, yesterday's party was really lively, wasn't it?"
+      },
+      {
+        "id": "ms-x14-d02",
+        "speaker": "Tanaka",
+        "ms": "Memang meriah! Suasana di taman itu seronok sekali.",
+        "en": "It really was! The atmosphere in the park was great fun.",
+        "choices": [
+          "Memang serius. Semua orang gaduh sambil makan kek.",
+          "Tidak. Jamuan itu rahsia."
+        ],
+        "choices_en": [
+          "Very serious. Everyone quarrelled while eating cake.",
+          "No. The party is a secret."
+        ]
+      },
+      {
+        "id": "ms-x14-d03",
+        "speaker": "Puan Siti",
+        "ms": "Tetapi sebenarnya ada perkara serius. Dua orang jiran kita gaduh semalam.",
+        "en": "But actually something serious happened. Two of our neighbours had a quarrel yesterday."
+      },
+      {
+        "id": "ms-x14-d04",
+        "speaker": "Tanaka",
+        "ms": "Betulkah? Apa puncanya?",
+        "en": "Really? What caused it?",
+        "choices": [
+          "Betulkah? Apa rahsia kek itu?",
+          "Baiklah. Saya sanggup gaduh juga."
+        ],
+        "choices_en": [
+          "Really? What's the secret of that cake?",
+          "All right. I'm ready to quarrel too."
+        ]
+      },
+      {
+        "id": "ms-x14-d05",
+        "speaker": "Puan Siti",
+        "ms": "Puncanya tempat letak kereta. Jiran di unit 8-1 anggap tempat itu tempat dia.",
+        "en": "It was the parking space. The neighbour in unit 8-1 thinks that space is his."
+      },
+      {
+        "id": "ms-x14-d06",
+        "speaker": "Tanaka",
+        "ms": "Oh, begitu. Saya faham maksud Puan.",
+        "en": "Oh, I see. I understand what you mean."
+      },
+      {
+        "id": "ms-x14-d07",
+        "speaker": "Puan Siti",
+        "ms": "Encik rapat dengan mereka. Encik sanggup bercakap dengan mereka?",
+        "en": "You're close to them. Would you be willing to talk to them?"
+      },
+      {
+        "id": "ms-x14-d08",
+        "speaker": "Tanaka",
+        "ms": "Maaf, Puan. Saya tidak mahu masuk campur. Itu tidak wajar.",
+        "en": "Sorry. I don't want to get involved. That wouldn't be right.",
+        "choices": [
+          "Boleh! Saya kongsi kereta saya dengan semua jiran.",
+          "Maaf, Puan. Saya tidak percaya tempat letak kereta."
+        ],
+        "choices_en": [
+          "Sure! I'll share my car with all the neighbours.",
+          "Sorry. I don't believe in parking spaces."
+        ]
+      },
+      {
+        "id": "ms-x14-d09",
+        "speaker": "Puan Siti",
+        "ms": "Saya faham. Tetapi saya harap mereka tidak gaduh lagi.",
+        "en": "I understand. But I hope they won't quarrel again."
+      },
+      {
+        "id": "ms-x14-d10",
+        "speaker": "Tanaka",
+        "ms": "Saya pasti mereka akan berbual lagi minggu depan.",
+        "en": "I'm sure they'll be talking again next week.",
+        "choices": [
+          "Saya pasti mereka akan gaduh setiap hari.",
+          "Saya pasti tempat letak kereta itu rahsia."
+        ],
+        "choices_en": [
+          "I'm sure they'll quarrel every day.",
+          "I'm sure that parking space is a secret."
+        ]
+      },
+      {
+        "id": "ms-x14-d11",
+        "speaker": "Puan Siti",
+        "ms": "Betul. Jadi, kita kongsi kek ini dulu?",
+        "en": "True. So, shall we share this cake first?"
+      },
+      {
+        "id": "ms-x14-d12",
+        "speaker": "Tanaka",
+        "ms": "Boleh! Saya tidak sangka Puan buat kek lagi.",
+        "en": "Sure! I didn't expect you to make a cake again.",
+        "choices": [
+          "Boleh! Saya percaya kek ini rahsia negara.",
+          "Tidak boleh. Kek ini punca semua gaduh."
+        ],
+        "choices_en": [
+          "Sure! I believe this cake is a state secret.",
+          "No. This cake is the cause of every quarrel."
+        ]
+      },
+      {
+        "id": "ms-x14-d13",
+        "speaker": "Puan Siti",
+        "ms": "Memang! Ini rahsia saya: banyak gula!",
+        "en": "Of course! Here's my secret: lots of sugar!"
+      }
+    ]
+  }
+}
