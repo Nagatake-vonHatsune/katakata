@@ -18,6 +18,10 @@ export interface Card {
   pos: string;
   affix_tag: string;
   note: string | null;
+  /** Japanese version of the note, where the note is written in two languages (shown when the UI is Japanese). */
+  note_ja?: string | null;
+  /** A register label shown as a chip: 'formal' = formal or written use (speech prefers another word, given in the note). */
+  register?: 'formal';
   links: Link[];
   scene: string;
   chapter: number;
@@ -169,6 +173,12 @@ export interface AppState {
   frames: Record<string, { tries: number; correct: number; last?: string }>;
   /** Reply steps per dialogue line ID (the line chosen as the reply). Added for the ⚡ stage; migrate() fills it. */
   lines: Record<string, { tries: number; correct: number; last?: string }>;
+  /**
+   * Full play-throughs per dialogue ('c04' = the chapter 4 dialogue, 'x04' = the ⚡ 4 dialogue): the best score (reply steps
+   * right on the first try in one play-through), the number of reply steps, and plays. Sam, 17 Nov 2026: the dialogue 🔥 needs
+   * 60 % (rounded up). Added after Build A; migrate() fills it.
+   */
+  dialogues: Record<string, { best: number; total: number; plays: number; last?: string }>;
   myHooks: Record<string, string>;
   questions: Question[];
   reports: ContentReport[];

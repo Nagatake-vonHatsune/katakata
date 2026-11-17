@@ -55,6 +55,7 @@ function run(step: ReplyStep, ctx: GameContext): Promise<StepResult> {
     add(
       ctx.body,
       before.length ? h('p', { class: 'muted small reply-so-far' }, t('reply.so_far', { n: before.length + 1 })) : null,
+      ctx.dialogueScore ?? null,
       say
         ? h(
             'div',

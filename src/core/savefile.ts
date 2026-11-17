@@ -100,6 +100,14 @@ export function mergeStates(local: AppState, incoming: AppState): AppState {
   };
   const frames = tally(local.frames, incoming.frames);
   const lines = tally(local.lines, incoming.lines);
+  // Dialogue scores: the best play-through of either copy.
+  const dialogues = { ...(local.dialogues ?? {}) };
+  for (const [k, v] of Object.entries(incoming.dialogues ?? {})) {
+    const m = dialogues[k];
+    dialogues[k] = m
+      ? { best: Math.max(m.best, v.best), total: Math.max(m.total, v.total), plays: Math.max(m.plays, v.plays), last: later(v.last, m.last) ? v.last : m.last }
+      : v;
+  }
   // Questions: if either copy marks one answered, it is answered.
   const questions = byId(local.questions, incoming.questions).map((q) => {
     const other = incoming.questions.find((x) => x.id === q.id);
@@ -120,6 +128,7 @@ export function mergeStates(local: AppState, incoming: AppState): AppState {
     kanaSeen: maxRec(local.kanaSeen, incoming.kanaSeen),
     frames,
     lines,
+    dialogues,
     myHooks: { ...incoming.myHooks, ...local.myHooks },
     questions,
     reports: byId(local.reports, incoming.reports),

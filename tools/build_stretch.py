@@ -5,7 +5,8 @@ Usage (from the repo root):
 
 Cards: one per ledger row placed «ChN (extension)», in card-ID order. A row's card ID is the ledger's card column
 (the registry; tools/ledger/stretch_batch.py assigns them), and the card text is the ledger's (Malay, meanings, POS, affix tag),
-like a class card. The source adds a short note per row, 4 to 6 frames (with decoy tiles) and the dialogue (lines with
+like a class card. The source adds a short note per row (a string, or {"en", "ja", "register": "formal"} for a note in two
+languages and a register label), 4 to 6 frames (with decoy tiles) and the dialogue (lines with
 "choices" are reply steps). IDs: frames ms-xNN-fNN, lines ms-xNN-dNN, in source order. Whether the pack ships is
 tools/import-overrides.json "live_stretch". A second run gives an identical file.
 """
@@ -34,7 +35,10 @@ def main(chapter):
             raise SystemExit(f"{r['ID']} {r['Malay']}: the ledger card column must hold one ms-{xid}-NNN ID (has {r['Kata-Kata (card IDs)']!r})")
         if r["ID"] not in src["notes"]:
             raise SystemExit(f"{r['ID']} {r['Malay']}: no note in the source")
-        cards.append({
+        note = src["notes"][r["ID"]]
+        if isinstance(note, str):
+            note = {"en": note}
+        card = {
             "id": ids[0],
             "lang": "ms",
             "term": r["Malay"].strip(),
@@ -42,11 +46,16 @@ def main(chapter):
             "gloss_ja": r["Meaning (JA)"].strip(),
             "pos": r["POS"].strip(),
             "affix_tag": r["Affix tag"].strip() or "root",
-            "note": src["notes"][r["ID"]],
+            "note": note["en"],
             "links": [{"type": "babak", "target": f"stretch-{xid}"}],
             "scene": f"stretch-{xid}",
             "chapter": chapter,
-        })
+        }
+        if note.get("ja"):
+            card["note_ja"] = note["ja"]
+        if note.get("register"):
+            card["register"] = note["register"]
+        cards.append(card)
     cards.sort(key=lambda c: c["id"])
     extra = set(src["notes"]) - {r["ID"] for r in rows}
     if extra:

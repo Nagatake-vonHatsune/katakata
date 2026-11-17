@@ -1,7 +1,7 @@
 // Sedia Kelas, Main (mini-games) and Jaring Kata screens.
 import { content, gloss, srsKey } from '../core/content';
 import { getLang, t } from '../core/i18n';
-import { checkpoints, chapterProgress, dialogueReplyIds, isReady, sceneProgress, stretchOpen, stretchPack } from '../core/progress';
+import { checkpoints, chapterProgress, dialogueKey, dialogueReplyIds, dialogueScore, isReady, sceneProgress, stretchOpen, stretchPack, stretchSoon } from '../core/progress';
 import { buildCari, buildDialogue, buildKad, buildSedia, buildSusun, cariCards, type Session } from '../core/session';
 import { isKnown } from '../core/srs';
 import { state } from '../core/state';
@@ -74,7 +74,9 @@ export function renderSediaChapter(root: HTMLElement, chapter: number, nav: Mode
         ? stretchOpen(chapter)
           ? h('div', { class: 'stretch-entry' }, stretchChip(chapter, nav), h('span', { class: 'small' }, t('stretch.tip')))
           : h('p', { class: 'muted small' }, t('stretch.locked'))
-        : null,
+        : stretchSoon(chapter)
+          ? h('div', { class: 'stretch-entry' }, stretchChip(chapter, nav))
+          : null,
       dialogueSection(chapter, nav),
       h('section', { class: 'card-box' }, h('h3', null, t('sedia.frames')), h('ul', { class: 'word-list' }, frames.map((f) => h('li', null, h('b', { lang: 'ms' }, f.frame), h('br'), h('span', { class: 'muted small' }, lang === 'ja' && f.meaning_ja ? f.meaning_ja : f.meaning_en))))),
       scene
@@ -103,7 +105,7 @@ export function renderSediaChapter(root: HTMLElement, chapter: number, nav: Mode
   );
 }
 
-/** The chapter dialogue (the 🔥 dialogue checkpoint): hear each line and choose the reply, once through. */
+/** The chapter dialogue (the 🔥 dialogue checkpoint): hear each line and choose the reply; 60 % right first time lights it. */
 function dialogueSection(chapter: number, nav: ModeNav): HTMLElement | null {
   const ids = dialogueReplyIds(chapter);
   if (!ids.length) return null;
@@ -116,9 +118,14 @@ function dialogueSection(chapter: number, nav: ModeNav): HTMLElement | null {
     { class: 'card-box dialogue-box' },
     h('h3', null, cp.lit ? '🔥 ' : '', t('dialogue.title'), title ? ` · ${title}` : ''),
     h('p', { class: 'small' }, t('dialogue.body')),
-    h('p', { class: 'small' }, cp.lit ? '✅ ' + t('dialogue.done') : t('dialogue.progress', { a: cp.done, b: cp.total })),
+    h('p', { class: 'small dialogue-score' }, cp.lit ? '✅ ' + t('dialogue.done') + ' · ' : '', dialogueLine(chapter, ids.length)),
     button(t('dialogue.play'), () => nav.run(buildDialogue(chapter)), 'btn btn-wide'),
   );
+}
+
+function dialogueLine(chapter: number, total: number): string {
+  const d = dialogueScore(dialogueKey(chapter), total);
+  return d.plays ? t('dialogue.best_line', { a: d.best, b: d.total, n: d.needed }) : t('dialogue.need', { n: d.needed, b: d.total });
 }
 
 export function renderMain(root: HTMLElement, nav: ModeNav, sub?: string): void {

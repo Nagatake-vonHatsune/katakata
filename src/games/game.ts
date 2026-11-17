@@ -21,6 +21,11 @@ export interface GameContext {
    * are switched off). `at` is when the answer was given if that was earlier (self-rated recall).
    */
   answered(correct: boolean, opts?: { at?: number; base?: number }): HTMLElement | null;
+  /**
+   * In a full dialogue play-through: the score so far, «3/5 · 3 needed» (reply steps right on the first try), kept up to date
+   * by the runner when the step is answered. Absent in other sessions.
+   */
+  dialogueScore?: HTMLElement;
 }
 
 export interface Game<S extends Step = Step> {

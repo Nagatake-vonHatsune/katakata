@@ -36,6 +36,7 @@ export function defaultState(): AppState {
     kanaSeen: {},
     frames: {},
     lines: {},
+    dialogues: {},
     myHooks: {},
     questions: [],
     reports: [],
@@ -57,6 +58,7 @@ export function migrate(raw: Partial<AppState> & Record<string, unknown>): AppSt
     settings: { ...base.settings, ...(raw.settings ?? {}) },
     scores: { ...base.scores, ...((raw.scores as object) ?? {}) },
     lines: { ...((raw.lines as AppState['lines']) ?? {}) },
+    dialogues: { ...((raw.dialogues as AppState['dialogues']) ?? {}) },
     srs: moveCards(Object.fromEntries(Object.entries(raw.srs ?? {}).map(([k, v]) => [k, migrateSrs(v as unknown as Record<string, unknown>)]))),
   } as AppState;
 }

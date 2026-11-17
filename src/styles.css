@@ -233,10 +233,11 @@
   --ok: #b0136f;
   --ok-soft: #fbe0ef;
   --neutral: #4a5170;
-  /* ⚡ stage accent (design note section 3): text and fills, text on a fill, the chip and band background */
-  --stretch: #0064a8;
+  /* ⚡ stage accent: gold in Rebel (Sam, 17 Nov 2026), a deep gold for text on the light theme; text and fills, text on a fill,
+     the chip and band background */
+  --stretch: #876200;
   --stretch-ink: #ffffff;
-  --stretch-soft: #dcedf8;
+  --stretch-soft: #fbf0cc;
   --neutral-soft: #e6e8f0;
   color-scheme: light;
 }
@@ -255,10 +256,10 @@
     --ok: #ff6fc1;
     --ok-soft: #3a1530;
     --neutral: #b9c0dc;
-    /* ⚡ stage accent (design note section 3): text and fills, text on a fill, the chip and band background */
-    --stretch: #5fd0ff;
-    --stretch-ink: #03192a;
-    --stretch-soft: #0f3047;
+    /* ⚡ stage accent: gold in Rebel (Sam, 17 Nov 2026); text and fills, text on a fill, the chip and band background */
+    --stretch: #f2c04a;
+    --stretch-ink: #241800;
+    --stretch-soft: #3a2c0b;
     --neutral-soft: #262c45;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     color-scheme: dark;
@@ -278,10 +279,10 @@
   --ok: #ff6fc1;
   --ok-soft: #3a1530;
   --neutral: #b9c0dc;
-  /* ⚡ stage accent (design note section 3): text and fills, text on a fill, the chip and band background */
-  --stretch: #5fd0ff;
-  --stretch-ink: #03192a;
-  --stretch-soft: #0f3047;
+  /* ⚡ stage accent: gold in Rebel (Sam, 17 Nov 2026); text and fills, text on a fill, the chip and band background */
+  --stretch: #f2c04a;
+  --stretch-ink: #241800;
+  --stretch-soft: #3a2c0b;
   --neutral-soft: #262c45;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   color-scheme: dark;
@@ -1959,6 +1960,37 @@ button.nm-rel-cell { cursor: pointer; }
   font-weight: 800;
   white-space: nowrap;
   cursor: pointer;
+}
+
+/* "⚡ soon": every 🔥 lit, no ⚡ pack yet; greyed and not a button (Sam, 17 Nov 2026) */
+.stretch-chip.stretch-soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 6.5rem;
+  white-space: normal;
+  text-align: center;
+  border: 2px dashed var(--line);
+  background: var(--neutral-soft);
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: default;
+}
+
+.step-body .dialogue-score {
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.dialogue-score.big {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 4px 0;
+}
+
+.dialogue-result.passed .dialogue-score {
+  color: var(--ok);
 }
 
 .stretch-chip:focus-visible,

@@ -1,8 +1,9 @@
 // 🔥 checkpoint bar, the "N ⚡" chip and the ⚡ screen (docs/STRETCH-STAGE-design.md sections 2 and 4; Sam's decisions of
-// 15 Nov 2026: three checkpoints, the stage has no name in the UI, only "{n} ⚡").
+// 15 Nov 2026: three checkpoints, the stage has no name in the UI, only "{n} ⚡"; of 17 Nov 2026: the dialogue 🔥 needs 60 %,
+// a chapter with every 🔥 lit but no ⚡ pack yet shows a greyed "⚡ soon").
 import { content, gloss, srsKey } from '../core/content';
 import { getLang, t } from '../core/i18n';
-import { checkpoints, stretchOpen, stretchPack, stretchProgress, type Checkpoint } from '../core/progress';
+import { checkpoints, dialogueKey, dialogueScore, dialogueReplyIds, stretchOpen, stretchPack, stretchProgress, stretchSoon, type Checkpoint } from '../core/progress';
 import { buildStretch, buildStretchDialogue, stretchReplyIds, type Session } from '../core/session';
 import { isKnown } from '../core/srs';
 import { state } from '../core/state';
@@ -72,7 +73,7 @@ export function checkpointBar(chapter: number): HTMLElement | null {
   );
 }
 
-/** "🔥 1/3 · Prep 12/28", "🔥 1/3 · 9 lines to go", "🔥 2/3 · 18 words to go", "🔥 3/3". */
+/** "🔥 1/3 · Prep 12/28", "🔥 1/3 · Dialogue 2/5 · 3 needed", "🔥 2/3 · 18 words to go", "🔥 3/3". */
 export function flamesLine(chapter: number): string {
   const cps = checkpoints(chapter);
   const lit = cps.filter((c) => c.lit).length;
@@ -80,7 +81,10 @@ export function flamesLine(chapter: number): string {
   const next = cps.find((c) => !c.lit);
   if (!next) return head;
   if (next.kind === 'ready') return `${head} · ${t('sedia.progress', { a: next.done, b: next.total })}`;
-  if (next.kind === 'dialogue') return `${head} · ${t('stretch.lines_to_go', { n: next.total - next.done })}`;
+  if (next.kind === 'dialogue') {
+    const d = dialogueScore(dialogueKey(chapter), dialogueReplyIds(chapter).length);
+    return `${head} · ${t('dialogue.best_line', { a: d.best, b: d.total, n: d.needed })}`;
+  }
   return `${head} · ${t('stretch.to_go', { n: next.total - next.done })}`;
 }
 
@@ -89,8 +93,13 @@ export function flamesText(chapter: number): string {
   return '🔥'.repeat(checkpoints(chapter).filter((c) => c.lit).length);
 }
 
-/** The "{n} ⚡" chip: a separate button beside the chapter button, only when ⚡ is open. */
+/**
+ * The "{n} ⚡" chip: a separate button beside the chapter button, only when ⚡ is open. A chapter with every 🔥 lit but no ⚡
+ * pack yet gets a greyed "⚡ soon" in its place: not a button, so it cannot be tapped (Sam, 17 Nov 2026).
+ */
 export function stretchChip(chapter: number, nav: StretchNav): HTMLElement | null {
+  if (stretchSoon(chapter))
+    return h('span', { class: 'stretch-chip stretch-soon', role: 'note', 'aria-disabled': 'true', 'aria-label': t('stretch.soon_aria', { n: chapter }), title: t('stretch.soon_aria', { n: chapter }) }, t('stretch.soon'));
   if (!stretchOpen(chapter)) return null;
   return h(
     'button',
@@ -142,6 +151,12 @@ export function renderStretch(root: HTMLElement, chapter: number, nav: StretchNa
             { class: 'card-box' },
             h('h3', null, t('stretch.dialogue', { n: replies.length })),
             h('p', { class: 'muted small', lang: 'ms' }, x.scenario.lines.map((l) => l.speaker).filter((v, i, a) => a.indexOf(v) === i).join(', ')),
+            h(
+              'p',
+              { class: 'small dialogue-score' },
+              p.dialogue.passed ? '✅ ' : '',
+              p.dialogue.plays ? t('dialogue.best_line', { a: p.dialogue.best, b: p.dialogue.total, n: p.dialogue.needed }) : t('dialogue.need', { n: p.dialogue.needed, b: p.dialogue.total }),
+            ),
             button(t('stretch.play_dialogue'), () => nav.run(buildStretchDialogue(chapter)), 'btn btn-ghost btn-wide stretch-outline'),
           )
         : null,

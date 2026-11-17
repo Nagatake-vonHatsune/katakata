@@ -1,7 +1,7 @@
 // Session runner: one step at a time, progress bar, safe mistakes, summary at the end.
 import { content, gloss, srsKey } from '../core/content';
 import { getLang, t } from '../core/i18n';
-import { addStudySeconds, awardStamps, isReady, nextChapter, unseenStretchOpen } from '../core/progress';
+import { addStudySeconds, awardStamps, dialogueNeeded, isReady, nextChapter, recordDialogue, unseenStretchOpen } from '../core/progress';
 import { estimateMinutes, gameOf, requeue, type Session, type Step } from '../core/session';
 import { foldRecords, Scorer } from '../core/score';
 import { newSrs, Rating, review, weakness } from '../core/srs';
@@ -82,6 +82,11 @@ export async function runSession(root: HTMLElement, session: Session, onExit: ()
   const pill = scorePill();
   let lastTick = Date.now();
   let quit = false;
+  // A full dialogue play-through: the first try of each reply step counts («わからない» is wrong); retries do not.
+  const replyTotal = session.dialogue ? session.steps.filter((x) => x.kind === 'reply').length : 0;
+  const tally = { right: 0, answered: 0 };
+  const scoreText = () => t('dialogue.score', { a: tally.right, b: replyTotal, n: dialogueNeeded(replyTotal) });
+  const scoreAria = () => t('dialogue.score_aria', { a: tally.right, b: replyTotal, n: dialogueNeeded(replyTotal) });
   const tick = () => {
     const now = Date.now();
     addStudySeconds(Math.min(120, Math.round((now - lastTick) / 1000)));
@@ -121,8 +126,17 @@ export async function runSession(root: HTMLElement, session: Session, onExit: ()
     );
     mount(root, h('div', { class: 'screen session' }, header, body));
     const shownAt = performance.now();
+    const firstTry = !!session.dialogue && step.kind === 'reply' && !step.retry;
+    const scoreEl = session.dialogue ? h('p', { class: 'small dialogue-score', 'aria-label': scoreAria() }, scoreText()) : undefined;
     const ctx: GameContext = {
+      dialogueScore: scoreEl,
       answered: (correct, opts = {}) => {
+        if (firstTry && scoreEl) {
+          tally.answered++;
+          if (correct) tally.right++;
+          scoreEl.textContent = scoreText();
+          scoreEl.setAttribute('aria-label', scoreAria());
+        }
         const hit = scorer.hit(gameId, correct, (opts.at ?? performance.now()) - shownAt, opts.base);
         if (!showPoints) return null;
         pill.update(scorer);
@@ -155,6 +169,12 @@ export async function runSession(root: HTMLElement, session: Session, onExit: ()
     }
   }
   if (quit) return;
+  let dialogue: { right: number; total: number; needed: number; best: number } | null = null;
+  if (session.dialogue && replyTotal) {
+    let best = 0;
+    update((s) => (best = recordDialogue(s, session.dialogue!, tally.right, replyTotal).best));
+    dialogue = { right: tally.right, total: replyTotal, needed: dialogueNeeded(replyTotal), best };
+  }
   const stamps = awardStamps(true);
   // One-time "⚡ is open" notice for a chapter whose last 🔥 is now lit (design note section 2; seen-state in howToSeen).
   const opened = unseenStretchOpen();
@@ -163,14 +183,23 @@ export async function runSession(root: HTMLElement, session: Session, onExit: ()
   update((s) => (beat = foldRecords(s.scores, scorer, 'session')));
   void saveNow();
   const points = showPoints && scorer.right > 0 ? scoreStats(scorer, beat) : null;
-  showSummary(root, session, { learned, missed, reviewed, seconds: Math.round((Date.now() - started) / 1000), stamps, points, opened }, onExit);
+  showSummary(root, session, { learned, missed, reviewed, seconds: Math.round((Date.now() - started) / 1000), stamps, points, opened, dialogue }, onExit);
   if (opened.length) toast(t('stretch.open', { n: opened[0] }));
 }
 
 function showSummary(
   root: HTMLElement,
   session: Session,
-  r: { learned: Set<string>; missed: Set<string>; reviewed: Set<string>; seconds: number; stamps: ReturnType<typeof awardStamps>; points: HTMLElement | null; opened: number[] },
+  r: {
+    learned: Set<string>;
+    missed: Set<string>;
+    reviewed: Set<string>;
+    seconds: number;
+    stamps: ReturnType<typeof awardStamps>;
+    points: HTMLElement | null;
+    opened: number[];
+    dialogue: { right: number; total: number; needed: number; best: number } | null;
+  },
   onExit: () => void,
 ): void {
   const lang = getLang();
@@ -197,6 +226,7 @@ function showSummary(
         h('div', { class: 'stat' }, h('b', null, `${mins}`), h('span', null, `${t('sum.minutes')} (${t('misc.min')})`)),
       ),
       r.points,
+      r.dialogue ? dialogueResult(session, r.dialogue) : null,
       hardest.length
         ? h(
             'section',
@@ -212,5 +242,19 @@ function showSummary(
       r.opened.map((n) => h('p', { class: 'stretch-open', role: 'status' }, t('stretch.open', { n }))),
       button(t('sum.home'), onExit, 'btn btn-primary btn-wide'),
     ),
+  );
+}
+
+/** The summary's dialogue card: this play-through's score, how many were needed, and whether the 🔥 (or the ⚡ dialogue) passed. */
+function dialogueResult(session: Session, d: { right: number; total: number; needed: number; best: number }): HTMLElement {
+  const passed = d.right >= d.needed;
+  const stretch = session.kind === 'stretch';
+  return h(
+    'section',
+    { class: 'card-box dialogue-result' + (passed ? ' passed' : '') },
+    h('h2', null, t(stretch ? 'dialogue.result_stretch' : 'dialogue.result')),
+    h('p', { class: 'dialogue-score big', 'aria-label': t('dialogue.score_aria', { a: d.right, b: d.total, n: d.needed }) }, t('dialogue.score', { a: d.right, b: d.total, n: d.needed })),
+    h('p', { class: 'small' }, passed ? t(stretch ? 'dialogue.passed_stretch' : 'dialogue.passed') : t('dialogue.not_yet', { n: d.needed })),
+    d.best > d.right ? h('p', { class: 'muted small' }, t('dialogue.best', { a: d.best, b: d.total })) : null,
   );
 }

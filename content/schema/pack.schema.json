@@ -86,6 +86,8 @@
         "pos": { "type": "string" },
         "affix_tag": { "enum": ["root", "chunk", "chunk*", "lex", "pe-", "pe(N)-", "-an", "ke-", "ke-an", "se-", "ter-", "di-", "-kah", "-nya", "ber-", "meN-", "-kan", "-i", "meN- -kan", "meN- -i", "di- -kan", "di- -i", "pe-an", "per-an"] },
         "note": { "type": ["string", "null"] },
+        "note_ja": { "type": ["string", "null"] },
+        "register": { "enum": ["formal"] },
         "links": {
           "type": "array",
           "minItems": 1,

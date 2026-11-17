@@ -136,7 +136,7 @@ function render(): void {
                 ),
               ),
             ),
-            h('p', { class: 'muted small' }, 'Prep = core words known for that chapter\'s Sedia Kelas (⚡ words are never counted); "ready" also means both frames were built. 🔥 = checkpoints lit (prep, the dialogue played once, every word known); ⚡ = the optional harder stage is open or done. "—" = not shared.'),
+            h('p', { class: 'muted small' }, 'Prep = core words known for that chapter\'s Sedia Kelas (⚡ words are never counted); "ready" also means both frames were built. 🔥 = checkpoints lit (prep, the dialogue passed at 60 % first time, every word known); ⚡ = the optional harder stage is open or done. "—" = not shared.'),
           )
         : null,
       reports.length

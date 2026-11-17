@@ -4,7 +4,7 @@ import { isDue, isKnown, weakness } from './srs';
 import { state } from './state';
 import { shuffle } from './ui';
 import type { AppState, Card, ScenarioLine } from './types';
-import { dialogueReplyIds, nextChapter, stretchPack } from './progress';
+import { dialogueKey, dialogueReplyIds, nextChapter, stretchPack } from './progress';
 
 export type Step =
   | { kind: 'intro'; cardId: string }
@@ -21,6 +21,11 @@ export interface Session {
   kind: SessionKind;
   chapter?: number;
   steps: Step[];
+  /**
+   * Set for a full dialogue play-through (the chapter dialogue, or the whole ⚡ dialogue): its key in state.dialogues
+   * ('c04', 'x04'). The runner scores the first try of each reply step and records the play-through at the end.
+   */
+  dialogue?: string;
 }
 
 export const SECONDS_PER_STEP = 25;
@@ -168,7 +173,7 @@ export function buildSusun(chapter: number, s: AppState = state): Session {
 
 /** A chapter's dialogue played through once: one reply step per line after the first, in order. */
 export function buildDialogue(chapter: number): Session {
-  return { kind: 'dialogue', chapter, steps: dialogueReplyIds(chapter).map((lineId) => ({ kind: 'reply' as const, lineId })) };
+  return { kind: 'dialogue', chapter, dialogue: dialogueKey(chapter), steps: dialogueReplyIds(chapter).map((lineId) => ({ kind: 'reply' as const, lineId })) };
 }
 
 /** The ⚡ dialogue's reply lines (the lines that carry wrong replies), in order. */
@@ -205,7 +210,7 @@ export function buildStretch(chapter: number, s: AppState = state, now = new Dat
 
 /** The whole ⚡ dialogue: every reply line in order. */
 export function buildStretchDialogue(chapter: number): Session {
-  return { kind: 'stretch', chapter, steps: stretchReplyIds(chapter).map((lineId) => ({ kind: 'reply' as const, lineId })) };
+  return { kind: 'stretch', chapter, dialogue: dialogueKey(chapter, true), steps: stretchReplyIds(chapter).map((lineId) => ({ kind: 'reply' as const, lineId })) };
 }
 
 export interface ReplyOption {

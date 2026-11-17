@@ -62,14 +62,43 @@ export function dialogueReplyIds(chapter: number): string[] {
   return ch && ch.scenario.lines.length >= 2 ? ch.scenario.lines.slice(1).map((l) => l.id) : [];
 }
 
-/** True when every reply line of the chapter dialogue has been answered at least once. */
+/** Sam, 17 Nov 2026: a dialogue counts when one full play-through gets at least 60 % of its reply steps right on the first try. */
+export const DIALOGUE_PASS = 0.6;
+
+/** Reply steps needed to pass a dialogue of `total` reply steps: 60 %, rounded up (3 of 5, 2 of 3). Integer maths, no float error. */
+export function dialogueNeeded(total: number): number {
+  return Math.ceil((total * 3) / 5);
+}
+
+/** The key of a dialogue in state.dialogues: 'c04' for the chapter 4 dialogue, 'x04' for the ⚡ 4 dialogue. */
+export function dialogueKey(chapter: number, stretch = false): string {
+  return `${stretch ? 'x' : 'c'}${String(chapter).padStart(2, '0')}`;
+}
+
+/** A dialogue's best play-through: the best score, its reply steps now, how many are needed, and whether it has passed. */
+export function dialogueScore(key: string, total: number, s: AppState = state) {
+  const rec = s.dialogues?.[key];
+  const needed = dialogueNeeded(total);
+  const best = rec?.best ?? 0;
+  return { best, total, needed, plays: rec?.plays ?? 0, passed: total > 0 && best >= needed };
+}
+
+/** Record one full play-through (right = reply steps right on the first try). Keeps the best score. Returns the new record. */
+export function recordDialogue(s: AppState, key: string, right: number, total: number, when = new Date().toISOString()) {
+  const rec = (s.dialogues ??= {})[key];
+  const next = { best: Math.max(rec?.best ?? 0, right), total, plays: (rec?.plays ?? 0) + 1, last: when };
+  s.dialogues[key] = next;
+  return next;
+}
+
+/** True when the chapter dialogue has passed: a play-through with at least 60 % of its reply steps right first time. */
 export function dialogueDone(chapter: number, s: AppState = state): boolean {
-  const ids = dialogueReplyIds(chapter);
-  return ids.length > 0 && ids.every((id) => (s.lines?.[id]?.tries ?? 0) > 0);
+  return dialogueScore(dialogueKey(chapter), dialogueReplyIds(chapter).length, s).passed;
 }
 
 /**
- * The chapter's checkpoints, in bar order: 1 class prep, 2 the chapter dialogue played once, 3 every card known.
+ * The chapter's checkpoints, in bar order: 1 class prep, 2 the chapter dialogue passed (60 % first time in one play-through),
+ * 3 every card known. The dialogue segment has one item per reply step needed; its fill is the best score (up to that).
  * A chapter has the dialogue checkpoint only if its pack has scenario lines, and the last one only if it has cards of its
  * own (chapter 18, a review pack, has none), so chapters 1 to 17 have 3 and chapter 18 has 2.
  */
@@ -83,7 +112,10 @@ export function checkpoints(chapter: number, s: AppState = state): Checkpoint[] 
     out.push({ kind, done, total, met, lit: met || hasStamp(kind, '', chapter, s) });
   push('ready', p.coreKnown + framesBuilt, p.coreTotal + ch.sedia_kelas.frames.length, isReady(chapter, s));
   const replies = dialogueReplyIds(chapter);
-  if (replies.length) push('dialogue', replies.filter((id) => (s.lines?.[id]?.tries ?? 0) > 0).length, replies.length, dialogueDone(chapter, s));
+  if (replies.length) {
+    const d = dialogueScore(dialogueKey(chapter), replies.length, s);
+    push('dialogue', Math.min(d.best, d.needed), d.needed, d.passed);
+  }
   if (ch.cards.length) {
     const prep = new Set(ch.sedia_kelas.cards);
     const rest = ch.cards.filter((c) => !prep.has(c.id));
@@ -102,13 +134,25 @@ export function stretchOpen(chapter: number, s: AppState = state): boolean {
   return !!stretchPack(chapter) && cps.length > 0 && cps.every((c) => c.lit);
 }
 
-/** ⚡ progress: extension cards known and ⚡ frames built. Done when both are complete (the 'stretch' stamp). */
+/**
+ * ⚡ progress: extension cards known, ⚡ frames built and the ⚡ dialogue's best score. Done (the 'stretch' stamp) when every
+ * card is known, every frame built and the ⚡ dialogue passed at 60 % (Sam, 17 Nov 2026).
+ */
 export function stretchProgress(chapter: number, s: AppState = state) {
   const x = stretchPack(chapter);
-  if (!x) return { known: 0, total: 0, framesBuilt: 0, framesTotal: 0, done: false };
+  if (!x) return { known: 0, total: 0, framesBuilt: 0, framesTotal: 0, dialogue: dialogueScore(dialogueKey(chapter, true), 0, s), done: false };
   const known = x.cards.filter((c) => isKnown(s.srs[srsKey(c.id)])).length;
   const framesBuilt = x.frames.filter((f) => (s.frames[f.id]?.correct ?? 0) > 0).length;
-  return { known, total: x.cards.length, framesBuilt, framesTotal: x.frames.length, done: known === x.cards.length && framesBuilt === x.frames.length };
+  const replies = x.scenario.lines.filter((l) => l.choices?.length).length;
+  const dialogue = dialogueScore(dialogueKey(chapter, true), replies, s);
+  const done = known === x.cards.length && framesBuilt === x.frames.length && (replies === 0 || dialogue.passed);
+  return { known, total: x.cards.length, framesBuilt, framesTotal: x.frames.length, dialogue, done };
+}
+
+/** "⚡ soon": every 🔥 of the chapter is lit but it has no ⚡ pack yet (Sam, 17 Nov 2026). */
+export function stretchSoon(chapter: number, s: AppState = state): boolean {
+  const cps = checkpoints(chapter, s);
+  return !stretchPack(chapter) && cps.length > 0 && cps.every((c) => c.lit);
 }
 
 /** Chapters whose ⚡ just opened and whose one-time "⚡ is open" notice has not been shown (howToSeen key stretch-N). */

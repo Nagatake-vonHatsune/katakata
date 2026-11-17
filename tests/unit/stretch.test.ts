@@ -1,11 +1,26 @@
-// The ⚡ stage (Build A, 15 Nov 2026): checkpoints, unlock, moved cards, decoys, the reply step, migrate, merge, contrast.
+// The ⚡ stage (Build A, 15 Nov 2026; Build B1, 17 Nov 2026): checkpoints, the 60 % dialogue rule, unlock, "⚡ soon", moved cards,
+// decoys, the reply step, migrate, merge, contrast (the Rebel gold).
 import 'fake-indexeddb/auto';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { content, srsKey } from '../../src/core/content';
-import { chapterProgress, checkpoints, dialogueReplyIds, isReady, stretchOpen, stretchProgress, unseenStretchOpen } from '../../src/core/progress';
-import { buildDialogue, buildSedia, buildStretch, buildToday, distractors, replyOptions, reviewStep, stretchReplyIds } from '../../src/core/session';
+import {
+  chapterProgress,
+  checkpoints,
+  dialogueDone,
+  dialogueKey,
+  dialogueNeeded,
+  dialogueReplyIds,
+  dialogueScore,
+  isReady,
+  recordDialogue,
+  stretchOpen,
+  stretchProgress,
+  stretchSoon,
+  unseenStretchOpen,
+} from '../../src/core/progress';
+import { buildDialogue, buildSedia, buildStretch, buildStretchDialogue, buildToday, distractors, replyOptions, reviewStep, stretchReplyIds } from '../../src/core/session';
 import { mergeStates } from '../../src/core/savefile';
 import { newSrs, Rating, review } from '../../src/core/srs';
 import { defaultState, migrate, MOVED_CARDS, moveCards } from '../../src/core/state';
@@ -24,6 +39,8 @@ function finished(chapter: number, s: AppState = defaultState()): AppState {
   for (const id of [...ch.sedia_kelas.cards, ...ch.cards.map((c) => c.id)]) s.srs[srsKey(id)] = known();
   for (const f of ch.sedia_kelas.frames) s.frames[f] = { tries: 1, correct: 1 };
   for (const id of dialogueReplyIds(chapter)) s.lines[id] = { tries: 1, correct: 1 };
+  const n = dialogueReplyIds(chapter).length;
+  recordDialogue(s, dialogueKey(chapter), n, n);
   return s;
 }
 
@@ -106,15 +123,53 @@ describe('🔥 checkpoints', () => {
     expect(cps.every((c) => c.lit)).toBe(true);
     expect(stretchOpen(4, s)).toBe(true);
   });
-  it('the dialogue checkpoint needs every reply line answered once, right or wrong', () => {
+  it('the dialogue checkpoint needs a passed play-through, not every line answered once', () => {
     const s = defaultState();
     const ids = dialogueReplyIds(4);
     expect(ids).toHaveLength(content.chapters[3].scenario.lines.length - 1);
-    for (const id of ids.slice(0, -1)) s.lines[id] = { tries: 1, correct: 0 };
+    for (const id of ids) s.lines[id] = { tries: 1, correct: 0 };
     expect(checkpoints(4, s)[1].lit).toBe(false);
-    s.lines[ids[ids.length - 1]] = { tries: 1, correct: 0 };
-    expect(checkpoints(4, s)[1].lit).toBe(true);
-    expect(buildDialogue(4).steps.map((st) => (st as { lineId: string }).lineId)).toEqual(ids);
+    recordDialogue(s, 'c04', dialogueNeeded(ids.length), ids.length);
+    expect(checkpoints(4, s)[1]).toMatchObject({ lit: true, done: dialogueNeeded(ids.length), total: dialogueNeeded(ids.length) });
+    const d = buildDialogue(4);
+    expect(d.dialogue).toBe('c04');
+    expect(d.steps.map((st) => (st as { lineId: string }).lineId)).toEqual(ids);
+  });
+});
+
+describe('the 60 % dialogue rule (Sam, 17 Nov 2026)', () => {
+  it('needed = 60 % rounded up: 3 of 5, 2 of 3, 1 of 1, 6 of 9, 12 of 20', () => {
+    expect([5, 3, 1, 9, 10, 20, 21].map(dialogueNeeded)).toEqual([3, 2, 1, 6, 6, 12, 13]);
+  });
+  it('a 5-step dialogue is passed at 3/5, not at 2/5', () => {
+    const s = defaultState();
+    recordDialogue(s, 'x04', 2, 5);
+    expect(dialogueScore('x04', 5, s)).toMatchObject({ best: 2, needed: 3, passed: false });
+    recordDialogue(s, 'x04', 3, 5);
+    expect(dialogueScore('x04', 5, s)).toMatchObject({ best: 3, needed: 3, passed: true, plays: 2 });
+  });
+  it('the best score is kept: a worse play-through later does not lower it', () => {
+    const s = defaultState();
+    recordDialogue(s, 'x04', 4, 5);
+    recordDialogue(s, 'x04', 1, 5);
+    expect(s.dialogues.x04).toMatchObject({ best: 4, total: 5, plays: 2 });
+    expect(dialogueScore('x04', 5, s).passed).toBe(true);
+  });
+  it('the chapter dialogue 🔥: lit at 60 %, not below; a dialogue stamp keeps it lit (flames already lit stay lit)', () => {
+    const n = dialogueReplyIds(4).length;
+    const s = defaultState();
+    recordDialogue(s, 'c04', dialogueNeeded(n) - 1, n);
+    expect(dialogueDone(4, s)).toBe(false);
+    expect(checkpoints(4, s)[1].lit).toBe(false);
+    recordDialogue(s, 'c04', dialogueNeeded(n), n);
+    expect(dialogueDone(4, s)).toBe(true);
+    const old = defaultState();
+    old.stamps = [stamp('dialogue', 4)];
+    expect(checkpoints(4, old)[1].lit).toBe(true);
+  });
+  it('the ⚡ dialogue is scored on its own key, and a full ⚡ dialogue session carries it', () => {
+    expect(buildStretchDialogue(4).dialogue).toBe('x04');
+    expect(buildStretch(4, finished(4)).dialogue).toBeUndefined();
   });
 });
 
@@ -122,7 +177,7 @@ describe('⚡ unlock', () => {
   it('opens when every flame is lit, only for a chapter with a ⚡ stage', () => {
     expect(stretchOpen(4, defaultState())).toBe(false);
     expect(stretchOpen(4, finished(4))).toBe(true);
-    expect(stretchOpen(5, finished(5))).toBe(false);
+    expect(stretchOpen(10, finished(10))).toBe(false);
   });
   it('the one-time notice is pending until howToSeen stretch-4 is set', () => {
     const s = finished(4);
@@ -137,12 +192,27 @@ describe('⚡ unlock', () => {
     expect(run.steps.filter((s) => s.kind === 'susun').every((s) => (s as { frameId: string }).frameId.startsWith('ms-x04-f'))).toBe(true);
     expect(run.steps.filter((s) => s.kind === 'reply')).toHaveLength(3);
   });
-  it('⚡ done (the stretch stamp condition): every extension card known and every ⚡ frame built once', () => {
+  it('⚡ done (the stretch stamp condition): every extension card known, every ⚡ frame built once, the ⚡ dialogue at 60 %', () => {
     const s = finished(4);
     for (const c of x04.cards) s.srs[c.id] = known();
     expect(stretchProgress(4, s).done).toBe(false);
     for (const f of x04.frames) s.frames[f.id] = { tries: 1, correct: 1 };
-    expect(stretchProgress(4, s)).toMatchObject({ known: 19, total: 19, framesBuilt: 6, framesTotal: 6, done: true });
+    expect(stretchProgress(4, s)).toMatchObject({ known: 19, total: 19, framesBuilt: 6, framesTotal: 6, done: false });
+    recordDialogue(s, 'x04', 2, 5);
+    expect(stretchProgress(4, s).done).toBe(false);
+    recordDialogue(s, 'x04', 3, 5);
+    expect(stretchProgress(4, s)).toMatchObject({ done: true, dialogue: { best: 3, total: 5, needed: 3, passed: true } });
+  });
+  it('"⚡ soon": every 🔥 lit and no ⚡ pack; not before the flames, not for a chapter with a pack', () => {
+    expect(stretchSoon(10, defaultState())).toBe(false);
+    expect(stretchSoon(10, finished(10))).toBe(true);
+    expect(stretchOpen(10, finished(10))).toBe(false);
+    expect(stretchSoon(4, finished(4))).toBe(false);
+    for (const l of ['en', 'ja', 'ms']) {
+      const d = JSON.parse(readFileSync(join(root, `i18n/${l}.json`), 'utf8'));
+      expect(d['stretch.soon'], l).toBe({ en: '⚡ soon', ja: '⚡ 準備中', ms: '⚡ akan datang' }[l]);
+      expect(d['stretch.soon_aria'], l).toContain('{n}');
+    }
   });
 });
 
@@ -170,10 +240,12 @@ describe('moved cards (Jambatan → ⚡ 4)', () => {
 });
 
 describe('migrate (schemaVersion stays 1)', () => {
-  it('adds state.lines to an older state and keeps it when present', () => {
+  it('adds state.lines and state.dialogues to an older state and keeps them when present', () => {
     const m = migrate({ schemaVersion: 1, srs: {}, frames: {} } as never);
     expect(m.schemaVersion).toBe(1);
     expect(m.lines).toEqual({});
+    expect(m.dialogues).toEqual({});
+    expect(migrate({ dialogues: { c04: { best: 3, total: 5, plays: 1 } } } as never).dialogues).toEqual({ c04: { best: 3, total: 5, plays: 1 } });
     expect(migrate({ lines: { a: { tries: 2, correct: 1 } } } as never).lines).toEqual({ a: { tries: 2, correct: 1 } });
   });
 });
@@ -195,6 +267,12 @@ describe('savefile merge with the new stamp kinds and lines', () => {
     expect(of('day')).toHaveLength(2);
     expect(m.lines['ms-c04-s02']).toEqual({ tries: 3, correct: 2, last: '2026-11-11' });
     expect(m.lines['ms-x04-d02']).toEqual({ tries: 1, correct: 1 });
+    // Dialogue scores: the best of either copy.
+    const c = defaultState();
+    const d = defaultState();
+    recordDialogue(c, 'x04', 3, 5, '2026-11-10');
+    recordDialogue(d, 'x04', 2, 5, '2026-11-12');
+    expect(mergeStates(c, d).dialogues.x04).toEqual({ best: 3, total: 5, plays: 1, last: '2026-11-12' });
     // A merged learner who finished chapter 4 on the other device keeps their flames.
     expect(checkpoints(4, mergeStates(defaultState(), { ...b, stamps: [...b.stamps, stamp('chapter', 4)] })).map((c) => c.lit)).toEqual([true, true, true]);
   });
@@ -266,7 +344,7 @@ describe('the 🔥 bar', () => {
   });
 });
 
-describe('the ⚡ blue accent (design note section 3, WCAG 2.x)', () => {
+describe('the ⚡ accent (design note section 3, WCAG 2.x; gold in Rebel)', () => {
   const css = readFileSync(join(root, 'src/styles.css'), 'utf8');
   const block = (selector: string) => {
     const at = css.indexOf(`${selector} {`);
@@ -299,8 +377,9 @@ describe('the ⚡ blue accent (design note section 3, WCAG 2.x)', () => {
     'cyan-dark': ['#86b8ff', '#071a33', '#1a2a47'],
     'royal-light': ['#1f4fbf', '#ffffff', '#e3e9fa'],
     'royal-dark': ['#8ab4ff', '#0a1530', '#1f2a4a'],
-    'rebel-light': ['#0064a8', '#ffffff', '#dcedf8'],
-    'rebel-dark': ['#5fd0ff', '#03192a', '#0f3047'],
+    // Rebel: gold (Sam, 17 Nov 2026), a deep gold for text on the light theme. The other palettes stay blue.
+    'rebel-light': ['#876200', '#ffffff', '#fbf0cc'],
+    'rebel-dark': ['#f2c04a', '#241800', '#3a2c0b'],
   };
   for (const [name, sel] of Object.entries(themes))
     it(`${name}: the design note's values, text pairs ≥ 4.5, the bar against its track ≥ 3`, () => {
@@ -312,6 +391,26 @@ describe('the ⚡ blue accent (design note section 3, WCAG 2.x)', () => {
       expect(ratio(v['stretch-ink'], v.stretch)).toBeGreaterThanOrEqual(4.5);
       expect(ratio(v.stretch, v['stretch-soft'])).toBeGreaterThanOrEqual(4.5);
     });
+  const hue = (hex: string) => {
+    const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255);
+    const max = Math.max(r, g, b);
+    const d = max - Math.min(r, g, b);
+    const h = max === r ? ((g - b) / d) % 6 : max === g ? (b - r) / d + 2 : (r - g) / d + 4;
+    return (h * 60 + 360) % 360;
+  };
+  it('Rebel ⚡ is gold (hue 35° to 55°), the other palettes stay blue (200° to 230°)', () => {
+    for (const [name, sel] of Object.entries(themes)) {
+      const x = hue(block(sel).stretch);
+      if (name.startsWith('rebel')) expect(x, name).toBeGreaterThanOrEqual(35), expect(x, name).toBeLessThanOrEqual(55);
+      else expect(x, name).toBeGreaterThanOrEqual(200), expect(x, name).toBeLessThanOrEqual(230);
+    }
+  });
+  it('"⚡ soon" (muted text on the neutral fill) passes 4.5 in every theme', () => {
+    for (const [name, sel] of Object.entries(themes)) {
+      const v = block(sel);
+      expect(ratio(v.muted, v['neutral-soft']), name).toBeGreaterThanOrEqual(4.5);
+    }
+  });
   it('the dark values under prefers-color-scheme match the data-theme=dark ones', () => {
     for (const p of ['', "[data-palette='cyan']", "[data-palette='royal']", "[data-palette='rebel']"]) {
       const media = block(`  :root${p}:not([data-theme='light'])`);
