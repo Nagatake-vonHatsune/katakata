@@ -397,6 +397,30 @@ async function play(page, hooks = {}) {
     await p.close();
   }
 
+  // 9. Build B2: a dialogue line's usage note (⚡ 8, Sam 17 Nov 2026): «Tolong bungkus, ya.» is heard between reply steps, and its
+  // note («balut» vs «bungkus») shows in the next reply step.
+  {
+    const p = await ctx.newPage();
+    p.on('pageerror', (e) => errors.push(e.message));
+    const st = seededState();
+    st.stamps.push(stamp('ready', 8), stamp('dialogue', 8), stamp('chapter', 8));
+    await seed(p, st);
+    await p.goto(BASE + '#/sedia/8/x');
+    await p.reload();
+    await p.waitForSelector('.stretch-screen');
+    await p.locator('.stretch-outline').first().click();
+    let note = '';
+    await play(p, {
+      replied: async (i) => {
+        if (i !== 5) return;
+        note = (await p.locator('.line-note').allInnerTexts()).join(' | ');
+        await shot(p, 'x08-line-note-kancil-light');
+      },
+    });
+    assert(/Tolong bungkus/.test(note) && /balut/.test(note), `⚡ 8: the «bungkus» line's note shows in the reply step (${note.slice(0, 60)}…)`);
+    await p.close();
+  }
+
   assert(errors.length === 0, 'no page errors' + (errors.length ? ': ' + errors.join(' | ') : ''));
   await browser.close();
 })().catch((e) => {
