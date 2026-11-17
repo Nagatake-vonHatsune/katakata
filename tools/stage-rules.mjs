@@ -19,7 +19,10 @@ import { fileURLToPath } from 'node:url';
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const readJson = (p) => JSON.parse(readFileSync(p, 'utf8'));
 
-const PROPER = new Set('a b c d emi farah osaka jepun pj shah alam kl sentral pasar seni aki mei qr rm am pm'.split(' '));
+const PROPER = new Set('a b c d emi farah osaka jepun pj shah alam kl sentral seni aki mei qr rm am pm'.split(' '));
+// Token that stands for a capitalised place name made with «Pasar» (Pasar Seni); never vocabulary. The lower-case common nouns «pasar»,
+// «pasar raya» and «pasar malam» are ordinary words that need ledger rows (Sam, 17 Nov 2026; the Python pasar_names).
+const NAME = '\0name';
 const NUMBERS = new Set('sifar kosong satu dua tiga empat lima enam tujuh lapan sembilan sepuluh sebelas belas puluh ratus ribu juta'.split(' '));
 const CHUNK_TAGS = new Set(['chunk', 'chunk*', 'lex']);
 const TAG_FAMILY = { 'ber-': 'ber-', 'meN-': 'meN-', '-kan': '-kan', '-i': '-i', 'ter-': 'ter-', 'di-': 'di-' };
@@ -33,6 +36,23 @@ export function tokens(s) {
   return (s ?? '').toLowerCase().match(/[a-z]+(?:[-'][a-z]+)*/g) ?? [];
 }
 export const norm = (s) => tokens(s).join(' ');
+/** Indexes of the tokens of a capitalised «Pasar …» place name: «Pasar» with a capital followed by one or more capitalised words. */
+export function pasarNames(text) {
+  const raw = (text ?? '').match(/[A-Za-z]+(?:[-'][A-Za-z]+)*/g) ?? [];
+  const low = tokens(text);
+  const out = new Set();
+  if (raw.length !== low.length) return out;
+  const cap = (w) => w[0] !== w[0].toLowerCase();
+  for (let i = 0; i < raw.length - 1; ) {
+    if (low[i] === 'pasar' && cap(raw[i]) && cap(raw[i + 1])) {
+      let j = i + 1;
+      while (j < raw.length && cap(raw[j])) j++;
+      for (let k = i; k < j; k++) out.add(k);
+      i = j;
+    } else i++;
+  }
+  return out;
+}
 const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const wordRe = (phrase) => new RegExp(`(?<!\\w)${esc(phrase)}(?!\\w)`);
 const key = (unit, check, term) => [unit, check, term].join('|');
@@ -160,7 +180,7 @@ export class Checker {
     const look = rules.lookalike_roots;
     this.roots = new Set([...look.kata_kata_allow_list.split(/\s+/).filter(Boolean), ...look.sam_local]);
     this.mentions = Object.fromEntries(Object.entries(opts.mentions ?? {}).map(([k, v]) => [norm(k), v]));
-    this.proper = new Set([...PROPER, ...loaded.names.flatMap((n) => tokens(n))]);
+    this.proper = new Set([...PROPER, NAME, ...loaded.names.flatMap((n) => tokens(n))]);
     this.maxlen = Math.max(...[...this.entries.keys()].map((t) => t.split(' ').length));
     // Rows and chapters (Cikgu Sensai step 6c-1, rules commit 909596e): only a form with at least one row that has a chapter can be a
     // whole word, a root or a base. A live row with no chapter (a Jambatan row) is no root; in a unit with a chapter it counts as no row.
@@ -210,6 +230,10 @@ export class Checker {
     // Rule 1: a form whose own ledger row is placed at or before this chapter is a whole word, never split (biasanya, akhirnya, terlalu).
     // Before its row's chapter a regular derivation from a placed base still applies (seminggu in chapter 4; «disemak», placed Ch18, in 11B).
     if (this.placedBy(w, ch)) return null;
+    // Full reduplication X-X (kesan-kesan, buku-buku) is read as placed where X is placed; a form with a ledger row of its own
+    // (kanak-kanak, malam-malam, pagi-pagi, sama-sama) keeps that row and chapter: its own row always wins (Sam, 17 Nov 2026).
+    const rd = /^([a-z]+)-([a-z]+)$/.exec(w);
+    if (rd && rd[1] === rd[2] && !this.entries.has(w) && this.placed.has(rd[1])) return [rd[1], 'reduplication'];
     const g = this.gates;
     if (w.startsWith('ke') && NUMBERS.has(w.slice(2)) && ch >= g['ke- ordinal']) return [w.slice(2), 'ke- ordinal'];
     if (w.endsWith('nya') && w.length > 4 && ch >= g['-nya'] && (this.placed.has(w.slice(0, -3)) || this.cards.has(w.slice(0, -3)) || (w === 'ceritanya' && !this.entries.has('cerita'))))
@@ -295,6 +319,9 @@ export class Checker {
       const g = ck.gates;
       const text = norm(s.text);
       const ts = tokens(s.text);
+      // The same tokens with a capitalised «Pasar …» place name replaced by NAME (a name is not vocabulary).
+      const names = pasarNames(s.text);
+      const tl = ts.map((w, i) => (names.has(i) ? NAME : w));
       const ch = s.chapter ?? null;
       const seq = ch === null ? s.unit : 'stage';
       const kind = s.kind ?? 'model';
@@ -325,7 +352,7 @@ export class Checker {
       const exempt = new Set();
       for (const [phrase, first] of [...ck.chunks, ...ck.wholeWords])
         if (ch !== null && first <= ch && wordRe(phrase).test(text)) for (const t of tokens(phrase)) exempt.add(t);
-      for (const w of new Set(ts)) {
+      for (const w of new Set(tl)) {
         if (ck.proper.has(w)) continue;
         if (ch !== null && !exempt.has(w)) {
           const early = [];
@@ -355,16 +382,16 @@ export class Checker {
       }
       // Ledger coverage and placement, longest ledger phrase first.
       let i = 0;
-      while (i < ts.length) {
-        if (ck.proper.has(ts[i])) { i++; continue; }
+      while (i < tl.length) {
+        if (ck.proper.has(tl[i])) { i++; continue; }
         let matched = null;
-        for (let size = Math.min(ck.maxlen, ts.length - i); size > 0; size--) {
-          const term = ts.slice(i, i + size).join(' ');
+        for (let size = Math.min(ck.maxlen, tl.length - i); size > 0; size--) {
+          const term = tl.slice(i, i + size).join(' ');
           // An unplaced multi-word row (a Hanashishou phrase such as «encik pula») is no entry in a unit with a chapter (rule 2): its words are checked one by one.
-          if (ck.entries.has(term) && size > 1 && (ck.compositional(term, ts.slice(i, i + size)) || !ck.rowsFor(term, ch).length)) continue;
+          if (ck.entries.has(term) && size > 1 && (ck.compositional(term, tl.slice(i, i + size)) || !ck.rowsFor(term, ch).length)) continue;
           if (ck.entries.has(term)) { matched = [term, size]; break; }
         }
-        let [term, size] = matched ?? [ts[i], 1];
+        let [term, size] = matched ?? [tl[i], 1];
         const deriv = size === 1 ? ck.derivation(term, ch) : null;
         if (deriv) {
           const [base, rule] = deriv;

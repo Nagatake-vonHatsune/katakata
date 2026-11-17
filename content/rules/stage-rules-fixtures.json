@@ -1694,6 +1694,901 @@
      "chapter": 12
     }
    ]
+  },
+  {
+   "id": "pasar-lowercase-before-its-row-fails",
+   "why": "«pasar» is a common noun (L-0512, placed Ch3): used in chapter 2 it fails the ledger check, as any word placed later would",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Saya di pasar.",
+     "chapter": 2
+    }
+   ],
+   "check": "ledger"
+  },
+  {
+   "id": "pasar-lowercase-at-its-row-passes",
+   "why": "«pasar» in chapter 3 (its row's chapter) is a placed word, no gap",
+   "expect": "pass",
+   "expect_no_gaps": [
+    "pasar"
+   ],
+   "segments": [
+    {
+     "text": "Saya di pasar.",
+     "chapter": 3
+    }
+   ]
+  },
+  {
+   "id": "pasar-raya-is-two-words-before-chapter-3-fails",
+   "why": "«pasar raya»: «pasar» is read as a word and is not yet placed in chapter 2 (before the fix «pasar» was skipped as a name and only «raya» was reported)",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Saya di pasar raya.",
+     "chapter": 2
+    }
+   ],
+   "check": "ledger"
+  },
+  {
+   "id": "pasar-raya-with-a-ledger-row-has-no-gap",
+   "why": "«pasar raya» with its own ledger row (Ch5): matched as a phrase, no «raya» gap",
+   "expect": "pass",
+   "ledger_rows": [
+    {
+     "ID": "X-PR-1",
+     "Malay": "pasar raya",
+     "Kata-Kata place": "Ch5",
+     "POS": "n"
+    }
+   ],
+   "expect_no_gaps": [
+    "raya",
+    "pasar raya",
+    "pasar"
+   ],
+   "segments": [
+    {
+     "text": "Saya di pasar raya.",
+     "chapter": 5
+    }
+   ]
+  },
+  {
+   "id": "pasar-raya-without-a-row-reports-raya-only-as-a-gap",
+   "why": "«pasar raya» with no ledger row for «raya»: «pasar» is placed (no gap, no violation), «raya» is the one real gap",
+   "expect": "pass",
+   "expect_gaps": [
+    "raya"
+   ],
+   "expect_no_gaps": [
+    "pasar"
+   ],
+   "segments": [
+    {
+     "text": "Saya di pasar raya.",
+     "chapter": 5
+    }
+   ]
+  },
+  {
+   "id": "pasar-malam-is-two-words-passes",
+   "why": "«pasar malam»: both words are placed (pasar Ch3, malam Ch1), no gap, no violation",
+   "expect": "pass",
+   "expect_no_gaps": [
+    "pasar",
+    "malam"
+   ],
+   "segments": [
+    {
+     "text": "Saya di pasar malam.",
+     "chapter": 5
+    }
+   ]
+  },
+  {
+   "id": "pasar-malam-before-chapter-3-fails",
+   "why": "lower-case «pasar malam» in chapter 2: «pasar» is placed later",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Saya di pasar malam.",
+     "chapter": 2
+    }
+   ],
+   "check": "ledger"
+  },
+  {
+   "id": "pasar-capitalised-at-sentence-start-is-the-word-fails",
+   "why": "«Pasar» alone at the start of a sentence is the common noun, not a name",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Pasar ada.",
+     "chapter": 2
+    }
+   ],
+   "check": "ledger"
+  },
+  {
+   "id": "pasar-seni-capitalised-is-a-name-passes",
+   "why": "«Pasar Seni», capitalised place name, is a name: not checked, even in chapter 1",
+   "expect": "pass",
+   "expect_no_gaps": [
+    "pasar",
+    "seni"
+   ],
+   "segments": [
+    {
+     "text": "Saya di Pasar Seni.",
+     "chapter": 2
+    }
+   ]
+  },
+  {
+   "id": "pasar-seni-name-at-sentence-start-passes",
+   "why": "a capitalised «Pasar» followed by a capitalised word is a name at the start of a sentence too",
+   "expect": "pass",
+   "expect_no_gaps": [
+    "pasar"
+   ],
+   "segments": [
+    {
+     "text": "Pasar Seni.",
+     "chapter": 1
+    }
+   ]
+  },
+  {
+   "id": "pasar-seni-lowercase-is-words-fails",
+   "why": "lower-case «pasar seni» is not a capitalised name: «pasar» is a word and is not placed in chapter 2",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Saya di pasar seni.",
+     "chapter": 2
+    }
+   ],
+   "check": "ledger"
+  },
+  {
+   "id": "pasar-name-does-not-hide-the-next-word-passes",
+   "why": "after the name the sentence goes on: «Pasar Seni» is skipped, «pasar» later in the line is still a word (chapter 3)",
+   "expect": "pass",
+   "expect_no_gaps": [
+    "pasar"
+   ],
+   "segments": [
+    {
+     "text": "Pasar Seni dan pasar.",
+     "chapter": 3
+    }
+   ]
+  },
+  {
+   "id": "reduplication-x-x-placed-where-x-is-passes",
+   "why": "kesan-kesan is read as «kesan» (here placed Ch12 by a row added for the case): no gap, no violation at 12",
+   "expect": "pass",
+   "ledger_rows": [
+    {
+     "ID": "X-RD-1",
+     "Malay": "kesan",
+     "Kata-Kata place": "Ch12",
+     "POS": "n"
+    }
+   ],
+   "expect_no_gaps": [
+    "kesan-kesan",
+    "kesan"
+   ],
+   "segments": [
+    {
+     "text": "Kesan-kesan.",
+     "chapter": 12
+    }
+   ]
+  },
+  {
+   "id": "reduplication-x-x-before-x-is-placed-fails",
+   "why": "kesan-kesan in chapter 11 when «kesan» is placed at 12: the base is placed later (ledger violation on «kesan»)",
+   "expect": "fail",
+   "ledger_rows": [
+    {
+     "ID": "X-RD-1",
+     "Malay": "kesan",
+     "Kata-Kata place": "Ch12",
+     "POS": "n"
+    }
+   ],
+   "segments": [
+    {
+     "text": "Kesan-kesan.",
+     "chapter": 11
+    }
+   ],
+   "check": "ledger"
+  },
+  {
+   "id": "reduplication-buku-buku-passes",
+   "why": "buku-buku is read as «buku» (L-0487, placed Ch4)",
+   "expect": "pass",
+   "expect_no_gaps": [
+    "buku-buku",
+    "buku"
+   ],
+   "segments": [
+    {
+     "text": "Buku-buku.",
+     "chapter": 5
+    }
+   ]
+  },
+  {
+   "id": "reduplication-buku-buku-before-buku-fails",
+   "why": "buku-buku in chapter 3: «buku» is placed at 4",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Buku-buku.",
+     "chapter": 3
+    }
+   ],
+   "check": "ledger"
+  },
+  {
+   "id": "reduplication-x-with-no-row-is-still-a-gap",
+   "why": "«gajah» has no ledger row: gajah-gajah stays a gap as written",
+   "expect": "pass",
+   "expect_gaps": [
+    "gajah-gajah"
+   ],
+   "segments": [
+    {
+     "text": "Gajah-gajah.",
+     "chapter": 6
+    }
+   ]
+  },
+  {
+   "id": "reduplication-needs-the-same-word-twice",
+   "why": "buku-kad is not a full reduplication: it is read as written (a gap), not as «buku»",
+   "expect": "pass",
+   "expect_gaps": [
+    "buku-kad"
+   ],
+   "expect_no_gaps": [
+    "buku"
+   ],
+   "segments": [
+    {
+     "text": "Buku-kad.",
+     "chapter": 6
+    }
+   ]
+  },
+  {
+   "id": "reduplication-own-row-wins-kanak-kanak-passes",
+   "why": "kanak-kanak has its own row (Ch10, row added for the case): used at 10 it is that row, no gap",
+   "expect": "pass",
+   "ledger_rows": [
+    {
+     "ID": "X-RD-2",
+     "Malay": "kanak-kanak",
+     "Kata-Kata place": "Ch10",
+     "POS": "n"
+    }
+   ],
+   "expect_no_gaps": [
+    "kanak-kanak"
+   ],
+   "segments": [
+    {
+     "text": "Kanak-kanak.",
+     "chapter": 10
+    }
+   ]
+  },
+  {
+   "id": "reduplication-own-row-wins-kanak-kanak-fails-before-its-row",
+   "why": "kanak-kanak at chapter 5: its own row is Ch10, so it fails the ledger check; it is not read as X-X",
+   "expect": "fail",
+   "ledger_rows": [
+    {
+     "ID": "X-RD-2",
+     "Malay": "kanak-kanak",
+     "Kata-Kata place": "Ch10",
+     "POS": "n"
+    }
+   ],
+   "segments": [
+    {
+     "text": "Kanak-kanak.",
+     "chapter": 5
+    }
+   ],
+   "check": "ledger"
+  },
+  {
+   "id": "reduplication-own-row-wins-malam-malam-fails-before-its-row",
+   "why": "malam-malam has a row at Ch9 although «malam» is placed at Ch1: in chapter 5 its own row wins and the form fails (it is not read as «malam»)",
+   "expect": "fail",
+   "ledger_rows": [
+    {
+     "ID": "X-RD-3",
+     "Malay": "malam-malam",
+     "Kata-Kata place": "Ch9",
+     "POS": "n"
+    }
+   ],
+   "segments": [
+    {
+     "text": "Malam-malam.",
+     "chapter": 5
+    }
+   ],
+   "check": "ledger"
+  },
+  {
+   "id": "reduplication-own-row-wins-malam-malam-passes-at-its-row",
+   "why": "malam-malam at its own row's chapter",
+   "expect": "pass",
+   "ledger_rows": [
+    {
+     "ID": "X-RD-3",
+     "Malay": "malam-malam",
+     "Kata-Kata place": "Ch9",
+     "POS": "n"
+    }
+   ],
+   "expect_no_gaps": [
+    "malam-malam"
+   ],
+   "segments": [
+    {
+     "text": "Malam-malam.",
+     "chapter": 9
+    }
+   ]
+  },
+  {
+   "id": "reduplication-own-row-wins-pagi-pagi-fails-before-its-row",
+   "why": "pagi-pagi has a row at Ch11 although «pagi» is placed at Ch1: in chapter 8 its own row wins and the form fails",
+   "expect": "fail",
+   "ledger_rows": [
+    {
+     "ID": "X-RD-4",
+     "Malay": "pagi-pagi",
+     "Kata-Kata place": "Ch11",
+     "POS": "adv"
+    }
+   ],
+   "segments": [
+    {
+     "text": "Pagi-pagi.",
+     "chapter": 8
+    }
+   ],
+   "check": "ledger"
+  },
+  {
+   "id": "reduplication-own-row-sama-sama-is-a-whole-word",
+   "why": "sama-sama has its own row (L-0017, Ch1) and keeps it: it passes in chapter 1, although «sama» is only placed at 6",
+   "expect": "pass",
+   "expect_no_gaps": [
+    "sama-sama"
+   ],
+   "segments": [
+    {
+     "text": "Sama-sama.",
+     "chapter": 1
+    }
+   ]
+  },
+  {
+   "id": "reduplication-own-row-without-a-chapter-still-wins",
+   "why": "apa-apa has its own row with no chapter (L-1324, Jambatan): it keeps that row, so in a unit with a chapter it is a ledger gap as before, not read as «apa» + «apa»",
+   "expect": "pass",
+   "expect_gaps": [
+    "apa-apa"
+   ],
+   "segments": [
+    {
+     "text": "Apa-apa.",
+     "chapter": 6
+    }
+   ]
+  },
+  {
+   "id": "reduplication-own-extension-row-wins-in-core-content",
+   "why": "malam-malam with an extension row (Ch4 (extension)): in core content it is still the form's own row, so it is a gap, not read as «malam»",
+   "expect": "pass",
+   "ledger_rows": [
+    {
+     "ID": "X-RD-5",
+     "Malay": "malam-malam",
+     "Kata-Kata place": "Ch4 (extension)",
+     "POS": "adv"
+    }
+   ],
+   "expect_gaps": [
+    "malam-malam"
+   ],
+   "expect_no_gaps": [
+    "malam"
+   ],
+   "segments": [
+    {
+     "text": "Malam-malam.",
+     "chapter": 5
+    }
+   ]
+  },
+  {
+   "id": "reduplication-is-not-read-in-a-unit-with-no-chapter",
+   "why": "a unit with no chapter reads no derivation: kesan-kesan stays a gap there (as -nya and the other derivations)",
+   "expect": "pass",
+   "ledger_rows": [
+    {
+     "ID": "X-RD-1",
+     "Malay": "kesan",
+     "Kata-Kata place": "Ch12",
+     "POS": "n"
+    }
+   ],
+   "expect_gaps": [
+    "kesan-kesan"
+   ],
+   "segments": [
+    {
+     "text": "Kesan-kesan.",
+     "chapter": null,
+     "unit": "fixture-unplaced"
+    }
+   ]
+  },
+  {
+   "id": "register-ch17-je-without-standard-fails",
+   "why": "spoken «je» (standard «sahaja», Sam 17 Nov 2026) in chapter 17 with no earlier teaching of «sahaja»",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Saya mahu air je.",
+     "chapter": 17
+    }
+   ],
+   "check": "register"
+  },
+  {
+   "id": "register-ch17-je-standard-first-and-labelled-passes",
+   "why": "«sahaja» taught first, then «je» with the explicit spoken label, then used",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "sahaja",
+     "chapter": 17,
+     "kind": "vocabulary"
+    },
+    {
+     "text": "je",
+     "chapter": 17,
+     "kind": "vocabulary",
+     "source_text": "«sahaja» (spoken: «je»)"
+    },
+    {
+     "text": "Saya mahu air je.",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "register-ch17-tau-without-standard-fails",
+   "why": "spoken «tau» (standard «tahu», Sam 17 Nov 2026) in chapter 17 with no earlier teaching of «tahu»",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Saya tidak tau.",
+     "chapter": 17
+    }
+   ],
+   "check": "register"
+  },
+  {
+   "id": "register-ch17-tau-standard-first-and-labelled-passes",
+   "why": "«tahu» taught first, then «tau» with the explicit spoken label, then used",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "tahu",
+     "chapter": 17,
+     "kind": "vocabulary"
+    },
+    {
+     "text": "tau",
+     "chapter": 17,
+     "kind": "vocabulary",
+     "source_text": "«tahu» (spoken: «tau»)"
+    },
+    {
+     "text": "Saya tidak tau.",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "register-ch17-kejap-without-standard-fails",
+   "why": "spoken «kejap» (standard «sekejap», Sam 17 Nov 2026) in chapter 17 with no earlier teaching of «sekejap»",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Tunggu kejap.",
+     "chapter": 17
+    }
+   ],
+   "check": "register"
+  },
+  {
+   "id": "register-ch17-kejap-standard-first-and-labelled-passes",
+   "why": "«sekejap» taught first, then «kejap» with the explicit spoken label, then used",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "sekejap",
+     "chapter": 17,
+     "kind": "vocabulary"
+    },
+    {
+     "text": "kejap",
+     "chapter": 17,
+     "kind": "vocabulary",
+     "source_text": "«sekejap» (spoken: «kejap»)"
+    },
+    {
+     "text": "Tunggu kejap.",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "register-ch17-motor-without-standard-fails",
+   "why": "spoken «motor» (standard «motosikal», Sam 17 Nov 2026) in chapter 17 with no earlier teaching of «motosikal»",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Saya ada motor.",
+     "chapter": 17
+    }
+   ],
+   "check": "register"
+  },
+  {
+   "id": "register-ch17-motor-standard-first-and-labelled-passes",
+   "why": "«motosikal» taught first, then «motor» with the explicit spoken label, then used",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "motosikal",
+     "chapter": 17,
+     "kind": "vocabulary"
+    },
+    {
+     "text": "motor",
+     "chapter": 17,
+     "kind": "vocabulary",
+     "source_text": "«motosikal» (spoken: «motor»)"
+    },
+    {
+     "text": "Saya ada motor.",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "register-ch17-komplen-without-standard-fails",
+   "why": "spoken «komplen» (standard «aduan», Sam 17 Nov 2026) in chapter 17 with no earlier teaching of «aduan»",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Saya mahu buat komplen.",
+     "chapter": 17
+    }
+   ],
+   "check": "register"
+  },
+  {
+   "id": "register-ch17-komplen-standard-first-and-labelled-passes",
+   "why": "«aduan» taught first, then «komplen» with the explicit spoken label, then used",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "aduan",
+     "chapter": 17,
+     "kind": "vocabulary"
+    },
+    {
+     "text": "komplen",
+     "chapter": 17,
+     "kind": "vocabulary",
+     "source_text": "«aduan» (spoken: «komplen»)"
+    },
+    {
+     "text": "Saya mahu buat komplen.",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "register-ch17-bisnes-without-standard-fails",
+   "why": "spoken «bisnes» (standard «perniagaan», Sam 17 Nov 2026) in chapter 17 with no earlier teaching of «perniagaan»",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Saya ada bisnes.",
+     "chapter": 17
+    }
+   ],
+   "check": "register"
+  },
+  {
+   "id": "register-ch17-bisnes-standard-first-and-labelled-passes",
+   "why": "«perniagaan» taught first, then «bisnes» with the explicit spoken label, then used",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "perniagaan",
+     "chapter": 17,
+     "kind": "vocabulary"
+    },
+    {
+     "text": "bisnes",
+     "chapter": 17,
+     "kind": "vocabulary",
+     "source_text": "«perniagaan» (spoken: «bisnes»)"
+    },
+    {
+     "text": "Saya ada bisnes.",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "register-ch17-takkan-without-standard-fails",
+   "why": "spoken «takkan» (standard «tidak akan», Sam 17 Nov 2026) in chapter 17 with no earlier teaching of «tidak akan»",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Dia takkan datang.",
+     "chapter": 17
+    }
+   ],
+   "check": "register"
+  },
+  {
+   "id": "register-ch17-takkan-standard-first-and-labelled-passes",
+   "why": "«tidak akan» taught first, then «takkan» with the explicit spoken label, then used",
+   "expect": "pass",
+   "ledger_rows": [
+    {
+     "ID": "X-RG-1",
+     "Malay": "takkan",
+     "Kata-Kata place": "Ch17",
+     "POS": "adv"
+    }
+   ],
+   "segments": [
+    {
+     "text": "tidak akan",
+     "chapter": 17,
+     "kind": "vocabulary"
+    },
+    {
+     "text": "takkan",
+     "chapter": 17,
+     "kind": "vocabulary",
+     "source_text": "«tidak akan» (spoken: «takkan»)"
+    },
+    {
+     "text": "Dia takkan datang.",
+     "chapter": 17
+    }
+   ]
+  },
+  {
+   "id": "register-ch17-spoken-without-label-fails",
+   "why": "«tau» after «tahu» but with no spoken label in the teaching line",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "tahu",
+     "chapter": 17,
+     "kind": "vocabulary"
+    },
+    {
+     "text": "tau",
+     "chapter": 17,
+     "kind": "vocabulary"
+    },
+    {
+     "text": "Saya tidak tau.",
+     "chapter": 17
+    }
+   ],
+   "check": "register"
+  },
+  {
+   "id": "register-ch17-pairs-do-not-apply-before-17",
+   "why": "the seven chapter 17 pairs are read from chapter 17: in chapter 16 they raise no register violation",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Saya ada motor. Tunggu kejap.",
+     "chapter": 16
+    }
+   ]
+  },
+  {
+   "id": "terbaru-6-passes",
+   "why": "terbaru (ter- + baru, «baru» placed Ch4) is a chapter 6 superlative, not the accident ter-",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Ini buku terbaru.",
+     "chapter": 6
+    }
+   ]
+  },
+  {
+   "id": "tertinggi-6-passes",
+   "why": "tertinggi (ter- + tinggi, placed Ch3) is a chapter 6 superlative",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Itu bangunan tertinggi.",
+     "chapter": 6
+    }
+   ]
+  },
+  {
+   "id": "terbaru-15-passes-before-accident-ter",
+   "why": "terbaru in chapter 15 does not wait for the accident ter- of chapter 16",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Ini buku terbaru.",
+     "chapter": 15
+    }
+   ]
+  },
+  {
+   "id": "tertinggi-12-passes-before-accident-ter",
+   "why": "tertinggi in chapter 12 does not wait for chapter 16",
+   "expect": "pass",
+   "segments": [
+    {
+     "text": "Itu bangunan tertinggi.",
+     "chapter": 12
+    }
+   ]
+  },
+  {
+   "id": "terbaru-5-fails",
+   "why": "terbaru before chapter 6 fails: the ter- superlative opens at 6",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Ini buku terbaru.",
+     "chapter": 5
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "tertinggi-5-fails",
+   "why": "tertinggi before chapter 6 fails",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Itu bangunan tertinggi.",
+     "chapter": 5
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "terbaru-does-not-unlock-terjatuh",
+   "why": "terbaru is a superlative only: terjatuh (accident ter-) still fails in chapter 12",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Ini buku terbaru.",
+     "chapter": 12
+    },
+    {
+     "text": "Dia terjatuh.",
+     "chapter": 12
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "belon-is-a-root-passes",
+   "why": "belon only looks like a ber-/bel- form: a root, no affix violation before chapter 10 (a gap until the ledger holds it)",
+   "expect": "pass",
+   "expect_gaps": [
+    "belon"
+   ],
+   "segments": [
+    {
+     "text": "Saya beli belon.",
+     "chapter": 5
+    }
+   ]
+  },
+  {
+   "id": "mekanik-is-a-root-passes",
+   "why": "mekanik only looks like a me- form: a root, no affix violation before chapter 11",
+   "expect": "pass",
+   "expect_gaps": [
+    "mekanik"
+   ],
+   "segments": [
+    {
+     "text": "Dia mekanik.",
+     "chapter": 5
+    }
+   ]
+  },
+  {
+   "id": "meriah-is-a-root-passes",
+   "why": "meriah only looks like a me- form: a root, no affix violation before chapter 11",
+   "expect": "pass",
+   "expect_gaps": [
+    "meriah"
+   ],
+   "segments": [
+    {
+     "text": "Majlis itu meriah.",
+     "chapter": 5
+    }
+   ]
+  },
+  {
+   "id": "belanga-is-not-a-root-fails",
+   "why": "the exemption is for the word, not the shape: another bel- form (belanga) still fails before chapter 10",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Belanga itu besar.",
+     "chapter": 5
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "mekanikal-is-not-a-root-fails",
+   "why": "another me- form (mekanikal) is not exempt: it fails before chapter 11",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Kerja itu mekanikal.",
+     "chapter": 5
+    }
+   ],
+   "check": "affix"
+  },
+  {
+   "id": "memeriahkan-is-meN-fails",
+   "why": "memeriahkan is meN- + meriah + kan, not the root: it fails in chapter 10 (meN- opens at 11)",
+   "expect": "fail",
+   "segments": [
+    {
+     "text": "Kami memeriahkan majlis itu.",
+     "chapter": 10
+    }
+   ],
+   "check": "affix"
   }
  ]
 }

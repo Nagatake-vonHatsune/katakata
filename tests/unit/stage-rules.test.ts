@@ -15,8 +15,8 @@ describe('stage rules (shared with Cikgu Sensai)', () => {
     for (const [name, f] of Object.entries<{ sha256: string }>(source.files))
       expect(createHash('sha256').update(readFileSync(join(rulesDir, name))).digest('hex'), name).toBe(f.sha256);
   });
-  it('runs all 118 shared fixtures (including expect_gaps / expect_no_gaps, ledger_rows and extension) with the expected result', () => {
-    expect(cases).toHaveLength(118);
+  it('runs all 174 shared fixtures (including expect_gaps / expect_no_gaps, ledger_rows and extension) with the expected result', () => {
+    expect(cases).toHaveLength(174);
     const wrong = cases.filter((c: any) => !fixtureAgrees(c, runFixtureCase(checker, c))).map((c: any) => c.id);
     expect(wrong).toEqual([]);
   });

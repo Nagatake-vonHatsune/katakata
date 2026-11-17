@@ -1,16 +1,16 @@
 {
   "note": "Unedited copies of Cikgu Sensai files. Do not edit them here: a rule change needs Sam's approval and is made in Cikgu Sensai first, then copied again with this record updated. tests/unit/stage-rules.test.ts checks the hashes.",
   "repository": "https://github.com/Nagatake-vonHatsune/Cikgu-Sensai",
-  "commit": "d8612e5cd16661156ef86862f111355cc5cc0828",
-  "copied": "2026-11-15",
+  "commit": "7e436f382c39654211f9535fa366e30c06ddfb61",
+  "copied": "2026-11-17",
   "files": {
     "stage-rules.json": {
       "from": "curriculum/stage-rules.json",
-      "sha256": "617badf4b128401e9ad1838383705136de70ccb35fce3ad24e11ec73266ba1f2"
+      "sha256": "7e249cfbf1192fc3cf636267462e465b6460e1287a50e87e61ed3fce57593056"
     },
     "stage-rules-fixtures.json": {
       "from": "curriculum/stage-rules-fixtures.json",
-      "sha256": "65538743734193a94f643263d691858a50ebf9babee3121c848eeaf8f20b7da0"
+      "sha256": "e7dabb2fa1053647c76f1b0a5ad16fac785f12876733ba34fd1a7e1a056c271b"
     },
     "malay-proper-nouns.json": {
       "from": "curriculum/malay-proper-nouns.json",
