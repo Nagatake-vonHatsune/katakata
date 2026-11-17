@@ -21,7 +21,7 @@
     "L-1569": {"en": "Race: «lumba lari» = running race.", "ja": "競走：«lumba lari»＝徒競走。"},
     "L-1570": {"en": "Mark, score (in a test or a game).", "ja": "点数（テストや試合）。"},
     "L-1571": {"en": "Competition, match; taught as a whole word.", "ja": "試合、大会（ひとまとまりの単語として）。"},
-    "L-1572": {"en": "se- + banyak (Ch5): as many as, a total of (formal, in reports and notices).", "ja": "se- + banyak（第5課）：〜もの、合計〜（報告やお知らせの改まった言い方）。"},
+    "L-1572": {"en": "se- + banyak (Ch5): as much as, a total of (things and money; formal, in reports and notices). For people, Malay uses «seramai».", "ja": "se- + banyak（第5課）：〜もの、合計〜（物やお金；報告やお知らせの改まった言い方）。人数には «seramai» を使います。"},
     "L-1573": {"en": "Truly, really, after an adjective: «lemah sungguh» = really weak.", "ja": "本当に（形容詞の後）：«lemah sungguh»＝本当に弱い。"},
     "L-1574": {"en": "Well done! Congratulations!", "ja": "よくやった！おめでとう！"}
   },
@@ -36,7 +36,7 @@
     {"frame": "Kebanyakan ___ suka futsal, tetapi saya suka ___.", "example": "Kebanyakan pelajar suka futsal, tetapi saya suka catur.", "decoys": ["lebih"], "meaning_en": "Most students like futsal, but I like chess.", "meaning_ja": "ほとんどの学生はフットサルが好きですが、私はチェスが好きです。"},
     {"frame": "Semalam saya main ___ selama ___ jam.", "example": "Semalam saya main catur selama tiga jam.", "decoys": ["lama"], "meaning_en": "Yesterday I played chess for three hours.", "meaning_ja": "きのう3時間チェスをしました。"},
     {"frame": "Anak saya main ___ sebaik ___.", "example": "Anak saya main catur sebaik gurunya.", "decoys": ["baik"], "meaning_en": "My child plays chess as well as his teacher.", "meaning_ja": "子どもは先生と同じくらいチェスが上手です。"},
-    {"frame": "Sebanyak ___ pelajar ada di pertandingan ___ ___ itu.", "example": "Sebanyak seratus pelajar ada di pertandingan lumba lari itu.", "decoys": ["banyak"], "meaning_en": "As many as a hundred students were at that running race.", "meaning_ja": "その競走大会には100人もの学生がいました。"}
+    {"frame": "Kami bayar sebanyak ___ ringgit untuk ___ itu.", "example": "Kami bayar sebanyak tiga ratus ringgit untuk gelanggang itu.", "decoys": ["banyak"], "meaning_en": "We paid as much as three hundred ringgit for that court.", "meaning_ja": "私たちはそのコートに300リンギットも払いました。"}
   ],
   "lines": [
     {"speaker": "Encik Rahman", "ms": "Encik Tanaka, pasukan futsal kita ada pertandingan hujung minggu ini.", "en": "Mr Tanaka, our futsal team has a match this weekend."},

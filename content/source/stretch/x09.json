@@ -47,7 +47,7 @@
     {"speaker": "Tanaka", "ms": "Baik, saya tidak bawa kereta. Terima kasih, Puan.", "en": "All right, I won't take the car. Thank you.",
      "choices": ["Baik, saya letak kereta di jalan itu.", "Tahniah, Puan!"],
      "choices_en": ["All right, I'll park on that road.", "Congratulations!"]},
-    {"speaker": "(Narrator)", "ms": "Malam Sabtu.", "en": "Saturday night."},
+    {"speaker": "(Narrator)", "ms": "Sabtu, pukul tujuh malam.", "en": "Saturday, seven in the evening."},
     {"speaker": "Puan Siti", "ms": "Encik Tanaka! Hiasan di pentas itu buatan tangan penduduk.", "en": "Mr Tanaka! The decorations on that stage were made by hand by the residents."},
     {"speaker": "Tanaka", "ms": "Cantik sekali! Persembahan mula pukul berapa?", "en": "They're beautiful! What time does the show start?",
      "choices": ["Kotor sekali! Siapa buat hiasan itu?", "Denda berapa ringgit?"],

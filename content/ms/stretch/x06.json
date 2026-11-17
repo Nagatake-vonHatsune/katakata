@@ -348,7 +348,7 @@
       "gloss_ja": "〜もの（量・額）",
       "pos": "adv",
       "affix_tag": "se-",
-      "note": "se- + banyak (Ch5): as many as, a total of (formal, in reports and notices).",
+      "note": "se- + banyak (Ch5): as much as, a total of (things and money; formal, in reports and notices). For people, Malay uses «seramai».",
       "links": [
         {
           "type": "babak",
@@ -357,7 +357,7 @@
       ],
       "scene": "stretch-x06",
       "chapter": 6,
-      "note_ja": "se- + banyak（第5課）：〜もの、合計〜（報告やお知らせの改まった言い方）。"
+      "note_ja": "se- + banyak（第5課）：〜もの、合計〜（物やお金；報告やお知らせの改まった言い方）。人数には «seramai» を使います。"
     },
     {
       "id": "ms-x06-019",
@@ -451,10 +451,10 @@
     },
     {
       "id": "ms-x06-f06",
-      "frame": "Sebanyak ___ pelajar ada di pertandingan ___ ___ itu.",
-      "example": "Sebanyak seratus pelajar ada di pertandingan lumba lari itu.",
-      "meaning_en": "As many as a hundred students were at that running race.",
-      "meaning_ja": "その競走大会には100人もの学生がいました。",
+      "frame": "Kami bayar sebanyak ___ ringgit untuk ___ itu.",
+      "example": "Kami bayar sebanyak tiga ratus ringgit untuk gelanggang itu.",
+      "meaning_en": "We paid as much as three hundred ringgit for that court.",
+      "meaning_ja": "私たちはそのコートに300リンギットも払いました。",
       "decoys": [
         "banyak"
       ]
