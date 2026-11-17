@@ -4,13 +4,15 @@
 //
 // Malaysian standard forms only (Sam, 15 Nov 2026): standard first, spoken forms marked. The words come from the
 // ledger rows of chapters 3 and 4 (L-0099 to L-0143, L-0157 to L-0181, L-0989 to L-0994, L-1032 to L-1044) and
-// L-1410 «haribulan». Open questions for Sam are listed in docs/NOMBOR-MASA-report.md (the day-part boundaries,
-// «kurang suku», «haribulan», the spelling of «pertiga» / «per tiga», «minit» after the minutes).
+// L-1410 «hari bulan». Sam's answers of 15 Nov 2026 (docs/NOMBOR-MASA-report.md section 4, answered in
+// docs/NOMBOR-MASA-answers-report.md) are built in: the day parts, «hari bulan» (two words, number first), joined
+// fractions («satu pertiga»), «minit» optional, «seringgit» / «satu ringgit», «sejuta» / «satu juta», «sifar» as the
+// formal 0 in phone numbers. «kurang suku» is not used.
 
 export type Rng = () => number;
 
 /** How a variant reading is labelled in feedback. */
-export type VariantLabel = 'spoken' | 'standard' | 'formal' | 'everyday' | 'also';
+export type VariantLabel = 'spoken' | 'standard' | 'formal' | 'everyday' | 'also' | 'fine';
 
 export interface Reading {
   /** The standard reading, shown first. */
@@ -71,6 +73,8 @@ export function numberToWords(n: number): string {
 
 export function numberReading(n: number): Reading {
   if (n === 0) return reading('kosong', [{ text: 'sifar', label: 'formal' }], 'everyday');
+  // «sejuta» and «satu juta» are both standard (Sam, 15 Nov 2026). Other se- numbers stay se- only («satu ratus» is wrong).
+  if (n === MAX_NUMBER) return reading('sejuta', [{ text: 'satu juta', label: 'standard' }]);
   return reading(numberToWords(n));
 }
 
@@ -92,6 +96,7 @@ export function parseNumberWords(s: string): number {
     else if (w === 'seribu') { total += 1000; }
     else if (w === 'ribu') { total += cur * 1000; cur = 0; last = 0; }
     else if (w === 'sejuta') { total += 1_000_000; }
+    else if (w === 'juta') { total += cur * 1_000_000; cur = 0; last = 0; }
     else return NaN;
   }
   return total + cur;
@@ -134,7 +139,7 @@ export function randomNumber(rng: Rng, level: NumberLevel): number {
 export function numberDistractors(n: number, rng: Rng = Math.random): string[] {
   const right = numberToWords(n);
   const out = new Set<string>();
-  // se- against satu: «satu ratus» for «seratus» (the classic learner slip). Not «satu juta», which is also heard.
+  // se- against satu: «satu ratus» for «seratus» (the classic learner slip). Not «satu juta», which is standard too.
   const seSwap = right.replace(/\bse(puluh|belas|ratus|ribu)\b/, (_, b) => `satu ${b}`);
   if (seSwap !== right) out.add(seSwap);
   // belas against puluh.
@@ -168,13 +173,19 @@ export function numberValueDistractors(n: number, rng: Rng = Math.random): numbe
 
 // ---------------------------------------------------------------- phone numbers
 
-/** Phone numbers are read digit by digit; 0 is «kosong» (everyday). The groups follow the written groups. */
+/** Phone numbers are read digit by digit; 0 is «kosong». The groups follow the written groups. */
 export function phoneToWords(phone: string): string {
   return phone
     .split(/[-\s]+/)
     .filter(Boolean)
     .map((g) => g.split('').map((d) => ONES[Number(d)]).join(' '))
     .join(', ');
+}
+
+/** «kosong» first; «sifar» is the formal variant (Sam, 15 Nov 2026). */
+export function phoneReading(phone: string): Reading {
+  const text = phoneToWords(phone);
+  return reading(text, /\bkosong\b/.test(text) ? [{ text: text.replace(/\bkosong\b/g, 'sifar'), label: 'formal' }] : []);
 }
 
 export function randomPhone(rng: Rng): string {
@@ -223,13 +234,14 @@ export function daysInMonth(month: number, year: number): number {
 
 /**
  * «15 Ogos 2026» = «lima belas Ogos dua ribu dua puluh enam»: day number, month name, year as a whole number.
- * Variant: «lima belas haribulan Ogos …» (the ledger's L-1410 «haribulan»; Sam's note on L-1032 writes «hari bulan»).
+ * Variant: «lima belas hari bulan Ogos …» («hari bulan» is two words, Kamus Dewan Edisi Keempat via DBP Khidmat Nasihat; the
+ * number comes first; ledger L-1410). Sam's spoken order «hari bulan sebelas» is shown in the calendar chart.
  */
 export function dateReading(day: number, month: number, year: number): Reading {
   const d = numberToWords(day);
   const y = numberToWords(year);
   const m = MONTHS[month - 1];
-  return reading(`${d} ${m} ${y}`, [{ text: `${d} haribulan ${m} ${y}`, label: 'also' }]);
+  return reading(`${d} ${m} ${y}`, [{ text: `${d} hari bulan ${m} ${y}`, label: 'also' }]);
 }
 
 export function formatDateMs(day: number, month: number, year: number): string {
@@ -270,13 +282,13 @@ export interface Fraction {
 }
 
 /**
- * Fractions: the spellings follow Sam's brief (15 Nov 2026): «satu pertiga», «dua pertiga», «satu perempat», «tiga perempat».
- * The ledger (L-0141) writes «satu per tiga / sepertiga»; both are accepted, the difference is an open question for Sam.
+ * Fractions are written joined (Sam, 15 Nov 2026; ledger L-0141): «satu pertiga», «dua pertiga», «satu perempat», «tiga perempat».
+ * «per tiga» (two words) is not accepted. The learner note "read it as 1 per 3" is `nm.note.pertiga`.
  */
 export const FRACTIONS: Fraction[] = [
   { id: 'half', sym: '½', num: 1, den: 2, reading: reading('setengah', [{ text: 'separuh', label: 'also' }]) },
-  { id: 'third', sym: '⅓', num: 1, den: 3, reading: reading('satu pertiga', [{ text: 'satu per tiga', label: 'also' }, { text: 'sepertiga', label: 'also' }]) },
-  { id: 'twothirds', sym: '⅔', num: 2, den: 3, reading: reading('dua pertiga', [{ text: 'dua per tiga', label: 'also' }]) },
+  { id: 'third', sym: '⅓', num: 1, den: 3, reading: reading('satu pertiga', [{ text: 'sepertiga', label: 'also' }]) },
+  { id: 'twothirds', sym: '⅔', num: 2, den: 3, reading: reading('dua pertiga') },
   { id: 'quarter', sym: '¼', num: 1, den: 4, reading: reading('suku', [{ text: 'satu perempat', label: 'also' }]) },
   { id: 'threequarters', sym: '¾', num: 3, den: 4, reading: reading('tiga suku', [{ text: 'tiga perempat', label: 'also' }]) },
 ];
@@ -336,16 +348,21 @@ export function percentDistractors(value: string, rng: Rng = Math.random): strin
 
 // ---------------------------------------------------------------- money
 
-/** «RM4.50» = «empat ringgit lima puluh sen» (standard); «empat ringgit setengah» is accepted and labelled spoken. */
+/**
+ * «RM4.50» = «empat ringgit lima puluh sen» (standard); «empat ringgit setengah» is accepted and labelled spoken.
+ * For one ringgit, «satu ringgit» and «seringgit» are both standard (Sam, 15 Nov 2026).
+ */
 export function moneyReading(cents: number): Reading {
   if (!Number.isInteger(cents) || cents <= 0 || cents > 100 * MAX_NUMBER) throw new RangeError(`moneyReading: ${cents}`);
   const rm = Math.floor(cents / 100);
   const sen = cents % 100;
-  const parts: string[] = [];
-  if (rm) parts.push(`${numberToWords(rm)} ringgit`);
-  if (sen) parts.push(`${numberToWords(sen)} sen`);
-  const variants: Reading['variants'] = rm && sen === 50 ? [{ text: `${numberToWords(rm)} ringgit setengah`, label: 'spoken' }] : [];
-  return reading(parts.join(' '), variants);
+  const senText = sen ? ` ${numberToWords(sen)} sen` : '';
+  const ringgit = rm ? [`${numberToWords(rm)} ringgit`, ...(rm === 1 ? ['seringgit'] : [])] : [];
+  if (!rm) return reading(senText.trim());
+  const variants: Reading['variants'] = [];
+  if (rm === 1) variants.push({ text: `seringgit${senText}`, label: 'standard' });
+  if (sen === 50) for (const r of ringgit) variants.push({ text: `${r} setengah`, label: 'spoken' });
+  return reading(`${ringgit[0]}${senText}`, variants);
 }
 
 export function formatMoney(cents: number): string {
@@ -402,17 +419,21 @@ export function moneyValueDistractors(cents: number, rng: Rng = Math.random): nu
 
 // ---------------------------------------------------------------- time
 
-export type DayPart = 'pagi' | 'tengah hari' | 'petang' | 'malam' | 'tengah malam';
+export type DayPart = 'pagi' | 'awal pagi' | 'tengah hari' | 'petang' | 'malam' | 'tengah malam';
 
 /**
- * PROPOSED boundaries (Claude's draft, 15 Nov 2026; Sam to confirm, see the report): 12:00 midnight exactly is
- * «tengah malam»; 00:01 to 11:59 «pagi»; 12:00 to 13:59 «tengah hari»; 14:00 to 18:59 «petang»; 19:00 to 23:59 «malam».
+ * Parts of the day (Sam, 15 Nov 2026): 00:00 «tengah malam»; 00:01 to 00:59 «malam» («pagi» also accepted); 01:00 to
+ * 04:59 «awal pagi» (ledger L-0854; «pagi» also accepted); 05:00 to 11:59 «pagi»; 12:00 to 12:59 «tengah hari»;
+ * 13:00 to 18:59 «petang» (1 pm is «pukul satu petang»); 19:00 to 23:59 «malam». «malam» appears twice (after
+ * midnight and in the evening). The times are a guide; the chart says so.
  */
 export const DAY_PARTS: Array<{ part: DayPart; from: number; to: number }> = [
   { part: 'tengah malam', from: 0, to: 0 },
-  { part: 'pagi', from: 1, to: 11 * 60 + 59 },
-  { part: 'tengah hari', from: 12 * 60, to: 13 * 60 + 59 },
-  { part: 'petang', from: 14 * 60, to: 18 * 60 + 59 },
+  { part: 'malam', from: 1, to: 59 },
+  { part: 'awal pagi', from: 60, to: 4 * 60 + 59 },
+  { part: 'pagi', from: 5 * 60, to: 11 * 60 + 59 },
+  { part: 'tengah hari', from: 12 * 60, to: 12 * 60 + 59 },
+  { part: 'petang', from: 13 * 60, to: 18 * 60 + 59 },
   { part: 'malam', from: 19 * 60, to: 23 * 60 + 59 },
 ];
 
@@ -421,12 +442,19 @@ export function dayPart(h24: number, m: number): DayPart {
   return DAY_PARTS.find((p) => t >= p.from && t <= p.to)!.part;
 }
 
+/** Other part words also accepted at this time: «pagi» from 00:01 to 04:59. */
+export function dayPartAlso(h24: number, m: number): DayPart[] {
+  const t = h24 * 60 + m;
+  return t >= 1 && t <= 4 * 60 + 59 ? ['pagi'] : [];
+}
+
 /**
- * Hours used in quiz questions: well inside each part, so no question depends on a boundary Sam has not settled.
- * The clock can still be dragged to any time; the reading then uses the proposed boundaries above.
+ * Hours used in quiz questions: well inside each part, so no question sits on an edge.
+ * The clock can still be dragged to any time; the reading then uses the table above.
  */
 export const QUIZ_HOURS: Record<Exclude<DayPart, 'tengah malam'>, number[]> = {
   pagi: [6, 7, 8, 9, 10],
+  'awal pagi': [2, 3],
   'tengah hari': [12],
   petang: [15, 16, 17],
   malam: [20, 21, 22],
@@ -434,17 +462,27 @@ export const QUIZ_HOURS: Record<Exclude<DayPart, 'tengah malam'>, number[]> = {
 
 /**
  * «pukul» + hour (1 to 12) + minutes + part of the day. :15 is «suku» (also «lima belas minit»), :30 is «setengah»
- * (also «tiga puluh», both standard, Sam 15 Nov 2026), other minutes are «N minit». «kurang suku» is left out
- * (no reliable source checked yet), and there is no 24-hour reading. Never «jam» for the clock time.
+ * (also «tiga puluh», both standard), other minutes are «N minit» (standard). The form without «minit» («pukul tiga
+ * dua puluh petang», also «lima belas» for :15) is accepted for every minute value as "Also fine": speakers often drop
+ * «minit» (Sam, 15 Nov 2026). «kurang suku» is not used, and there is no 24-hour reading. Never «jam» for the clock time.
  */
 export function timeReading(h24: number, m: number): Reading {
   if (!Number.isInteger(h24) || h24 < 0 || h24 > 23 || !Number.isInteger(m) || m < 0 || m > 59) throw new RangeError(`timeReading: ${h24}:${m}`);
   const part = dayPart(h24, m);
+  const parts = [part, ...dayPartAlso(h24, m)];
   const hour = numberToWords(h24 % 12 || 12);
-  if (m === 0) return reading(`pukul ${hour} ${part}`);
-  if (m === 15) return reading(`pukul ${hour} suku ${part}`, [{ text: `pukul ${hour} lima belas minit ${part}`, label: 'standard' }]);
-  if (m === 30) return reading(`pukul ${hour} setengah ${part}`, [{ text: `pukul ${hour} tiga puluh ${part}`, label: 'standard' }]);
-  return reading(`pukul ${hour} ${numberToWords(m)} minit ${part}`);
+  const forms: Array<{ text: string; label?: VariantLabel }> = [];
+  if (m === 0) forms.push({ text: '' });
+  else if (m === 15) forms.push({ text: 'suku' }, { text: 'lima belas minit', label: 'standard' }, { text: 'lima belas', label: 'fine' });
+  else if (m === 30) forms.push({ text: 'setengah' }, { text: 'tiga puluh', label: 'standard' });
+  else forms.push({ text: `${numberToWords(m)} minit` }, { text: numberToWords(m), label: 'fine' });
+  const build = (min: string, p: string) => ['pukul', hour, min, p].filter(Boolean).join(' ');
+  const variants: Reading['variants'] = [];
+  for (const f of forms) for (const p of parts) {
+    if (f === forms[0] && p === part) continue;
+    variants.push({ text: build(f.text, p), label: f.label ?? 'also' });
+  }
+  return reading(build(forms[0].text, part), variants);
 }
 
 /** "3:30 pm" (en) or "15:30" (ja). Digits on screen only; nothing here is spoken. */
@@ -465,6 +503,7 @@ export function randomTime(rng: Rng): [number, number] {
 
 const OTHER_PART: Record<DayPart, DayPart[]> = {
   pagi: ['petang', 'malam'],
+  'awal pagi': ['petang', 'malam'],
   'tengah hari': ['tengah malam', 'petang'],
   petang: ['malam', 'pagi'],
   malam: ['petang', 'pagi'],
@@ -488,7 +527,7 @@ export function timeDistractors(h24: number, m: number, rng: Rng = Math.random):
   const hour = h24 % 12 || 12;
   if ((m === 5 || m === 10) && m !== hour) out.push(`pukul ${numberToWords(m)} ${numberToWords(hour)} minit ${part}`);
   const nh = (h24 + 1) % 24;
-  out.push(timeReading(nh, m).text.replace(/ (pagi|tengah hari|petang|malam|tengah malam)$/, ` ${part}`));
+  out.push(timeReading(nh, m).text.replace(/ (awal pagi|pagi|tengah hari|petang|malam|tengah malam)$/, ` ${part}`));
   out.push(swapPart(r.text, OTHER_PART[part][1]));
   const all = new Set(out);
   for (const a of accepted(r)) all.delete(a);
@@ -589,7 +628,7 @@ export function buildMatches(q: Question, built: string[]): boolean {
 export function numberQuestion(rng: Rng, level: NumberLevel, dir: Question['dir']): Question {
   if (level === 'n10' && dir === 'read' && rng() < 0.3) {
     const phone = randomPhone(rng);
-    return readQ('nombor', rng, { kind: 'phone', phone }, reading(phoneToWords(phone)), phoneDistractors(phone, rng));
+    return readQ('nombor', rng, { kind: 'phone', phone }, phoneReading(phone), phoneDistractors(phone, rng));
   }
   const n = randomNumber(rng, level);
   const r = numberReading(n);

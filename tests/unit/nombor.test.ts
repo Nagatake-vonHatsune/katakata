@@ -7,9 +7,9 @@ import en from '../../i18n/en.json';
 import ja from '../../i18n/ja.json';
 import msUi from '../../i18n/ms.json';
 import {
-  accepted, buildMatches, DAY_PARTS, dateReading, DAYS, dayPart, decimalReading, FRACTIONS, formatMoney, formatNumber,
+  accepted, buildMatches, DAY_PARTS, dateReading, DAYS, dayPart, dayPartAlso, QUIZ_HOURS, decimalReading, FRACTIONS, formatMoney, formatNumber,
   formatTime, indonesianForms, MAX_NUMBER, moneyReading, MONTHS, numberReading, numberToWords, parseNumberWords,
-  PARTS, percentReading, PERCENTS, phoneToWords, questionStrings, RELATIVE, round, timeReading, NUMBER_LEVELS,
+  PARTS, percentReading, PERCENTS, phoneReading, phoneToWords, questionStrings, RELATIVE, round, timeReading, NUMBER_LEVELS,
   type Question, type Rng,
 } from '../../src/core/nombor';
 
@@ -100,6 +100,15 @@ describe('numbers 0 to 1,000,000', () => {
     expect(() => numberToWords(2.5)).toThrow();
   });
 
+  it('answer 6: «sejuta» and «satu juta» are both standard; the other se- numbers stay se- only', () => {
+    const r = numberReading(1_000_000);
+    expect(r.text).toBe('sejuta');
+    expect(r.variants).toEqual([{ text: 'satu juta', label: 'standard' }]);
+    expect(parseNumberWords('satu juta')).toBe(1_000_000);
+    expect(accepted(numberReading(100))).toEqual(['seratus']);
+    expect(accepted(numberReading(1000))).toEqual(['seribu']);
+  });
+
   it('formats with thousands commas', () => {
     expect(formatNumber(1250)).toBe('1,250');
     expect(formatNumber(1_000_000)).toBe('1,000,000');
@@ -109,6 +118,13 @@ describe('numbers 0 to 1,000,000', () => {
   it('phone numbers are read digit by digit, zero as kosong', () => {
     expect(phoneToWords('012-345 6789')).toBe('kosong satu dua, tiga empat lima, enam tujuh lapan sembilan');
     expect(phoneToWords('019-000 1010')).toBe('kosong satu sembilan, kosong kosong kosong, satu kosong satu kosong');
+  });
+
+  it('answer 6: in phone numbers «kosong» comes first and «sifar» is the formal variant', () => {
+    const r = phoneReading('012-345 6789');
+    expect(r.text).toBe('kosong satu dua, tiga empat lima, enam tujuh lapan sembilan');
+    expect(r.variants).toEqual([{ text: 'sifar satu dua, tiga empat lima, enam tujuh lapan sembilan', label: 'formal' }]);
+    expect(phoneReading('019-000 1010').variants[0].text).toBe('sifar satu sembilan, sifar sifar sifar, satu sifar satu sifar');
   });
 });
 
@@ -123,10 +139,15 @@ describe('days, months, dates', () => {
   it('Malaysian month spellings', () => {
     expect(MONTHS).toEqual(['Januari', 'Februari', 'Mac', 'April', 'Mei', 'Jun', 'Julai', 'Ogos', 'September', 'Oktober', 'November', 'Disember']);
   });
-  it('15 Ogos 2026 = lima belas Ogos dua ribu dua puluh enam, haribulan as the variant', () => {
+  it('answer 3: 15 Ogos 2026 has «hari bulan» (two words, number first) as the variant, never «haribulan»', () => {
     const r = dateReading(15, 8, 2026);
     expect(r.text).toBe('lima belas Ogos dua ribu dua puluh enam');
-    expect(r.variants).toEqual([{ text: 'lima belas haribulan Ogos dua ribu dua puluh enam', label: 'also' }]);
+    expect(r.variants).toEqual([{ text: 'lima belas hari bulan Ogos dua ribu dua puluh enam', label: 'also' }]);
+    for (let m = 1; m <= 12; m++) expect(accepted(dateReading(11, m, 2026)).join(' ')).not.toMatch(/haribulan/);
+  });
+  it('answer 6: the calendar keeps the full weekday names (no short forms)', () => {
+    expect(DAYS.every((d) => d.length >= 4)).toBe(true);
+    expect(DAYS).toEqual(['Ahad', 'Isnin', 'Selasa', 'Rabu', 'Khamis', 'Jumaat', 'Sabtu']);
   });
   it.each([
     [1, 1, 2000, 'satu Januari dua ribu'],
@@ -145,11 +166,16 @@ describe('days, months, dates', () => {
 });
 
 describe('fractions, decimals, percent', () => {
-  it('fractions, with the ledger spellings accepted', () => {
+  it('answer 4: fractions are written joined («satu pertiga»); «per tiga» is no longer accepted', () => {
     const f = Object.fromEntries(FRACTIONS.map((x) => [x.sym, accepted(x.reading)]));
     expect(f['½']).toEqual(['setengah', 'separuh']);
-    expect(f['⅓']).toEqual(['satu pertiga', 'satu per tiga', 'sepertiga']);
-    expect(f['⅔']).toEqual(['dua pertiga', 'dua per tiga']);
+    expect(f['⅓']).toEqual(['satu pertiga', 'sepertiga']);
+    expect(f['⅔']).toEqual(['dua pertiga']);
+    expect(FRACTIONS.flatMap((x) => accepted(x.reading)).join(' | ')).not.toMatch(/\bper (tiga|empat)\b/);
+    // The learner note, en and ja (and ms): "read it as 1 per 3, i.e. 1/3".
+    expect(en['nm.note.pertiga']).toMatch(/1 per 3.*1\/3/);
+    expect(ja['nm.note.pertiga']).toMatch(/1 per 3.*1\/3/);
+    expect((msUi as Record<string, string>)['nm.note.pertiga']).toMatch(/1 per 3.*1\/3/);
     expect(f['¼']).toEqual(['suku', 'satu perempat']);
     expect(f['¾']).toEqual(['tiga suku', 'tiga perempat']);
   });
@@ -188,6 +214,17 @@ describe('money', () => {
     expect(moneyReading(50).variants).toEqual([]);
     expect(moneyReading(455).variants).toEqual([]);
   });
+  it('answer 6: for one ringgit «satu ringgit» and «seringgit» are both standard', () => {
+    const r = moneyReading(100);
+    expect(r.text).toBe('satu ringgit');
+    expect(r.variants).toEqual([{ text: 'seringgit', label: 'standard' }]);
+    expect(moneyReading(150).variants).toEqual([
+      { text: 'seringgit lima puluh sen', label: 'standard' },
+      { text: 'satu ringgit setengah', label: 'spoken' },
+      { text: 'seringgit setengah', label: 'spoken' },
+    ]);
+    expect(moneyReading(200).variants).toEqual([]);
+  });
   it('every amount RM0.05 to RM1,250.00 in 5 sen steps reads back', () => {
     for (let c = 5; c <= 125_000; c += 5) {
       const t = moneyReading(c).text;
@@ -200,20 +237,44 @@ describe('money', () => {
 describe('clock times', () => {
   it.each([
     [15, 30, 'pukul tiga setengah petang', ['pukul tiga tiga puluh petang']],
-    [16, 15, 'pukul empat suku petang', ['pukul empat lima belas minit petang']],
+    [16, 15, 'pukul empat suku petang', ['pukul empat lima belas minit petang', 'pukul empat lima belas petang']],
     [8, 0, 'pukul lapan pagi', []],
-    [9, 5, 'pukul sembilan lima minit pagi', []],
+    [9, 5, 'pukul sembilan lima minit pagi', ['pukul sembilan lima pagi']],
     [12, 0, 'pukul dua belas tengah hari', []],
     [0, 0, 'pukul dua belas tengah malam', []],
-    [21, 45, 'pukul sembilan empat puluh lima minit malam', []],
-    [13, 10, 'pukul satu sepuluh minit tengah hari', []],
+    [21, 45, 'pukul sembilan empat puluh lima minit malam', ['pukul sembilan empat puluh lima malam']],
+    [12, 10, 'pukul dua belas sepuluh minit tengah hari', ['pukul dua belas sepuluh tengah hari']],
+    [13, 0, 'pukul satu petang', []],
   ])('%i:%i -> %s', (h, m, text, variants) => {
     const r = timeReading(h, m);
     expect(r.text).toBe(text);
     expect(r.variants.map((v) => v.text)).toEqual(variants);
   });
 
-  it('every 5 minutes of the day: pukul + 12-hour clock + minutes + the (proposed) part of the day', () => {
+  it('answer 5: «minit» stays the standard form; the form without it is "Also fine" for every minute value', () => {
+    const r = timeReading(15, 20);
+    expect(r.text).toBe('pukul tiga dua puluh minit petang');
+    expect(r.variants).toEqual([{ text: 'pukul tiga dua puluh petang', label: 'fine' }]);
+    for (let h = 0; h < 24; h++)
+      for (let m = 1; m < 60; m++) {
+        const x = timeReading(h, m);
+        if (m === 30) { expect(x.text).toContain(' setengah '); expect(x.variants.some((v) => v.label === 'fine')).toBe(false); continue; }
+        const fine = x.variants.filter((v) => v.label === 'fine').map((v) => v.text);
+        expect(fine.length).toBeGreaterThan(0);
+        for (const f of fine) expect(f).not.toMatch(/minit/);
+        expect(x.text).toBe(m === 15 ? `pukul ${numberToWords(h % 12 || 12)} suku ${dayPart(h, m)}` : `pukul ${numberToWords(h % 12 || 12)} ${numberToWords(m)} minit ${dayPart(h, m)}`);
+      }
+    expect(timeReading(15, 30).variants).toEqual([{ text: 'pukul tiga tiga puluh petang', label: 'standard' }]);
+    expect(en['nm.label.fine']).toBe('Also fine');
+    expect(en['nm.note.minit']).toMatch(/drop/);
+    expect(ja['nm.note.minit']).toBeTruthy();
+  });
+
+  it('answer 2: «kurang suku» is not used', () => {
+    for (let h = 0; h < 24; h++) for (let m = 0; m < 60; m++) expect(accepted(timeReading(h, m)).join(' ')).not.toMatch(/kurang/);
+  });
+
+  it('every 5 minutes of the day: pukul + 12-hour clock + minutes + the part of the day', () => {
     const parts = new Set<string>();
     for (let h = 0; h < 24; h++)
       for (let m = 0; m < 60; m += 5) {
@@ -236,18 +297,38 @@ describe('clock times', () => {
         expect(h12).toBeLessThanOrEqual(12);
         expect(accepted(r).join(' ')).not.toMatch(/\bjam\b/);
       }
-    expect([...parts].sort()).toEqual(['malam', 'pagi', 'petang', 'tengah hari', 'tengah malam']);
+    expect([...parts].sort()).toEqual(['awal pagi', 'malam', 'pagi', 'petang', 'tengah hari', 'tengah malam']);
   });
 
-  it('the proposed day parts cover every minute exactly once', () => {
+  it('answer 1: the day parts follow Sam\'s table and cover every minute exactly once', () => {
     for (let t = 0; t < 24 * 60; t++) expect(DAY_PARTS.filter((p) => t >= p.from && t <= p.to)).toHaveLength(1);
-    expect(dayPart(0, 0)).toBe('tengah malam');
-    expect(dayPart(0, 5)).toBe('pagi');
-    expect(dayPart(11, 55)).toBe('pagi');
-    expect(dayPart(13, 55)).toBe('tengah hari');
-    expect(dayPart(14, 0)).toBe('petang');
-    expect(dayPart(18, 55)).toBe('petang');
-    expect(dayPart(19, 0)).toBe('malam');
+    const at = (h: number, m: number) => dayPart(h, m);
+    expect(at(0, 0)).toBe('tengah malam');
+    expect(at(0, 1)).toBe('malam');
+    expect(at(0, 59)).toBe('malam');
+    expect(at(1, 0)).toBe('awal pagi');
+    expect(at(4, 59)).toBe('awal pagi');
+    expect(at(5, 0)).toBe('pagi');
+    expect(at(11, 59)).toBe('pagi');
+    expect(at(12, 0)).toBe('tengah hari');
+    expect(at(12, 59)).toBe('tengah hari');
+    expect(at(13, 0)).toBe('petang');
+    expect(at(18, 59)).toBe('petang');
+    expect(at(19, 0)).toBe('malam');
+    expect(at(23, 59)).toBe('malam');
+    // 1 pm is «pukul satu petang»; «pagi» is also accepted from 00:01 to 04:59 (the variant), nowhere else.
+    expect(timeReading(13, 0).text).toBe('pukul satu petang');
+    expect(timeReading(0, 30).text).toBe('pukul dua belas setengah malam');
+    expect(timeReading(0, 30).variants.map((v) => v.text)).toContain('pukul dua belas setengah pagi');
+    expect(timeReading(2, 0).text).toBe('pukul dua awal pagi');
+    expect(timeReading(2, 0).variants).toEqual([{ text: 'pukul dua pagi', label: 'also' }]);
+    expect(dayPartAlso(1, 0)).toEqual(['pagi']);
+    expect(dayPartAlso(5, 0)).toEqual([]);
+    expect(dayPartAlso(0, 0)).toEqual([]);
+    expect(timeReading(0, 0).variants).toEqual([]);
+    // Quiz hours avoid the edges of every part.
+    for (const [part, hours] of Object.entries(QUIZ_HOURS)) for (const h of hours) for (const m of [0, 55]) expect(dayPart(h, m)).toBe(part);
+    expect(en['nm.parts_note']).toMatch(/guide/);
   });
 
   it('formats the time on screen as 12-hour (en) or 24-hour digits (ja)', () => {
@@ -328,6 +409,14 @@ describe('questions', () => {
     const own = [...strings].map((s) => [s, indonesianForms(s)] as const).filter(([, f]) => f.length);
     expect(own).toEqual([]);
     expect(strings.size).toBeGreaterThan(1000);
+  });
+
+  it('answer 7: the shared rules (d8612e5) now disallow nol, Maret, Juni, Juli, Agustus, Desember and persen', () => {
+    const checker = new Checker();
+    const words = ['nol', 'Maret', 'Juni', 'Juli', 'Agustus', 'Desember', 'persen'];
+    const result = checker.inspect(words.map((text, i) => ({ unit: 'nombor-masa', chapter: null, source: `rule|${i}`, text, kind: 'model' })));
+    const found = new Set(Object.values(result.violations as Record<string, { check: string; term: string }>).filter((v) => v.check === 'malaysian-form').map((v) => v.term.toLowerCase()));
+    expect([...found].sort()).toEqual(words.map((w) => w.toLowerCase()).sort());
   });
 
   it('the mode\'s own list catches the Indonesian forms it names', () => {

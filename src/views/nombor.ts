@@ -3,7 +3,7 @@
 // draft memory hooks, and an 8-question round. Practice only: nothing here touches the review schedule.
 import { getLang, t } from '../core/i18n';
 import {
-  buildMatches, dateReading, DAYS, dayAfter, decimalReading, FRACTIONS, formatMoney, formatNumber, moneyReading, NUMBER_LEVELS, numberReading, PART_CHART, PARTS, percentReading, phoneToWords, randomDate,
+  buildMatches, dateReading, DAYS, dayAfter, decimalReading, FRACTIONS, formatMoney, formatNumber, moneyReading, NUMBER_LEVELS, numberReading, PART_CHART, PARTS, percentReading, phoneReading, randomDate,
   randomDecimal, randomMoney, randomNumber, randomPhone, randomTime, RELATIVE, round, timeReading, PERCENTS,
   type NumberLevel, type PartId, type Question, type Reading, type Shown,
 } from '../core/nombor';
@@ -33,6 +33,8 @@ function readingBox(r: Reading): HTMLElement {
     { class: 'nm-reading', 'aria-live': 'polite' },
     h('div', { class: 'nm-reading-main' }, h('b', { lang: 'ms' }, r.text), r.label ? h('span', { class: 'nm-tag' }, t('nm.label.' + r.label)) : null, listen(r.text)),
     r.variants.map((v) => h('div', { class: 'nm-reading-alt' }, h('span', { class: 'nm-tag' + (v.label === 'spoken' ? ' nm-tag-spoken' : '') }, t('nm.label.' + v.label)), h('span', { lang: 'ms' }, v.text), listen(v.text))),
+    r.variants.some((v) => v.label === 'fine') ? h('p', { class: 'small muted nm-note' }, t('nm.note.minit')) : null,
+    [r.text, ...r.variants.map((v) => v.text)].some((x) => /pertiga/.test(x)) ? h('p', { class: 'small muted nm-note' }, t('nm.note.pertiga')) : null,
   );
 }
 
@@ -146,7 +148,7 @@ function explorer(part: PartId): HTMLElement {
       const stage = h('div', { class: 'nm-stage' });
       const roll = (phone: boolean) => {
         const final = phone ? randomPhone(Math.random) : formatNumber(randomNumber(Math.random, level));
-        spinReels(stage, final, () => show(phone ? { text: phoneToWords(final), variants: [] } : numberReading(Number(final.replace(/,/g, '')))));
+        spinReels(stage, final, () => show(phone ? phoneReading(final) : numberReading(Number(final.replace(/,/g, '')))));
       };
       stage.append(reels(formatNumber(0)));
       show(numberReading(0));

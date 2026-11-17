@@ -33,8 +33,8 @@ export function dateLabel(day: number, month: number, year: number): string {
   return getLang() === 'ja' ? `${year}年${month}月${day}日` : `${day} ${EN_MONTHS[month - 1]} ${year}`;
 }
 
-export const PART_ICON: Record<DayPart, string> = { pagi: '🌅', 'tengah hari': '☀️', petang: '🌇', malam: '🌙', 'tengah malam': '🌌' };
-const PART_COLOR: Record<DayPart, string> = { pagi: '#f3c969', 'tengah hari': '#f08a4b', petang: '#c96f8a', malam: '#3f5a8a', 'tengah malam': '#1f2a44' };
+export const PART_ICON: Record<DayPart, string> = { pagi: '🌅', 'awal pagi': '🌄', 'tengah hari': '☀️', petang: '🌇', malam: '🌙', 'tengah malam': '🌌' };
+const PART_COLOR: Record<DayPart, string> = { pagi: '#f3c969', 'awal pagi': '#9d8fc9', 'tengah hari': '#f08a4b', petang: '#c96f8a', malam: '#3f5a8a', 'tengah malam': '#1f2a44' };
 
 // ---------------------------------------------------------------- clock
 
@@ -82,7 +82,7 @@ export function skyStrip(h24: number, m: number, labels = false): HTMLElement {
     const x = (p.from / 1440) * 240;
     const w = ((p.to - p.from + 1) / 1440) * 240;
     box.append(svg('rect', { x, y: 4, width: w, height: 20, fill: PART_COLOR[p.part], opacity: 0.85 }));
-    if (labels) box.append(svg('text', { x: x + w / 2, y: 18, 'text-anchor': 'middle', class: 'nm-sky-label' }, p.part === 'tengah hari' ? 't.h.' : p.part));
+    if (labels && p.to - p.from > 120) box.append(svg('text', { x: x + w / 2, y: 18, 'text-anchor': 'middle', class: 'nm-sky-label' }, p.part === 'tengah hari' ? 't.h.' : p.part));
   }
   const x = ((h24 * 60 + m) / 1440) * 240;
   box.append(svg('line', { x1: x, y1: 0, x2: x, y2: 28, class: 'nm-sky-now' }));
@@ -166,7 +166,7 @@ function blocksChart(focus: 'nombor' | 'pecahan' | 'wang'): HTMLElement[] {
     blockRow('×10', ones.map((n) => numberToWords(n * 10))),
     blockRow('×100', ones.map((n) => numberToWords(n * 100))),
     blockRow('×1,000', [1, 2, 10, 11, 20, 100].map((n) => numberToWords(n * 1000))),
-    blockRow('1,000,000', ['sejuta']),
+    blockRow('1,000,000', ['sejuta', 'satu juta']),
     h('p', { class: 'small' }, t('nm.chart.zero')),
     h('p', { class: 'small' }, t('nm.chart.se')),
     h('p', { class: 'small' }, t('nm.chart.man')),
@@ -178,6 +178,7 @@ function blocksChart(focus: 'nombor' | 'pecahan' | 'wang'): HTMLElement[] {
     { class: 'nm-chart-sec' },
     h('h4', null, t('nm.chart.fractions')),
     FRACTIONS.map((f) => h('div', { class: 'nm-row' }, h('span', { class: 'nm-row-label' }, f.sym), h('span', { lang: 'ms' }, f.reading.text, f.reading.variants.length ? h('span', { class: 'muted' }, ' · ' + f.reading.variants.map((v) => v.text).join(' · ')) : null))),
+    h('p', { class: 'small' }, t('nm.note.pertiga')),
     h('div', { class: 'nm-row' }, h('span', { class: 'nm-row-label' }, '2.5'), h('span', { lang: 'ms' }, 'dua perpuluhan lima')),
     h('div', { class: 'nm-row' }, h('span', { class: 'nm-row-label' }, '50%'), h('span', { lang: 'ms' }, 'lima puluh peratus')),
   );
@@ -199,7 +200,7 @@ function blocksChart(focus: 'nombor' | 'pecahan' | 'wang'): HTMLElement[] {
 }
 
 function clockChart(): HTMLElement[] {
-  // A 24-hour ring with the proposed parts of the day.
+  // A 24-hour ring with the parts of the day.
   const ring = svg('svg', { viewBox: '-120 -120 240 240', width: 240, height: 240, class: 'nm-ring', role: 'img', 'aria-label': t('nm.chart.clock') });
   const arc = (from: number, to: number, r1: number, r2: number) => {
     const a1 = (from / 1440) * 2 * Math.PI;
@@ -212,7 +213,7 @@ function clockChart(): HTMLElement[] {
     if (p.part === 'tengah malam') continue;
     ring.append(svg('path', { d: arc(p.from, p.to, 62, 100), fill: PART_COLOR[p.part], opacity: 0.85 }));
     const mid = (((p.from + p.to) / 2 / 1440) * 2 * Math.PI);
-    ring.append(svg('text', { x: Math.sin(mid) * 81, y: -Math.cos(mid) * 81 + 4, 'text-anchor': 'middle', class: 'nm-ring-label' }, p.part === 'tengah hari' ? 't. hari' : p.part));
+    if (p.to - p.from > 120) ring.append(svg('text', { x: Math.sin(mid) * 81, y: -Math.cos(mid) * 81 + 4, 'text-anchor': 'middle', class: 'nm-ring-label' }, p.part === 'tengah hari' ? 't. hari' : p.part));
   }
   for (const hr of [0, 6, 12, 18]) {
     const a = (hr / 24) * 2 * Math.PI;
@@ -222,10 +223,12 @@ function clockChart(): HTMLElement[] {
   const parts = h(
     'ul',
     { class: 'nm-parts' },
-    (['pagi', 'tengah hari', 'petang', 'malam', 'tengah malam'] as DayPart[]).map((p) => {
-      const span = DAY_PARTS.find((x) => x.part === p)!;
+    (['tengah malam', 'malam', 'awal pagi', 'pagi', 'tengah hari', 'petang'] as DayPart[]).map((p, idx) => {
       const fmt = (min: number) => `${Math.floor(min / 60)}:${String(min % 60).padStart(2, '0')}`;
-      return h('li', null, h('span', { 'aria-hidden': 'true' }, PART_ICON[p] + ' '), h('b', { lang: 'ms' }, p), ` ${t('nm.dp.' + p.replace(' ', '_'))} `, h('span', { class: 'muted small' }, p === 'tengah malam' ? '0:00' : `${fmt(span.from === 1 ? 0 : span.from)}–${fmt(span.to + 1)}`));
+      const spans = DAY_PARTS.filter((x) => x.part === p).map((x) => (x.from === x.to ? fmt(x.from) : `${fmt(x.from)}–${fmt(x.to)}`));
+      // «malam» runs 19:00 to 23:59 and, after midnight, 0:01 to 0:59; the evening span is listed last (the first row is after midnight).
+      const also = p === 'awal pagi' ? ' ' + t('nm.dp.also_pagi') : '';
+      return h('li', { 'data-part': p + idx }, h('span', { 'aria-hidden': 'true' }, PART_ICON[p] + ' '), h('b', { lang: 'ms' }, p), ` ${t('nm.dp.' + p.replace(' ', '_'))} `, h('span', { class: 'muted small' }, spans.join(' · ') + also));
     }),
   );
   const quarters = clockFace(3, 15, 150);
@@ -265,7 +268,9 @@ function calendarChart(): HTMLElement[] {
       h('div', { class: 'nm-months' }, MONTHS.map((m, i) => h('span', { class: 'nm-month' }, h('span', { class: 'small muted' }, String(i + 1)), h('b', { lang: 'ms' }, m)))),
       h('h4', null, t('nm.chart.date')),
       h('p', null, h('b', null, '15 Ogos 2026'), ' = ', h('span', { lang: 'ms' }, 'lima belas Ogos dua ribu dua puluh enam')),
-      h('p', { class: 'small muted' }, `${t('nm.label.also')}: `, h('span', { lang: 'ms' }, 'lima belas haribulan Ogos dua ribu dua puluh enam')),
+      h('p', { class: 'small muted' }, `${t('nm.label.also')}: `, h('span', { lang: 'ms' }, 'lima belas hari bulan Ogos dua ribu dua puluh enam')),
+      h('p', null, t('nm.chart.hb_ask'), ' ', h('b', { lang: 'ms' }, 'Hari ini berapa hari bulan?'), ' → ', h('span', { lang: 'ms' }, 'Sebelas hari bulan.')),
+      h('p', { class: 'small muted' }, `${t('nm.label.spoken')}: `, h('span', { lang: 'ms' }, 'Hari ini hari bulan berapa? / hari bulan sebelas.')),
     ),
   ];
 }
