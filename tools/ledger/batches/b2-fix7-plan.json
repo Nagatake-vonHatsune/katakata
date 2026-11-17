@@ -1,0 +1,38 @@
+{
+ "chapter": 7,
+ "place": "Ch7 (extension)",
+ "changes": [],
+ "new": [
+  {
+   "lid": "L-1637",
+   "row": 1638,
+   "values": [
+    "L-1637",
+    "pasar raya",
+    "supermarket",
+    "スーパーマーケット",
+    "phrase",
+    "chunk",
+    "pasar + raya",
+    "Not yet checked",
+    "",
+    "ms-x07-032",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "supermarket",
+    "Kata-Kata placement batch 2 (Sam approved 17 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: places and shops (Ch7): «pasar raya»; pasar Ch3. Hanashishou: 1 scene; e.g. «tadi, di pasar raya.» (card_blocked). Lower-case «pasar» is a word since the rules of 17 Nov (Cikgu Sensai 7e436f3); Sam approved the row 17 Nov.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x07-032": {
+   "lid": "L-1637"
+  }
+ }
+}

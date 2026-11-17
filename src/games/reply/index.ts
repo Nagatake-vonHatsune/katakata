@@ -1,8 +1,9 @@
 // Reply (the ⚡ stage's dialogue step, also used to play a chapter's dialogue once): hear a line, choose the best reply
 // of three. Built from the Kad Kata multiple-choice pattern; no story player.
 import { content } from '../../core/content';
-import { t } from '../../core/i18n';
+import { getLang, t } from '../../core/i18n';
 import { replyOptions, type Step } from '../../core/session';
+import type { ScenarioLine } from '../../core/types';
 import { speak } from '../../core/tts';
 import { add, h } from '../../core/ui';
 import { audioButtons } from '../../views/widgets';
@@ -16,11 +17,21 @@ function split(speaker: string, ms: string): { who: string; text: string } {
   return m ? { who: m[1], text: m[2] } : { who: speaker, text: ms };
 }
 
+/** A line's usage note (⚡ dialogue), in the UI language: «line» — note. */
+function lineNote(l: ScenarioLine): HTMLElement | null {
+  const note = getLang() === 'ja' && l.note_ja ? l.note_ja : l.note;
+  if (!note) return null;
+  return h('p', { class: 'line-note small' }, h('span', { class: 'line-note-ms', lang: 'ms' }, `«${l.ms}»`), ' ', note);
+}
+
 function run(step: ReplyStep, ctx: GameContext): Promise<StepResult> {
   const ref = content.lines.get(step.lineId)!;
   const { prompt, answer, options, before } = replyOptions(step.lineId);
   const say = prompt ? split(prompt.speaker, prompt.ms) : null;
   const who = split(answer.speaker, answer.ms);
+  // Notes on the lines heard since the previous reply step (lines between reply steps are not shown on their own), and the prompt's.
+  const last = ref.lines.slice(0, ref.index).map((l, i) => (l.choices?.length ? i : -1)).reduce((a, b) => Math.max(a, b), -1);
+  const heardNotes = ref.lines.slice(last + 1, ref.index).map(lineNote).filter(Boolean);
   return new Promise((resolve) => {
     let done = false;
     const result = h('div', { class: 'answer', 'aria-live': 'polite' });
@@ -42,6 +53,7 @@ function run(step: ReplyStep, ctx: GameContext): Promise<StepResult> {
         h('p', { class: 'reply-line' }, h('span', { class: 'reply-who' }, who.who), ' ', h('span', { lang: 'ms' }, who.text)),
         audioButtons(who.text),
         h('p', { class: 'muted small' }, answer.en),
+        lineNote(answer),
         ctx.footer({ kind: 'line', id: answer.id, text: answer.ms, chapter: ref.chapter }, () => resolve({ outcome: correct ? 'correct' : 'wrong' })),
       );
     };
@@ -64,6 +76,7 @@ function run(step: ReplyStep, ctx: GameContext): Promise<StepResult> {
             audioButtons(say.text),
           )
         : null,
+      ...heardNotes,
       h('p', { class: 'instruction' }, t('stretch.reply'), ' ', h('span', { class: 'muted small' }, `(${who.who})`)),
       list,
       dk,

@@ -503,7 +503,9 @@
         "id": "ms-x08-d11",
         "speaker": "Tanaka",
         "ms": "Bagus! Saya beli sehelai. Tolong bungkus, ya. Ini hadiah.",
-        "en": "Great! I'll take one. Please wrap it. It's a gift."
+        "en": "Great! I'll take one. Please wrap it. It's a gift.",
+        "note": "«balut» is the correct word for gift-wrapping, but people usually say «bungkus», or the English \"wrap\".",
+        "note_ja": "プレゼントの包装には «balut» が正しい語ですが、ふつうは «bungkus»、または英語の「wrap」と言います。"
       },
       {
         "id": "ms-x08-d12",

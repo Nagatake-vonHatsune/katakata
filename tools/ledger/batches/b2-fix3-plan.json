@@ -1,0 +1,38 @@
+{
+ "chapter": 3,
+ "place": "Ch3 (extension)",
+ "changes": [],
+ "new": [
+  {
+   "lid": "L-1638",
+   "row": 1639,
+   "values": [
+    "L-1638",
+    "satu per satu",
+    "one by one",
+    "一つずつ",
+    "phrase",
+    "chunk",
+    "satu",
+    "Not yet checked",
+    "",
+    "ms-x03-023",
+    "Ch3 (extension)",
+    "",
+    "",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 17 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: numbers (Ch3): the standard «one by one»; Sam's ⚡ 3 fix of 17 Nov («Pelajar itu jawab soalan satu per satu.»), «per» has no row of its own.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x03-023": {
+   "lid": "L-1638"
+  }
+ }
+}

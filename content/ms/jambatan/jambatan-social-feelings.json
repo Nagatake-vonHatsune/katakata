@@ -114,24 +114,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-54",
-      "lang": "ms",
-      "term": "hebat",
-      "gloss_en": "great, impressive",
-      "gloss_ja": "すごい、立派な",
-      "pos": "adj",
-      "affix_tag": "root",
-      "note": "Hanashishou: Konsert yang hebat! In 7 Hanashishou scenes: Fireworks on the roof, Jom lepak!, Road trip, The chairperson's speech and 3 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-feelings"
-        }
-      ],
-      "scene": "dunia-jambatan-social-feelings",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-59",
       "lang": "ms",
       "term": "sempurna",

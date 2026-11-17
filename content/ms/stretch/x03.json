@@ -419,7 +419,7 @@
       "gloss_ja": "一つずつ",
       "pos": "adv",
       "affix_tag": "lex",
-      "note": "One by one, one at a time.",
+      "note": "One by one, one at a time. The standard phrase is «satu per satu».",
       "links": [
         {
           "type": "babak",
@@ -428,7 +428,26 @@
       ],
       "scene": "stretch-x03",
       "chapter": 3,
-      "note_ja": "一つずつ、一人ずつ。"
+      "note_ja": "一つずつ、一人ずつ。標準的な言い方は «satu per satu»。"
+    },
+    {
+      "id": "ms-x03-023",
+      "lang": "ms",
+      "term": "satu per satu",
+      "gloss_en": "one by one",
+      "gloss_ja": "一つずつ",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "One by one, one at a time: «jawab soalan satu per satu» = answer the questions one by one.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "一つずつ、一人ずつ：«jawab soalan satu per satu»＝質問に一つずつ答える。"
     }
   ],
   "frames": [
@@ -464,12 +483,12 @@
     },
     {
       "id": "ms-x03-f04",
-      "frame": "Pelajar itu ___ soalan satu-satu.",
-      "example": "Pelajar itu jawab soalan satu-satu.",
+      "frame": "Pelajar itu ___ soalan satu per satu.",
+      "example": "Pelajar itu jawab soalan satu per satu.",
       "meaning_en": "That student answers the questions one by one.",
       "meaning_ja": "その学生は質問に一つずつ答えます。",
       "decoys": [
-        "satu"
+        "dua"
       ]
     },
     {

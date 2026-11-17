@@ -2102,6 +2102,18 @@ button.nm-rel-cell { cursor: pointer; }
   font-size: 1.1rem;
 }
 
+.line-note {
+  margin: 8px 0;
+  padding: 8px 10px;
+  border-left: 3px solid var(--stretch);
+  background: var(--stretch-soft);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.line-note-ms {
+  font-weight: 600;
+}
+
 .reply-who {
   font-weight: 700;
   color: var(--muted);

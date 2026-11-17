@@ -20,7 +20,7 @@
       "gloss_ja": "〜さん（女性、あらたまった呼びかけ）",
       "pos": "noun",
       "affix_tag": "root",
-      "note": "Formal: Miss / Ms, or a formal «you» for a woman, in letters, speeches and formal meetings. In everyday talk, say «Cik» or «Puan».",
+      "note": "Formal / written: Miss / Ms, or a formal «you» for a woman, in letters, notices and speeches. Rare in speech; people say Cik or Puan («Cik Mei Ling», «Puan Aini»).",
       "links": [
         {
           "type": "babak",
@@ -29,7 +29,7 @@
       ],
       "scene": "stretch-x01",
       "chapter": 1,
-      "note_ja": "改まった言い方：女性への敬称、または改まった「あなた」。手紙、スピーチ、公式の場で使います。ふだんの会話では «Cik» や «Puan»。",
+      "note_ja": "改まった書き言葉：女性への敬称、または改まった「あなた」。手紙、お知らせ、スピーチで使います。話し言葉ではまれで、ふつうは Cik や Puan と言います（«Cik Mei Ling»、«Puan Aini»）。",
       "register": "formal"
     }
   ],
@@ -37,9 +37,9 @@
     {
       "id": "ms-x01-f01",
       "frame": "Selamat ___, ___. Apa khabar?",
-      "example": "Selamat petang, saudari. Apa khabar?",
-      "meaning_en": "Good afternoon, Miss. How are you?",
-      "meaning_ja": "こんにちは。お元気ですか。（改まった言い方）",
+      "example": "Selamat petang, Puan Aini. Apa khabar?",
+      "meaning_en": "Good afternoon, Mrs Aini. How are you?",
+      "meaning_ja": "こんにちは、アイニさん。お元気ですか。",
       "decoys": [
         "pula"
       ]
@@ -132,8 +132,8 @@
       {
         "id": "ms-x01-d05",
         "speaker": "Encik Rahman",
-        "ms": "Baik. Apa khabar, saudari?",
-        "en": "Good. And how are you, Ms Mei Ling? (formal)"
+        "ms": "Baik. Apa khabar, Cik Mei Ling?",
+        "en": "Good. And how are you, Ms Mei Ling?"
       },
       {
         "id": "ms-x01-d06",
@@ -156,11 +156,11 @@
       {
         "id": "ms-x01-d09",
         "speaker": "Encik Rahman",
-        "ms": "Baik. Terima kasih, saudari. Jaga diri.",
+        "ms": "Baik. Terima kasih, Cik Mei Ling. Jaga diri.",
         "en": "All right. Thank you, Ms Mei Ling. Take care.",
         "choices": [
-          "Baik. Selamat datang, saudari.",
-          "Selamat pagi, saudari. Apa khabar?"
+          "Baik. Selamat datang, Cik Mei Ling.",
+          "Selamat pagi, Cik Mei Ling. Apa khabar?"
         ],
         "choices_en": [
           "All right. Welcome, Ms Mei Ling.",

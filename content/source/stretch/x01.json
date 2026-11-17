@@ -1,13 +1,13 @@
 {
-  "note": "Hand-written source of the chapter 1 ⚡ stage (Build B1, 17 Nov 2026). tools/build_stretch.py turns it into content/ms/stretch/x01.json. Chapter 1 has one extension word («saudari»), so this stage is mostly review: longer frames and a longer dialogue with the chapter 1 words. Malay: Malaysian standard, standard form first, no spoken forms, no faith-specific greetings, chapter 1 words only (no «hai» or «helo»: they are not ledger words). All Japanese is a draft for the native check.",
+  "note": "Hand-written source of the chapter 1 ⚡ stage (Build B1, 17 Nov 2026). tools/build_stretch.py turns it into content/ms/stretch/x01.json. Chapter 1 has one extension word («saudari»), so this stage is mostly review: longer frames and a longer dialogue with the chapter 1 words. Malay: Malaysian standard, standard form first, no spoken forms, no faith-specific greetings, chapter 1 words only (no «hai» or «helo»: they are not ledger words). Sam, 17 Nov 2026: «saudari» is rare in speech, so no spoken line addresses anyone with it (Cik or Puan with the name); the card stays, labelled formal/written. All Japanese is a draft for the native check.",
   "chapter": 1,
   "scenario_title_en": "A day at the office",
   "scenario_title_ja": "会社の一日",
   "notes": {
-    "L-1506": {"en": "Formal: Miss / Ms, or a formal «you» for a woman, in letters, speeches and formal meetings. In everyday talk, say «Cik» or «Puan».", "ja": "改まった言い方：女性への敬称、または改まった「あなた」。手紙、スピーチ、公式の場で使います。ふだんの会話では «Cik» や «Puan»。", "register": "formal"}
+    "L-1506": {"en": "Formal / written: Miss / Ms, or a formal «you» for a woman, in letters, notices and speeches. Rare in speech; people say Cik or Puan («Cik Mei Ling», «Puan Aini»).", "ja": "改まった書き言葉：女性への敬称、または改まった「あなた」。手紙、お知らせ、スピーチで使います。話し言葉ではまれで、ふつうは Cik や Puan と言います（«Cik Mei Ling»、«Puan Aini»）。", "register": "formal"}
   },
   "frames": [
-    {"frame": "Selamat ___, ___. Apa khabar?", "example": "Selamat petang, saudari. Apa khabar?", "decoys": ["pula"], "meaning_en": "Good afternoon, Miss. How are you?", "meaning_ja": "こんにちは。お元気ですか。（改まった言い方）"},
+    {"frame": "Selamat ___, ___. Apa khabar?", "example": "Selamat petang, Puan Aini. Apa khabar?", "decoys": ["pula"], "meaning_en": "Good afternoon, Mrs Aini. How are you?", "meaning_ja": "こんにちは、アイニさん。お元気ですか。"},
     {"frame": "Saya ___ baik, terima kasih. ___ pula?", "example": "Saya pun baik, terima kasih. Puan pula?", "decoys": ["tidak"], "meaning_en": "I'm fine too, thank you. And you?", "meaning_ja": "私も元気です、ありがとうございます。あなたは？"},
     {"frame": "Selamat ___, Cik Mei Ling. Hati-hati!", "example": "Selamat jalan, Cik Mei Ling. Hati-hati!", "decoys": ["pagi"], "meaning_en": "Goodbye, Ms Mei Ling (you are leaving). Take care on the way!", "meaning_ja": "（帰る人に）さようなら、メイリンさん。気をつけて！"},
     {"frame": "Maaf, ___, saya minta diri dulu. Jumpa ___ ___.", "example": "Maaf, Puan, saya minta diri dulu. Jumpa esok pagi.", "decoys": ["pula"], "meaning_en": "Excuse me, I'll be going now. See you tomorrow morning.", "meaning_ja": "すみません、お先に失礼します。また明日の朝。"},
@@ -22,12 +22,12 @@
     {"speaker": "Tanaka", "ms": "Saya pun baik, terima kasih.", "en": "I'm fine too, thank you.",
      "choices": ["Sama-sama. Saya minta diri dulu.", "Maaf, tumpang tanya, Encik."],
      "choices_en": ["You're welcome. I'll be going now.", "Excuse me, may I ask something?"]},
-    {"speaker": "Encik Rahman", "ms": "Baik. Apa khabar, saudari?", "en": "Good. And how are you, Ms Mei Ling? (formal)"},
+    {"speaker": "Encik Rahman", "ms": "Baik. Apa khabar, Cik Mei Ling?", "en": "Good. And how are you, Ms Mei Ling?"},
     {"speaker": "Cik Mei Ling", "ms": "Khabar baik, Encik. Terima kasih.", "en": "I'm fine. Thank you."},
     {"speaker": "(Narrator)", "ms": "Petang.", "en": "Evening."},
     {"speaker": "Cik Mei Ling", "ms": "Maaf, Encik Rahman. Saya minta diri dulu.", "en": "Excuse me, Mr Rahman. I'll be going now."},
-    {"speaker": "Encik Rahman", "ms": "Baik. Terima kasih, saudari. Jaga diri.", "en": "All right. Thank you, Ms Mei Ling. Take care.",
-     "choices": ["Baik. Selamat datang, saudari.", "Selamat pagi, saudari. Apa khabar?"],
+    {"speaker": "Encik Rahman", "ms": "Baik. Terima kasih, Cik Mei Ling. Jaga diri.", "en": "All right. Thank you, Ms Mei Ling. Take care.",
+     "choices": ["Baik. Selamat datang, Cik Mei Ling.", "Selamat pagi, Cik Mei Ling. Apa khabar?"],
      "choices_en": ["All right. Welcome, Ms Mei Ling.", "Good morning, Ms Mei Ling. How are you?"]},
     {"speaker": "Cik Mei Ling", "ms": "Sama-sama, Encik. Jumpa esok!", "en": "You're welcome. See you tomorrow!"},
     {"speaker": "Tanaka", "ms": "Selamat jalan, Cik Mei Ling. Hati-hati!", "en": "Goodbye, Ms Mei Ling. Take care on the way!",

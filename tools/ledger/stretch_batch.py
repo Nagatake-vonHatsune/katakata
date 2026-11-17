@@ -2,6 +2,8 @@
 
 Usage (from the repo root):
     python3 -I tools/ledger/stretch_batch.py plan <chapter> [docs/VOCAB-PLACEMENT-proposal.csv] [--skip <word>] > plan.json
+        Build B2 options: --only <word>, --start <n> (card numbers after n), --promote <L-id>, --origin17 <word>, --manual <rows.json>
+    python3 -I tools/ledger/stretch_batch.py merge <plan.json>... > batch.json   # one plan for the sheet write and verify
     python3 -I tools/ledger/stretch_batch.py apply <plan.json>              # writes the planned cells into the snapshot
     python3 -I tools/ledger/stretch_batch.py csv <plan.json> <out.csv>      # the new rows and changes, for a person to paste
     python3 -I tools/ledger/stretch_batch.py verify <before.json> <after.json> <plan.json>
@@ -29,6 +31,7 @@ SNAPSHOT = ROOT / "content/ledger/malay-ledger.csv"
 COLS = "ABCDEFGHIJKLMNOPQRST"
 J, K = 9, 10
 ORIGIN = "Kata-Kata placement batch 2 (Sam approved 15 Nov)"
+ORIGIN_17 = "Kata-Kata placement batch 2 (Sam approved 17 Nov)"  # Build B2: «pasar raya», «hebat», «takkan» (and words Sam dictated that day)
 DATE = "2026-11-17"  # Build B1 (chapters 1 to 3 and 5 to 9); the x04 plan of 15 Nov keeps its own date
 BY = "Claude (Sam approved)"
 
@@ -45,16 +48,24 @@ def example(line, word):
     return hit.strip()
 
 
-def plan(chapter, proposal, hana, skip=()):
+def plan(chapter, proposal, hana, skip=(), only=(), start=0, promote=(), origin17=(), manual=()):
+    """Build B2 options: only (pick just these proposal words), start (card numbers after the pack's existing cards),
+    promote (Jambatan ledger IDs promoted to this chapter although the proposal does not say so; Sam, 17 Nov 2026),
+    origin17 (words whose Origin is «Sam approved 17 Nov»), manual (new rows not in the proposal, as proposal-CSV dicts)."""
     rows = snapshot()
     header, body = rows[0], rows[1:]
     by_id = {r[0]: (i + 2, r) for i, r in enumerate(body)}  # sheet row = index in the tab, 1-based, header is row 1
     place = f"Ch{chapter} (extension)"
     picked = [r for r in csv.DictReader(open(proposal, encoding="utf-8")) if r["decision"] == place and r["word"] not in skip]
+    if only or promote or manual:  # a fix batch: only the words named
+        picked = [r for r in picked if r["word"] in only]
+    for lid in promote:
+        _, row = by_id[lid]
+        picked.insert(0, {"word": row[1], "existing ledger ID": lid})
     promoted = [r for r in picked if r["existing ledger ID"]]
-    new = [r for r in picked if not r["existing ledger ID"]]
+    new = [r for r in picked if not r["existing ledger ID"]] + list(manual)
     met = {r["word"]: r for r in csv.DictReader(open(Path(hana) / "docs/STAGE-2-step6a2-metfirst.csv", encoding="utf-8"))}
-    card = lambda n: f"ms-x{chapter:02d}-{n:03d}"
+    card = lambda n: f"ms-x{chapter:02d}-{start + n:03d}"
     out = {"chapter": chapter, "place": place, "changes": [], "new": [], "cards": {}}
     for n, r in enumerate(promoted, 1):
         lid = r["existing ledger ID"]
@@ -74,7 +85,7 @@ def plan(chapter, proposal, hana, skip=()):
     for i, r in enumerate(new):
         n = len(promoted) + i + 1
         lid = f"L-{last + 1 + i:04d}"
-        m = met.get(r["word"]) or {}
+        m = met.get(r["word"]) or met.get(r.get("scene form") or "") or {}
         scenes = int(r["Hanashishou scenes count"] or 0)
         hs = f"{m['home_pack']} · band {m['band']}" if m else ""
         note = f"Placement batch 2: {r['reason']}."
@@ -83,7 +94,8 @@ def plan(chapter, proposal, hana, skip=()):
         if r["flags"]:
             note += f" {r['flags']}."
         values = [lid, r["word"], r["meaning (English)"], r["meaning (Japanese draft)"], r["POS"], r["affix tag"], r["root"],
-                  "Not yet checked", "", card(n), place, hs, "Yes" if m else "", r["meaning (English)"] if m else "", ORIGIN, "Draft",
+                  "Not yet checked", "", card(n), place, hs, "Yes" if m else "", r["meaning (English)"] if m else "",
+                  ORIGIN_17 if r["word"] in origin17 else ORIGIN, "Draft",
                   "KD4 check", note, DATE, BY]  # column N (Hanashishou meaning): the English meaning (Sam, 17 Nov 2026)
         assert len(values) == len(header) == 20
         out["new"].append({"lid": lid, "row": last + 2 + i, "values": values})
@@ -159,14 +171,32 @@ def main(argv):
         i = argv.index("--skip")
         skip.append(argv[i + 1])
         del argv[i : i + 2]
+    opts = {"only": [], "promote": [], "origin17": [], "start": 0, "manual": []}
+    for flag in ("--only", "--promote", "--origin17", "--start", "--manual"):
+        while flag in argv:
+            i = argv.index(flag)
+            key = flag[2:]
+            if key == "start":
+                opts["start"] = int(argv[i + 1])
+            elif key == "manual":  # a JSON file: a list of proposal-CSV-shaped dicts
+                opts["manual"] += json.load(open(argv[i + 1], encoding="utf-8"))
+            else:
+                opts[key].append(argv[i + 1])
+            del argv[i : i + 2]
     if "--hana" in argv:
         i = argv.index("--hana")
         hana = argv[i + 1]
         del argv[i : i + 2]
     if argv[:1] == ["plan"] and len(argv) in (2, 3):
-        out = plan(int(argv[1]), argv[2] if len(argv) == 3 else ROOT / "docs/VOCAB-PLACEMENT-proposal.csv", hana, skip)
+        out = plan(int(argv[1]), argv[2] if len(argv) == 3 else ROOT / "docs/VOCAB-PLACEMENT-proposal.csv", hana, skip, **opts)
         if skip:
             out["skipped"] = skip
+        print(json.dumps(out, ensure_ascii=False, indent=1))
+        return 0
+    if argv[:1] == ["merge"] and len(argv) > 1:
+        ps = [json.load(open(a, encoding="utf-8")) for a in argv[1:]]
+        out = {"chapters": [p["chapter"] for p in ps], "changes": [c for p in ps for c in p["changes"]],
+               "new": [n for p in ps for n in p["new"]], "cards": {k: v for p in ps for k, v in p["cards"].items()}}
         print(json.dumps(out, ensure_ascii=False, indent=1))
         return 0
     if argv[:1] == ["apply"] and len(argv) == 2:

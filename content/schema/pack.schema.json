@@ -52,7 +52,9 @@
               "ms": { "type": "string" },
               "en": { "type": "string" },
               "choices": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 2, "maxItems": 2, "description": "⚡ dialogue: the two wrong replies (this line is a reply step)." },
-              "choices_en": { "type": "array", "items": { "type": "string" }, "minItems": 2, "maxItems": 2 }
+              "choices_en": { "type": "array", "items": { "type": "string" }, "minItems": 2, "maxItems": 2 },
+              "note": { "type": "string", "description": "⚡ dialogue: a usage note on the line (English), shown in the reply step." },
+              "note_ja": { "type": "string" }
             }
           }
         }

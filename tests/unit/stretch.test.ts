@@ -284,6 +284,46 @@ describe('moved cards (Jambatan → ⚡)', () => {
   });
 });
 
+describe("Build B2: Sam's fixes to the B1 packs (17 Nov 2026)", () => {
+  const pack = (n: number) => content.stretch.find((x) => x.chapter === n)!;
+  const allMs = (n: number) => [...pack(n).frames.map((f) => f.example), ...pack(n).scenario.lines.flatMap((l) => [l.ms, ...(l.choices ?? [])])];
+  it('«hebat» moves from Jambatan (ms-j-social-54) to ⚡ 5 as ms-x05-032, with its schedule, and is used in the ⚡ 5 dialogue', () => {
+    expect(MOVED_CARDS['ms-j-social-54']).toBe('ms-x05-032');
+    expect(content.cards.has('ms-j-social-54')).toBe(false);
+    const c = content.cards.get('ms-x05-032')!;
+    expect([c.term, c.chapter, c.scene]).toEqual(['hebat', 5, 'stretch-x05']);
+    const ledger = readFileSync(join(root, 'content/ledger/malay-ledger.csv'), 'utf8');
+    expect(ledger).toMatch(/^L-1369,hebat,.*,ms-x05-032,Ch5 \(extension\),/m);
+    const old = { ...review(undefined, Rating.Good), last: 1 };
+    const m = migrate({ srs: { 'ms-j-social-54': old } } as never);
+    expect(m.srs['ms-x05-032']).toEqual(old);
+    expect(allMs(5)).toContain('Encik boleh makan durian! Wah, hebat!');
+    expect(allMs(5).join(' ')).not.toMatch(/pandai makan|Saya teh tarik/);
+    expect(allMs(5)).toContain('Saya nak teh tarik, kurang manis.');
+  });
+  it('⚡ 1 addresses nobody as «saudari» in speech; the card stays, formal, with the Cik / Puan note in en and ja', () => {
+    expect(allMs(1).join(' ')).not.toMatch(/saudar[ai]/i);
+    const c = pack(1).cards.find((x) => x.term === 'saudari')!;
+    expect(c.register).toBe('formal');
+    expect(c.note).toMatch(/Rare in speech; people say Cik or Puan/);
+    expect(c.note_ja).toMatch(/Cik や Puan/);
+    // and no core pack uses «saudara» / «saudari» at all
+    for (const p of [...content.chapters, ...content.scenes])
+      expect(JSON.stringify([p.cards.map((x) => x.term), (p as any).frames ?? [], (p as any).scenario?.lines ?? []]), p.id).not.toMatch(/saudar[ai]/i);
+  });
+  it('⚡ 3 says «satu per satu»; ⚡ 7 has «pasar raya» in its dialogue and on its Cari Benda board; ⚡ 8 notes «balut» on the «bungkus» line', () => {
+    expect(allMs(3)).toContain('Pelajar itu jawab soalan satu per satu.');
+    const pr = pack(7).cards.find((x) => x.term === 'pasar raya')!;
+    expect(pr.id).toBe('ms-x07-032');
+    expect(pr.image).toBeTruthy();
+    expect(pack(7).scenario.lines.filter((l) => /pasar raya/.test(l.ms))).toHaveLength(2);
+    const l = pack(8).scenario.lines.find((x) => x.ms.includes('Tolong bungkus'))!;
+    expect(l.ms).toBe('Bagus! Saya beli sehelai. Tolong bungkus, ya. Ini hadiah.');
+    expect(l.note).toMatch(/«balut».*«bungkus»/);
+    expect(l.note_ja).toMatch(/balut/);
+  });
+});
+
 describe('migrate (schemaVersion stays 1)', () => {
   it('adds state.lines and state.dialogues to an older state and keeps them when present', () => {
     const m = migrate({ schemaVersion: 1, srs: {}, frames: {} } as never);

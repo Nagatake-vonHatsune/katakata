@@ -25,13 +25,14 @@
     "L-1529": {"en": "Officer, official: «pegawai bank» = a bank officer.", "ja": "職員、係官：«pegawai bank»＝銀行員。"},
     "L-1530": {"en": "pe(N)- + timbang (Ch3): a weighing scale.", "ja": "pe(N)- + timbang（第3課）：はかり。"},
     "L-1531": {"en": "Post, mail: «pejabat pos» (Ch3) = post office, «pos udara» = airmail.", "ja": "郵便：«pejabat pos»（第3課）＝郵便局、«pos udara»＝航空便。"},
-    "L-1532": {"en": "One by one, one at a time.", "ja": "一つずつ、一人ずつ。"}
+    "L-1532": {"en": "One by one, one at a time. The standard phrase is «satu per satu».", "ja": "一つずつ、一人ずつ。標準的な言い方は «satu per satu»。"},
+    "L-1638": {"en": "One by one, one at a time: «jawab soalan satu per satu» = answer the questions one by one.", "ja": "一つずつ、一人ずつ：«jawab soalan satu per satu»＝質問に一つずつ答える。"}
   },
   "frames": [
     {"frame": "Kedua-dua ___ ini ___ kilogram.", "example": "Kedua-dua bungkusan ini tiga kilogram.", "decoys": ["kedua"], "meaning_en": "Both of these parcels weigh three kilograms.", "meaning_ja": "この小包は両方とも3キロです。"},
     {"frame": "Tawaran ini murah: beli ___, percuma ___.", "example": "Tawaran ini murah: beli satu, percuma satu.", "decoys": ["diskaun"], "meaning_en": "This deal is cheap: buy one, get one free.", "meaning_ja": "このプランはお得です：1つ買うと1つ無料。"},
     {"frame": "___ di kaunter itu tidak ___.", "example": "Penimbang di kaunter itu tidak betul.", "decoys": ["timbang"], "meaning_en": "The scale at that counter isn't accurate.", "meaning_ja": "あの窓口のはかりは正しくありません。"},
-    {"frame": "Pelajar itu ___ soalan satu-satu.", "example": "Pelajar itu jawab soalan satu-satu.", "decoys": ["satu"], "meaning_en": "That student answers the questions one by one.", "meaning_ja": "その学生は質問に一つずつ答えます。"},
+    {"frame": "Pelajar itu ___ soalan satu per satu.", "example": "Pelajar itu jawab soalan satu per satu.", "decoys": ["dua"], "meaning_en": "That student answers the questions one by one.", "meaning_ja": "その学生は質問に一つずつ答えます。"},
     {"frame": "Kadar diskaun untuk ___ ialah ___ peratus.", "example": "Kadar diskaun untuk pelajar ialah sepuluh peratus.", "decoys": ["harga"], "meaning_en": "The discount rate for students is ten percent.", "meaning_ja": "学生の割引率は10パーセントです。"},
     {"frame": "Saya ada hutang ___ ringgit dengan ___ saya.", "example": "Saya ada hutang lima puluh ringgit dengan kawan saya.", "decoys": ["baki"], "meaning_en": "I owe my friend fifty ringgit.", "meaning_ja": "友だちに50リンギットの借りがあります。"}
   ],

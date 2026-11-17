@@ -605,6 +605,26 @@
       "scene": "stretch-x07",
       "chapter": 7,
       "note_ja": "ターミナル（空港やバス）。"
+    },
+    {
+      "id": "ms-x07-032",
+      "lang": "ms",
+      "term": "pasar raya",
+      "gloss_en": "supermarket",
+      "gloss_ja": "スーパーマーケット",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Supermarket: «pasar» (market) + «raya» (big).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "スーパーマーケット：«pasar»（市場）＋«raya»（大きい）。",
+      "image": "🛒"
     }
   ],
   "frames": [
@@ -766,8 +786,8 @@
       {
         "id": "ms-x07-d12",
         "speaker": "Tanaka",
-        "ms": "Baik. Boleh kita pergi ke kedai dulu? Saya mahu beli air.",
-        "en": "Okay. Can we stop at a shop first? I'd like to buy some water.",
+        "ms": "Baik. Boleh kita pergi ke pasar raya dulu? Saya mahu beli air.",
+        "en": "Okay. Can we stop at a supermarket first? I'd like to buy some water.",
         "choices": [
           "Jangan pandu! Kita jalan kaki.",
           "Baik. Saya tunggu di perpustakaan."
@@ -780,8 +800,8 @@
       {
         "id": "ms-x07-d13",
         "speaker": "Encik Rahman",
-        "ms": "Boleh. Ada kedai di tepi jalan, dekat simpang.",
-        "en": "Sure. There's a shop by the road, near the junction."
+        "ms": "Boleh. Ada pasar raya di tepi jalan, dekat simpang.",
+        "en": "Sure. There's a supermarket by the road, near the junction."
       },
       {
         "id": "ms-x07-d14",

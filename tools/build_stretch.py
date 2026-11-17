@@ -78,6 +78,8 @@ def main(chapter):
             if i == 1 or len(l["choices"]) != 2 or len(l.get("choices_en", [])) != 2:
                 raise SystemExit(f"line {i}: a reply line needs a line before it, two choices and two choices_en")
             line["choices"], line["choices_en"] = l["choices"], l["choices_en"]
+        if l.get("note"):  # {"en", "ja"}: a usage note shown with the line in the reply step
+            line["note"], line["note_ja"] = l["note"]["en"], l["note"]["ja"]
         lines.append(line)
     replies = sum(1 for l in lines if l.get("choices"))
     if not (4 <= len(frames) <= 6 and 8 <= len(lines) <= 14 and 3 <= replies <= 5):

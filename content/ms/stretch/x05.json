@@ -608,6 +608,25 @@
       "scene": "stretch-x05",
       "chapter": 5,
       "note_ja": "明るい：«bulan terang»＝明るい月。"
+    },
+    {
+      "id": "ms-x05-032",
+      "lang": "ms",
+      "term": "hebat",
+      "gloss_en": "great, impressive",
+      "gloss_ja": "すごい、立派な",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Great, impressive: «Wah, hebat!» = Wow, impressive! Said to an adult who does something well.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "すごい、立派な：«Wah, hebat!»＝わあ、すごい！大人がうまくできたときに。"
     }
   ],
   "frames": [
@@ -624,9 +643,9 @@
     {
       "id": "ms-x05-f02",
       "frame": "Saya minum ___ ___ tanpa ___.",
-      "example": "Saya minum kopi panas tanpa gula.",
-      "meaning_en": "I drink hot coffee without sugar.",
-      "meaning_ja": "ホットコーヒーを砂糖なしで飲みます。",
+      "example": "Saya minum kopi pekat tanpa gula.",
+      "meaning_en": "I drink strong coffee without sugar.",
+      "meaning_ja": "濃いコーヒーを砂糖なしで飲みます。",
       "decoys": [
         "dengan"
       ]
@@ -739,8 +758,8 @@
       {
         "id": "ms-x05-d07",
         "speaker": "Cik Mei Ling",
-        "ms": "Encik pandai makan durian! Saya bangga.",
-        "en": "You're good at eating durian! I'm proud of you."
+        "ms": "Encik boleh makan durian! Wah, hebat!",
+        "en": "You can eat durian! Wow, impressive!"
       },
       {
         "id": "ms-x05-d08",
@@ -769,15 +788,15 @@
       {
         "id": "ms-x05-d12",
         "speaker": "Tanaka",
-        "ms": "Saya teh tarik, kurang manis tetapi pekat.",
-        "en": "I'll have teh tarik, less sweet but strong.",
+        "ms": "Saya nak teh tarik, kurang manis.",
+        "en": "I'd like teh tarik, less sweet. («nak»: spoken «mahu»)",
         "choices": [
           "Tekak saya sakit. Saya mahu air sejuk dengan ais.",
-          "Saya teh tarik, tanpa teh."
+          "Saya nak teh tarik, tanpa teh."
         ],
         "choices_en": [
           "I have a sore throat. I want a cold drink with ice.",
-          "I'll have teh tarik, without the tea."
+          "I'd like teh tarik, without the tea."
         ]
       },
       {

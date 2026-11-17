@@ -1,0 +1,30 @@
+{
+ "chapter": 5,
+ "place": "Ch5 (extension)",
+ "changes": [
+  {
+   "lid": "L-1369",
+   "row": 1370,
+   "word": "hebat",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-54",
+     "after": "ms-x05-032"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Feelings and opinions",
+     "after": "Ch5 (extension)"
+    }
+   ]
+  }
+ ],
+ "new": [],
+ "cards": {
+  "ms-x05-032": {
+   "lid": "L-1369",
+   "moved_from": "ms-j-social-54"
+  }
+ }
+}

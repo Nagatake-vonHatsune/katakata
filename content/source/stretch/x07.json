@@ -34,11 +34,12 @@
     "L-1601": {"en": "Lost (not knowing the way): «Saya sesat.» = I'm lost.", "ja": "道に迷った：«Saya sesat.»＝道に迷いました。"},
     "L-1602": {"en": "Fare (for a bus, taxi or train).", "ja": "運賃（バス、タクシー、電車）。"},
     "L-1603": {"en": "To fly. «kapal terbang» (Ch4) = aeroplane.", "ja": "飛ぶ。«kapal terbang»（第4課）＝飛行機。"},
-    "L-1604": {"en": "Terminal (airport or bus).", "ja": "ターミナル（空港やバス）。"}
+    "L-1604": {"en": "Terminal (airport or bus).", "ja": "ターミナル（空港やバス）。"},
+    "L-1637": {"en": "Supermarket: «pasar» (market) + «raya» (big).", "ja": "スーパーマーケット：«pasar»（市場）＋«raya»（大きい）。"}
   },
   "cari": {
     "scene": "jalan-lintas",
-    "images": {"L-1579": "🧳", "L-1596": "👮", "L-1593": "🚏", "L-1590": "🎦", "L-1575": "🏙️"},
+    "images": {"L-1579": "🧳", "L-1596": "👮", "L-1593": "🚏", "L-1590": "🎦", "L-1575": "🏙️", "L-1637": "🛒"},
     "core": ["ms-d-jalan-lintas-01", "ms-d-jalan-lintas-02", "ms-d-jalan-lintas-03", "ms-d-jalan-lintas-06"]
   },
   "frames": [
@@ -67,10 +68,10 @@
      "choices": ["Kita jalan kaki lima puluh kilometer?", "Kita naik kapal terbang ke bandar?"],
      "choices_en": ["We'll walk fifty kilometres?", "We'll fly to town?"]},
     {"speaker": "Encik Rahman", "ms": "Sedikit. Saya pandu perlahan-lahan.", "en": "A little. I'll drive slowly."},
-    {"speaker": "Tanaka", "ms": "Baik. Boleh kita pergi ke kedai dulu? Saya mahu beli air.", "en": "Okay. Can we stop at a shop first? I'd like to buy some water.",
+    {"speaker": "Tanaka", "ms": "Baik. Boleh kita pergi ke pasar raya dulu? Saya mahu beli air.", "en": "Okay. Can we stop at a supermarket first? I'd like to buy some water.",
      "choices": ["Jangan pandu! Kita jalan kaki.", "Baik. Saya tunggu di perpustakaan."],
      "choices_en": ["Don't drive! We'll walk.", "Okay. I'll wait at the library."]},
-    {"speaker": "Encik Rahman", "ms": "Boleh. Ada kedai di tepi jalan, dekat simpang.", "en": "Sure. There's a shop by the road, near the junction."},
+    {"speaker": "Encik Rahman", "ms": "Boleh. Ada pasar raya di tepi jalan, dekat simpang.", "en": "Sure. There's a supermarket by the road, near the junction."},
     {"speaker": "Tanaka", "ms": "Terima kasih banyak, Encik.", "en": "Thank you very much.",
      "choices": ["Maaf, saya sesat lagi.", "Sama-sama, Encik."],
      "choices_en": ["Sorry, I'm lost again.", "You're welcome."]}

@@ -55,6 +55,9 @@ export interface ScenarioLine {
   choices?: string[];
   /** English for each wrong reply, in the same order (shown after answering). */
   choices_en?: string[];
+  /** ⚡ dialogue: a usage note on this line (Sam, 17 Nov 2026: «bungkus» vs «balut»), shown in the reply step. */
+  note?: string;
+  note_ja?: string;
 }
 
 export interface KelasPack {
