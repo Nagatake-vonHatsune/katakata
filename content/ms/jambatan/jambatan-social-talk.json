@@ -312,24 +312,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-52",
-      "lang": "ms",
-      "term": "selama",
-      "gloss_en": "for (a length of time); during",
-      "gloss_ja": "〜の間（期間）",
-      "pos": "prep",
-      "affix_tag": "se-",
-      "note": "Hanashishou: Jadi saya tidak boleh guna bilik air ini selama dua hari, betul? In 8 Hanashishou scenes: Card blocked, House rules, Mock interview, Movie night and 4 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-talk"
-        }
-      ],
-      "scene": "dunia-jambatan-social-talk",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-56",
       "lang": "ms",
       "term": "pasal",

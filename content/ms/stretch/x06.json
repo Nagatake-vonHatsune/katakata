@@ -1,0 +1,594 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x06",
+  "chapter": 6,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Perbandingan",
+    "en": "Comparison",
+    "ja": "比較"
+  },
+  "cards": [
+    {
+      "id": "ms-x06-001",
+      "lang": "ms",
+      "term": "pasukan",
+      "gloss_en": "team",
+      "gloss_ja": "チーム",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Team: «pasukan futsal» = futsal team.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "チーム：«pasukan futsal»＝フットサルチーム。"
+    },
+    {
+      "id": "ms-x06-002",
+      "lang": "ms",
+      "term": "betul-betul",
+      "gloss_en": "really, truly; exactly",
+      "gloss_ja": "本当に、まさに",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "betul (Ch3), said twice: really, truly. «Betul-betul?» = Really?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "betul（第3課）を2回：本当に。«Betul-betul?»＝本当に？"
+    },
+    {
+      "id": "ms-x06-003",
+      "lang": "ms",
+      "term": "selama",
+      "gloss_en": "for (a length of time); during",
+      "gloss_ja": "〜の間（期間）",
+      "pos": "prep",
+      "affix_tag": "se-",
+      "note": "se- + lama (Ch6): for (a length of time). «selama tiga jam» = for three hours.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "se- + lama（第6課）：〜の間。«selama tiga jam»＝3時間。"
+    },
+    {
+      "id": "ms-x06-004",
+      "lang": "ms",
+      "term": "lawan",
+      "gloss_en": "fight, oppose",
+      "gloss_ja": "戦う、対戦相手",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To play against, fight, oppose: «Kita lawan siapa?» = Who are we playing against?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "対戦する、戦う：«Kita lawan siapa?»＝どこと対戦するの？"
+    },
+    {
+      "id": "ms-x06-005",
+      "lang": "ms",
+      "term": "papan",
+      "gloss_en": "board (\"papan klip\" = clipboard)",
+      "gloss_ja": "板、ボード",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Board: «papan skor» = scoreboard, «papan klip» = clipboard.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "板、ボード：«papan skor»＝スコアボード、«papan klip»＝クリップボード。"
+    },
+    {
+      "id": "ms-x06-006",
+      "lang": "ms",
+      "term": "permainan",
+      "gloss_en": "game",
+      "gloss_ja": "ゲーム、遊び",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "pe-an + main (Ch2): a game.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "pe-an + main（第2課）：ゲーム、遊び。",
+      "image": "🎮"
+    },
+    {
+      "id": "ms-x06-007",
+      "lang": "ms",
+      "term": "sebaik",
+      "gloss_en": "as good as (\"sebaik mungkin\" = as best as possible)",
+      "gloss_ja": "〜と同じくらい良く",
+      "pos": "adv",
+      "affix_tag": "se-",
+      "note": "se- + baik (Ch1): as good as. «sebaik gurunya» = as good as his teacher.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "se- + baik（第1課）：〜と同じくらい上手。«sebaik gurunya»＝先生と同じくらい上手。"
+    },
+    {
+      "id": "ms-x06-008",
+      "lang": "ms",
+      "term": "beza",
+      "gloss_en": "difference",
+      "gloss_ja": "違い",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Difference: «beza skor» = the difference in the score.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "違い、差：«beza skor»＝点差。"
+    },
+    {
+      "id": "ms-x06-009",
+      "lang": "ms",
+      "term": "catur",
+      "gloss_en": "chess",
+      "gloss_ja": "チェス",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Chess.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "チェス。",
+      "image": "♟️"
+    },
+    {
+      "id": "ms-x06-010",
+      "lang": "ms",
+      "term": "futsal",
+      "gloss_en": "futsal",
+      "gloss_ja": "フットサル",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Futsal: five-a-side football, very popular in Malaysia.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "フットサル：5人制サッカー。マレーシアでとても人気。",
+      "image": "⚽"
+    },
+    {
+      "id": "ms-x06-011",
+      "lang": "ms",
+      "term": "ganda",
+      "gloss_en": "fold, times (\"dua kali ganda\" = double)",
+      "gloss_ja": "倍（«dua kali ganda» 二倍）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Times, -fold: «dua kali ganda» = twice as much, double.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "倍：«dua kali ganda»＝2倍。"
+    },
+    {
+      "id": "ms-x06-012",
+      "lang": "ms",
+      "term": "kebanyakan",
+      "gloss_en": "most, mostly",
+      "gloss_ja": "ほとんどの、大部分",
+      "pos": "det",
+      "affix_tag": "ke-an",
+      "note": "ke-an + banyak (Ch5): most. «kebanyakan pelajar» = most students.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "ke-an + banyak（第5課）：大部分の。«kebanyakan pelajar»＝ほとんどの学生。"
+    },
+    {
+      "id": "ms-x06-013",
+      "lang": "ms",
+      "term": "lari",
+      "gloss_en": "run",
+      "gloss_ja": "走る、逃げる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To run. «lumba lari» = a running race.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "走る。«lumba lari»＝かけっこ、競走。"
+    },
+    {
+      "id": "ms-x06-014",
+      "lang": "ms",
+      "term": "lemah",
+      "gloss_en": "weak",
+      "gloss_ja": "弱い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Weak; opposite of strong.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "弱い。"
+    },
+    {
+      "id": "ms-x06-015",
+      "lang": "ms",
+      "term": "lumba",
+      "gloss_en": "race",
+      "gloss_ja": "レース、競走",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Race: «lumba lari» = running race.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "競走：«lumba lari»＝徒競走。",
+      "image": "🏁"
+    },
+    {
+      "id": "ms-x06-016",
+      "lang": "ms",
+      "term": "markah",
+      "gloss_en": "mark, score",
+      "gloss_ja": "点数",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Mark, score (in a test or a game).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "点数（テストや試合）。",
+      "image": "💯"
+    },
+    {
+      "id": "ms-x06-017",
+      "lang": "ms",
+      "term": "pertandingan",
+      "gloss_en": "competition",
+      "gloss_ja": "競技会、コンテスト",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "Competition, match; taught as a whole word.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "試合、大会（ひとまとまりの単語として）。"
+    },
+    {
+      "id": "ms-x06-018",
+      "lang": "ms",
+      "term": "sebanyak",
+      "gloss_en": "as much as",
+      "gloss_ja": "〜もの（量・額）",
+      "pos": "adv",
+      "affix_tag": "se-",
+      "note": "se- + banyak (Ch5): as many as, a total of (formal, in reports and notices).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "se- + banyak（第5課）：〜もの、合計〜（報告やお知らせの改まった言い方）。"
+    },
+    {
+      "id": "ms-x06-019",
+      "lang": "ms",
+      "term": "sungguh",
+      "gloss_en": "truly, really",
+      "gloss_ja": "本当に",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Truly, really, after an adjective: «lemah sungguh» = really weak.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "本当に（形容詞の後）：«lemah sungguh»＝本当に弱い。"
+    },
+    {
+      "id": "ms-x06-020",
+      "lang": "ms",
+      "term": "syabas",
+      "gloss_en": "well done",
+      "gloss_ja": "よくやった",
+      "pos": "phrase",
+      "affix_tag": "root",
+      "note": "Well done! Congratulations!",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x06"
+        }
+      ],
+      "scene": "stretch-x06",
+      "chapter": 6,
+      "note_ja": "よくやった！おめでとう！"
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-x06-f01",
+      "frame": "Pasukan kita lebih ___ daripada pasukan ___.",
+      "example": "Pasukan kita lebih lemah daripada pasukan mereka.",
+      "meaning_en": "Our team is weaker than theirs.",
+      "meaning_ja": "私たちのチームは彼らのチームより弱い。",
+      "decoys": [
+        "dari"
+      ]
+    },
+    {
+      "id": "ms-x06-f02",
+      "frame": "___ saya dua kali ganda daripada ___ dia.",
+      "example": "Markah saya dua kali ganda daripada markah dia.",
+      "meaning_en": "My mark is double his.",
+      "meaning_ja": "私の点数は彼の2倍です。",
+      "decoys": [
+        "sekali"
+      ]
+    },
+    {
+      "id": "ms-x06-f03",
+      "frame": "Kebanyakan ___ suka futsal, tetapi saya suka ___.",
+      "example": "Kebanyakan pelajar suka futsal, tetapi saya suka catur.",
+      "meaning_en": "Most students like futsal, but I like chess.",
+      "meaning_ja": "ほとんどの学生はフットサルが好きですが、私はチェスが好きです。",
+      "decoys": [
+        "lebih"
+      ]
+    },
+    {
+      "id": "ms-x06-f04",
+      "frame": "Semalam saya main ___ selama ___ jam.",
+      "example": "Semalam saya main catur selama tiga jam.",
+      "meaning_en": "Yesterday I played chess for three hours.",
+      "meaning_ja": "きのう3時間チェスをしました。",
+      "decoys": [
+        "lama"
+      ]
+    },
+    {
+      "id": "ms-x06-f05",
+      "frame": "Anak saya main ___ sebaik ___.",
+      "example": "Anak saya main catur sebaik gurunya.",
+      "meaning_en": "My child plays chess as well as his teacher.",
+      "meaning_ja": "子どもは先生と同じくらいチェスが上手です。",
+      "decoys": [
+        "baik"
+      ]
+    },
+    {
+      "id": "ms-x06-f06",
+      "frame": "Sebanyak ___ pelajar ada di pertandingan ___ ___ itu.",
+      "example": "Sebanyak seratus pelajar ada di pertandingan lumba lari itu.",
+      "meaning_en": "As many as a hundred students were at that running race.",
+      "meaning_ja": "その競走大会には100人もの学生がいました。",
+      "decoys": [
+        "banyak"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "The futsal match",
+    "title_ja": "フットサルの試合",
+    "lines": [
+      {
+        "id": "ms-x06-d01",
+        "speaker": "Encik Rahman",
+        "ms": "Encik Tanaka, pasukan futsal kita ada pertandingan hujung minggu ini.",
+        "en": "Mr Tanaka, our futsal team has a match this weekend."
+      },
+      {
+        "id": "ms-x06-d02",
+        "speaker": "Tanaka",
+        "ms": "Wah, seronok! Kita lawan siapa?",
+        "en": "Wow, fun! Who are we playing against?",
+        "choices": [
+          "Wah! Pertandingan itu semalam?",
+          "Wah! Saya juara catur."
+        ],
+        "choices_en": [
+          "Wow! The match was yesterday?",
+          "Wow! I'm a chess champion."
+        ]
+      },
+      {
+        "id": "ms-x06-d03",
+        "speaker": "Encik Rahman",
+        "ms": "Pasukan syarikat Encik Lim. Mereka lebih cepat daripada kita.",
+        "en": "Mr Lim's company team. They're faster than us."
+      },
+      {
+        "id": "ms-x06-d04",
+        "speaker": "Tanaka",
+        "ms": "Betul-betul? Tetapi pasukan kita lebih bagus!",
+        "en": "Really? But our team is better!",
+        "choices": [
+          "Betul-betul? Mereka lebih lambat daripada kita.",
+          "Betul-betul? Saya tidak pernah main catur."
+        ],
+        "choices_en": [
+          "Really? They're slower than us.",
+          "Really? I've never played chess."
+        ]
+      },
+      {
+        "id": "ms-x06-d05",
+        "speaker": "Cik Mei Ling",
+        "ms": "Tahun lepas kita kalah, lima kosong.",
+        "en": "Last year we lost, five nil."
+      },
+      {
+        "id": "ms-x06-d06",
+        "speaker": "Tanaka",
+        "ms": "Lima kosong? Pasukan kita lemah sungguh!",
+        "en": "Five nil? Our team is really weak!",
+        "choices": [
+          "Lima kosong? Pasukan kita juara!",
+          "Lima kosong? Syabas, Cik Mei Ling!"
+        ],
+        "choices_en": [
+          "Five nil? Our team is the champion!",
+          "Five nil? Well done, Ms Mei Ling!"
+        ]
+      },
+      {
+        "id": "ms-x06-d07",
+        "speaker": "Encik Rahman",
+        "ms": "Ya, tetapi tahun ini kita ada latihan setiap minggu.",
+        "en": "Yes, but this year we practise every week."
+      },
+      {
+        "id": "ms-x06-d08",
+        "speaker": "Cik Mei Ling",
+        "ms": "Encik Tanaka pun boleh main. Encik lari lebih cepat daripada Encik Rahman!",
+        "en": "You can play too, Mr Tanaka. You run faster than Mr Rahman!"
+      },
+      {
+        "id": "ms-x06-d09",
+        "speaker": "Encik Rahman",
+        "ms": "Betul! Saya paling lambat.",
+        "en": "True! I'm the slowest."
+      },
+      {
+        "id": "ms-x06-d10",
+        "speaker": "(Narrator)",
+        "ms": "Selepas pertandingan.",
+        "en": "After the match."
+      },
+      {
+        "id": "ms-x06-d11",
+        "speaker": "Cik Mei Ling",
+        "ms": "Syabas! Kita menang, tiga dua!",
+        "en": "Well done! We won, three two!"
+      },
+      {
+        "id": "ms-x06-d12",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih! Pasukan kita betul-betul bagus.",
+        "en": "Thank you! Our team is really good.",
+        "choices": [
+          "Terima kasih! Kita kalah lima kosong.",
+          "Maaf, saya lambat. Pertandingan mula pukul berapa?"
+        ],
+        "choices_en": [
+          "Thank you! We lost five nil.",
+          "Sorry I'm late. What time does the match start?"
+        ]
+      },
+      {
+        "id": "ms-x06-d13",
+        "speaker": "Encik Rahman",
+        "ms": "Beza skor satu sahaja, tetapi kita menang!",
+        "en": "Only one goal in it, but we won!"
+      },
+      {
+        "id": "ms-x06-d14",
+        "speaker": "Tanaka",
+        "ms": "Ya! Tahun depan pun kita menang.",
+        "en": "Yes! Next year we'll win too."
+      }
+    ]
+  },
+  "cari": {
+    "scene": "sukan-badminton",
+    "core": [
+      "ms-d-sukan-badminton-01",
+      "ms-d-sukan-badminton-03",
+      "ms-d-sukan-badminton-07",
+      "ms-d-sukan-badminton-13"
+    ]
+  }
+}

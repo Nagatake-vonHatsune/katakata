@@ -60,24 +60,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-34",
-      "lang": "ms",
-      "term": "betul-betul",
-      "gloss_en": "really, truly; exactly",
-      "gloss_ja": "本当に、まさに",
-      "pos": "adv",
-      "affix_tag": "lex",
-      "note": "Hanashishou: Betul-betul selepas stesen minyak. In 13 Hanashishou scenes: Calling in sick, Checking in, Feedback on the slides, Grab pickup and 9 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-feelings"
-        }
-      ],
-      "scene": "dunia-jambatan-social-feelings",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-38",
       "lang": "ms",
       "term": "sebenarnya",
