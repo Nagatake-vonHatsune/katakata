@@ -267,6 +267,22 @@ export function replyOptions(lineId: string): { prompt: ScenarioLine | null; ans
   return { prompt, answer: line, options: shuffle([right, ...wrong]), before };
 }
 
+/**
+ * The dialogue lines a reply step shows besides its prompt and answer, so every line (and its note) is shown with its own line
+ * (Sam, 17 Nov 2026, B2 answer 7): `lead` = the lines before the first reply step's prompt (shown before the prompt, in that step
+ * only); `after` = the lines that follow the answer up to the next reply step's prompt, or to the end (shown after the answer).
+ * Reply lines are the lines with wrong replies (⚡), or every line after the first (a chapter dialogue).
+ */
+export function lineContext(lineId: string): { lead: ScenarioLine[]; after: ScenarioLine[] } {
+  const { lines, index } = content.lines.get(lineId)!;
+  const stretch = lines.some((l) => l.choices?.length);
+  const replies = lines.map((l, i) => ((stretch ? !!l.choices?.length : i > 0) ? i : -1)).filter((i) => i > 0);
+  const lead = replies[0] === index ? lines.slice(0, Math.max(0, index - 1)) : [];
+  const next = replies.find((i) => i > index);
+  const after = lines.slice(index + 1, next === undefined ? lines.length : next - 1);
+  return { lead, after };
+}
+
 /** Where to put a missed item again: a few steps later, so it "comes back later in the session". */
 export function requeue(steps: Step[], index: number, step: Step): Step[] {
   if ((step as { retry?: boolean }).retry || step.kind === 'intro') return steps;

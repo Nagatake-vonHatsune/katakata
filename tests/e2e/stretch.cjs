@@ -141,6 +141,7 @@ async function play(page, hooks = {}) {
     } else if (await body.locator('.opt-reply').count()) {
       seen.reply++;
       if (seen.reply === 1 && hooks.reply) await hooks.reply();
+      if (hooks.beforeReply) await hooks.beforeReply(seen.reply);
       const key = (await body.locator('.opt-reply[data-right="1"]').innerText()).trim();
       const first = !replied.has(key);
       replied.add(key);
@@ -397,8 +398,8 @@ async function play(page, hooks = {}) {
     await p.close();
   }
 
-  // 9. Build B2: a dialogue line's usage note (⚡ 8, Sam 17 Nov 2026): «Tolong bungkus, ya.» is heard between reply steps, and its
-  // note («balut» vs «bungkus») shows in the next reply step.
+  // 9. A dialogue line's usage note (⚡ 8, Sam 17 Nov 2026): «Tolong bungkus, ya.» (line 11) is not a reply step. Build B3 (answer 7):
+  // its note shows directly under its own line, which follows the answer to line 9; the next reply step (line 13) shows no note.
   {
     const p = await ctx.newPage();
     p.on('pageerror', (e) => errors.push(e.message));
@@ -409,15 +410,23 @@ async function play(page, hooks = {}) {
     await p.reload();
     await p.waitForSelector('.stretch-screen');
     await p.locator('.stretch-outline').first().click();
-    let note = '';
+    let own = '';
+    let stray = -1;
     await play(p, {
       replied: async (i) => {
-        if (i !== 5) return;
-        note = (await p.locator('.line-note').allInnerTexts()).join(' | ');
+        if (i !== 4) return;
+        const line = p.locator('.context-line[data-line="ms-x08-d11"]');
+        own = (await line.count()) ? (await line.innerText()) : '';
+        await line.scrollIntoViewIfNeeded().catch(() => {});
         await shot(p, 'x08-line-note-kancil-light');
       },
+      beforeReply: async (i) => {
+        if (i === 5) stray = await p.locator('.step-body .line-note').count();
+      },
     });
-    assert(/Tolong bungkus/.test(note) && /balut/.test(note), `⚡ 8: the «bungkus» line's note shows in the reply step (${note.slice(0, 60)}…)`);
+    assert(/Tolong bungkus/.test(own) && /balut/.test(own) && own.indexOf('Tolong bungkus') < own.indexOf('balut'),
+      `⚡ 8: the «bungkus» note shows under its own line, after the line 9 answer (${own.replace(/\s+/g, ' ').slice(0, 80)}…)`);
+    assert(stray === 0, `⚡ 8: the next reply step (line 13) shows no line note (${stray})`);
     await p.close();
   }
 

@@ -2110,8 +2110,10 @@ button.nm-rel-cell { cursor: pointer; }
   border-radius: 0 var(--radius) var(--radius) 0;
 }
 
-.line-note-ms {
-  font-weight: 600;
+.context-line {
+  margin: 10px 0;
+  padding-top: 8px;
+  border-top: 1px dashed var(--line);
 }
 
 .reply-who {

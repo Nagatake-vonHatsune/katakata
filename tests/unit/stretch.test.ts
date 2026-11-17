@@ -20,7 +20,7 @@ import {
   stretchSoon,
   unseenStretchOpen,
 } from '../../src/core/progress';
-import { buildDialogue, buildSedia, buildStretch, buildStretchDialogue, buildToday, CARI_BOARD, distractors, replyOptions, reviewStep, stretchCari, stretchReplyIds } from '../../src/core/session';
+import { buildDialogue, buildSedia, buildStretch, buildStretchDialogue, buildToday, CARI_BOARD, distractors, lineContext, replyOptions, reviewStep, stretchCari, stretchReplyIds } from '../../src/core/session';
 import { mergeStates } from '../../src/core/savefile';
 import { newSrs, Rating, review } from '../../src/core/srs';
 import { defaultState, migrate, MOVED_CARDS, moveCards } from '../../src/core/state';
@@ -563,5 +563,29 @@ describe('the ⚡ accent (design note section 3, WCAG 2.x; gold in Rebel)', () =
       const attr = block(`:root${p}[data-theme='dark']`);
       expect([media.stretch, media['stretch-ink'], media['stretch-soft']]).toEqual([attr.stretch, attr['stretch-ink'], attr['stretch-soft']]);
     }
+  });
+});
+
+describe("Build B3: line notes (Sam's answer 7 of 17 Nov 2026)", () => {
+  it('shows a line note with its own line: lines between reply steps follow the previous answer; the first step leads with the lines before its prompt', () => {
+    const id = (n: number) => `ms-x08-d${String(n).padStart(2, '0')}`;
+    // «Tolong bungkus» (line 11, with the «balut» note) follows the answer to line 9, not the line 13 step
+    expect(lineContext(id(9)).after.map((l) => l.id)).toEqual([id(10), id(11)]);
+    expect(lineContext(id(9)).after[1].note).toMatch(/balut/);
+    expect(lineContext(id(13)).after.map((l) => l.id)).toEqual([id(14)]);
+    expect(lineContext(id(13)).lead).toEqual([]);
+    // every ⚡ dialogue line is shown in a play-through, in order: lead, prompt, answer or after (a reply line right after another
+    // reply line is also the next prompt, so it shows twice)
+    for (const x of content.stretch) {
+      const shown: string[] = [];
+      for (const r of stretchReplyIds(x.chapter)) {
+        const { lead, after } = lineContext(r);
+        const { prompt, answer } = replyOptions(r);
+        shown.push(...lead.map((l) => l.id), prompt!.id, answer.id, ...after.map((l) => l.id));
+      }
+      expect([...new Set(shown)], x.id).toEqual(x.scenario.lines.map((l) => l.id));
+    }
+    // a chapter dialogue (every line after the first is a reply step) shows no extra lines
+    for (const r of dialogueReplyIds(17)) expect(lineContext(r)).toEqual({ lead: [], after: [] });
   });
 });

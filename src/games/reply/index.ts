@@ -2,7 +2,7 @@
 // of three. Built from the Kad Kata multiple-choice pattern; no story player.
 import { content } from '../../core/content';
 import { getLang, t } from '../../core/i18n';
-import { replyOptions, type Step } from '../../core/session';
+import { lineContext, replyOptions, type Step } from '../../core/session';
 import type { ScenarioLine } from '../../core/types';
 import { speak } from '../../core/tts';
 import { add, h } from '../../core/ui';
@@ -17,11 +17,24 @@ function split(speaker: string, ms: string): { who: string; text: string } {
   return m ? { who: m[1], text: m[2] } : { who: speaker, text: ms };
 }
 
-/** A line's usage note (⚡ dialogue), in the UI language: «line» — note. */
+/** A line's usage note (⚡ dialogue), in the UI language, shown directly under its own line. */
 function lineNote(l: ScenarioLine): HTMLElement | null {
   const note = getLang() === 'ja' && l.note_ja ? l.note_ja : l.note;
   if (!note) return null;
-  return h('p', { class: 'line-note small' }, h('span', { class: 'line-note-ms', lang: 'ms' }, `«${l.ms}»`), ' ', note);
+  return h('p', { class: 'line-note small', 'data-line': l.id }, note);
+}
+
+/** A dialogue line that is neither the prompt nor a reply (before the first reply step, or after an answer), with its note. */
+function contextLine(l: ScenarioLine): HTMLElement {
+  const s = split(l.speaker, l.ms);
+  return h(
+    'div',
+    { class: 'context-line', 'data-line': l.id },
+    h('p', { class: 'reply-line' }, h('span', { class: 'reply-who' }, s.who), ' ', h('span', { lang: 'ms' }, s.text)),
+    audioButtons(s.text),
+    h('p', { class: 'muted small' }, l.en),
+    lineNote(l),
+  );
 }
 
 function run(step: ReplyStep, ctx: GameContext): Promise<StepResult> {
@@ -29,9 +42,8 @@ function run(step: ReplyStep, ctx: GameContext): Promise<StepResult> {
   const { prompt, answer, options, before } = replyOptions(step.lineId);
   const say = prompt ? split(prompt.speaker, prompt.ms) : null;
   const who = split(answer.speaker, answer.ms);
-  // Notes on the lines heard since the previous reply step (lines between reply steps are not shown on their own), and the prompt's.
-  const last = ref.lines.slice(0, ref.index).map((l, i) => (l.choices?.length ? i : -1)).reduce((a, b) => Math.max(a, b), -1);
-  const heardNotes = ref.lines.slice(last + 1, ref.index).map(lineNote).filter(Boolean);
+  // Every line is shown once, with its own note (Sam, 17 Nov 2026): lines before the first prompt here, lines after the answer below it.
+  const { lead, after } = lineContext(step.lineId);
   return new Promise((resolve) => {
     let done = false;
     const result = h('div', { class: 'answer', 'aria-live': 'polite' });
@@ -54,6 +66,7 @@ function run(step: ReplyStep, ctx: GameContext): Promise<StepResult> {
         audioButtons(who.text),
         h('p', { class: 'muted small' }, answer.en),
         lineNote(answer),
+        ...after.map(contextLine),
         ctx.footer({ kind: 'line', id: answer.id, text: answer.ms, chapter: ref.chapter }, () => resolve({ outcome: correct ? 'correct' : 'wrong' })),
       );
     };
@@ -68,15 +81,16 @@ function run(step: ReplyStep, ctx: GameContext): Promise<StepResult> {
       ctx.body,
       before.length ? h('p', { class: 'muted small reply-so-far' }, t('reply.so_far', { n: before.length + 1 })) : null,
       ctx.dialogueScore ?? null,
+      ...lead.map(contextLine),
       say
         ? h(
             'div',
             { class: 'reply-prompt' },
             h('p', { class: 'reply-line' }, h('span', { class: 'reply-who' }, say.who), ' ', h('span', { lang: 'ms', class: 'reply-text' }, say.text)),
             audioButtons(say.text),
+            prompt!.choices?.length ? null : lineNote(prompt!),
           )
         : null,
-      ...heardNotes,
       h('p', { class: 'instruction' }, t('stretch.reply'), ' ', h('span', { class: 'muted small' }, `(${who.who})`)),
       list,
       dk,
