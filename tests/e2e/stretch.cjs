@@ -189,15 +189,17 @@ async function play(page, hooks = {}) {
   await page.waitForSelector('.sedia-row');
   const flames = await page.locator('.sedia-row .cp').evaluateAll((els) => els.slice(0, 5).map((e) => Number(e.dataset.flames)));
   assert(JSON.stringify(flames) === '[0,1,2,3,0]', `chapters 1 to 5 show 0, 1, 2, 3 and 0 flames (got ${flames})`);
-  assert((await page.locator('button.stretch-chip').count()) === 1, 'exactly one ⚡ chip button (chapter 4)');
-  assert((await page.locator('button.stretch-chip').innerText()).trim() === '4 ⚡', 'the chip reads "4 ⚡" (no stage name)');
+  // Chapter 4, and chapter LIT when it has a ⚡ pack (18, from Build B2).
+  const chips = await page.locator('button.stretch-chip').allInnerTexts();
+  const wantChips = SOON ? ['4 ⚡'] : ['4 ⚡', `${LIT} ⚡`];
+  assert(JSON.stringify(chips.map((c) => c.trim())) === JSON.stringify(wantChips), `the ⚡ chip buttons are ${wantChips.join(', ')} (no stage name; got ${chips})`);
   const marks = await page.locator('.sedia-row').nth(3).locator('.cp-mark').count();
   assert(marks === 3, 'chapter 4 has three checkpoint marks');
   const status = await page.locator('.sedia-row').nth(0).locator('.cp-status').innerText();
   assert(/^🔥 0\/3 · /.test(status), `status line for 0 flames: ${status}`);
 
   // 2. ⚡ 4 from the chip.
-  await page.locator('button.stretch-chip').click();
+  await page.locator('.sedia-row').nth(3).locator('button.stretch-chip').click();
   await page.waitForSelector('.stretch-screen');
   assert((await page.locator('.topbar-title').innerText()).trim() === '4 ⚡', 'the ⚡ screen top bar is "4 ⚡"');
   assert(await page.locator('.word-list li.known', { hasText: 'beri' }).count(), '«beri» starts known (schedule moved from its Jambatan ID)');

@@ -1,0 +1,207 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x18",
+  "chapter": 18,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Ulang Kaji Peringkat 2",
+    "en": "Stage 2 review",
+    "ja": "ステージ2の復習"
+  },
+  "cards": [],
+  "frames": [
+    {
+      "id": "ms-x18-f01",
+      "frame": "Draf itu sudah ___ oleh Cik ___ ___.",
+      "example": "Draf itu sudah disemak oleh Cik Mei Ling.",
+      "meaning_en": "The draft has already been checked by Ms Mei Ling.",
+      "meaning_ja": "その下書きはもうメイリンさんがチェックしました。",
+      "decoys": [
+        "menyemak"
+      ]
+    },
+    {
+      "id": "ms-x18-f02",
+      "frame": "Juruteknik itu sedang ___ paip di ___.",
+      "example": "Juruteknik itu sedang membaiki paip di dapur.",
+      "meaning_en": "The technician is repairing the pipe in the kitchen.",
+      "meaning_ja": "技術者が台所の管を修理しています。",
+      "decoys": [
+        "baiki"
+      ]
+    },
+    {
+      "id": "ms-x18-f03",
+      "frame": "Bilik ini lebih ___ ___ bilik saya.",
+      "example": "Bilik ini lebih luas daripada bilik saya.",
+      "meaning_en": "This room is more spacious than my room.",
+      "meaning_ja": "この部屋は私の部屋より広いです。",
+      "decoys": [
+        "dari"
+      ]
+    },
+    {
+      "id": "ms-x18-f04",
+      "frame": "Saya ___ kunci, jadi saya ___ masuk rumah.",
+      "example": "Saya tertinggal kunci, jadi saya belum masuk rumah.",
+      "meaning_en": "I left my key behind, so I haven't got into the house yet.",
+      "meaning_ja": "鍵を置き忘れたので、まだ家に入れていません。",
+      "decoys": [
+        "sudah"
+      ]
+    },
+    {
+      "id": "ms-x18-f05",
+      "frame": "Anak saya ___ di Shah Alam sejak tahun ___.",
+      "example": "Anak saya bersekolah di Shah Alam sejak tahun lepas.",
+      "meaning_en": "My child has been at school in Shah Alam since last year.",
+      "meaning_ja": "子どもは去年からシャー・アラムの学校に通っています。",
+      "decoys": [
+        "sekolah"
+      ]
+    },
+    {
+      "id": "ms-x18-f06",
+      "frame": "Tolong ___ fail yang ada di atas ___.",
+      "example": "Tolong ambilkan fail yang ada di atas meja.",
+      "meaning_en": "Please get me the file that's on the table.",
+      "meaning_ja": "机の上にあるファイルを取ってください。",
+      "decoys": [
+        "mengambil"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "One year in Malaysia",
+    "title_ja": "マレーシアでの一年",
+    "lines": [
+      {
+        "id": "ms-x18-d01",
+        "speaker": "Encik Rahman",
+        "ms": "Encik Tanaka, sudah satu tahun Encik bekerja di syarikat kita!",
+        "en": "Mr Tanaka, you've been working at our company for a year now!"
+      },
+      {
+        "id": "ms-x18-d02",
+        "speaker": "Tanaka",
+        "ms": "Betul! Satu tahun itu cepat sekali.",
+        "en": "That's right! The year went by so fast.",
+        "choices": [
+          "Betul! Saya akan bekerja di sini semalam.",
+          "Belum! Saya sedang berpindah ke Osaka tahun lepas."
+        ],
+        "choices_en": [
+          "That's right! I will work here yesterday.",
+          "Not yet! I am moving to Osaka last year."
+        ]
+      },
+      {
+        "id": "ms-x18-d03",
+        "speaker": "Encik Rahman",
+        "ms": "Apa yang paling susah?",
+        "en": "What was the hardest thing?"
+      },
+      {
+        "id": "ms-x18-d04",
+        "speaker": "Tanaka",
+        "ms": "Bahasa Melayu! Tetapi sekarang saya lebih faham daripada dulu.",
+        "en": "Malay! But now I understand more than before.",
+        "choices": [
+          "Bahasa Melayu! Tetapi sekarang saya setinggi bahasa Melayu.",
+          "Makanan! Saya tidak pernah makan di Malaysia."
+        ],
+        "choices_en": [
+          "Malay! But now I'm as tall as Malay.",
+          "The food! I've never eaten in Malaysia."
+        ]
+      },
+      {
+        "id": "ms-x18-d05",
+        "speaker": "Encik Rahman",
+        "ms": "Ingat hari pertama Encik? Encik tertinggal pasport di dalam teksi!",
+        "en": "Remember your first day? You left your passport in a taxi!"
+      },
+      {
+        "id": "ms-x18-d06",
+        "speaker": "Tanaka",
+        "ms": "Ya! Pasport itu dihantar ke pejabat oleh pemandu teksi.",
+        "en": "Yes! The taxi driver brought the passport to the office."
+      },
+      {
+        "id": "ms-x18-d07",
+        "speaker": "Encik Rahman",
+        "ms": "Pemandu itu sangat baik. Dia tidak minta duit pun.",
+        "en": "That driver was very kind. He didn't even ask for money."
+      },
+      {
+        "id": "ms-x18-d08",
+        "speaker": "Tanaka",
+        "ms": "Saya juga ingat Puan Siti. Dia yang jemput saya ke rumahnya pada hari Ahad pertama.",
+        "en": "I also remember Mrs Siti. She was the one who invited me to her home on my first Sunday.",
+        "choices": [
+          "Saya juga ingat Puan Siti. Dia dijemput saya ke rumahnya.",
+          "Saya juga ingat Puan Siti. Saya yang jemput dia ke Osaka semalam."
+        ],
+        "choices_en": [
+          "I also remember Mrs Siti. She was invited me to her home.",
+          "I also remember Mrs Siti. I was the one who invited her to Osaka yesterday."
+        ]
+      },
+      {
+        "id": "ms-x18-d09",
+        "speaker": "Encik Rahman",
+        "ms": "Bagaimana hidup Encik di sini sekarang?",
+        "en": "How's life here for you now?"
+      },
+      {
+        "id": "ms-x18-d10",
+        "speaker": "Tanaka",
+        "ms": "Seronok! Saya bersukan setiap minggu, dan saya sedang belajar memasak.",
+        "en": "Great! I do sport every week, and I'm learning to cook.",
+        "choices": [
+          "Seronok! Tetapi saya sudah sedang akan belajar memasak.",
+          "Seronok! Saya bersukan setiap minggu, tetapi saya tidak suka bersenam."
+        ],
+        "choices_en": [
+          "Great! But I already am will learn to cook.",
+          "Great! I do sport every week, but I don't like exercising."
+        ]
+      },
+      {
+        "id": "ms-x18-d11",
+        "speaker": "Encik Rahman",
+        "ms": "Bagus. Tahun depan, syarikat mahu hantar Encik ke pejabat kita di Ipoh. Encik sudi?",
+        "en": "Good. Next year the company would like to send you to our office in Ipoh. Would you be willing?"
+      },
+      {
+        "id": "ms-x18-d12",
+        "speaker": "Tanaka",
+        "ms": "Saya sudi, tetapi saya mesti tanya isteri saya dulu.",
+        "en": "I'd be glad to, but I have to ask my wife first.",
+        "choices": [
+          "Lain kali, ya? Saya mahu pergi sekarang.",
+          "Saya sudi, tetapi Ipoh lebih jauh daripada bulan."
+        ],
+        "choices_en": [
+          "Another time? I want to go now.",
+          "I'd be glad to, but Ipoh is further than the moon."
+        ]
+      },
+      {
+        "id": "ms-x18-d13",
+        "speaker": "Encik Rahman",
+        "ms": "Tidak mengapa. Beritahu saya minggu depan, ya.",
+        "en": "That's all right. Let me know next week."
+      },
+      {
+        "id": "ms-x18-d14",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih banyak, Encik. Satu tahun ini sangat seronok.",
+        "en": "Thank you very much. This year has been great fun."
+      }
+    ]
+  }
+}

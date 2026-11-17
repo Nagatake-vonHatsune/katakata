@@ -337,6 +337,52 @@ describe("Build B2: Sam's fixes to the B1 packs (17 Nov 2026)", () => {
     expect(l.note).toMatch(/«balut».*«bungkus»/);
     expect(l.note_ja).toMatch(/balut/);
   });
+  it('«terbaru» and «tertinggi» are ⚡ 6 words (ter- superlatives since the rules of 17 Nov), «belon» a ⚡ 9 word, each used in its dialogue', () => {
+    for (const [n, w] of [[6, 'terbaru'], [6, 'tertinggi'], [9, 'belon']] as const) {
+      expect(pack(n).cards.some((c) => c.term === w), w).toBe(true);
+      expect(pack(n).scenario.lines.some((l) => new RegExp(`\\b${w}\\b`).test(l.ms)), w).toBe(true);
+    }
+    expect(content.stretch.find((x) => x.chapter === 16)!.cards.some((c) => /^ter(baru|tinggi)$/.test(c.term))).toBe(false);
+    // «takkan» and «bisnes» are left out of ⚡ 17 (no row, no card): their standard partners cannot be taught before them.
+    expect(pack(17).cards.some((c) => c.term === 'takkan' || c.term === 'bisnes')).toBe(false);
+  });
+});
+
+describe('⚡ 18 (Build B2): a harder review with no new words', () => {
+  const x18 = content.stretch.find((x) => x.chapter === 18)!;
+  it('has no extension cards, 6 frames with decoys, a 12 to 14 line dialogue with 5 reply steps, and no Cari Benda', () => {
+    expect(x18.cards).toHaveLength(0);
+    expect(x18.frames).toHaveLength(6);
+    expect(x18.scenario.lines.length).toBeGreaterThanOrEqual(12);
+    expect(x18.scenario.lines.length).toBeLessThanOrEqual(14);
+    expect(stretchReplyIds(18)).toHaveLength(5);
+    expect(x18.cari).toBeUndefined();
+  });
+  it('opens when both chapter 18 flames are lit: a real ⚡ chip, not "⚡ soon"', () => {
+    expect(checkpoints(18, finished(18))).toHaveLength(2);
+    expect(stretchOpen(18, finished(18))).toBe(true);
+    expect(stretchSoon(18, finished(18))).toBe(false);
+    expect(stretchOpen(18, defaultState())).toBe(false);
+  });
+  it('is done (the stretch stamp) when every ⚡ frame is built and the ⚡ dialogue is at 60 %, with no cards to know', () => {
+    const s = finished(18);
+    expect(stretchProgress(18, s)).toMatchObject({ known: 0, total: 0, framesBuilt: 0, framesTotal: 6, done: false });
+    for (const f of x18.frames.slice(0, 5)) s.frames[f.id] = { tries: 1, correct: 1 };
+    recordDialogue(s, 'x18', 5, 5);
+    expect(stretchProgress(18, s).done).toBe(false); // one frame still to build
+    s.frames[x18.frames[5].id] = { tries: 2, correct: 1 };
+    expect(stretchProgress(18, s).done).toBe(true);
+    const low = finished(18);
+    for (const f of x18.frames) low.frames[f.id] = { tries: 1, correct: 1 };
+    recordDialogue(low, 'x18', 2, 5);
+    expect(stretchProgress(18, low).done).toBe(false); // 2 of 5 is under 60 %
+    recordDialogue(low, 'x18', 3, 5);
+    expect(stretchProgress(18, low).done).toBe(true);
+  });
+  it('a ⚡ 18 run has no intro or card steps: two frames and three replies', () => {
+    const run = buildStretch(18, finished(18));
+    expect(run.steps.map((st) => st.kind)).toEqual(['susun', 'susun', 'reply', 'reply', 'reply']);
+  });
 });
 
 describe('migrate (schemaVersion stays 1)', () => {

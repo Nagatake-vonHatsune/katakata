@@ -101,9 +101,11 @@ export function stretchChip(chapter: number, nav: StretchNav): HTMLElement | nul
   if (stretchSoon(chapter))
     return h('span', { class: 'stretch-chip stretch-soon', role: 'note', 'aria-disabled': 'true', 'aria-label': t('stretch.soon_aria', { n: chapter }), title: t('stretch.soon_aria', { n: chapter }) }, t('stretch.soon'));
   if (!stretchOpen(chapter)) return null;
+  // ⚡ 18 has no new words (Sam, 17 Nov 2026): a harder review, so its label says so.
+  const review = stretchPack(chapter)?.cards.length === 0;
   return h(
     'button',
-    { class: 'stretch-chip', type: 'button', 'aria-label': t('stretch.chip_aria', { n: chapter }), title: t('stretch.tip'), onclick: () => nav.go(`sedia/${chapter}/x`) },
+    { class: 'stretch-chip', type: 'button', 'aria-label': t(review ? 'stretch.chip_aria_review' : 'stretch.chip_aria', { n: chapter }), title: t(review ? 'stretch.tip_review' : 'stretch.tip'), onclick: () => nav.go(`sedia/${chapter}/x`) },
     t('stretch.chip', { n: chapter }),
   );
 }
@@ -120,6 +122,8 @@ export function renderStretch(root: HTMLElement, chapter: number, nav: StretchNa
   const started = x.cards.some((c) => state.srs[srsKey(c.id)]);
   const pct = p.total + p.framesTotal ? Math.round(((p.known + p.framesBuilt) / (p.total + p.framesTotal)) * 100) : 0;
   const replies = stretchReplyIds(chapter);
+  // A ⚡ stage with no extension cards (⚡ 18, a harder review): no word list, and the bar counts the patterns only.
+  const review = x.cards.length === 0;
   mount(
     root,
     h(
@@ -130,16 +134,16 @@ export function renderStretch(root: HTMLElement, chapter: number, nav: StretchNa
         'div',
         { class: 'stretch-band' },
         h('h2', { lang: 'ms' }, ch.title.ms),
-        h('p', { class: 'small' }, t('stretch.tip')),
+        h('p', { class: 'small' }, t(review ? 'stretch.tip_review' : 'stretch.tip')),
         h(
           'div',
           { class: 'stretch-progress' },
           h(
             'div',
-            { class: 'stretch-bar', role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': String(p.total + p.framesTotal), 'aria-valuenow': String(p.known + p.framesBuilt), 'aria-label': t('stretch.bar', { a: p.known, b: p.total, c: p.framesBuilt, d: p.framesTotal }) },
+            { class: 'stretch-bar', role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': String(p.total + p.framesTotal), 'aria-valuenow': String(p.known + p.framesBuilt), 'aria-label': t(review ? 'stretch.bar_review' : 'stretch.bar', { a: p.known, b: p.total, c: p.framesBuilt, d: p.framesTotal }) },
             h('div', { class: 'stretch-bar-fill', style: `width:${pct}%` }),
           ),
-          h('span', { class: 'small stretch-count' }, `${p.known}/${p.total} · ${p.framesBuilt}/${p.framesTotal}`, p.done ? ` · ${t('stretch.done')}` : ''),
+          h('span', { class: 'small stretch-count' }, review ? `${p.framesBuilt}/${p.framesTotal}` : `${p.known}/${p.total} · ${p.framesBuilt}/${p.framesTotal}`, p.done ? ` · ${t('stretch.done')}` : ''),
         ),
       ),
       open
@@ -160,7 +164,9 @@ export function renderStretch(root: HTMLElement, chapter: number, nav: StretchNa
             button(t('stretch.play_dialogue'), () => nav.run(buildStretchDialogue(chapter)), 'btn btn-ghost btn-wide stretch-outline'),
           )
         : null,
-      h(
+      review
+        ? null
+        : h(
         'section',
         { class: 'card-box' },
         h('h3', null, t('stretch.words', { n: x.cards.length })),

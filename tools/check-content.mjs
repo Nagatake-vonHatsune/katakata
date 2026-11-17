@@ -44,7 +44,9 @@ for (const file of walk(contentDir)) {
 for (const p of packs) {
   if (p.cards.length) continue;
   const review = p.kind === 'kelas' && p.sedia_kelas?.cards?.length && p.frames?.length && p.scenario?.lines?.length;
-  if (!review) errors.push(`${p._file}: no cards (only a Kelas review chapter may have none)`);
+  // ⚡ 18 (Build B2, Sam 17 Nov 2026): the review chapter's ⚡ stage has no new words, only harder frames and a longer dialogue.
+  const stretchReview = p.kind === 'stretch' && p.chapter === 18 && p.frames?.length && p.scenario?.lines?.length;
+  if (!review && !stretchReview) errors.push(`${p._file}: no cards (only a Kelas review chapter or ⚡ 18 may have none)`);
 }
 
 // IDs unique across all packs
