@@ -114,24 +114,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-29",
-      "lang": "ms",
-      "term": "sesuatu",
-      "gloss_en": "something",
-      "gloss_ja": "何か、あるもの",
-      "pos": "pron",
-      "affix_tag": "se-",
-      "note": "Hanashishou: Semua orang buat sesuatu. In 19 Hanashishou scenes: Feedback on the slides, How to play, Karaoke night, Lift chat and 15 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-talk"
-        }
-      ],
-      "scene": "dunia-jambatan-social-talk",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-47",
       "lang": "ms",
       "term": "sahkan",

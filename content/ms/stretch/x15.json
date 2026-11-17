@@ -1,0 +1,455 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x15",
+  "chapter": 15,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Memerihalkan: yang",
+    "en": "Describing with yang",
+    "ja": "yang で特徴を言う"
+  },
+  "cards": [
+    {
+      "id": "ms-x15-001",
+      "lang": "ms",
+      "term": "sesuatu",
+      "gloss_en": "something",
+      "gloss_ja": "何か、あるもの",
+      "pos": "pron",
+      "affix_tag": "se-",
+      "note": "Something (a whole word): «Ada sesuatu yang saya perlu tahu?» = Is there something I need to know?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x15"
+        }
+      ],
+      "scene": "stretch-x15",
+      "chapter": 15,
+      "note_ja": "何か（一語）：«Ada sesuatu yang saya perlu tahu?»＝知っておくべきことはありますか。"
+    },
+    {
+      "id": "ms-x15-002",
+      "lang": "ms",
+      "term": "apa-apa",
+      "gloss_en": "anything; (not) anything",
+      "gloss_ja": "何か、何でも、何も（否定）",
+      "pos": "pron",
+      "affix_tag": "lex",
+      "note": "Anything; with a negative, nothing: «apa-apa soalan» = any questions; «tidak … apa-apa» = nothing.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x15"
+        }
+      ],
+      "scene": "stretch-x15",
+      "chapter": 15,
+      "note_ja": "何でも；否定で「何も〜ない」：«apa-apa soalan»＝何か質問；«tidak … apa-apa»＝何も〜ない。"
+    },
+    {
+      "id": "ms-x15-003",
+      "lang": "ms",
+      "term": "kecuali",
+      "gloss_en": "except",
+      "gloss_ja": "〜を除いて",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": "Except: «semua orang, kecuali pengurus» = everyone except the manager.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x15"
+        }
+      ],
+      "scene": "stretch-x15",
+      "chapter": 15,
+      "note_ja": "〜を除いて：«semua orang, kecuali pengurus»＝マネージャー以外の全員。"
+    },
+    {
+      "id": "ms-x15-004",
+      "lang": "ms",
+      "term": "seseorang",
+      "gloss_en": "someone",
+      "gloss_ja": "ある人、誰か",
+      "pos": "pron",
+      "affix_tag": "se-",
+      "note": "Someone: «Saya mencari seseorang yang …» = I'm looking for someone who …",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x15"
+        }
+      ],
+      "scene": "stretch-x15",
+      "chapter": 15,
+      "note_ja": "誰か：«Saya mencari seseorang yang …»＝〜する人を探しています。"
+    },
+    {
+      "id": "ms-x15-005",
+      "lang": "ms",
+      "term": "sesiapa",
+      "gloss_en": "anyone",
+      "gloss_ja": "誰でも、誰か",
+      "pos": "pron",
+      "affix_tag": "se-",
+      "note": "Anyone; with a negative, no one: «Ada sesiapa …?» = Is there anyone …? «Jangan beritahu sesiapa.» = Don't tell anyone.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x15"
+        }
+      ],
+      "scene": "stretch-x15",
+      "chapter": 15,
+      "note_ja": "誰でも；否定で「誰も〜ない」：«Ada sesiapa …?»＝誰か〜いますか。«Jangan beritahu sesiapa.»＝誰にも言わないで。"
+    },
+    {
+      "id": "ms-x15-006",
+      "lang": "ms",
+      "term": "tegas",
+      "gloss_en": "firm, strict",
+      "gloss_ja": "厳しい、きっぱりした",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Firm, strict (in a fair way): «Dia tegas, tetapi baik.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x15"
+        }
+      ],
+      "scene": "stretch-x15",
+      "chapter": 15,
+      "note_ja": "厳格な、きっぱりした：«Dia tegas, tetapi baik.»＝厳しいけど、いい人です。"
+    },
+    {
+      "id": "ms-x15-007",
+      "lang": "ms",
+      "term": "garang",
+      "gloss_en": "fierce, stern",
+      "gloss_ja": "怖い、厳しい（人・動物が）",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Fierce, stern, bad-tempered: «Orang kata dia garang.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x15"
+        }
+      ],
+      "scene": "stretch-x15",
+      "chapter": 15,
+      "note_ja": "こわい、気性が荒い：«Orang kata dia garang.»＝こわい人だそうです。"
+    },
+    {
+      "id": "ms-x15-008",
+      "lang": "ms",
+      "term": "gergasi",
+      "gloss_en": "giant",
+      "gloss_ja": "巨大な",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Giant, huge: «beg gergasi» = a giant bag.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x15"
+        }
+      ],
+      "scene": "stretch-x15",
+      "chapter": 15,
+      "note_ja": "巨大な、巨人：«beg gergasi»＝巨大なかばん。"
+    },
+    {
+      "id": "ms-x15-009",
+      "lang": "ms",
+      "term": "kasar",
+      "gloss_en": "rude; rough",
+      "gloss_ja": "失礼な、乱暴な；粗い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Rude; rough: «Dia tidak kasar.» = He isn't rude.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x15"
+        }
+      ],
+      "scene": "stretch-x15",
+      "chapter": 15,
+      "note_ja": "失礼な、乱暴な；ざらざらした：«Dia tidak kasar.»＝彼は失礼な人ではない。"
+    },
+    {
+      "id": "ms-x15-010",
+      "lang": "ms",
+      "term": "kejam",
+      "gloss_en": "cruel",
+      "gloss_ja": "ひどい、残酷な",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Cruel.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x15"
+        }
+      ],
+      "scene": "stretch-x15",
+      "chapter": 15,
+      "note_ja": "残酷な、ひどい。"
+    },
+    {
+      "id": "ms-x15-011",
+      "lang": "ms",
+      "term": "mana-mana",
+      "gloss_en": "anywhere, any",
+      "gloss_ja": "どこでも、どれでも",
+      "pos": "det",
+      "affix_tag": "lex",
+      "note": "Any, anywhere (a whole word): «di mana-mana tempat» = in any place.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x15"
+        }
+      ],
+      "scene": "stretch-x15",
+      "chapter": 15,
+      "note_ja": "どこでも、どれでも（一語）：«di mana-mana tempat»＝どこでも。"
+    },
+    {
+      "id": "ms-x15-012",
+      "lang": "ms",
+      "term": "pelik",
+      "gloss_en": "strange, odd",
+      "gloss_ja": "変な、奇妙な",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Strange, odd: «Pelik!» = How strange!",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x15"
+        }
+      ],
+      "scene": "stretch-x15",
+      "chapter": 15,
+      "note_ja": "変な、不思議な：«Pelik!»＝変なの！"
+    },
+    {
+      "id": "ms-x15-013",
+      "lang": "ms",
+      "term": "satu-satunya",
+      "gloss_en": "the only one",
+      "gloss_ja": "唯一の",
+      "pos": "det",
+      "affix_tag": "lex",
+      "note": "The only one (a whole word): «satu-satunya dompet yang ada zip» = the only wallet with a zip.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x15"
+        }
+      ],
+      "scene": "stretch-x15",
+      "chapter": 15,
+      "note_ja": "唯一の（一語）：«satu-satunya dompet yang ada zip»＝ファスナー付きの唯一の財布。"
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-x15-f01",
+      "frame": "Ada ___ yang memakai topi ___?",
+      "example": "Ada sesiapa yang memakai topi merah?",
+      "meaning_en": "Is there anyone wearing a red hat?",
+      "meaning_ja": "赤い帽子をかぶっている人はいますか。",
+      "decoys": [
+        "siapa"
+      ]
+    },
+    {
+      "id": "ms-x15-f02",
+      "frame": "Saya mencari ___ yang boleh bercakap bahasa ___.",
+      "example": "Saya mencari seseorang yang boleh bercakap bahasa Jepun.",
+      "meaning_en": "I'm looking for someone who can speak Japanese.",
+      "meaning_ja": "日本語を話せる人を探しています。",
+      "decoys": [
+        "orang"
+      ]
+    },
+    {
+      "id": "ms-x15-f03",
+      "frame": "Semua orang datang, ___ pengurus ___.",
+      "example": "Semua orang datang, kecuali pengurus kami.",
+      "meaning_en": "Everyone came, except our manager.",
+      "meaning_ja": "マネージャー以外、みんな来ました。",
+      "decoys": [
+        "dengan"
+      ]
+    },
+    {
+      "id": "ms-x15-f04",
+      "frame": "Duduk di ___ tempat yang awak ___.",
+      "example": "Duduk di mana-mana tempat yang awak suka.",
+      "meaning_en": "Sit anywhere you like.",
+      "meaning_ja": "好きなところに座ってね。",
+      "decoys": [
+        "sini"
+      ]
+    },
+    {
+      "id": "ms-x15-f05",
+      "frame": "Ini ___ dompet yang ada ___.",
+      "example": "Ini satu-satunya dompet yang ada zip.",
+      "meaning_en": "This is the only wallet with a zip.",
+      "meaning_ja": "これがファスナー付きの唯一の財布です。",
+      "decoys": [
+        "satu"
+      ]
+    },
+    {
+      "id": "ms-x15-f06",
+      "frame": "Guru kami ___, tetapi dia tidak ___.",
+      "example": "Guru kami tegas, tetapi dia tidak garang.",
+      "meaning_en": "Our teacher is strict, but she isn't fierce.",
+      "meaning_ja": "先生は厳しいけど、こわくはありません。",
+      "decoys": [
+        "yang"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "The new manager",
+    "title_ja": "新しいマネージャー",
+    "lines": [
+      {
+        "id": "ms-x15-d01",
+        "speaker": "Cik Mei Ling",
+        "ms": "Encik Tanaka, Encik sudah jumpa pengurus baru kita?",
+        "en": "Mr Tanaka, have you met our new manager?"
+      },
+      {
+        "id": "ms-x15-d02",
+        "speaker": "Tanaka",
+        "ms": "Belum. Pengurus yang mana? Lelaki yang memakai cermin mata itu?",
+        "en": "Not yet. Which one? The man with the glasses?",
+        "choices": [
+          "Belum. Pengurus baru itu gergasi?",
+          "Sudah. Saya tidak jumpa sesiapa."
+        ],
+        "choices_en": [
+          "Not yet. Is the new manager a giant?",
+          "Yes. I didn't meet anyone."
+        ]
+      },
+      {
+        "id": "ms-x15-d03",
+        "speaker": "Cik Mei Ling",
+        "ms": "Bukan. Pengurus kita perempuan. Dia yang memakai baju berjalur.",
+        "en": "No. Our manager is a woman. She's the one in the striped top."
+      },
+      {
+        "id": "ms-x15-d04",
+        "speaker": "Tanaka",
+        "ms": "Oh, dia! Orang kata dia garang. Betulkah?",
+        "en": "Oh, her! People say she's fierce. Is that true?"
+      },
+      {
+        "id": "ms-x15-d05",
+        "speaker": "Cik Mei Ling",
+        "ms": "Tidak garang, tetapi tegas. Dia tidak suka pekerja yang datang lambat.",
+        "en": "Not fierce, but strict. She doesn't like people who come in late.",
+        "choices": [
+          "Ya. Dia kejam: dia makan kek kita setiap hari.",
+          "Tidak garang, tetapi gergasi. Tingginya tiga meter!"
+        ],
+        "choices_en": [
+          "Yes. She's cruel: she eats our cake every day.",
+          "Not fierce, but a giant. She's three metres tall!"
+        ]
+      },
+      {
+        "id": "ms-x15-d06",
+        "speaker": "Tanaka",
+        "ms": "Saya selalu datang awal, kecuali hari Isnin.",
+        "en": "I always come early, except on Mondays."
+      },
+      {
+        "id": "ms-x15-d07",
+        "speaker": "Cik Mei Ling",
+        "ms": "Kenapa hari Isnin?",
+        "en": "Why Mondays?"
+      },
+      {
+        "id": "ms-x15-d08",
+        "speaker": "Tanaka",
+        "ms": "Setiap hari Isnin saya hantar anak saya ke sekolah.",
+        "en": "Every Monday I take my child to school.",
+        "choices": [
+          "Setiap hari Isnin saya hilang di stesen.",
+          "Ya. Dia pelik: dia tidak pernah tidur."
+        ],
+        "choices_en": [
+          "Every Monday I get lost at the station.",
+          "Yes. She's odd: she never sleeps."
+        ]
+      },
+      {
+        "id": "ms-x15-d09",
+        "speaker": "Cik Mei Ling",
+        "ms": "Faham. Kalau Encik ada apa-apa soalan, tanya dia. Dia tidak kasar.",
+        "en": "I see. If you have any questions, ask her. She isn't rude."
+      },
+      {
+        "id": "ms-x15-d10",
+        "speaker": "Tanaka",
+        "ms": "Baik. Ada sesuatu yang saya perlu tahu?",
+        "en": "All right. Is there anything I need to know?"
+      },
+      {
+        "id": "ms-x15-d11",
+        "speaker": "Cik Mei Ling",
+        "ms": "Ya. Dia satu-satunya orang di pejabat yang tidak minum kopi.",
+        "en": "Yes. She's the only person in the office who doesn't drink coffee.",
+        "choices": [
+          "Ya. Dia satu-satunya orang di pejabat yang memakai kasut.",
+          "Tidak. Saya tidak jumpa sesiapa di pejabat."
+        ],
+        "choices_en": [
+          "Yes. She's the only person in the office who wears shoes.",
+          "No. I didn't meet anyone in the office."
+        ]
+      },
+      {
+        "id": "ms-x15-d12",
+        "speaker": "Tanaka",
+        "ms": "Pelik! Seseorang patut bagi dia kopi.",
+        "en": "How odd! Someone should give her a coffee."
+      },
+      {
+        "id": "ms-x15-d13",
+        "speaker": "Cik Mei Ling",
+        "ms": "Jangan! Jangan beritahu sesiapa saya cakap begini.",
+        "en": "Don't! Don't tell anyone I said this.",
+        "choices": [
+          "Baik. Saya beritahu semua orang sekarang.",
+          "Jangan! Dia satu-satunya gergasi di pejabat."
+        ],
+        "choices_en": [
+          "Fine. I'll tell everyone now.",
+          "Don't! She's the only giant in the office."
+        ]
+      },
+      {
+        "id": "ms-x15-d14",
+        "speaker": "Tanaka",
+        "ms": "Baik, saya tidak akan cakap apa-apa.",
+        "en": "All right, I won't say a thing."
+      }
+    ]
+  }
+}

@@ -1,0 +1,371 @@
+{
+ "chapter": 15,
+ "place": "Ch15 (extension)",
+ "changes": [
+  {
+   "lid": "L-1322",
+   "row": 1323,
+   "word": "sesuatu",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-29",
+     "after": "ms-x15-001"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Talking and explaining",
+     "after": "Ch15 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1324",
+   "row": 1325,
+   "word": "apa-apa",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-office-26",
+     "after": "ms-x15-002"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · At work",
+     "after": "Ch15 (extension)"
+    }
+   ]
+  }
+ ],
+ "new": [
+  {
+   "lid": "L-1768",
+   "row": 1769,
+   "values": [
+    "L-1768",
+    "kecuali",
+    "except",
+    "〜を除いて",
+    "prep",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x15-003",
+    "Ch15 (extension)",
+    "health · band 1",
+    "Yes",
+    "except",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: describing exactly (Ch15): «semua kecuali …». Hanashishou: 2 scenes; e.g. «Surat itu kata: jangan makan atau minum kecuali air selama 10 jam sebelum ujian darah.» (blood_test). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1769",
+   "row": 1770,
+   "values": [
+    "L-1769",
+    "seseorang",
+    "someone",
+    "ある人、誰か",
+    "pron",
+    "se-",
+    "seorang",
+    "Not yet checked",
+    "",
+    "ms-x15-004",
+    "Ch15 (extension)",
+    "social · band 1",
+    "Yes",
+    "someone",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: indefinites with the question-word set (Ch15); seorang Ch8 (extension). Hanashishou: 2 scenes; e.g. «boleh tak seseorang buat keputusan?» (trio_road_trip).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1770",
+   "row": 1771,
+   "values": [
+    "L-1770",
+    "sesiapa",
+    "anyone",
+    "誰でも、誰か",
+    "pron",
+    "se-",
+    "siapa",
+    "Not yet checked",
+    "",
+    "ms-x15-005",
+    "Ch15 (extension)",
+    "social · band 1",
+    "Yes",
+    "anyone",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: indefinites with the question-word set (Ch15); siapa Ch2. Hanashishou: 2 scenes; e.g. «Anda mula dengan lembut, cakap apa yang salah tanpa salahkan sesiapa, dan sebut apa yang dia pesan.» (azula_restaurant).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1771",
+   "row": 1772,
+   "values": [
+    "L-1771",
+    "tegas",
+    "firm, strict",
+    "厳しい、きっぱりした",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x15-006",
+    "Ch15 (extension)",
+    "office · band 1",
+    "Yes",
+    "firm, strict",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: describing a person (Ch15). Hanashishou: 2 scenes; e.g. «sangat tegas.» (new_joiner).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1772",
+   "row": 1773,
+   "values": [
+    "L-1772",
+    "garang",
+    "fierce, stern",
+    "怖い、厳しい（人・動物が）",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x15-007",
+    "Ch15 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "fierce, stern",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: describing a person or an animal precisely (Ch15). Hanashishou: 1 scene; e.g. «Aiyo, tak payahlah garang sangat...» (noisy_renovation).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1773",
+   "row": 1774,
+   "values": [
+    "L-1773",
+    "gergasi",
+    "giant",
+    "巨大な",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x15-008",
+    "Ch15 (extension)",
+    "social · band 1",
+    "Yes",
+    "giant",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: describing a lost item (Ch15). Hanashishou: 1 scene; e.g. «Patung durian gergasi!» (trio_road_trip).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1774",
+   "row": 1775,
+   "values": [
+    "L-1774",
+    "kasar",
+    "rude; rough",
+    "失礼な、乱暴な；粗い",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x15-009",
+    "Ch15 (extension)",
+    "social · band 1",
+    "Yes",
+    "rude; rough",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: describing a person (Ch15); scene form «kasarnya». Hanashishou: 1 scene; e.g. «Kasarnya.» (jinx_library).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1775",
+   "row": 1776,
+   "values": [
+    "L-1775",
+    "kejam",
+    "cruel",
+    "ひどい、残酷な",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x15-010",
+    "Ch15 (extension)",
+    "social · band 1",
+    "Yes",
+    "cruel",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: describing a person (Ch15); scene form «kejamnya». Hanashishou: 1 scene; e.g. «Kejamnya.» (trio_movie_night).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1776",
+   "row": 1777,
+   "values": [
+    "L-1776",
+    "mana-mana",
+    "anywhere, any",
+    "どこでも、どれでも",
+    "det",
+    "lex",
+    "mana",
+    "Not yet checked",
+    "",
+    "ms-x15-011",
+    "Ch15 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "anywhere, any",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: indefinites with the question-word set (Ch15); mana Ch2 (extension). Hanashishou: 1 scene; e.g. «Mana-mana pun boleh.» (grab_pickup).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1777",
+   "row": 1778,
+   "values": [
+    "L-1777",
+    "pelik",
+    "strange, odd",
+    "変な、奇妙な",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x15-012",
+    "Ch15 (extension)",
+    "social · band 1",
+    "Yes",
+    "strange, odd",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: describing precisely (Ch15). Hanashishou: 1 scene; e.g. «Saya nak singgah setiap benda pelik tepi jalan.» (trio_road_trip).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1778",
+   "row": 1779,
+   "values": [
+    "L-1778",
+    "satu-satunya",
+    "the only one",
+    "唯一の",
+    "det",
+    "lex",
+    "satu",
+    "Not yet checked",
+    "",
+    "ms-x15-013",
+    "Ch15 (extension)",
+    "social · band 1",
+    "Yes",
+    "the only one",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: describing precisely (Ch15): «satu-satunya orang yang …». Hanashishou: 1 scene; e.g. «Itu satu-satunya pilihan yang bijak.» (trio_movie_night).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x15-001": {
+   "lid": "L-1322",
+   "moved_from": "ms-j-social-29"
+  },
+  "ms-x15-002": {
+   "lid": "L-1324",
+   "moved_from": "ms-j-office-26"
+  },
+  "ms-x15-003": {
+   "lid": "L-1768"
+  },
+  "ms-x15-004": {
+   "lid": "L-1769"
+  },
+  "ms-x15-005": {
+   "lid": "L-1770"
+  },
+  "ms-x15-006": {
+   "lid": "L-1771"
+  },
+  "ms-x15-007": {
+   "lid": "L-1772"
+  },
+  "ms-x15-008": {
+   "lid": "L-1773"
+  },
+  "ms-x15-009": {
+   "lid": "L-1774"
+  },
+  "ms-x15-010": {
+   "lid": "L-1775"
+  },
+  "ms-x15-011": {
+   "lid": "L-1776"
+  },
+  "ms-x15-012": {
+   "lid": "L-1777"
+  },
+  "ms-x15-013": {
+   "lid": "L-1778"
+  }
+ }
+}

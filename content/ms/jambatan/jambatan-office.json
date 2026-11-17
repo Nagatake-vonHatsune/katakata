@@ -24,24 +24,6 @@
   },
   "cards": [
     {
-      "id": "ms-j-office-26",
-      "lang": "ms",
-      "term": "apa-apa",
-      "gloss_en": "anything; (not) anything",
-      "gloss_ja": "何か、何でも、何も（否定）",
-      "pos": "pron",
-      "affix_tag": "lex",
-      "note": "Hanashishou: Apa-apa saja. In 19 Hanashishou scenes: A sore throat, At the clinic, Calling in sick, Coffee with the chairperson and 15 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-office"
-        }
-      ],
-      "scene": "dunia-jambatan-office",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-office-29",
       "lang": "ms",
       "term": "latih",
