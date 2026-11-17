@@ -60,24 +60,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-office-28",
-      "lang": "ms",
-      "term": "nampak",
-      "gloss_en": "to see, spot; to look, seem",
-      "gloss_ja": "見える、見かける",
-      "pos": "verb",
-      "affix_tag": "root",
-      "note": "Hanashishou: Hai! Seminggu tak nampak awak. Apa khabar? In 17 Hanashishou scenes: Asking the way, Coffee with the chairperson, Demo day with Jinx, Feedback on the slides and 13 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-office"
-        }
-      ],
-      "scene": "dunia-jambatan-office",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-office-29",
       "lang": "ms",
       "term": "latih",

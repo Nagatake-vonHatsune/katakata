@@ -24,24 +24,6 @@
   },
   "cards": [
     {
-      "id": "ms-j-social-35",
-      "lang": "ms",
-      "term": "bunyi",
-      "gloss_en": "sound, noise",
-      "gloss_ja": "音",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Stop bunyi itu sekarang. In 13 Hanashishou scenes: A sore throat, Card blocked, Coffee with the chairperson, Demo day with Jinx and 9 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-events"
-        }
-      ],
-      "scene": "dunia-jambatan-social-events",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-41",
       "lang": "ms",
       "term": "cadang",

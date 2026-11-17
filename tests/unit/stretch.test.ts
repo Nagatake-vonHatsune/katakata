@@ -20,7 +20,7 @@ import {
   stretchSoon,
   unseenStretchOpen,
 } from '../../src/core/progress';
-import { buildDialogue, buildSedia, buildStretch, buildStretchDialogue, buildToday, distractors, replyOptions, reviewStep, stretchReplyIds } from '../../src/core/session';
+import { buildDialogue, buildSedia, buildStretch, buildStretchDialogue, buildToday, CARI_BOARD, distractors, replyOptions, reviewStep, stretchCari, stretchReplyIds } from '../../src/core/session';
 import { mergeStates } from '../../src/core/savefile';
 import { newSrs, Rating, review } from '../../src/core/srs';
 import { defaultState, migrate, MOVED_CARDS, moveCards } from '../../src/core/state';
@@ -224,6 +224,37 @@ describe('⚡ unlock', () => {
       const d = JSON.parse(readFileSync(join(root, `i18n/${l}.json`), 'utf8'));
       expect(d['stretch.soon'], l).toBe({ en: '⚡ soon', ja: '⚡ 準備中', ms: '⚡ akan datang' }[l]);
       expect(d['stretch.soon_aria'], l).toContain('{n}');
+    }
+  });
+});
+
+describe('Cari Benda ⚡', () => {
+  it('only for packs with a picture scene and four or more drawn extension nouns', () => {
+    for (const x of content.stretch.filter((p) => p.cari)) {
+      expect(x.cards.filter((c) => c.image).length, x.id).toBeGreaterThanOrEqual(4);
+      expect(content.scenes.some((sc) => sc.id === x.cari!.scene), x.id).toBe(true);
+      for (const id of x.cari!.core) expect(content.cards.get(id)?.image, id).toBeTruthy();
+    }
+  });
+  it('a board of six: the target (an extension object already met), up to two other extension objects, core objects', () => {
+    for (const x of content.stretch.filter((p) => p.cari)) {
+      expect(stretchCari(x.chapter, defaultState())).toEqual([]);
+      const s = finished(x.chapter);
+      for (const c of x.cards) s.srs[c.id] = known();
+      const rounds = stretchCari(x.chapter, s);
+      expect(rounds, x.id).toHaveLength(3);
+      const ext = new Set(x.cards.filter((c) => c.image).map((c) => c.id));
+      for (const r of rounds) {
+        if (r.kind !== 'cari') throw new Error('not a cari step');
+        expect(r.board, x.id).toHaveLength(CARI_BOARD);
+        expect(new Set(r.board).size).toBe(CARI_BOARD);
+        expect(r.board).toContain(r.cardId);
+        expect(ext.has(r.cardId)).toBe(true);
+        expect(r.board!.filter((id) => ext.has(id)).length).toBeLessThanOrEqual(3);
+        expect(r.board!.filter((id) => !ext.has(id)).every((id) => x.cari!.core.includes(id))).toBe(true);
+        expect(r.sceneId).toBe(x.cari!.scene);
+      }
+      expect(buildStretch(x.chapter, s).steps.filter((st) => st.kind === 'cari')).toHaveLength(3);
     }
   });
 });

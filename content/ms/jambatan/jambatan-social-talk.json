@@ -150,42 +150,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-30",
-      "lang": "ms",
-      "term": "tentang",
-      "gloss_en": "about, concerning",
-      "gloss_ja": "〜について",
-      "pos": "prep",
-      "affix_tag": "root",
-      "note": "Hanashishou: Ceritakan tentang diri anda. Mula. Spoken form: pasal. In 19 Hanashishou scenes: At the clinic, Calling in sick, Card blocked, Demo day with Jinx and 15 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-talk"
-        }
-      ],
-      "scene": "dunia-jambatan-social-talk",
-      "chapter": 9
-    },
-    {
-      "id": "ms-j-social-32",
-      "lang": "ms",
-      "term": "cara",
-      "gloss_en": "way, method",
-      "gloss_ja": "方法、やり方",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Cara anda bayar. In 14 Hanashishou scenes: At the clinic, Can you cover for me?, Card blocked, Grab pickup and 10 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-talk"
-        }
-      ],
-      "scene": "dunia-jambatan-social-talk",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-33",
       "lang": "ms",
       "term": "seorang",

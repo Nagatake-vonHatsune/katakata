@@ -1,0 +1,814 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x05",
+  "chapter": 5,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Kata Sifat",
+    "en": "Adjectives",
+    "ja": "形容詞"
+  },
+  "cards": [
+    {
+      "id": "ms-x05-001",
+      "lang": "ms",
+      "term": "salah",
+      "gloss_en": "wrong, mistaken; fault",
+      "gloss_ja": "間違った、間違い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Wrong, mistaken; opposite of «betul» (Ch3). «salah jawab» = to answer wrongly.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "まちがった。«betul»（第3課）の反対。«salah jawab»＝答えをまちがえる。"
+    },
+    {
+      "id": "ms-x05-002",
+      "lang": "ms",
+      "term": "tentang",
+      "gloss_en": "about, concerning",
+      "gloss_ja": "〜について",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": "About, concerning: «tentang durian» = about durians. In speech also «pasal».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "〜について：«tentang durian»＝ドリアンについて。話し言葉では «pasal» とも。"
+    },
+    {
+      "id": "ms-x05-003",
+      "lang": "ms",
+      "term": "nampak",
+      "gloss_en": "to see, spot; to look, seem",
+      "gloss_ja": "見える、見かける",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To see, spot; to look, seem: «nampak sedap» = looks delicious.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "見える；〜に見える：«nampak sedap»＝おいしそう。"
+    },
+    {
+      "id": "ms-x05-004",
+      "lang": "ms",
+      "term": "cara",
+      "gloss_en": "way, method",
+      "gloss_ja": "方法、やり方",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Way, method: «Bagaimana cara …?» = How do you …?",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "方法、やり方：«Bagaimana cara …?»＝どうやって〜するの？"
+    },
+    {
+      "id": "ms-x05-005",
+      "lang": "ms",
+      "term": "bunyi",
+      "gloss_en": "sound, noise",
+      "gloss_ja": "音",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Sound, noise. «bunyinya» = the way it sounds.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "音。«bunyinya»＝その音。"
+    },
+    {
+      "id": "ms-x05-006",
+      "lang": "ms",
+      "term": "tanpa",
+      "gloss_en": "without",
+      "gloss_ja": "〜なしで",
+      "pos": "prep",
+      "affix_tag": "root",
+      "note": "Without: «tanpa gula» = without sugar.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "〜なしで：«tanpa gula»＝砂糖なしで。"
+    },
+    {
+      "id": "ms-x05-007",
+      "lang": "ms",
+      "term": "buruk",
+      "gloss_en": "bad",
+      "gloss_ja": "悪い、ひどい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Bad (looks, smell, quality). «bau buruk» = a bad smell.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "悪い、ひどい（見た目、におい、質）。«bau buruk»＝いやなにおい。"
+    },
+    {
+      "id": "ms-x05-008",
+      "lang": "ms",
+      "term": "durian",
+      "gloss_en": "durian",
+      "gloss_ja": "ドリアン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "The king of fruits: strong smell, sweet taste.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "果物の王様。においが強く、味は甘い。"
+    },
+    {
+      "id": "ms-x05-009",
+      "lang": "ms",
+      "term": "kira-kira",
+      "gloss_en": "about, roughly",
+      "gloss_ja": "およそ、約",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "kira (Ch5), said twice: about, roughly. «kira-kira dua puluh minit» = about twenty minutes.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "kira（第5課）を2回：約、だいたい。«kira-kira dua puluh minit»＝約20分。"
+    },
+    {
+      "id": "ms-x05-010",
+      "lang": "ms",
+      "term": "malu",
+      "gloss_en": "shy, embarrassed",
+      "gloss_ja": "恥ずかしい、照れる",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Shy, embarrassed.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "恥ずかしい、照れる。"
+    },
+    {
+      "id": "ms-x05-011",
+      "lang": "ms",
+      "term": "susu",
+      "gloss_en": "milk",
+      "gloss_ja": "牛乳、ミルク",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Milk. «teh susu» = tea with milk.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "牛乳。«teh susu»＝ミルクティー。",
+      "image": "🥛"
+    },
+    {
+      "id": "ms-x05-012",
+      "lang": "ms",
+      "term": "bakar",
+      "gloss_en": "burn; grill, bake",
+      "gloss_ja": "焼く",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To grill, bake, burn. «daging bakar» = grilled meat.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "焼く。«daging bakar»＝焼き肉（あぶった肉）。"
+    },
+    {
+      "id": "ms-x05-013",
+      "lang": "ms",
+      "term": "bangga",
+      "gloss_en": "proud",
+      "gloss_ja": "誇りに思う",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Proud: «Saya bangga.» = I'm proud.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "誇らしい：«Saya bangga.»＝誇りに思います。"
+    },
+    {
+      "id": "ms-x05-014",
+      "lang": "ms",
+      "term": "bau",
+      "gloss_en": "smell",
+      "gloss_ja": "におい",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Smell. «baunya» = its smell.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "におい。«baunya»＝そのにおい。"
+    },
+    {
+      "id": "ms-x05-015",
+      "lang": "ms",
+      "term": "cendawan",
+      "gloss_en": "mushroom",
+      "gloss_ja": "きのこ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Mushroom.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "きのこ。",
+      "image": "🍄"
+    },
+    {
+      "id": "ms-x05-016",
+      "lang": "ms",
+      "term": "gula-gula",
+      "gloss_en": "sweets, candy",
+      "gloss_ja": "あめ、キャンディー",
+      "pos": "noun",
+      "affix_tag": "lex",
+      "note": "gula (Ch5), said twice: sweets, candy.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "gula（第5課）を2回：あめ、お菓子。",
+      "image": "🍬"
+    },
+    {
+      "id": "ms-x05-017",
+      "lang": "ms",
+      "term": "halia",
+      "gloss_en": "ginger",
+      "gloss_ja": "しょうが",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Ginger.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "しょうが。"
+    },
+    {
+      "id": "ms-x05-018",
+      "lang": "ms",
+      "term": "istimewa",
+      "gloss_en": "special",
+      "gloss_ja": "特別な",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Special: «hari istimewa» = a special day.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "特別な：«hari istimewa»＝特別な日。"
+    },
+    {
+      "id": "ms-x05-019",
+      "lang": "ms",
+      "term": "kacang",
+      "gloss_en": "nut, peanut, bean",
+      "gloss_ja": "ナッツ、豆",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Nut, peanut, bean. «kuah kacang» = peanut sauce (for satay).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "ナッツ、ピーナッツ、豆。«kuah kacang»＝ピーナッツソース（サテ用）。",
+      "image": "🥜"
+    },
+    {
+      "id": "ms-x05-020",
+      "lang": "ms",
+      "term": "kecewa",
+      "gloss_en": "disappointed",
+      "gloss_ja": "がっかりした",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Disappointed.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "がっかりした。"
+    },
+    {
+      "id": "ms-x05-021",
+      "lang": "ms",
+      "term": "lemon",
+      "gloss_en": "lemon",
+      "gloss_ja": "レモン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Lemon. «air lemon» = lemon drink.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "レモン。«air lemon»＝レモンの飲み物。",
+      "image": "🍋"
+    },
+    {
+      "id": "ms-x05-022",
+      "lang": "ms",
+      "term": "madu",
+      "gloss_en": "honey",
+      "gloss_ja": "はちみつ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Honey.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "はちみつ。",
+      "image": "🍯"
+    },
+    {
+      "id": "ms-x05-023",
+      "lang": "ms",
+      "term": "mee",
+      "gloss_en": "noodles",
+      "gloss_ja": "麺",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Noodles: the spelling on menus and signs («mee goreng»); the same word as «mi» (Ch5).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "麺。メニューや看板のつづり（«mee goreng»）。«mi»（第5課）と同じ語。",
+      "image": "🍜"
+    },
+    {
+      "id": "ms-x05-024",
+      "lang": "ms",
+      "term": "nanas",
+      "gloss_en": "pineapple",
+      "gloss_ja": "パイナップル",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Pineapple.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "パイナップル。",
+      "image": "🍍"
+    },
+    {
+      "id": "ms-x05-025",
+      "lang": "ms",
+      "term": "pandai",
+      "gloss_en": "clever, good at",
+      "gloss_ja": "上手な、賢い",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Clever, good at: «pandai masak» = good at cooking.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "上手な、かしこい：«pandai masak»＝料理が上手。"
+    },
+    {
+      "id": "ms-x05-026",
+      "lang": "ms",
+      "term": "pekat",
+      "gloss_en": "thick, strong (of tea)",
+      "gloss_ja": "濃い（お茶・コーヒー）",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Thick, strong (of tea or coffee): «teh pekat».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "濃い（お茶やコーヒー）：«teh pekat»。"
+    },
+    {
+      "id": "ms-x05-027",
+      "lang": "ms",
+      "term": "puas",
+      "gloss_en": "satisfied (\"tak puas hati\" = dissatisfied)",
+      "gloss_ja": "満足した（«tak puas hati» 不満）",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Satisfied: «puas makan» = to have eaten your fill.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "満足した：«puas makan»＝思う存分食べた。"
+    },
+    {
+      "id": "ms-x05-028",
+      "lang": "ms",
+      "term": "sate",
+      "gloss_en": "satay",
+      "gloss_ja": "サテ（串焼き）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Satay: grilled meat on sticks, with peanut sauce.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "サテ：串焼きの肉、ピーナッツソース付き。"
+    },
+    {
+      "id": "ms-x05-029",
+      "lang": "ms",
+      "term": "snek",
+      "gloss_en": "snack",
+      "gloss_ja": "スナック、おやつ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Snack (from English).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "スナック、軽食（英語から）。"
+    },
+    {
+      "id": "ms-x05-030",
+      "lang": "ms",
+      "term": "tauhu",
+      "gloss_en": "tofu",
+      "gloss_ja": "豆腐",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Tofu.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "豆腐。"
+    },
+    {
+      "id": "ms-x05-031",
+      "lang": "ms",
+      "term": "terang",
+      "gloss_en": "bright",
+      "gloss_ja": "明るい",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Bright: «bulan terang» = a bright moon.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x05"
+        }
+      ],
+      "scene": "stretch-x05",
+      "chapter": 5,
+      "note_ja": "明るい：«bulan terang»＝明るい月。"
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-x05-f01",
+      "frame": "Bau ___ ini ___, tetapi rasanya sedap.",
+      "example": "Bau durian ini buruk, tetapi rasanya sedap.",
+      "meaning_en": "This durian smells bad, but it tastes good.",
+      "meaning_ja": "このドリアンはにおいがひどいけど、味はおいしい。",
+      "decoys": [
+        "bunyi"
+      ]
+    },
+    {
+      "id": "ms-x05-f02",
+      "frame": "Saya minum ___ ___ tanpa ___.",
+      "example": "Saya minum kopi panas tanpa gula.",
+      "meaning_en": "I drink hot coffee without sugar.",
+      "meaning_ja": "ホットコーヒーを砂糖なしで飲みます。",
+      "decoys": [
+        "dengan"
+      ]
+    },
+    {
+      "id": "ms-x05-f03",
+      "frame": "Anak saya ___ sebab dia ___ jawab soalan itu.",
+      "example": "Anak saya malu sebab dia salah jawab soalan itu.",
+      "meaning_en": "My child is embarrassed because he answered that question wrongly.",
+      "meaning_ja": "子どもはその質問に答えをまちがえて、恥ずかしがっています。",
+      "decoys": [
+        "betul"
+      ]
+    },
+    {
+      "id": "ms-x05-f04",
+      "frame": "Bagaimana cara masak ___ ini? Goreng dengan ___ dan ___.",
+      "example": "Bagaimana cara masak mee ini? Goreng dengan bawang dan cendawan.",
+      "meaning_en": "How do you cook these noodles? Fry them with onion and mushrooms.",
+      "meaning_ja": "この麺はどうやって作るの？玉ねぎときのこと一緒に炒めます。",
+      "decoys": [
+        "tentang"
+      ]
+    },
+    {
+      "id": "ms-x05-f05",
+      "frame": "Kafe itu nampak ___, tetapi makanannya ___.",
+      "example": "Kafe itu nampak kecil, tetapi makanannya istimewa.",
+      "meaning_en": "That café looks small, but its food is special.",
+      "meaning_ja": "あのカフェは小さく見えるけど、料理は特別です。",
+      "decoys": [
+        "bunyi"
+      ]
+    },
+    {
+      "id": "ms-x05-f06",
+      "frame": "Kami tunggu kira-kira ___ ___ di ___ itu.",
+      "example": "Kami tunggu kira-kira dua puluh minit di mamak itu.",
+      "meaning_en": "We waited about twenty minutes at that mamak stall.",
+      "meaning_ja": "私たちはそのママックの店で20分ぐらい待ちました。",
+      "decoys": [
+        "kira"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "Durian night",
+    "title_ja": "ドリアンの夜",
+    "lines": [
+      {
+        "id": "ms-x05-d01",
+        "speaker": "Cik Mei Ling",
+        "ms": "Encik Tanaka, Encik pernah makan durian?",
+        "en": "Mr Tanaka, have you ever eaten durian?"
+      },
+      {
+        "id": "ms-x05-d02",
+        "speaker": "Tanaka",
+        "ms": "Belum. Saya tahu tentang durian, tetapi saya takut baunya.",
+        "en": "Not yet. I know about durian, but I'm scared of its smell.",
+        "choices": [
+          "Sudah, tetapi saya tidak tahu tentang durian.",
+          "Belum. Saya minum teh tarik setiap hari."
+        ],
+        "choices_en": [
+          "Yes, but I don't know about durian.",
+          "Not yet. I drink teh tarik every day."
+        ]
+      },
+      {
+        "id": "ms-x05-d03",
+        "speaker": "Cik Mei Ling",
+        "ms": "Baunya tidak sedap, tetapi rasanya manis dan sedap!",
+        "en": "It doesn't smell nice, but it tastes sweet and delicious!"
+      },
+      {
+        "id": "ms-x05-d04",
+        "speaker": "Tanaka",
+        "ms": "Bagaimana cara makan durian?",
+        "en": "How do you eat durian?",
+        "choices": [
+          "Kenapa Cik sedih?",
+          "Bagaimana cara masak nasi?"
+        ],
+        "choices_en": [
+          "Why are you sad?",
+          "How do you cook rice?"
+        ]
+      },
+      {
+        "id": "ms-x05-d05",
+        "speaker": "Cik Mei Ling",
+        "ms": "Ambil satu dan rasa sedikit dulu. Durian ini istimewa: kuning dan manis.",
+        "en": "Take one and have a little taste first. This durian is special: yellow and sweet."
+      },
+      {
+        "id": "ms-x05-d06",
+        "speaker": "Tanaka",
+        "ms": "Wah, sedap sekali! Manis!",
+        "en": "Wow, it's really delicious! Sweet!",
+        "choices": [
+          "Wah, masin dan pedas sekali!",
+          "Saya kenyang. Saya tidak lapar."
+        ],
+        "choices_en": [
+          "Wow, it's really salty and spicy!",
+          "I'm full. I'm not hungry."
+        ]
+      },
+      {
+        "id": "ms-x05-d07",
+        "speaker": "Cik Mei Ling",
+        "ms": "Encik pandai makan durian! Saya bangga.",
+        "en": "You're good at eating durian! I'm proud of you."
+      },
+      {
+        "id": "ms-x05-d08",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih! Sekarang saya lapar. Sate itu nampak sedap.",
+        "en": "Thank you! Now I'm hungry. That satay looks delicious."
+      },
+      {
+        "id": "ms-x05-d09",
+        "speaker": "Cik Mei Ling",
+        "ms": "Ya, sate itu istimewa: daging bakar dengan kuah kacang.",
+        "en": "Yes, that satay is special: grilled meat with peanut sauce."
+      },
+      {
+        "id": "ms-x05-d10",
+        "speaker": "Tanaka",
+        "ms": "Saya mahu sate dan mee goreng. Cik mahu minum apa?",
+        "en": "I'd like satay and fried noodles. What would you like to drink?"
+      },
+      {
+        "id": "ms-x05-d11",
+        "speaker": "Cik Mei Ling",
+        "ms": "Air lemon panas dengan madu. Tekak saya sakit.",
+        "en": "Hot lemon with honey. I have a sore throat."
+      },
+      {
+        "id": "ms-x05-d12",
+        "speaker": "Tanaka",
+        "ms": "Saya teh tarik, kurang manis tetapi pekat.",
+        "en": "I'll have teh tarik, less sweet but strong.",
+        "choices": [
+          "Tekak saya sakit. Saya mahu air sejuk dengan ais.",
+          "Saya teh tarik, tanpa teh."
+        ],
+        "choices_en": [
+          "I have a sore throat. I want a cold drink with ice.",
+          "I'll have teh tarik, without the tea."
+        ]
+      },
+      {
+        "id": "ms-x05-d13",
+        "speaker": "Cik Mei Ling",
+        "ms": "Puas makan, Encik?",
+        "en": "Have you eaten your fill?"
+      },
+      {
+        "id": "ms-x05-d14",
+        "speaker": "Tanaka",
+        "ms": "Puas! Malam ini seronok sekali. Terima kasih, Cik Mei Ling.",
+        "en": "Yes, I'm full and happy! Tonight was great fun. Thank you, Ms Mei Ling.",
+        "choices": [
+          "Tidak. Saya kecewa sebab sate itu sedap.",
+          "Belum. Saya belum pernah makan."
+        ],
+        "choices_en": [
+          "No. I'm disappointed because the satay was delicious.",
+          "Not yet. I've never eaten."
+        ]
+      }
+    ]
+  },
+  "cari": {
+    "scene": "lepak-mamak",
+    "core": [
+      "ms-d-lepak-mamak-04",
+      "ms-d-lepak-mamak-05",
+      "ms-d-lepak-mamak-06",
+      "ms-d-lepak-mamak-01"
+    ]
+  }
+}

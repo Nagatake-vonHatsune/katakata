@@ -27,8 +27,8 @@ function layout(sceneId: string, n: number): Array<{ x: number; y: number }> {
 function run(step: CariStep, ctx: GameContext): Promise<StepResult> {
   const scene = content.scenes.find((s) => s.id === step.sceneId)!;
   const target = content.cards.get(step.cardId)!;
-  const objs = cariCards(scene.id);
-  const pos = layout(scene.id, objs.length);
+  const objs = step.board ? step.board.map((id) => content.cards.get(id)!).filter(Boolean) : cariCards(scene.id);
+  const pos = layout(step.board ? `${scene.id}-x` : scene.id, objs.length);
   const noVoice = state.profile.voice === 'none';
   return new Promise((resolve) => {
     let done = false;

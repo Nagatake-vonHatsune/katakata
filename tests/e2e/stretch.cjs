@@ -130,6 +130,12 @@ async function play(page, hooks = {}) {
       } else {
         await body.getByRole('button', { name: 'わからない' }).click();
       }
+    } else if (await body.locator('.cari-obj').count()) {
+      seen.cari = (seen.cari ?? 0) + 1;
+      if (seen.cari === 1 && hooks.cari) await hooks.cari();
+      const term = (await body.locator('.cari-word').innerText()).trim();
+      const card = [...allCards.values()].find((c) => c.term === term && c.image);
+      await body.locator(card ? `.cari-obj[data-id="${card.id}"]` : '.cari-obj').first().click();
     } else if (await body.locator('.opt-reply').count()) {
       seen.reply++;
       if (seen.reply === 1 && hooks.reply) await hooks.reply();
@@ -305,6 +311,24 @@ async function play(page, hooks = {}) {
       assert((await p.locator('.btn-stretch').count()) === 1, `⚡ ${x.chapter} opens from its flames`);
       await shot(p, `x${String(x.chapter).padStart(2, '0')}-screen-kancil-light`, true);
     }
+    await p.close();
+  }
+
+  // 7. Cari Benda ⚡: a ⚡ run of a chapter with a picture board ends with three rounds on a board of six.
+  for (const x of stretch.filter((p) => p.cari)) {
+    const p = await ctx.newPage();
+    p.on('pageerror', (e) => errors.push(e.message));
+    const st = seededState();
+    st.stamps.push(stamp('ready', x.chapter), stamp('dialogue', x.chapter), stamp('chapter', x.chapter));
+    for (const c of x.cards) st.srs[c.id] = known();
+    await seed(p, st);
+    await p.goto(BASE + `#/sedia/${x.chapter}/x`);
+    await p.reload();
+    await p.waitForSelector('.stretch-screen');
+    await p.locator('.btn-stretch').click();
+    let board = 0;
+    const r = await play(p, { cari: async () => { board = await p.locator('.cari-obj').count(); await shot(p, `x${String(x.chapter).padStart(2, '0')}-cari-kancil-light`); } });
+    assert(r.cari === 3 && board === 6, `⚡ ${x.chapter}: three Cari Benda rounds on a board of six (${r.cari}, ${board})`);
     await p.close();
   }
 

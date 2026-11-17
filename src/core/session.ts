@@ -11,7 +11,8 @@ export type Step =
   | { kind: 'mc'; cardId: string; dir: 'ms2x' | 'x2ms'; retry?: boolean }
   | { kind: 'recall'; cardId: string; retry?: boolean }
   | { kind: 'susun'; frameId: string; retry?: boolean }
-  | { kind: 'cari'; sceneId: string; cardId: string; retry?: boolean }
+  /** board: a fixed set of objects (Cari Benda ⚡: six, extension and core objects mixed); otherwise the scene's drawn objects. */
+  | { kind: 'cari'; sceneId: string; cardId: string; board?: string[]; retry?: boolean }
   /** Hear a dialogue line, choose the best reply of three (the reply is line `lineId`; the prompt is the line before it). */
   | { kind: 'reply'; lineId: string; retry?: boolean };
 
@@ -205,7 +206,29 @@ export function buildStretch(chapter: number, s: AppState = state, now = new Dat
     .slice(0, 3)
     .sort((a, b) => order.indexOf(a) - order.indexOf(b));
   steps.push(...replies.map((lineId) => ({ kind: 'reply' as const, lineId })));
+  steps.push(...stretchCari(chapter, s, unseen));
   return { kind: 'stretch', chapter, steps };
+}
+
+/** Objects on a Cari Benda ⚡ board. */
+export const CARI_BOARD = 6;
+
+/**
+ * Cari Benda ⚡: up to three rounds, each asking for an extension object the learner has met (or meets earlier in this run), on a
+ * board of six: the target, up to two other extension objects and core objects of the chapter's picture scene.
+ */
+export function stretchCari(chapter: number, s: AppState = state, introduced: string[] = [], rounds = 3): Step[] {
+  const x = stretchPack(chapter);
+  if (!x?.cari) return [];
+  const met = new Set([...Object.keys(s.srs), ...introduced]);
+  const drawn = x.cards.filter((c) => c.image);
+  const core = x.cari.core.filter((id) => content.cards.get(id)?.image);
+  const targets = shuffle(drawn.filter((c) => met.has(srsKey(c.id)))).slice(0, rounds);
+  return targets.map((target) => {
+    const others = shuffle(drawn.filter((c) => c.id !== target.id)).slice(0, 2).map((c) => c.id);
+    const fill = shuffle(core).slice(0, CARI_BOARD - 1 - others.length);
+    return { kind: 'cari' as const, sceneId: x.cari!.scene, cardId: target.id, board: shuffle([target.id, ...others, ...fill]) };
+  });
 }
 
 /** The whole ⚡ dialogue: every reply line in order. */

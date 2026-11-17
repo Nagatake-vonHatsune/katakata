@@ -1,0 +1,861 @@
+{
+ "chapter": 5,
+ "place": "Ch5 (extension)",
+ "changes": [
+  {
+   "lid": "L-1319",
+   "row": 1320,
+   "word": "salah",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-27",
+     "after": "ms-x05-001"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Feelings and opinions",
+     "after": "Ch5 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1323",
+   "row": 1324,
+   "word": "tentang",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-30",
+     "after": "ms-x05-002"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Talking and explaining",
+     "after": "Ch5 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1327",
+   "row": 1328,
+   "word": "nampak",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-office-28",
+     "after": "ms-x05-003"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · At work",
+     "after": "Ch5 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1332",
+   "row": 1333,
+   "word": "cara",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-32",
+     "after": "ms-x05-004"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Talking and explaining",
+     "after": "Ch5 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1344",
+   "row": 1345,
+   "word": "bunyi",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-35",
+     "after": "ms-x05-005"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Events and outings",
+     "after": "Ch5 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1364",
+   "row": 1365,
+   "word": "tanpa",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-daily-life-45",
+     "after": "ms-x05-006"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Daily life",
+     "after": "Ch5 (extension)"
+    }
+   ]
+  }
+ ],
+ "new": [
+  {
+   "lid": "L-1533",
+   "row": 1534,
+   "values": [
+    "L-1533",
+    "buruk",
+    "bad",
+    "悪い、ひどい",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-007",
+    "Ch5 (extension)",
+    "office · band 1",
+    "Yes",
+    "bad",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: describing things and feelings (Ch5); opposite of «baik» (Ch1). Hanashishou: 2 scenes; e.g. «Tak, baju ni buruk.» (pantry_banter).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1534",
+   "row": 1535,
+   "values": [
+    "L-1534",
+    "durian",
+    "durian",
+    "ドリアン",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-008",
+    "Ch5 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "durian",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: food (Ch5). Hanashishou: 2 scenes; e.g. «Lepas itu, parti durian di Tingkat 5 minggu lepas!» (lift_chat).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1535",
+   "row": 1536,
+   "values": [
+    "L-1535",
+    "kira-kira",
+    "about, roughly",
+    "およそ、約",
+    "adv",
+    "lex",
+    "kira",
+    "Not yet checked",
+    "",
+    "ms-x05-009",
+    "Ch5 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "about, roughly",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: prices and amounts (Ch5): \"kira-kira RM45\"; kira is Ch5, so not earlier. Hanashishou: 2 scenes; e.g. «Pos udara kira-kira seminggu, RM98.» (post_parcel).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1536",
+   "row": 1537,
+   "values": [
+    "L-1536",
+    "malu",
+    "shy, embarrassed",
+    "恥ずかしい、照れる",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-010",
+    "Ch5 (extension)",
+    "office · band 1",
+    "Yes",
+    "shy, embarrassed",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: feelings (Ch5). Hanashishou: 2 scenes; e.g. «Jangan malu.» (azula_town_hall).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1537",
+   "row": 1538,
+   "values": [
+    "L-1537",
+    "susu",
+    "milk",
+    "牛乳、ミルク",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-011",
+    "Ch5 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "milk",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: food and drink (Ch5). Hanashishou: 2 scenes; e.g. «Lima minit kemudian, pelayan bawa makanan anda dan secawan teh pekat tanpa susu.» (mamak_order).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1538",
+   "row": 1539,
+   "values": [
+    "L-1538",
+    "bakar",
+    "burn; grill, bake",
+    "焼く",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-012",
+    "Ch5 (extension)",
+    "social · band 1",
+    "Yes",
+    "burn; grill, bake",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: cooking (Ch5): «ayam bakar». Hanashishou: 1 scene; e.g. «Kau akan bakar bangunan ini.» (family_dinner).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1539",
+   "row": 1540,
+   "values": [
+    "L-1539",
+    "bangga",
+    "proud",
+    "誇りに思う",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-013",
+    "Ch5 (extension)",
+    "social · band 1",
+    "Yes",
+    "proud",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: feelings (Ch5). Hanashishou: 1 scene; e.g. «Jangan bangga sangat.» (azula_speech).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1540",
+   "row": 1541,
+   "values": [
+    "L-1540",
+    "bau",
+    "smell",
+    "におい",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-014",
+    "Ch5 (extension)",
+    "",
+    "",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: describing food (Ch5); scene form «baunya» (+ -nya).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1541",
+   "row": 1542,
+   "values": [
+    "L-1541",
+    "cendawan",
+    "mushroom",
+    "きのこ",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-015",
+    "Ch5 (extension)",
+    "social · band 1",
+    "Yes",
+    "mushroom",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: food (Ch5). Hanashishou: 1 scene; e.g. «Jadi, cendawan?» (miku_market).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1542",
+   "row": 1543,
+   "values": [
+    "L-1542",
+    "gula-gula",
+    "sweets, candy",
+    "あめ、キャンディー",
+    "noun",
+    "lex",
+    "gula",
+    "Not yet checked",
+    "",
+    "ms-x05-016",
+    "Ch5 (extension)",
+    "social · band 1",
+    "Yes",
+    "sweets, candy",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: food (Ch5). Hanashishou: 1 scene; e.g. «Gula-gula ubat ini berkesan.» (miku_sore_throat).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1543",
+   "row": 1544,
+   "values": [
+    "L-1543",
+    "halia",
+    "ginger",
+    "しょうが",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-017",
+    "Ch5 (extension)",
+    "social · band 1",
+    "Yes",
+    "ginger",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: food (Ch5). Hanashishou: 1 scene; e.g. «Halia» (miku_sore_throat).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1544",
+   "row": 1545,
+   "values": [
+    "L-1544",
+    "istimewa",
+    "special",
+    "特別な",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-018",
+    "Ch5 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "special",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: describing (Ch5). Hanashishou: 1 scene; e.g. «Ada apa-apa yang istimewa?» (lost_wallet).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1545",
+   "row": 1546,
+   "values": [
+    "L-1545",
+    "kacang",
+    "nut, peanut, bean",
+    "ナッツ、豆",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-019",
+    "Ch5 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "nut, peanut, bean",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: food (Ch5); «kacang tanah» = peanut (food allergy). Hanashishou: 1 scene; e.g. «Tak nak kacang.» (food_allergy).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1546",
+   "row": 1547,
+   "values": [
+    "L-1546",
+    "kecewa",
+    "disappointed",
+    "がっかりした",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-020",
+    "Ch5 (extension)",
+    "social · band 1",
+    "Yes",
+    "disappointed",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: feelings (Ch5); root of «mengecewakan» (Ch12). Hanashishou: 1 scene; e.g. «Cakap ucapan itu sempurna, supaya dia tak kecewa.» (azula_speech).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1547",
+   "row": 1548,
+   "values": [
+    "L-1547",
+    "lemon",
+    "lemon",
+    "レモン",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-021",
+    "Ch5 (extension)",
+    "social · band 1",
+    "Yes",
+    "lemon",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: food and drink (Ch5). Hanashishou: 1 scene; e.g. «Lemon» (miku_sore_throat).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1548",
+   "row": 1549,
+   "values": [
+    "L-1548",
+    "madu",
+    "honey",
+    "はちみつ",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-022",
+    "Ch5 (extension)",
+    "social · band 1",
+    "Yes",
+    "honey",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: food and drink (Ch5). Hanashishou: 1 scene; e.g. «Madu» (miku_sore_throat).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1549",
+   "row": 1550,
+   "values": [
+    "L-1549",
+    "mee",
+    "noodles",
+    "麺",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-023",
+    "Ch5 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "noodles",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: food (Ch5). Hanashishou: 1 scene; e.g. «Mee goreng, tak pedas» (wrong_order).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1550",
+   "row": 1551,
+   "values": [
+    "L-1550",
+    "nanas",
+    "pineapple",
+    "パイナップル",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-024",
+    "Ch5 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "pineapple",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: food (Ch5). Hanashishou: 1 scene; e.g. «Nasi goreng nanas» (food_allergy).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1551",
+   "row": 1552,
+   "values": [
+    "L-1551",
+    "pandai",
+    "clever, good at",
+    "上手な、賢い",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-025",
+    "Ch5 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "clever, good at",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: describing people (Ch5). Hanashishou: 1 scene; e.g. «Pandai pilih!» (price_haggle).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1552",
+   "row": 1553,
+   "values": [
+    "L-1552",
+    "pekat",
+    "thick, strong (of tea)",
+    "濃い（お茶・コーヒー）",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-026",
+    "Ch5 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "thick, strong (of tea)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: drinks (Ch5): «teh pekat». Hanashishou: 1 scene; e.g. «Lima minit kemudian, pelayan bawa makanan anda dan secawan teh pekat tanpa susu.» (mamak_order). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1553",
+   "row": 1554,
+   "values": [
+    "L-1553",
+    "puas",
+    "satisfied (\"tak puas hati\" = dissatisfied)",
+    "満足した（«tak puas hati» 不満）",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-027",
+    "Ch5 (extension)",
+    "social · band 1",
+    "Yes",
+    "satisfied (\"tak puas hati\" = dissatisfied)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: feelings (Ch5). Hanashishou: 1 scene; e.g. «Awak masih tak puas hati.» (azula_group_project).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1554",
+   "row": 1555,
+   "values": [
+    "L-1554",
+    "sate",
+    "satay",
+    "サテ（串焼き）",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-028",
+    "Ch5 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "satay",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: food (Ch5). Hanashishou: 1 scene; e.g. «Sate» (food_allergy).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1555",
+   "row": 1556,
+   "values": [
+    "L-1555",
+    "snek",
+    "snack",
+    "スナック、おやつ",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-029",
+    "Ch5 (extension)",
+    "social · band 1",
+    "Yes",
+    "snack",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: food (Ch5). Hanashishou: 1 scene; e.g. «Banyak masa untuk snek.» (jinx_library).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1556",
+   "row": 1557,
+   "values": [
+    "L-1556",
+    "tauhu",
+    "tofu",
+    "豆腐",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-030",
+    "Ch5 (extension)",
+    "social · band 1",
+    "Yes",
+    "tofu",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: food (Ch5). Hanashishou: 1 scene; e.g. «Tauhu?» (miku_market).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1557",
+   "row": 1558,
+   "values": [
+    "L-1557",
+    "terang",
+    "bright",
+    "明るい",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x05-031",
+    "Ch5 (extension)",
+    "social · band 1",
+    "Yes",
+    "bright",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: describing (Ch5): colours and light. Hanashishou: 1 scene; e.g. «Dia petik jari, api biru kecil keluar, dan bunga api terakhir terus nyala terang.» (family_dinner). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x05-001": {
+   "lid": "L-1319",
+   "moved_from": "ms-j-social-27"
+  },
+  "ms-x05-002": {
+   "lid": "L-1323",
+   "moved_from": "ms-j-social-30"
+  },
+  "ms-x05-003": {
+   "lid": "L-1327",
+   "moved_from": "ms-j-office-28"
+  },
+  "ms-x05-004": {
+   "lid": "L-1332",
+   "moved_from": "ms-j-social-32"
+  },
+  "ms-x05-005": {
+   "lid": "L-1344",
+   "moved_from": "ms-j-social-35"
+  },
+  "ms-x05-006": {
+   "lid": "L-1364",
+   "moved_from": "ms-j-daily-life-45"
+  },
+  "ms-x05-007": {
+   "lid": "L-1533"
+  },
+  "ms-x05-008": {
+   "lid": "L-1534"
+  },
+  "ms-x05-009": {
+   "lid": "L-1535"
+  },
+  "ms-x05-010": {
+   "lid": "L-1536"
+  },
+  "ms-x05-011": {
+   "lid": "L-1537"
+  },
+  "ms-x05-012": {
+   "lid": "L-1538"
+  },
+  "ms-x05-013": {
+   "lid": "L-1539"
+  },
+  "ms-x05-014": {
+   "lid": "L-1540"
+  },
+  "ms-x05-015": {
+   "lid": "L-1541"
+  },
+  "ms-x05-016": {
+   "lid": "L-1542"
+  },
+  "ms-x05-017": {
+   "lid": "L-1543"
+  },
+  "ms-x05-018": {
+   "lid": "L-1544"
+  },
+  "ms-x05-019": {
+   "lid": "L-1545"
+  },
+  "ms-x05-020": {
+   "lid": "L-1546"
+  },
+  "ms-x05-021": {
+   "lid": "L-1547"
+  },
+  "ms-x05-022": {
+   "lid": "L-1548"
+  },
+  "ms-x05-023": {
+   "lid": "L-1549"
+  },
+  "ms-x05-024": {
+   "lid": "L-1550"
+  },
+  "ms-x05-025": {
+   "lid": "L-1551"
+  },
+  "ms-x05-026": {
+   "lid": "L-1552"
+  },
+  "ms-x05-027": {
+   "lid": "L-1553"
+  },
+  "ms-x05-028": {
+   "lid": "L-1554"
+  },
+  "ms-x05-029": {
+   "lid": "L-1555"
+  },
+  "ms-x05-030": {
+   "lid": "L-1556"
+  },
+  "ms-x05-031": {
+   "lid": "L-1557"
+  }
+ }
+}

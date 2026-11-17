@@ -42,24 +42,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-27",
-      "lang": "ms",
-      "term": "salah",
-      "gloss_en": "wrong, mistaken; fault",
-      "gloss_ja": "間違った、間違い",
-      "pos": "adj",
-      "affix_tag": "root",
-      "note": "Hanashishou: Hoi! Ini salah! In 20 Hanashishou scenes: A sore throat, At the mamak, Card blocked, Checking in and 16 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-feelings"
-        }
-      ],
-      "scene": "dunia-jambatan-social-feelings",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-11",
       "lang": "ms",
       "term": "tepat",

@@ -99,6 +99,11 @@ export interface StretchPack {
   cards: Card[];
   frames: Frame[];
   scenario: { title_en: string | null; title_ja?: string | null; lines: ScenarioLine[] };
+  /**
+   * Cari Benda ⚡ (design note section 4), only where the chapter has a picture scene and at least four extension nouns can be
+   * drawn: `scene` is that Dunia scene (its world and title frame the board), `core` the drawn core objects mixed in.
+   */
+  cari?: { scene: string; core: string[] };
 }
 
 export type Pack = KelasPack | DuniaPack | StretchPack;

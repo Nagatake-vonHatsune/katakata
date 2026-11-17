@@ -58,6 +58,12 @@
         }
       }
     },
+    "cari": {
+      "type": "object",
+      "description": "⚡ packs only: Cari Benda ⚡ on a six-object board (extension objects with images, mixed with the named core objects of the chapter's picture scene).",
+      "required": ["scene", "core"],
+      "properties": { "scene": { "type": "string" }, "core": { "type": "array", "items": { "type": "string" }, "minItems": 2 } }
+    },
     "sedia_kelas": {
       "type": "object",
       "required": ["cards", "frames"],

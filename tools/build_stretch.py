@@ -8,7 +8,8 @@ Cards: one per ledger row placed «ChN (extension)», in card-ID order. A row's 
 like a class card. The source adds a short note per row (a string, or {"en", "ja", "register": "formal"} for a note in two
 languages and a register label), 4 to 6 frames (with decoy tiles) and the dialogue (lines with
 "choices" are reply steps). IDs: frames ms-xNN-fNN, lines ms-xNN-dNN, in source order. Whether the pack ships is
-tools/import-overrides.json "live_stretch". A second run gives an identical file.
+tools/import-overrides.json "live_stretch". Optional "cari": {"scene": <Dunia picture scene>, "images": {ledger ID: emoji}, "core": [drawn
+core card IDs of that scene]} adds Cari Benda ⚡ (design note section 4). A second run gives an identical file.
 """
 
 import csv
@@ -55,6 +56,8 @@ def main(chapter):
             card["note_ja"] = note["ja"]
         if note.get("register"):
             card["register"] = note["register"]
+        if r["ID"] in src.get("cari", {}).get("images", {}):
+            card["image"] = src["cari"]["images"][r["ID"]]
         cards.append(card)
     cards.sort(key=lambda c: c["id"])
     extra = set(src["notes"]) - {r["ID"] for r in rows}
@@ -92,6 +95,14 @@ def main(chapter):
         "frames": frames,
         "scenario": {"title_en": src.get("scenario_title_en"), "title_ja": src.get("scenario_title_ja"), "lines": lines},
     }
+    if src.get("cari"):
+        # Cari Benda ⚡: at least four drawn extension nouns, and core objects (with pictures) from the named picture scene.
+        scene = json.loads(next((ROOT / "content/ms/dunia").rglob(f"{src['cari']['scene']}.json")).read_text(encoding="utf-8"))
+        drawn = {c["id"]: c for c in scene["cards"] if c.get("image")}
+        bad = [i for i in src["cari"]["core"] if i not in drawn]
+        if bad or sum(1 for c in cards if c.get("image")) < 4 or len(src["cari"]["core"]) < 3:
+            raise SystemExit(f"⚡ {chapter} cari: needs 4+ drawn extension nouns and 3+ drawn core objects of {src['cari']['scene']} (not drawn there: {bad})")
+        pack["cari"] = {"scene": src["cari"]["scene"], "core": src["cari"]["core"]}
     out = ROOT / f"content/ms/stretch/{xid}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(pack, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
