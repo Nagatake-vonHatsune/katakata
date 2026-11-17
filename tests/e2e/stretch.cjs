@@ -35,8 +35,10 @@ const known = () => ({ ease: 2.5, interval: 10, reps: 3, due: NOW + 5 * DAY, lap
 const stamp = (kind, chapter) => ({ id: `st-${kind}-${chapter}`, kind, date: '2026-11-10', chapter });
 const replyIds = (n) => kelas[n].scenario.lines.slice(1).map((l) => l.id);
 const passed = (n) => ({ best: replyIds(n).length, total: replyIds(n).length, plays: 1, last: '2026-11-10T00:00:00Z' });
-// The first chapter from 10 on with no ⚡ pack (Build B1 builds 1 to 9): "⚡ soon" once its flames are lit.
-const SOON = Object.keys(kelas).map(Number).find((n) => n >= 10 && n < 18 && !stretch.some((x) => x.chapter === n));
+// The first chapter from 10 on with no ⚡ pack: "⚡ soon" once its flames are lit. Build B2 (17 Nov 2026) gives every chapter
+// a ⚡ pack, so then there is none, and chapter 18 (LIT) is lit instead: it shows a real ⚡ chip, and no row shows "⚡ soon".
+const SOON = Object.keys(kelas).map(Number).find((n) => n >= 10 && !stretch.some((x) => x.chapter === n));
+const LIT = SOON ?? 18;
 
 /**
  * Chapter 1: some prep (0 flames). Chapter 2: the 'ready' stamp (1). Chapter 3: 'ready' + the dialogue played (2).
@@ -66,7 +68,7 @@ function seededState(settings = {}, allStretch = false) {
     myHooks: {},
     questions: [],
     reports: [],
-    stamps: [stamp('ready', 2), stamp('ready', 3), stamp('ready', 4), stamp('chapter', 4), stamp('ready', SOON), stamp('dialogue', SOON), stamp('chapter', SOON)],
+    stamps: [stamp('ready', 2), stamp('ready', 3), stamp('ready', 4), stamp('chapter', 4), stamp('ready', LIT), stamp('dialogue', LIT), stamp('chapter', LIT)],
     studySeconds: {},
     howToSeen: { kad: true, cari: true, susun: true, reply: true },
   };
@@ -239,13 +241,23 @@ async function play(page, hooks = {}) {
   assert(st2.dialogues.c02.best === need2 && st2.dialogues.c02.plays === 2, 'the best score is kept');
 
   // 3b. "⚡ soon": a chapter with every 🔥 lit and no ⚡ pack; greyed, labelled, not a button, not tappable.
-  const soon = page.locator('.sedia-row').nth(SOON - 1).locator('.stretch-soon');
-  assert((await soon.count()) === 1, `chapter ${SOON} (no ⚡ pack, every 🔥 lit) shows "⚡ soon"`);
-  assert((await soon.innerText()).trim() === '⚡ 準備中', 'it reads "⚡ 準備中" in Japanese');
-  assert((await soon.evaluate((e) => e.tagName)) === 'SPAN' && (await soon.getAttribute('aria-disabled')) === 'true', 'it is not a button (aria-disabled)');
-  assert(((await soon.getAttribute('aria-label')) || '').includes(`第${SOON}課`), 'it has an aria-label');
-  await soon.click({ force: true });
-  assert((await page.locator('.stretch-screen').count()) === 0, 'tapping it opens nothing');
+  if (SOON) {
+    const soon = page.locator('.sedia-row').nth(SOON - 1).locator('.stretch-soon');
+    assert((await soon.count()) === 1, `chapter ${SOON} (no ⚡ pack, every 🔥 lit) shows "⚡ soon"`);
+    assert((await soon.innerText()).trim() === '⚡ 準備中', 'it reads "⚡ 準備中" in Japanese');
+    assert((await soon.evaluate((e) => e.tagName)) === 'SPAN' && (await soon.getAttribute('aria-disabled')) === 'true', 'it is not a button (aria-disabled)');
+    assert(((await soon.getAttribute('aria-label')) || '').includes(`第${SOON}課`), 'it has an aria-label');
+    await soon.click({ force: true });
+    assert((await page.locator('.stretch-screen').count()) === 0, 'tapping it opens nothing');
+  } else {
+    // Every chapter has a ⚡ pack (Build B2): chapter 18, lit, shows a real ⚡ chip, and no row shows "⚡ soon".
+    await page.goto(BASE + '#/sedia');
+    await page.reload();
+    await page.waitForSelector('.sedia-row');
+    const chip18 = page.locator('.sedia-row').nth(17).locator('button.stretch-chip');
+    assert((await chip18.count()) === 1, 'chapter 18 (both 🔥 lit) shows a real ⚡ chip, not "⚡ soon"');
+    assert((await page.locator('.stretch-soon').count()) === 0, 'no chapter shows "⚡ soon" (every chapter has a ⚡ pack)');
+  }
 
   // 4. Laju! is ⏱️ on Home, and Rekod shows the flames.
   await page.goto(BASE);
@@ -263,17 +275,17 @@ async function play(page, hooks = {}) {
     const p = await ctx.newPage();
     p.on('pageerror', (e) => errors.push(e.message));
     const tag = `${palette}-${theme}`;
-    // Chapter SOON - 1 (it has a ⚡ pack) lit too, so its chip sits right above the "⚡ soon" of chapter SOON.
+    // Chapter LIT - 1 (it has a ⚡ pack) lit too, so its chip sits right above the "⚡ soon" (or, from Build B2, the ⚡ 18 chip) of chapter LIT.
     const shotState = seededState({ palette, theme }, true);
-    shotState.stamps.push(stamp('ready', SOON - 1), stamp('dialogue', SOON - 1), stamp('chapter', SOON - 1));
+    shotState.stamps.push(stamp('ready', LIT - 1), stamp('dialogue', LIT - 1), stamp('chapter', LIT - 1));
     await seed(p, shotState);
     await p.goto(BASE + '#/sedia');
     await p.waitForSelector('.sedia-row');
     await shot(p, `01-sedia-list-${tag}`);
     await p.locator('.sedia-row').nth(3).screenshot({ path: path.join(OUT, `02-chip-${tag}.png`) });
-    await p.locator('.sedia-row').nth(SOON - 2).evaluate((e) => e.scrollIntoView({ block: 'center' }));
-    await shot(p, `09-sedia-soon-${tag}`);
-    await p.locator('.sedia-row').nth(SOON - 1).screenshot({ path: path.join(OUT, `09-soon-row-${tag}.png`) });
+    await p.locator('.sedia-row').nth(LIT - 2).evaluate((e) => e.scrollIntoView({ block: 'center' }));
+    await shot(p, SOON ? `09-sedia-soon-${tag}` : `12-sedia-x18-chip-${tag}`);
+    await p.locator('.sedia-row').nth(LIT - 1).screenshot({ path: path.join(OUT, SOON ? `09-soon-row-${tag}.png` : `12-x18-chip-row-${tag}.png`) });
     await p.evaluate(() => window.scrollTo(0, 0));
     await p.locator('.sedia-row').nth(3).locator('button.stretch-chip').click();
     await p.waitForSelector('.stretch-screen');
@@ -332,6 +344,54 @@ async function play(page, hooks = {}) {
     let board = 0;
     const r = await play(p, { cari: async () => { board = await p.locator('.cari-obj').count(); await shot(p, `x${String(x.chapter).padStart(2, '0')}-cari-kancil-light`); } });
     assert(r.cari === 3 && board === 6, `⚡ ${x.chapter}: three Cari Benda rounds on a board of six (${r.cari}, ${board})`);
+    await p.close();
+  }
+
+  // 8. Build B2: ⚡ 10 and ⚡ 18 played from an unlocked state (flames lit from stamps, nothing of the ⚡ stage done yet): ⚡ runs
+  // until every ⚡ frame is built, then the whole ⚡ dialogue. ⚡ 18 has no cards, so it is done (the 'stretch' stamp) once every
+  // frame is built and the dialogue is passed; ⚡ 10 also needs its 21 extension cards known, which takes days of review.
+  for (const n of [10, 18].filter((c) => stretch.some((x) => x.chapter === c))) {
+    const x = stretch.find((y) => y.chapter === n);
+    const key = `x${String(n).padStart(2, '0')}`;
+    const p = await ctx.newPage();
+    p.on('pageerror', (e) => errors.push(e.message));
+    const st = seededState();
+    st.stamps.push(stamp('ready', n), stamp('dialogue', n), stamp('chapter', n));
+    await seed(p, st);
+    let runs = 0;
+    let built = 0;
+    while (runs < 4) {
+      await p.goto(BASE + `#/sedia/${n}/x`);
+      await p.reload();
+      await p.waitForSelector('.stretch-screen');
+      assert((await p.locator('.btn-stretch').count()) === 1, `⚡ ${n} is open from its flames (run ${runs + 1})`);
+      await p.locator('.btn-stretch').click();
+      const r = await play(p);
+      runs++;
+      assert(r.susun === Math.min(2, x.frames.length) && r.reply >= 3, `⚡ ${n} run ${runs}: ${r.susun} frames and ${r.reply} replies`);
+      const s = await readState(p);
+      built = x.frames.filter((f) => (s.frames[f.id]?.correct ?? 0) > 0).length;
+      if (built === x.frames.length) break;
+    }
+    assert(built === x.frames.length, `⚡ ${n}: every ⚡ frame built in ${runs} runs (${built}/${x.frames.length})`);
+    await p.goto(BASE + `#/sedia/${n}/x`);
+    await p.reload();
+    await p.waitForSelector('.stretch-screen');
+    await p.locator('.stretch-outline').first().click();
+    const d = await play(p);
+    const s = await readState(p);
+    const replies = x.scenario.lines.filter((l) => l.choices).length;
+    assert(d.firstTries === replies && s.dialogues[key]?.best === replies, `⚡ ${n}: the whole ⚡ dialogue played, ${s.dialogues[key]?.best}/${replies}`);
+    const done = s.stamps.some((t) => t.kind === 'stretch' && t.chapter === n);
+    if (x.cards.length) {
+      // Done exactly when every extension card is known as well (reps > 0, interval ≥ 1 day; the rule in progress.ts).
+      const known = x.cards.filter((c) => (s.srs[c.id]?.reps ?? 0) > 0 && (s.srs[c.id]?.interval ?? 0) >= 1).length;
+      assert(done === (known === x.cards.length), `⚡ ${n}: ${known}/${x.cards.length} extension cards known, frames built, dialogue passed: done ${done}`);
+      if (done) await shot(p, `x10-done-kancil-light`);
+    } else {
+      assert(done, `⚡ ${n}: no extension cards, so every frame built and the dialogue passed give the ⚡ stamp`);
+      await shot(p, `x18-done-kancil-light`);
+    }
     await p.close();
   }
 
