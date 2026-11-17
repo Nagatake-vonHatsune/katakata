@@ -1,0 +1,797 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x12",
+  "chapter": 12,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Kata Kerja -kan dan -i",
+    "en": "-kan and -i verbs",
+    "ja": "-kan と -i の動詞"
+  },
+  "cards": [
+    {
+      "id": "ms-x12-001",
+      "lang": "ms",
+      "term": "alat",
+      "gloss_en": "tool, fitting",
+      "gloss_ja": "道具、部品",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Tool, fitting: «alat saya» = my tools.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "道具、器具：«alat saya»＝私の道具。"
+    },
+    {
+      "id": "ms-x12-002",
+      "lang": "ms",
+      "term": "bocor",
+      "gloss_en": "leak, leaky",
+      "gloss_ja": "漏れる、漏れている",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Leaking, leaky: «Paip itu bocor.» Compare «kebocoran» (Ch12) = a leak.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "もれる、もれている：«Paip itu bocor.»。«kebocoran»（第12課）＝もれ。"
+    },
+    {
+      "id": "ms-x12-003",
+      "lang": "ms",
+      "term": "cat",
+      "gloss_en": "paint",
+      "gloss_ja": "ペンキ、塗料",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Paint. (Also «cat» as a verb in speech: to paint.)",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "ペンキ、塗料。（会話では「塗る」の意味でも。）"
+    },
+    {
+      "id": "ms-x12-004",
+      "lang": "ms",
+      "term": "ceritakan",
+      "gloss_en": "tell (a story)",
+      "gloss_ja": "話して聞かせる",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "cerita + -kan: to tell (a story or what happened), with an object: «Tolong ceritakan pengalaman Encik.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "cerita + -kan：（話や出来事を）話して聞かせる。目的語をとる：«Tolong ceritakan pengalaman Encik.»"
+    },
+    {
+      "id": "ms-x12-005",
+      "lang": "ms",
+      "term": "lupakan",
+      "gloss_en": "forget (it)",
+      "gloss_ja": "忘れる（〜を）、気にしないで",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "lupa (Ch4) + -kan: to forget (something), put out of mind: «Lupakan kerja itu.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "lupa（第4課）+ -kan：（〜を）忘れる：«Lupakan kerja itu.»＝その仕事は忘れて。"
+    },
+    {
+      "id": "ms-x12-006",
+      "lang": "ms",
+      "term": "penghantaran",
+      "gloss_en": "delivery",
+      "gloss_ja": "配達",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "peN- + hantar (Ch2) + -an: delivery: «penghantaran bungkusan».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "peN- + hantar（第2課）+ -an：配達：«penghantaran bungkusan»＝荷物の配達。"
+    },
+    {
+      "id": "ms-x12-007",
+      "lang": "ms",
+      "term": "pengurusan",
+      "gloss_en": "management",
+      "gloss_ja": "管理（事務所）",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "peN- + urus + -an: management: «pejabat pengurusan» (Ch12) = the management office.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "peN- + urus + -an：管理：«pejabat pengurusan»（第12課）＝管理事務所。"
+    },
+    {
+      "id": "ms-x12-008",
+      "lang": "ms",
+      "term": "baik pulih",
+      "gloss_en": "repair, repair work",
+      "gloss_ja": "修理",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Repair work, renovation (notices): «kerja baik pulih».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "修理、改修（お知らせで）：«kerja baik pulih»＝改修工事。"
+    },
+    {
+      "id": "ms-x12-009",
+      "lang": "ms",
+      "term": "besarkan",
+      "gloss_en": "enlarge, make bigger",
+      "gloss_ja": "大きくする",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "besar (Ch5) + -kan: to make bigger, enlarge: «besarkan gambar ini».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "besar（第5課）+ -kan：大きくする：«besarkan gambar ini»＝この写真を拡大する。"
+    },
+    {
+      "id": "ms-x12-010",
+      "lang": "ms",
+      "term": "cabut",
+      "gloss_en": "pull out, unplug",
+      "gloss_ja": "抜く（プラグを）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To pull out, unplug: «cabut plag» = unplug.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "抜く：«cabut plag»＝プラグを抜く。"
+    },
+    {
+      "id": "ms-x12-011",
+      "lang": "ms",
+      "term": "gas",
+      "gloss_en": "gas",
+      "gloss_ja": "ガス",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Gas (for cooking).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "ガス（料理用）。"
+    },
+    {
+      "id": "ms-x12-012",
+      "lang": "ms",
+      "term": "jaga",
+      "gloss_en": "look after, keep",
+      "gloss_ja": "世話をする、守る",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To look after, keep, guard: «jaga rumah» = look after the house. «Jaga diri» (Ch1) = Take care.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "世話をする、守る：«jaga rumah»＝家の留守番をする。«Jaga diri»（第1課）＝気をつけて。"
+    },
+    {
+      "id": "ms-x12-013",
+      "lang": "ms",
+      "term": "keluarkan",
+      "gloss_en": "take out",
+      "gloss_ja": "出す、取り出す",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "keluar (Ch7) + -kan: to take out: «Saya keluarkan alat saya dulu.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "keluar（第7課）+ -kan：取り出す：«Saya keluarkan alat saya dulu.»＝先に道具を出します。"
+    },
+    {
+      "id": "ms-x12-014",
+      "lang": "ms",
+      "term": "kenalkan",
+      "gloss_en": "introduce",
+      "gloss_ja": "紹介する",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "kenal + -kan: to introduce: «Boleh Encik kenalkan saya kepada …?»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "kenal + -kan：紹介する：«Boleh Encik kenalkan saya kepada …?»＝〜に紹介してもらえますか。"
+    },
+    {
+      "id": "ms-x12-015",
+      "lang": "ms",
+      "term": "langsir",
+      "gloss_en": "curtain",
+      "gloss_ja": "カーテン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Curtain: «tutupkan langsir» = close the curtains (for someone).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "カーテン：«tutupkan langsir»＝カーテンを閉めて。"
+    },
+    {
+      "id": "ms-x12-016",
+      "lang": "ms",
+      "term": "maafkan",
+      "gloss_en": "to forgive, excuse",
+      "gloss_ja": "許される",
+      "pos": "verb",
+      "affix_tag": "di- -kan",
+      "note": "maaf (Ch1) + -kan: to forgive, excuse: «Maafkan saya.» = Please forgive me.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "maaf（第1課）+ -kan：許す：«Maafkan saya.»＝お許しください。"
+    },
+    {
+      "id": "ms-x12-017",
+      "lang": "ms",
+      "term": "masukkan",
+      "gloss_en": "put in, enter",
+      "gloss_ja": "入れる",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "masuk (Ch7) + -kan: to put in, enter: «masukkan plag» = plug in.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "masuk（第7課）+ -kan：入れる：«masukkan plag»＝プラグを差しこむ。"
+    },
+    {
+      "id": "ms-x12-018",
+      "lang": "ms",
+      "term": "mati",
+      "gloss_en": "dead; stopped working (\"internet mati\" = the internet is down)",
+      "gloss_ja": "死ぬ；止まる（«internet mati»）",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Dead; (of a machine or the internet) not working: «Internet mati.» = The internet is down.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "死んだ；（機械やネットが）止まった：«Internet mati.»＝ネットが落ちた。"
+    },
+    {
+      "id": "ms-x12-019",
+      "lang": "ms",
+      "term": "memahami",
+      "gloss_en": "understand",
+      "gloss_ja": "理解する",
+      "pos": "verb",
+      "affix_tag": "meN- -i",
+      "note": "meN- + faham (Ch4) + -i: to understand: «Saya memahami aduan Encik.» (more formal than «faham»).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "meN- + faham（第4課）+ -i：理解する：«Saya memahami aduan Encik.»（«faham» より改まった言い方）。"
+    },
+    {
+      "id": "ms-x12-020",
+      "lang": "ms",
+      "term": "membosankan",
+      "gloss_en": "boring",
+      "gloss_ja": "退屈な",
+      "pos": "adj",
+      "affix_tag": "meN- -kan",
+      "note": "meN- + bosan (Ch5) + -kan: boring: «Mesyuarat itu membosankan.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "meN- + bosan（第5課）+ -kan：退屈な：«Mesyuarat itu membosankan.»"
+    },
+    {
+      "id": "ms-x12-021",
+      "lang": "ms",
+      "term": "mengecewakan",
+      "gloss_en": "disappointing",
+      "gloss_ja": "がっかりさせる",
+      "pos": "adj",
+      "affix_tag": "meN- -kan",
+      "note": "meN- + kecewa + -kan: disappointing: «Servis itu mengecewakan.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "meN- + kecewa + -kan：がっかりさせる：«Servis itu mengecewakan.»"
+    },
+    {
+      "id": "ms-x12-022",
+      "lang": "ms",
+      "term": "menjalankan",
+      "gloss_en": "carry out, run",
+      "gloss_ja": "行う、実施する",
+      "pos": "verb",
+      "affix_tag": "meN- -kan",
+      "note": "meN- + jalan (Ch7) + -kan: to carry out, run: «menjalankan kerja baik pulih».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "meN- + jalan（第7課）+ -kan：実施する：«menjalankan kerja baik pulih»＝改修工事を行う。"
+    },
+    {
+      "id": "ms-x12-023",
+      "lang": "ms",
+      "term": "menunjukkan",
+      "gloss_en": "show",
+      "gloss_ja": "示す、見せる",
+      "pos": "verb",
+      "affix_tag": "meN- -kan",
+      "note": "meN- + tunjuk + -kan: to show (in a statement): «Juruteknik itu menunjukkan salur itu kepada saya.» Requests use «tunjukkan» (Ch12).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "meN- + tunjuk + -kan：見せる（平叙文で）。依頼には «tunjukkan»（第12課）。"
+    },
+    {
+      "id": "ms-x12-024",
+      "lang": "ms",
+      "term": "menyebabkan",
+      "gloss_en": "cause",
+      "gloss_ja": "引き起こす",
+      "pos": "verb",
+      "affix_tag": "meN- -kan",
+      "note": "meN- + sebab (Ch5) + -kan: to cause: «Paip yang bocor menyebabkan kerosakan.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "meN- + sebab（第5課）+ -kan：引き起こす：«Paip yang bocor menyebabkan kerosakan.»"
+    },
+    {
+      "id": "ms-x12-025",
+      "lang": "ms",
+      "term": "menyiapkan",
+      "gloss_en": "to finish, complete",
+      "gloss_ja": "仕上げる",
+      "pos": "verb",
+      "affix_tag": "meN- -kan",
+      "note": "meN- + siap (Ch9) + -kan: to finish (a piece of work): «menyiapkan kerja».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "meN- + siap（第9課）+ -kan：（仕事を）仕上げる：«menyiapkan kerja»。"
+    },
+    {
+      "id": "ms-x12-026",
+      "lang": "ms",
+      "term": "padam",
+      "gloss_en": "go out (of lights); erase",
+      "gloss_ja": "消える、消す",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "(Of a light or fire) to go out; to erase: «Lampu dapur padam.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "（明かりや火が）消える；消す：«Lampu dapur padam.»＝台所の電気が消えた。"
+    },
+    {
+      "id": "ms-x12-027",
+      "lang": "ms",
+      "term": "penghawa dingin",
+      "gloss_en": "air-conditioner",
+      "gloss_ja": "エアコン",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Air-conditioner. In speech also «aircond».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "エアコン。話し言葉では «aircond» とも。"
+    },
+    {
+      "id": "ms-x12-028",
+      "lang": "ms",
+      "term": "plag",
+      "gloss_en": "plug",
+      "gloss_ja": "プラグ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Plug (electric): «cabut plag» = unplug.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "（電気の）プラグ：«cabut plag»＝プラグを抜く。"
+    },
+    {
+      "id": "ms-x12-029",
+      "lang": "ms",
+      "term": "salur",
+      "gloss_en": "pipe (\"salur air\" = water pipe)",
+      "gloss_ja": "管（«salur air» 水道管）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Pipe, channel: «salur air» = water pipe, drain.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "管、水路：«salur air»＝排水管。"
+    },
+    {
+      "id": "ms-x12-030",
+      "lang": "ms",
+      "term": "servis",
+      "gloss_en": "service",
+      "gloss_ja": "サービス、点検",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Service (a check-up for a machine): «servis penghawa dingin».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "（機械の）点検、整備：«servis penghawa dingin»＝エアコンの点検。"
+    },
+    {
+      "id": "ms-x12-031",
+      "lang": "ms",
+      "term": "tempahkan",
+      "gloss_en": "book (for someone)",
+      "gloss_ja": "予約してあげる",
+      "pos": "verb",
+      "affix_tag": "-kan",
+      "note": "tempah (Ch4) + -kan: to book for someone: «Saya tempahkan slot untuk Encik.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x12"
+        }
+      ],
+      "scene": "stretch-x12",
+      "chapter": 12,
+      "note_ja": "tempah（第4課）+ -kan：（人のために）予約する：«Saya tempahkan slot untuk Encik.»"
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-x12-f01",
+      "frame": "Juruteknik itu ___ salur yang ___ kepada saya.",
+      "example": "Juruteknik itu menunjukkan salur yang bocor kepada saya.",
+      "meaning_en": "The technician showed me the leaking pipe.",
+      "meaning_ja": "技術者は水もれしている管を見せてくれました。",
+      "decoys": [
+        "tunjukkan"
+      ]
+    },
+    {
+      "id": "ms-x12-f02",
+      "frame": "Paip yang bocor ___ kerosakan di ___.",
+      "example": "Paip yang bocor menyebabkan kerosakan di siling.",
+      "meaning_en": "The leaking pipe caused damage to the ceiling.",
+      "meaning_ja": "水もれした管が天井に被害を与えました。",
+      "decoys": [
+        "sebab"
+      ]
+    },
+    {
+      "id": "ms-x12-f03",
+      "frame": "Kontraktor sedang ___ kerja baik pulih di ___ ini.",
+      "example": "Kontraktor sedang menjalankan kerja baik pulih di blok ini.",
+      "meaning_en": "The contractor is carrying out repair work in this block.",
+      "meaning_ja": "業者がこの棟で改修工事を行っています。",
+      "decoys": [
+        "berjalan"
+      ]
+    },
+    {
+      "id": "ms-x12-f04",
+      "frame": "Tolong ___ langsir itu.",
+      "example": "Tolong tutupkan langsir itu.",
+      "meaning_en": "Please close the curtains.",
+      "meaning_ja": "カーテンを閉めてください。",
+      "decoys": [
+        "menutup"
+      ]
+    },
+    {
+      "id": "ms-x12-f05",
+      "frame": "___ bungkusan saya lewat dua ___.",
+      "example": "Penghantaran bungkusan saya lewat dua hari.",
+      "meaning_en": "The delivery of my parcel is two days late.",
+      "meaning_ja": "荷物の配達が2日遅れています。",
+      "decoys": [
+        "hantar"
+      ]
+    },
+    {
+      "id": "ms-x12-f06",
+      "frame": "Boleh Encik ___ saya kepada ___ itu?",
+      "example": "Boleh Encik kenalkan saya kepada kontraktor itu?",
+      "meaning_en": "Could you introduce me to that contractor?",
+      "meaning_ja": "あの業者に紹介していただけますか。",
+      "decoys": [
+        "berkenalan"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "The leaking air-conditioner",
+    "title_ja": "水もれするエアコン",
+    "lines": [
+      {
+        "id": "ms-x12-d01",
+        "speaker": "Pejabat pengurusan",
+        "ms": "Selamat pagi. Ini pejabat pengurusan.",
+        "en": "Good morning. Management office."
+      },
+      {
+        "id": "ms-x12-d02",
+        "speaker": "Tanaka",
+        "ms": "Selamat pagi. Saya mahu buat tempahan servis penghawa dingin.",
+        "en": "Good morning. I'd like to book an air-conditioner service.",
+        "choices": [
+          "Selamat malam. Saya mahu cat penghawa dingin saya merah.",
+          "Selamat pagi. Saya mahu lupakan penghawa dingin saya."
+        ],
+        "choices_en": [
+          "Good evening. I want to paint my air-conditioner red.",
+          "Good morning. I want to forget my air-conditioner."
+        ]
+      },
+      {
+        "id": "ms-x12-d03",
+        "speaker": "Pejabat pengurusan",
+        "ms": "Baik, Encik. Kenapa dengan penghawa dingin itu?",
+        "en": "Certainly. What's wrong with the air-conditioner?"
+      },
+      {
+        "id": "ms-x12-d04",
+        "speaker": "Tanaka",
+        "ms": "Penghawa dingin di bilik tidur saya bocor. Air keluar ke lantai.",
+        "en": "The air-conditioner in my bedroom is leaking. Water is coming out onto the floor.",
+        "choices": [
+          "Penghawa dingin saya sangat sejuk dan sedap.",
+          "Penghawa dingin saya membosankan. Dia tidak bercakap."
+        ],
+        "choices_en": [
+          "My air-conditioner is very cold and tasty.",
+          "My air-conditioner is boring. It doesn't talk."
+        ]
+      },
+      {
+        "id": "ms-x12-d05",
+        "speaker": "Pejabat pengurusan",
+        "ms": "Saya memahami aduan Encik. Tolong cabut plag dulu. Juruteknik boleh datang esok pagi.",
+        "en": "I understand your complaint. Please unplug it first. A technician can come tomorrow morning."
+      },
+      {
+        "id": "ms-x12-d06",
+        "speaker": "Tanaka",
+        "ms": "Boleh tolong tempahkan slot pukul sembilan untuk saya?",
+        "en": "Could you book the nine o'clock slot for me?",
+        "choices": [
+          "Boleh tolong besarkan bilik tidur saya?",
+          "Tidak boleh. Saya mahu juruteknik datang tahun depan."
+        ],
+        "choices_en": [
+          "Could you make my bedroom bigger?",
+          "No. I want the technician to come next year."
+        ]
+      },
+      {
+        "id": "ms-x12-d07",
+        "speaker": "Pejabat pengurusan",
+        "ms": "Boleh. Saya tempahkan slot pukul sembilan untuk Encik.",
+        "en": "Sure. I'll book the nine o'clock slot for you."
+      },
+      {
+        "id": "ms-x12-d08",
+        "speaker": "(Narrator)",
+        "ms": "Esok pagi.",
+        "en": "The next morning."
+      },
+      {
+        "id": "ms-x12-d09",
+        "speaker": "Juruteknik",
+        "ms": "Selamat pagi, Encik. Saya juruteknik dari pejabat pengurusan.",
+        "en": "Good morning. I'm the technician from the management office."
+      },
+      {
+        "id": "ms-x12-d10",
+        "speaker": "Tanaka",
+        "ms": "Selamat pagi. Penghawa dingin itu di bilik tidur. Boleh saya tunjukkan bilik itu?",
+        "en": "Good morning. The air-conditioner is in the bedroom. Shall I show you the room?",
+        "choices": [
+          "Selamat pagi. Saya tidak ada penghawa dingin.",
+          "Selamat pagi. Tolong keluarkan saya dari bilik tidur."
+        ],
+        "choices_en": [
+          "Good morning. I don't have an air-conditioner.",
+          "Good morning. Please take me out of the bedroom."
+        ]
+      },
+      {
+        "id": "ms-x12-d11",
+        "speaker": "Juruteknik",
+        "ms": "Salur air ini sudah kotor. Itu yang menyebabkan kebocoran.",
+        "en": "This drain pipe is dirty. That's what's causing the leak."
+      },
+      {
+        "id": "ms-x12-d12",
+        "speaker": "Tanaka",
+        "ms": "Boleh Encik baiki hari ini?",
+        "en": "Can you fix it today?"
+      },
+      {
+        "id": "ms-x12-d13",
+        "speaker": "Juruteknik",
+        "ms": "Boleh. Saya keluarkan alat saya dulu.",
+        "en": "Yes. I'll get my tools out first.",
+        "choices": [
+          "Boleh. Saya besarkan rumah Encik dulu.",
+          "Tidak. Saya mahu lupakan kerja ini."
+        ],
+        "choices_en": [
+          "Yes. I'll make your house bigger first.",
+          "No. I want to forget about this job."
+        ]
+      },
+      {
+        "id": "ms-x12-d14",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih, Encik. Saya tunggu di ruang tamu.",
+        "en": "Thank you. I'll wait in the living room."
+      }
+    ]
+  }
+}

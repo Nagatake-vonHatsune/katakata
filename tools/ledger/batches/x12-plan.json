@@ -1,0 +1,908 @@
+{
+ "chapter": 12,
+ "place": "Ch12 (extension)",
+ "changes": [],
+ "new": [
+  {
+   "lid": "L-1685",
+   "row": 1686,
+   "values": [
+    "L-1685",
+    "alat",
+    "tool, fitting",
+    "道具、部品",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x12-001",
+    "Ch12 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "tool, fitting",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: home repairs (Ch12): «alat salur air». Hanashishou: 2 scenes; e.g. «Jadi, servis dan alat salur air dulu.» (aircon_repair).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1686",
+   "row": 1687,
+   "values": [
+    "L-1686",
+    "bocor",
+    "leak, leaky",
+    "漏れる、漏れている",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x12-002",
+    "Ch12 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "leak, leaky",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: reporting a repair at home (Ch12): a leaking ceiling or aircon. Hanashishou: 2 scenes; e.g. «Bangunan awak bocor.» (ceiling_leak).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1687",
+   "row": 1688,
+   "values": [
+    "L-1687",
+    "cat",
+    "paint",
+    "ペンキ、塗料",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x12-003",
+    "Ch12 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "paint",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: home and condo (Ch12): deposit and repainting a flat. Hanashishou: 2 scenes; e.g. «Saya tak kisah pasal cat itu.» (lift_chat).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1688",
+   "row": 1689,
+   "values": [
+    "L-1688",
+    "ceritakan",
+    "tell (a story)",
+    "話して聞かせる",
+    "verb",
+    "-kan",
+    "cerita",
+    "Not yet checked",
+    "",
+    "ms-x12-004",
+    "Ch12 (extension)",
+    "health · band 1",
+    "Yes",
+    "tell (a story)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: -kan requests (Ch12): «Ceritakan …»; cerita is placed Ch10 (extension). Hanashishou: 2 scenes; e.g. «Ceritakan lagi.» (clinic_visit).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1689",
+   "row": 1690,
+   "values": [
+    "L-1689",
+    "lupakan",
+    "forget (it)",
+    "忘れる（〜を）、気にしないで",
+    "verb",
+    "-kan",
+    "lupa",
+    "Not yet checked",
+    "",
+    "ms-x12-005",
+    "Ch12 (extension)",
+    "social · band 1",
+    "Yes",
+    "forget (it)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: -kan (Ch12): «Lupakan saja»; lupa Ch4. Hanashishou: 2 scenes; e.g. «Lupakan saja.» (borrowed_money).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1690",
+   "row": 1691,
+   "values": [
+    "L-1690",
+    "penghantaran",
+    "delivery",
+    "配達",
+    "noun",
+    "pe-an",
+    "hantar",
+    "Not yet checked",
+    "",
+    "ms-x12-006",
+    "Ch12 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "delivery",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: report a delivery (Ch12); hantar Ch2. Hanashishou: 2 scenes; e.g. «Pintu mana yang ada dalam gambar penghantaran?» (lift_chat).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1691",
+   "row": 1692,
+   "values": [
+    "L-1691",
+    "pengurusan",
+    "management",
+    "管理（事務所）",
+    "noun",
+    "pe-an",
+    "urus",
+    "Not yet checked",
+    "",
+    "ms-x12-007",
+    "Ch12 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "management",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: home and condo (Ch12): «pejabat pengurusan» (management office). Hanashishou: 2 scenes; e.g. «Anda beri nombor unit apa kepada pejabat pengurusan?» (ceiling_leak).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1692",
+   "row": 1693,
+   "values": [
+    "L-1692",
+    "baik pulih",
+    "repair, repair work",
+    "修理",
+    "phrase",
+    "chunk",
+    "baik + pulih",
+    "Not yet checked",
+    "",
+    "ms-x12-008",
+    "Ch12 (extension)",
+    "",
+    "",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: repairs (Ch12): «kerja baik pulih»; baik Ch1. not spoken by a character or offered as a choice (pattern).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1693",
+   "row": 1694,
+   "values": [
+    "L-1693",
+    "besarkan",
+    "enlarge, make bigger",
+    "大きくする",
+    "verb",
+    "-kan",
+    "besar",
+    "Not yet checked",
+    "",
+    "ms-x12-009",
+    "Ch12 (extension)",
+    "tutorial · band 1",
+    "Yes",
+    "enlarge, make bigger",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: -kan requests (Ch12): «Tolong besarkan …»; besar Ch5. Hanashishou: 1 scene; e.g. «Aa untuk besarkan teks.» (how_to_play).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1694",
+   "row": 1695,
+   "values": [
+    "L-1694",
+    "cabut",
+    "pull out, unplug",
+    "抜く（プラグを）",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x12-010",
+    "Ch12 (extension)",
+    "home-condo · band 2",
+    "Yes",
+    "pull out, unplug",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: home repairs (Ch12): «cabut plag». Hanashishou: 1 scene; e.g. «Ya, saya sudah cabut plag selama seminit dan hidupkan semula dua kali, tapi lampu masih merah.» (wifi_down).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1695",
+   "row": 1696,
+   "values": [
+    "L-1695",
+    "gas",
+    "gas",
+    "ガス",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x12-011",
+    "Ch12 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "gas",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: home repairs (Ch12): the aircon gas top-up. Hanashishou: 1 scene; e.g. «Tapi gas mungkin tak perlu.» (aircon_repair).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1696",
+   "row": 1697,
+   "values": [
+    "L-1696",
+    "jaga",
+    "look after, keep",
+    "世話をする、守る",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x12-012",
+    "Ch12 (extension)",
+    "office · band 1",
+    "Yes",
+    "look after, keep",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: home (Ch12): «jaga rumah», «jaga anak». Hanashishou: 1 scene; e.g. «Anda terima ucapan terima kasih dengan mesra dan jaga hubungan baik dengan rakan sekerja.» (meeting_room). not spoken by a character or offered as a choice (pattern).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1697",
+   "row": 1698,
+   "values": [
+    "L-1697",
+    "keluarkan",
+    "take out",
+    "出す、取り出す",
+    "verb",
+    "-kan",
+    "keluar",
+    "Not yet checked",
+    "",
+    "ms-x12-013",
+    "Ch12 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "take out",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: -kan (Ch12); keluar Ch7. Hanashishou: 1 scene; e.g. «Boleh saya keluarkan sikit barang?» (airport_checkin).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1698",
+   "row": 1699,
+   "values": [
+    "L-1698",
+    "kenalkan",
+    "introduce",
+    "紹介する",
+    "verb",
+    "-kan",
+    "kenal",
+    "Not yet checked",
+    "",
+    "ms-x12-014",
+    "Ch12 (extension)",
+    "office · band 1",
+    "Yes",
+    "introduce",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: -kan (Ch12): «Saya nak kenalkan …»; kenal Ch2 (extension). Hanashishou: 1 scene; e.g. «Anda sambut dia, kenalkan diri, dan tanya soalan supaya dia selesa sembang.» (new_joiner). not spoken by a character or offered as a choice (pattern).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1699",
+   "row": 1700,
+   "values": [
+    "L-1699",
+    "langsir",
+    "curtain",
+    "カーテン",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x12-015",
+    "Ch12 (extension)",
+    "social · band 1",
+    "Yes",
+    "curtain",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: home (Ch12). Hanashishou: 1 scene; e.g. «Taman, pukul 9, jauh dari langsir.» (jinx_fireworks).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1700",
+   "row": 1701,
+   "values": [
+    "L-1700",
+    "maafkan",
+    "to forgive, excuse",
+    "許される",
+    "verb",
+    "di- -kan",
+    "maaf",
+    "Not yet checked",
+    "",
+    "ms-x12-016",
+    "Ch12 (extension)",
+    "social · band 1",
+    "Yes",
+    "to forgive, excuse",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: -kan (Ch12); headword «maafkan»; maaf Ch1; scene form «dimaafkan» (di- Ch9). Hanashishou: 1 scene; e.g. «Tak boleh dimaafkan.» (azula_interview).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1701",
+   "row": 1702,
+   "values": [
+    "L-1701",
+    "masukkan",
+    "put in, enter",
+    "入れる",
+    "verb",
+    "-kan",
+    "masuk",
+    "Not yet checked",
+    "",
+    "ms-x12-017",
+    "Ch12 (extension)",
+    "office · band 1",
+    "Yes",
+    "put in, enter",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: -kan (Ch12); masuk Ch7. Hanashishou: 1 scene; e.g. «Masukkan dalam sistem, dan salinkan saya dalam e-mel serahan tugas.» (annual_leave).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1702",
+   "row": 1703,
+   "values": [
+    "L-1702",
+    "mati",
+    "dead; stopped working (\"internet mati\" = the internet is down)",
+    "死ぬ；止まる（«internet mati»）",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x12-018",
+    "Ch12 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "dead; stopped working (\"internet mati\" = the internet is down)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: home repairs (Ch12): the internet or a light is down. Hanashishou: 1 scene; e.g. «Ia mati pagi tadi.» (wifi_down).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1703",
+   "row": 1704,
+   "values": [
+    "L-1703",
+    "memahami",
+    "understand",
+    "理解する",
+    "verb",
+    "meN- -i",
+    "faham",
+    "Not yet checked",
+    "",
+    "ms-x12-019",
+    "Ch12 (extension)",
+    "social · band 2",
+    "Yes",
+    "understand",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: meN- and -i (Ch12); faham Ch4 (Dunia). Hanashishou: 1 scene; e.g. «Sebelum itu, tiga tahun dalam peruncitan mengajar saya memahami pelanggan.» (azula_interview).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1704",
+   "row": 1705,
+   "values": [
+    "L-1704",
+    "membosankan",
+    "boring",
+    "退屈な",
+    "adj",
+    "meN- -kan",
+    "bosan",
+    "Not yet checked",
+    "",
+    "ms-x12-020",
+    "Ch12 (extension)",
+    "office · band 1",
+    "Yes",
+    "boring",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: meN- -kan (Ch12); bosan Ch5. Hanashishou: 1 scene; e.g. «Maaf, saya membosankan.» (chatty_colleague).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1705",
+   "row": 1706,
+   "values": [
+    "L-1705",
+    "mengecewakan",
+    "disappointing",
+    "がっかりさせる",
+    "adj",
+    "meN- -kan",
+    "kecewa",
+    "Not yet checked",
+    "",
+    "ms-x12-021",
+    "Ch12 (extension)",
+    "social · band 1",
+    "Yes",
+    "disappointing",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: meN- -kan (Ch12); kecewa Ch5 (extension). Hanashishou: 1 scene; e.g. «Mengecewakan.» (azula_speech).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1706",
+   "row": 1707,
+   "values": [
+    "L-1706",
+    "menjalankan",
+    "carry out, run",
+    "行う、実施する",
+    "verb",
+    "meN- -kan",
+    "jalan",
+    "Not yet checked",
+    "",
+    "ms-x12-022",
+    "Ch12 (extension)",
+    "office · band 2",
+    "Yes",
+    "carry out, run",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: meN- -kan (Ch12); jalan Ch7. Hanashishou: 1 scene; e.g. «Saya menjalankan ujian pengguna sebelum pelancaran bulan depan.» (azula_coffee).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1707",
+   "row": 1708,
+   "values": [
+    "L-1707",
+    "menunjukkan",
+    "show",
+    "示す、見せる",
+    "verb",
+    "meN- -kan",
+    "tunjuk",
+    "Not yet checked",
+    "",
+    "ms-x12-023",
+    "Ch12 (extension)",
+    "social · band 1",
+    "Yes",
+    "show",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: meN- -kan (Ch12); «tunjukkan» is Ch12, tunjuk Ch7 (extension). Hanashishou: 1 scene; e.g. «Laju menunjukkan keyakinan.» (azula_speech).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1708",
+   "row": 1709,
+   "values": [
+    "L-1708",
+    "menyebabkan",
+    "cause",
+    "引き起こす",
+    "verb",
+    "meN- -kan",
+    "sebab",
+    "Not yet checked",
+    "",
+    "ms-x12-024",
+    "Ch12 (extension)",
+    "health · band 2",
+    "Yes",
+    "cause",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: meN- -kan (Ch12); sebab Ch5. Hanashishou: 1 scene; e.g. «Ada versi yang tidak menyebabkan rasa mengantuk?» (pharmacy_advice).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1709",
+   "row": 1710,
+   "values": [
+    "L-1709",
+    "menyiapkan",
+    "to finish, complete",
+    "仕上げる",
+    "verb",
+    "meN- -kan",
+    "siap",
+    "Not yet checked",
+    "",
+    "ms-x12-025",
+    "Ch12 (extension)",
+    "office · band 2",
+    "Yes",
+    "to finish, complete",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: meN- -kan (Ch12): finish a repair; siap Ch9; scene form «menyiapkannya». Hanashishou: 1 scene; e.g. «Daniel kenal pelanggan itu, jadi dia boleh menyiapkannya.» (sick_day).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1710",
+   "row": 1711,
+   "values": [
+    "L-1710",
+    "padam",
+    "go out (of lights); erase",
+    "消える、消す",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x12-026",
+    "Ch12 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "go out (of lights); erase",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: home (Ch12): the lights go out. Hanashishou: 1 scene; e.g. «Lampu tempat letak kereta padam lagi.» (lift_chat).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1711",
+   "row": 1712,
+   "values": [
+    "L-1711",
+    "penghawa dingin",
+    "air-conditioner",
+    "エアコン",
+    "phrase",
+    "chunk",
+    "penghawa + dingin",
+    "Not yet checked",
+    "",
+    "ms-x12-027",
+    "Ch12 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "air-conditioner",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: home repairs (Ch12): the aircon repair and service. Hanashishou: 1 scene; e.g. «Penghawa dingin bilik tidur anda bocor: air titis ke lantai.» (aircon_repair). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1712",
+   "row": 1713,
+   "values": [
+    "L-1712",
+    "plag",
+    "plug",
+    "プラグ",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x12-028",
+    "Ch12 (extension)",
+    "home-condo · band 2",
+    "Yes",
+    "plug",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: home repairs (Ch12). Hanashishou: 1 scene; e.g. «Ya, saya sudah cabut plag selama seminit dan hidupkan semula dua kali, tapi lampu masih merah.» (wifi_down).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1713",
+   "row": 1714,
+   "values": [
+    "L-1713",
+    "salur",
+    "pipe (\"salur air\" = water pipe)",
+    "管（«salur air» 水道管）",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x12-029",
+    "Ch12 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "pipe (\"salur air\" = water pipe)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: home repairs (Ch12): the water pipe. Hanashishou: 1 scene; e.g. «Jadi, servis dan alat salur air dulu.» (aircon_repair).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1714",
+   "row": 1715,
+   "values": [
+    "L-1714",
+    "servis",
+    "service",
+    "サービス、点検",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x12-030",
+    "Ch12 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "service",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: home repairs (Ch12): the aircon service. Hanashishou: 1 scene; e.g. «Jadi, servis dan alat salur air dulu.» (aircon_repair).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1715",
+   "row": 1716,
+   "values": [
+    "L-1715",
+    "tempahkan",
+    "book (for someone)",
+    "予約してあげる",
+    "verb",
+    "-kan",
+    "tempah",
+    "Not yet checked",
+    "",
+    "ms-x12-031",
+    "Ch12 (extension)",
+    "health · band 1",
+    "Yes",
+    "book (for someone)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: -kan requests (Ch12); tempah Ch4. Hanashishou: 1 scene; e.g. «Hari ini penuh, tapi saya boleh tempahkan hari lain.» (dentist_booking).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x12-001": {
+   "lid": "L-1685"
+  },
+  "ms-x12-002": {
+   "lid": "L-1686"
+  },
+  "ms-x12-003": {
+   "lid": "L-1687"
+  },
+  "ms-x12-004": {
+   "lid": "L-1688"
+  },
+  "ms-x12-005": {
+   "lid": "L-1689"
+  },
+  "ms-x12-006": {
+   "lid": "L-1690"
+  },
+  "ms-x12-007": {
+   "lid": "L-1691"
+  },
+  "ms-x12-008": {
+   "lid": "L-1692"
+  },
+  "ms-x12-009": {
+   "lid": "L-1693"
+  },
+  "ms-x12-010": {
+   "lid": "L-1694"
+  },
+  "ms-x12-011": {
+   "lid": "L-1695"
+  },
+  "ms-x12-012": {
+   "lid": "L-1696"
+  },
+  "ms-x12-013": {
+   "lid": "L-1697"
+  },
+  "ms-x12-014": {
+   "lid": "L-1698"
+  },
+  "ms-x12-015": {
+   "lid": "L-1699"
+  },
+  "ms-x12-016": {
+   "lid": "L-1700"
+  },
+  "ms-x12-017": {
+   "lid": "L-1701"
+  },
+  "ms-x12-018": {
+   "lid": "L-1702"
+  },
+  "ms-x12-019": {
+   "lid": "L-1703"
+  },
+  "ms-x12-020": {
+   "lid": "L-1704"
+  },
+  "ms-x12-021": {
+   "lid": "L-1705"
+  },
+  "ms-x12-022": {
+   "lid": "L-1706"
+  },
+  "ms-x12-023": {
+   "lid": "L-1707"
+  },
+  "ms-x12-024": {
+   "lid": "L-1708"
+  },
+  "ms-x12-025": {
+   "lid": "L-1709"
+  },
+  "ms-x12-026": {
+   "lid": "L-1710"
+  },
+  "ms-x12-027": {
+   "lid": "L-1711"
+  },
+  "ms-x12-028": {
+   "lid": "L-1712"
+  },
+  "ms-x12-029": {
+   "lid": "L-1713"
+  },
+  "ms-x12-030": {
+   "lid": "L-1714"
+  },
+  "ms-x12-031": {
+   "lid": "L-1715"
+  }
+ }
+}
