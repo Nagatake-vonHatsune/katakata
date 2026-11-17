@@ -1,0 +1,50 @@
+{
+  "note": "Hand-written source of the chapter 2 ⚡ stage (Build B1, 17 Nov 2026). tools/build_stretch.py turns it into content/ms/stretch/x02.json. Malay: Malaysian standard, standard form first, no spoken forms, chapter 2 affix gates (no ber-, meN-, -kan or -i; «belajar» is a chapter 2 whole word), «dari» for places. All Japanese is a draft for the native check.",
+  "chapter": 2,
+  "scenario_title_en": "Meeting Puan Siti",
+  "scenario_title_ja": "シティさんとの出会い",
+  "notes": {
+    "L-1330": {"en": "Which, where (in questions): «universiti mana?» = which university?, «orang mana?» = where are you from? Compare «di mana» (Ch2).", "ja": "どの、どこ（質問で）：«universiti mana?»＝どの大学？、«orang mana?»＝どこの出身？ «di mana»（第2課）と比べよう。"},
+    "L-1392": {"en": "To know a person: «Saya kenal dia.» = I know him / her.", "ja": "（人を）知っている：«Saya kenal dia.»＝その人を知っています。"},
+    "L-1507": {"en": "In speech «ajar» on its own: «Dia ajar bahasa Inggeris.» Formal / written: «mengajar». Compare «belajar» (Ch2) = to study.", "ja": "話し言葉では «ajar» だけで：«Dia ajar bahasa Inggeris.» 書き言葉では «mengajar»。«belajar»（第2課）＝勉強する、と比べよう。"},
+    "L-1508": {"en": "Dad, father: the everyday word. «ayah saya» = my father.", "ja": "父、お父さん（ふだんの言い方）。«ayah saya»＝私の父。"},
+    "L-1509": {"en": "Father, a little more formal than «ayah». «ibu bapa» = parents.", "ja": "父（«ayah» より少し改まった言い方）。«ibu bapa»＝両親。"},
+    "L-1510": {"en": "Always said twice: children (as a group).", "ja": "必ず2回くり返す形：子どもたち。"},
+    "L-1511": {"en": "«Saya lahir di Osaka.» = I was born in Osaka (with «di», not «dari»).", "ja": "«Saya lahir di Osaka.»＝大阪で生まれました（«dari» ではなく «di»）。"},
+    "L-1512": {"en": "pe(N)- + cetak (Ch2): the thing that prints.", "ja": "pe(N)- + cetak（第2課）：印刷するもの。"},
+    "L-1513": {"en": "«Saya sukarelawan di kampung.» = I volunteer in my village.", "ja": "«Saya sukarelawan di kampung.»＝村でボランティアをしています。"}
+  },
+  "frames": [
+    {"frame": "___ lahir di mana? Saya lahir di ___, Jepun.", "example": "Puan lahir di mana? Saya lahir di Osaka, Jepun.", "decoys": ["dari"], "meaning_en": "Where were you born? I was born in Osaka, Japan.", "meaning_ja": "どこで生まれましたか。日本の大阪で生まれました。"},
+    {"frame": "Saya kenal ___. Dia ___ saya.", "example": "Saya kenal Encik Rahman. Dia bos saya.", "decoys": ["siapa"], "meaning_en": "I know Mr Rahman. He's my boss.", "meaning_ja": "ラーマンさんを知っています。私の上司です。"},
+    {"frame": "___ saya ajar ___ ___ di sekolah.", "example": "Bapa saya ajar bahasa Inggeris di sekolah.", "decoys": ["belajar"], "meaning_en": "My father teaches English at a school.", "meaning_ja": "父は学校で英語を教えています。"},
+    {"frame": "Encik orang mana? Saya orang ___, dari ___.", "example": "Encik orang mana? Saya orang Jepun, dari Osaka.", "decoys": ["di"], "meaning_en": "Where are you from? I'm Japanese, from Osaka.", "meaning_ja": "どちらのご出身ですか。日本人で、大阪から来ました。"},
+    {"frame": "Maaf, Encik, ___ di mana? Saya cetak ___ ini dulu.", "example": "Maaf, Encik, pencetak di mana? Saya cetak fail ini dulu.", "decoys": ["siapa"], "meaning_en": "Excuse me, where's the printer? I'll print this file first.", "meaning_ja": "すみません、プリンターはどこですか。先にこのファイルを印刷します。"}
+  ],
+  "lines": [
+    {"speaker": "Encik Rahman", "ms": "Encik Tanaka, Encik kenal Puan Siti?", "en": "Mr Tanaka, do you know Mrs Siti?"},
+    {"speaker": "Tanaka", "ms": "Tidak, Encik. Selamat berkenalan, Puan Siti.", "en": "No, I don't. Nice to meet you, Mrs Siti.",
+     "choices": ["Ya, Encik. Jumpa lagi, Puan Siti.", "Tidak, Encik. Selamat jalan, Puan Siti."],
+     "choices_en": ["Yes. See you again, Mrs Siti.", "No. Goodbye, Mrs Siti."]},
+    {"speaker": "Puan Siti", "ms": "Selamat berkenalan, Encik Tanaka. Encik orang mana?", "en": "Nice to meet you, Mr Tanaka. Where are you from?"},
+    {"speaker": "Tanaka", "ms": "Saya orang Jepun. Saya lahir di Osaka.", "en": "I'm Japanese. I was born in Osaka.",
+     "choices": ["Saya kerja di syarikat ini.", "Nama saya Tanaka."],
+     "choices_en": ["I work at this company.", "My name is Tanaka."]},
+    {"speaker": "Puan Siti", "ms": "Oh, Osaka! Anak saya belajar di universiti di Osaka.", "en": "Oh, Osaka! My child studies at a university in Osaka."},
+    {"speaker": "Tanaka", "ms": "Wah! Universiti mana?", "en": "Wow! Which university?",
+     "choices": ["Wah! Siapa nama Puan?", "Wah! Pencetak di mana?"],
+     "choices_en": ["Wow! What's your name?", "Wow! Where's the printer?"]},
+    {"speaker": "Puan Siti", "ms": "Universiti Osaka. Encik Rahman pun kenal dia.", "en": "Osaka University. Mr Rahman knows him too."},
+    {"speaker": "Encik Rahman", "ms": "Ya, saya kenal dia. Dia kawan anak saya.", "en": "Yes, I know him. He's my child's friend."},
+    {"speaker": "Tanaka", "ms": "Puan pun kerja di syarikat ini?", "en": "Do you work at this company too?"},
+    {"speaker": "Puan Siti", "ms": "Tidak. Saya guru. Saya ajar kanak-kanak bahasa Inggeris. Saya juga sukarelawan di kampung saya.", "en": "No. I'm a teacher. I teach children English. I'm also a volunteer in my village."},
+    {"speaker": "Tanaka", "ms": "Oh! Ayah saya pun guru di Jepun.", "en": "Oh! My father is a teacher in Japan too.",
+     "choices": ["Oh! Ayah saya pun pelajar di Jepun.", "Oh! Saya tidak suka bahasa Inggeris."],
+     "choices_en": ["Oh! My father is a student in Japan too.", "Oh! I don't like English."]},
+    {"speaker": "Puan Siti", "ms": "Oh, ya? Maaf, Encik Rahman, pencetak di mana?", "en": "Oh, really? Excuse me, Mr Rahman, where's the printer?"},
+    {"speaker": "Encik Rahman", "ms": "Pencetak ada di pejabat saya.", "en": "The printer is in my office."},
+    {"speaker": "Puan Siti", "ms": "Terima kasih, Encik Rahman.", "en": "Thank you, Mr Rahman.",
+     "choices": ["Sama-sama, Encik Rahman.", "Selamat datang, Encik Rahman."],
+     "choices_en": ["You're welcome, Mr Rahman.", "Welcome, Mr Rahman."]}
+  ]
+}

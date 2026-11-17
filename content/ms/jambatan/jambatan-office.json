@@ -330,24 +330,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-office-42",
-      "lang": "ms",
-      "term": "kenal",
-      "gloss_en": "to know (a person), recognise",
-      "gloss_ja": "知っている（人）、見分ける",
-      "pos": "verb",
-      "affix_tag": "root",
-      "note": "Hanashishou: Saya perlukan satu nama. Siapa kenal pelanggan ini? In 5 Hanashishou scenes: Calling in sick, Karaoke night, The handover, The lost wallet and 1 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-office"
-        }
-      ],
-      "scene": "dunia-jambatan-office",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-office-43",
       "lang": "ms",
       "term": "pengerusi",

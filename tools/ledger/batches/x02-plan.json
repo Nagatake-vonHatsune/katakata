@@ -1,0 +1,255 @@
+{
+ "chapter": 2,
+ "place": "Ch2 (extension)",
+ "changes": [
+  {
+   "lid": "L-1330",
+   "row": 1331,
+   "word": "mana",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-daily-life-41",
+     "after": "ms-x02-001"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Daily life",
+     "after": "Ch2 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1392",
+   "row": 1393,
+   "word": "kenal",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-office-42",
+     "after": "ms-x02-002"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · At work",
+     "after": "Ch2 (extension)"
+    }
+   ]
+  }
+ ],
+ "new": [
+  {
+   "lid": "L-1507",
+   "row": 1508,
+   "values": [
+    "L-1507",
+    "ajar",
+    "teach",
+    "教える",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x02-003",
+    "Ch2 (extension)",
+    "social · band 1",
+    "Yes",
+    "teach",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: self-introduction and work (Ch2): «Saya ajar …»; pairs with «guru / cikgu» (Ch2). Hanashishou: 1 scene; e.g. «Pekerja kafe, Rina, datang ke meja anda untuk ajar satu permainan lumba yang mudah.» (jinx_board_game). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1508",
+   "row": 1509,
+   "values": [
+    "L-1508",
+    "ayah",
+    "father",
+    "父、お父さん",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x02-004",
+    "Ch2 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "father",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: family in a self-introduction (Ch2). Hanashishou: 1 scene; e.g. «Ayah anda telefon dari kereta.» (visitor_parking). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1509",
+   "row": 1510,
+   "values": [
+    "L-1509",
+    "bapa",
+    "father (\"ibu bapa\" = parents)",
+    "父（「ibu bapa」両親）",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x02-005",
+    "Ch2 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "father (\"ibu bapa\" = parents)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: family (Ch2): «ibu bapa» (parents). Hanashishou: 1 scene; e.g. «Ibu bapa saya datang hari Sabtu.» (visitor_parking).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1510",
+   "row": 1511,
+   "values": [
+    "L-1510",
+    "kanak-kanak",
+    "children",
+    "子ども",
+    "noun",
+    "lex",
+    "kanak",
+    "Not yet checked",
+    "",
+    "ms-x02-006",
+    "Ch2 (extension)",
+    "social · band 1",
+    "Yes",
+    "children",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: people (Ch2). Hanashishou: 1 scene; e.g. «Mereka tak perlu tahu zaman kanak-kanak awak.» (azula_interview).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1511",
+   "row": 1512,
+   "values": [
+    "L-1511",
+    "lahir",
+    "be born",
+    "生まれる",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x02-007",
+    "Ch2 (extension)",
+    "social · band 1",
+    "Yes",
+    "be born",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: self-introduction (Ch2): «Saya lahir di …». Hanashishou: 1 scene; e.g. «Hmm, saya lahir di pekan kecil, dan masa umur enam tahun...» (azula_interview).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1512",
+   "row": 1513,
+   "values": [
+    "L-1512",
+    "pencetak",
+    "printer",
+    "プリンター",
+    "noun",
+    "pe(N)-",
+    "cetak",
+    "Not yet checked",
+    "",
+    "ms-x02-008",
+    "Ch2 (extension)",
+    "office · band 1",
+    "Yes",
+    "printer",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: the office on your first day (Ch2): «Pencetak di mana?»; cetak Ch2. Hanashishou: 1 scene; e.g. «Maaf, pencetak di tingkat berapa tadi?» (new_joiner).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1513",
+   "row": 1514,
+   "values": [
+    "L-1513",
+    "sukarelawan",
+    "volunteer",
+    "ボランティア",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x02-009",
+    "Ch2 (extension)",
+    "social · band 1",
+    "Yes",
+    "volunteer",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: self-introduction (Ch2): what you do. Hanashishou: 1 scene; e.g. «Anda jadi sukarelawan di belakang pentas sebuah konsert.» (miku_encore). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x02-001": {
+   "lid": "L-1330",
+   "moved_from": "ms-j-daily-life-41"
+  },
+  "ms-x02-002": {
+   "lid": "L-1392",
+   "moved_from": "ms-j-office-42"
+  },
+  "ms-x02-003": {
+   "lid": "L-1507"
+  },
+  "ms-x02-004": {
+   "lid": "L-1508"
+  },
+  "ms-x02-005": {
+   "lid": "L-1509"
+  },
+  "ms-x02-006": {
+   "lid": "L-1510"
+  },
+  "ms-x02-007": {
+   "lid": "L-1511"
+  },
+  "ms-x02-008": {
+   "lid": "L-1512"
+  },
+  "ms-x02-009": {
+   "lid": "L-1513"
+  }
+ }
+}

@@ -1,0 +1,369 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x02",
+  "chapter": 2,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Kata Ganti Nama dan Perkenalan Diri",
+    "en": "Pronouns and introducing yourself",
+    "ja": "代名詞と自己紹介"
+  },
+  "cards": [
+    {
+      "id": "ms-x02-001",
+      "lang": "ms",
+      "term": "mana",
+      "gloss_en": "which; where (in questions)",
+      "gloss_ja": "どの、どこ",
+      "pos": "question word",
+      "affix_tag": "root",
+      "note": "Which, where (in questions): «universiti mana?» = which university?, «orang mana?» = where are you from? Compare «di mana» (Ch2).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x02"
+        }
+      ],
+      "scene": "stretch-x02",
+      "chapter": 2,
+      "note_ja": "どの、どこ（質問で）：«universiti mana?»＝どの大学？、«orang mana?»＝どこの出身？ «di mana»（第2課）と比べよう。"
+    },
+    {
+      "id": "ms-x02-002",
+      "lang": "ms",
+      "term": "kenal",
+      "gloss_en": "to know (a person), recognise",
+      "gloss_ja": "知っている（人）、見分ける",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To know a person: «Saya kenal dia.» = I know him / her.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x02"
+        }
+      ],
+      "scene": "stretch-x02",
+      "chapter": 2,
+      "note_ja": "（人を）知っている：«Saya kenal dia.»＝その人を知っています。"
+    },
+    {
+      "id": "ms-x02-003",
+      "lang": "ms",
+      "term": "ajar",
+      "gloss_en": "teach",
+      "gloss_ja": "教える",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "In speech «ajar» on its own: «Dia ajar bahasa Inggeris.» Formal / written: «mengajar». Compare «belajar» (Ch2) = to study.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x02"
+        }
+      ],
+      "scene": "stretch-x02",
+      "chapter": 2,
+      "note_ja": "話し言葉では «ajar» だけで：«Dia ajar bahasa Inggeris.» 書き言葉では «mengajar»。«belajar»（第2課）＝勉強する、と比べよう。"
+    },
+    {
+      "id": "ms-x02-004",
+      "lang": "ms",
+      "term": "ayah",
+      "gloss_en": "father",
+      "gloss_ja": "父、お父さん",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Dad, father: the everyday word. «ayah saya» = my father.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x02"
+        }
+      ],
+      "scene": "stretch-x02",
+      "chapter": 2,
+      "note_ja": "父、お父さん（ふだんの言い方）。«ayah saya»＝私の父。"
+    },
+    {
+      "id": "ms-x02-005",
+      "lang": "ms",
+      "term": "bapa",
+      "gloss_en": "father (\"ibu bapa\" = parents)",
+      "gloss_ja": "父（「ibu bapa」両親）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Father, a little more formal than «ayah». «ibu bapa» = parents.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x02"
+        }
+      ],
+      "scene": "stretch-x02",
+      "chapter": 2,
+      "note_ja": "父（«ayah» より少し改まった言い方）。«ibu bapa»＝両親。"
+    },
+    {
+      "id": "ms-x02-006",
+      "lang": "ms",
+      "term": "kanak-kanak",
+      "gloss_en": "children",
+      "gloss_ja": "子ども",
+      "pos": "noun",
+      "affix_tag": "lex",
+      "note": "Always said twice: children (as a group).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x02"
+        }
+      ],
+      "scene": "stretch-x02",
+      "chapter": 2,
+      "note_ja": "必ず2回くり返す形：子どもたち。"
+    },
+    {
+      "id": "ms-x02-007",
+      "lang": "ms",
+      "term": "lahir",
+      "gloss_en": "be born",
+      "gloss_ja": "生まれる",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "«Saya lahir di Osaka.» = I was born in Osaka (with «di», not «dari»).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x02"
+        }
+      ],
+      "scene": "stretch-x02",
+      "chapter": 2,
+      "note_ja": "«Saya lahir di Osaka.»＝大阪で生まれました（«dari» ではなく «di»）。"
+    },
+    {
+      "id": "ms-x02-008",
+      "lang": "ms",
+      "term": "pencetak",
+      "gloss_en": "printer",
+      "gloss_ja": "プリンター",
+      "pos": "noun",
+      "affix_tag": "pe(N)-",
+      "note": "pe(N)- + cetak (Ch2): the thing that prints.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x02"
+        }
+      ],
+      "scene": "stretch-x02",
+      "chapter": 2,
+      "note_ja": "pe(N)- + cetak（第2課）：印刷するもの。"
+    },
+    {
+      "id": "ms-x02-009",
+      "lang": "ms",
+      "term": "sukarelawan",
+      "gloss_en": "volunteer",
+      "gloss_ja": "ボランティア",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "«Saya sukarelawan di kampung.» = I volunteer in my village.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x02"
+        }
+      ],
+      "scene": "stretch-x02",
+      "chapter": 2,
+      "note_ja": "«Saya sukarelawan di kampung.»＝村でボランティアをしています。"
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-x02-f01",
+      "frame": "___ lahir di mana? Saya lahir di ___, Jepun.",
+      "example": "Puan lahir di mana? Saya lahir di Osaka, Jepun.",
+      "meaning_en": "Where were you born? I was born in Osaka, Japan.",
+      "meaning_ja": "どこで生まれましたか。日本の大阪で生まれました。",
+      "decoys": [
+        "dari"
+      ]
+    },
+    {
+      "id": "ms-x02-f02",
+      "frame": "Saya kenal ___. Dia ___ saya.",
+      "example": "Saya kenal Encik Rahman. Dia bos saya.",
+      "meaning_en": "I know Mr Rahman. He's my boss.",
+      "meaning_ja": "ラーマンさんを知っています。私の上司です。",
+      "decoys": [
+        "siapa"
+      ]
+    },
+    {
+      "id": "ms-x02-f03",
+      "frame": "___ saya ajar ___ ___ di sekolah.",
+      "example": "Bapa saya ajar bahasa Inggeris di sekolah.",
+      "meaning_en": "My father teaches English at a school.",
+      "meaning_ja": "父は学校で英語を教えています。",
+      "decoys": [
+        "belajar"
+      ]
+    },
+    {
+      "id": "ms-x02-f04",
+      "frame": "Encik orang mana? Saya orang ___, dari ___.",
+      "example": "Encik orang mana? Saya orang Jepun, dari Osaka.",
+      "meaning_en": "Where are you from? I'm Japanese, from Osaka.",
+      "meaning_ja": "どちらのご出身ですか。日本人で、大阪から来ました。",
+      "decoys": [
+        "di"
+      ]
+    },
+    {
+      "id": "ms-x02-f05",
+      "frame": "Maaf, Encik, ___ di mana? Saya cetak ___ ini dulu.",
+      "example": "Maaf, Encik, pencetak di mana? Saya cetak fail ini dulu.",
+      "meaning_en": "Excuse me, where's the printer? I'll print this file first.",
+      "meaning_ja": "すみません、プリンターはどこですか。先にこのファイルを印刷します。",
+      "decoys": [
+        "siapa"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "Meeting Puan Siti",
+    "title_ja": "シティさんとの出会い",
+    "lines": [
+      {
+        "id": "ms-x02-d01",
+        "speaker": "Encik Rahman",
+        "ms": "Encik Tanaka, Encik kenal Puan Siti?",
+        "en": "Mr Tanaka, do you know Mrs Siti?"
+      },
+      {
+        "id": "ms-x02-d02",
+        "speaker": "Tanaka",
+        "ms": "Tidak, Encik. Selamat berkenalan, Puan Siti.",
+        "en": "No, I don't. Nice to meet you, Mrs Siti.",
+        "choices": [
+          "Ya, Encik. Jumpa lagi, Puan Siti.",
+          "Tidak, Encik. Selamat jalan, Puan Siti."
+        ],
+        "choices_en": [
+          "Yes. See you again, Mrs Siti.",
+          "No. Goodbye, Mrs Siti."
+        ]
+      },
+      {
+        "id": "ms-x02-d03",
+        "speaker": "Puan Siti",
+        "ms": "Selamat berkenalan, Encik Tanaka. Encik orang mana?",
+        "en": "Nice to meet you, Mr Tanaka. Where are you from?"
+      },
+      {
+        "id": "ms-x02-d04",
+        "speaker": "Tanaka",
+        "ms": "Saya orang Jepun. Saya lahir di Osaka.",
+        "en": "I'm Japanese. I was born in Osaka.",
+        "choices": [
+          "Saya kerja di syarikat ini.",
+          "Nama saya Tanaka."
+        ],
+        "choices_en": [
+          "I work at this company.",
+          "My name is Tanaka."
+        ]
+      },
+      {
+        "id": "ms-x02-d05",
+        "speaker": "Puan Siti",
+        "ms": "Oh, Osaka! Anak saya belajar di universiti di Osaka.",
+        "en": "Oh, Osaka! My child studies at a university in Osaka."
+      },
+      {
+        "id": "ms-x02-d06",
+        "speaker": "Tanaka",
+        "ms": "Wah! Universiti mana?",
+        "en": "Wow! Which university?",
+        "choices": [
+          "Wah! Siapa nama Puan?",
+          "Wah! Pencetak di mana?"
+        ],
+        "choices_en": [
+          "Wow! What's your name?",
+          "Wow! Where's the printer?"
+        ]
+      },
+      {
+        "id": "ms-x02-d07",
+        "speaker": "Puan Siti",
+        "ms": "Universiti Osaka. Encik Rahman pun kenal dia.",
+        "en": "Osaka University. Mr Rahman knows him too."
+      },
+      {
+        "id": "ms-x02-d08",
+        "speaker": "Encik Rahman",
+        "ms": "Ya, saya kenal dia. Dia kawan anak saya.",
+        "en": "Yes, I know him. He's my child's friend."
+      },
+      {
+        "id": "ms-x02-d09",
+        "speaker": "Tanaka",
+        "ms": "Puan pun kerja di syarikat ini?",
+        "en": "Do you work at this company too?"
+      },
+      {
+        "id": "ms-x02-d10",
+        "speaker": "Puan Siti",
+        "ms": "Tidak. Saya guru. Saya ajar kanak-kanak bahasa Inggeris. Saya juga sukarelawan di kampung saya.",
+        "en": "No. I'm a teacher. I teach children English. I'm also a volunteer in my village."
+      },
+      {
+        "id": "ms-x02-d11",
+        "speaker": "Tanaka",
+        "ms": "Oh! Ayah saya pun guru di Jepun.",
+        "en": "Oh! My father is a teacher in Japan too.",
+        "choices": [
+          "Oh! Ayah saya pun pelajar di Jepun.",
+          "Oh! Saya tidak suka bahasa Inggeris."
+        ],
+        "choices_en": [
+          "Oh! My father is a student in Japan too.",
+          "Oh! I don't like English."
+        ]
+      },
+      {
+        "id": "ms-x02-d12",
+        "speaker": "Puan Siti",
+        "ms": "Oh, ya? Maaf, Encik Rahman, pencetak di mana?",
+        "en": "Oh, really? Excuse me, Mr Rahman, where's the printer?"
+      },
+      {
+        "id": "ms-x02-d13",
+        "speaker": "Encik Rahman",
+        "ms": "Pencetak ada di pejabat saya.",
+        "en": "The printer is in my office."
+      },
+      {
+        "id": "ms-x02-d14",
+        "speaker": "Puan Siti",
+        "ms": "Terima kasih, Encik Rahman.",
+        "en": "Thank you, Mr Rahman.",
+        "choices": [
+          "Sama-sama, Encik Rahman.",
+          "Selamat datang, Encik Rahman."
+        ],
+        "choices_en": [
+          "You're welcome, Mr Rahman.",
+          "Welcome, Mr Rahman."
+        ]
+      }
+    ]
+  }
+}

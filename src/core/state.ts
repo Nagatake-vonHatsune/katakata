@@ -4,7 +4,8 @@ import { migrateSrs } from './srs';
 import type { AppState, SrsState } from './types';
 
 /**
- * Cards whose ID changed (old ID -> new ID). The 7 Jambatan words promoted to the chapter 4 ⚡ stage (15 Nov 2026) got new
+ * Cards whose ID changed (old ID -> new ID). Jambatan words promoted to a chapter's ⚡ stage (chapter 4 on 15 Nov 2026, Build B1 on
+ * 17 Nov 2026) got new
  * ⚡ card IDs; migrate() copies the old schedule to the new ID once, if the new ID has none, so a learner who knew «beri»
  * from Jambatan starts ⚡ 4 with «beri» known. The old IDs are in RETIRED_IDS (tools/import_hanashishou_bridge.py).
  */
@@ -16,6 +17,9 @@ export const MOVED_CARDS: Record<string, string> = {
   'ms-j-home-condo-30': 'ms-x04-005', // biasa (L-1351)
   'ms-j-social-49': 'ms-x04-006', // hampir (L-1359)
   'ms-j-office-44': 'ms-x04-007', // sejam (L-1399)
+  // Build B1 (17 Nov 2026): promoted to the ⚡ stages of chapters 1 to 3 and 5 to 9.
+  'ms-j-daily-life-41': 'ms-x02-001', // mana (L-1330)
+  'ms-j-office-42': 'ms-x02-002', // kenal (L-1392)
 };
 
 export function moveCards(srs: Record<string, SrsState>, moved: Record<string, string> = MOVED_CARDS): Record<string, SrsState> {
