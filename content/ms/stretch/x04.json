@@ -290,7 +290,7 @@
       "gloss_ja": "休暇、旅行",
       "pos": "noun",
       "affix_tag": "pe-an",
-      "note": "pe-an + cuti (Ch2): a holiday, a trip.",
+      "note": "Formal / written: a holiday, a trip. pe-an + cuti (Ch2). In speech, say «cuti»: «cuti tahunan», «pergi bercuti».",
       "links": [
         {
           "type": "babak",
@@ -298,7 +298,9 @@
         }
       ],
       "scene": "stretch-x04",
-      "chapter": 4
+      "chapter": 4,
+      "note_ja": "書き言葉・改まった言い方（休暇、旅行）。pe-an + cuti（第2課）。話し言葉では «cuti» を使います：«cuti tahunan»（年次休暇）、«pergi bercuti»（休暇に出かける）。",
+      "register": "formal"
     },
     {
       "id": "ms-x04-017",
@@ -502,15 +504,15 @@
       {
         "id": "ms-x04-d10",
         "speaker": "Tanaka",
-        "ms": "Wah, seronok! Percutian di mana?",
-        "en": "Wow, nice! Where's the holiday?",
+        "ms": "Wah, seronoknya! Cuti di mana?",
+        "en": "Wow, how nice! Where are you going on holiday?",
         "choices": [
-          "Wah, seronok! Mesyuarat di mana?",
-          "Wah, seronok! Puan selalu datang lambat."
+          "Wah, seronoknya! Mesyuarat di mana?",
+          "Wah, seronoknya! Puan selalu datang lambat."
         ],
         "choices_en": [
-          "Wow, nice! Where's the meeting?",
-          "Wow, nice! You always come late."
+          "Wow, how nice! Where's the meeting?",
+          "Wow, how nice! You always come late."
         ]
       },
       {

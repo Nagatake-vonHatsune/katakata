@@ -1,5 +1,5 @@
 {
-  "note": "Hand-written source of the chapter 4 ⚡ stage (Build A pilot, 15 Nov 2026). tools/build_stretch.py turns it into content/ms/stretch/x04.json: the cards come from the ledger rows placed «Ch4 (extension)» (Malay, meanings, POS, affix tag from the ledger, IDs from its card column); this file adds the notes, frames and dialogue. Malay: Malaysian standard, standard form first, no spoken forms, chapter 4 affix gates (no ber-, meN-, -kan or -i), «dari» for places and times. All Japanese is a draft for the native check.",
+  "note": "Hand-written source of the chapter 4 ⚡ stage (Build A pilot, 15 Nov 2026; line 10 and the «percutian» note follow Sam's answers of 17 Nov 2026). tools/build_stretch.py turns it into content/ms/stretch/x04.json: the cards come from the ledger rows placed «Ch4 (extension)» (Malay, meanings, POS, affix tag from the ledger, IDs from its card column); this file adds the notes, frames and dialogue. Malay: Malaysian standard, standard form first, no spoken forms, chapter 4 affix gates (no ber-, meN-, -kan or -i), «dari» for places and times. All Japanese is a draft for the native check.",
   "chapter": 4,
   "scenario_title_en": "An early start",
   "scenario_title_ja": "朝早い一日",
@@ -19,7 +19,7 @@
     "L-1499": "malam (Ch1), said twice: late at night.",
     "L-1500": "«musim hujan» = the rainy season.",
     "L-1501": "pagi (Ch1), said twice: early in the morning.",
-    "L-1502": "pe-an + cuti (Ch2): a holiday, a trip.",
+    "L-1502": {"en": "Formal / written: a holiday, a trip. pe-an + cuti (Ch2). In speech, say «cuti»: «cuti tahunan», «pergi bercuti».", "ja": "書き言葉・改まった言い方（休暇、旅行）。pe-an + cuti（第2課）。話し言葉では «cuti» を使います：«cuti tahunan»（年次休暇）、«pergi bercuti»（休暇に出かける）。", "register": "formal"},
     "L-1503": "se- + minit (Ch4) = one minute.",
     "L-1504": "Two things at the same time.",
     "L-1505": "«siang hari» = in the daytime."
@@ -48,9 +48,9 @@
     {"speaker": "Puan Aini", "ms": "Encik Rahman datang lambat hari ini. Dia akan sampai pukul sembilan suku.", "en": "Mr Rahman is coming late today. He'll arrive at a quarter past nine."},
     {"speaker": "Tanaka", "ms": "Baik, kita tunggu dia sekejap.", "en": "Okay, we'll wait for him a moment."},
     {"speaker": "Puan Aini", "ms": "Ya. Selepas mesyuarat, saya mula cuti tahunan.", "en": "Yes. After the meeting, my annual leave starts."},
-    {"speaker": "Tanaka", "ms": "Wah, seronok! Percutian di mana?", "en": "Wow, nice! Where's the holiday?",
-     "choices": ["Wah, seronok! Mesyuarat di mana?", "Wah, seronok! Puan selalu datang lambat."],
-     "choices_en": ["Wow, nice! Where's the meeting?", "Wow, nice! You always come late."]},
+    {"speaker": "Tanaka", "ms": "Wah, seronoknya! Cuti di mana?", "en": "Wow, how nice! Where are you going on holiday?",
+     "choices": ["Wah, seronoknya! Mesyuarat di mana?", "Wah, seronoknya! Puan selalu datang lambat."],
+     "choices_en": ["Wow, how nice! Where's the meeting?", "Wow, how nice! You always come late."]},
     {"speaker": "Puan Aini", "ms": "Di pantai, dengan keluarga saya. Kami pergi setahun sekali.", "en": "At the beach, with my family. We go once a year."},
     {"speaker": "Tanaka", "ms": "Sekarang musim hujan. Bawa payung, Puan!", "en": "It's the rainy season now. Take an umbrella!"},
     {"speaker": "Encik Rahman", "ms": "Maaf, saya lambat! Jom, kita mula sekarang.", "en": "Sorry I'm late! Come on, let's start now."},
