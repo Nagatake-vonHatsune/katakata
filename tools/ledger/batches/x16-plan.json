@@ -18,6 +18,23 @@
      "after": "Ch16 (extension)"
     }
    ]
+  },
+  {
+   "lid": "L-0674",
+   "row": 675,
+   "word": "kesan",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-home-condo-26",
+     "after": "ms-x16-010"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Home and condo",
+     "after": "Ch16 (extension)"
+    }
+   ]
   }
  ],
  "new": [
@@ -234,32 +251,6 @@
    "row": 1791,
    "values": [
     "L-1790",
-    "kesan",
-    "mark, trace; effect",
-    "跡、しみ",
-    "noun",
-    "root",
-    "",
-    "Not yet checked",
-    "",
-    "ms-x16-010",
-    "Ch16 (extension)",
-    " · band 1",
-    "Yes",
-    "mark, trace; effect",
-    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
-    "Draft",
-    "KD4 check",
-    "Placement batch 2: complaints (Ch16): marks on the wall at the end of a tenancy; scene form «kesan-kesan». Hanashishou: 1 scene; e.g. «» (). checker reads «kesan-kesan» as a ledger gap (reduplication is not resolved): use «kesan» in ⚡ lines.",
-    "2026-11-17",
-    "Claude (Sam approved)"
-   ]
-  },
-  {
-   "lid": "L-1791",
-   "row": 1792,
-   "values": [
-    "L-1791",
     "kesilapan",
     "mistake",
     "間違い、ミス",
@@ -282,10 +273,10 @@
    ]
   },
   {
-   "lid": "L-1792",
-   "row": 1793,
+   "lid": "L-1791",
+   "row": 1792,
    "values": [
-    "L-1792",
+    "L-1791",
     "sengaja",
     "on purpose",
     "わざと",
@@ -308,10 +299,10 @@
    ]
   },
   {
-   "lid": "L-1793",
-   "row": 1794,
+   "lid": "L-1792",
+   "row": 1793,
    "values": [
-    "L-1793",
+    "L-1792",
     "silap",
     "mistake",
     "間違った",
@@ -334,10 +325,10 @@
    ]
   },
   {
-   "lid": "L-1794",
-   "row": 1795,
+   "lid": "L-1793",
+   "row": 1794,
    "values": [
-    "L-1794",
+    "L-1793",
     "tercampur",
     "mixed up",
     "混ざってしまう",
@@ -360,10 +351,10 @@
    ]
   },
   {
-   "lid": "L-1795",
-   "row": 1796,
+   "lid": "L-1794",
+   "row": 1795,
    "values": [
-    "L-1795",
+    "L-1794",
     "terhenti",
     "stopped, broke off",
     "止まってしまう",
@@ -386,10 +377,10 @@
    ]
   },
   {
-   "lid": "L-1796",
-   "row": 1797,
+   "lid": "L-1795",
+   "row": 1796,
    "values": [
-    "L-1796",
+    "L-1795",
     "terkejut",
     "surprised, shocked",
     "驚く",
@@ -412,10 +403,10 @@
    ]
   },
   {
-   "lid": "L-1797",
-   "row": 1798,
+   "lid": "L-1796",
+   "row": 1797,
    "values": [
-    "L-1797",
+    "L-1796",
     "terpaksa",
     "forced to, have to",
     "〜せざるを得ない",
@@ -438,10 +429,10 @@
    ]
   },
   {
-   "lid": "L-1798",
-   "row": 1799,
+   "lid": "L-1797",
+   "row": 1798,
    "values": [
-    "L-1798",
+    "L-1797",
     "terpulang",
     "up to you",
     "〜次第だ",
@@ -464,10 +455,10 @@
    ]
   },
   {
-   "lid": "L-1799",
-   "row": 1800,
+   "lid": "L-1798",
+   "row": 1799,
    "values": [
-    "L-1799",
+    "L-1798",
     "tersalah",
     "wrongly, by mistake",
     "間違って〜してしまう",
@@ -490,10 +481,10 @@
    ]
   },
   {
-   "lid": "L-1800",
-   "row": 1801,
+   "lid": "L-1799",
+   "row": 1800,
    "values": [
-    "L-1800",
+    "L-1799",
     "tertulis",
     "written",
     "書いてある",
@@ -516,10 +507,10 @@
    ]
   },
   {
-   "lid": "L-1801",
-   "row": 1802,
+   "lid": "L-1800",
+   "row": 1801,
    "values": [
-    "L-1801",
+    "L-1800",
     "tiba-tiba",
     "suddenly",
     "突然",
@@ -542,10 +533,10 @@
    ]
   },
   {
-   "lid": "L-1802",
-   "row": 1803,
+   "lid": "L-1801",
+   "row": 1802,
    "values": [
-    "L-1802",
+    "L-1801",
     "tuduh",
     "accuse",
     "非難する、責める",
@@ -598,47 +589,49 @@
    "lid": "L-1789"
   },
   "ms-x16-010": {
-   "lid": "L-1790"
+   "lid": "L-0674",
+   "moved_from": "ms-j-home-condo-26"
   },
   "ms-x16-011": {
-   "lid": "L-1791"
+   "lid": "L-1790"
   },
   "ms-x16-012": {
-   "lid": "L-1792"
+   "lid": "L-1791"
   },
   "ms-x16-013": {
-   "lid": "L-1793"
+   "lid": "L-1792"
   },
   "ms-x16-014": {
-   "lid": "L-1794"
+   "lid": "L-1793"
   },
   "ms-x16-015": {
-   "lid": "L-1795"
+   "lid": "L-1794"
   },
   "ms-x16-016": {
-   "lid": "L-1796"
+   "lid": "L-1795"
   },
   "ms-x16-017": {
-   "lid": "L-1797"
+   "lid": "L-1796"
   },
   "ms-x16-018": {
-   "lid": "L-1798"
+   "lid": "L-1797"
   },
   "ms-x16-019": {
-   "lid": "L-1799"
+   "lid": "L-1798"
   },
   "ms-x16-020": {
-   "lid": "L-1800"
+   "lid": "L-1799"
   },
   "ms-x16-021": {
-   "lid": "L-1801"
+   "lid": "L-1800"
   },
   "ms-x16-022": {
-   "lid": "L-1802"
+   "lid": "L-1801"
   }
  },
  "skipped": [
   "terbaru",
   "tertinggi"
- ]
+ ],
+ "note": "Build B2: «kesan» was planned as a new row (L-1790) but L-0674 «kesan» (Jambatan · Home and condo) already exists; it is promoted instead (card ms-x16-010) and the later new rows moved down one L-number."
 }

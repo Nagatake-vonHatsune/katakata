@@ -56,6 +56,7 @@ export const MOVED_CARDS: Record<string, string> = {
   'ms-j-social-29': 'ms-x15-001', // sesuatu (L-1322)
   'ms-j-office-26': 'ms-x15-002', // apa-apa (L-1324)
   'ms-j-daily-life-46': 'ms-x16-001', // teruk (L-1365)
+  'ms-j-home-condo-26': 'ms-x16-010', // kesan (L-0674; it already had a row, so promoted, not added)
 };
 
 export function moveCards(srs: Record<string, SrsState>, moved: Record<string, string> = MOVED_CARDS): Record<string, SrsState> {

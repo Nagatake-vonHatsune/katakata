@@ -294,24 +294,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-home-condo-26",
-      "lang": "ms",
-      "term": "kesan",
-      "gloss_en": "A mark (on a wall); also an effect",
-      "gloss_ja": "跡、汚れ；効果",
-      "pos": "noun",
-      "affix_tag": "root",
-      "note": "Hanashishou: Kesan itu sudah ada. In 3 Hanashishou scenes: Moving out, The barking dog, The renovation next door.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-home-condo"
-        }
-      ],
-      "scene": "dunia-jambatan-home-condo",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-home-condo-44",
       "lang": "ms",
       "term": "ketawa",
