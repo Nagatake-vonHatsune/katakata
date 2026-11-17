@@ -1,0 +1,785 @@
+{
+ "chapter": 11,
+ "place": "Ch11 (extension)",
+ "changes": [
+  {
+   "lid": "L-1346",
+   "row": 1347,
+   "word": "bahagian",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-office-34",
+     "after": "ms-x11-001"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · At work",
+     "after": "Ch11 (extension)"
+    }
+   ]
+  }
+ ],
+ "new": [
+  {
+   "lid": "L-1659",
+   "row": 1660,
+   "values": [
+    "L-1659",
+    "data",
+    "data",
+    "データ",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-002",
+    "Ch11 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "data",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: office (Ch11); scene forms «data», «datanya»; loan. Hanashishou: 2 scenes; e.g. «Murah...» (phone_plan).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1660",
+   "row": 1661,
+   "values": [
+    "L-1660",
+    "ketua",
+    "head, leader",
+    "長、リーダー",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-003",
+    "Ch11 (extension)",
+    "office · band 1",
+    "Yes",
+    "head, leader",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: people at work (Ch11): «ketua pasukan», «ketua jabatan». Hanashishou: 2 scenes; e.g. «Borang cuti anda perlu tandatangan ketua pasukan, Mei Ling.» (chatty_colleague).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1661",
+   "row": 1662,
+   "values": [
+    "L-1661",
+    "mesin",
+    "machine",
+    "機械",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-004",
+    "Ch11 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "machine",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: office (Ch11): the photocopier and coffee machine. Hanashishou: 2 scenes; e.g. «Pagi tadi ada tiga kali PIN salah di mesin ATM, jadi kad itu disekat untuk keselamatan.» (card_blocked).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1662",
+   "row": 1663,
+   "values": [
+    "L-1662",
+    "produk",
+    "product",
+    "製品",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-005",
+    "Ch11 (extension)",
+    "office · band 1",
+    "Yes",
+    "product",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: office (Ch11): launches and sales. Hanashishou: 2 scenes; e.g. «Awak dalam pasukan produk, bukan?» (azula_coffee).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1663",
+   "row": 1664,
+   "values": [
+    "L-1663",
+    "sebahagian",
+    "part, some",
+    "一部",
+    "noun",
+    "se-",
+    "bahagian",
+    "Not yet checked",
+    "",
+    "ms-x11-006",
+    "Ch11 (extension)",
+    "office · band 1",
+    "Yes",
+    "part, some",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: office (Ch11): part of the work; bahagian Ch11 (extension). Hanashishou: 2 scenes; e.g. «Anda cakap apa, di mana dan bagaimana, kemudian buat dia rasa sebahagian daripada pasukan.» (new_joiner).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1664",
+   "row": 1665,
+   "values": [
+    "L-1664",
+    "selesai",
+    "finished, settled",
+    "終わる、片づく",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-007",
+    "Ch11 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "finished, settled",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: getting work done (Ch11). Hanashishou: 2 scenes; e.g. «Misteri selesai.» (lift_chat).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1665",
+   "row": 1666,
+   "values": [
+    "L-1665",
+    "staf",
+    "staff",
+    "スタッフ、職員",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-008",
+    "Ch11 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "staff",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: office (Ch11); loan. Hanashishou: 2 scenes; e.g. «Anda tanya seorang staf.» (airport_checkin).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1666",
+   "row": 1667,
+   "values": [
+    "L-1666",
+    "tugas",
+    "duty, task",
+    "任務、仕事",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-009",
+    "Ch11 (extension)",
+    "office · band 1",
+    "Yes",
+    "duty, task",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: office (Ch11): «tugas saya». Hanashishou: 2 scenes; e.g. «Susun mesej serahan tugas ini.» (sick_day).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1667",
+   "row": 1668,
+   "values": [
+    "L-1667",
+    "agensi",
+    "agency",
+    "代理店、エージェンシー",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-010",
+    "Ch11 (extension)",
+    "office · band 1",
+    "Yes",
+    "agency",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: work (Ch11): where you worked before. Hanashishou: 1 scene; e.g. «Saya dulu di agensi kecil di Pulau Pinang!» (new_joiner).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1668",
+   "row": 1669,
+   "values": [
+    "L-1668",
+    "analisis",
+    "analysis; analyse",
+    "分析",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-011",
+    "Ch11 (extension)",
+    "office · band 1",
+    "Yes",
+    "analysis; analyse",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: office (Ch11); loan. Hanashishou: 1 scene; e.g. «Sekarang anda analisis jawapan itu.» (standup_update). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1669",
+   "row": 1670,
+   "values": [
+    "L-1669",
+    "folder",
+    "folder",
+    "フォルダー",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-012",
+    "Ch11 (extension)",
+    "office · band 1",
+    "Yes",
+    "folder",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: office (Ch11); loan. Hanashishou: 1 scene; e.g. «Nota saya ada dalam folder kongsi.» (sick_day).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1670",
+   "row": 1671,
+   "values": [
+    "L-1670",
+    "invois",
+    "invoice",
+    "請求書",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-013",
+    "Ch11 (extension)",
+    "office · band 1",
+    "Yes",
+    "invoice",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: office (Ch11); loan. Hanashishou: 1 scene; e.g. «Invois dulu.» (handover_notes).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1671",
+   "row": 1672,
+   "values": [
+    "L-1671",
+    "kerani",
+    "clerk",
+    "事務員",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-014",
+    "Ch11 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "clerk",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: office (Ch11). Hanashishou: 1 scene; e.g. «Di pejabat pos, teka apa kerani akan tanya dulu.» (post_parcel). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1672",
+   "row": 1673,
+   "values": [
+    "L-1672",
+    "layan",
+    "entertain, indulge (someone)",
+    "相手をする、応対する",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-015",
+    "Ch11 (extension)",
+    "office · band 1",
+    "Yes",
+    "entertain, indulge (someone)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: work (Ch11): serving customers. Hanashishou: 1 scene; e.g. «Jangan layan dia sangat.» (pantry_banter).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1673",
+   "row": 1674,
+   "values": [
+    "L-1673",
+    "matlamat",
+    "goal",
+    "目標",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-016",
+    "Ch11 (extension)",
+    "office · band 1",
+    "Yes",
+    "goal",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: office (Ch11). Hanashishou: 1 scene; e.g. «Setuju dengan matlamat, cakap kebimbangan, dan beri pilihan lain.» (meeting_disagree).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1674",
+   "row": 1675,
+   "values": [
+    "L-1674",
+    "mekanik",
+    "mechanic",
+    "整備士",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-017",
+    "Ch11 (extension)",
+    "social · band 1",
+    "Yes",
+    "mechanic",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: jobs and who does what (Ch11); scene form «mekaniknya»; the checker reads «me-kanik» as a meN- shape, so not before 11. Hanashishou: 1 scene; e.g. «Mekaniknya, Siti, tengok basikal anda macam dapat hadiah hari jadi.» (jinx_bike_shop). looks like meN- (me + kanik); not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1675",
+   "row": 1676,
+   "values": [
+    "L-1675",
+    "memandu",
+    "drive",
+    "運転する",
+    "verb",
+    "meN-",
+    "pandu",
+    "Not yet checked",
+    "",
+    "ms-x11-018",
+    "Ch11 (extension)",
+    "health · band 2",
+    "Yes",
+    "drive",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: meN- (Ch11): who does what; pandu Ch7 (extension). Hanashishou: 1 scene; e.g. «Ah, saya memandu untuk kerja, jadi saya tak boleh mengantuk.» (pharmacy_advice).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1676",
+   "row": 1677,
+   "values": [
+    "L-1676",
+    "memberi",
+    "give",
+    "与える",
+    "verb",
+    "meN-",
+    "beri",
+    "Not yet checked",
+    "",
+    "ms-x11-019",
+    "Ch11 (extension)",
+    "daily-life · band 2",
+    "Yes",
+    "give",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: meN- (Ch11); beri Ch4 (extension). Hanashishou: 1 scene; e.g. «Saya tidak selesa memberi PIN melalui telefon.» (card_blocked).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1677",
+   "row": 1678,
+   "values": [
+    "L-1677",
+    "membuang",
+    "throw away",
+    "捨てる",
+    "verb",
+    "meN-",
+    "buang",
+    "Not yet checked",
+    "",
+    "ms-x11-020",
+    "Ch11 (extension)",
+    "home-condo · band 2",
+    "Yes",
+    "throw away",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: meN- (Ch11); buang Ch4 (extension). Hanashishou: 1 scene; e.g. «Boleh encik beritahu di mana saya perlu membuang sampah, dan bagaimana dengan kitar semula?» (new_neighbour).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1678",
+   "row": 1679,
+   "values": [
+    "L-1678",
+    "orientasi",
+    "orientation",
+    "オリエンテーション",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-021",
+    "Ch11 (extension)",
+    "office · band 1",
+    "Yes",
+    "orientation",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: first weeks at work (Ch11); loan. Hanashishou: 1 scene; e.g. «Pengerusi syarikat, Puan Azula, beri ucapan alu-aluan masa orientasi.» (new_joiner).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1679",
+   "row": 1680,
+   "values": [
+    "L-1679",
+    "pengguna",
+    "user",
+    "ユーザー、利用者",
+    "noun",
+    "pe(N)-",
+    "guna",
+    "Not yet checked",
+    "",
+    "ms-x11-022",
+    "Ch11 (extension)",
+    "office · band 2",
+    "Yes",
+    "user",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: office (Ch11); guna Ch4. Hanashishou: 1 scene; e.g. «Saya menjalankan ujian pengguna sebelum pelancaran bulan depan.» (azula_coffee).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1680",
+   "row": 1681,
+   "values": [
+    "L-1680",
+    "prestasi",
+    "performance",
+    "成績、仕事ぶり",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-023",
+    "Ch11 (extension)",
+    "social · band 1",
+    "Yes",
+    "performance",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: work (Ch11): performance reviews. Hanashishou: 1 scene; e.g. «Keadilan bukan ukuran prestasi.» (azula_group_project).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1681",
+   "row": 1682,
+   "values": [
+    "L-1681",
+    "rujuk",
+    "refer to",
+    "参照する、照会する",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-024",
+    "Ch11 (extension)",
+    "office · band 2",
+    "Yes",
+    "refer to",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: office (Ch11): «rujuk emel saya». Hanashishou: 1 scene; e.g. «Kalau timbul masalah dengan invois semasa awak cuti, siapa yang patut saya rujuk?» (handover_notes).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1682",
+   "row": 1683,
+   "values": [
+    "L-1682",
+    "tajuk",
+    "title, heading",
+    "題名、件名",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-025",
+    "Ch11 (extension)",
+    "office · band 1",
+    "Yes",
+    "title, heading",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: office (Ch11): an email subject. Hanashishou: 1 scene; e.g. «Sejam kemudian, Farah hantar slaid baharu: 8 slaid, tajuk yang jelas, nombor yang besar.» (feedback_junior). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1683",
+   "row": 1684,
+   "values": [
+    "L-1683",
+    "temu duga",
+    "(job) interview",
+    "面接",
+    "phrase",
+    "chunk",
+    "temu + duga",
+    "Not yet checked",
+    "",
+    "ms-x11-026",
+    "Ch11 (extension)",
+    "",
+    "",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: work (Ch11): a job or promotion interview.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1684",
+   "row": 1685,
+   "values": [
+    "L-1684",
+    "urus",
+    "manage",
+    "管理する、手配する",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x11-027",
+    "Ch11 (extension)",
+    "social · band 1",
+    "Yes",
+    "manage",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: office (Ch11): root of «uruskan». Hanashishou: 1 scene; e.g. «Anda sedang rancang perjalanan kereta dengan Mira (urus acara pasukan), Jess (IT) dan Puan Tan (pengurus anda).» (trio_road_trip). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x11-001": {
+   "lid": "L-1346",
+   "moved_from": "ms-j-office-34"
+  },
+  "ms-x11-002": {
+   "lid": "L-1659"
+  },
+  "ms-x11-003": {
+   "lid": "L-1660"
+  },
+  "ms-x11-004": {
+   "lid": "L-1661"
+  },
+  "ms-x11-005": {
+   "lid": "L-1662"
+  },
+  "ms-x11-006": {
+   "lid": "L-1663"
+  },
+  "ms-x11-007": {
+   "lid": "L-1664"
+  },
+  "ms-x11-008": {
+   "lid": "L-1665"
+  },
+  "ms-x11-009": {
+   "lid": "L-1666"
+  },
+  "ms-x11-010": {
+   "lid": "L-1667"
+  },
+  "ms-x11-011": {
+   "lid": "L-1668"
+  },
+  "ms-x11-012": {
+   "lid": "L-1669"
+  },
+  "ms-x11-013": {
+   "lid": "L-1670"
+  },
+  "ms-x11-014": {
+   "lid": "L-1671"
+  },
+  "ms-x11-015": {
+   "lid": "L-1672"
+  },
+  "ms-x11-016": {
+   "lid": "L-1673"
+  },
+  "ms-x11-017": {
+   "lid": "L-1674"
+  },
+  "ms-x11-018": {
+   "lid": "L-1675"
+  },
+  "ms-x11-019": {
+   "lid": "L-1676"
+  },
+  "ms-x11-020": {
+   "lid": "L-1677"
+  },
+  "ms-x11-021": {
+   "lid": "L-1678"
+  },
+  "ms-x11-022": {
+   "lid": "L-1679"
+  },
+  "ms-x11-023": {
+   "lid": "L-1680"
+  },
+  "ms-x11-024": {
+   "lid": "L-1681"
+  },
+  "ms-x11-025": {
+   "lid": "L-1682"
+  },
+  "ms-x11-026": {
+   "lid": "L-1683"
+  },
+  "ms-x11-027": {
+   "lid": "L-1684"
+  }
+ }
+}

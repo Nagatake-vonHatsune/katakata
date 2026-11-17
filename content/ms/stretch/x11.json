@@ -1,0 +1,721 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x11",
+  "chapter": 11,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Kata Kerja meN-",
+    "en": "meN- verbs",
+    "ja": "meN- の動詞"
+  },
+  "cards": [
+    {
+      "id": "ms-x11-001",
+      "lang": "ms",
+      "term": "bahagian",
+      "gloss_en": "part, section; department",
+      "gloss_ja": "部分、部（部署）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Part, section; a department: «bahagian kami» = our department.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "部分；部署：«bahagian kami»＝私たちの部署。"
+    },
+    {
+      "id": "ms-x11-002",
+      "lang": "ms",
+      "term": "data",
+      "gloss_en": "data",
+      "gloss_ja": "データ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Data (from English): «data produk».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "データ（英語から）：«data produk»。"
+    },
+    {
+      "id": "ms-x11-003",
+      "lang": "ms",
+      "term": "ketua",
+      "gloss_en": "head, leader",
+      "gloss_ja": "長、リーダー",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Head, leader: «ketua bahagian» = head of department.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "長、リーダー：«ketua bahagian»＝部長。"
+    },
+    {
+      "id": "ms-x11-004",
+      "lang": "ms",
+      "term": "mesin",
+      "gloss_en": "machine",
+      "gloss_ja": "機械",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Machine: «mesin cetak» = printer.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "機械：«mesin cetak»＝印刷機、プリンター。"
+    },
+    {
+      "id": "ms-x11-005",
+      "lang": "ms",
+      "term": "produk",
+      "gloss_en": "product",
+      "gloss_ja": "製品",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Product: «produk baru» = a new product.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "製品：«produk baru»＝新製品。"
+    },
+    {
+      "id": "ms-x11-006",
+      "lang": "ms",
+      "term": "sebahagian",
+      "gloss_en": "part, some",
+      "gloss_ja": "一部",
+      "pos": "noun",
+      "affix_tag": "se-",
+      "note": "se- + bahagian (Ch11 ⚡): part of, some: «Sebahagian staf bekerja dari rumah.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "se- + bahagian（第11課⚡）：一部：«Sebahagian staf bekerja dari rumah.»＝一部の社員は在宅勤務です。"
+    },
+    {
+      "id": "ms-x11-007",
+      "lang": "ms",
+      "term": "selesai",
+      "gloss_en": "finished, settled",
+      "gloss_ja": "終わる、片づく",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "Finished, settled: «Kerja itu akan selesai petang ini.» (to finish something is «selesaikan», with -kan from Ch12).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "終わった、片づいた：«Kerja itu akan selesai petang ini.»（「〜を終える」は -kan の «selesaikan»、第12課から）。"
+    },
+    {
+      "id": "ms-x11-008",
+      "lang": "ms",
+      "term": "staf",
+      "gloss_en": "staff",
+      "gloss_ja": "スタッフ、職員",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Staff (from English): «staf baru» = new staff.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "スタッフ、職員（英語から）：«staf baru»＝新しいスタッフ。"
+    },
+    {
+      "id": "ms-x11-009",
+      "lang": "ms",
+      "term": "tugas",
+      "gloss_en": "duty, task",
+      "gloss_ja": "任務、仕事",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Duty, task: «tugas baru» = a new task.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "任務、仕事：«tugas baru»＝新しい仕事。"
+    },
+    {
+      "id": "ms-x11-010",
+      "lang": "ms",
+      "term": "agensi",
+      "gloss_en": "agency",
+      "gloss_ja": "代理店、エージェンシー",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Agency, company that provides a service.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "代理店、業者。"
+    },
+    {
+      "id": "ms-x11-011",
+      "lang": "ms",
+      "term": "analisis",
+      "gloss_en": "analysis; analyse",
+      "gloss_ja": "分析",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Analysis (from English). Mostly written: reports and slides.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "分析（英語から）。主に書き言葉：報告書やスライド。"
+    },
+    {
+      "id": "ms-x11-012",
+      "lang": "ms",
+      "term": "folder",
+      "gloss_en": "folder",
+      "gloss_ja": "フォルダー",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Folder (on a computer or for papers).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "フォルダ（パソコンや書類の）。"
+    },
+    {
+      "id": "ms-x11-013",
+      "lang": "ms",
+      "term": "invois",
+      "gloss_en": "invoice",
+      "gloss_ja": "請求書",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Invoice: «menghantar invois» = send an invoice.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "請求書：«menghantar invois»＝請求書を送る。"
+    },
+    {
+      "id": "ms-x11-014",
+      "lang": "ms",
+      "term": "kerani",
+      "gloss_en": "clerk",
+      "gloss_ja": "事務員",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Clerk (office).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "事務員。"
+    },
+    {
+      "id": "ms-x11-015",
+      "lang": "ms",
+      "term": "layan",
+      "gloss_en": "entertain, indulge (someone)",
+      "gloss_ja": "相手をする、応対する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To look after, serve (a guest or customer): «layan tetamu». Bare root, as in speech.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "（客を）もてなす、応対する：«layan tetamu»。会話どおりの語根の形。"
+    },
+    {
+      "id": "ms-x11-016",
+      "lang": "ms",
+      "term": "matlamat",
+      "gloss_en": "goal",
+      "gloss_ja": "目標",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Goal, aim: «matlamat kita bulan ini» = our goal this month.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "目標：«matlamat kita bulan ini»＝今月の目標。"
+    },
+    {
+      "id": "ms-x11-017",
+      "lang": "ms",
+      "term": "mekanik",
+      "gloss_en": "mechanic",
+      "gloss_ja": "整備士",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Mechanic. Not a meN- verb: a plain word (the rules read it as a look-alike root).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "整備士。meN- 動詞ではなく、そのままの語。"
+    },
+    {
+      "id": "ms-x11-018",
+      "lang": "ms",
+      "term": "memandu",
+      "gloss_en": "drive",
+      "gloss_ja": "運転する",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + pandu: to drive: «Saya memandu ke pejabat.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "meN- + pandu：運転する：«Saya memandu ke pejabat.»"
+    },
+    {
+      "id": "ms-x11-019",
+      "lang": "ms",
+      "term": "memberi",
+      "gloss_en": "give",
+      "gloss_ja": "与える",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + beri: to give: «memberi tugas kepada staf» = give a task to the staff.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "meN- + beri：与える：«memberi tugas kepada staf»＝スタッフに仕事を与える。"
+    },
+    {
+      "id": "ms-x11-020",
+      "lang": "ms",
+      "term": "membuang",
+      "gloss_en": "throw away",
+      "gloss_ja": "捨てる",
+      "pos": "verb",
+      "affix_tag": "meN-",
+      "note": "meN- + buang: to throw away, delete: «membuang data lama» = delete old data.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "meN- + buang：捨てる、削除する：«membuang data lama»＝古いデータを削除する。"
+    },
+    {
+      "id": "ms-x11-021",
+      "lang": "ms",
+      "term": "orientasi",
+      "gloss_en": "orientation",
+      "gloss_ja": "オリエンテーション",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Orientation (for new staff).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "オリエンテーション（新入社員向け）。"
+    },
+    {
+      "id": "ms-x11-022",
+      "lang": "ms",
+      "term": "pengguna",
+      "gloss_en": "user",
+      "gloss_ja": "ユーザー、利用者",
+      "pos": "noun",
+      "affix_tag": "pe(N)-",
+      "note": "peN- + guna (Ch4): user: «pengguna aplikasi» = app user.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "peN- + guna（第4課）：利用者、ユーザー：«pengguna aplikasi»＝アプリの利用者。"
+    },
+    {
+      "id": "ms-x11-023",
+      "lang": "ms",
+      "term": "prestasi",
+      "gloss_en": "performance",
+      "gloss_ja": "成績、仕事ぶり",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Performance (at work, of a product): «prestasi lebih baik» = better performance.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "成績、性能：«prestasi lebih baik»＝より良い成績。"
+    },
+    {
+      "id": "ms-x11-024",
+      "lang": "ms",
+      "term": "rujuk",
+      "gloss_en": "refer to",
+      "gloss_ja": "参照する、照会する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To refer to, check: «Sila rujuk …» = Please refer to … (notices and emails).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "参照する：«Sila rujuk …»＝〜をご参照ください（お知らせやメールで）。"
+    },
+    {
+      "id": "ms-x11-025",
+      "lang": "ms",
+      "term": "tajuk",
+      "gloss_en": "title, heading",
+      "gloss_ja": "題名、件名",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Title, heading (of a file, report or email).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "題名、件名（ファイル、報告書、メールの）。"
+    },
+    {
+      "id": "ms-x11-026",
+      "lang": "ms",
+      "term": "temu duga",
+      "gloss_en": "(job) interview",
+      "gloss_ja": "面接",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Job interview: «temu duga untuk staf baru».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "（就職の）面接：«temu duga untuk staf baru»。"
+    },
+    {
+      "id": "ms-x11-027",
+      "lang": "ms",
+      "term": "urus",
+      "gloss_en": "manage",
+      "gloss_ja": "管理する、手配する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To manage, take care of (in speech): «Puan Aini urus temu duga itu.»",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x11"
+        }
+      ],
+      "scene": "stretch-x11",
+      "chapter": 11,
+      "note_ja": "（会話で）管理する、担当する：«Puan Aini urus temu duga itu.»＝アイニさんが面接を担当します。"
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-x11-f01",
+      "frame": "Ketua ___ kami ___ tugas baru kepada staf.",
+      "example": "Ketua bahagian kami memberi tugas baru kepada staf.",
+      "meaning_en": "Our head of department gives the staff new tasks.",
+      "meaning_ja": "部長がスタッフに新しい仕事を与えます。",
+      "decoys": [
+        "menerima"
+      ]
+    },
+    {
+      "id": "ms-x11-f02",
+      "frame": "Sila rujuk ___ fail ini sebelum ___ emel.",
+      "example": "Sila rujuk tajuk fail ini sebelum menghantar emel.",
+      "meaning_en": "Please check this file's title before sending the email.",
+      "meaning_ja": "メールを送る前に、このファイルの題名を確認してください。",
+      "decoys": [
+        "tulis"
+      ]
+    },
+    {
+      "id": "ms-x11-f03",
+      "frame": "Pengguna boleh ___ data lama dari ___ ini.",
+      "example": "Pengguna boleh membuang data lama dari folder ini.",
+      "meaning_en": "Users can delete old data from this folder.",
+      "meaning_ja": "ユーザーはこのフォルダから古いデータを削除できます。",
+      "decoys": [
+        "simpan"
+      ]
+    },
+    {
+      "id": "ms-x11-f04",
+      "frame": "Saya ___ ke pejabat setiap ___.",
+      "example": "Saya memandu ke pejabat setiap pagi.",
+      "meaning_en": "I drive to the office every morning.",
+      "meaning_ja": "毎朝、車で会社に行きます。",
+      "decoys": [
+        "naik"
+      ]
+    },
+    {
+      "id": "ms-x11-f05",
+      "frame": "___ staf bekerja dari rumah.",
+      "example": "Sebahagian staf bekerja dari rumah.",
+      "meaning_en": "Some of the staff work from home.",
+      "meaning_ja": "一部のスタッフは在宅勤務です。",
+      "decoys": [
+        "bahagian"
+      ]
+    },
+    {
+      "id": "ms-x11-f06",
+      "frame": "Kerani itu ___ semua invois dalam folder ___.",
+      "example": "Kerani itu menyimpan semua invois dalam folder biru.",
+      "meaning_en": "The clerk keeps all the invoices in the blue folder.",
+      "meaning_ja": "その事務員はすべての請求書を青いフォルダに保管しています。",
+      "decoys": [
+        "simpan"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "Monday at the office",
+    "title_ja": "月曜日のオフィス",
+    "lines": [
+      {
+        "id": "ms-x11-d01",
+        "speaker": "Encik Rahman",
+        "ms": "Selamat pagi, semua. Hari ini ada orientasi untuk staf baru.",
+        "en": "Good morning, everyone. There's an orientation for new staff today."
+      },
+      {
+        "id": "ms-x11-d02",
+        "speaker": "Tanaka",
+        "ms": "Selamat pagi, Encik. Pukul berapa orientasi itu bermula?",
+        "en": "Good morning. What time does the orientation start?",
+        "choices": [
+          "Selamat pagi, Encik. Saya staf mesin.",
+          "Selamat malam, Encik. Saya sudah selesai tidur."
+        ],
+        "choices_en": [
+          "Good morning. I'm machine staff.",
+          "Good night. I've finished sleeping."
+        ]
+      },
+      {
+        "id": "ms-x11-d03",
+        "speaker": "Encik Rahman",
+        "ms": "Pukul sepuluh. Encik Tanaka, tolong memberi slaid produk kita kepada mereka.",
+        "en": "At ten. Mr Tanaka, please give them the slides on our products."
+      },
+      {
+        "id": "ms-x11-d04",
+        "speaker": "Tanaka",
+        "ms": "Baik. Saya sudah menyimpan slaid itu dalam folder bahagian kita.",
+        "en": "Sure. I've saved the slides in our department's folder.",
+        "choices": [
+          "Baik. Saya sudah membuang slaid itu semalam.",
+          "Baik. Saya memandu slaid itu."
+        ],
+        "choices_en": [
+          "Sure. I deleted those slides yesterday.",
+          "Sure. I'm driving the slides."
+        ]
+      },
+      {
+        "id": "ms-x11-d05",
+        "speaker": "Puan Aini",
+        "ms": "Encik Rahman, mesin cetak di tingkat tiga rosak lagi.",
+        "en": "Mr Rahman, the printer on the third floor is broken again."
+      },
+      {
+        "id": "ms-x11-d06",
+        "speaker": "Encik Rahman",
+        "ms": "Saya sudah menelefon agensi itu. Mekanik akan datang petang ini.",
+        "en": "I've called the agency. A mechanic will come this afternoon."
+      },
+      {
+        "id": "ms-x11-d07",
+        "speaker": "Puan Aini",
+        "ms": "Terima kasih, Encik. Hari ini saya mahu menghantar invois kepada agensi itu.",
+        "en": "Thank you. Today I want to send the invoice to that agency.",
+        "choices": [
+          "Terima kasih. Mekanik itu rosak lagi.",
+          "Terima kasih. Saya mahu menjual mesin itu."
+        ],
+        "choices_en": [
+          "Thank you. The mechanic is broken again.",
+          "Thank you. I want to sell that machine."
+        ]
+      },
+      {
+        "id": "ms-x11-d08",
+        "speaker": "Encik Rahman",
+        "ms": "Cik Mei Ling, data produk baru sudah siap?",
+        "en": "Ms Mei Ling, is the data on the new product ready?"
+      },
+      {
+        "id": "ms-x11-d09",
+        "speaker": "Cik Mei Ling",
+        "ms": "Sebahagian sudah siap. Kerja itu akan selesai petang ini.",
+        "en": "Part of it is ready. The work will be finished this afternoon.",
+        "choices": [
+          "Belum. Data itu memandu ke Ipoh.",
+          "Sebahagian sudah siap. Saya membuang semua data."
+        ],
+        "choices_en": [
+          "Not yet. The data is driving to Ipoh.",
+          "Part of it is ready. I deleted all the data."
+        ]
+      },
+      {
+        "id": "ms-x11-d10",
+        "speaker": "Encik Rahman",
+        "ms": "Bagus. Matlamat kita bulan ini: prestasi lebih baik daripada bulan lepas.",
+        "en": "Good. Our goal this month: better performance than last month."
+      },
+      {
+        "id": "ms-x11-d11",
+        "speaker": "Tanaka",
+        "ms": "Esok ada temu duga untuk staf baru, bukan?",
+        "en": "Tomorrow there are interviews for new staff, aren't there?"
+      },
+      {
+        "id": "ms-x11-d12",
+        "speaker": "Encik Rahman",
+        "ms": "Ya. Puan Aini urus temu duga itu. Tolong layan tetamu kita dengan baik.",
+        "en": "Yes. Mrs Aini is in charge of the interviews. Please look after our guests well."
+      },
+      {
+        "id": "ms-x11-d13",
+        "speaker": "Tanaka",
+        "ms": "Baik, Encik. Kami akan menunggu mereka di bilik mesyuarat.",
+        "en": "Sure. We'll wait for them in the meeting room.",
+        "choices": [
+          "Baik, Encik. Kami akan membuang mereka di bilik mesyuarat.",
+          "Maaf, Encik. Saya sudah selesai minggu lepas."
+        ],
+        "choices_en": [
+          "Sure. We'll throw them away in the meeting room.",
+          "Sorry. I finished last week."
+        ]
+      },
+      {
+        "id": "ms-x11-d14",
+        "speaker": "Encik Rahman",
+        "ms": "Terima kasih, semua. Mari kita mula!",
+        "en": "Thank you, everyone. Let's get started!"
+      }
+    ]
+  }
+}
