@@ -263,16 +263,19 @@ async function play(page, hooks = {}) {
     const p = await ctx.newPage();
     p.on('pageerror', (e) => errors.push(e.message));
     const tag = `${palette}-${theme}`;
-    await seed(p, seededState({ palette, theme }, true));
+    // Chapter SOON - 1 (it has a ⚡ pack) lit too, so its chip sits right above the "⚡ soon" of chapter SOON.
+    const shotState = seededState({ palette, theme }, true);
+    shotState.stamps.push(stamp('ready', SOON - 1), stamp('dialogue', SOON - 1), stamp('chapter', SOON - 1));
+    await seed(p, shotState);
     await p.goto(BASE + '#/sedia');
     await p.waitForSelector('.sedia-row');
     await shot(p, `01-sedia-list-${tag}`);
     await p.locator('.sedia-row').nth(3).screenshot({ path: path.join(OUT, `02-chip-${tag}.png`) });
-    await p.locator('.sedia-row').nth(SOON - 1).scrollIntoViewIfNeeded();
+    await p.locator('.sedia-row').nth(SOON - 2).evaluate((e) => e.scrollIntoView({ block: 'center' }));
     await shot(p, `09-sedia-soon-${tag}`);
     await p.locator('.sedia-row').nth(SOON - 1).screenshot({ path: path.join(OUT, `09-soon-row-${tag}.png`) });
     await p.evaluate(() => window.scrollTo(0, 0));
-    await p.locator('button.stretch-chip').click();
+    await p.locator('.sedia-row').nth(3).locator('button.stretch-chip').click();
     await p.waitForSelector('.stretch-screen');
     await shot(p, `03-stretch-screen-${tag}`);
     await p.locator('.btn-stretch').click();
