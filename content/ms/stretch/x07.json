@@ -1,0 +1,811 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x07",
+  "chapter": 7,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Arah dan Lokasi",
+    "en": "Directions and location",
+    "ja": "方向と場所"
+  },
+  "cards": [
+    {
+      "id": "ms-x07-001",
+      "lang": "ms",
+      "term": "tunjuk",
+      "gloss_en": "to show, point out",
+      "gloss_ja": "見せる、示す",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To show, point out: «Boleh tunjuk jalan?» = Could you show me the way? Formal / written: «menunjukkan».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "見せる、示す：«Boleh tunjuk jalan?»＝道を教えてもらえますか。書き言葉では «menunjukkan»。"
+    },
+    {
+      "id": "ms-x07-002",
+      "lang": "ms",
+      "term": "bandar",
+      "gloss_en": "town, city",
+      "gloss_ja": "町、都市",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Town, city: «pusat bandar» = the town centre.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "町、都市：«pusat bandar»＝町の中心。",
+      "image": "🏙️"
+    },
+    {
+      "id": "ms-x07-003",
+      "lang": "ms",
+      "term": "petak",
+      "gloss_en": "square (on a board)",
+      "gloss_ja": "区画、マス",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Square (on a board or a form).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "マス目（ボードや用紙の）。"
+    },
+    {
+      "id": "ms-x07-004",
+      "lang": "ms",
+      "term": "tepi",
+      "gloss_en": "side, edge",
+      "gloss_ja": "端、わき",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Side, edge: «di tepi jalan» = by the roadside.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "わき、ふち：«di tepi jalan»＝道ばたに。"
+    },
+    {
+      "id": "ms-x07-005",
+      "lang": "ms",
+      "term": "tiba",
+      "gloss_en": "arrive",
+      "gloss_ja": "着く、到着する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To arrive (a little more formal than «sampai», Ch4): flights and trains «tiba».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "到着する（«sampai»（第4課）より少し改まった言い方）：飛行機や電車は «tiba»。"
+    },
+    {
+      "id": "ms-x07-006",
+      "lang": "ms",
+      "term": "bagasi",
+      "gloss_en": "baggage, luggage",
+      "gloss_ja": "手荷物、荷物",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Baggage, luggage (at the airport).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "（空港の）荷物、手荷物。",
+      "image": "🧳"
+    },
+    {
+      "id": "ms-x07-007",
+      "lang": "ms",
+      "term": "brek",
+      "gloss_en": "brake",
+      "gloss_ja": "ブレーキ",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Brake: «tekan brek» = to press the brake.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "ブレーキ：«tekan brek»＝ブレーキを踏む。"
+    },
+    {
+      "id": "ms-x07-008",
+      "lang": "ms",
+      "term": "cepat-cepat",
+      "gloss_en": "quickly, hurriedly",
+      "gloss_ja": "急いで",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "cepat (Ch6), said twice: quickly, in a hurry.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "cepat（第6課）を2回：急いで。"
+    },
+    {
+      "id": "ms-x07-009",
+      "lang": "ms",
+      "term": "ekspres",
+      "gloss_en": "express",
+      "gloss_ja": "急行の、速達の",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Express: «bas ekspres» = express (long-distance) bus.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "急行：«bas ekspres»＝長距離バス。"
+    },
+    {
+      "id": "ms-x07-010",
+      "lang": "ms",
+      "term": "hujung",
+      "gloss_en": "end, tip",
+      "gloss_ja": "端、突き当たり",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "End, tip: «di hujung jalan» = at the end of the road. Compare «hujung minggu» (Ch4).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "端、先：«di hujung jalan»＝道の突き当たりに。«hujung minggu»（第4課）と比べよう。"
+    },
+    {
+      "id": "ms-x07-011",
+      "lang": "ms",
+      "term": "jarak",
+      "gloss_en": "distance (\"jarak jauh\" = remote)",
+      "gloss_ja": "距離",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Distance: «jarak dari sini ke …» = the distance from here to …",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "距離：«jarak dari sini ke …»＝ここから〜までの距離。"
+    },
+    {
+      "id": "ms-x07-012",
+      "lang": "ms",
+      "term": "kastam",
+      "gloss_en": "customs",
+      "gloss_ja": "税関",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Customs (at the airport).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "税関。"
+    },
+    {
+      "id": "ms-x07-013",
+      "lang": "ms",
+      "term": "lokasi",
+      "gloss_en": "location",
+      "gloss_ja": "場所、位置",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Location (on maps and apps).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "場所、位置（地図やアプリで）。"
+    },
+    {
+      "id": "ms-x07-014",
+      "lang": "ms",
+      "term": "lorong",
+      "gloss_en": "lane",
+      "gloss_ja": "車線、路地",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Lane: «lorong kiri» = the left lane; also a small street.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "車線、路地：«lorong kiri»＝左車線。"
+    },
+    {
+      "id": "ms-x07-015",
+      "lang": "ms",
+      "term": "pandu",
+      "gloss_en": "drive",
+      "gloss_ja": "運転する",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To drive: «pandu kereta» = to drive a car. Formal / written: «memandu».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "運転する：«pandu kereta»＝車を運転する。書き言葉では «memandu»。"
+    },
+    {
+      "id": "ms-x07-016",
+      "lang": "ms",
+      "term": "pas",
+      "gloss_en": "pass (\"pas masuk\" = boarding pass)",
+      "gloss_ja": "パス（«pas masuk» 搭乗券）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Pass: «pas masuk» = boarding pass.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "パス、通行証：«pas masuk»＝搭乗券。"
+    },
+    {
+      "id": "ms-x07-017",
+      "lang": "ms",
+      "term": "pawagam",
+      "gloss_en": "cinema",
+      "gloss_ja": "映画館",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Cinema.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "映画館。",
+      "image": "🎦"
+    },
+    {
+      "id": "ms-x07-018",
+      "lang": "ms",
+      "term": "pekan",
+      "gloss_en": "small town",
+      "gloss_ja": "町",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Small town.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "小さな町。"
+    },
+    {
+      "id": "ms-x07-019",
+      "lang": "ms",
+      "term": "penerbangan",
+      "gloss_en": "flight",
+      "gloss_ja": "フライト、便",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "pe-an + terbang: a flight.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "pe-an + terbang：（飛行機の）便、フライト。"
+    },
+    {
+      "id": "ms-x07-020",
+      "lang": "ms",
+      "term": "perhentian bas",
+      "gloss_en": "bus stop",
+      "gloss_ja": "バス停",
+      "pos": "phrase",
+      "affix_tag": "chunk",
+      "note": "Bus stop (two words).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "バス停（2語）。",
+      "image": "🚏"
+    },
+    {
+      "id": "ms-x07-021",
+      "lang": "ms",
+      "term": "perlahan-lahan",
+      "gloss_en": "slowly",
+      "gloss_ja": "ゆっくり",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "from perlahan (Ch6), partly repeated: slowly, carefully.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "perlahan（第6課）の一部をくり返した形：ゆっくりと。"
+    },
+    {
+      "id": "ms-x07-022",
+      "lang": "ms",
+      "term": "perpustakaan",
+      "gloss_en": "library",
+      "gloss_ja": "図書館",
+      "pos": "noun",
+      "affix_tag": "pe-an",
+      "note": "Library; taught as a whole word.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "図書館（ひとまとまりの単語として）。"
+    },
+    {
+      "id": "ms-x07-023",
+      "lang": "ms",
+      "term": "polis",
+      "gloss_en": "police",
+      "gloss_ja": "警察",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Police.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "警察。",
+      "image": "👮"
+    },
+    {
+      "id": "ms-x07-024",
+      "lang": "ms",
+      "term": "pusat",
+      "gloss_en": "centre",
+      "gloss_ja": "センター、中心",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Centre: «pusat bandar» = town centre.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "中心、センター：«pusat bandar»＝町の中心。"
+    },
+    {
+      "id": "ms-x07-025",
+      "lang": "ms",
+      "term": "pusing",
+      "gloss_en": "turn around, spin",
+      "gloss_ja": "回る、Uターンする",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To turn round, go round: «pusing di bulatan» = go round the roundabout.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "回る、Uターンする：«pusing di bulatan»＝ロータリーを回る。"
+    },
+    {
+      "id": "ms-x07-026",
+      "lang": "ms",
+      "term": "secepat",
+      "gloss_en": "as fast as",
+      "gloss_ja": "〜と同じくらい速く",
+      "pos": "adv",
+      "affix_tag": "se-",
+      "note": "se- + cepat (Ch6): as fast as.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "se- + cepat（第6課）：〜と同じくらい速い。"
+    },
+    {
+      "id": "ms-x07-027",
+      "lang": "ms",
+      "term": "sekeliling",
+      "gloss_en": "around",
+      "gloss_ja": "周り、周囲",
+      "pos": "prep",
+      "affix_tag": "lex",
+      "note": "Around, the surroundings: «di sekeliling pekan» = around the town.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "周り、まわり：«di sekeliling pekan»＝町のまわりで。"
+    },
+    {
+      "id": "ms-x07-028",
+      "lang": "ms",
+      "term": "sesat",
+      "gloss_en": "lost",
+      "gloss_ja": "道に迷った",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Lost (not knowing the way): «Saya sesat.» = I'm lost.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "道に迷った：«Saya sesat.»＝道に迷いました。"
+    },
+    {
+      "id": "ms-x07-029",
+      "lang": "ms",
+      "term": "tambang",
+      "gloss_en": "fare",
+      "gloss_ja": "運賃",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Fare (for a bus, taxi or train).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "運賃（バス、タクシー、電車）。"
+    },
+    {
+      "id": "ms-x07-030",
+      "lang": "ms",
+      "term": "terbang",
+      "gloss_en": "fly",
+      "gloss_ja": "飛ぶ",
+      "pos": "verb",
+      "affix_tag": "root",
+      "note": "To fly. «kapal terbang» (Ch4) = aeroplane.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "飛ぶ。«kapal terbang»（第4課）＝飛行機。"
+    },
+    {
+      "id": "ms-x07-031",
+      "lang": "ms",
+      "term": "terminal",
+      "gloss_en": "terminal (bus terminal)",
+      "gloss_ja": "ターミナル",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Terminal (airport or bus).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x07"
+        }
+      ],
+      "scene": "stretch-x07",
+      "chapter": 7,
+      "note_ja": "ターミナル（空港やバス）。"
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-x07-f01",
+      "frame": "Berapa jauh jarak dari ___ ke ___ ___?",
+      "example": "Berapa jauh jarak dari bandar ke lapangan terbang?",
+      "meaning_en": "How far is it from the town to the airport?",
+      "meaning_ja": "町から空港まではどのくらいの距離ですか。",
+      "decoys": [
+        "daripada"
+      ]
+    },
+    {
+      "id": "ms-x07-f02",
+      "frame": "Kalau ___, tanya polis di ___ jalan.",
+      "example": "Kalau sesat, tanya polis di tepi jalan.",
+      "meaning_en": "If you get lost, ask a police officer by the road.",
+      "meaning_ja": "道に迷ったら、道ばたの警察官に聞いてください。",
+      "decoys": [
+        "pusing"
+      ]
+    },
+    {
+      "id": "ms-x07-f03",
+      "frame": "Tambang bas ekspres ke ___ ialah ___ ringgit.",
+      "example": "Tambang bas ekspres ke Ipoh ialah tiga puluh ringgit.",
+      "meaning_en": "The express bus fare to Ipoh is thirty ringgit.",
+      "meaning_ja": "イポーまでの長距離バスの運賃は30リンギットです。",
+      "decoys": [
+        "dari"
+      ]
+    },
+    {
+      "id": "ms-x07-f04",
+      "frame": "Pandu ___ di lorong ___.",
+      "example": "Pandu perlahan-lahan di lorong kiri.",
+      "meaning_en": "Drive slowly in the left lane.",
+      "meaning_ja": "左車線をゆっくり運転してください。",
+      "decoys": [
+        "cepat-cepat"
+      ]
+    },
+    {
+      "id": "ms-x07-f05",
+      "frame": "Lokasi ___ itu di pusat ___, sebelah ___.",
+      "example": "Lokasi perpustakaan itu di pusat bandar, sebelah pawagam.",
+      "meaning_en": "That library is in the town centre, next to the cinema.",
+      "meaning_ja": "その図書館は町の中心、映画館の隣にあります。",
+      "decoys": [
+        "tempat"
+      ]
+    },
+    {
+      "id": "ms-x07-f06",
+      "frame": "Bas ___ itu secepat ___ ___.",
+      "example": "Bas ekspres itu secepat kereta api.",
+      "meaning_en": "That express bus is as fast as the train.",
+      "meaning_ja": "その長距離バスは電車と同じくらい速い。",
+      "decoys": [
+        "cepat"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "Arriving at the airport",
+    "title_ja": "空港に着いて",
+    "lines": [
+      {
+        "id": "ms-x07-d01",
+        "speaker": "Encik Rahman",
+        "ms": "Encik Tanaka, penerbangan Encik tiba pukul berapa?",
+        "en": "Mr Tanaka, what time does your flight arrive?"
+      },
+      {
+        "id": "ms-x07-d02",
+        "speaker": "Tanaka",
+        "ms": "Penerbangan saya tiba pukul lapan malam, di Terminal 1.",
+        "en": "My flight arrives at eight in the evening, at Terminal 1.",
+        "choices": [
+          "Penerbangan saya tiba di perpustakaan.",
+          "Saya pandu kereta ke pejabat."
+        ],
+        "choices_en": [
+          "My flight arrives at the library.",
+          "I drive to the office."
+        ]
+      },
+      {
+        "id": "ms-x07-d03",
+        "speaker": "Encik Rahman",
+        "ms": "Saya tunggu Encik di luar, selepas kastam.",
+        "en": "I'll wait for you outside, after customs."
+      },
+      {
+        "id": "ms-x07-d04",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih, Encik. Bagasi saya besar dan berat!",
+        "en": "Thank you. My luggage is big and heavy!",
+        "choices": [
+          "Terima kasih. Saya tunggu Encik di perpustakaan.",
+          "Maaf, saya tidak pandu kereta."
+        ],
+        "choices_en": [
+          "Thank you. I'll wait for you at the library.",
+          "Sorry, I don't drive."
+        ]
+      },
+      {
+        "id": "ms-x07-d05",
+        "speaker": "(Narrator)",
+        "ms": "Di lapangan terbang.",
+        "en": "At the airport."
+      },
+      {
+        "id": "ms-x07-d06",
+        "speaker": "Tanaka",
+        "ms": "Encik Rahman, maaf, saya sesat. Encik di mana?",
+        "en": "Mr Rahman, sorry, I'm lost. Where are you?"
+      },
+      {
+        "id": "ms-x07-d07",
+        "speaker": "Encik Rahman",
+        "ms": "Saya di sebelah perhentian bas, di hujung terminal. Tengok kiri!",
+        "en": "I'm next to the bus stop, at the end of the terminal. Look left!"
+      },
+      {
+        "id": "ms-x07-d08",
+        "speaker": "Tanaka",
+        "ms": "Oh, ya! Saya datang sekarang.",
+        "en": "Oh, yes! I'm coming now."
+      },
+      {
+        "id": "ms-x07-d09",
+        "speaker": "Encik Rahman",
+        "ms": "Jarak dari sini ke bandar lebih kurang lima puluh kilometer. Kita naik kereta saya.",
+        "en": "It's about fifty kilometres from here to town. We'll go in my car."
+      },
+      {
+        "id": "ms-x07-d10",
+        "speaker": "Tanaka",
+        "ms": "Jalan sesak malam ini?",
+        "en": "Is the traffic heavy tonight?",
+        "choices": [
+          "Kita jalan kaki lima puluh kilometer?",
+          "Kita naik kapal terbang ke bandar?"
+        ],
+        "choices_en": [
+          "We'll walk fifty kilometres?",
+          "We'll fly to town?"
+        ]
+      },
+      {
+        "id": "ms-x07-d11",
+        "speaker": "Encik Rahman",
+        "ms": "Sedikit. Saya pandu perlahan-lahan.",
+        "en": "A little. I'll drive slowly."
+      },
+      {
+        "id": "ms-x07-d12",
+        "speaker": "Tanaka",
+        "ms": "Baik. Boleh kita pergi ke kedai dulu? Saya mahu beli air.",
+        "en": "Okay. Can we stop at a shop first? I'd like to buy some water.",
+        "choices": [
+          "Jangan pandu! Kita jalan kaki.",
+          "Baik. Saya tunggu di perpustakaan."
+        ],
+        "choices_en": [
+          "Don't drive! We'll walk.",
+          "Okay. I'll wait at the library."
+        ]
+      },
+      {
+        "id": "ms-x07-d13",
+        "speaker": "Encik Rahman",
+        "ms": "Boleh. Ada kedai di tepi jalan, dekat simpang.",
+        "en": "Sure. There's a shop by the road, near the junction."
+      },
+      {
+        "id": "ms-x07-d14",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih banyak, Encik.",
+        "en": "Thank you very much.",
+        "choices": [
+          "Maaf, saya sesat lagi.",
+          "Sama-sama, Encik."
+        ],
+        "choices_en": [
+          "Sorry, I'm lost again.",
+          "You're welcome."
+        ]
+      }
+    ]
+  },
+  "cari": {
+    "scene": "jalan-lintas",
+    "core": [
+      "ms-d-jalan-lintas-01",
+      "ms-d-jalan-lintas-02",
+      "ms-d-jalan-lintas-03",
+      "ms-d-jalan-lintas-06"
+    ]
+  }
+}

@@ -1,0 +1,904 @@
+{
+ "chapter": 7,
+ "place": "Ch7 (extension)",
+ "changes": [
+  {
+   "lid": "L-1336",
+   "row": 1337,
+   "word": "tunjuk",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-daily-life-43",
+     "after": "ms-x07-001"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Daily life",
+     "after": "Ch7 (extension)"
+    }
+   ]
+  }
+ ],
+ "new": [
+  {
+   "lid": "L-1575",
+   "row": 1576,
+   "values": [
+    "L-1575",
+    "bandar",
+    "town, city",
+    "町、都市",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-002",
+    "Ch7 (extension)",
+    "social · band 1",
+    "Yes",
+    "town, city",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: places and getting around (Ch7). Hanashishou: 2 scenes; e.g. «Satu bandar meletup.» (trio_movie_night).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1576",
+   "row": 1577,
+   "values": [
+    "L-1576",
+    "petak",
+    "square (on a board)",
+    "区画、マス",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-003",
+    "Ch7 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "square (on a board)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: parking (Ch7): «petak parkir»; also a board-game square. Hanashishou: 2 scenes; e.g. «Ibu bapa saya senang jumpa petak parkir.» (visitor_parking).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1577",
+   "row": 1578,
+   "values": [
+    "L-1577",
+    "tepi",
+    "side, edge",
+    "端、わき",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-004",
+    "Ch7 (extension)",
+    "social · band 1",
+    "Yes",
+    "side, edge",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: locations (Ch7): «di tepi jalan». Hanashishou: 2 scenes; e.g. «Tepi.» (trio_movie_night).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1578",
+   "row": 1579,
+   "values": [
+    "L-1578",
+    "tiba",
+    "arrive",
+    "着く、到着する",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-005",
+    "Ch7 (extension)",
+    "social · band 1",
+    "Yes",
+    "arrive",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: travel and arrival (Ch7); formal partner of «sampai». Hanashishou: 2 scenes; e.g. «Hari Sabtu tiba.» (trio_surprise_party).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1579",
+   "row": 1580,
+   "values": [
+    "L-1579",
+    "bagasi",
+    "baggage, luggage",
+    "手荷物、荷物",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-006",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "baggage, luggage",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: travel (Ch7): the airport; «lebihan bagasi» is a Jambatan row. Hanashishou: 1 scene; e.g. «Caj lebihan bagasi RM150.» (airport_checkin). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1580",
+   "row": 1581,
+   "values": [
+    "L-1580",
+    "brek",
+    "brake",
+    "ブレーキ",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-007",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "brake",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: driving (Ch7); loan. Hanashishou: 1 scene; e.g. «Pemandu tekan brek kuat-kuat.» (grab_ride_chat). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1581",
+   "row": 1582,
+   "values": [
+    "L-1581",
+    "cepat-cepat",
+    "quickly, hurriedly",
+    "急いで",
+    "adv",
+    "lex",
+    "cepat",
+    "Not yet checked",
+    "",
+    "ms-x07-008",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "quickly, hurriedly",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: getting there in time (Ch7); cepat Ch7 (Dunia). Hanashishou: 1 scene; e.g. «Anda cepat-cepat turun.» (hotel_checkin). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1582",
+   "row": 1583,
+   "values": [
+    "L-1582",
+    "ekspres",
+    "express",
+    "急行の、速達の",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-009",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "express",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: transport and post (Ch7): «bas ekspres». Hanashishou: 1 scene; e.g. «Bas ekspres anda ke Pulau Pinang pukul 10 pagi sudah jalan lima minit lalu.» (missed_bus). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1583",
+   "row": 1584,
+   "values": [
+    "L-1583",
+    "hujung",
+    "end, tip",
+    "端、突き当たり",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-010",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "end, tip",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: locations (Ch7): «di hujung jalan»; «hujung minggu» too. Hanashishou: 1 scene; e.g. «Bilik 1208, di tingkat dua belas, di hujung koridor.» (hotel_checkin).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1584",
+   "row": 1585,
+   "values": [
+    "L-1584",
+    "jarak",
+    "distance (\"jarak jauh\" = remote)",
+    "距離",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-011",
+    "Ch7 (extension)",
+    "office · band 1",
+    "Yes",
+    "distance (\"jarak jauh\" = remote)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: distance and duration (Ch7); «jarak jauh» = remote. Hanashishou: 1 scene; e.g. «Boleh saya tanya tentang polisi kerja jarak jauh?» (azula_town_hall).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1585",
+   "row": 1586,
+   "values": [
+    "L-1585",
+    "kastam",
+    "customs",
+    "税関",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-012",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "customs",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: travel (Ch7): the airport. Hanashishou: 1 scene; e.g. «Okey, isi borang kastam ni: barang apa, berapa banyak, dan nilainya.» (post_parcel).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1586",
+   "row": 1587,
+   "values": [
+    "L-1586",
+    "lokasi",
+    "location",
+    "場所、位置",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-013",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "location",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: locations (Ch7); loan. Hanashishou: 1 scene; e.g. «Anda sudah cakap lokasi anda dengan jelas dan cepat.» (grab_pickup). not spoken by a character or offered as a choice (pattern).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1587",
+   "row": 1588,
+   "values": [
+    "L-1587",
+    "lorong",
+    "lane",
+    "車線、路地",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-014",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "lane",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: directions (Ch7): «lorong kiri». Hanashishou: 1 scene; e.g. «Lorong kiri, okey.» (grab_ride_chat).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1588",
+   "row": 1589,
+   "values": [
+    "L-1588",
+    "pandu",
+    "drive",
+    "運転する",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-015",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "drive",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: transport (Ch7); root of «memandu» (Ch11). Hanashishou: 1 scene; e.g. «Berapa lama anda pandu kereta.» (hotel_checkin).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1589",
+   "row": 1590,
+   "values": [
+    "L-1589",
+    "pas",
+    "pass (\"pas masuk\" = boarding pass)",
+    "パス（«pas masuk» 搭乗券）",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-016",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "pass (\"pas masuk\" = boarding pass)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: travel (Ch7): boarding pass. Hanashishou: 1 scene; e.g. «Pintu berapa yang tertulis pada pas masuk anda?» (airport_checkin).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1590",
+   "row": 1591,
+   "values": [
+    "L-1590",
+    "pawagam",
+    "cinema",
+    "映画館",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-017",
+    "Ch7 (extension)",
+    "social · band 1",
+    "Yes",
+    "cinema",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: places (Ch7). Hanashishou: 1 scene; e.g. «Anda di luar pawagam.» (trio_movie_night). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1591",
+   "row": 1592,
+   "values": [
+    "L-1591",
+    "pekan",
+    "small town",
+    "町",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-018",
+    "Ch7 (extension)",
+    "social · band 1",
+    "Yes",
+    "small town",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: places (Ch7). Hanashishou: 1 scene; e.g. «Hmm, saya lahir di pekan kecil, dan masa umur enam tahun...» (azula_interview).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1592",
+   "row": 1593,
+   "values": [
+    "L-1592",
+    "penerbangan",
+    "flight",
+    "フライト、便",
+    "noun",
+    "pe-an",
+    "terbang",
+    "Not yet checked",
+    "",
+    "ms-x07-019",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "flight",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: travel (Ch7); terbang Ch7 (extension). Hanashishou: 1 scene; e.g. «Penerbangan saya di Pintu 12.» (airport_checkin).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1593",
+   "row": 1594,
+   "values": [
+    "L-1593",
+    "perhentian bas",
+    "bus stop",
+    "バス停",
+    "phrase",
+    "chunk",
+    "perhentian + bas",
+    "Not yet checked",
+    "",
+    "ms-x07-020",
+    "Ch7 (extension)",
+    "",
+    "",
+    "",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: transport (Ch7): «perhentian bas»; bas Ch7. not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1594",
+   "row": 1595,
+   "values": [
+    "L-1594",
+    "perlahan-lahan",
+    "slowly",
+    "ゆっくり",
+    "adv",
+    "lex",
+    "perlahan",
+    "Not yet checked",
+    "",
+    "ms-x07-021",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "slowly",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: driving and walking (Ch7); perlahan Ch6. Hanashishou: 1 scene; e.g. «Perlahan-lahan, ya.» (lost_wallet).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1595",
+   "row": 1596,
+   "values": [
+    "L-1595",
+    "perpustakaan",
+    "library",
+    "図書館",
+    "noun",
+    "pe-an",
+    "pustaka",
+    "Not yet checked",
+    "",
+    "ms-x07-022",
+    "Ch7 (extension)",
+    "social · band 1",
+    "Yes",
+    "library",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: places (Ch7). Hanashishou: 1 scene; e.g. «Sabtu petang di perpustakaan bandar.» (jinx_library). root «pustaka» not in ledger: taught as a whole word; not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1596",
+   "row": 1597,
+   "values": [
+    "L-1596",
+    "polis",
+    "police",
+    "警察",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-023",
+    "Ch7 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "police",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: places (Ch7): «balai polis». Hanashishou: 1 scene; e.g. «Telefon polis.» (noisy_renovation).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1597",
+   "row": 1598,
+   "values": [
+    "L-1597",
+    "pusat",
+    "centre",
+    "センター、中心",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-024",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "centre",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: places (Ch7): «pusat beli-belah» (Jambatan row), «pusat kesihatan». Hanashishou: 1 scene; e.g. «Selepas pusat beli-belah» (grab_ride_chat). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1598",
+   "row": 1599,
+   "values": [
+    "L-1598",
+    "pusing",
+    "turn around, spin",
+    "回る、Uターンする",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-025",
+    "Ch7 (extension)",
+    "office · band 1",
+    "Yes",
+    "turn around, spin",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: directions (Ch7): «pusing balik». Hanashishou: 1 scene; e.g. «Sejam kemudian, Farah pusing ke arah anda lagi.» (new_joiner). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1599",
+   "row": 1600,
+   "values": [
+    "L-1599",
+    "secepat",
+    "as fast as",
+    "〜と同じくらい速く",
+    "adv",
+    "se-",
+    "cepat",
+    "Not yet checked",
+    "",
+    "ms-x07-026",
+    "Ch7 (extension)",
+    "office · band 1",
+    "Yes",
+    "as fast as",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: se- comparison (from Ch6); cepat Ch7 (Dunia). Hanashishou: 1 scene; e.g. «Tak secepat itu.» (azula_town_hall). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1600",
+   "row": 1601,
+   "values": [
+    "L-1600",
+    "sekeliling",
+    "around",
+    "周り、周囲",
+    "prep",
+    "lex",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-027",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "around",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: locations (Ch7). Hanashishou: 1 scene; e.g. «Anda tengok sekeliling.» (grab_ride_chat). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1601",
+   "row": 1602,
+   "values": [
+    "L-1601",
+    "sesat",
+    "lost",
+    "道に迷った",
+    "adj",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-028",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "lost",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: directions (Ch7). Hanashishou: 1 scene; e.g. «Ramai orang sesat di sini.» (ask_directions).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1602",
+   "row": 1603,
+   "values": [
+    "L-1602",
+    "tambang",
+    "fare",
+    "運賃",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-029",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "fare",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: transport (Ch7). Hanashishou: 1 scene; e.g. «Syarikat penerbangan tambang murah anda benarkan 20 kilogram bagasi daftar masuk.» (airport_checkin). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1603",
+   "row": 1604,
+   "values": [
+    "L-1603",
+    "terbang",
+    "fly",
+    "飛ぶ",
+    "verb",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-030",
+    "Ch7 (extension)",
+    "social · band 1",
+    "Yes",
+    "fly",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: transport (Ch7): «kapal terbang» (Dunia); root of «penerbangan». Hanashishou: 1 scene; e.g. «Ia terbang atas bangunan saja.» (jinx_demo_day).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1604",
+   "row": 1605,
+   "values": [
+    "L-1604",
+    "terminal",
+    "terminal (bus terminal)",
+    "ターミナル",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x07-031",
+    "Ch7 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "terminal (bus terminal)",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: transport (Ch7): «terminal bas». Hanashishou: 1 scene; e.g. «Terminal bas.» (missed_bus). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x07-001": {
+   "lid": "L-1336",
+   "moved_from": "ms-j-daily-life-43"
+  },
+  "ms-x07-002": {
+   "lid": "L-1575"
+  },
+  "ms-x07-003": {
+   "lid": "L-1576"
+  },
+  "ms-x07-004": {
+   "lid": "L-1577"
+  },
+  "ms-x07-005": {
+   "lid": "L-1578"
+  },
+  "ms-x07-006": {
+   "lid": "L-1579"
+  },
+  "ms-x07-007": {
+   "lid": "L-1580"
+  },
+  "ms-x07-008": {
+   "lid": "L-1581"
+  },
+  "ms-x07-009": {
+   "lid": "L-1582"
+  },
+  "ms-x07-010": {
+   "lid": "L-1583"
+  },
+  "ms-x07-011": {
+   "lid": "L-1584"
+  },
+  "ms-x07-012": {
+   "lid": "L-1585"
+  },
+  "ms-x07-013": {
+   "lid": "L-1586"
+  },
+  "ms-x07-014": {
+   "lid": "L-1587"
+  },
+  "ms-x07-015": {
+   "lid": "L-1588"
+  },
+  "ms-x07-016": {
+   "lid": "L-1589"
+  },
+  "ms-x07-017": {
+   "lid": "L-1590"
+  },
+  "ms-x07-018": {
+   "lid": "L-1591"
+  },
+  "ms-x07-019": {
+   "lid": "L-1592"
+  },
+  "ms-x07-020": {
+   "lid": "L-1593"
+  },
+  "ms-x07-021": {
+   "lid": "L-1594"
+  },
+  "ms-x07-022": {
+   "lid": "L-1595"
+  },
+  "ms-x07-023": {
+   "lid": "L-1596"
+  },
+  "ms-x07-024": {
+   "lid": "L-1597"
+  },
+  "ms-x07-025": {
+   "lid": "L-1598"
+  },
+  "ms-x07-026": {
+   "lid": "L-1599"
+  },
+  "ms-x07-027": {
+   "lid": "L-1600"
+  },
+  "ms-x07-028": {
+   "lid": "L-1601"
+  },
+  "ms-x07-029": {
+   "lid": "L-1602"
+  },
+  "ms-x07-030": {
+   "lid": "L-1603"
+  },
+  "ms-x07-031": {
+   "lid": "L-1604"
+  }
+ },
+ "skipped": [
+  "pasar raya"
+ ]
+}

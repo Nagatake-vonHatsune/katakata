@@ -1,7 +1,7 @@
 """Plan, apply and verify a ⚡ placement batch in the ledger: new «ChN (extension)» rows and promoted Jambatan rows.
 
 Usage (from the repo root):
-    python3 -I tools/ledger/stretch_batch.py plan <chapter> [docs/VOCAB-PLACEMENT-proposal.csv] > plan.json
+    python3 -I tools/ledger/stretch_batch.py plan <chapter> [docs/VOCAB-PLACEMENT-proposal.csv] [--skip <word>] > plan.json
     python3 -I tools/ledger/stretch_batch.py apply <plan.json>              # writes the planned cells into the snapshot
     python3 -I tools/ledger/stretch_batch.py csv <plan.json> <out.csv>      # the new rows and changes, for a person to paste
     python3 -I tools/ledger/stretch_batch.py verify <before.json> <after.json> <plan.json>
@@ -45,12 +45,12 @@ def example(line, word):
     return hit.strip()
 
 
-def plan(chapter, proposal, hana):
+def plan(chapter, proposal, hana, skip=()):
     rows = snapshot()
     header, body = rows[0], rows[1:]
     by_id = {r[0]: (i + 2, r) for i, r in enumerate(body)}  # sheet row = index in the tab, 1-based, header is row 1
     place = f"Ch{chapter} (extension)"
-    picked = [r for r in csv.DictReader(open(proposal, encoding="utf-8")) if r["decision"] == place]
+    picked = [r for r in csv.DictReader(open(proposal, encoding="utf-8")) if r["decision"] == place and r["word"] not in skip]
     promoted = [r for r in picked if r["existing ledger ID"]]
     new = [r for r in picked if not r["existing ledger ID"]]
     met = {r["word"]: r for r in csv.DictReader(open(Path(hana) / "docs/STAGE-2-step6a2-metfirst.csv", encoding="utf-8"))}
@@ -154,12 +154,20 @@ def verify(before, after, p):
 
 def main(argv):
     hana = "../hanashishou"
+    skip = []
+    while "--skip" in argv:  # hold a word back from the batch (no row, no card), e.g. --skip "pasar raya"
+        i = argv.index("--skip")
+        skip.append(argv[i + 1])
+        del argv[i : i + 2]
     if "--hana" in argv:
         i = argv.index("--hana")
         hana = argv[i + 1]
         del argv[i : i + 2]
     if argv[:1] == ["plan"] and len(argv) in (2, 3):
-        print(json.dumps(plan(int(argv[1]), argv[2] if len(argv) == 3 else ROOT / "docs/VOCAB-PLACEMENT-proposal.csv", hana), ensure_ascii=False, indent=1))
+        out = plan(int(argv[1]), argv[2] if len(argv) == 3 else ROOT / "docs/VOCAB-PLACEMENT-proposal.csv", hana, skip)
+        if skip:
+            out["skipped"] = skip
+        print(json.dumps(out, ensure_ascii=False, indent=1))
         return 0
     if argv[:1] == ["apply"] and len(argv) == 2:
         apply(json.load(open(argv[1], encoding="utf-8")))
