@@ -11,7 +11,7 @@ import type { Game, GameContext, StepResult } from '../game';
 type CariStep = Extract<Step, { kind: 'cari' }>;
 
 // Stable layout per scene so objects stay put between rounds.
-function layout(sceneId: string, n: number): Array<{ x: number; y: number }> {
+export function layout(sceneId: string, n: number): Array<{ x: number; y: number }> {
   let seed = [...sceneId].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
   const rnd = () => ((seed = (seed * 1103515245 + 12345) >>> 0) % 1000) / 1000;
   const cols = n <= 6 ? 3 : 4;

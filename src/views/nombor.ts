@@ -15,10 +15,14 @@ import {
 } from './nombor-charts';
 import { topBar } from './widgets';
 
-const PART_MS: Record<PartId, string> = { nombor: 'Nombor', hari: 'Hari', bulan: 'Bulan dan tarikh', pecahan: 'Pecahan dan peratus', wang: 'Wang', masa: 'Masa' };
-const PART_ICON: Record<PartId, string> = { nombor: '🔢', hari: '🗓️', bulan: '📆', pecahan: '🍰', wang: '💵', masa: '🕒' };
+export const PART_MS: Record<PartId, string> = { nombor: 'Nombor', hari: 'Hari', bulan: 'Bulan dan tarikh', pecahan: 'Pecahan dan peratus', wang: 'Wang', masa: 'Masa' };
+export const PART_ICON: Record<PartId, string> = { nombor: '🔢', hari: '🗓️', bulan: '📆', pecahan: '🍰', wang: '💵', masa: '🕒' };
 
 let level: NumberLevel = 'n10';
+/** The number level chosen on the Numbers screen (class runs use it too). */
+export function numberLevel(): NumberLevel {
+  return level;
+}
 const canSpeak = () => typeof speechSynthesis !== 'undefined';
 
 function listen(text: string): HTMLElement | null {
@@ -27,7 +31,7 @@ function listen(text: string): HTMLElement | null {
 }
 
 /** The reading: standard form first, each variant with its label (Spoken, Also standard, Formal …). */
-function readingBox(r: Reading): HTMLElement {
+export function readingBox(r: Reading): HTMLElement {
   return h(
     'div',
     { class: 'nm-reading', 'aria-live': 'polite' },
@@ -38,7 +42,7 @@ function readingBox(r: Reading): HTMLElement {
   );
 }
 
-function openChart(part: PartId): void {
+export function openChart(part: PartId): void {
   const id = PART_CHART[part];
   void sheet((close) => [chartContent(id, part === 'pecahan' || part === 'wang' ? part : 'nombor'), button(t('common.close'), () => close(), 'btn btn-ghost btn-wide')], { label: t('nm.chart.' + id) });
   // The sheet focuses its first button (Close, at the bottom); show the chart from the top.
@@ -140,7 +144,7 @@ function renderPart(root: HTMLElement, go: (r: string) => void, part: PartId): v
   );
 }
 
-function explorer(part: PartId): HTMLElement {
+export function explorer(part: PartId): HTMLElement {
   const out = h('div', { class: 'nm-reading-slot' });
   const show = (r: Reading) => out.replaceChildren(readingBox(r));
   switch (part) {
@@ -376,7 +380,7 @@ function animateClock(from: number, to: number, frame: (v: number) => void, done
 
 // ---------------------------------------------------------------- the round
 
-function shownEl(s: Shown, big: boolean): HTMLElement {
+export function shownEl(s: Shown, big: boolean): HTMLElement {
   switch (s.kind) {
     case 'number': return big ? reels(formatNumber(s.n)) : h('span', { class: 'nm-opt-num' }, formatNumber(s.n));
     case 'phone': return h('div', { class: 'nm-phone' }, '📱 ', s.phone);
@@ -393,7 +397,7 @@ function shownEl(s: Shown, big: boolean): HTMLElement {
   }
 }
 
-function promptFor(q: Question): string {
+export function promptFor(q: Question): string {
   if (q.dir === 'build') return t('nm.q.build');
   if (q.dir === 'pick') return t('nm.q.pick');
   if (q.shown.kind === 'relative') return t('nm.q.relative');
@@ -465,7 +469,7 @@ function playRound(root: HTMLElement, go: (r: string) => void, part: PartId): vo
 }
 
 /** Show the question's thing, with its gadget's motion: numbers roll, the clock spins, the calendar turns. */
-function showQuestion(stage: HTMLElement, q: Question): void {
+export function showQuestion(stage: HTMLElement, q: Question): void {
   const s = q.shown;
   if (s.kind === 'number') return spinReels(stage, formatNumber(s.n), () => undefined);
   if (s.kind === 'time') {

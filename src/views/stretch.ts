@@ -3,7 +3,7 @@
 // a chapter with every 🔥 lit but no ⚡ pack yet shows a greyed "⚡ soon").
 import { content, gloss, srsKey } from '../core/content';
 import { getLang, t } from '../core/i18n';
-import { checkpoints, dialogueKey, dialogueScore, dialogueReplyIds, stretchOpen, stretchPack, stretchProgress, stretchSoon, type Checkpoint } from '../core/progress';
+import { checkpoints, dialogueKey, dialogueScore, dialogueReplyIds, stretchPack, stretchProgress, stretchSoon, stretchUnlocked, type Checkpoint } from '../core/progress';
 import { buildStretch, buildStretchDialogue, stretchReplyIds, type Session } from '../core/session';
 import { isKnown } from '../core/srs';
 import { state } from '../core/state';
@@ -100,7 +100,7 @@ export function flamesText(chapter: number): string {
 export function stretchChip(chapter: number, nav: StretchNav): HTMLElement | null {
   if (stretchSoon(chapter))
     return h('span', { class: 'stretch-chip stretch-soon', role: 'note', 'aria-disabled': 'true', 'aria-label': t('stretch.soon_aria', { n: chapter }), title: t('stretch.soon_aria', { n: chapter }) }, t('stretch.soon'));
-  if (!stretchOpen(chapter)) return null;
+  if (!stretchUnlocked(chapter)) return null;
   // ⚡ 18 has no new words (Sam, 17 Nov 2026): a harder review, so its label says so.
   const review = stretchPack(chapter)?.cards.length === 0;
   return h(
@@ -116,7 +116,7 @@ export function renderStretch(root: HTMLElement, chapter: number, nav: StretchNa
   const ch = content.chapters.find((c) => c.chapter === chapter);
   if (!x || !ch) return nav.go(`sedia/${chapter}`);
   const lang = getLang();
-  const open = stretchOpen(chapter);
+  const open = stretchUnlocked(chapter);
   const p = stretchProgress(chapter);
   const session = buildStretch(chapter);
   const started = x.cards.some((c) => state.srs[srsKey(c.id)]);

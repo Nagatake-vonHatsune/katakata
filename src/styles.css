@@ -2128,3 +2128,678 @@ button.nm-rel-cell { cursor: pointer; }
 .opt-reply {
   text-align: left;
 }
+
+/* ======================================================================================================================
+   Teacher mode (Sam, 17 Nov 2026): projector and TV layout. Every size is in rem, and in teacher mode the root size follows
+   the viewport, so the same layout fits a phone held sideways (844×390), an iPad (1180×820) and 1280×720 to 1920×1080.
+   Colours are the palette tokens only, so every theme keeps the contrast it has on phones. Nothing here applies with
+   teacher mode off.
+   ==================================================================================================================== */
+:root[data-teacher] {
+  font-size: clamp(15px, min(1.45vw, 2.75vh), 34px);
+  --tap: 2.75rem;
+  --strip-h: 2.7rem;
+}
+:root[data-teacher][data-text='s'] {
+  font-size: clamp(14px, min(1.3vw, 2.5vh), 30px);
+}
+:root[data-teacher][data-text='l'] {
+  font-size: clamp(16px, min(1.6vw, 3vh), 38px);
+}
+:root[data-teacher][data-text='xl'] {
+  font-size: clamp(17px, min(1.75vw, 3.3vh), 42px);
+}
+:root[data-teacher] .app {
+  max-width: none;
+}
+:root[data-teacher] .screen {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: calc(var(--strip-h) + 0.6rem + env(safe-area-inset-top)) 1rem 2rem;
+}
+:root[data-teacher] .icon-btn {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+:root[data-teacher] .modes {
+  grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+}
+:root[data-teacher] .mode {
+  min-height: 5rem;
+}
+:root[data-teacher] .list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+}
+:root[data-teacher] .options {
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+/* The 先生モード strip, at the top of every screen except a class run (which has the badge in its own top bar). */
+.teacher-strip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: var(--strip-h);
+  padding: calc(0.3rem + env(safe-area-inset-top)) 0.8rem 0.3rem;
+  background: var(--surface);
+  border-bottom: 1.5px solid var(--line);
+}
+body[data-class-run] .teacher-strip {
+  display: none;
+}
+.strip-gap {
+  flex: 1;
+}
+.teacher-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.1rem;
+  padding: 0.15rem 0.9rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--brand);
+  color: var(--brand-ink);
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.teacher-badge:focus-visible {
+  outline: 3px solid var(--neutral);
+  outline-offset: 2px;
+}
+.badge-x {
+  opacity: 0.85;
+}
+
+/* A gentle hint on a phone held upright (not a blocking overlay). */
+.rotate-hint {
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0.2rem 0.6rem;
+  border-radius: 8px;
+  background: var(--neutral-soft);
+  color: var(--text);
+  font-size: 0.85rem;
+}
+@media (orientation: portrait) and (max-width: 600px) {
+  :root[data-teacher] .rotate-hint {
+    display: block;
+  }
+  :root[data-teacher] {
+    --strip-h: 4.6rem;
+  }
+}
+
+/* ---- the class launcher (Home) ---- */
+.launcher {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: calc(100vh - var(--strip-h) - 1.4rem - env(safe-area-inset-top));
+  height: calc(100dvh - var(--strip-h) - 1.4rem - env(safe-area-inset-top));
+  min-height: 17rem;
+}
+.launch-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1rem;
+}
+.launch-head h2 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+.launch-tabs .seg-btn {
+  min-height: 2.1rem;
+}
+.launch-body {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 0.8rem;
+}
+.launch-items {
+  min-height: 0;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7.4rem, 1fr));
+  grid-auto-rows: min-content;
+  gap: 0.35rem;
+  align-content: start;
+  padding: 0.1rem;
+}
+.launch-item {
+  min-height: 2.3rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.launch-item.on {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--brand-ink);
+}
+.launch-item:focus-visible,
+.launch-act:focus-visible {
+  outline: 3px solid var(--neutral);
+  outline-offset: 2px;
+}
+.ln-num {
+  display: inline-block;
+  min-width: 1.4em;
+}
+.launch-acts {
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+}
+.launch-src {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.launch-act-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  gap: 0.35rem;
+}
+.launch-act {
+  min-height: 2.2rem;
+  border-radius: 10px;
+}
+.launch-n {
+  opacity: 0.8;
+  font-size: 0.85em;
+}
+.launch-timer {
+  font-size: 0.9rem;
+}
+.launch-start {
+  margin-top: auto;
+  min-height: 2.7rem;
+  font-size: 1.05rem;
+}
+@media (orientation: portrait) and (max-width: 600px) {
+  .launcher {
+    height: auto;
+  }
+  .launch-body {
+    grid-template-columns: 1fr;
+  }
+  .launch-items {
+    max-height: 40vh;
+  }
+}
+.teacher-menu .row > .btn,
+.teacher-menu .row > .link-btn {
+  flex: 1 1 12rem;
+}
+.ordinary-head {
+  margin-top: 0.6rem;
+}
+.keys-box h3 {
+  margin-top: 0;
+}
+
+/* ---- the class run ---- */
+.class-run {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  background: var(--bg);
+  color: var(--text);
+}
+.class-top {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: calc(0.3rem + env(safe-area-inset-top)) max(0.8rem, env(safe-area-inset-right)) 0.3rem max(0.8rem, env(safe-area-inset-left));
+  border-bottom: 1.5px solid var(--line);
+  background: var(--surface);
+}
+.cl-title {
+  flex: 1;
+  min-width: 0;
+  font-size: 1.05rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cl-pos,
+.cl-timer {
+  font-weight: 700;
+  white-space: nowrap;
+}
+.cl-trans {
+  min-height: 2.2rem;
+  padding: 0.1rem 0.7rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.cl-trans.on {
+  background: var(--brand-soft);
+  border-color: var(--brand);
+}
+.class-run kbd {
+  display: inline-block;
+  margin-left: 0.45em;
+  padding: 0 0.35em;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.72em;
+  line-height: 1.3;
+  opacity: 0.8;
+}
+.cl-stage {
+  position: relative;
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem max(1.2rem, env(safe-area-inset-right)) 0.7rem max(1.2rem, env(safe-area-inset-left));
+}
+.class-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  padding: 0.4rem max(0.8rem, env(safe-area-inset-right)) calc(0.4rem + env(safe-area-inset-bottom)) max(0.8rem, env(safe-area-inset-left));
+  border-top: 1.5px solid var(--line);
+  background: var(--surface);
+}
+.class-controls .btn {
+  min-height: 2.6rem;
+  padding: 0.2rem 1rem;
+  font-size: 1.05rem;
+  white-space: nowrap;
+}
+.class-controls .cl-back {
+  margin-right: auto;
+}
+.class-controls .cl-next {
+  min-width: 9rem;
+}
+.cl-reveal.done {
+  opacity: 0.5;
+}
+.class-run .rotate-hint {
+  position: absolute;
+  top: 0.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  z-index: 2;
+}
+
+.cl-two {
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.5rem 2.5rem;
+  align-items: center;
+}
+.cl-main,
+.cl-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-width: 0;
+}
+.cl-term {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+.cl-term-btn {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--text);
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.cl-gloss {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.cl-gloss-sub {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+.cl-hidden {
+  padding: 0.5rem 1rem;
+  border: 2px dashed var(--line);
+  border-radius: var(--radius);
+  color: var(--muted);
+  font-size: 1.6rem;
+  text-align: center;
+}
+.cl-note {
+  margin: 0;
+  padding: 0.45rem 0.8rem;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+.cl-audio {
+  display: inline-flex;
+  gap: 0.3rem;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+}
+.cl-audio .btn {
+  min-height: 2.2rem;
+  padding: 0.05rem 0.65rem;
+  font-size: 1rem;
+}
+.cl-main > .cl-audio {
+  margin-left: 0;
+}
+.cl-instr {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+.cl-x {
+  color: var(--stretch);
+}
+.cl-hint {
+  color: var(--muted);
+}
+
+/* options with their number key */
+.cl-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+.cl-opt {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 3rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.35rem;
+  text-align: left;
+}
+.cl-opt-body {
+  min-width: 0;
+}
+.cl-opt-en {
+  display: block;
+  font-size: 0.75em;
+  color: var(--muted);
+}
+.cl-num {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 1.75em;
+  height: 1.75em;
+  border-radius: 50%;
+  background: var(--brand);
+  color: var(--brand-ink);
+  font-size: 0.8em;
+  font-weight: 700;
+  line-height: 1;
+}
+.cl-chosen {
+  border-color: var(--neutral);
+  border-width: 3px;
+  background: var(--neutral-soft);
+}
+
+/* frames */
+.cl-frame {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.7rem;
+}
+.cl-meaning {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.class-run .tile {
+  min-height: 2.6rem;
+  padding: 0.2rem 0.8rem;
+  font-size: 1.45rem;
+}
+.class-run .tiles {
+  min-height: 3.4rem;
+  gap: 0.45rem;
+}
+.cl-tile .cl-num {
+  margin-right: 0.45rem;
+  font-size: 0.6em;
+}
+.cl-answer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.cl-sentence {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.cl-pattern {
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+/* dialogue as a class scene */
+.cl-dialogue {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem 2rem;
+}
+.cl-reply {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+}
+.cl-convo {
+  min-height: 0;
+  max-height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.cl-count {
+  color: var(--muted);
+}
+.cl-bubble {
+  padding: 0.35rem 0.8rem;
+  border: 1.5px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  font-size: 1rem;
+}
+.cl-bubble.current {
+  border: 2.5px solid var(--brand);
+  font-size: 1.4rem;
+}
+.cl-who {
+  font-weight: 700;
+  color: var(--accent);
+}
+.cl-en {
+  margin-top: 0.1rem;
+  color: var(--muted);
+  font-size: 0.85em;
+}
+.cl-bubble .cl-note {
+  margin-top: 0.3rem;
+  font-size: 0.9em;
+}
+.cl-replies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 0;
+}
+
+/* Cari Benda */
+.cl-board {
+  aspect-ratio: auto;
+  width: 100%;
+  height: 100%;
+  min-height: 12rem;
+}
+.cl-board .cari-obj {
+  width: 4.4rem;
+  height: 4.4rem;
+}
+.cl-board .cari-emoji {
+  font-size: 2.6rem;
+}
+.cl-obj-num {
+  position: absolute;
+  top: -0.3rem;
+  left: -0.3rem;
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--brand);
+  color: var(--brand-ink);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.cl-cari {
+  align-items: stretch;
+}
+.cl-cari .cl-main {
+  justify-content: center;
+}
+
+/* Laju!, Nombor & Masa, the end */
+.cl-score {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.cl-nm-stage {
+  display: flex;
+  justify-content: center;
+}
+.cl-explore {
+  max-width: 44rem;
+  margin: 0 auto;
+  width: 100%;
+}
+.cl-done {
+  flex: 1;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.cl-timeup {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: var(--bg);
+  font-size: 2rem;
+}
+
+/* A phone held upright in teacher mode: one column, smaller type. */
+@media (orientation: portrait) and (max-width: 600px) {
+  .cl-two,
+  .cl-reply {
+    grid-template-columns: 1fr;
+  }
+  .cl-term {
+    font-size: 2.6rem;
+  }
+  .cl-title {
+    display: none;
+  }
+}
+/* A short screen (a phone held sideways): tighter, so a frame or a reply step fits without scrolling. */
+@media (max-height: 480px) {
+  .cl-term {
+    font-size: 2.6rem;
+  }
+  .cl-gloss {
+    font-size: 1.5rem;
+  }
+  .cl-sentence {
+    font-size: 1.7rem;
+  }
+  .cl-meaning {
+    font-size: 1.25rem;
+  }
+  .class-run .tile {
+    font-size: 1.15rem;
+    min-height: 2.2rem;
+  }
+  .cl-opt {
+    min-height: 2.4rem;
+    font-size: 1.1rem;
+    padding: 0.2rem 0.6rem;
+  }
+  .cl-bubble.current {
+    font-size: 1.15rem;
+  }
+  .cl-stage {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+  .class-controls .btn {
+    min-height: 2.3rem;
+  }
+}
+.cl-nm-stage svg.nm-clock {
+  width: auto;
+  height: min(13rem, 42vh);
+}
+@media (max-height: 480px) {
+  .cl-nm-stage .nm-sky-wrap,
+  .cl-nm-stage svg.nm-sky {
+    display: none;
+  }
+}

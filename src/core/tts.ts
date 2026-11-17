@@ -4,6 +4,7 @@
 import { audioClips } from 'virtual:katakata-content';
 
 let voices: SpeechSynthesisVoice[] = [];
+let voicesLoaded = false;
 let ready: Promise<void> | null = null;
 const clips = new Set(audioClips);
 
@@ -22,6 +23,8 @@ function loadVoices(): Promise<void> {
       voices = speechSynthesis.getVoices();
       resolve();
     }, 1500);
+  }).then(() => {
+    voicesLoaded = true;
   }));
 }
 
@@ -65,7 +68,9 @@ export async function speak(text: string, opts: { slow?: boolean; cardId?: strin
     return;
   }
   if (typeof speechSynthesis === 'undefined') return;
-  await loadVoices();
+  // Once the voices are loaded, speak inside the same tap or key press: iOS only lets speech start from a user gesture,
+  // so no await before speechSynthesis.speak() (teacher mode plays on a projector through the device, Sam 17 Nov 2026).
+  if (!voicesLoaded) await loadVoices();
   const { voice } = pick();
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(sayAs(text).replace(/\s*\/\s*/g, ', ').replace(/[()]/g, ''));
@@ -73,6 +78,11 @@ export async function speak(text: string, opts: { slow?: boolean; cardId?: strin
   if (voice) u.voice = voice;
   u.rate = opts.slow ? Math.max(0.4, rate * 0.6) : rate;
   speechSynthesis.speak(u);
+}
+
+/** Load the voices early (teacher mode turns on), so the first Play in class speaks at once. */
+export function warmVoices(): void {
+  void loadVoices();
 }
 
 export function stopSpeech(): void {

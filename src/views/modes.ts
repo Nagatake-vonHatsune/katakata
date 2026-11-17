@@ -1,7 +1,7 @@
 // Sedia Kelas, Main (mini-games) and Jaring Kata screens.
 import { content, gloss, srsKey } from '../core/content';
 import { getLang, t } from '../core/i18n';
-import { checkpoints, chapterProgress, dialogueKey, dialogueReplyIds, dialogueScore, isReady, sceneProgress, stretchOpen, stretchPack, stretchSoon } from '../core/progress';
+import { checkpoints, chapterProgress, dialogueKey, dialogueReplyIds, dialogueScore, isReady, sceneProgress, stretchPack, stretchSoon, stretchUnlocked } from '../core/progress';
 import { buildCari, buildDialogue, buildKad, buildSedia, buildSusun, cariCards, type Session } from '../core/session';
 import { isKnown } from '../core/srs';
 import { state } from '../core/state';
@@ -71,7 +71,7 @@ export function renderSediaChapter(root: HTMLElement, chapter: number, nav: Mode
       h('p', { class: 'small cp-status' }, flamesLine(chapter), ' · ', t('sedia.progress', { a: p.coreKnown, b: p.coreTotal })),
       button(`${p.coreKnown ? t('sedia.continue') : t('sedia.start')} · ${sessionMeta(session.steps)}`, () => nav.run(session), 'btn btn-primary btn-wide'),
       stretchPack(chapter)
-        ? stretchOpen(chapter)
+        ? stretchUnlocked(chapter)
           ? h('div', { class: 'stretch-entry' }, stretchChip(chapter, nav), h('span', { class: 'small' }, t('stretch.tip')))
           : h('p', { class: 'muted small' }, t('stretch.locked'))
         : stretchSoon(chapter)

@@ -128,9 +128,45 @@ export function replaceState(next: AppState): Promise<void> {
   return saveNow();
 }
 
-/** Mutate state, then save shortly after (batches rapid changes). */
+// ---- Class runs (teacher mode): a separate, in-memory copy of the learner ----
+// A class run (the teacher-mode launcher) swaps `state` for a deep copy and never saves it, so nothing it does (a schedule, a
+// stamp, points, a mistake, a katakana hint seen) reaches the learner. Ending the run puts the learner's own object back,
+// untouched; only the display settings changed during the run (language, theme) are kept, since they are not learner data.
+let realState: AppState | null = null;
+
+export function inClassRun(): boolean {
+  return realState !== null;
+}
+
+/**
+ * Start a class run: save the learner first (so no pending write is lost; saveNow copies the state before its first await),
+ * then play on a copy that is never saved. Synchronous, so the run's first key press already plays on the copy.
+ */
+export function beginClassRun(): void {
+  if (realState) return;
+  void saveNow();
+  realState = state;
+  state = JSON.parse(JSON.stringify(state)) as AppState;
+}
+
+/** End a class run: the learner's own state comes back exactly as it was (plus any display-settings change). */
+export function endClassRun(): void {
+  if (!realState) return;
+  const settings = state.settings;
+  state = realState;
+  realState = null;
+  state.settings = { ...state.settings, ...settings };
+  void saveNow();
+  listeners.forEach((l) => l());
+}
+
+/** Mutate state, then save shortly after (batches rapid changes). In a class run nothing is saved. */
 export function update(fn: (s: AppState) => void): void {
   fn(state);
+  if (realState) {
+    listeners.forEach((l) => l());
+    return;
+  }
   if (saveTimer) clearTimeout(saveTimer);
   saveTimer = setTimeout(() => void saveNow(), 250);
   listeners.forEach((l) => l());
@@ -139,6 +175,7 @@ export function update(fn: (s: AppState) => void): void {
 export async function saveNow(): Promise<void> {
   if (saveTimer) clearTimeout(saveTimer);
   saveTimer = null;
+  if (realState) return;
   try {
     await db.set(KEY, JSON.parse(JSON.stringify(state)));
   } catch (e) {

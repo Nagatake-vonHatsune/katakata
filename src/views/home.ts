@@ -10,8 +10,10 @@ import { langButton } from './langswitch';
 import { iosSteps } from './onboarding';
 import { sessionMeta } from './session';
 import { checkpointBar, flamesLine } from './stretch';
+import { teacher } from '../core/teacher';
+import { launcher, teacherMenu, type TeacherNav } from './teacher';
 
-export interface Nav {
+export interface Nav extends TeacherNav {
   go(route: string): void;
   startToday(): void;
 }
@@ -52,7 +54,11 @@ export function renderHome(root: HTMLElement, nav: Nav): void {
     root,
     h(
       'div',
-      { class: 'screen home' },
+      { class: 'screen home' + (teacher.on ? ' home-teacher' : '') },
+      // Teacher mode (Sam, 17 Nov 2026): the class launcher comes first, then the teacher menu, then ordinary practice.
+      teacher.on ? launcher(nav) : null,
+      teacher.on ? teacherMenu(nav) : null,
+      teacher.on ? h('h2', { class: 'ordinary-head' }, t('teach.ordinary')) : null,
       h(
         'header',
         { class: 'home-head' },

@@ -2,6 +2,7 @@ import { content, srsKey } from './content';
 import { dayKey, daysBetween, uid, weekKeys } from './dates';
 import { isKnown, weakness } from './srs';
 import { state, update } from './state';
+import { isTeacherMode } from './teacher';
 import type { AppState, Stamp } from './types';
 
 export function knownCount(s: AppState = state): number {
@@ -132,6 +133,15 @@ export function stretchPack(chapter: number) {
 export function stretchOpen(chapter: number, s: AppState = state): boolean {
   const cps = checkpoints(chapter, s);
   return !!stretchPack(chapter) && cps.length > 0 && cps.every((c) => c.lit);
+}
+
+/**
+ * Can the ⚡ screen be played: open for the learner (every 🔥 lit), or teacher mode is on (Sam, 17 Nov 2026: in teacher mode
+ * everything is open, whatever the device's learner has unlocked). Only the screens use this; reports and the one-time
+ * "⚡ is open" notice use stretchOpen, which is the learner's own progress.
+ */
+export function stretchUnlocked(chapter: number, s: AppState = state, teacherOn = isTeacherMode()): boolean {
+  return !!stretchPack(chapter) && (teacherOn || stretchOpen(chapter, s));
 }
 
 /**

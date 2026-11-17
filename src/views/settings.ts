@@ -9,6 +9,8 @@ import { langPicker } from './langswitch';
 import { voiceCheck } from './onboarding';
 import { applyTheme } from './rekod';
 import { topBar } from './widgets';
+import { teacher } from '../core/teacher';
+import { setTeacherMode } from './teacher';
 
 declare const __APP_VERSION__: string;
 
@@ -124,6 +126,17 @@ export function renderSettings(root: HTMLElement, go: (r: string) => void): void
           toggle(t('rekod.backup_rem'), state.settings.backupReminder, (v) => update((s) => (s.settings.backupReminder = v))),
           toggle(t('settings.points'), state.settings.showPoints, (v) => update((s) => (s.settings.showPoints = v))),
           h('p', { class: 'muted small' }, t('settings.points_note')),
+        ),
+        h(
+          'section',
+          { class: 'card-box settings teacher-setting' },
+          h('h2', null, '🎓 ', t('teach.mode')),
+          (() => {
+            const cb = h('input', { type: 'checkbox', checked: teacher.on, role: 'switch', id: 'teacher-switch' }) as HTMLInputElement;
+            cb.addEventListener('change', () => void setTeacherMode(cb.checked).then(draw));
+            return h('label', { class: 'setting' }, h('span', null, t('teach.mode')), cb);
+          })(),
+          h('p', { class: 'muted small' }, t('teach.setting_body')),
         ),
         h(
           'section',

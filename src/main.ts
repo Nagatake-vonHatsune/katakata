@@ -16,6 +16,10 @@ import { renderLaju } from './views/laju';
 import { renderNombor } from './views/nombor';
 import { renderStretch } from './views/stretch';
 import { LANG_EVENT } from './views/langswitch';
+import { loadTeacher } from './core/teacher';
+import { applyTeacher, ordinaryKeys, renderStrip, setTeacherMode } from './views/teacher';
+import { runClass } from './views/classroom';
+import type { ClassActivity, ClassSource } from './core/classroom';
 
 const root = document.getElementById('app')!;
 let inSession = false;
@@ -35,7 +39,26 @@ function run(session: Session): void {
   });
 }
 
-const nav = { go, run, startToday: () => run(buildToday()) };
+/** A class run from the teacher-mode launcher: like a session, the hash router waits until it ends. */
+function runClassRun(src: ClassSource, activity: ClassActivity): void {
+  inSession = true;
+  void runClass(root, src, activity, {
+    exit: () => {
+      inSession = false;
+      go('');
+      render();
+    },
+    turnOff: () => {
+      inSession = false;
+      void setTeacherMode(false).then(() => {
+        go('');
+        render();
+      });
+    },
+  });
+}
+
+const nav = { go, run, startToday: () => run(buildToday()), runClass: runClassRun };
 
 function render(): void {
   if (inSession) return;
@@ -71,8 +94,17 @@ function render(): void {
 
 // Language changed from a 🌐 button: redraw the current screen (a running session picks it up on the next step).
 window.addEventListener(LANG_EVENT, () => {
+  renderStrip();
   if (!inSession && state.profile.onboarded) render();
 });
+
+// Teacher mode turned off from the strip's badge: redraw the screen in the phone layout.
+window.addEventListener('katakata:teacher', () => {
+  if (!inSession && state.profile.onboarded) render();
+});
+
+// Teacher mode: the keys and a presenter clicker also drive ordinary practice (class runs handle their own keys).
+document.addEventListener('keydown', ordinaryKeys);
 
 window.addEventListener('hashchange', () => {
   if (inSession) return;
@@ -81,6 +113,7 @@ window.addEventListener('hashchange', () => {
 
 async function start(): Promise<void> {
   await loadState();
+  await loadTeacher();
   // Shareable language links: /?lang=en or /?lang=ms (or ja).
   const fromUrl = new URLSearchParams(location.search).get('lang');
   if (isLang(fromUrl) && fromUrl !== state.settings.lang) {
@@ -90,6 +123,7 @@ async function start(): Promise<void> {
   setLang(state.settings.lang);
   setRate(state.settings.speechRate);
   applyTheme();
+  applyTeacher();
   if (!content.chapters.length) console.warn('No live content packs found.');
   render();
   if ('serviceWorker' in navigator && import.meta.env.PROD) {
