@@ -1,0 +1,624 @@
+{
+ "chapter": 3,
+ "place": "Ch3 (extension)",
+ "changes": [
+  {
+   "lid": "L-1325",
+   "row": 1326,
+   "word": "cuma",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-social-31",
+     "after": "ms-x03-001"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Talking and explaining",
+     "after": "Ch3 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1343",
+   "row": 1344,
+   "word": "beberapa",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-office-32",
+     "after": "ms-x03-002"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · At work",
+     "after": "Ch3 (extension)"
+    }
+   ]
+  },
+  {
+   "lid": "L-1465",
+   "row": 1466,
+   "word": "percuma",
+   "cells": [
+    {
+     "col": "J",
+     "before": "ms-j-daily-life-71",
+     "after": "ms-x03-003"
+    },
+    {
+     "col": "K",
+     "before": "Jambatan · Daily life",
+     "after": "Ch3 (extension)"
+    }
+   ]
+  }
+ ],
+ "new": [
+  {
+   "lid": "L-1514",
+   "row": 1515,
+   "values": [
+    "L-1514",
+    "bajet",
+    "budget",
+    "予算",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x03-004",
+    "Ch3 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "budget",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: money and prices (Ch3): \"bajet RM…\"; loan, Malaysian spelling. Hanashishou: 2 scenes; e.g. «Bajet saya RM50.» (phone_plan).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1515",
+   "row": 1516,
+   "values": [
+    "L-1515",
+    "kedua-dua",
+    "both",
+    "両方の",
+    "det",
+    "lex",
+    "dua",
+    "Not yet checked",
+    "",
+    "ms-x03-005",
+    "Ch3 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "both",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: numbers (Ch3): ke- with a number; standard partner of «dua-dua» (Jambatan). Hanashishou: 2 scenes; e.g. «Lebih kurang 4 kilo, jadi kalau saya pindahkan 3 kilo buku, kedua-dua beg tepat pada had.» (airport_checkin).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1516",
+   "row": 1517,
+   "values": [
+    "L-1516",
+    "nilai",
+    "value; to evaluate",
+    "価値；評価する",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x03-006",
+    "Ch3 (extension)",
+    "tutorial · band 1",
+    "Yes",
+    "value; to evaluate",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: money (Ch3): «nilainya RM…»; scene forms «nilai», «nilainya». Hanashishou: 2 scenes; e.g. «Bagus.» (how_to_play).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1517",
+   "row": 1518,
+   "values": [
+    "L-1517",
+    "tawaran",
+    "offer",
+    "オファー、特売",
+    "noun",
+    "-an",
+    "tawar",
+    "Not yet checked",
+    "",
+    "ms-x03-007",
+    "Ch3 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "offer",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: prices and offers (Ch3); tawar Ch3. Hanashishou: 2 scenes; e.g. «Anda tunjuk anda suka, beri tawaran yang adil, dan beri sebab.» (price_haggle). not spoken by a character or offered as a choice (pattern).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1518",
+   "row": 1519,
+   "values": [
+    "L-1518",
+    "udara",
+    "air",
+    "空気；«pos udara» 航空便",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x03-008",
+    "Ch3 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "air",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: the post office (Ch3): «pos udara». Hanashishou: 2 scenes; e.g. «Pos udara, ya.» (post_parcel).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1519",
+   "row": 1520,
+   "values": [
+    "L-1519",
+    "bilangan",
+    "number, count",
+    "数、人数",
+    "noun",
+    "-an",
+    "bilang",
+    "Not yet checked",
+    "",
+    "ms-x03-009",
+    "Ch3 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "number, count",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: numbers (Ch3): «bilangan orang». Hanashishou: 1 scene; e.g. «Maaf, saya masih perlu bilangan orang dan masa tamat.» (bbq_booking). root «bilang» not in ledger: taught as a whole word.",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1520",
+   "row": 1521,
+   "values": [
+    "L-1520",
+    "debit",
+    "debit",
+    "デビット（カード）",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x03-010",
+    "Ch3 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "debit",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: money (Ch3): «kad debit»; loan. Hanashishou: 1 scene; e.g. «Helo, kad debit saya tak boleh guna.» (card_blocked).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1521",
+   "row": 1522,
+   "values": [
+    "L-1521",
+    "digit",
+    "digit",
+    "桁、数字",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x03-011",
+    "Ch3 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "digit",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: numbers (Ch3): «empat digit»; loan. Hanashishou: 1 scene; e.g. «Untuk keselamatan, boleh berikan empat digit terakhir kad anda?» (card_blocked).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1522",
+   "row": 1523,
+   "values": [
+    "L-1522",
+    "hutang",
+    "debt; owe",
+    "借金",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x03-012",
+    "Ch3 (extension)",
+    "social · band 1",
+    "Yes",
+    "debt; owe",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: money (Ch3). Hanashishou: 1 scene; e.g. «Awak hutang saya.» (borrowed_money).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1523",
+   "row": 1524,
+   "values": [
+    "L-1523",
+    "juruwang",
+    "cashier",
+    "レジ係",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x03-013",
+    "Ch3 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "cashier",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: money and paying (Ch3). Hanashishou: 1 scene; e.g. «Gaduh dengan juruwang.» (card_blocked).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1524",
+   "row": 1525,
+   "values": [
+    "L-1524",
+    "kadar",
+    "rate",
+    "率、料金",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x03-014",
+    "Ch3 (extension)",
+    "office · band 1",
+    "Yes",
+    "rate",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: money (Ch3): rates and fees. Hanashishou: 1 scene; e.g. «Kadar maklum balas berapa?» (standup_update).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1525",
+   "row": 1526,
+   "values": [
+    "L-1525",
+    "kilogram",
+    "kilogram",
+    "キログラム",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x03-015",
+    "Ch3 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "kilogram",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: weights at the market (Ch3). Hanashishou: 1 scene; e.g. «Syarikat penerbangan tambang murah anda benarkan 20 kilogram bagasi daftar masuk.» (airport_checkin). not spoken by a character or offered as a choice (narration).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1526",
+   "row": 1527,
+   "values": [
+    "L-1526",
+    "kod",
+    "code",
+    "コード、番号",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x03-016",
+    "Ch3 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "code",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: numbers (Ch3): «kod TAC» (Jambatan row), PIN codes. Hanashishou: 1 scene; e.g. «Beri kod itu saja.» (card_blocked).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1527",
+   "row": 1528,
+   "values": [
+    "L-1527",
+    "kos",
+    "cost",
+    "費用",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x03-017",
+    "Ch3 (extension)",
+    "home-condo · band 2",
+    "Yes",
+    "cost",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: money (Ch3). Hanashishou: 1 scene; e.g. «Cuma saya nak tahu kos setiap bahagian sebelum buat keputusan.» (aircon_repair).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1528",
+   "row": 1529,
+   "values": [
+    "L-1528",
+    "pakej",
+    "package",
+    "パッケージ、プラン",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x03-018",
+    "Ch3 (extension)",
+    "health · band 1",
+    "Yes",
+    "package",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: prices (Ch3): a package or phone plan. Hanashishou: 1 scene; e.g. «Err, untuk pakej yang mana?» (gym_membership).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1529",
+   "row": 1530,
+   "values": [
+    "L-1529",
+    "pegawai",
+    "officer, official",
+    "係員、職員",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x03-019",
+    "Ch3 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "officer, official",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: the bank and post office (Ch3): «pegawai bank». Hanashishou: 1 scene; e.g. «berapa lama pegawai suruh tunggu?» (card_blocked).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1530",
+   "row": 1531,
+   "values": [
+    "L-1530",
+    "penimbang",
+    "weighing scale",
+    "はかり",
+    "noun",
+    "pe(N)-",
+    "timbang",
+    "Not yet checked",
+    "",
+    "ms-x03-020",
+    "Ch3 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "weighing scale",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: the market (Ch3); timbang Ch3. Hanashishou: 1 scene; e.g. «Letak atas penimbang, ya.» (airport_checkin).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1531",
+   "row": 1532,
+   "values": [
+    "L-1531",
+    "pos",
+    "post, mail",
+    "郵便",
+    "noun",
+    "root",
+    "",
+    "Not yet checked",
+    "",
+    "ms-x03-021",
+    "Ch3 (extension)",
+    "daily-life · band 1",
+    "Yes",
+    "post, mail",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: the post office (Ch3): «pos laju», «pos udara». Hanashishou: 1 scene; e.g. «Pos udara, ya.» (post_parcel).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  },
+  {
+   "lid": "L-1532",
+   "row": 1533,
+   "values": [
+    "L-1532",
+    "satu-satu",
+    "one by one",
+    "一つずつ",
+    "adv",
+    "lex",
+    "satu",
+    "Not yet checked",
+    "",
+    "ms-x03-022",
+    "Ch3 (extension)",
+    "home-condo · band 1",
+    "Yes",
+    "one by one",
+    "Kata-Kata placement batch 2 (Sam approved 15 Nov)",
+    "Draft",
+    "KD4 check",
+    "Placement batch 2: numbers (Ch3). Hanashishou: 1 scene; e.g. «Satu-satu huruf.» (visitor_parking).",
+    "2026-11-17",
+    "Claude (Sam approved)"
+   ]
+  }
+ ],
+ "cards": {
+  "ms-x03-001": {
+   "lid": "L-1325",
+   "moved_from": "ms-j-social-31"
+  },
+  "ms-x03-002": {
+   "lid": "L-1343",
+   "moved_from": "ms-j-office-32"
+  },
+  "ms-x03-003": {
+   "lid": "L-1465",
+   "moved_from": "ms-j-daily-life-71"
+  },
+  "ms-x03-004": {
+   "lid": "L-1514"
+  },
+  "ms-x03-005": {
+   "lid": "L-1515"
+  },
+  "ms-x03-006": {
+   "lid": "L-1516"
+  },
+  "ms-x03-007": {
+   "lid": "L-1517"
+  },
+  "ms-x03-008": {
+   "lid": "L-1518"
+  },
+  "ms-x03-009": {
+   "lid": "L-1519"
+  },
+  "ms-x03-010": {
+   "lid": "L-1520"
+  },
+  "ms-x03-011": {
+   "lid": "L-1521"
+  },
+  "ms-x03-012": {
+   "lid": "L-1522"
+  },
+  "ms-x03-013": {
+   "lid": "L-1523"
+  },
+  "ms-x03-014": {
+   "lid": "L-1524"
+  },
+  "ms-x03-015": {
+   "lid": "L-1525"
+  },
+  "ms-x03-016": {
+   "lid": "L-1526"
+  },
+  "ms-x03-017": {
+   "lid": "L-1527"
+  },
+  "ms-x03-018": {
+   "lid": "L-1528"
+  },
+  "ms-x03-019": {
+   "lid": "L-1529"
+  },
+  "ms-x03-020": {
+   "lid": "L-1530"
+  },
+  "ms-x03-021": {
+   "lid": "L-1531"
+  },
+  "ms-x03-022": {
+   "lid": "L-1532"
+  }
+ }
+}

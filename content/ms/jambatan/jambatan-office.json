@@ -132,24 +132,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-office-32",
-      "lang": "ms",
-      "term": "beberapa",
-      "gloss_en": "several, a few, some",
-      "gloss_ja": "いくつかの",
-      "pos": "det",
-      "affix_tag": "lex",
-      "note": "Hanashishou: Saya cuba, tapi saya perlu beberapa maklumat dulu. In 11 Hanashishou scenes: Can you cover for me?, First visit at the clinic, Someone's in my room, The drinks run and 7 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-office"
-        }
-      ],
-      "scene": "dunia-jambatan-office",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-office-33",
       "lang": "ms",
       "term": "pelanggan",

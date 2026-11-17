@@ -744,24 +744,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-daily-life-71",
-      "lang": "ms",
-      "term": "percuma",
-      "gloss_en": "free of charge",
-      "gloss_ja": "無料の",
-      "pos": "adj",
-      "affix_tag": "root",
-      "note": "Hanashishou: Wah, fon telinga percuma! In 3 Hanashishou scenes: Karaoke night, The phone plan, The wrong order.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-daily-life"
-        }
-      ],
-      "scene": "dunia-jambatan-daily-life",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-daily-life-72",
       "lang": "ms",
       "term": "pindahkan",

@@ -20,6 +20,9 @@ export const MOVED_CARDS: Record<string, string> = {
   // Build B1 (17 Nov 2026): promoted to the ⚡ stages of chapters 1 to 3 and 5 to 9.
   'ms-j-daily-life-41': 'ms-x02-001', // mana (L-1330)
   'ms-j-office-42': 'ms-x02-002', // kenal (L-1392)
+  'ms-j-social-31': 'ms-x03-001', // cuma (L-1325)
+  'ms-j-office-32': 'ms-x03-002', // beberapa (L-1343)
+  'ms-j-daily-life-71': 'ms-x03-003', // percuma (L-1465)
 };
 
 export function moveCards(srs: Record<string, SrsState>, moved: Record<string, string> = MOVED_CARDS): Record<string, SrsState> {

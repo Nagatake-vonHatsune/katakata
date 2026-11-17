@@ -1,0 +1,626 @@
+{
+  "schema": "katakata.pack/1",
+  "lang": "ms",
+  "kind": "stretch",
+  "id": "x03",
+  "chapter": 3,
+  "status": "live",
+  "ja_review": "pending",
+  "title": {
+    "ms": "Nombor, Wang dan Ukuran",
+    "en": "Numbers, money and measurements",
+    "ja": "数・お金・単位"
+  },
+  "cards": [
+    {
+      "id": "ms-x03-001",
+      "lang": "ms",
+      "term": "cuma",
+      "gloss_en": "only, just; but",
+      "gloss_ja": "ただ、〜だけ、ただし",
+      "pos": "adv",
+      "affix_tag": "root",
+      "note": "Only, just; like «sahaja» (Ch3). «cuma lima ringgit» = only five ringgit.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "ただ〜だけ。«sahaja»（第3課）と同じ。«cuma lima ringgit»＝たった5リンギット。"
+    },
+    {
+      "id": "ms-x03-002",
+      "lang": "ms",
+      "term": "beberapa",
+      "gloss_en": "several, a few, some",
+      "gloss_ja": "いくつかの",
+      "pos": "det",
+      "affix_tag": "lex",
+      "note": "Several, a few: «beberapa kali» = a few times. Compare «berapa» (Ch3) = how many.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "いくつかの：«beberapa kali»＝何回か。«berapa»（第3課）＝いくつ、と比べよう。"
+    },
+    {
+      "id": "ms-x03-003",
+      "lang": "ms",
+      "term": "percuma",
+      "gloss_en": "free of charge",
+      "gloss_ja": "無料の",
+      "pos": "adj",
+      "affix_tag": "root",
+      "note": "Free of charge. «Beli satu, percuma satu.» = Buy one, get one free.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "無料。«Beli satu, percuma satu.»＝1つ買うと1つ無料。"
+    },
+    {
+      "id": "ms-x03-004",
+      "lang": "ms",
+      "term": "bajet",
+      "gloss_en": "budget",
+      "gloss_ja": "予算",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Budget (from English).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "予算（英語から）。"
+    },
+    {
+      "id": "ms-x03-005",
+      "lang": "ms",
+      "term": "kedua-dua",
+      "gloss_en": "both",
+      "gloss_ja": "両方の",
+      "pos": "det",
+      "affix_tag": "lex",
+      "note": "Both: «kedua-dua bungkusan» = both parcels. Compare «kedua» (Ch3) = second.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "両方の：«kedua-dua bungkusan»＝両方の小包。«kedua»（第3課）＝2番目、と比べよう。"
+    },
+    {
+      "id": "ms-x03-006",
+      "lang": "ms",
+      "term": "nilai",
+      "gloss_en": "value; to evaluate",
+      "gloss_ja": "価値；評価する",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Value: «nilai wang» = the value of money.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "価値：«nilai wang»＝お金の価値。"
+    },
+    {
+      "id": "ms-x03-007",
+      "lang": "ms",
+      "term": "tawaran",
+      "gloss_en": "offer",
+      "gloss_ja": "オファー、特売",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "tawar (Ch3) + -an: an offer, a deal. «Ada tawaran.» = There's a deal.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "tawar（第3課）+ -an：オファー、お得なプラン。«Ada tawaran.»＝お得なプランがあります。"
+    },
+    {
+      "id": "ms-x03-008",
+      "lang": "ms",
+      "term": "udara",
+      "gloss_en": "air",
+      "gloss_ja": "空気；«pos udara» 航空便",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Air. «pos udara» = airmail.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "空気、空。«pos udara»＝航空便。"
+    },
+    {
+      "id": "ms-x03-009",
+      "lang": "ms",
+      "term": "bilangan",
+      "gloss_en": "number, count",
+      "gloss_ja": "数、人数",
+      "pos": "noun",
+      "affix_tag": "-an",
+      "note": "Number, count; taught as a whole word. «bilangan pelajar» = the number of students.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "数（ひとまとまりの単語として）。«bilangan pelajar»＝学生の数。"
+    },
+    {
+      "id": "ms-x03-010",
+      "lang": "ms",
+      "term": "debit",
+      "gloss_en": "debit",
+      "gloss_ja": "デビット（カード）",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "«kad debit» = debit card.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "«kad debit»＝デビットカード。"
+    },
+    {
+      "id": "ms-x03-011",
+      "lang": "ms",
+      "term": "digit",
+      "gloss_en": "digit",
+      "gloss_ja": "桁、数字",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "«tujuh digit» = seven digits.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "«tujuh digit»＝7桁。"
+    },
+    {
+      "id": "ms-x03-012",
+      "lang": "ms",
+      "term": "hutang",
+      "gloss_en": "debt; owe",
+      "gloss_ja": "借金",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Debt; to owe. «Saya ada hutang dengan dia.» = I owe him money.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "借金、借りがある。«Saya ada hutang dengan dia.»＝その人に借りがあります。"
+    },
+    {
+      "id": "ms-x03-013",
+      "lang": "ms",
+      "term": "juruwang",
+      "gloss_en": "cashier",
+      "gloss_ja": "レジ係",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Cashier, at a shop, bank or post office counter.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "レジ係、窓口係（店、銀行、郵便局）。"
+    },
+    {
+      "id": "ms-x03-014",
+      "lang": "ms",
+      "term": "kadar",
+      "gloss_en": "rate",
+      "gloss_ja": "率、料金",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Rate: «kadar diskaun» = the discount rate.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "率：«kadar diskaun»＝割引率。"
+    },
+    {
+      "id": "ms-x03-015",
+      "lang": "ms",
+      "term": "kilogram",
+      "gloss_en": "kilogram",
+      "gloss_ja": "キログラム",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "The full word; «kilo» (Ch3) is the short form.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "正式な形。«kilo»（第3課）は短い形。"
+    },
+    {
+      "id": "ms-x03-016",
+      "lang": "ms",
+      "term": "kod",
+      "gloss_en": "code",
+      "gloss_ja": "コード、番号",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Code: «kod PIN», «kod QR».",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "コード：«kod PIN»（暗証番号）、«kod QR»。"
+    },
+    {
+      "id": "ms-x03-017",
+      "lang": "ms",
+      "term": "kos",
+      "gloss_en": "cost",
+      "gloss_ja": "費用",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Cost: «kos pos» = postage. «Kosnya …» = It costs …",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "費用：«kos pos»＝送料。«Kosnya …»＝費用は…。"
+    },
+    {
+      "id": "ms-x03-018",
+      "lang": "ms",
+      "term": "pakej",
+      "gloss_en": "package",
+      "gloss_ja": "パッケージ、プラン",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Package, deal (from English).",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "パッケージ、セットプラン（英語から）。"
+    },
+    {
+      "id": "ms-x03-019",
+      "lang": "ms",
+      "term": "pegawai",
+      "gloss_en": "officer, official",
+      "gloss_ja": "係員、職員",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Officer, official: «pegawai bank» = a bank officer.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "職員、係官：«pegawai bank»＝銀行員。"
+    },
+    {
+      "id": "ms-x03-020",
+      "lang": "ms",
+      "term": "penimbang",
+      "gloss_en": "weighing scale",
+      "gloss_ja": "はかり",
+      "pos": "noun",
+      "affix_tag": "pe(N)-",
+      "note": "pe(N)- + timbang (Ch3): a weighing scale.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "pe(N)- + timbang（第3課）：はかり。"
+    },
+    {
+      "id": "ms-x03-021",
+      "lang": "ms",
+      "term": "pos",
+      "gloss_en": "post, mail",
+      "gloss_ja": "郵便",
+      "pos": "noun",
+      "affix_tag": "root",
+      "note": "Post, mail: «pejabat pos» (Ch3) = post office, «pos udara» = airmail.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "郵便：«pejabat pos»（第3課）＝郵便局、«pos udara»＝航空便。"
+    },
+    {
+      "id": "ms-x03-022",
+      "lang": "ms",
+      "term": "satu-satu",
+      "gloss_en": "one by one",
+      "gloss_ja": "一つずつ",
+      "pos": "adv",
+      "affix_tag": "lex",
+      "note": "One by one, one at a time.",
+      "links": [
+        {
+          "type": "babak",
+          "target": "stretch-x03"
+        }
+      ],
+      "scene": "stretch-x03",
+      "chapter": 3,
+      "note_ja": "一つずつ、一人ずつ。"
+    }
+  ],
+  "frames": [
+    {
+      "id": "ms-x03-f01",
+      "frame": "Kedua-dua ___ ini ___ kilogram.",
+      "example": "Kedua-dua bungkusan ini tiga kilogram.",
+      "meaning_en": "Both of these parcels weigh three kilograms.",
+      "meaning_ja": "この小包は両方とも3キロです。",
+      "decoys": [
+        "kedua"
+      ]
+    },
+    {
+      "id": "ms-x03-f02",
+      "frame": "Tawaran ini murah: beli ___, percuma ___.",
+      "example": "Tawaran ini murah: beli satu, percuma satu.",
+      "meaning_en": "This deal is cheap: buy one, get one free.",
+      "meaning_ja": "このプランはお得です：1つ買うと1つ無料。",
+      "decoys": [
+        "diskaun"
+      ]
+    },
+    {
+      "id": "ms-x03-f03",
+      "frame": "___ di kaunter itu tidak ___.",
+      "example": "Penimbang di kaunter itu tidak betul.",
+      "meaning_en": "The scale at that counter isn't accurate.",
+      "meaning_ja": "あの窓口のはかりは正しくありません。",
+      "decoys": [
+        "timbang"
+      ]
+    },
+    {
+      "id": "ms-x03-f04",
+      "frame": "Pelajar itu ___ soalan satu-satu.",
+      "example": "Pelajar itu jawab soalan satu-satu.",
+      "meaning_en": "That student answers the questions one by one.",
+      "meaning_ja": "その学生は質問に一つずつ答えます。",
+      "decoys": [
+        "satu"
+      ]
+    },
+    {
+      "id": "ms-x03-f05",
+      "frame": "Kadar diskaun untuk ___ ialah ___ peratus.",
+      "example": "Kadar diskaun untuk pelajar ialah sepuluh peratus.",
+      "meaning_en": "The discount rate for students is ten percent.",
+      "meaning_ja": "学生の割引率は10パーセントです。",
+      "decoys": [
+        "harga"
+      ]
+    },
+    {
+      "id": "ms-x03-f06",
+      "frame": "Saya ada hutang ___ ringgit dengan ___ saya.",
+      "example": "Saya ada hutang lima puluh ringgit dengan kawan saya.",
+      "meaning_en": "I owe my friend fifty ringgit.",
+      "meaning_ja": "友だちに50リンギットの借りがあります。",
+      "decoys": [
+        "baki"
+      ]
+    }
+  ],
+  "scenario": {
+    "title_en": "At the post office",
+    "title_ja": "郵便局で",
+    "lines": [
+      {
+        "id": "ms-x03-d01",
+        "speaker": "Juruwang",
+        "ms": "Selamat pagi, Encik. Nombor giliran 25?",
+        "en": "Good morning. Queue number 25?"
+      },
+      {
+        "id": "ms-x03-d02",
+        "speaker": "Tanaka",
+        "ms": "Ya, saya. Saya ada bungkusan untuk keluarga saya di Jepun.",
+        "en": "Yes, that's me. I have a parcel for my family in Japan.",
+        "choices": [
+          "Ya, saya. Berapa harga epal ini?",
+          "Tidak. Saya tarik duit dulu."
+        ],
+        "choices_en": [
+          "Yes, that's me. How much are these apples?",
+          "No. I'll withdraw some money first."
+        ]
+      },
+      {
+        "id": "ms-x03-d03",
+        "speaker": "Juruwang",
+        "ms": "Baik. Pos udara, Encik?",
+        "en": "Okay. Airmail?"
+      },
+      {
+        "id": "ms-x03-d04",
+        "speaker": "Tanaka",
+        "ms": "Ya, pos udara. Berapa kosnya?",
+        "en": "Yes, airmail. How much does it cost?",
+        "choices": [
+          "Ya, pos udara. Berapa umur Encik?",
+          "Ya, pos udara. Saya jual bungkusan ini."
+        ],
+        "choices_en": [
+          "Yes, airmail. How old are you?",
+          "Yes, airmail. I'm selling this parcel."
+        ]
+      },
+      {
+        "id": "ms-x03-d05",
+        "speaker": "Juruwang",
+        "ms": "Saya timbang dulu. Dua kilogram. Kosnya lapan puluh lima ringgit.",
+        "en": "I'll weigh it first. Two kilograms. That's eighty-five ringgit."
+      },
+      {
+        "id": "ms-x03-d06",
+        "speaker": "Tanaka",
+        "ms": "Mahal! Bajet saya cuma lima puluh ringgit.",
+        "en": "That's expensive! My budget is only fifty ringgit.",
+        "choices": [
+          "Murah! Saya beli dua.",
+          "Mahal! Saya bayar seratus ringgit."
+        ],
+        "choices_en": [
+          "That's cheap! I'll buy two.",
+          "That's expensive! I'll pay a hundred ringgit."
+        ]
+      },
+      {
+        "id": "ms-x03-d07",
+        "speaker": "Juruwang",
+        "ms": "Ada tawaran, Encik. Pakej ini cuma enam puluh ringgit untuk dua kilogram.",
+        "en": "There's a deal. This package is only sixty ringgit for two kilograms."
+      },
+      {
+        "id": "ms-x03-d08",
+        "speaker": "Tanaka",
+        "ms": "Baik, saya bayar enam puluh ringgit.",
+        "en": "All right, I'll pay sixty ringgit."
+      },
+      {
+        "id": "ms-x03-d09",
+        "speaker": "Juruwang",
+        "ms": "Isi borang ini dulu, Encik: nama, alamat dan poskod.",
+        "en": "Please fill in this form first: name, address and postcode."
+      },
+      {
+        "id": "ms-x03-d10",
+        "speaker": "Tanaka",
+        "ms": "Poskod Jepun tujuh digit. Betul?",
+        "en": "A Japanese postcode has seven digits. Is that right?",
+        "choices": [
+          "Poskod Jepun tujuh kilogram. Betul?",
+          "Alamat saya di pejabat pos. Betul?"
+        ],
+        "choices_en": [
+          "A Japanese postcode is seven kilograms. Right?",
+          "My address is at the post office. Right?"
+        ]
+      },
+      {
+        "id": "ms-x03-d11",
+        "speaker": "Juruwang",
+        "ms": "Betul. Bayar tunai, Encik?",
+        "en": "That's right. Paying in cash?"
+      },
+      {
+        "id": "ms-x03-d12",
+        "speaker": "Tanaka",
+        "ms": "Tidak, dengan kad debit. Boleh?",
+        "en": "No, by debit card. Is that okay?",
+        "choices": [
+          "Ya, cukup. Terima kasih.",
+          "Tidak, saya tidak suka pos udara."
+        ],
+        "choices_en": [
+          "Yes, that's enough. Thank you.",
+          "No, I don't like airmail."
+        ]
+      },
+      {
+        "id": "ms-x03-d13",
+        "speaker": "Juruwang",
+        "ms": "Boleh. Terima kasih, Encik.",
+        "en": "Sure. Thank you."
+      },
+      {
+        "id": "ms-x03-d14",
+        "speaker": "Tanaka",
+        "ms": "Terima kasih. Jumpa lagi!",
+        "en": "Thank you. See you again!"
+      }
+    ]
+  }
+}

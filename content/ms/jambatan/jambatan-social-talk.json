@@ -168,24 +168,6 @@
       "chapter": 9
     },
     {
-      "id": "ms-j-social-31",
-      "lang": "ms",
-      "term": "cuma",
-      "gloss_en": "only, just; but",
-      "gloss_ja": "ただ、〜だけ、ただし",
-      "pos": "adv",
-      "affix_tag": "root",
-      "note": "Hanashishou: Dia cuma sunyi, tahu? In 18 Hanashishou scenes: At the pharmacy, Can you cover for me?, Card blocked, Demo day with Jinx and 14 more.",
-      "links": [
-        {
-          "type": "babak",
-          "target": "dunia-jambatan-social-talk"
-        }
-      ],
-      "scene": "dunia-jambatan-social-talk",
-      "chapter": 9
-    },
-    {
       "id": "ms-j-social-32",
       "lang": "ms",
       "term": "cara",
