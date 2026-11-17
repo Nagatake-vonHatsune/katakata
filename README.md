@@ -69,13 +69,13 @@ affix_tag, note, links[], scene, chapter, image`.
   - stage-aware affix guard: the rules (affix gates, whole words, look-alike roots, register pairs, Indonesian forms) are an
     unedited copy of Cikgu Sensai's `curriculum/stage-rules.json` in `content/rules/` (source commit in `SOURCE.json`), read by
     `tools/stage-rules.mjs`. Every text is checked at its own chapter; chunk exemptions count only from their own chapter.
-    Stage 2 packs (chapter 10 on) and ⚡ packs must also use only ledger words placed by their chapter. The 104 shared fixtures run
+    Stage 2 packs (chapter 10 on) and ⚡ packs must also use only ledger words placed by their chapter. The 174 shared fixtures run
     in the unit tests. Check a line before writing it: `node tools/stage-check.mjs 10 "Pukul berapa kita bertolak?"`
   - link check (targets exist; pair links only to same or earlier chapter)
 - ⚡ stages: `content/ms/stretch/xNN.json` (kind `stretch`), built by `python3 -I tools/build_stretch.py N` from the ledger
   rows placed «ChN (extension)» and the hand-written `content/source/stretch/xNN.json`; shipped through `live_stretch` in
-  `tools/import-overrides.json`. ⚡ 1 to 9 exist (⚡ 4 pilot, 15 Nov 2026; the rest Build B1, 17 Nov 2026). The guard checks a ⚡ pack at its chapter with only its own
-  extension rows placed, every check blocking; core packs read extension rows as no row. See [docs/BUILD-A-report.md](docs/BUILD-A-report.md) and [docs/BUILD-B1-report.md](docs/BUILD-B1-report.md).
+  `tools/import-overrides.json`. ⚡ 1 to 18 exist (⚡ 4 pilot, 15 Nov 2026; 1 to 3 and 5 to 9 Build B1, 10 to 18 Build B2, 17 Nov 2026; ⚡ 18 is a harder review with no cards, done when every frame is built and its dialogue passed). A ⚡ dialogue line may carry a usage note (`note`, `note_ja`), shown in the reply step. The guard checks a ⚡ pack at its chapter with only its own
+  extension rows placed, every check blocking; core packs read extension rows as no row. See [docs/BUILD-A-report.md](docs/BUILD-A-report.md), [docs/BUILD-B1-report.md](docs/BUILD-B1-report.md) and [docs/BUILD-B2-report.md](docs/BUILD-B2-report.md).
 - Recorded audio (plan B for phones without a Malay voice): `public/audio/ms/<card-id>.mp3`
 
 **All Japanese text (glosses, frame meanings, scene titles, interface) is a Claude draft and needs a native check before students see it. The Malay interface (`i18n/ms.json`) and the v3/v4 scenes are Claude drafts too.**

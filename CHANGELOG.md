@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+- **Build B2: rules of 17 Nov, Sam's fixes to the B1 packs, ⚡ for chapters 10 to 18 (17 Nov 2026), 57 to 66 packs, 1584 to 1764 cards.** Report: [docs/BUILD-B2-report.md](docs/BUILD-B2-report.md).
+  - Rules to Cikgu Sensai `7e436f3` (174 fixtures, all agree) and its `.mjs` patch: lower-case «pasar» is a word, X-X reduplication read at its root, chapter 17 register pairs, «terbaru» / «tertinggi» ter- superlatives, «belon» / «mekanik» / «meriah» look-alike roots. Guard findings unchanged (0 flags; 7 register, 5 ledger gap in Stage 1).
+  - Sam's fixes: ⚡ 1 addresses people as Cik / Puan («saudari» stays a formal/written card); ⚡ 3 «satu per satu»; ⚡ 5 «Encik boleh makan durian! Wah, hebat!» («hebat» promoted) and «Saya nak teh tarik, kurang manis.»; ⚡ 7 «pasar raya»; ⚡ 8 the «bungkus» line carries a note on «balut» (dialogue lines can carry notes now, shown in the reply step).
+  - ⚡ 10 to 17: 193 extension cards, 48 frames, 111 lines with 39 reply steps; Cari Benda ⚡ in ⚡ 10. ⚡ 18: no new words, 6 harder mixed frames, a 14-line dialogue with 5 replies; chapter 18 shows a real ⚡ chip. «terbaru», «tertinggi» moved to ⚡ 6 and «belon» added to ⚡ 9, as the new rules place them. Guard: 0 flags.
+  - Ledger: 180 new rows (L-1637 to L-1816) and 19 promoted rows, verified; Journal rows 243 to 256. Jambatan 321 to 302 cards.
+  - Tests: unit 196 to 204; `tests/e2e/stretch.cjs` 62 to 101 checks (⚡ 10 and ⚡ 18 played from an unlocked state).
+
 - **Build B1: Sam's answers to the Build A questions; ⚡ for chapters 1 to 3 and 5 to 9 (17 Nov 2026), 49 to 57 packs, 1453 to 1584 cards.** Report: [docs/BUILD-B1-report.md](docs/BUILD-B1-report.md).
   - The dialogue 🔥 needs one full play-through with 60 % of its reply steps right on the first try (rounded up; わからない is wrong); the best score per dialogue is kept in `state.dialogues` (schemaVersion stays 1). ⚡ done also needs the ⚡ dialogue at 60 %. The reply step and the summary show the score («3/5 · 3 needed»). Flames already lit stay lit.
   - Rebel's ⚡ accent is gold (`#876200` / `#f2c04a`), AA tested; the other palettes stay blue. A chapter with every 🔥 lit and no ⚡ pack shows a greyed, non-tappable «⚡ soon».
