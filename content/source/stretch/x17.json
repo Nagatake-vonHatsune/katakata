@@ -132,8 +132,8 @@
   "lines": [
     {"speaker": "Tanaka", "ms": "Selamat pagi, Cik Mei Ling. Maaf, hari ini saya sangat mengantuk.", "en": "Good morning, Ms Mei Ling. Sorry, I'm very sleepy today."},
     {"speaker": "Cik Mei Ling", "ms": "Pagi! Ngantuk? Kenapa? Semalam tak tidur?", "en": "Morning! Sleepy? Why? Didn't you sleep last night?",
-     "choices": ["Pagi! Ngantuk? Bagus, mesyuarat kita sepanjang hari!", "Pagi! Mak saya ngantuk kat Jepun."],
-     "choices_en": ["Morning! Sleepy? Great, our meeting goes on all day!", "Morning! My mum is sleepy in Japan."]},
+     "choices": ["Pagi! Ngantuk? Bagus, mesyuarat kita sepanjang hari!", "Pagi! Ngantuk? Jom kita tidur kat bilik mesyuarat!"],
+     "choices_en": ["Morning! Sleepy? Great, our meeting goes on all day!", "Morning! Sleepy? Let's go and sleep in the meeting room!"]},
     {"speaker": "Tanaka", "ms": "Emak saya datang dari Jepun semalam. Kami bercakap sampai pukul dua pagi.", "en": "My mother arrived from Japan yesterday. We talked until two in the morning."},
     {"speaker": "Cik Mei Ling", "ms": "Wah, mak Encik datang? Seronoknya! Dia tinggal berapa lama?", "en": "Wow, your mum's here? How lovely! How long is she staying?",
      "choices": ["Wah, mak Encik datang? Saya tak tau Encik ada mak!", "Wah, mak Encik datang? Bagus, dia boleh kerja kat pejabat kita!"],
